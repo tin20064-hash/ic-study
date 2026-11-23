@@ -18,7 +18,7 @@ function fixture(q=bank.find(q=>q.id==='COS201-809')){
   currentQ:()=>q,currentAnswer:()=>c.S.session.answers[q.id],studySessionAllowed:()=>true,studyRestrictIds:ids=>ids,studyFocus:()=>null,
   persist(){},render(){},setView(v){c.view=v},sessionId:()=>Math.random().toString(),toast(){},updateWrong(){},markDay(){},finishExam(){},move(){},
   header:()=>'',btn:(text,act)=>`<button data-act="${act}">${text}</button>`,studyBuddyWidget:()=>'',timeText:()=>'',source:()=>'',explanation:()=>'',esc:String,$:()=>({open:false})};
- vm.createContext(c);
+ vm.createContext(c);vm.runInContext(fs.readFileSync('source/study-focus.js','utf8').replace("Object.freeze(['DGT302'])","Object.freeze(['DGT302','COS201','LOS201','ICI211'])"),c);
  vm.runInContext(['studyResponse','studyCorrect','studySaved','studyNote','studyMatches','toggleStudySaved','choiceLabel','validChoices','same','keys','shuffle','createOptionOrders','answerKey','correct','selectChoice','submitAnswer','newSession','player','sessionKeys'].map(line).join('\n')+'\n'+between('normalizeSavedSession','normalizeSessionStore'),c);
  vm.runInContext(html.split('\n').find(s=>s.startsWith('async function copyQuestion(')),c);
  vm.runInContext(html.split('\n').find(s=>s.startsWith("document.addEventListener('keydown'")&&s.includes("view!=='player'")),c);

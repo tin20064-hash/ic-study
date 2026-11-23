@@ -31,7 +31,7 @@ function exam(subject='all'){
  const c={BANK:bank,S:{responses:{},bookmarks:{}},SUBJECTS:{DGT302:{},COS201:{},LOS201:{},ICI211:{}},subject,
   wrongQuestionIds:()=>[],shuffle:a=>a,
   $:id=>({value:({'exam-count':'40','exam-duration':'30','exam-pool':'answered'})[id]}),newSession:(...args)=>{created=args}};
- vm.createContext(c);vm.runInContext(['studyResponse','studyCorrect','studySaved','studyNote','studyMatches','toggleStudySaved','subjectQuestions','unique','examQuestionPool','startExam'].map(line).join('\n'),c);
+ vm.createContext(c);vm.runInContext(fs.readFileSync('source/study-focus.js','utf8').replace("Object.freeze(['DGT302'])","Object.freeze(['DGT302','COS201','LOS201','ICI211'])"),c);vm.runInContext(['studyResponse','studyCorrect','studySaved','studyNote','studyMatches','toggleStudySaved','subjectQuestions','unique','examQuestionPool','startExam'].map(line).join('\n'),c);
  return {c,get created(){return created}};
 }
 test('Answered-only exams contain both correct and wrong checked answers and never fill from unseen questions',()=>{

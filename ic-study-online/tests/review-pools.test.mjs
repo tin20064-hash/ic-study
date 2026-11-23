@@ -19,7 +19,7 @@ function fixture(){
   subject:'all',filter:'all',query:'',draft:[],showSource:false,flipped:false,view:'home',
   KEY:'test',localStorage:{setItem(){}},normalizeStudyState:()=>({}),initial:()=>({version:1,responses:{},overrides:{},bookmarks:{},notes:{},history:[],daily:{},sessions:[],wrongIds:[],session:null}),
   studyFocus:()=>null,studyRestrictIds:x=>x,studySessionAllowed:()=>true,toast:()=>{},render:()=>{},setView:()=>{},markDay:()=>{},restoreSessionDraft:()=>{},sessionId:()=>String(Math.random()),$:()=>({close(){}})};
- vm.createContext(context);vm.runInContext(code,context);
+ vm.createContext(context);vm.runInContext(fs.readFileSync('source/study-focus.js','utf8').replace("Object.freeze(['DGT302'])","Object.freeze(['DGT302','COS201','LOS201','ICI211'])"),context);vm.runInContext(code,context);
  return context;
 }
 const run=(c,s)=>vm.runInContext(s,c);

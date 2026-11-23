@@ -9,7 +9,7 @@ function normalizeKeywordStudy(s){
  return {id:typeof s.id==='string'?s.id.slice(0,120):'legacy-keywords',subject:SUBJECTS[s.subject]?s.subject:'all',ids,index:Math.max(0,Math.min(ids.length-1,Number(s.index)||0)),optionOrders,selected,viewed,updated:Number(s.updated)||0};
 }
 function startKeywordStudy(course='all'){
- const ids=shuffle(KEYWORD_CARDS.filter(c=>course==='all'||c.subject===course).map(c=>c.id));
+ course=studyScopeSubject(course);const ids=shuffle(KEYWORD_CARDS.filter(c=>c.subject===course).map(c=>c.id));
  if(!ids.length)return;
  const previous=S.keywordStudy?.optionOrders;
  const optionOrders=Object.fromEntries(ids.map(id=>{const a=shuffle([0,1,2,3]),before=previous?.[id]||[0,1,2,3];if(a.every((n,i)=>n===before[i]))a.push(a.shift());return[id,a]}));
@@ -19,8 +19,8 @@ function keywordMove(step){const s=S.keywordStudy;if(!s)return;s.index=Math.max(
 function keywordToggle(){const s=S.keywordStudy;if(!s)return;keywordRevealed=!keywordRevealed;if(keywordRevealed)s.viewed[s.ids[s.index]]=Date.now();s.updated=Date.now();persist();render()}
 function keywordSelect(i){const s=S.keywordStudy;if(!s||!Number.isInteger(i)||i<0||i>3)return;s.selected[s.ids[s.index]]=i;s.updated=Date.now();keywordRevealed=false;persist();render()}
 function keywordsPage(){
- const s=S.keywordStudy,count=KEYWORD_CARDS.length;
- const picker=`<div class="panel keyword-controls"><label class="field">Bộ thẻ<select id="keyword-course" aria-label="Môn học keyword"><option value="all" ${s?.subject==='all'?'selected':''}>Tất cả 4 môn</option>${Object.entries(SUBJECTS).map(([id,c])=>`<option value="${id}" ${s?.subject===id?'selected':''}>${id} · ${esc(c.name)}</option>`).join('')}</select></label><div><span class="quiet">${count} thẻ · 4 lựa chọn/thẻ · Tự lưu vị trí</span><p class="quiet">Thứ tự câu và đáp án đổi ở bộ mới, giữ nguyên khi quay lại.</p></div>${btn(s?'Trộn bộ thẻ mới ↻':'Bắt đầu học keyword →','keyword-start','','primary')}</div>`;
+ const s=studyVisibleKeywordStudy(),count=KEYWORD_CARDS.filter(c=>studySubjectVisible(c.subject)).length;
+ const picker=`<div class="panel keyword-controls"><label class="field">Bộ thẻ<select id="keyword-course" aria-label="Môn học keyword">${studyVisibleSubjectEntries().map(([id,c])=>`<option value="${id}" ${s?.subject===id?'selected':''}>${id} · ${esc(c.name)}</option>`).join('')}</select></label><div><span class="quiet">${count} thẻ · 4 lựa chọn/thẻ · Tự lưu vị trí</span><p class="quiet">Thứ tự câu và đáp án đổi ở bộ mới, giữ nguyên khi quay lại.</p></div>${btn(s?'Trộn bộ thẻ mới ↻':'Bắt đầu học keyword →','keyword-start','','primary')}</div>`;
  let body='';
  if(!s)body=`<div class="panel empty"><h2>Nhìn keyword, nhớ kiến thức.</h2><p>Chọn câu trả lời trước hoặc tự nhẩm, rồi bấm hiện đáp án. Bấm lần nữa để ẩn cả lời giải và màu đúng/sai.</p></div>`;
  else{

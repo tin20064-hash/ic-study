@@ -56,7 +56,7 @@ test('Study content matches the reviewed bank, with only documented later wordin
    return text.slice(i,j).trim().replace(/\r\n/g,'\n');
   };
   const original=get(backup).replace('ids=studyRestrictIds(ids);','').replace('if(studyFocus())subject=studyFocus();','');
-  assert.equal(get(html),original,start);
+  assert.equal(get(html).replace('ids=studyVisibleIds(ids);subject=studyScopeSubject(subject);',''),original,start);
  }
  assert.deepEqual(parse(fs.readFileSync('../IC_Study_Anime.html','utf8'),'question-bank').map(({questionImage,noteImage,...q})=>q),bank.map(({questionImage,noteImage,...q})=>q));
 });

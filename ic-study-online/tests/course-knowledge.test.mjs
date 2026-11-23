@@ -22,7 +22,7 @@ const ctx={
  newSession:(ids,mode)=>calls.push({ids:[...ids],mode,subject:ctx.subject}),
  setView:view=>calls.push(view), studyCopyText:(text,label)=>calls.push({text,label})
 };
-vm.createContext(ctx);
+vm.createContext(ctx);vm.runInContext(fs.readFileSync('source/study-focus.js','utf8').replace("Object.freeze(['DGT302'])","Object.freeze(['DGT302','COS201','LOS201','ICI211'])"),ctx);
 vm.runInContext(html.slice(html.indexOf('const STUDY_BRIEFS='),html.indexOf('function studyToday('))+html.slice(html.indexOf('const COURSE_KNOWLEDGE='),html.indexOf('function studyRelatedIds(')),ctx);
 ctx.STUDY_EXAMS=Object.keys(knowledge).map(subject=>({subject,name:subject}));
 

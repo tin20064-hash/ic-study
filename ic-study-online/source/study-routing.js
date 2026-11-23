@@ -30,7 +30,7 @@ function studyPlayerUrl(session, index) {
 }
 
 function studyKnowledgeCode() {
- return knowledgeSubject || (COURSE_KNOWLEDGE[S.lastSubject] ? S.lastSubject : 'DGT302');
+ return typeof studyScopeSubject==='function'?studyScopeSubject(knowledgeSubject||S.lastSubject):knowledgeSubject || (COURSE_KNOWLEDGE[S.lastSubject] ? S.lastSubject : 'DGT302');
 }
 
 function studyLinkFor(button) {
@@ -131,7 +131,7 @@ function recordStudyRoute() {
 function loadStudyPlayer(params) {
  const id = params.get('session');
  const s = id ? (S.session?.id === id ? S.session : S.sessions.find(item => item.id === id)) : S.session;
- if (!s) return 'sessions';
+ if (!s || typeof studySessionVisible==='function'&&!studySessionVisible(s)) return 'sessions';
  if (s.mode === 'exam' && s.status === 'completed') {
   resultIndex = S.history.findIndex(item => item.sessionId === s.id || item.started === s.started);
   return resultIndex < 0 ? 'history' : 'result';
@@ -149,11 +149,12 @@ function loadStudyPlayer(params) {
 function openStudyRoute(href, {click = false, restore = false} = {}) {
  const {section, params} = readStudyRoute(href);
  const requested = params.get('subject');
- const code = Object.hasOwn(SUBJECTS, requested) ? requested : '';
+ const code = Object.hasOwn(SUBJECTS, requested) && (typeof studySubjectVisible!=='function'||studySubjectVisible(requested)) ? requested : '';
  const topic = params.get('topic'), memory = restore ? studyRouteMemory.get(studyRouteEntry) : null;
  const previousView = view, previousSubject = studyKnowledgeCode();
  if (STUDY_PRACTICE_ROUTES.includes(section)) {
-  const question = BY_ID.get(params.get('question'));
+  const candidate = BY_ID.get(params.get('question'));
+   const question = typeof studyQuestionVisible==='function'&&!studyQuestionVisible(candidate) ? null : candidate;
   const briefCard = section === 'brief-practice' && code ? STUDY_BRIEFS[code]?.find(card => card.id === topic) : null;
   const ids = briefCard ? studyRelatedIds(code, briefCard) :
    section === 'topic-practice' && code ? knowledgeCards(code).find(c => c.id === topic)?.ids :
@@ -175,9 +176,10 @@ function openStudyRoute(href, {click = false, restore = false} = {}) {
   view = section;
  }
  if (view === 'past-exams') {
-  const exam = PAST_EXAM_BY_ID.get(params.get('exam'));
+  const candidate = PAST_EXAM_BY_ID.get(params.get('exam'));
+   const exam = candidate && (typeof studySubjectVisible!=='function'||studySubjectVisible(candidate.subject)) ? candidate : null;
   pastExamId = exam?.id || '';
-  pastExamSubject = code || 'all';
+  pastExamSubject = code || (typeof studyScopeSubject==='function'?studyScopeSubject(): 'all');
   pastExamTerm = ['FA26', 'SU26'].includes(params.get('term')) ? params.get('term') : 'all';
   if (exam) {
    const requestedIndex = params.has('question') ? Number(params.get('question')) - 1 : S.pastExamStudy?.[exam.id]?.index || 0;
@@ -188,7 +190,7 @@ function openStudyRoute(href, {click = false, restore = false} = {}) {
  if (view === 'player') view = loadStudyPlayer(params);
  if (view === 'result' && section === 'result') {
   resultIndex = S.history.findIndex(item => String(item.id) === params.get('result'));
-  if (resultIndex < 0) view = 'history';
+  if (resultIndex < 0 || typeof studySessionVisible==='function'&&!studySessionVisible(S.history[resultIndex])) view = 'history';
  }
  if (view !== previousView) keywordRevealed = false;
  if (view === 'timeline') {
@@ -202,7 +204,7 @@ function openStudyRoute(href, {click = false, restore = false} = {}) {
  }
  if (STUDY_ROUTE_POOLS.includes(view)) {
   const collection = ['mistakes', 'answered', 'saved'].includes(view);
-  subject = code || (collection || requested === 'all' ? 'all' : S.lastSubject);
+  subject = typeof studyScopeSubject==='function'?studyScopeSubject(code):code || (collection || requested === 'all' ? 'all' : S.lastSubject);
  }
  page = memory?.page ?? Math.max(0, Math.min(50, Number.parseInt(params.get('page'), 10) || 0));
  query = memory?.query || '';

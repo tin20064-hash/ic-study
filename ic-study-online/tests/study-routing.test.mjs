@@ -6,7 +6,7 @@ import vm from 'node:vm';
 const source = fs.readFileSync('source/study-routing.js','utf8').trim();
 const ids = ['DGT302-533','DGT302-542'];
 
-function fixture(hash = '#home') {
+function fixture(hash = '#home', dgtScope = false) {
  const events = {};
  const page = {dataset:{studyPage:'0'}};
  const location = {hash};
@@ -29,7 +29,7 @@ function fixture(hash = '#home') {
   document:{addEventListener(name,handler){events[name]=handler}},
   window:{history,location,scrollY:0,scrollTo({top}){this.scrollY=top},addEventListener(name,handler){events[name]=handler}},
   $:id=>id==='app'?page:id==='modal'?{close(){}}:['knowledge-topic-roc','brief-card-roc'].includes(id)?{focus(){},scrollIntoView(){context.window.scrollY=650}}:null,
-  knowledgeCards:()=>[{id:'roc',ids}], render(){}, nextMotto(){}, focusCurrentQuestion(){},
+  knowledgeCards:()=>[{id:'roc',ids}], render(){}, nextMotto(){}, focusCurrentQuestion(){}, toast(){},
   restoreSessionDraft(){context.draft=context.S.session.drafts[context.S.session.ids[context.S.session.index]]},
   persist(){context.saves++}, saves:0,
   newSession(qs,mode,extra){
@@ -38,6 +38,7 @@ function fixture(hash = '#home') {
   }
  };
  vm.createContext(context);
+ if(dgtScope)vm.runInContext(fs.readFileSync('source/study-focus.js','utf8'),context);
  vm.runInContext(source,context);
  context.initStudyRouting();
  const click=(href,modifiers={})=>{
@@ -109,4 +110,20 @@ test('Practice started from a brief links back to the same subject and card',()=
  f.pop(f.history.entries[0]);
  assert.equal(f.context.view,'player');
  assert.equal(f.context.S.session.briefOrigin.card,'roc');
+});
+
+test('DGT mode redirects stale course links and keeps foreign saved sessions untouched',()=>{
+ const f=fixture('#practice?subject=COS201',true);
+ assert.equal(f.context.subject,'DGT302');
+ f.click('#knowledge?subject=COS201');assert.equal(f.context.knowledgeSubject,'DGT302');
+ f.context.BY_ID.set('COS201-800',{id:'COS201-800',subject:'COS201'});
+ const foreign={id:'cos-saved',mode:'practice',ids:['COS201-800'],index:0,answers:{},drafts:{}};
+ f.context.S.sessions.push(foreign);
+ const before=JSON.stringify(f.context.S);
+ f.click('#player?session=cos-saved&question=COS201-800');
+ assert.equal(f.context.view,'sessions');
+ assert.equal(JSON.stringify(f.context.S),before);
+ f.click('#question-practice?question=COS201-800');
+ assert.equal(f.context.view,'sessions');
+ assert.equal(JSON.stringify(f.context.S),before);
 });

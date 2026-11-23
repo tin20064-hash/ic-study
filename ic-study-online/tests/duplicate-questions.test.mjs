@@ -15,7 +15,7 @@ const plain=x=>JSON.parse(JSON.stringify(x));
 const initial=()=>({version:1,responses:{},overrides:{},bookmarks:{},notes:{},daily:{},history:[],sessions:[],deletedSessions:[],wrongIds:[],session:null});
 function fixture(){
  const c={BANK:bank,BY_ID:by,SHORT_EXPLANATIONS:parse(html,'short-explanations'),groups,S:initial(),initial,SUBJECTS:{DGT302:{},COS201:{},ICI211:{},LOS201:{}},normalizeStudyState:()=>({}),subject:'all',studyFocus:()=>null,query:'',filter:'all',view:'practice',draft:[],showSource:false,flipped:false,toast(){},render(){},setView(){},persist(){},studyRestrictIds:a=>a,studySessionAllowed:()=>true};
- vm.createContext(c);vm.runInContext(source+'\nvar ICDuplicates=createDuplicateIndex(BANK,groups);',c);
+ vm.createContext(c);vm.runInContext(fs.readFileSync('source/study-focus.js','utf8').replace("Object.freeze(['DGT302'])","Object.freeze(['DGT302','COS201','LOS201','ICI211'])"),c);vm.runInContext(source+'\nvar ICDuplicates=createDuplicateIndex(BANK,groups);',c);
  const names=['studyResponse','studyCorrect','studySaved','studyNote','studyMatches','toggleStudySaved','same','validChoices','answerKey','correct','choiceLabel','counts','subjectQuestions','answeredQuestionIds','wrongQuestionIds','matching','unique','examQuestionPool','sessionId','shuffle','createOptionOrders','newSession','sessionStats'];
  vm.runInContext(names.map(line).join('\n')+'\n'+section('collectionQuestions','startWrongReview')+section('normalizeSavedSession','saveActiveSession')+section('regradeReviewedHistory','persist'),c);
  return c;
