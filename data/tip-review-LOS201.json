@@ -1,0 +1,1305 @@
+{
+  "subject": "LOS201",
+  "reviewedCount": 200,
+  "activeCount": 193,
+  "method": "Đọc từng stem, toàn bộ phương án, lời giải và mẹo của đủ 200 ID (kể cả bản trùng cũ). Giữ mẹo định nghĩa/lịch sử đúng; làm rõ cue, đủ số ý cần chọn, thao tác và phân biệt đáp án gần nghĩa. Không thay câu hỏi hay khóa chấm.",
+  "ledger": [
+    {
+      "id": "LOS201-13",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “target thiếu Python → smemcap capture.” nhận diện đúng nội dung đáp án “smemcap”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-14",
+      "status": "fix",
+      "whyVi": "Câu chọn HAI; nêu rõ cả tình trạng thiếu bộ nhớ lẫn phản ứng có thể xảy ra."
+    },
+    {
+      "id": "LOS201-15",
+      "status": "fix",
+      "whyVi": "Gắn trực tiếp lợi ích với thao tác mmap trong đề; bỏ lẫn lộn syscall với chuyển ngữ cảnh tiến trình."
+    },
+    {
+      "id": "LOS201-16",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “hundreds of packages → scalable build automation.” nhận diện đúng nội dung đáp án “They provide scalable automation for building, integrating, and maintaining complete software distributions”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-17",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “manual assembly problem → reproducible automated build.” nhận diện đúng nội dung đáp án “Automating dependency tracking and reproducible system generation”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-18",
+      "status": "fix",
+      "whyVi": "Nêu đủ hai loại khó khăn được giảm, loại lỗi phần cứng và cáp mạng."
+    },
+    {
+      "id": "LOS201-19",
+      "status": "fix",
+      "whyVi": "Thêm cách loại hai phương án tốc độ/xung nhịp thay vì chỉ lặp tên khái niệm."
+    },
+    {
+      "id": "LOS201-20",
+      "status": "fix",
+      "whyVi": "Dấu hiệu thực có trong đề là industrial control và average response time."
+    },
+    {
+      "id": "LOS201-21",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “large storage → NAND.” nhận diện đúng nội dung đáp án “NAND Flash”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-22",
+      "status": "fix",
+      "whyVi": "Nêu host/target và loại nhầm mục đích phần cứng."
+    },
+    {
+      "id": "LOS201-23",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “kernel alone insufficient → bootloader + rootfs.” nhận diện đúng nội dung đáp án “A bootloader + A root file system”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-24",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “BusyBox shell → ash.” nhận diện đúng nội dung đáp án “ash”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-25",
+      "status": "fix",
+      "whyVi": "Dùng đúng symlink trong đề và cơ chế chọn tiện ích."
+    },
+    {
+      "id": "LOS201-26",
+      "status": "fix",
+      "whyVi": "Viết rõ cả hai vai trò được hỏi thay vì cụm dispatch callbacks ngắn khó hiểu."
+    },
+    {
+      "id": "LOS201-27",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nói load-time, thiếu lựa chọn không cần biên dịch lại."
+    },
+    {
+      "id": "LOS201-28",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “dependencies → modprobe.” nhận diện đúng nội dung đáp án “It automatically resolves and loads dependent modules”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-29",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “head.o → early CPU setup.” nhận diện đúng nội dung đáp án “Setup CPU environment”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-30",
+      "status": "fix",
+      "whyVi": "Nối việc gom bảng với mục đích tự khám phá/gọi handler trong đề."
+    },
+    {
+      "id": "LOS201-31",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “remote debug → gdbserver / stub.” nhận diện đúng nội dung đáp án “The debugger communicates with a remote debugging stub such as gdbserver”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-32",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “performance issue → profile first.” nhận diện đúng nội dung đáp án “Profile the application to identify performance bottlenecks”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-33",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “persistent across power cycles → flash/nonvolatile.” nhận diện đúng nội dung đáp án “Whether data must survive power cycles”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-34",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “compression → storage↓, decompression cost↑.” nhận diện đúng nội dung đáp án “Reduced storage usage at the cost of decompression overhead”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-35",
+      "status": "fix",
+      "whyVi": "Làm rõ cách nhận diện require thay vì chỉ gắn nhãn mandatory include."
+    },
+    {
+      "id": "LOS201-36",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “list of layers → bblayers.conf.” nhận diện đúng nội dung đáp án “bblayers.conf”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-37",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “add packages to image → IMAGE_INSTALL.” nhận diện đúng nội dung đáp án “IMAGE_INSTALL”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-38",
+      "status": "fix",
+      "whyVi": "Đổi mẹo đảo chiều thành cue /dev/console → đúng chức năng đề hỏi."
+    },
+    {
+      "id": "LOS201-39",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “sysinit → rcS; askfirst → nhấn Enter rồi mở shell.” nhận diện đúng nội dung đáp án “It runs the system initialization script and then offers an interactive shell.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-40",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “after kernel → prepare usable user space.” nhận diện đúng nội dung đáp án “Prepare a usable user-space environment”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-41",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “threads share; processes separate.” nhận diện đúng nội dung đáp án “Threads share process resources while processes have separate address spaces”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-42",
+      "status": "fix",
+      "whyVi": "Chỉ rõ thao tác cần bảo vệ, không chỉ nhắc lại tên condition variable."
+    },
+    {
+      "id": "LOS201-43",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “daemon → background service.” nhận diện đúng nội dung đáp án “A background service process that usually runs independently of an interactive login session.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-44",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “interrupt vs polling → less busy waiting.” nhận diện đúng nội dung đáp án “Reduce CPU overhead”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-45",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “virtual memory → isolation + protection.” nhận diện đúng nội dung đáp án “Provides isolation and memory protection”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-46",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “bypass full U-Boot → Falcon Mode.” nhận diện đúng nội dung đáp án “Using Falcon Mode”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-47",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “embedded bootloader → U-Boot.” nhận diện đúng nội dung đáp án “U-Boot”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-48",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “vexpress-a9 → RAM 0x60000000, không phải 0.” nhận diện đúng nội dung đáp án “Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-49",
+      "status": "fix",
+      "whyVi": "Nêu đủ hai đặc điểm của câu chọn HAI."
+    },
+    {
+      "id": "LOS201-50",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “KGDB → remote kernel debugger.” nhận diện đúng nội dung đáp án “A kernel debugger that allows remote debugging of the Linux kernel”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-51",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “kernel logs → dmesg.” nhận diện đúng nội dung đáp án “Display messages stored in the kernel ring buffer”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-52",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “NFS root failure → NFS server.” nhận diện đúng nội dung đáp án “NFS server”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-53",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “boot image transfer → TFTP.” nhận diện đúng nội dung đáp án “Transfer boot images and kernels”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-54",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “early boot logs → serial console.” nhận diện đúng nội dung đáp án “Serial console”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-55",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “flash rewrite → erase before write.” nhận diện đúng nội dung đáp án “The operation may fail or produce undefined results because erase-before-write rules are violated”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-56",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “UBIFS → UBI → MTD.” nhận diện đúng nội dung đáp án “UBI”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-57",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nói flash abstraction, chưa giúp nhận đủ hai phương án."
+    },
+    {
+      "id": "LOS201-58",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “user → syscall → kernel services.” nhận diện đúng nội dung đáp án “The kernel provides services used by user-space applications”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-59",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “unsupported peripheral → add/adapt driver support.” nhận diện đúng nội dung đáp án “Create or adapt device support software”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-60",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “uncompressed ELF kernel → vmlinux.” nhận diện đúng nội dung đáp án “vmlinux”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-61",
+      "status": "fix",
+      "whyVi": "Thêm dấu hiệu đường dẫn drivers/ để phân biệt các đáp án cùng tên built-in.o."
+    },
+    {
+      "id": "LOS201-62",
+      "status": "fix",
+      "whyVi": "Đổi hướng mẹo cho khớp câu hỏi chức năng của file."
+    },
+    {
+      "id": "LOS201-63",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “page → memory mapping unit.” nhận diện đúng nội dung đáp án “A fixed-size unit of memory used for mapping virtual and physical addresses”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-64",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “low-overhead IPC → shared mmap.” nhận diện đúng nội dung đáp án “Inter-process communication with low overhead”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-65",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đi từ thông tin sang tên file, bản mới đi đúng hướng câu hỏi."
+    },
+    {
+      "id": "LOS201-66",
+      "status": "fix",
+      "whyVi": "Thay separate concerns chung chung bằng các thành phần đúng trong lựa chọn."
+    },
+    {
+      "id": "LOS201-67",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “image size↓ → fine-grained package selection.” nhận diện đúng nội dung đáp án “Fine-grained package selection and configuration”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-68",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “multiple boards → reuse + platform configuration.” nhận diện đúng nội dung đáp án “It enables configuration reuse and platform-specific customization”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-69",
+      "status": "fix",
+      "whyVi": "Diễn đạt đủ hai kỹ thuật theo nội dung đáp án, tránh chỉ nhớ RT Linux."
+    },
+    {
+      "id": "LOS201-70",
+      "status": "fix",
+      "whyVi": "Gắn cue số liệu 5 ms với đúng tiêu chí kiểm định."
+    },
+    {
+      "id": "LOS201-71",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc interfaces mà thiếu lợi ích phát triển độc lập."
+    },
+    {
+      "id": "LOS201-72",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “bootloader → init hardware + load kernel.” nhận diện đúng nội dung đáp án “Initialize hardware and load the kernel”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-73",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Linux vs bare metal → OS services + isolation.” nhận diện đúng nội dung đáp án “Linux provides standardized operating system services and process isolation”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-74",
+      "status": "fix",
+      "whyVi": "Câu hỏi yêu cầu cơ chế giảm kích thước, không chỉ tên multicall."
+    },
+    {
+      "id": "LOS201-75",
+      "status": "fix",
+      "whyVi": "Làm rõ cơ chế để chọn đáp án theo ý nghĩa thay vì nhãn multicall."
+    },
+    {
+      "id": "LOS201-76",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nêu tên cổng, thiếu cặp cấu hình và baud trong lựa chọn."
+    },
+    {
+      "id": "LOS201-77",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Freeing init memory → reclaim one-time code.” nhận diện đúng nội dung đáp án “Memory occupied by one-time initialization code and data has been reclaimed”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-78",
+      "status": "fix",
+      "whyVi": "Thay tên lifecycle chung chung bằng tác động thực tế cần chọn."
+    },
+    {
+      "id": "LOS201-79",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Yocto SDK → bitbake -c populate_sdk <image>.” nhận diện đúng nội dung đáp án “bitbake -c populate_sdk <image>”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-80",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ bung chữ BSP, không nêu vì sao layer có ích."
+    },
+    {
+      "id": "LOS201-81",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “no MMU → hạn chế VM và bảo vệ/cách ly bộ nhớ.” nhận diện đúng nội dung đáp án “Virtual memory features may be unavailable + Memory isolation between processes may be limited”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-82",
+      "status": "fix",
+      "whyVi": "Mô tả đúng đặc trưng được hỏi, tránh chỉ nói asynchronous không có trong lựa chọn."
+    },
+    {
+      "id": "LOS201-83",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “/dev access → node + file_operations.” nhận diện đúng nội dung đáp án “A valid device node with the correct major/minor numbers + Registration of file_operations callbacks”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-84",
+      "status": "fix",
+      "whyVi": "Đưa trọng tâm về thời điểm crash và đường thực thi gây lỗi."
+    },
+    {
+      "id": "LOS201-85",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “major → driver; minor → instance.” nhận diện đúng nội dung đáp án “To separate driver selection from device instance identification”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-86",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “host x86, target ARM → cross-toolchain.” nhận diện đúng nội dung đáp án “A cross-toolchain”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-87",
+      "status": "fix",
+      "whyVi": "Mẹo cũ thiếu lợi ích thứ hai của câu chọn HAI."
+    },
+    {
+      "id": "LOS201-88",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “NFS root → shared host filesystem.” nhận diện đúng nội dung đáp án “The target accesses files directly from the exported host filesystem”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-89",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “object symbols → nm.” nhận diện đúng nội dung đáp án “Display symbols in object files”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-90",
+      "status": "fix",
+      "whyVi": "Mẹo cũ khuyên thêm -g nhưng chưa trả lời hậu quả mà câu hỏi yêu cầu."
+    },
+    {
+      "id": "LOS201-91",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “compressed read-only → SquashFS.” nhận diện đúng nội dung đáp án “Compressed read-only storage”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-92",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “tmpfs → volatile memory-backed filesystem.” nhận diện đúng nội dung đáp án “A RAM-based file system”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-93",
+      "status": "fix",
+      "whyVi": "Nêu đủ hai vai trò thay vì nhãn architecture-specific code chung."
+    },
+    {
+      "id": "LOS201-94",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “ARM board-specific → arch/arm/mach-*.” nhận diện đúng nội dung đáp án “arch/arm/mach-*”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-95",
+      "status": "fix",
+      "whyVi": "Theo đúng hai vế và thứ tự diễn đạt của câu hiện tại."
+    },
+    {
+      "id": "LOS201-96",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “VFS root mount panic → kiểm tra initramfs / root= / rootfs.” nhận diện đúng nội dung đáp án “The kernel cannot find a root filesystem because no initramfs image or root device was provided.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-97",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “rootfs automation → Buildroot / OpenEmbedded.” nhận diện đúng nội dung đáp án “Buildroot + OpenEmbedded/BitBake”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-98",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “minimal rootfs → satisfy dependencies, omit extras.” nhận diện đúng nội dung đáp án “Minimizing storage usage while satisfying kernel and user-space dependencies”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-99",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “duplicate → fork; replace → exec.” nhận diện đúng nội dung đáp án “fork() and exec()”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-100",
+      "status": "fix",
+      "whyVi": "Trích cue đối lập thực có trong đề để loại nhóm chính sách không phù hợp."
+    },
+    {
+      "id": "LOS201-101",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “shared counter → lock whole read-modify-write.” nhận diện đúng nội dung đáp án “Protect the counter with a mutex around each read-modify-write operation.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-102",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “diskboot dev:part → device + partition.” nhận diện đúng nội dung đáp án “Device number and partition number”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-103",
+      "status": "fix",
+      "whyVi": "Thêm phân biệt modify/save vì cả hai lệnh cùng có trong đáp án."
+    },
+    {
+      "id": "LOS201-104",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “embedded bootloader → board-specific configurable.” nhận diện đúng nội dung đáp án “Embedded bootloaders are board-specific and configurable”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-105",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “kernel oops → call trace.” nhận diện đúng nội dung đáp án “Call trace showing the sequence of kernel functions leading to the fault”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-106",
+      "status": "fix",
+      "whyVi": "Chỉ rõ đủ hai mục tiêu và loại hai khả năng tự động không được bảo đảm."
+    },
+    {
+      "id": "LOS201-107",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “ftrace → function/runtime tracing.” nhận diện đúng nội dung đáp án “It helps analyze kernel function execution and runtime behavior.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-108",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “NAND → higher bit-error susceptibility → ECC.” nhận diện đúng nội dung đáp án “NAND devices are more susceptible to bit errors and higher storage densities”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-109",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “large NAND + JFFS2 → slow mount / high RAM.” nhận diện đúng nội dung đáp án “Mount time and memory usage scale poorly”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-110",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ bung tên ECC, bản mới giúp chọn đúng vai trò."
+    },
+    {
+      "id": "LOS201-111",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “safety-critical → certification effort.” nhận diện đúng nội dung đáp án “Regulatory verification effort may increase project complexity”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-112",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “complex network + UI → Linux.” nhận diện đúng nội dung đáp án “A device with complex networking and user interfaces”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-114",
+      "status": "fix",
+      "whyVi": "Hai phương án binary/source gần nhau nên thêm tiêu chí phân biệt."
+    },
+    {
+      "id": "LOS201-115",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “user requests kernel → system calls.” nhận diện đúng nội dung đáp án “System calls”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-116",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “1989/1990 C → C89 / C90.” nhận diện đúng nội dung đáp án “C89 (ISO C90)”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-117",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “threads → POSIX.1c.” nhận diện đúng nội dung đáp án “POSIX.1c”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-118",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “nonzero initialized global → .data; zero → .bss.” nhận diện đúng nội dung đáp án “Data”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-119",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “POSIX base + extra X/Open Curses volume (2001) → SUSv3.” nhận diện đúng nội dung đáp án “SUSv3”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-120",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “un-map → munmap().” nhận diện đúng nội dung đáp án “munmap()”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-121",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “SUSv2 → UNIX 98.” nhận diện đúng nội dung đáp án “UNIX 98”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-122",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “file offset → lseek().” nhận diện đúng nội dung đáp án “lseek()”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-123",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “user touches kernel memory → protection exception.” nhận diện đúng nội dung đáp án “Hardware exception”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-124",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “function calls/returns → stack.” nhận diện đúng nội dung đáp án “Stack”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-125",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “systems C → low-level control + efficient compilation.” nhận diện đúng nội dung đáp án “It combines efficient compiled code with low-level memory and data operations.”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-126",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “sockets + TCP/IP → 4.2BSD.” nhận diện đúng nội dung đáp án “4.2BSD”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-127",
+      "status": "fix",
+      "whyVi": "Thêm cách phân biệt ba tên viết tắt dễ lẫn trong lựa chọn."
+    },
+    {
+      "id": "LOS201-128",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đi từ tên read tới định nghĩa, bản mới dùng dấu hiệu trong đề để loại lựa chọn."
+    },
+    {
+      "id": "LOS201-129",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “C shell + Sun → Bill Joy.” nhận diện đúng nội dung đáp án “Bill Joy”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-130",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “cannot catch/ignore → SIGKILL.” nhận diện đúng nội dung đáp án “SIGKILL”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-131",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “packet routing → networking.” nhận diện đúng nội dung đáp án “Networking”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-132",
+      "status": "fix",
+      "whyVi": "Thêm phân biệt gửi signal với việc chắc chắn giết tiến trình."
+    },
+    {
+      "id": "LOS201-133",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “filename component → 255 bytes.” nhận diện đúng nội dung đáp án “255”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-134",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “vmlinuz → compressed kernel.” nhận diện đúng nội dung đáp án “Compressed”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-135",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “root directory → /.” nhận diện đúng nội dung đáp án “/”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-136",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Ctrl-C → SIGINT.” nhận diện đúng nội dung đáp án “SIGINT”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-137",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Korn → ksh.” nhận diện đúng nội dung đáp án “ksh”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-138",
+      "status": "fix",
+      "whyVi": "So sánh trực tiếp hai hậu tố chuẩn gần nhau trong đáp án."
+    },
+    {
+      "id": "LOS201-139",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “kernel networking software → protocol stack.” nhận diện đúng nội dung đáp án “Protocol stack”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-140",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Bourne again → bash.” nhận diện đúng nội dung đáp án “bash”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-141",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “BSD-Lite → AT&T code removed.” nhận diện đúng nội dung đáp án “AT&T code was removed”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-142",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “initial UNIX → Ken Thompson.” nhận diện đúng nội dung đáp án “Ken Thompson”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-143",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Linux inspiration → MINIX.” nhận diện đúng nội dung đáp án “Minix”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-144",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “stores another pathname → symbolic link.” nhận diện đúng nội dung đáp án “Symbolic link”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-145",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “exec → replace program image.” nhận diện đúng nội dung đáp án “It is replaced”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-146",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “group names/GIDs → /etc/group.” nhận diện đúng nội dung đáp án “/etc/group”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-147",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “terminate caller without atexit → _exit().” nhận diện đúng nội dung đáp án “_exit()”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-148",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “anonymous mapping → zero-filled pages.” nhận diện đúng nội dung đáp án “Anonymous mapping”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-149",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “replace, not duplicate → execve().” nhận diện đúng nội dung đáp án “execve()”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-150",
+      "status": "fix",
+      "whyVi": "Mẹo hỗ trợ phân biệt execute với phương án listing filenames."
+    },
+    {
+      "id": "LOS201-151",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “named byte stream + unrelated processes → FIFO.” nhận diện đúng nội dung đáp án “FIFO”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-152",
+      "status": "fix",
+      "whyVi": "Nêu giao diện cụ thể và giữ giới hạn để không học thành khẳng định tuyệt đối."
+    },
+    {
+      "id": "LOS201-153",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “root UID → 0.” nhận diện đúng nội dung đáp án “0”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-154",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “collection of object modules → library.” nhận diện đúng nội dung đáp án “Library”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-155",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “show SysV IPC → ipcs.” nhận diện đúng nội dung đáp án “ipcs”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-156",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Linus university → Helsinki.” nhận diện đúng nội dung đáp án “Helsinki”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-157",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “GPL v1 → 1989.” nhận diện đúng nội dung đáp án “1989”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-158",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “runtime shared libraries → dynamic linker.” nhận diện đúng nội dung đáp án “The dynamic linker”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-159",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Stallman naming → GNU/Linux.” nhận diện đúng nội dung đáp án “GNU/Linux”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-160",
+      "status": "fix",
+      "whyVi": "Bổ sung tiêu chí shared/private thay vì chỉ gắn tên cờ."
+    },
+    {
+      "id": "LOS201-161",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “same memory region → shared memory.” nhận diện đúng nội dung đáp án “Shared Memory”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-162",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “hardware arbitration → device access.” nhận diện đúng nội dung đáp án “Device access”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-163",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “UNIX V7 shell → sh.” nhận diện đúng nội dung đáp án “sh (Bourne)”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-164",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “named pipe → FIFO.” nhận diện đúng nội dung đáp án “FIFO”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-165",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “shell + commands → XCU.” nhận diện đúng nội dung đáp án “XCU (Shell and Utilities)”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-166",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “disk supplements RAM → swap.” nhận diện đúng nội dung đáp án “Swap area”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-167",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “network/IP → packet; link → frame; TCP → segment.” nhận diện đúng nội dung đáp án “Packet”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-168",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “directory r → list names; x → traverse.” nhận diện đúng nội dung đáp án “Read”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-169",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “event notification → signal.” nhận diện đúng nội dung đáp án “Signal”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-170",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “BSD IPC → sockets.” nhận diện đúng nội dung đáp án “Sockets”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-171",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “virtual private computer abstraction → kernel.” nhận diện đúng nội dung đáp án “The kernel”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-172",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “final CSRG distribution → 4.4BSD-Lite Release 2 (1995).” nhận diện đúng nội dung đáp án “4.4BSD-Lite Release 2 (1995)”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-173",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “C designer → Dennis Ritchie.” nhận diện đúng nội dung đáp án “Dennis Ritchie”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-174",
+      "status": "fix",
+      "whyVi": "Thêm cách loại lệnh ld gần tên với ld.so."
+    },
+    {
+      "id": "LOS201-175",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “read-only executable pages → Text.” nhận diện đúng nội dung đáp án “Text”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-176",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “map file → mmap().” nhận diện đúng nội dung đáp án “mmap()”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-177",
+      "status": "fix",
+      "whyVi": "Tập trung vào tài nguyên IPC đề đang hỏi, tránh mở rộng sang quyền file không cần thiết."
+    },
+    {
+      "id": "LOS201-178",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “32V → VAX-11/780.” nhận diện đúng nội dung đáp án “VAX-11/780”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-179",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “starts / → absolute pathname.” nhận diện đúng nội dung đáp án “Absolute”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-180",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “FSF founding → 1985.” nhận diện đúng nội dung đáp án “1985”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-181",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “machine instructions → Text.” nhận diện đúng nội dung đáp án “Machine instructions”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-182",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “euid=0 → privileged/root process.” nhận diện đúng nội dung đáp án “Privileged process”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-183",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “different hosts IPC → socket.” nhận diện đúng nội dung đáp án “Socket”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-184",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “user → kernel service entry → controlled syscall/trap.” nhận diện đúng nội dung đáp án “A controlled system-call or trap instruction that enters the kernel”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-185",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “share/manage RAM → memory management.” nhận diện đúng nội dung đáp án “Memory management”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-186",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “running program instance → process.” nhận diện đúng nội dung đáp án “process”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-187",
+      "status": "fix",
+      "whyVi": "Giải thích dấu hiệu synchronization để phân biệt các thuật ngữ IPC."
+    },
+    {
+      "id": "LOS201-188",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “POSIX organization → IEEE.” nhận diện đúng nội dung đáp án “IEEE”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-189",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “UNIX first implementation → 1969.” nhận diện đúng nội dung đáp án “1969”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-190",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “first widely external → Sixth Edition.” nhận diện đúng nội dung đáp án “Sixth Edition”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-191",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “fork → logical duplicate, COW in practice.” nhận diện đúng nội dung đáp án “It is duplicated”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-192",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “GNU + Mach → Hurd.” nhận diện đúng nội dung đáp án “HURD”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-193",
+      "status": "fix",
+      "whyVi": "Thêm đối chiếu hai nhánh BSD dễ chọn nhầm."
+    },
+    {
+      "id": "LOS201-194",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “GNU compilers → GCC.” nhận diện đúng nội dung đáp án “GCC”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-195",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “Stallman extensible editor → Emacs.” nhận diện đúng nội dung đáp án “Emacs”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-196",
+      "status": "fix",
+      "whyVi": "Thêm phân biệt trực tiếp với lựa chọn một dấu chấm."
+    },
+    {
+      "id": "LOS201-197",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “old surviving distro → Slackware.” nhận diện đúng nội dung đáp án “Slackware”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-198",
+      "status": "fix",
+      "whyVi": "Dùng đúng cue Linux-specific của đề thay cho sharing flags không được nêu trong stem."
+    },
+    {
+      "id": "LOS201-199",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “1989 System V → SVR4.” nhận diện đúng nội dung đáp án “Release 4”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-200",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “high-speed no-copy IPC → shared memory.” nhận diện đúng nội dung đáp án “Shared Memory”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-201",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “1970 UNIX machine → PDP-11.” nhận diện đúng nội dung đáp án “PDP-11”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-202",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “related processes + unidirectional → pipe.” nhận diện đúng nội dung đáp án “Pipe”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-203",
+      "status": "fix",
+      "whyVi": "Thêm đối chiếu với phương án parent directory."
+    },
+    {
+      "id": "LOS201-204",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “username↔UID → /etc/passwd.” nhận diện đúng nội dung đáp án “/etc/passwd”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-205",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “shell → command interpreter.” nhận diện đúng nội dung đáp án “Command interpretation”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-206",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “1984 vendor standard → /usr/group.” nhận diện đúng nội dung đáp án “/usr/group”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-207",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “VM isolation → process/kernel protection.” nhận diện đúng nội dung đáp án “Process and kernel protection”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-208",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “GPL 2007 → v3.” nhận diện đúng nội dung đáp án “Version 3”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-209",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “third Austin partner → ISO/IEC.” nhận diện đúng nội dung đáp án “ISO/IEC”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-210",
+      "status": "fix",
+      "whyVi": "Đối chiếu mục tiêu hai bản BSD có trong đáp án."
+    },
+    {
+      "id": "LOS201-211",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “historical 2.6 mainline feature release → about 3 months.” nhận diện đúng nội dung đáp án “3 months”; không dùng vị trí đáp án."
+    },
+    {
+      "id": "LOS201-212",
+      "status": "fix",
+      "whyVi": "Làm rõ mô hình lịch sử đang hỏi, tránh hiểu mọi nhánh stable đều biến mất."
+    },
+    {
+      "id": "LOS201-213",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem và toàn bộ lựa chọn: mẹo “FSF purpose → GNU project.” nhận diện đúng nội dung đáp án “The GNU project”; không dùng vị trí đáp án."
+    }
+  ],
+  "changes": [
+    {
+      "id": "LOS201-14",
+      "tip": "OOM → chọn đủ hai ý: nhu cầu bộ nhớ vượt khả năng đáp ứng và kernel có thể giết tiến trình.",
+      "whyVi": "Câu chọn HAI; nêu rõ cả tình trạng thiếu bộ nhớ lẫn phản ứng có thể xảy ra."
+    },
+    {
+      "id": "LOS201-15",
+      "tip": "mmap thanh ghi vào user space → truy cập qua vùng ánh xạ, giảm việc gọi read/write cho từng thao tác.",
+      "whyVi": "Gắn trực tiếp lợi ích với thao tác mmap trong đề; bỏ lẫn lộn syscall với chuyển ngữ cảnh tiến trình.",
+      "reason": "mmap ánh xạ vùng thiết bị vào không gian user; ứng dụng có thể truy cập thanh ghi qua vùng ánh xạ thay vì gọi read/write cho từng thao tác.",
+      "references": [
+        {
+          "title": "Linux kernel: Userspace I/O HOWTO",
+          "url": "https://www.kernel.org/doc/html/latest/driver-api/uio-howto.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-18",
+      "tip": "Build system thay lắp ghép tay → chọn quản lý phụ thuộc gói và quản lý phiên bản phần mềm.",
+      "whyVi": "Nêu đủ hai loại khó khăn được giảm, loại lỗi phần cứng và cáp mạng."
+    },
+    {
+      "id": "LOS201-19",
+      "tip": "Real-time → phải đáp ứng đúng hạn đã quy định; “chạy nhanh nhất” hoặc CPU xung cao chưa đủ.",
+      "whyVi": "Thêm cách loại hai phương án tốc độ/xung nhịp thay vì chỉ lặp tên khái niệm."
+    },
+    {
+      "id": "LOS201-20",
+      "tip": "Đề so “industrial control” với thời gian trung bình → chọn độ trễ phản hồi xấu nhất, không phải kích thước hệ thống.",
+      "whyVi": "Dấu hiệu thực có trong đề là industrial control và average response time."
+    },
+    {
+      "id": "LOS201-22",
+      "tip": "Cross-development → phát triển trên host nhưng chương trình chạy trên target khác; không phải tăng tốc CPU.",
+      "whyVi": "Nêu host/target và loại nhầm mục đích phần cứng."
+    },
+    {
+      "id": "LOS201-25",
+      "tip": "Các symlink ls/cp/mount cùng trỏ BusyBox → xem tên gọi argv[0] để chọn applet.",
+      "whyVi": "Dùng đúng symlink trong đề và cơ chế chọn tiện ích."
+    },
+    {
+      "id": "LOS201-26",
+      "tip": "VFS → giao diện file chung cho user space + chuyển thao tác tới callback file_operations của driver.",
+      "whyVi": "Viết rõ cả hai vai trò được hỏi thay vì cụm dispatch callbacks ngắn khó hiểu."
+    },
+    {
+      "id": "LOS201-27",
+      "tip": "module_param → truyền giá trị lúc nạp module và đổi hành vi mà không biên dịch lại; chọn đủ hai ý.",
+      "whyVi": "Mẹo cũ chỉ nói load-time, thiếu lựa chọn không cần biên dịch lại."
+    },
+    {
+      "id": "LOS201-30",
+      "tip": "Linker-generated tables → gom các handler đã đăng ký rồi duyệt tự động; loại phương án phải viết danh sách tay.",
+      "whyVi": "Nối việc gom bảng với mục đích tự khám phá/gọi handler trong đề."
+    },
+    {
+      "id": "LOS201-35",
+      "tip": "BitBake require → chèn metadata bắt buộc từ file khác; thiếu file là lỗi, khác include tùy chọn.",
+      "whyVi": "Làm rõ cách nhận diện require thay vì chỉ gắn nhãn mandatory include.",
+      "references": [
+        {
+          "title": "BitBake: require directive",
+          "url": "https://docs.yoctoproject.org/bitbake/dev/bitbake-user-manual/bitbake-user-manual-metadata.html#require-directive"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-38",
+      "tip": "/dev/console trong rootfs tối thiểu → đường nhập/xuất chuẩn cho tương tác, không phải mạng hay nạp thư viện.",
+      "whyVi": "Đổi mẹo đảo chiều thành cue /dev/console → đúng chức năng đề hỏi."
+    },
+    {
+      "id": "LOS201-42",
+      "tip": "Đề hỏi shared condition → mutex phải bảo vệ cả lúc kiểm tra và cập nhật điều kiện dùng chung.",
+      "whyVi": "Chỉ rõ thao tác cần bảo vệ, không chỉ nhắc lại tên condition variable."
+    },
+    {
+      "id": "LOS201-49",
+      "tip": "Kernel debugging → chọn tác động có thể lan toàn hệ thống + công cụ còn hạn chế lúc early boot.",
+      "whyVi": "Nêu đủ hai đặc điểm của câu chọn HAI."
+    },
+    {
+      "id": "LOS201-57",
+      "tip": "MTD → API chung cho bộ nhớ flash + che thao tác phần cứng riêng; không thay toàn bộ VFS.",
+      "whyVi": "Mẹo cũ chỉ nói flash abstraction, chưa giúp nhận đủ hai phương án."
+    },
+    {
+      "id": "LOS201-61",
+      "tip": "Đề ghi legacy + driver dưới drivers/ → chọn drivers/built-in.o; đừng chọn object của usr/ hay arch/.",
+      "whyVi": "Thêm dấu hiệu đường dẫn drivers/ để phân biệt các đáp án cùng tên built-in.o."
+    },
+    {
+      "id": "LOS201-62",
+      "tip": "autoconf.h → các macro CONFIG_* để mã C đọc cấu hình kernel, không phải vùng lưu tham số boot.",
+      "whyVi": "Đổi hướng mẹo cho khớp câu hỏi chức năng của file."
+    },
+    {
+      "id": "LOS201-65",
+      "tip": "/proc/<pid>/maps → danh sách các vùng ánh xạ bộ nhớ của tiến trình; “maps” không phải thống kê CPU.",
+      "whyVi": "Mẹo cũ đi từ thông tin sang tên file, bản mới đi đúng hướng câu hỏi."
+    },
+    {
+      "id": "LOS201-66",
+      "tip": "Yocto layers → tách metadata bo mạch/BSP, distro và ứng dụng để tùy biến độc lập.",
+      "whyVi": "Thay separate concerns chung chung bằng các thành phần đúng trong lựa chọn."
+    },
+    {
+      "id": "LOS201-69",
+      "tip": "Cải thiện real-time → chọn giảm đoạn kernel không cho preempt và dùng chính sách lập lịch real-time.",
+      "whyVi": "Diễn đạt đủ hai kỹ thuật theo nội dung đáp án, tránh chỉ nhớ RT Linux."
+    },
+    {
+      "id": "LOS201-70",
+      "tip": "Chu kỳ 5 ms là deadline → kiểm tra độ trễ scheduler và interrupt xấu nhất, không lấy thời gian trung bình.",
+      "whyVi": "Gắn cue số liệu 5 ms với đúng tiêu chí kiểm định."
+    },
+    {
+      "id": "LOS201-71",
+      "tip": "Đề chia bootloader–kernel–library–app → các lớp thay đổi độc lập nhờ giao diện được xác định rõ.",
+      "whyVi": "Mẹo cũ chỉ nhắc interfaces mà thiếu lợi ích phát triển độc lập."
+    },
+    {
+      "id": "LOS201-74",
+      "tip": "BusyBox giảm rootfs → nhiều tiện ích dùng chung một binary và mã dùng chung, không phải nén kernel.",
+      "whyVi": "Câu hỏi yêu cầu cơ chế giảm kích thước, không chỉ tên multicall."
+    },
+    {
+      "id": "LOS201-75",
+      "tip": "BusyBox tiết kiệm lưu trữ → nhiều tiện ích chung một executable, loại phương án nén RAM hay bỏ driver.",
+      "whyVi": "Làm rõ cơ chế để chọn đáp án theo ý nghĩa thay vì nhãn multicall."
+    },
+    {
+      "id": "LOS201-76",
+      "tip": "UART PL011 của bài lab → bật hỗ trợ PL011 và chọn console=ttyAMA0,115200; cần đúng cả driver lẫn console.",
+      "whyVi": "Mẹo cũ chỉ nêu tên cổng, thiếu cặp cấu hình và baud trong lựa chọn."
+    },
+    {
+      "id": "LOS201-78",
+      "tip": "Sản phẩm dùng nhiều năm → xem thời hạn nhận bản vá bảo trì/bảo mật của Yocto release.",
+      "whyVi": "Thay tên lifecycle chung chung bằng tác động thực tế cần chọn."
+    },
+    {
+      "id": "LOS201-80",
+      "tip": "BSP layers → phần hỗ trợ và cấu hình riêng cho bo mạch; không thay kernel hay cross-compiler.",
+      "whyVi": "Mẹo cũ chỉ bung chữ BSP, không nêu vì sao layer có ích."
+    },
+    {
+      "id": "LOS201-82",
+      "tip": "Interrupt → sự kiện làm luồng chạy tạm chuyển sang xử lý ngắt rồi tiếp tục; không phải lệnh shell hay file.",
+      "whyVi": "Mô tả đúng đặc trưng được hỏi, tránh chỉ nói asynchronous không có trong lựa chọn."
+    },
+    {
+      "id": "LOS201-84",
+      "tip": "Crash đúng lúc open thiết bị → kiểm tra con trỏ hàm không hợp lệ hoặc lỗi trong đường callback .open.",
+      "whyVi": "Đưa trọng tâm về thời điểm crash và đường thực thi gây lỗi."
+    },
+    {
+      "id": "LOS201-87",
+      "tip": "TFTP kernel + NFS rootfs khi phát triển → thử nhanh không flash lại + sửa file target trực tiếp từ host.",
+      "whyVi": "Mẹo cũ thiếu lợi ích thứ hai của câu chọn HAI."
+    },
+    {
+      "id": "LOS201-90",
+      "tip": "Đề ghi quên debug information → GDB khó thấy dòng nguồn và biến; chương trình vẫn có thể chạy.",
+      "whyVi": "Mẹo cũ khuyên thêm -g nhưng chưa trả lời hậu quả mà câu hỏi yêu cầu."
+    },
+    {
+      "id": "LOS201-93",
+      "tip": "arch/ → chọn mã startup/init riêng theo CPU và các triển khai phụ thuộc máy/kiến trúc.",
+      "whyVi": "Nêu đủ hai vai trò thay vì nhãn architecture-specific code chung."
+    },
+    {
+      "id": "LOS201-95",
+      "tip": "“final uncompressed ELF” → vmlinux; “legacy built-in aggregation” → built-in.o. Chọn hai tên đó.",
+      "whyVi": "Theo đúng hai vế và thứ tự diễn đạt của câu hiện tại."
+    },
+    {
+      "id": "LOS201-100",
+      "tip": "“Deterministic response over fairness” → ưu tiên chính sách lập lịch real-time, không phải time-sharing/batch.",
+      "whyVi": "Trích cue đối lập thực có trong đề để loại nhóm chính sách không phù hợp."
+    },
+    {
+      "id": "LOS201-103",
+      "tip": "Chỉ đổi biến U-Boot → setenv; saveenv là lưu thay đổi bền qua lần khởi động sau.",
+      "whyVi": "Thêm phân biệt modify/save vì cả hai lệnh cùng có trong đáp án."
+    },
+    {
+      "id": "LOS201-106",
+      "tip": "Kernel instrumentation → quan sát đường thực thi + tương tác subsystem; không tự tối ưu mã hay thay profiler.",
+      "whyVi": "Chỉ rõ đủ hai mục tiêu và loại hai khả năng tự động không được bảo đảm."
+    },
+    {
+      "id": "LOS201-110",
+      "tip": "ECC: nhớ hai chữ chức năng “detect + correct” lỗi bit; không phải nén dữ liệu hay tăng CPU.",
+      "whyVi": "Mẹo cũ chỉ bung tên ECC, bản mới giúp chọn đúng vai trò."
+    },
+    {
+      "id": "LOS201-114",
+      "tip": "LSB → tương thích binary giữa các distro phù hợp chuẩn; đừng lẫn với chỉ tương thích mã nguồn.",
+      "whyVi": "Hai phương án binary/source gần nhau nên thêm tiêu chí phân biệt."
+    },
+    {
+      "id": "LOS201-127",
+      "tip": "Header definitions → Base Definitions (XBD); XCU mới là shell/utilities, XSH là giao diện hệ thống.",
+      "whyVi": "Thêm cách phân biệt ba tên viết tắt dễ lẫn trong lựa chọn."
+    },
+    {
+      "id": "LOS201-128",
+      "tip": "Đề hỏi đọc qua file descriptor → read(); printf/scanf là stdio, malloc là cấp phát bộ nhớ.",
+      "whyVi": "Mẹo cũ đi từ tên read tới định nghĩa, bản mới dùng dấu hiệu trong đề để loại lựa chọn."
+    },
+    {
+      "id": "LOS201-132",
+      "tip": "Đề hỏi gửi signal tới process → kill(); tên kill không có nghĩa lúc nào cũng kết thúc tiến trình.",
+      "whyVi": "Thêm phân biệt gửi signal với việc chắc chắn giết tiến trình."
+    },
+    {
+      "id": "LOS201-138",
+      "tip": "POSIX real-time/async I/O → 1003.1b; threads mới là 1003.1c.",
+      "whyVi": "So sánh trực tiếp hai hậu tố chuẩn gần nhau trong đáp án."
+    },
+    {
+      "id": "LOS201-150",
+      "tip": "Quyền x trên directory → tra cứu/traverse để truy cập theo tên; liệt kê tên là quyền r.",
+      "whyVi": "Mẹo hỗ trợ phân biệt execute với phương án listing filenames."
+    },
+    {
+      "id": "LOS201-152",
+      "tip": "Universality of I/O → nhiều loại file dùng chung open/read/write/close qua descriptor; không phải mọi thao tác đều hợp lệ.",
+      "whyVi": "Nêu giao diện cụ thể và giữ giới hạn để không học thành khẳng định tuyệt đối."
+    },
+    {
+      "id": "LOS201-160",
+      "tip": "IPC qua mapping → chọn shared/MAP_SHARED; private tạo thay đổi riêng, không chia sẻ cập nhật theo cách đó.",
+      "whyVi": "Bổ sung tiêu chí shared/private thay vì chỉ gắn tên cờ."
+    },
+    {
+      "id": "LOS201-174",
+      "tip": "“Shared libraries at run time” → ld.so; ld là linker lúc build, gcc là compiler.",
+      "whyVi": "Thêm cách loại lệnh ld gần tên với ld.so."
+    },
+    {
+      "id": "LOS201-177",
+      "tip": "Quyền System V IPC → effective UID; loại real UID, saved UID và login UID trong các lựa chọn.",
+      "whyVi": "Tập trung vào tài nguyên IPC đề đang hỏi, tránh mở rộng sang quyền file không cần thiết."
+    },
+    {
+      "id": "LOS201-187",
+      "tip": "IPC + đồng bộ quyền dùng tài nguyên/bộ đếm → semaphore; socket là kênh truyền, descriptor chỉ là số định danh.",
+      "whyVi": "Giải thích dấu hiệu synchronization để phân biệt các thuật ngữ IPC."
+    },
+    {
+      "id": "LOS201-193",
+      "tip": "BSD nhấn mạnh portability/nhiều phần cứng → NetBSD; security mới là OpenBSD.",
+      "whyVi": "Thêm đối chiếu hai nhánh BSD dễ chọn nhầm."
+    },
+    {
+      "id": "LOS201-196",
+      "tip": "Thư mục cha → hai chấm “..”; một chấm “.” là chính thư mục đang xét.",
+      "whyVi": "Thêm phân biệt trực tiếp với lựa chọn một dấu chấm."
+    },
+    {
+      "id": "LOS201-198",
+      "tip": "Đề nhấn mạnh Linux-specific để tạo process/thread → clone(); execve thay chương trình, wait chờ tiến trình.",
+      "whyVi": "Dùng đúng cue Linux-specific của đề thay cho sharing flags không được nêu trong stem.",
+      "references": [
+        {
+          "title": "Linux man-pages: clone",
+          "url": "https://man7.org/linux/man-pages/man2/clone.2.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-203",
+      "tip": "Chính thư mục đang xét → một chấm “.”; “..” đi lên thư mục cha.",
+      "whyVi": "Thêm đối chiếu với phương án parent directory."
+    },
+    {
+      "id": "LOS201-210",
+      "tip": "BSD nhấn mạnh security → OpenBSD; portability trên nhiều kiến trúc mới là NetBSD.",
+      "whyVi": "Đối chiếu mục tiêu hai bản BSD có trong đáp án."
+    },
+    {
+      "id": "LOS201-212",
+      "tip": "Bỏ mô hình một nhánh số chẵn ổn định/một nhánh số lẻ phát triển → mốc dòng Linux 2.6.",
+      "whyVi": "Làm rõ mô hình lịch sử đang hỏi, tránh hiểu mọi nhánh stable đều biến mất."
+    }
+  ],
+  "hardKeyErrors": [],
+  "summary": {
+    "tipChanges": 54,
+    "reasonChanges": 1,
+    "unrelatedOrMisassignedReasonsFound": 0
+  }
+}

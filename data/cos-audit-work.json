@@ -1,0 +1,4082 @@
+[
+  {
+    "id": "COS201-800",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (800).png",
+    "question": "Why do modern codes outperform simple codes?",
+    "options": [
+      "Use more bandwidth",
+      "Use structured redundancy",
+      "Use less power",
+      "Use fewer bits"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f1e2cee1e040255d76862ce0.webp",
+    "noteImage": "./assets/5dc6547f766c40163eab7f44.webp"
+  },
+  {
+    "id": "COS201-801",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (801).png",
+    "question": "If a variable-length code is not prefix-free, which conclusion is always valid?",
+    "options": [
+      "Work normally",
+      "Become ambiguous",
+      "Increase speed",
+      "Reduce noise",
+      "Instantaneous decoding is not guaranteed; the code may still be uniquely decodable with lookahead."
+    ],
+    "answer": [
+      4
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8813f4d5dba167b50e1d1cfd.webp",
+    "noteImage": "./assets/47257a8e77db41308b14fd2b.webp"
+  },
+  {
+    "id": "COS201-802",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (802).png",
+    "question": "Why does BER decrease exponentially with Eb/N0?",
+    "options": [
+      "Linear relation",
+      "Q-function behavior",
+      "Noise decreases linearly",
+      "Signal increases linearly"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/155ad059b1cbbf726ce821a8.webp",
+    "noteImage": "./assets/2c07b9c79799b28b6325e999.webp"
+  },
+  {
+    "id": "COS201-803",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (803).png",
+    "question": "In angle-modulated signals, information is contained in:",
+    "options": [
+      "Amplitude variations",
+      "Frequency or phase variations",
+      "Power variations",
+      "DC components"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d7ff500babc5b583866c66a3.webp",
+    "noteImage": "./assets/1696c83f9a2c5b6214fb55d6.webp"
+  },
+  {
+    "id": "COS201-804",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (804).png",
+    "question": "What is the main advantage of digital communication over analog?",
+    "options": [
+      "Higher bandwidth",
+      "Noise accumulation immunity",
+      "Lower cost always",
+      "Simpler circuits"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a8463b8d1d36ea3cdb89fc3f.webp",
+    "noteImage": "./assets/3bd4277cf4bec09acc8d2386.webp"
+  },
+  {
+    "id": "COS201-805",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (805).png",
+    "question": "If a signal is sampled at exactly the Nyquist rate, what is the practical limitation?",
+    "options": [
+      "Perfect reconstruction is impossible",
+      "Spectral replicas overlap",
+      "No guard band for filter roll-off",
+      "Signal amplitude is reduced"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/1b578260eb2d8680a5368c81.webp",
+    "noteImage": "./assets/46ada43bcd069e4a1c67aabc.webp"
+  },
+  {
+    "id": "COS201-806",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (806).png",
+    "question": "A PLL is considered locked when:",
+    "options": [
+      "Frequency differs",
+      "Phase error is constant",
+      "Phase error is zero or constant",
+      "Signal amplitude is zero"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/0a843f21002c2e6d51d5d4e1.webp",
+    "noteImage": "./assets/f586440da086b09c1ac88b43.webp"
+  },
+  {
+    "id": "COS201-807",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (807).png",
+    "question": "Why is matched filter equivalent to a correlator?",
+    "options": [
+      "It integrates noise",
+      "It compares signal with template",
+      "It amplifies signal",
+      "It removes ISI"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/94611db22d69fa8f2adf6a59.webp",
+    "noteImage": "./assets/3f6a37becd8f54877f6bb3e1.webp"
+  },
+  {
+    "id": "COS201-808",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (808).png",
+    "question": "A mixer produces which frequency components?",
+    "options": [
+      "Only original frequency",
+      "Sum and difference frequencies",
+      "Only harmonic frequencies",
+      "DC component"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/66ef8d9d18233ee8ea14fcaa.webp",
+    "noteImage": "./assets/a19945cc4d7f9dce86dece5d.webp"
+  },
+  {
+    "id": "COS201-809",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (809).png",
+    "question": "Why is the receiver generally more complex than the transmitter?",
+    "options": [
+      "It consumes more energy",
+      "It includes more hardware components",
+      "It must process weak signals and compensate for channel impairments",
+      "It operates at higher frequencies",
+      "It does not use modulation"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/78c1bf31cb569f3a58709c76.webp",
+    "noteImage": "./assets/47108ecc74cf34918dee8681.webp"
+  },
+  {
+    "id": "COS201-810",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (810).png",
+    "question": "PCM bandwidth requirement increases with:",
+    "options": [
+      "Sampling rate",
+      "Bit depth",
+      "Number of channels",
+      "All of the above"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/77090d79d4b46e623784db00.webp",
+    "noteImage": "./assets/eb6b3a8832b9d1eb650640e9.webp"
+  },
+  {
+    "id": "COS201-811",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (811).png",
+    "question": "The Nyquist rate is defined as:",
+    "options": [
+      "fs = W",
+      "fs = 2W",
+      "fs = 4W",
+      "fs = W/2"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a7e7d1f64db90f7ccb307f54.webp",
+    "noteImage": "./assets/11696050d6c1fcdbb283d01d.webp"
+  },
+  {
+    "id": "COS201-812",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (812).png",
+    "question": "Delta Modulation transmits:",
+    "options": [
+      "Full amplitude",
+      "Only difference between samples",
+      "Frequency only",
+      "Phase only"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/ebd4a52cb32a6f311594990b.webp",
+    "noteImage": "./assets/06fcad75176ff9d8af9bc941.webp"
+  },
+  {
+    "id": "COS201-813",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (813).png",
+    "question": "Which of the following is NOT a benefit of using a carrier?",
+    "options": [
+      "Efficient radiation",
+      "Frequency separation of signals",
+      "Reduced bandwidth",
+      "Long-distance transmission"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f121349766234d40f26006fa.webp",
+    "noteImage": "./assets/44ed9cb71a27d52563a7fb97.webp"
+  },
+  {
+    "id": "COS201-814",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (814).png",
+    "question": "Why is FSK robust to nonlinear amplifiers?",
+    "options": [
+      "Uses phase",
+      "Uses frequency",
+      "Constant amplitude",
+      "Uses I/Q"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9417ec0ed70890ec9bd4a8bd.webp",
+    "noteImage": "./assets/269cdedafd5db7d097093d2c.webp"
+  },
+  {
+    "id": "COS201-815",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (815).png",
+    "question": "Which requirement of conventional static Huffman coding can be inconvenient when source statistics are unavailable or change rapidly?",
+    "options": [
+      "High noise",
+      "Requires full source statistics",
+      "Low efficiency",
+      "High bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/3c8fe98625bb44b2da9de9a8.webp",
+    "noteImage": "./assets/252d99a5f341a31ca48d0e7b.webp"
+  },
+  {
+    "id": "COS201-816",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (816).png",
+    "question": "FM noise power grows proportional to:",
+    "options": [
+      "W",
+      "W²",
+      "W³",
+      "1/W"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/446a37f8de34b4027b8d5218.webp",
+    "noteImage": "./assets/dee30cb96bad6f3876040ea9.webp"
+  },
+  {
+    "id": "COS201-817",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (817).png",
+    "question": "Why is OFDM effective in multipath channels?",
+    "options": [
+      "Uses amplitude",
+      "Uses phase",
+      "Splits signal into narrow subcarriers",
+      "Uses noise"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f522f65416f942cbbcc5e7ea.webp",
+    "noteImage": "./assets/b9f00ad7d471bfe40b542e1c.webp"
+  },
+  {
+    "id": "COS201-818",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (818).png",
+    "question": "What is the primary effect of noise in a communication system?",
+    "options": [
+      "It increases transmission speed",
+      "It reduces power consumption",
+      "It limits system performance",
+      "It improves signal quality",
+      "It increases bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/33050a22cf59cae0465f7065.webp",
+    "noteImage": "./assets/02cd92795225c05647f49c63.webp"
+  },
+  {
+    "id": "COS201-819",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (819).png",
+    "question": "White noise has which property?",
+    "options": [
+      "Limited bandwidth",
+      "Flat power spectral density",
+      "Zero power",
+      "Time-varying amplitude only"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fa904ed9e727efdb238cf932.webp",
+    "noteImage": "./assets/670707513103904bb28d9e38.webp"
+  },
+  {
+    "id": "COS201-820",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (820).png",
+    "question": "A filter is defined as:",
+    "options": [
+      "A noise generator",
+      "A frequency-selective system",
+      "A signal amplifier",
+      "A digital encoder",
+      "A storage device"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c64bdb1846a1cee98ca7dbb2.webp",
+    "noteImage": "./assets/17765b14d92d14dc8ef8e43d.webp"
+  },
+  {
+    "id": "COS201-821",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (821).png",
+    "question": "In QAM, signals are separated using:",
+    "options": [
+      "High-pass filters",
+      "Low-pass filters after demodulation",
+      "Amplifiers",
+      "Noise filters"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/893fa40f5407491b73da9f9d.webp",
+    "noteImage": "./assets/ca02a0d5441fc5da9cb97f1c.webp"
+  },
+  {
+    "id": "COS201-822",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (822).png",
+    "question": "Standard AM transmits:",
+    "options": [
+      "Only sidebands",
+      "Only carrier",
+      "Carrier and sidebands",
+      "Noise only"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/efdcf549efb0861777aedfb6.webp",
+    "noteImage": "./assets/90b1e1c54c72fd9caacda7e5.webp"
+  },
+  {
+    "id": "COS201-823",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (823).png",
+    "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+    "options": [
+      "It is random",
+      "It is deterministic",
+      "It is weaker",
+      "It is filtered",
+      "It is structured interference from neighboring symbols caused by channel memory."
+    ],
+    "answer": [
+      4
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2a06da6144828dd3406e0c5f.webp",
+    "noteImage": "./assets/440a675f57bb4818861abe03.webp"
+  },
+  {
+    "id": "COS201-824",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (824).png",
+    "question": "Multiplexing is defined as:",
+    "options": [
+      "Splitting signals",
+      "Amplifying signals",
+      "Combining multiple signals into one channel",
+      "Removing noise"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/20d6451a0a1a6ee684e216e6.webp",
+    "noteImage": "./assets/44001c4dea7673ffacb4c850.webp"
+  },
+  {
+    "id": "COS201-825",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (825).png",
+    "question": "The main advantage of SSB is:",
+    "options": [
+      "Simplicity",
+      "Power loss",
+      "Bandwidth efficiency",
+      "Noise increase"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/68a4f237460afbac0890306f.webp",
+    "noteImage": "./assets/13be9dc2b1b959f599f26dd6.webp"
+  },
+  {
+    "id": "COS201-826",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (826).png",
+    "question": "A Gaussian distribution is fully determined by:",
+    "options": [
+      "One parameter",
+      "Two parameters",
+      "Three parameters",
+      "Four parameters"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9d68e097773b26a155939f59.webp",
+    "noteImage": "./assets/482c3871613ac3f35aec077c.webp"
+  },
+  {
+    "id": "COS201-827",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (827).png",
+    "question": "The 3 dB penalty in BFSK is due to:",
+    "options": [
+      "Noise",
+      "Orthogonal signaling",
+      "Frequency shift",
+      "Bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/1da0e64935583c8645b4135e.webp",
+    "noteImage": "./assets/96b61a0f022f3e59cd5a3f02.webp"
+  },
+  {
+    "id": "COS201-828",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (828).png",
+    "question": "What is a key advantage of the layered approach in communication system design?",
+    "options": [
+      "It increases signal strength",
+      "It simplifies system design and allows independent development of system components",
+      "It eliminates the need for modulation",
+      "It reduces transmission delay",
+      "It increases bandwidth efficiency"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9cbad24811a6fc828b1afb58.webp",
+    "noteImage": "./assets/24661be3d87d47c9c2d4b891.webp"
+  },
+  {
+    "id": "COS201-829",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (829).png",
+    "question": "If LZ dictionary grows larger, compression ratio will:",
+    "options": [
+      "Decrease",
+      "Increase",
+      "Stay same",
+      "Become zero"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fc42cb2c4b91a6c1157f28c2.webp",
+    "noteImage": "./assets/54ef1b71227d2a25613fa91a.webp"
+  },
+  {
+    "id": "COS201-830",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (830).png",
+    "question": "An ideal low-pass filter has which characteristic?",
+    "options": [
+      "Smooth transition",
+      "Exponential response",
+      "Rectangular frequency response",
+      "Random response",
+      "Linear response"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/ca22f19af63d888c86348fcb.webp",
+    "noteImage": "./assets/5008b6c1b9e5481e2a8a6e87.webp"
+  },
+  {
+    "id": "COS201-831",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (831).png",
+    "question": "What does the cumulative distribution function (CDF) represent?",
+    "options": [
+      "Instantaneous value",
+      "Accumulated probability up to a value",
+      "Signal power",
+      "Frequency content"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/24562a46d2eccda07de472f9.webp",
+    "noteImage": "./assets/8aca9f251bb3575f097c448f.webp"
+  },
+  {
+    "id": "COS201-832",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (832).png",
+    "question": "Why does matched filter maximize SNR?",
+    "options": [
+      "It removes noise",
+      "It matches signal spectrum",
+      "It increases bandwidth",
+      "It reduces energy"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c94c7255bbdc55d95b7365c2.webp",
+    "noteImage": "./assets/13360e2bb81fd044faa40bac.webp"
+  },
+  {
+    "id": "COS201-833",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (833).png",
+    "question": "If subcarriers in OFDM are not orthogonal, result is:",
+    "options": [
+      "Noise reduction",
+      "Interference",
+      "Bandwidth reduction",
+      "Perfect signal"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/42c46ad915945c45d5f2ea27.webp",
+    "noteImage": "./assets/e74f208c6f02d10b6c3d00ad.webp"
+  },
+  {
+    "id": "COS201-834",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (834).png",
+    "question": "Why is information defined using a logarithmic function?",
+    "options": [
+      "To simplify equations",
+      "To satisfy additivity property",
+      "To reduce noise",
+      "To increase entropy"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/55ed2813c1fe9c2f303b7171.webp",
+    "noteImage": "./assets/4504f4c275acd83bb005f196.webp"
+  },
+  {
+    "id": "COS201-835",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (835).png",
+    "question": "A frequency discriminator is used for:",
+    "options": [
+      "Modulation",
+      "Amplification",
+      "Demodulation of FM signals",
+      "Filtering"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a332c112b190e9d29db79383.webp",
+    "noteImage": "./assets/90df596263cfc3b120eddc06.webp"
+  },
+  {
+    "id": "COS201-836",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (836).png",
+    "question": "FM threshold effect typically occurs around:",
+    "options": [
+      "0 dB",
+      "5 dB",
+      "10 dB",
+      "20 dB"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/01fb6bdd8321ff75a3993428.webp",
+    "noteImage": "./assets/ecadcca9a4946a0c187b11c2.webp"
+  },
+  {
+    "id": "COS201-837",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (837).png",
+    "question": "ISI mainly occurs due to:",
+    "options": [
+      "Infinite bandwidth",
+      "Band-limited channels",
+      "Sampling",
+      "Encoding"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/0d1f1d5139a521d31caf67fc.webp",
+    "noteImage": "./assets/a2ec7b8fb8c52f6ed4ce015c.webp"
+  },
+  {
+    "id": "COS201-838",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (838).png",
+    "question": "In frequency modulation (FM), which quantity varies with the message signal?",
+    "options": [
+      "Phase only",
+      "Frequency",
+      "Amplitude",
+      "Power"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c7e1107b1646709734b286ea.webp",
+    "noteImage": "./assets/16114ffd8fbd98e5603df3fb.webp"
+  },
+  {
+    "id": "COS201-839",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (839).png",
+    "question": "The Fourier transform of a signal exists if the signal is:",
+    "options": [
+      "periodic",
+      "Absolutely integrable",
+      "Constant",
+      "Discrete",
+      "Linear"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d1a54fcca437d95e22cdf71f.webp",
+    "noteImage": "./assets/b810b36235b866830191bbd9.webp"
+  },
+  {
+    "id": "COS201-840",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (840).png",
+    "question": "The condition for BIBO stability in an LTI system is:",
+    "options": [
+      "Finite frequency response",
+      "Finite impulse response energy",
+      "Absolutely integrable impulse response",
+      "Periodic impulse response",
+      "Linear phase response"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/79f6746f22188ec5dc036bf7.webp",
+    "noteImage": "./assets/19a8ab0b56ae48bf335e363e.webp"
+  },
+  {
+    "id": "COS201-841",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (841).png",
+    "question": "Conditional probability is used to:",
+    "options": [
+      "Compute total probability",
+      "Evaluate probability given prior information",
+      "Eliminate noise",
+      "Increase bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/05e88bd6a3be2f252d461245.webp",
+    "noteImage": "./assets/30792aff163dc2903c2f0709.webp"
+  },
+  {
+    "id": "COS201-842",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (842).png",
+    "question": "The bandwidth of NBFM is approximately:",
+    "options": [
+      "W",
+      "2W",
+      "Infinite",
+      "W/2"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/3a70d561b3812fa3c3b05b2f.webp",
+    "noteImage": "./assets/7e972898780262e177643634.webp"
+  },
+  {
+    "id": "COS201-843",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (843).png",
+    "question": "Which property is true for a valid CDF?",
+    "options": [
+      "It decreases",
+      "It is non-decreasing",
+      "It is negative",
+      "It is constant"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/0bd8c251b5d58600dd2bda0c.webp",
+    "noteImage": "./assets/09324fbd5c08a010bd2b49f2.webp"
+  },
+  {
+    "id": "COS201-844",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (844).png",
+    "question": "What is the primary function of the transmitter?",
+    "options": [
+      "To generate the message signal",
+      "To store transmitted information",
+      "To convert the message into a signal suitable for transmission",
+      "To detect noise in the channel",
+      "To deliver the message to the destination"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cea4defe6e8df50c47714693.webp",
+    "noteImage": "./assets/0eb07da6000e4505eb03da27.webp"
+  },
+  {
+    "id": "COS201-845",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (845).png",
+    "question": "Maximum efficiency of AM (Figure of Merit) is:",
+    "options": [
+      "1",
+      "1/2",
+      "1/3",
+      "2"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/88a7424d9843fbb641154218.webp",
+    "noteImage": "./assets/cf37c98ea08e47ff2d752865.webp"
+  },
+  {
+    "id": "COS201-846",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (846).png",
+    "question": "Time shifting in the time domain corresponds to what in the frequency domain?",
+    "options": [
+      "Amplitude scaling",
+      "Phase shift",
+      "Frequency scaling",
+      "Convolution",
+      "Noise addition"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9c937f8b5246dfde6a1d5f4c.webp",
+    "noteImage": "./assets/d3f00f99cd5d07e809281277.webp"
+  },
+  {
+    "id": "COS201-847",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (847).png",
+    "question": "If FFT is used at receiver, it performs:",
+    "options": [
+      "Modulation",
+      "Demultiplexing subcarriers",
+      "Noise removal",
+      "Amplification"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/e57cf146e5258b4e3b12efb1.webp",
+    "noteImage": "./assets/f00833683844d3672987e1e6.webp"
+  },
+  {
+    "id": "COS201-848",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (848).png",
+    "question": "Standard deviation is:",
+    "options": [
+      "Variance squared",
+      "Square root of variance",
+      "Sum of variance",
+      "Log of variance"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/5cdf3c125b2100de9c997d77.webp",
+    "noteImage": "./assets/6dac8c995db6839ec7eb876c.webp"
+  },
+  {
+    "id": "COS201-849",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (849).png",
+    "question": "Increasing sampling rate in DM helps to:",
+    "options": [
+      "Increase noise",
+      "Reduce slope overload",
+      "Increase distortion",
+      "Reduce bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cf7a2fa90e5bb17abd65a9a9.webp",
+    "noteImage": "./assets/28151ac448173c15988d4cfc.webp"
+  },
+  {
+    "id": "COS201-851",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (851).png",
+    "question": "In coherent detection, if the local oscillator has a 90-degree phase error (phi = 900), the recovered output will be:",
+    "options": [
+      "Inverted",
+      "The same as input",
+      "Zero",
+      "Doubled"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b8bfcfa1d35e49e7d52992da.webp",
+    "noteImage": "./assets/5da9d5c2f41b24f01b5efa83.webp"
+  },
+  {
+    "id": "COS201-852",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (852).png",
+    "question": "Chapter 1 serves as an introduction to establish the foundation for later chapters on:",
+    "options": [
+      "History of the internet.",
+      "Hardware manufacturing only.",
+      "Signal representation, modulation, and noise.",
+      "Programming languages."
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d30a21850207407e080abd38.webp",
+    "noteImage": "./assets/9692e1e1fa260cba3af9c450.webp"
+  },
+  {
+    "id": "COS201-853",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (853).png",
+    "question": "The main drawback of an FIR filter is that it:",
+    "options": [
+      "Cannot have linear phase.",
+      "Is inherently unstable.",
+      "Requires a large number of coefficients for sharp transitions.",
+      "Is only used for analog signals."
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/6a567f3b76c50ff299bcbe7d.webp",
+    "noteImage": "./assets/3e9346fecb96ce558a604fc3.webp"
+  },
+  {
+    "id": "COS201-854",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (854).png",
+    "question": "Which of the following is a \"Channel Impairment\" mentioned in the slides?",
+    "options": [
+      "Propagation loss",
+      "Up-conversion",
+      "Source coding",
+      "Demodulation"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/7547f9aa550827e1eeb1b82d.webp",
+    "noteImage": "./assets/1af87d0c43a5d1a750f9e045.webp"
+  },
+  {
+    "id": "COS201-855",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (855).png",
+    "question": "A complex envelope g_tilde(t) is defined as:",
+    "options": [
+      "a(t) *",
+      "g_l(t) + j*g_Q(t).",
+      "The Fourier transform of g(t).",
+      "g_l(t) - j*g_Q(t)."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/0dced7170bc759f72dcb2742.webp",
+    "noteImage": "./assets/71983cd7b0dcdf6b93b75152.webp"
+  },
+  {
+    "id": "COS201-856",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (856).png",
+    "question": "How many layers are in the well-known OSI model?",
+    "options": [
+      "7",
+      "3",
+      "9",
+      "4"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cebba4b5eb796b63c2eaba90.webp",
+    "noteImage": "./assets/979f472ca4b0c8750f92ea1b.webp"
+  },
+  {
+    "id": "COS201-857",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (857).png",
+    "question": "VSB modulation is described as a compromise between:",
+    "options": [
+      "SSB and conventional AM",
+      "TDM and FDM",
+      "ASK and PSK",
+      "FM and AM"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9b44ae333c7e195e35ab648b.webp",
+    "noteImage": "./assets/ec1dd232d547c2a2bc2a8ada.webp"
+  },
+  {
+    "id": "COS201-858",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (858).png",
+    "question": "In I—Q representation, the 'Q' stands for:",
+    "options": [
+      "Quenching.",
+      "Quantization.",
+      "Quadrature.",
+      "Quality."
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8a117539a84864cf23ab540e.webp",
+    "noteImage": "./assets/035c45ef362c55ee47673ca5.webp"
+  },
+  {
+    "id": "COS201-859",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (859).png",
+    "question": "The spectrum of a cosine function COS(2Tt f_c t) consists of:",
+    "options": [
+      "A sinc function.",
+      "A single impulse at f_c.",
+      "A continuous spectrum from -f_c to f_c.",
+      "Two delta impulses at ± f_c."
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/90500d5923c1223492aef083.webp",
+    "noteImage": "./assets/8e9deb5bba2cf2814a3b8d4a.webp"
+  },
+  {
+    "id": "COS201-860",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (860).png",
+    "question": "What is the required bandwidth for a conventional AM signal if the message bandwidth is W?",
+    "options": [
+      "4W",
+      "2W",
+      "W/2",
+      "W"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/e3eb6dfe4180cf6ac176051a.webp",
+    "noteImage": "./assets/ac7042bb03e2a70456ea2c12.webp"
+  },
+  {
+    "id": "COS201-861",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (861).png",
+    "question": "In DSB-SC modulation, the transmitted signal consists of:",
+    "options": [
+      "Carrier + Lower Sideband",
+      "Upper Sideband + Lower Sideband",
+      "Carrier + Upper Sideband",
+      "Carrier only"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/528d82cf40875a3633a381ec.webp",
+    "noteImage": "./assets/221e37bc8b46c345ae894925.webp"
+  },
+  {
+    "id": "COS201-862",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (862).png",
+    "question": "Periodic signals produce what type of spectrum?",
+    "options": [
+      "Continuous spectrum.",
+      "No spectrum.",
+      "Line spectrum (discrete impulses).",
+      "Random spectrum."
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/793f0cbcb9beb36b0a7b6be6.webp",
+    "noteImage": "./assets/b643ca7e87ec10a14a905a90.webp"
+  },
+  {
+    "id": "COS201-863",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (863).png",
+    "question": "Which of the following is an example of a physical communication channel?",
+    "options": [
+      "Synchronization block",
+      "Protocol Stack",
+      "Optical fiber",
+      "Modulator"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/323cf1af7efffb83cb959b09.webp",
+    "noteImage": "./assets/4a24164899bf84defaf4fb3f.webp"
+  },
+  {
+    "id": "COS201-864",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (864).png",
+    "question": "Which functional component is typically found in a receiver but NOT in a transmitter?",
+    "options": [
+      "Modulator",
+      "Synchronization",
+      "Protocol Stack",
+      "Antenna"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/79bc06076efe0a827c25570b.webp",
+    "noteImage": "./assets/a4ffd0fcc82d4d5dad1e6da4.webp"
+  },
+  {
+    "id": "COS201-865",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (865).png",
+    "question": "In Amplitude Modulation, which parameter of the carrier is varied in proportion to the message signal?",
+    "options": [
+      "Frequency",
+      "Phase",
+      "Amplitude",
+      "Bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/eb48541093db483d09885f43.webp",
+    "noteImage": "./assets/ff6f866c47733e0eeee74234.webp"
+  },
+  {
+    "id": "COS201-866",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (866).png",
+    "question": "What happens if > 1 in a standard AM system?",
+    "options": [
+      "Noise is eliminated",
+      "Power efficiency increases",
+      "Bandwidth is reduced",
+      "Envelope distortion (Phase reversals)"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b7f81b033265a05e4be942a4.webp",
+    "noteImage": "./assets/f6d2cea825139a97fa020233.webp"
+  },
+  {
+    "id": "COS201-867",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (867).png",
+    "question": "The amplitude response of a transfer function H(f) is also called:",
+    "options": [
+      "Gain response.",
+      "Group delay.",
+      "Phase response.",
+      "Bandwidth."
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/6088156d67ca886dd76a1258.webp",
+    "noteImage": "./assets/cf120c6707ce94a5bae99a86.webp"
+  },
+  {
+    "id": "COS201-868",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (868).png",
+    "question": "Which circuit is used to maintain phase synchronization in a DSB-SC receiver?",
+    "options": [
+      "Frequency Mixer",
+      "Costas Receiver",
+      "Envelope Detector",
+      "Switching Modulator"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/e32a44a7226fab796e6a52cf.webp",
+    "noteImage": "./assets/ee3c8d33d5ecd257baebe996.webp"
+  },
+  {
+    "id": "COS201-869",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (869).png",
+    "question": "Which technology allows radio components to be implemented through software rather than fixed hardware?",
+    "options": [
+      "DSP",
+      "RF Stage",
+      "FPGA",
+      "Software-Defined Radio (SDR)"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a15cd60bfb63efecd1fe7ab4.webp",
+    "noteImage": "./assets/ea13ed2e8d881e57e9e3252d.webp"
+  },
+  {
+    "id": "COS201-870",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (870).png",
+    "question": "A band-pass signal with bandwidth W centered at f_c is considered 'narrowband' if:",
+    "options": [
+      "W ≪ f_c.",
+      "W ≫ f_c.",
+      "W = f_c.",
+      "f_c = 0."
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/7dc9b6be994fba5d48284d26.webp",
+    "noteImage": "./assets/697654ab9c8881c0a7138d4b.webp"
+  },
+  {
+    "id": "COS201-871",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (871).png",
+    "question": "Which filter is used in a switching modulator to select the desired frequency band?",
+    "options": [
+      "Notch filter",
+      "High-pass filter",
+      "Band-pass filter",
+      "Low-pass filter"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d8e24ed31ee6a9d2f01cdd7f.webp",
+    "noteImage": "./assets/007bf25877420ecaa90f86ed.webp"
+  },
+  {
+    "id": "COS201-872",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (872).png",
+    "question": "Which theorem relates the total energy of a signal in time to its energy in frequency?",
+    "options": [
+      "Sampling theorem.",
+      "Rayleigh's energy theorem (Parseval).",
+      "Convolution theorem.",
+      "Nyquist theorem."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/44f90d70256408fceacb33c8.webp",
+    "noteImage": "./assets/33d91b67a11bacdf166fc8f5.webp"
+  },
+  {
+    "id": "COS201-873",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (873).png",
+    "question": "A linear time-invariant (LTI) system initially at rest is completely characterized by its:",
+    "options": [
+      "Bandwidth.",
+      "Input signal.",
+      "Impulse response.",
+      "Power supply."
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f327f9890adbbd3154c9961b.webp",
+    "noteImage": "./assets/7c45f9bd531b3b48d034c7a5.webp"
+  },
+  {
+    "id": "COS201-874",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (874).png",
+    "question": "The carrier power in a 100% modulated AM signal (μ = 1) accounts for what percentage of total power?",
+    "options": [
+      "66.7% (Note: Pc = (1/2)Ac², PSB = (1/4)Ac² → Pc = (2/3)·Ptotal)",
+      "100%",
+      "50%",
+      "33.3%"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c033e318190d1deb96dc418b.webp",
+    "noteImage": "./assets/069077a01d5afe4ac394c723.webp"
+  },
+  {
+    "id": "COS201-875",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (875).png",
+    "question": "The Fourier transform of a Dirac comb (periodic impulses) in the time domain is:",
+    "options": [
+      "A sinc function.",
+      "A single impulse at f = 0.",
+      "A constant DC value.",
+      "Another Dirac comb in the frequency domain."
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/7c75357836b49bfa7f479a3b.webp",
+    "noteImage": "./assets/d0f50ae2cf2d41752faf0d6c.webp"
+  },
+  {
+    "id": "COS201-876",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (876).png",
+    "question": "In a Frequency-Division Multiplexing (FDM) system, signals are separated in the:",
+    "options": [
+      "Code domain",
+      "Phase domain",
+      "Frequency domain",
+      "Time domain"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c3c889c30d9fae84feb82834.webp",
+    "noteImage": "./assets/539f602ca95d29964e06c857.webp"
+  },
+  {
+    "id": "COS201-877",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (877).png",
+    "question": "To recover the message signal using an envelope detector, what is the required relationship for the modulation factor μ?",
+    "options": [
+      "μ > 1",
+      "μ = 0",
+      "μ can be any value",
+      "0 < μ ≤ 1 for ideal AM with a normalized message and no overmodulation"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cabf7a1dda99acc4936582ed.webp",
+    "noteImage": "./assets/f138938ecaf3be9c942f79f8.webp"
+  },
+  {
+    "id": "COS201-878",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (878).png",
+    "question": "Which property states that compression in time leads to expansion in frequency?",
+    "options": [
+      "Duality.",
+      "Time scaling.",
+      "Linearity.",
+      "Time shifting."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b183e6ee372e4f6042514c5d.webp",
+    "noteImage": "./assets/9a2abc11c4d0565ea13f6e43.webp"
+  },
+  {
+    "id": "COS201-879",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (879).png",
+    "question": "The Fourier transform exists if the signal is:",
+    "options": [
+      "Periodically repeating.",
+      "Zero at all times.",
+      "Absolutely integrable.",
+      "Infinite in energy."
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/055bcaeadd170b2225407170.webp",
+    "noteImage": "./assets/c5d1f62bcc8da21ceb7d39b5.webp"
+  },
+  {
+    "id": "COS201-880",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (880).png",
+    "question": "For a system to be causal, its impulse response h(t) must be zero for:",
+    "options": [
+      "t > 0.",
+      "t = 0.",
+      "All t.",
+      "t < 0."
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/4dfec530aa110fd7e5341852.webp",
+    "noteImage": "./assets/2ece98cb6bbff2b9a1743701.webp"
+  },
+  {
+    "id": "COS201-881",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (881).png",
+    "question": "Which criterion determines if a frequency response can be realized by a causal filter?",
+    "options": [
+      "Dirichlet criterion.",
+      "Paley—Wiener criterion.",
+      "Shannon criterion.",
+      "Rayleigh criterion."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/219c93ff5be1f835bff6aed8.webp",
+    "noteImage": "./assets/dc563f557c647c08f1ff17c7.webp"
+  },
+  {
+    "id": "COS201-882",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (882).png",
+    "question": "Which block is responsible for converting a message into a signal suitable for the transmission medium?",
+    "options": [
+      "Transmitter",
+      "Information Source",
+      "Information Sink",
+      "Receiver"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b55efdff6dd3d11dac63377c.webp",
+    "noteImage": "./assets/b363df9d930f9a47bd60d028.webp"
+  },
+  {
+    "id": "COS201-883",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (883).png",
+    "question": "In WLAN channel estimation, what is used to compensate for channel distortion?",
+    "options": [
+      "Using an ideal low-pass filter.",
+      "Increasing the transmitter power.",
+      "Reducing the signal bandwidth.",
+      "Multiplying the received signal's DFT by 1/H_k."
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/17dfd63358497d8ecfb99a23.webp",
+    "noteImage": "./assets/060e2266593f4f0c5247284e.webp"
+  },
+  {
+    "id": "COS201-884",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (884).png",
+    "question": "Analog communication remains important because noise and distortion in digital systems are fundamentally:",
+    "options": [
+      "Analog in nature",
+      "Perfectly predictable",
+      "Non-existent",
+      "Digital in nature"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/6904437f247754e7426bc94b.webp",
+    "noteImage": "./assets/70e3f31bfe9303f913eb8c68.webp"
+  },
+  {
+    "id": "COS201-885",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (885).png",
+    "question": "A 'Mixer' in communication systems is used for:",
+    "options": [
+      "Quantizing data",
+      "Amplifying the signal",
+      "Filtering noise",
+      "Frequency translation"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/ad8ca52b087e235279ff680c.webp",
+    "noteImage": "./assets/087bd18bc48adb27b4784f9f.webp"
+  },
+  {
+    "id": "COS201-886",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (886).png",
+    "question": "This course (COS201) and the textbook primarily focus on which layer?",
+    "options": [
+      "Network Layer",
+      "Application Layer",
+      "Physical Layer (PHY)",
+      "Presentation Layer"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a161c759954de5aacd076aac.webp",
+    "noteImage": "./assets/24d5f97048b04b5b13cf97ab.webp"
+  },
+  {
+    "id": "COS201-887",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (887).png",
+    "question": "Quadrature-Carrier Multiplexing (QAM) enables the transmission of two signals using:",
+    "options": [
+      "Two different frequencies",
+      "Two orthogonal carriers at the same frequency",
+      "One carrier and one sideband",
+      "Time slots"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fa79c73305dde50bb71b975c.webp",
+    "noteImage": "./assets/5aa61dfbcd3850311e70c9c0.webp"
+  },
+  {
+    "id": "COS201-888",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (888).png",
+    "question": "A deterministic signal is defined as a waveform that is:",
+    "options": [
+      "Constant at all times.",
+      "Fully defined as a function of time.",
+      "Only existing in the frequency domain.",
+      "Random and unpredictable."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c3b21c74bb1646aebec3a1e4.webp",
+    "noteImage": "./assets/ddd33686f36d782b51ac7009.webp"
+  },
+  {
+    "id": "COS201-889",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (889).png",
+    "question": "Which filter type provides a smooth, maximally flat response with no ripples?",
+    "options": [
+      "Elliptic.",
+      "FIR",
+      "Chebyshev.",
+      "Butterworth."
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/324a02bc6f1b7e615913395c.webp",
+    "noteImage": "./assets/cb4efd45a04734dfb24d231a.webp"
+  },
+  {
+    "id": "COS201-890",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (890).png",
+    "question": "Which criterion determines if a frequency response can be realized by a causal filter?",
+    "options": [
+      "Dirichlet criterion.",
+      "Paley—Wiener criterion.",
+      "Rayleigh criterion.",
+      "Shannon criterion."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/4e9632526f4717c4100a1e41.webp",
+    "noteImage": "./assets/b2f28fd3e8e7c8e137ed6361.webp"
+  },
+  {
+    "id": "COS201-891",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (891).png",
+    "question": "Which modulation scheme is the most bandwidth-efficient?",
+    "options": [
+      "DSB-SC",
+      "Conventional AM",
+      "VSB",
+      "SSB"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/97758cc6070c9fba344cc9f3.webp",
+    "noteImage": "./assets/8d9e04818fcea787fb1a036d.webp"
+  },
+  {
+    "id": "COS201-892",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (892).png",
+    "question": "Modern Digital TV (ATSC) uses which specific type of modulation derived from the principles in this chapter?",
+    "options": [
+      "8-VSB",
+      "16-QAM",
+      "4 AM",
+      "2-PSK"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/e231af2e1a342e3a9338559e.webp",
+    "noteImage": "./assets/5e117c5f9a41cefa7ef63019.webp"
+  },
+  {
+    "id": "COS201-893",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (893).png",
+    "question": "What does the Signum function sgn(t) represent?",
+    "options": [
+      "The absolute value of time.",
+      "A signal that is +1 fort > 0 and -1 fort < 0.",
+      "A unit impulse.",
+      "A periodic sine wave."
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/caa27f1894d5d8afef60ee8e.webp",
+    "noteImage": "./assets/959d357a78bd7bb940f7d244.webp"
+  },
+  {
+    "id": "COS201-894",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (894).png",
+    "question": "Angle modulation is defined as:",
+    "options": [
+      "Varying only the phase randomly",
+      "Varying amplitude of a carrier",
+      "Removing the carrier",
+      "Varying the angle of a carrier according to the message signal"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/afcd0f434fedb24483c03957.webp",
+    "noteImage": "./assets/39ab9aea467fa1730f1a00a6.webp"
+  },
+  {
+    "id": "COS201-895",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (895).png",
+    "question": "Narrowband FM (NBFM) is characterized by:",
+    "options": [
+      "Infinite bandwidth",
+      "Zero bandwidth",
+      "Large modulation index",
+      "Small modulation index"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/44a8864243ed55c8c7b13d3d.webp",
+    "noteImage": "./assets/fd720db98c2cb9235efaa4b4.webp"
+  },
+  {
+    "id": "COS201-896",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (896).png",
+    "question": "Why is PAM rarely used directly for transmission?",
+    "options": [
+      "It requires high frequency",
+      "It is sensitive to amplitude distortion",
+      "It cannot be sampled",
+      "It has low power"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b54ae819d7ae32d542a8dd65.webp",
+    "noteImage": "./assets/8a3d2cdf614f7d2aa4637d24.webp"
+  },
+  {
+    "id": "COS201-897",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (897).png",
+    "question": "The received signal in a noisy channel is:",
+    "options": [
+      "Sum of signal and noise",
+      "Only noise",
+      "Only the transmitted signal",
+      "Signal minus noise"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/34bf030ecf347ef018b81392.webp",
+    "noteImage": "./assets/7db1f7323b6a19ab7bf1bcb3.webp"
+  },
+  {
+    "id": "COS201-898",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (898).png",
+    "question": "Delta-Sigma modulation improves DM by:",
+    "options": [
+      "Increasing bandwidth",
+      "Increasing noise",
+      "Removing quantization",
+      "Reducing slope overload"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/23902724727e03a0d6c717db.webp",
+    "noteImage": "./assets/a0debf4403096a1ef952956e.webp"
+  },
+  {
+    "id": "COS201-899",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (899).png",
+    "question": "In angle modulation, the carrier amplitude is:",
+    "options": [
+      "Variable",
+      "Increasing",
+      "Zero",
+      "Constant"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/4ba7cf05e7a93bf7e9242549.webp",
+    "noteImage": "./assets/f237fd15e58711b9c3728cef.webp"
+  },
+  {
+    "id": "COS201-900",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (900).png",
+    "question": "Uniform quantization performs poorly for speech because:",
+    "options": [
+      "Speech is high frequency",
+      "Speech is periodic",
+      "Speech is low amplitude",
+      "Speech is random"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/22d03fa9cffda5adc58e9574.webp",
+    "noteImage": "./assets/704acb8201a6987e79793768.webp"
+  },
+  {
+    "id": "COS201-901",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (901).png",
+    "question": "Standard deviation is:",
+    "options": [
+      "Sum of variance",
+      "Square root of variance",
+      "Log of variance",
+      "Variance squared"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/bcd478900ed96eaf3d9d4ced.webp",
+    "noteImage": "./assets/6dac8c995db6839ec7eb876c.webp"
+  },
+  {
+    "id": "COS201-902",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (902).png",
+    "question": "Maximum efficiency of AM (Figure of Merit) is:",
+    "options": [
+      "2",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/0560720fcf82ff32a4555e84.webp",
+    "noteImage": "./assets/b0f6804f5b787c9e71b5bda8.webp"
+  },
+  {
+    "id": "COS201-903",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (903).png",
+    "question": "Aliasing occurs when:",
+    "options": [
+      "fs = W",
+      "fs < 2W",
+      "fs > 2W",
+      "fs = 2W"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/45ab7a4b1336b3151178f8e4.webp",
+    "noteImage": "./assets/568ae528b972c1f0ee2b3dac.webp"
+  },
+  {
+    "id": "COS201-904",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (904).png",
+    "question": "Marginal PDF is obtained by:",
+    "options": [
+      "Multiplication",
+      "Subtraction",
+      "Differentiation",
+      "Integration over other variables"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c9d0f81fb3163837ddc02ef8.webp",
+    "noteImage": "./assets/69cf94fe1a73793b671703ff.webp"
+  },
+  {
+    "id": "COS201-905",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (905).png",
+    "question": "De-emphasis filter mainly:",
+    "options": [
+      "Removes signal",
+      "Increases bandwidth",
+      "Amplifies noise",
+      "Reduces high-frequency noise"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fe32084d9de56912fe4af177.webp",
+    "noteImage": "./assets/1e254523c2b512f2ca53f4e7.webp"
+  },
+  {
+    "id": "COS201-906",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (906).png",
+    "question": "In the I-Q representation of a modulated signal, what do I and Q stand for?",
+    "options": [
+      "In-phase and quadrature",
+      "DC and AC",
+      "Input and output",
+      "DC and AC"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cea46faea6d84b04cc39a29a.webp",
+    "noteImage": "./assets/8c6cff115e30aa27f7b04db9.webp"
+  },
+  {
+    "id": "COS201-907",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (907).png",
+    "question": "What does the cumulative distribution function (CDF) represent?",
+    "options": [
+      "Frequency content",
+      "Accumulated probability up to a value",
+      "Signal power",
+      "Instantaneous value"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2da63605142886590b414a14.webp",
+    "noteImage": "./assets/702ff30787d104240ebadb4b.webp"
+  },
+  {
+    "id": "COS201-908",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (908).png",
+    "question": "Why is a band-pass filter used at the receiver input?",
+    "options": [
+      "To increase frequency",
+      "To remove signal",
+      "To restrict noise bandwidth",
+      "To amplify noise"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/bd6ef9d29aa6c7bd14099ecb.webp",
+    "noteImage": "./assets/bf7bc27a4c3e9def0e7e7db4.webp"
+  },
+  {
+    "id": "COS201-909",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (909).png",
+    "question": "Autocorrelation measures:",
+    "options": [
+      "Similarity of a signal at different times",
+      "Amplitude",
+      "Power",
+      "Frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8c28130aa026368df9902738.webp",
+    "noteImage": "./assets/27ece3c00dd2f04bff50c04a.webp"
+  },
+  {
+    "id": "COS201-910",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (910).png",
+    "question": "Aliasing results in:",
+    "options": [
+      "Perfect reconstruction",
+      "Signal amplification",
+      "Noise reduction",
+      "Frequency overlap"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2e1d9788dbab93bd1084fe81.webp",
+    "noteImage": "./assets/05111aa2f6c5737421a37186.webp"
+  },
+  {
+    "id": "COS201-911",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (911).png",
+    "question": "If autocorrelation decreases rapidly, the signal is:",
+    "options": [
+      "Noise-free",
+      "Rapidly changing",
+      "Slowly varying",
+      "Constant"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c05f3dbccee9f48bff342381.webp",
+    "noteImage": "./assets/655450d4bc8b53cd12d12af5.webp"
+  },
+  {
+    "id": "COS201-912",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (912).png",
+    "question": "FM receivers include an amplitude limiter to:",
+    "options": [
+      "Increase bandwidth",
+      "Add noise",
+      "Increase signal",
+      "Remove amplitude variations"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/7e60d03ca925f21b4ccadb79.webp",
+    "noteImage": "./assets/70e90d329b0df704f6eb459c.webp"
+  },
+  {
+    "id": "COS201-913",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (913).png",
+    "question": "PCM bandwidth requirement increases with:",
+    "options": [
+      "Sampling rate",
+      "Number of channels",
+      "Bit depth",
+      "All of the above"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/25aa5b8781f16405fe4f324a.webp",
+    "noteImage": "./assets/32a12bc3f06a9a609d088949.webp"
+  },
+  {
+    "id": "COS201-914",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (914).png",
+    "question": "The formula SNR is proportional to 2A(2R) implies:",
+    "options": [
+      "No growth",
+      "Logarithmic growth",
+      "Linear growth",
+      "Exponential growth"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b35bfbe97849e93cb84f2447.webp",
+    "noteImage": "./assets/9a6fce57a07a16e54d249205.webp"
+  },
+  {
+    "id": "COS201-915",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (915).png",
+    "question": "Angle modulation is considered a:",
+    "options": [
+      "Static process",
+      "Linear process",
+      "Time-invariant process",
+      "Nonlinear process"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9830139ff01affd28b0de9d2.webp",
+    "noteImage": "./assets/51a8c0c30f2a7becd1adfe99.webp"
+  },
+  {
+    "id": "COS201-916",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (916).png",
+    "question": "The correlation coefficient lies in the range:",
+    "options": [
+      "[0, 1]",
+      "[1, 2]",
+      "[-1, 1]",
+      "(-∞, ∞)"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c5186f9e00588cf68780256f.webp",
+    "noteImage": "./assets/2774800c4787dc25a693cf6c.webp"
+  },
+  {
+    "id": "COS201-917",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (917).png",
+    "question": "In DSB-SC, coherent detection removes:",
+    "options": [
+      "All noise",
+      "In-phase noise",
+      "Carrier",
+      "Quadrature noise"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/13d0e8b689f106640881b33a.webp",
+    "noteImage": "./assets/fcb168ab491eca68d3139a7e.webp"
+  },
+  {
+    "id": "COS201-918",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (918).png",
+    "question": "PPM is analogous to which analog modulation scheme?",
+    "options": [
+      "DSB",
+      "AM",
+      "FM",
+      "PM"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/aaadba69cef810a6420fa436.webp",
+    "noteImage": "./assets/a9d143614c39cae70a19a446.webp"
+  },
+  {
+    "id": "COS201-919",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (919).png",
+    "question": "The Phase-Locked Loop (PLL) is primarily used for:",
+    "options": [
+      "Signal amplification",
+      "Carrier synchronization and demodulation",
+      "Noise generation",
+      "Frequency translation"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a747d78f09f94219279727f5.webp",
+    "noteImage": "./assets/37458959ee0b2b5c2b933cbb.webp"
+  },
+  {
+    "id": "COS201-920",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (920).png",
+    "question": "Zero-crossings in angle-modulated signals are:",
+    "options": [
+      "Irregularly spaced",
+      "Equally spaced",
+      "Random",
+      "Constant"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/14297ad2d4512708e9f8dc6e.webp",
+    "noteImage": "./assets/ecfdf61a1454c5a7912a6bc2.webp"
+  },
+  {
+    "id": "COS201-921",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (921).png",
+    "question": "A uniform distribution implies that:",
+    "options": [
+      "All values are equally likely",
+      "It has a peak",
+      "Values are concentrated",
+      "It is decreasing"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/224d650cdad756c41f72da83.webp",
+    "noteImage": "./assets/b21e4a7f7d38e681daebd656.webp"
+  },
+  {
+    "id": "COS201-922",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (922).png",
+    "question": "In frequency modulation (FM), which quantity varies with the message signal?",
+    "options": [
+      "Frequency",
+      "Power",
+      "Amplitude",
+      "Phase only"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8ba8c5b71c98d82860854603.webp",
+    "noteImage": "./assets/a93ec7e0a04a46e54c469818.webp"
+  },
+  {
+    "id": "COS201-923",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (923).png",
+    "question": "Covariance measures:",
+    "options": [
+      "Power",
+      "Linear relationship between variables",
+      "Frequency",
+      "Noise level"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/00e3acba3f66d5a7b0b598ae.webp",
+    "noteImage": "./assets/bcba8280678365a70d81ccab.webp"
+  },
+  {
+    "id": "COS201-924",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (924).png",
+    "question": "FM stereo broadcasting transmits:",
+    "options": [
+      "Only digital signals",
+      "Three channels",
+      "Two channels (left and right)",
+      "One channel"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/89b693eff8c19b4845400065.webp",
+    "noteImage": "./assets/6837038d6198d1440db5f6c4.webp"
+  },
+  {
+    "id": "COS201-925",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (925).png",
+    "question": "The quadrature component is associated with:",
+    "options": [
+      "Cosine",
+      "Frequency",
+      "DC",
+      "Sine"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9252fd80411e5965f3256063.webp",
+    "noteImage": "./assets/7754eb183c3fedff53656555.webp"
+  },
+  {
+    "id": "COS201-926",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (926).png",
+    "question": "The probability density function (PDF) is:",
+    "options": [
+      "The mean value",
+      "The derivative of CDF",
+      "The integral of CDF",
+      "The variance"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/19f000aff9703a09ef25eca7.webp",
+    "noteImage": "./assets/6fd38d08b6ce2deba3c22ad4.webp"
+  },
+  {
+    "id": "COS201-927",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (927).png",
+    "question": "Flat-top sampling uses:",
+    "options": [
+      "Rectangular pulses",
+      "Triangular waves",
+      "Impulse pulses",
+      "Sine waves"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/bc390b08bf5dd3b447976109.webp",
+    "noteImage": "./assets/b9095eee03002974d17138b0.webp"
+  },
+  {
+    "id": "COS201-928",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (928).png",
+    "question": "White noise has which property?",
+    "options": [
+      "Flat power spectral density",
+      "Limited bandwidth",
+      "Zero power",
+      "Time-varying amplitude only"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/1de5e30c2bdc6135be7c720b.webp",
+    "noteImage": "./assets/4f09656ae55fc0549eed9ed9.webp"
+  },
+  {
+    "id": "COS201-929",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (929).png",
+    "question": "AWGN stands for:",
+    "options": [
+      "Analog White Gain Noise",
+      "Additive White Gaussian Noise",
+      "Automatic White Gaussian Network",
+      "Additive Wide Gaussian Noise"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c473905121d2384d0ba4b32d.webp",
+    "noteImage": "./assets/a6d721de2426bfbcbe0af4a0.webp"
+  },
+  {
+    "id": "COS201-930",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (930).png",
+    "question": "If two variables are independent, their joint PDF equals:",
+    "options": [
+      "Sum",
+      "Square",
+      "Product",
+      "Difference"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/90f54b3e87e339e4b3435bd5.webp",
+    "noteImage": "./assets/83a8b92477c7b1553f56237c.webp"
+  },
+  {
+    "id": "COS201-931",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (931).png",
+    "question": "Autocorrelation measures:",
+    "options": [
+      "Amplitude",
+      "Similarity of a signal at different times",
+      "Frequency",
+      "Power"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d7afa9bdc05663e1cc2e804a.webp",
+    "noteImage": "./assets/d9890c8e5cc66c50ab0fc086.webp"
+  },
+  {
+    "id": "COS201-932",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (932).png",
+    "question": "The Figure of Merit measures:",
+    "options": [
+      "Efficiency of demodulation",
+      "Frequency",
+      "Power loss only",
+      "Bandwidth"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/570da6ccb9697c3013ed9fca.webp",
+    "noteImage": "./assets/77e3fd4c4423b99bafe4ac14.webp"
+  },
+  {
+    "id": "COS201-933",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (933).png",
+    "question": "The quadrature component is associated with:",
+    "options": [
+      "Cosine",
+      "DC",
+      "Sine",
+      "Frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a0612441eed98abc5b6c0371.webp",
+    "noteImage": "./assets/3ac89642042fefbea1908678.webp"
+  },
+  {
+    "id": "COS201-934",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (934).png",
+    "question": "Why is PPM more noise-resistant than PAM?",
+    "options": [
+      "Uses amplitude",
+      "Uses phase",
+      "Encodes information in timing",
+      "Uses frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cda414edb3b6eb528c3127ab.webp",
+    "noteImage": "./assets/686c7ffc7702513534f37a76.webp"
+  },
+  {
+    "id": "COS201-935",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (935).png",
+    "question": "FM noise increases with:",
+    "options": [
+      "High frequency",
+      "Carrier",
+      "Low frequency",
+      "DC component"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/06a6400e4d486b3fe020f1c0.webp",
+    "noteImage": "./assets/4384c52a0677b6c158441718.webp"
+  },
+  {
+    "id": "COS201-936",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (936).png",
+    "question": "Flat-top sampling uses:",
+    "options": [
+      "Rectangular pulses",
+      "Impulse pulses",
+      "Triangular waves",
+      "Sine waves"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/3dcbe1f9a091c44bc7610197.webp",
+    "noteImage": "./assets/4e63f0b29ed6af3ff7789d95.webp"
+  },
+  {
+    "id": "COS201-937",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (937).png",
+    "question": "Narrowband noise is obtained by:",
+    "options": [
+      "Sampling",
+      "Filtering white noise",
+      "Amplification",
+      "Modulation"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9706dbfa2138985bc65c06d2.webp",
+    "noteImage": "./assets/46230bea502c201123d281c1.webp"
+  },
+  {
+    "id": "COS201-938",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (938).png",
+    "question": "Band-pass noise can be represented by:",
+    "options": [
+      "Three signals",
+      "Two orthogonal components",
+      "only DC",
+      "One component"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9cd4989753939d18717fb122.webp",
+    "noteImage": "./assets/f8d0cdc02d2dfdf13c69d6af.webp"
+  },
+  {
+    "id": "COS201-939",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (939).png",
+    "question": "The amplitudes of FM spectral components are determined by:",
+    "options": [
+      "Bessel functions",
+      "Exponential functions",
+      "Linear scaling",
+      "Fourier series coefficients"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/794f4d5877461920fab1f10d.webp",
+    "noteImage": "./assets/f2fa963c02cca5c397e08361.webp"
+  },
+  {
+    "id": "COS201-940",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (940).png",
+    "question": "A key advantage of angle modulation over AM is:",
+    "options": [
+      "Lower frequency",
+      "Lower bandwidth",
+      "Better noise immunity",
+      "Simpler implementation"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/ea97a07afc46180e98b80819.webp",
+    "noteImage": "./assets/25cb350969a27b3a515e6aaf.webp"
+  },
+  {
+    "id": "COS201-941",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (941).png",
+    "question": "Granular noise occurs when:",
+    "options": [
+      "Sampling is low",
+      "Step size too small",
+      "Signal is fast",
+      "Frequency is high",
+      "Step size is too large relative to a slowly varying input signal"
+    ],
+    "answer": [
+      4
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/6ae8f05955b8c33f0388d148.webp",
+    "noteImage": "./assets/588531717103e8bb32b14484.webp"
+  },
+  {
+    "id": "COS201-942",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (942).png",
+    "question": "In DSB-SC, coherent detection removes:",
+    "options": [
+      "All noise",
+      "In-phase noise",
+      "Quadrature noise",
+      "Carrier"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/965df2e7c85486b4b871def3.webp",
+    "noteImage": "./assets/3a52080bf3d681cfaf35551a.webp"
+  },
+  {
+    "id": "COS201-943",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (943).png",
+    "question": "A joint PDF describes:",
+    "options": [
+      "Time domain",
+      "Two variables together",
+      "Frequency only",
+      "One variable"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c8a2b40fcc35bca38fce1105.webp",
+    "noteImage": "./assets/304614540a763bc16dc80002.webp"
+  },
+  {
+    "id": "COS201-944",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (944).png",
+    "question": "In communication systems, the mean corresponds to:",
+    "options": [
+      "Noise",
+      "DC component",
+      "Frequency",
+      "AC component"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/aa776657519e4f2ecf655e22.webp",
+    "noteImage": "./assets/b3fba321ed81556bb0728ecd.webp"
+  },
+  {
+    "id": "COS201-945",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (945).png",
+    "question": "Marginal PDF is obtained by:",
+    "options": [
+      "Differentiation",
+      "Subtraction",
+      "Multiplication",
+      "Integration over other variables"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d64a41a6414b1df975b2f14b.webp",
+    "noteImage": "./assets/44ec1f31641ec4bb7c8218ce.webp"
+  },
+  {
+    "id": "COS201-946",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (946).png",
+    "question": "Variance measures:",
+    "options": [
+      "Mean",
+      "Bandwidth",
+      "Frequency",
+      "Spread of values"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/41a734eff1dd693a20219964.webp",
+    "noteImage": "./assets/64fa81aac3c7e8498117debf.webp"
+  },
+  {
+    "id": "COS201-947",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (947).png",
+    "question": "The FM modulation index is given by:",
+    "options": [
+      "Ratio of carrier to noise",
+      "Ratio of amplitude to frequency",
+      "Ratio of frequency deviation to modulating frequency",
+      "Ratio of power to bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/1cdbc3468dd432dce96961c7.webp",
+    "noteImage": "./assets/4286b801760c02df9423a494.webp"
+  },
+  {
+    "id": "COS201-948",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (948).png",
+    "question": "FM Figure of Merit depends on:",
+    "options": [
+      "Carrier amplitude only",
+      "Noise only",
+      "Frequency deviation",
+      "Time"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2e2a1e284192a9cb9d53796f.webp",
+    "noteImage": "./assets/8fffd0914794df27d57586b9.webp"
+  },
+  {
+    "id": "COS201-949",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (949).png",
+    "question": "In angle modulation, transmitted power is:",
+    "options": [
+      "Constant",
+      "Variable",
+      "Zero",
+      "Dependent on frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2410f03ef4abbe3108a1df0c.webp",
+    "noteImage": "./assets/563d968afd6979f105cb02c6.webp"
+  },
+  {
+    "id": "COS201-950",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (950).png",
+    "question": "Angle modulation is defined as:",
+    "options": [
+      "Removing the carrier",
+      "Varying only the phase randomly",
+      "Varying the angle of a carrier according to the message signal",
+      "Varying amplitude of a carrier"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c43032dce3a2992aa066779f.webp",
+    "noteImage": "./assets/80486e3b29dbdd6d74b568f5.webp"
+  },
+  {
+    "id": "COS201-951",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (951).png",
+    "question": "A random process is:",
+    "options": [
+      "A system",
+      "A function of time and randomness",
+      "A fixed signal",
+      "A constant value"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/bb26061cbbe4e12abbb078f7.webp",
+    "noteImage": "./assets/6aecdb5f572557f624aac97a.webp"
+  },
+  {
+    "id": "COS201-952",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (952).png",
+    "question": "In angle-modulated signals, information is contained in:",
+    "options": [
+      "Frequency or phase variations",
+      "DC components",
+      "Amplitude variations",
+      "Power variations"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c25798330ff1b987b31071f2.webp",
+    "noteImage": "./assets/b2c03651cba2734f103c05fa.webp"
+  },
+  {
+    "id": "COS201-953",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (953).png",
+    "question": "The aperture effect is corrected using:",
+    "options": [
+      "Amplifier",
+      "Equalizer",
+      "Sampler",
+      "Modulator"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/89abb73891eee4e133a4cb15.webp",
+    "noteImage": "./assets/5973b85f398117d2d8d0ce8d.webp"
+  },
+  {
+    "id": "COS201-954",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (954).png",
+    "question": "Conditional probability is used to:",
+    "options": [
+      "Compute total probability",
+      "Increase bandwidth",
+      "Evaluate probability given prior information",
+      "Eliminate noise"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f70f72c2561be87749cccd61.webp",
+    "noteImage": "./assets/b81d16bbafec70e49b5d9cd7.webp"
+  },
+  {
+    "id": "COS201-955",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (955).png",
+    "question": "The aperture effect in PAM causes:",
+    "options": [
+      "Aliasing",
+      "Noise amplification",
+      "Frequency distortion",
+      "Phase shift"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f21cd7a4d69b4643a27bb25b.webp",
+    "noteImage": "./assets/7a2ac764b34e55cda1cc3ace.webp"
+  },
+  {
+    "id": "COS201-956",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (956).png",
+    "question": "A major disadvantage of angle modulation is:",
+    "options": [
+      "Low power",
+      "Larger bandwidth requirement",
+      "Low efficiency",
+      "High noise sensitivity"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/e78b4177eb923e8420c7e263.webp",
+    "noteImage": "./assets/3458f6286ca3d9a825939aa6.webp"
+  },
+  {
+    "id": "COS201-957",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (957).png",
+    "question": "Variance is directly related to:",
+    "options": [
+      "DC power",
+      "AC noise power",
+      "Frequency",
+      "Phase"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8ff5e22a0ec65fe73bf15f19.webp",
+    "noteImage": "./assets/969aa31f4c9fbd24bc5806d2.webp"
+  },
+  {
+    "id": "COS201-958",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (958).png",
+    "question": "Why is a band-pass filter used at the receiver input?",
+    "options": [
+      "To increase frequency",
+      "To remove signal",
+      "To restrict noise bandwidth",
+      "To amplify noise"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/bd6ef9d29aa6c7bd14099ecb.webp",
+    "noteImage": "./assets/1094a423170cb52f0be8d053.webp"
+  },
+  {
+    "id": "COS201-959",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (959).png",
+    "question": "Manchester encoding provides:",
+    "options": [
+      "No synchronization",
+      "Lower bandwidth",
+      "No transitions",
+      "Built-in clock recovery"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/86dc43a6703ba074b1152816.webp",
+    "noteImage": "./assets/937f2dafc42d40e8f29600cc.webp"
+  },
+  {
+    "id": "COS201-960",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (960).png",
+    "question": "In a PCM system, quantization noise dominates when:",
+    "options": [
+      "Channel noise is low",
+      "Frequency is high",
+      "Sampling rate is low",
+      "Bit error rate is low."
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d5c25a1118879bf4711e5ec9.webp",
+    "noteImage": "./assets/26e6a68470009b10d999a1a7.webp"
+  },
+  {
+    "id": "COS201-961",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (961).png",
+    "question": "PCM bandwidth requirement increases with:",
+    "options": [
+      "Sampling rate",
+      "Bit depth",
+      "All of the above",
+      "Number of channels"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f453bf81fd975d35aa304011.webp",
+    "noteImage": "./assets/6799373714ed13a2a3df1f21.webp"
+  },
+  {
+    "id": "COS201-962",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (962).png",
+    "question": "Increasing ADC bits from 8 to 10 improves SNR by:",
+    "options": [
+      "10 dB",
+      "6 dB",
+      "3 dB",
+      "12 dB"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9b472785681513fb7a746996.webp",
+    "noteImage": "./assets/a976078e80428387d300abad.webp"
+  },
+  {
+    "id": "COS201-963",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (963).png",
+    "question": "If amplifier is nonlinear, suitable modulation is:",
+    "options": [
+      "OFDM",
+      "QAM",
+      "BPSK",
+      "FSK"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/263fed49007eb220fd268069.webp",
+    "noteImage": "./assets/44374248ff4ddde547732172.webp"
+  },
+  {
+    "id": "COS201-964",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (964).png",
+    "question": "If Huffman coding is applied to equal probabilities, result is:",
+    "options": [
+      "Compression failure",
+      "No coding",
+      "Fixed-length codes",
+      "Variable-length codes"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/9749909ffa81156a897d28e3.webp",
+    "noteImage": "./assets/d7efae96a0114791ce67ecb4.webp"
+  },
+  {
+    "id": "COS201-965",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (965).png",
+    "question": "Slope overload distortion occurs when:",
+    "options": [
+      "Delta too large",
+      "Signal slope exceeds tracking capability",
+      "Noise is high",
+      "Delta too small"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/382f3f68019d4fd9c682d967.webp",
+    "noteImage": "./assets/77e404a7b0baf95b179ba378.webp"
+  },
+  {
+    "id": "COS201-966",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (966).png",
+    "question": "If syndrome = 0, it implies:",
+    "options": [
+      "Error detected",
+      "High noise",
+      "Code failure",
+      "No detectable error"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b8880c1eefd90262f68f528a.webp",
+    "noteImage": "./assets/500b567b8ded213f832f7dad.webp"
+  },
+  {
+    "id": "COS201-967",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (967).png",
+    "question": "If symbol rate decreases in M-ary system, bandwidth will:",
+    "options": [
+      "Double",
+      "Increase",
+      "Stay same",
+      "Decrease"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8b30c397645b29f3c1a80472.webp",
+    "noteImage": "./assets/d8a0afb31fa7281b16521bef.webp"
+  },
+  {
+    "id": "COS201-968",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (968).png",
+    "question": "Why does BER decrease exponentially with Eb/N0?",
+    "options": [
+      "Linear relation",
+      "Q-function behavior",
+      "Noise decreases linearly",
+      "Signal increases linearly"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/155ad059b1cbbf726ce821a8.webp",
+    "noteImage": "./assets/cb4f846152dfcc3dbb3a5dfb.webp"
+  },
+  {
+    "id": "COS201-969",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (969).png",
+    "question": "Uniform quantization performs poorly for speech because:",
+    "options": [
+      "Speech is periodic",
+      "Speech is low amplitude",
+      "Speech is random",
+      "Speech is high frequency"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/5ae675e7ce9da573f55f3d40.webp",
+    "noteImage": "./assets/d9e7dd8859b2992f2475f4e5.webp"
+  },
+  {
+    "id": "COS201-970",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (970).png",
+    "question": "Why do band-limited channels cause ISI?",
+    "options": [
+      "Reduce amplitude",
+      "Remove high-frequency components",
+      "Increase power",
+      "Increase noise"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b7fd175b56917d386ae6b07c.webp",
+    "noteImage": "./assets/130dec79d7986f149cf650fa.webp"
+  },
+  {
+    "id": "COS201-971",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (971).png",
+    "question": "Aliasing occurs when:",
+    "options": [
+      "fs < 2W",
+      "fs = W",
+      "fs > 2W",
+      "fs = 2W"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c54da8be51aa46824fa3c32c.webp",
+    "noteImage": "./assets/04498cd6b391e845400c9b63.webp"
+  },
+  {
+    "id": "COS201-972",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (972).png",
+    "question": "If average code length < entropy, result is:",
+    "options": [
+      "Impossible without loss",
+      "Higher efficiency",
+      "Reduced noise",
+      "Better compression"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/40c92b0238dccfdf1113fd2b.webp",
+    "noteImage": "./assets/da9c76feb70bdc8317ecf00f.webp"
+  },
+  {
+    "id": "COS201-973",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (973).png",
+    "question": "Why is Gray coding used in QPSK/QAM?",
+    "options": [
+      "Reduce bandwidth",
+      "Reduce bit errors",
+      "Increase frequency",
+      "Increase power"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/5c9bc84db0777e620d29ef0f.webp",
+    "noteImage": "./assets/0d4e11ccad77e2dc759656c5.webp"
+  },
+  {
+    "id": "COS201-974",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (974).png",
+    "question": "Eye diagram is used to:",
+    "options": [
+      "Measure frequency",
+      "Encode data",
+      "Increase SNR",
+      "Analyze signal quality"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8f3ba55782b51e2a23215deb.webp",
+    "noteImage": "./assets/a0d3e8d87c20f5f0d0222b86.webp"
+  },
+  {
+    "id": "COS201-975",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (975).png",
+    "question": "Given Eb/N0 increases by 3 dB, BER will:",
+    "options": [
+      "Increase",
+      "Become zero",
+      "Decrease significantly",
+      "Stay same"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b615e3c6ff8c418cdd5bd664.webp",
+    "noteImage": "./assets/b7e27f3b612e2d16b32c1309.webp"
+  },
+  {
+    "id": "COS201-976",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (976).png",
+    "question": "Why does DPSK eliminate the need for PLL?",
+    "options": [
+      "Uses noise",
+      "Uses amplitude",
+      "Uses previous symbol as reference",
+      "Uses frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/01f0f7b27f7378efab86198c.webp",
+    "noteImage": "./assets/08dec03bf24c9d767685c924.webp"
+  },
+  {
+    "id": "COS201-977",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (977).png",
+    "question": "If channel distortion increases, eye diagram will:",
+    "options": [
+      "Open wider",
+      "Increase amplitude",
+      "Stay same",
+      "Close"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2ba1a5d0ce1d532ce83acf58.webp",
+    "noteImage": "./assets/9fde71810a09d1df5d799f9c.webp"
+  },
+  {
+    "id": "COS201-978",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (978).png",
+    "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+    "options": [
+      "It is weaker",
+      "It is random",
+      "It is deterministic",
+      "It is filtered",
+      "It is structured interference from neighboring symbols caused by channel memory."
+    ],
+    "answer": [
+      4
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/ff2a61fce17c6670e16f0886.webp",
+    "noteImage": "./assets/cbe8d7005bb47d0b9b677eac.webp"
+  },
+  {
+    "id": "COS201-979",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (979).png",
+    "question": "If roll-off between subcarriers is incorrect, OFDM will:",
+    "options": [
+      "Increase SNR",
+      "Reduce bandwidth",
+      "Lose orthogonality",
+      "Improve"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/97cc4a64465e61b3fb5c084b.webp",
+    "noteImage": "./assets/2b08a351c490dffaa5a44259.webp"
+  },
+  {
+    "id": "COS201-980",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (980).png",
+    "question": "Aliasing results in:",
+    "options": [
+      "Frequency overlap",
+      "Signal amplification",
+      "Noise reduction",
+      "Perfect reconstruction"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/125d1c89b079b8bb48324248.webp",
+    "noteImage": "./assets/dca39dec5739e2ac265e25f4.webp"
+  },
+  {
+    "id": "COS201-981",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (981).png",
+    "question": "Sampling in time domain causes what in frequency domain?",
+    "options": [
+      "Replication",
+      "Noise",
+      "Filtering",
+      "Attenuation"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fb66191b654dcf47e8944ba8.webp",
+    "noteImage": "./assets/c340ce7d62ccdc89653f5d14.webp"
+  },
+  {
+    "id": "COS201-982",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (982).png",
+    "question": "What happens if carrier phase is not synchronized in coherent detection?",
+    "options": [
+      "Bandwidth reduces",
+      "Signal disappears",
+      "Noise is removed",
+      "IQ components interfere"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/3717e5742c04a21619797ec4.webp",
+    "noteImage": "./assets/41b4758a3af1e5f86053b2aa.webp"
+  },
+  {
+    "id": "COS201-983",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (983).png",
+    "question": "Flat-top sampling uses:",
+    "options": [
+      "Rectangular pulses",
+      "Sine waves",
+      "Triangular waves",
+      "Impulse pulses"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/b552de766a1617950ed6c6e4.webp",
+    "noteImage": "./assets/96f924158baf234c6938d973.webp"
+  },
+  {
+    "id": "COS201-984",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (984).png",
+    "question": "Why does channel noise reduce mutual information?",
+    "options": [
+      "Reduces power",
+      "Increases entropy",
+      "Reduces bandwidth",
+      "Increases uncertainty"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/010739b81653b1cc3e315897.webp",
+    "noteImage": "./assets/22e342c5b1019277158843e0.webp"
+  },
+  {
+    "id": "COS201-985",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (985).png",
+    "question": "If a variable-length code is not prefix-free, which conclusion is always valid?",
+    "options": [
+      "Become ambiguous",
+      "Reduce noise",
+      "Work normally",
+      "Increase speed",
+      "Instantaneous decoding is not guaranteed; the code may still be uniquely decodable with lookahead."
+    ],
+    "answer": [
+      4
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/61c94284ea3b42f1b97cd76d.webp",
+    "noteImage": "./assets/c6617eba7c886e5a7ad13316.webp"
+  },
+  {
+    "id": "COS201-986",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (986).png",
+    "question": "If PLL fails in coherent detection, result is:",
+    "options": [
+      "Reduced bandwidth",
+      "IQ mixing error",
+      "Noise removal",
+      "Improved signal"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2a33b5b27fa5bec44599ff8c.webp",
+    "noteImage": "./assets/56597a92130315f26c8fd90c.webp"
+  },
+  {
+    "id": "COS201-987",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (987).png",
+    "question": "Why is capacity achieved with optimal input distribution?",
+    "options": [
+      "Increases power",
+      "Maximizes mutual information",
+      "Reduces noise",
+      "Reduces entropy"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/50ec098894c012166e37e8f1.webp",
+    "noteImage": "./assets/8f55bd96dedb13abb2c494da.webp"
+  },
+  {
+    "id": "COS201-988",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (988).png",
+    "question": "Manchester encoding provides:",
+    "options": [
+      "Built-in clock recovery",
+      "No transitions",
+      "No synchronization",
+      "Lower bandwidth"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/036f0f5b465b94e06701710e.webp",
+    "noteImage": "./assets/fd9e63fb48e161026718591a.webp"
+  },
+  {
+    "id": "COS201-989",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (989).png",
+    "question": "AWGN primarily affects:",
+    "options": [
+      "Signal amplitude randomly",
+      "Pulse shape",
+      "Timing",
+      "Frequency only"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/0aefbfdc6eaa2fcf0e7d598b.webp",
+    "noteImage": "./assets/15e277d5811c5530499b4730.webp"
+  },
+  {
+    "id": "COS201-990",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (990).png",
+    "question": "If constellation points move closer together, BER will:",
+    "options": [
+      "Become zero",
+      "Decrease",
+      "Increase",
+      "Stay same"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/37da7b555653b2bd8e3caf7b.webp",
+    "noteImage": "./assets/e62eba99fa227a692b9b4f38.webp"
+  },
+  {
+    "id": "COS201-991",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (991).png",
+    "question": "In BPSK constellation, decision threshold is:",
+    "options": [
+      "Minimum",
+      "Zero",
+      "Average",
+      "Maximum"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/13a59f410bdcfc0d741c042a.webp",
+    "noteImage": "./assets/abb0bac01b276caab1d018ec.webp"
+  },
+  {
+    "id": "COS201-992",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (992).png",
+    "question": "In a coded OFDM system with sufficient interleaving and FEC redundancy, what may recover data affected by a lost subcarrier when the loss is within the code capability?",
+    "options": [
+      "Recover using FEC",
+      "Stop transmission",
+      "Fail completely",
+      "Lose all data"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/f5a04eb79b0444f2247949ac.webp",
+    "noteImage": "./assets/76ccaa08abca4d0edac5c190.webp"
+  },
+  {
+    "id": "COS201-993",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (993).png",
+    "question": "Why is information defined using a logarithmic function?",
+    "options": [
+      "To reduce noise",
+      "To increase entropy",
+      "To simplify equations",
+      "To satisfy additivity property"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a63d49f02d125f2dc91e32e1.webp",
+    "noteImage": "./assets/5b2f4b3a804a0d53dce4ca61.webp"
+  },
+  {
+    "id": "COS201-994",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (994).png",
+    "question": "Entropy represents:",
+    "options": [
+      "Noise power",
+      "Average information per symbol",
+      "Maximum transmission rate",
+      "Channel capacity"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/087fb9be973115f5fc7d007b.webp",
+    "noteImage": "./assets/692f0b0ec65c1c517c349ea8.webp"
+  },
+  {
+    "id": "COS201-995",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (995).png",
+    "question": "If bit energy doubles, what happens to SNR?",
+    "options": [
+      "Decreases",
+      "Doubles",
+      "Halves",
+      "No change"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/8d9d05014cbdd1eefb720bd0.webp",
+    "noteImage": "./assets/d341fdeff2819e8452babd40.webp"
+  },
+  {
+    "id": "COS201-996",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (996).png",
+    "question": "Delta Modulation transmits:",
+    "options": [
+      "Full amplitude",
+      "Phase only",
+      "Only difference between samples",
+      "Frequency only"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/38f9e5758e1cd9eb39113ae8.webp",
+    "noteImage": "./assets/810575417544060977df339a.webp"
+  },
+  {
+    "id": "COS201-997",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (997).png",
+    "question": "If sampling clock jitter increases, system performance will:",
+    "options": [
+      "Increase bandwidth",
+      "Degrade",
+      "Improve",
+      "Stay constant"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/3fbd26acbe23b8f34a507566.webp",
+    "noteImage": "./assets/8cf276d8cff9a71c37511a07.webp"
+  },
+  {
+    "id": "COS201-998",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (998).png",
+    "question": "Why is Huffman coding optimal?",
+    "options": [
+      "Minimizes average code length",
+      "Removes noise",
+      "Uses fixed-length codes",
+      "Increases entropy"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/e1bc1406bc31d22a475028ae.webp",
+    "noteImage": "./assets/59fed2d0b6fa71c7d332cb2c.webp"
+  },
+  {
+    "id": "COS201-999",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (999).png",
+    "question": "If subcarriers in OFDM are not orthogonal, result is:",
+    "options": [
+      "Bandwidth reduction",
+      "Interference",
+      "Perfect signal",
+      "Noise reduction"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/a1799c2e0b78dd366fa5b927.webp",
+    "noteImage": "./assets/15504296156dccdcf3bc77c0.webp"
+  },
+  {
+    "id": "COS201-1000",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1000).png",
+    "question": "If IFFT is used at transmitter, it performs:",
+    "options": [
+      "Filtering",
+      "Noise removal",
+      "Detection",
+      "Combining subcarriers"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/7710d4bcf283201752578c33.webp",
+    "noteImage": "./assets/ce40d1ed4e455d71824e37eb.webp"
+  },
+  {
+    "id": "COS201-1001",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1001).png",
+    "question": "If sampling is not at optimal instant, result is:",
+    "options": [
+      "Reduced noise",
+      "No change",
+      "Increased error",
+      "Higher SNR"
+    ],
+    "answer": [
+      2
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/56e8686e457b083fed1351d3.webp",
+    "noteImage": "./assets/9fb04adc1940db477f97d270.webp"
+  },
+  {
+    "id": "COS201-1002",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1002).png",
+    "question": "If FFT is used at receiver, it performs:",
+    "options": [
+      "Demultiplexing subcarriers",
+      "Modulation",
+      "Amplification",
+      "Noise removal"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/d29784215884d04cb4060e5c.webp",
+    "noteImage": "./assets/c58a12cbe61968afc631819f.webp"
+  },
+  {
+    "id": "COS201-1003",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1003).png",
+    "question": "The Sinc envelope in PAM spectrum results in:",
+    "options": [
+      "Flat response",
+      "Noise removal",
+      "Constant gain",
+      "High-frequency attenuation"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fcb73d49fc51497a00a66eb6.webp",
+    "noteImage": "./assets/cf3a0035c3cd0a1fa6c3e01e.webp"
+  },
+  {
+    "id": "COS201-1004",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1004).png",
+    "question": "Why does matched filter maximize SNR?",
+    "options": [
+      "It matches signal spectrum",
+      "It removes noise",
+      "It increases bandwidth",
+      "It reduces energy"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/fd67437392907fc187943ddf.webp",
+    "noteImage": "./assets/bd8741891c5cf6b487da5179.webp"
+  },
+  {
+    "id": "COS201-1005",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1005).png",
+    "question": "The decision threshold for binary symmetric signaling is:",
+    "options": [
+      "Zero",
+      "Maximum value",
+      "Minimum value",
+      "Average value"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/cb49a94c70712986bd46b527.webp",
+    "noteImage": "./assets/6b77c072128b31785f3fb0a5.webp"
+  },
+  {
+    "id": "COS201-1006",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1006).png",
+    "question": "Why does increasing M in QAM increase BER?",
+    "options": [
+      "Smaller distance between points",
+      "Larger bandwidth",
+      "Lower frequency",
+      "Higher power"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/ed770718a0f961222f8a6346.webp",
+    "noteImage": "./assets/9b62b3ac84e74f8c5b7abb73.webp"
+  },
+  {
+    "id": "COS201-1007",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1007).png",
+    "question": "The Q-function is used to:",
+    "options": [
+      "Measure signal power",
+      "Filter noise",
+      "Compute bandwidth",
+      "Calculate error probability"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/59201fc92beb34ed8702c03e.webp",
+    "noteImage": "./assets/c8beac1a0fb90c88e8ff8eab.webp"
+  },
+  {
+    "id": "COS201-1008",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1008).png",
+    "question": "Why is repetition coding inefficient?",
+    "options": [
+      "Very low rate",
+      "Low redundancy",
+      "High noise",
+      "High error"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/47f45a4c0863e72b975c1025.webp",
+    "noteImage": "./assets/d0b07c5276325ea81a2b569a.webp"
+  },
+  {
+    "id": "COS201-1009",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1009).png",
+    "question": "If minimum distance increases, error correction ability will:",
+    "options": [
+      "Stay same",
+      "Increase",
+      "Become zero",
+      "Decrease"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/01eea03938dd9e8a1e10838f.webp",
+    "noteImage": "./assets/df02838233f2ff0c687c2418.webp"
+  },
+  {
+    "id": "COS201-1010",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1010).png",
+    "question": "The 3 dB penalty in BFSK is due to:",
+    "options": [
+      "Frequency shift",
+      "Bandwidth",
+      "Noise",
+      "Orthogonal signaling"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/6f0dd45a522ee14c5b1d547b.webp",
+    "noteImage": "./assets/098180e4a2c8f32a1b9325d6.webp"
+  },
+  {
+    "id": "COS201-1011",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1011).png",
+    "question": "If bandwidth is reduced below Nyquist limit, what occurs?",
+    "options": [
+      "ISI increases",
+      "BER decreases",
+      "Signal improves",
+      "Noise decreases"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/808333a499de486fda1481c7.webp",
+    "noteImage": "./assets/fa5cb7579249ecfe8cf4098f.webp"
+  },
+  {
+    "id": "COS201-1012",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1012).png",
+    "question": "Why is entropy maximum when symbols are equally likely?",
+    "options": [
+      "No noise",
+      "Equal power",
+      "Minimum uncertainty",
+      "Maximum uncertainty"
+    ],
+    "answer": [
+      3
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/2fc5229922786ad76220b825.webp",
+    "noteImage": "./assets/ebc3d9ed76e2368311770fa5.webp"
+  },
+  {
+    "id": "COS201-1013",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1013).png",
+    "question": "Why must baseband signals be modulated onto a carrier?",
+    "options": [
+      "To enable wireless transmission",
+      "To increase power",
+      "To reduce bandwidth",
+      "To reduce noise"
+    ],
+    "answer": [
+      0
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/80311e9ed1f24998dde3e3cb.webp",
+    "noteImage": "./assets/7e0d1acf4b803347b5cd6cf7.webp"
+  },
+  {
+    "id": "COS201-1014",
+    "subject": "COS201",
+    "source": "COS201/Screenshot (1014).png",
+    "question": "What is the main advantage of digital communication over analog?",
+    "options": [
+      "Simpler circuits",
+      "Noise accumulation immunity",
+      "Higher bandwidth",
+      "Lower cost always"
+    ],
+    "answer": [
+      1
+    ],
+    "imageOnly": false,
+    "review": false,
+    "questionImage": "./assets/c32afe57e87f25b7ab3fed37.webp",
+    "noteImage": "./assets/916fb69d0cd07e0d80740d4d.webp"
+  }
+]

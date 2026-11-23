@@ -1,0 +1,8 @@
+.checks/
+.sites-runtime/
+node_modules/
+.wrangler/
+*.sqlite*
+.dev.vars*
+.env*
+.wallpaper-preview-store/

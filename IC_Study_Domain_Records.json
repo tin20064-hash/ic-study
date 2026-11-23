@@ -1,0 +1,52 @@
+{
+  "id": "appgdom_6af0914b581c8191bcb80d09ff0bd952",
+  "project_id": "appgprj_6aefe01520c08191bf4b271f322a1395",
+  "hostname": "icstudy.dpdns.org",
+  "worker_name": "site---6aefe01520c08191bf4b271f322a1395",
+  "status": "active",
+  "provider_status": "active",
+  "ssl_status": "active",
+  "cname_target": "custom-domains.chatgpt.site.",
+  "apex_proxy_ipv4_targets": [
+    "162.159.143.30",
+    "172.66.3.26"
+  ],
+  "validation_records": [
+    {
+      "record_type": "TXT",
+      "name": "_openai-site-verification.icstudy.dpdns.org",
+      "value": "openai-site-verification=NUD6Bo0q2jEMoPdf97KwxANsEVyytHOofmFZrElhdwQ"
+    }
+  ],
+  "last_error": null,
+  "created_at": "2026-11-08T15:12:11.344846+00:00",
+  "updated_at": "2026-11-08T15:16:00.318657+00:00",
+  "configured_records": [
+    {
+      "name": "@",
+      "type": "A",
+      "value": "162.159.143.30",
+      "ttl": 300
+    },
+    {
+      "name": "@",
+      "type": "A",
+      "value": "172.66.3.26",
+      "ttl": 300
+    },
+    {
+      "name": "_openai-site-verification.icstudy.dpdns.org",
+      "type": "TXT",
+      "value": "openai-site-verification=NUD6Bo0q2jEMoPdf97KwxANsEVyytHOofmFZrElhdwQ",
+      "ttl": 300
+    },
+    {
+      "name": "_cf-custom-hostname.icstudy.dpdns.org",
+      "type": "TXT",
+      "value": "83428a7e-0c6b-4fd5-b305-5d12bd16715a",
+      "ttl": 300
+    }
+  ],
+  "registered_at": "2026-11-08",
+  "registrar_expiration": "2027-11-08"
+}

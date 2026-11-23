@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name         ChatGPT - Sakura Study Pastel
+@namespace    local.sakura.study
+@version      1.0.0
+@description  Light pastel anime wallpaper for ChatGPT web. Embedded local artwork, no remote assets.
+@author       Personal study workspace
+@license      CC0-1.0
+==/UserStyle== */
+
+@-moz-document domain("chatgpt.com") {
+  /* Use ChatGPT's Light appearance before enabling this style. */
+  html {
+    --bg-primary: rgba(255, 250, 253, .94) !important;
+    --bg-secondary: rgba(251, 237, 246, .96) !important;
+    --main-surface-primary: rgba(255, 250, 253, .89) !important;
+    --main-surface-secondary: rgba(253, 238, 247, .96) !important;
+    --main-surface-tertiary: #f6e1ee !important;
+    --sidebar-surface-primary: rgba(255, 245, 251, .96) !important;
+    --sidebar-surface-secondary: #f9e8f2 !important;
+    --message-surface: #f8e4f0 !important;
+    --text-primary: #513d50 !important;
+    --text-secondary: #8a6e84 !important;
+    --border-light: rgba(188, 132, 165, .2) !important;
+    --sakura-art: url("/*__ANIME_ART__*/");
+    background: linear-gradient(rgba(255, 246, 251, .78), rgba(255, 246, 251, .78)), var(--sakura-art) center / cover fixed !important;
+  }
+  body, #__next, #root, main, #thread {
+    background-color: transparent !important;
+  }
+  /* Match existing semantic ChatGPT surface classes, preserving layout and controls. */
+  .bg-token-main-surface-primary { background-color: rgba(255, 249, 253, .8) !important; }
+  .bg-token-sidebar-surface-primary { background-color: rgba(255, 245, 251, .96) !important; }
+  .bg-token-message-surface { background-color: #fae8f2 !important; }
+  [data-message-author-role="assistant"] {
+    background-color: rgba(255, 255, 255, .82) !important;
+    border: 1px solid rgba(224, 186, 209, .38);
+    border-radius: 18px;
+    padding: 16px;
+  }
+  [data-message-author-role="user"] {
+    border-radius: 18px;
+  }
+  #prompt-textarea { color: #513d50 !important; }
+  ::selection { background: #efc5df !important; color: #623852 !important; }
+}

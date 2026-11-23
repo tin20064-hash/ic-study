@@ -1,0 +1,501 @@
+{
+  "subject": "ICI211",
+  "groups": [
+    {
+      "ids": [
+        "ICI211-250",
+        "ICI211-471"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-251",
+        "ICI211-438"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-252",
+        "ICI211-421",
+        "ICI211-495"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-253",
+        "ICI211-379"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-254",
+        "ICI211-318"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-255",
+        "ICI211-424"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-256",
+        "ICI211-464"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-257",
+        "ICI211-325"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-258",
+        "ICI211-437"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-260",
+        "ICI211-366"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-261",
+        "ICI211-331"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-367",
+        "ICI211-262",
+        "ICI211-382",
+        "ICI211-391"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-263",
+        "ICI211-459"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-264",
+        "ICI211-402"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-265",
+        "ICI211-401"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-266",
+        "ICI211-394",
+        "ICI211-426"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-267",
+        "ICI211-396"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-268",
+        "ICI211-490"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-269",
+        "ICI211-380"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-270",
+        "ICI211-320"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-271",
+        "ICI211-326"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-272",
+        "ICI211-476"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-273",
+        "ICI211-433"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-274",
+        "ICI211-315"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-275",
+        "ICI211-457"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-276",
+        "ICI211-487"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-277",
+        "ICI211-409"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-280",
+        "ICI211-434"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-281",
+        "ICI211-403"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-282",
+        "ICI211-360"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-283",
+        "ICI211-353"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-404",
+        "ICI211-284",
+        "ICI211-302"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-285",
+        "ICI211-413"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-351",
+        "ICI211-286"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-287",
+        "ICI211-408"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-288",
+        "ICI211-377"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-289",
+        "ICI211-445"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-290",
+        "ICI211-461"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-291",
+        "ICI211-390"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-292",
+        "ICI211-412"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-293",
+        "ICI211-400",
+        "ICI211-479"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-295",
+        "ICI211-478"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-296",
+        "ICI211-415"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-297",
+        "ICI211-493"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-298",
+        "ICI211-496"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-299",
+        "ICI211-416"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-300",
+        "ICI211-335"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-328",
+        "ICI211-361"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-336",
+        "ICI211-330"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-481",
+        "ICI211-346",
+        "ICI211-485"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-347",
+        "ICI211-348"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    },
+    {
+      "ids": [
+        "ICI211-373",
+        "ICI211-428"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "ICI211-454",
+        "ICI211-491"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "exact"
+    }
+  ],
+  "keptDistinct": [
+    {
+      "ids": [
+        "ICI211-251",
+        "ICI211-272"
+      ],
+      "reasonVi": "tPLH và tPHL là hai hướng chuyển mức khác nhau."
+    },
+    {
+      "ids": [
+        "ICI211-334",
+        "ICI211-450"
+      ],
+      "reasonVi": "Cùng công thức RC nhưng có số liệu và cách lập mô hình khác nhau."
+    },
+    {
+      "ids": [
+        "ICI211-308",
+        "ICI211-342"
+      ],
+      "reasonVi": "Bài tính tỷ lệ dòng có các tỷ lệ kích thước khác nhau."
+    },
+    {
+      "ids": [
+        "ICI211-299",
+        "ICI211-323"
+      ],
+      "reasonVi": "Một câu hỏi lợi ích 8T, câu kia chọn giải pháp và đánh đổi diện tích."
+    },
+    {
+      "ids": [
+        "ICI211-271",
+        "ICI211-427"
+      ],
+      "reasonVi": "Phân biệt hệ quả tăng dòng với cơ chế giảm chiều dài kênh."
+    },
+    {
+      "ids": [
+        "ICI211-269",
+        "ICI211-425"
+      ],
+      "reasonVi": "Phân biệt nhận diện weak-one với cơ chế VDD−VT."
+    },
+    {
+      "ids": [
+        "ICI211-365",
+        "ICI211-373"
+      ],
+      "reasonVi": "Bài tình huống lựa chọn công nghệ giữ riêng câu khái niệm."
+    },
+    {
+      "ids": [
+        "ICI211-296",
+        "ICI211-482"
+      ],
+      "reasonVi": "Lý do latch cùng trong suốt cụ thể khác câu tên/ý nghĩa clock không chồng."
+    },
+    {
+      "ids": [
+        "ICI211-480",
+        "ICI211-486"
+      ],
+      "reasonVi": "Một câu giải thích đường dẫn transistor, câu kia hỏi dòng DC lý tưởng."
+    }
+  ]
+}

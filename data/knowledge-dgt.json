@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fourier-properties",
+    "title": "Dịch phổ, đạo hàm và đối xứng",
+    "formula": "x[n]·exp(jω₀n) ↔ X(ω−ω₀)\nn·x[n] ↔ j·dX(ω)/dω\nx[n] thực ⇒ X(−ω) = X*(ω)",
+    "note": "Với DFT, nhân cos có tần số đúng bin k₀ tạo hai bản phổ dịch ±k₀, mỗi bản nhân 1/2. Chỉ số DFT tính theo modulo N. Dãy thực có biên độ phổ chẵn và pha lẻ theo modulo 2π ở những điểm phổ khác 0.",
+    "tip": "Thấy n đứng ngoài x[n] thì lấy đạo hàm theo ω. Thấy cos thì tách thành hai hàm mũ trước khi dịch phổ.",
+    "example": "N = 8, k₀ = 2. Sau khi nhân cos, bin 1 bằng [X[7] + X[3]]/2 vì 1−2 = −1 ≡ 7 (mod 8).",
+    "ids": ["DGT302-510", "DGT302-519", "DGT302-574", "DGT302-575", "DGT302-576", "DGT302-577"]
+  },
+  {
+    "id": "block-convolution",
+    "title": "Chập từng khối bằng Overlap-Save",
+    "formula": "M = số hệ số FIR, N ≥ M là chiều dài FFT\nSố mẫu mới mỗi khối = N−M+1\nBỏ M−1 mẫu đầu của IFFT, giữ N−M+1 mẫu cuối",
+    "note": "Mỗi khối N mẫu chứa M−1 mẫu cuối của khối trước và N−M+1 mẫu mới. Chập vòng qua FFT làm các mẫu đầu bị cuộn chồng. Overlap-Save chuẩn ghép trực tiếp phần hợp lệ của từng khối.",
+    "tip": "Thấy “discard first” thì tính M−1. Nhân thêm cửa sổ Hamming vào từng khối sẽ thay đổi trọng số mẫu và có thể làm biên độ đầu ra dao động.",
+    "example": "FIR dài 5 mẫu, FFT dài 16. Lặp 4 mẫu cũ, lấy 12 mẫu mới rồi bỏ 4 mẫu đầu của IFFT.",
+    "ids": ["DGT302-512", "DGT302-610", "DGT302-636", "DGT302-735"]
+  },
+  {
+    "id": "notch-inversion",
+    "title": "Đặt zero để lọc notch và đọc bộ nghịch đảo",
+    "formula": "ω₀ = 2πf₀/fs\nNotch hệ số thực tại ±ω₀ ⇒ zero ở z = exp(±jω₀)\nH_inv(z) = 1/H(z) ⇒ zero của H thành pole của H_inv",
+    "note": "Đặt zero trên vòng đơn vị để H bằng 0 đúng tần số cần loại. Bộ nghịch đảo cần H khác 0 trên dải cần khôi phục. Nếu |H| rất nhỏ, |1/H| rất lớn và làm nhiễu mạnh lên.",
+    "tip": "Đề hỏi vị trí notch thì tìm góc ±ω₀ và bán kính 1. Đề hỏi nhiễu sau nghịch đảo thì kiểm tra những tần số có |H| nhỏ.",
+    "example": "Triệt nhiễu 60 Hz khi fs = 480 Hz. ω₀ = π/4 nên đặt cặp zero ở exp(±jπ/4).",
+    "ids": ["DGT302-537", "DGT302-540", "DGT302-713", "DGT302-743", "DGT302-779"]
+  },
+  {
+    "id": "bilinear-design",
+    "title": "Bilinear và bù méo tần số",
+    "formula": "s = (2/T)·(1−z⁻¹)/(1+z⁻¹), T = 1/fs\nΩ = (2/T)·tan(ω/2)\nω tính bằng rad/mẫu, Ω tính bằng rad/s",
+    "note": "Bilinear đưa nửa trái mặt phẳng s vào bên trong vòng đơn vị và làm méo trục tần số. Tính trước Ω từ cạnh dải số mong muốn rồi dùng Ω để thiết kế bộ lọc tương tự. Ở cùng bậc, Chebyshev I thường chuyển dải sắc hơn Butterworth và có ripple trong dải thông.",
+    "tip": "Thấy “pre-warp” thì đổi cạnh dải số sang tương tự trước. “Passband ripple” là dấu hiệu của Chebyshev I trong cặp so sánh này.",
+    "example": "Cạnh dải số ωc = π/2 tương ứng Ωc = (2/T)·tan(π/4) = 2/T.",
+    "ids": ["DGT302-595", "DGT302-621", "DGT302-712", "DGT302-750"]
+  },
+  {
+    "id": "multirate-calculation",
+    "title": "Tính cutoff, gain và phổ sau giảm mẫu",
+    "formula": "Đổi I/D qua bộ lọc ở tốc độ I·fs ⇒ ωc = π/max(I,D), gain DC = I\nVới y[m] = x[2m], Y(ω) = ½[X(ω/2) + X(ω/2−π)]",
+    "note": "Cutoff lý tưởng tính ở lưới sau khi chèn zero, nơi Nyquist ứng với π. Giảm mẫu làm các bản sao phổ có thể chồng lên nhau. Polyphase bỏ các phép tính có mẫu chèn bằng 0 hoặc kết quả sẽ bị decimator bỏ.",
+    "tip": "Nếu đề chuẩn hóa theo Nyquist, chia ωc cho π. Gain lấy hệ số tăng mẫu I. Với D=2, đối số phổ đầu tiên là ω/2.",
+    "example": "Đổi tốc độ 3/4. Tăng 3, lọc rồi giảm 4. Cutoff chuẩn hóa bằng 1/4 và gain DC bằng 3.",
+    "ids": ["DGT302-516", "DGT302-579", "DGT302-580", "DGT302-581", "DGT302-756"]
+  },
+  {
+    "id": "adc-quantization",
+    "title": "ADC, số bit và nhiễu trong dải",
+    "formula": "ADC lý tưởng đều B bit có 2^B mức, Δ = dải toàn thang/2^B\nMô hình lỗi lượng tử đều ⇒ σ²ₑ ≈ Δ²/12",
+    "note": "Sampling lấy mẫu theo thời gian, holding giữ mức trong lúc chuyển đổi, quantization chọn mức biên độ. SAR thử từng bit từ MSB xuống LSB. Nếu nhiễu lượng tử trải đều và dải tín hiệu cố định, oversampling rồi lọc thấp giảm phần nhiễu nằm trong dải cần giữ.",
+    "tip": "“One bit at a time” gợi SAR. Đề giữ fs và tăng số bit thì xét bước lượng tử Δ và SNR lượng tử.",
+    "example": "Cùng toàn thang, tăng từ 8 lên 10 bit làm Δ giảm 4 lần và công suất lỗi lượng tử lý tưởng giảm 16 lần.",
+    "ids": ["DGT302-509", "DGT302-520", "DGT302-645", "DGT302-716", "DGT302-724", "DGT302-771"]
+  },
+  {
+    "id": "fixed-point",
+    "title": "Fixed-point, tràn FFT và dịch cực IIR",
+    "formula": "Dịch phải 1 bit ⇒ giảm biên độ xấp xỉ 2 lần\nCắt LSB kiểu floor và e = giá trị lượng tử − giá trị thật ⇒ e ≤ 0 khi không tràn",
+    "note": "Tổng ở butterfly có thể cần thêm bit. Dùng bit dự phòng hoặc giảm thang trước khi kết quả vượt dải lưu trữ. Làm tròn hệ số IIR dịch chuyển cực và zero. Với IIR nhân quả, kiểm tra lại mọi cực sau lượng tử hóa.",
+    "tip": "“Butterfly + fixed-point” gợi tràn số. “Coefficient quantization + IIR” gợi cực dịch chuyển và có thể mất ổn định.",
+    "example": "Số nguyên có dấu 8 bit biểu diễn đến 127. Tổng 100 + 70 = 170 cần thêm bit. Tính bằng thanh ghi rộng rồi chia 2 cho kết quả 85.",
+    "ids": ["DGT302-502", "DGT302-564", "DGT302-749", "DGT302-761", "DGT302-783"]
+  },
+  {
+    "id": "wiener-correlation",
+    "title": "Tương quan, sai số trực giao và Wiener",
+    "formula": "Wiener FIR với tín hiệu thực: Rxx·w = rxd\nRxx = E[x·xᵀ], rxd = E[x·d], với x là vectơ mẫu vào và d là tín hiệu đích\nỞ nghiệm tối ưu, E[x·e] = 0 với e = d−wᵀx",
+    "note": "Rxx chứa tự tương quan của đầu vào. Vế phải dùng tương quan chéo với tín hiệu đích. Yule–Walker dùng tự tương quan để tìm hệ số mô hình AR. Đỉnh tương quan chéo thường chỉ độ trễ khớp nhất theo quy ước dịch đang dùng.",
+    "tip": "“Desired signal” gợi tương quan chéo ở vế phải. “Orthogonality” nghĩa là sai số không tương quan với từng mẫu đã dùng để dự đoán.",
+    "example": "Một hệ số, E[x²] = 4 và E[xd] = 2. Giải 4w = 2 được w = 0,5.",
+    "ids": ["DGT302-567", "DGT302-588", "DGT302-622", "DGT302-640", "DGT302-753"]
+  }
+]

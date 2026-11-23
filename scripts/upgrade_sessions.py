@@ -1,0 +1,55 @@
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent.parent
+for file in ['src/app.js','anime/app.js']:
+ p=ROOT/file;s=p.read_text(encoding='utf-8')
+ def replace(a,b):
+  global s
+  assert a in s,(file,a[:90]);s=s.replace(a,b)
+ replace('session:null,lastSubject:', 'sessions:[],wrongIds:[],session:null,lastSubject:')
+ replace(' return out;',' normalizeSessionStore(out,data);\n return out;')
+ replace('function persist(){try{','function persist(){saveActiveSession();try{')
+ replace("function setView(v){view=v;", "function setView(v){persist();view=v;")
+ replace("['practice','book','Luyện tập'],", "['practice','book','Luyện tập'],['sessions','cards','Phiên học'],")
+ replace("['mistakes','retry','Ôn câu sai']", "['mistakes','retry','Luyện câu sai']")
+ replace("BANK.filter(q=>S.responses[q.id]&&!correct(q,S.responses[q.id].value)).length", "wrongQuestionIds().length")
+ replace("if(filter==='wrong')arr=arr.filter(q=>S.responses[q.id]&&!correct(q,S.responses[q.id].value))", "if(filter==='wrong')arr=arr.filter(q=>wrongQuestionIds().includes(q.id))")
+ replace("isWrong?S.responses[q.id]&&!correct(q,S.responses[q.id].value):S.bookmarks[q.id]", "isWrong?wrongQuestionIds().includes(q.id):S.bookmarks[q.id]")
+ replace('Câu trả lời sai gần nhất sẽ ở đây. Trả lời đúng để đưa câu ra khỏi danh sách.', 'Danh sách câu sai của phiên hiện tại. Tạo lượt luyện chỉ gồm câu sai; đáp án cũ được ẩn cho tới khi bạn trả lời lại.')
+ replace("isWrong?'Ôn lại câu sai →'", "isWrong?'Tạo đề luyện câu sai →'")
+ replace('Câu hỏi và lựa chọn đều là văn bản để bôi đen, sao chép và dịch. Có ảnh gốc để đối chiếu khi cần.', 'Mỗi lần bắt đầu sẽ tạo phiên mới, trống đáp án và danh sách câu sai. Phiên trước vẫn được lưu trong “Phiên học”. Câu hỏi và lựa chọn có thể sao chép và dịch.')
+ replace('function newSession(ids,mode,extra={}){'+s.split('function newSession(ids,mode,extra={}){')[1].split('\nlet pendingSession')[0], '''function newSession(ids,mode,extra={}){ids=studyRestrictIds(ids);if(studyFocus())subject=studyFocus();if(!ids.length){toast('Chưa có câu phù hợp với bộ lọc.');return}persist();const previousWrong=[...(S.wrongIds||[])];S.wrongIds=extra.reviewWrong?previousWrong:[];S.session={id:sessionId(),mode,ids,index:0,answers:{},drafts:{},started:Date.now(),status:'saved',...extra,fresh:true};if(extra.reviewWrong)S.wrongIds=[...new Set([...S.wrongIds,...ids])];draft=[];showSource=false;flipped=false;S.lastSubject=subject;persist();setView('player')}''')
+ replace("return (s.mode==='exam'||s.fresh)?s.answers[q.id]:S.responses[q.id]?.value", "return s.answers[q.id]")
+ replace("draft=s.mode==='exam'?[...(s.answers[currentQ().id]||[])]:[];", "restoreSessionDraft();")
+ replace("if(s.mode==='exam'){s.answers[q.id]=[...draft].sort();persist()}render()", "s.drafts??={};s.drafts[q.id]=[...draft];if(s.mode==='exam')s.answers[q.id]=[...draft].sort();persist();render()")
+ replace("s.answers[q.id]=[...draft].sort();markDay", "s.answers[q.id]=[...draft].sort();delete s.drafts?.[q.id];updateWrong(q.id,s.answers[q.id]);markDay")
+ replace("complete=s.ids.filter(id=>(exam||flash||s.fresh)?s.answers[id]?.length:S.responses[id]).length", "complete=s.ids.filter(id=>s.answers[id]?.length).length")
+ replace("const r=(exam||flash||s.fresh)?s.answers[id]:S.responses[id]?.value", "const r=s.answers[id]")
+ replace('<span lang="en">${esc(o)}</span></div>', '<span lang="en">${esc(o)}</span><span class="choice-mark" aria-hidden="true"></span></div>')
+ replace('<span lang="en">${esc(o)}</span></button>', '<span lang="en">${esc(o)}</span><span class="choice-mark" aria-hidden="true"></span></button>')
+ replace(":btn('Chọn phiên mới','nav',`data-view=\"${flash?'flash':'practice'}\"`,'small ghost')", ":`<div class=\"btnrow\"><span class=\"session-autosave\">✓ Tự lưu phiên</span>${btn('Lưu & thoát','pause-session','','small')}${btn('Phiên mới','nav',`data-view=\"${flash?'flash':'practice'}\"`,'small ghost')}</div>`")
+ replace("if(pool==='wrong')arr=arr.filter(q=>S.responses[q.id]&&!correct(q,S.responses[q.id].value))", "if(pool==='wrong')arr=arr.filter(q=>wrongQuestionIds().includes(q.id))")
+ replace("duration,subject})}", "duration,subject,reviewWrong:pool==='wrong'})}")
+ replace("const result={id:Date.now(),subject:", "const result={id:Date.now(),sessionId:s.id,subject:")
+ replace("markDay(id)}S.history.unshift(result)", "updateWrong(id,s.answers[id]);markDay(id)}s.status='completed';s.finished=Date.now();persist();S.history.unshift(result)")
+ replace("view==='history'?history()", "view==='sessions'?sessionsPage():view==='history'?history()")
+ replace("draft=S.session.mode==='exam'?[...(S.session.answers[currentQ().id]||[])]:[];", "restoreSessionDraft();")
+ replace("newSession(shuffle(matching()).map(q=>q.id),'practice')", "newSession(shuffle(matching()).map(q=>q.id),'practice',{reviewWrong:el.dataset.collection==='mistakes'})")
+ replace("delete S.responses[q.id];delete S.session.answers[q.id];draft=[];", "delete S.session.answers[q.id];delete S.session.drafts?.[q.id];draft=[];")
+ replace("for(const id of ids)delete S.responses[id];newSession(ids,'practice')", "startWrongReview(ids)")
+ replace("function practiceDone(){const s=S.session,c=counts(s.ids.map(id=>BY_ID.get(id))),flash=s.mode==='flash';", "function practiceDone(){const s=S.session,stats=sessionStats(s),c={done:stats.done,right:stats.right},flash=s.mode==='flash';")
+ replace("{S.session=null;persist();$('modal').close();setView('home')}", "{S.session.status='completed';S.session.finished=Date.now();persist();S.session=null;persist();$('modal').close();setView('sessions')}")
+ p.write_text(s,encoding='utf-8')
+
+for file in ['scripts/package.py','anime/build.py']:
+ p=ROOT/file;s=p.read_text(encoding='utf-8')
+ if file.startswith('scripts'):
+  s=s.replace("(ROOT/'src/app.js').read_text(encoding='utf-8')", "(ROOT/'src/sessions.js').read_text(encoding='utf-8')+'\\n'+(ROOT/'src/app.js').read_text(encoding='utf-8')")
+  s=s.replace("(ROOT/'src/study.css').read_text(encoding='utf-8')", "(ROOT/'src/study.css').read_text(encoding='utf-8')+'\\n'+(ROOT/'src/sessions.css').read_text(encoding='utf-8')")
+ else:
+  s=s.replace("(DIR/'app.js').read_text(encoding='utf-8')", "(ROOT/'src/sessions.js').read_text(encoding='utf-8')+'\\n'+(DIR/'app.js').read_text(encoding='utf-8')")
+  s=s.replace("(DIR/'study-pastel.css').read_text(encoding='utf-8')", "(DIR/'study-pastel.css').read_text(encoding='utf-8')+'\\n'+(ROOT/'src/sessions.css').read_text(encoding='utf-8')+'\\n'+(DIR/'themes.css').read_text(encoding='utf-8')")
+ p.write_text(s,encoding='utf-8')
+for file in ['scripts/test_app.cjs','anime/test.cjs']:
+ p=ROOT/file;s=p.read_text(encoding='utf-8').replace("fs.readFileSync('src/study.js','utf8')+'\\n'+", "fs.readFileSync('src/study.js','utf8')+'\\n'+fs.readFileSync('src/sessions.js','utf8')+'\\n'+")
+ s=s.replace("delete S.responses['LOS201-14'];draft=[];", "delete S.responses['LOS201-14'];delete S.session.answers['LOS201-14'];draft=[];")
+ p.write_text(s,encoding='utf-8')

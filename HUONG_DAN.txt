@@ -1,0 +1,52 @@
+ÔN TẬP 4 MÔN
+
+MỞ NGAY
+Nhấp đúp file OnTap_4Mon.html và mở bằng Chrome hoặc Edge.
+Không cần cài đặt, không cần Internet. Chỉ cần mang theo file HTML này.
+File khoảng 42 MB vì đã nhúng ảnh câu hỏi và giải thích từ tài liệu nguồn.
+
+NGÂN HÀNG
+DGT302: 298 câu
+COS201: 214 câu
+ICI211: 247 câu
+LOS201: 200 câu
+Tổng: 959 mục câu hỏi từ 963 ảnh; bỏ 4 ảnh trống/trang ngăn cách.
+Giữ các câu lặp trong ngân hàng để đối chiếu nguồn; đề thi gộp các câu trùng nguyên văn nhận dạng được.
+Không lấy câu hỏi từ HTML mẫu.
+
+CÁCH HỌC
+- Luyện tập: chọn môn, tìm theo từ khóa, chọn số câu và thứ tự.
+- Chọn đáp án rồi nhấn Kiểm tra để xem đáp án và giải thích nguồn.
+- Với câu chọn nhiều đáp án, cần chọn đúng đủ bộ đáp án.
+- Tất cả câu hỏi và lựa chọn đều hiển thị bằng văn bản có thể bôi đen, sao chép để dịch.
+Công thức dùng ký hiệu Unicode hoặc dạng lũy thừa ^; nút Đối chiếu ảnh gốc giúp kiểm tra khi cần.
+- Nhấn vào ảnh để phóng to, kéo ngang để đọc rõ trên điện thoại.
+- Đánh dấu, ghi chú và ôn lại câu sai ở các mục tương ứng.
+- Thẻ ghi nhớ: tự trả lời, lật thẻ, chọn Đã nhớ hoặc Cần ôn lại.
+- Thi thử: chọn môn, số câu, thời gian; đáp án chỉ hiện khi nộp.
+- Bài thi hết giờ tự nộp. Đóng trang không dừng đồng hồ.
+
+LƯU TIẾN ĐỘ
+Tiến độ lưu riêng trên trình duyệt và thiết bị đang dùng.
+Chọn Xuất bản sao tiến độ trước khi đổi máy, đổi trình duyệt hoặc xóa dữ liệu trình duyệt.
+Dùng Khôi phục tiến độ để nhập lại tệp JSON đã xuất.
+
+ĐỐI CHIẾU NGUỒN
+Ảnh giải thích giữ nguyên nội dung đang thấy trong screenshot; không bổ sung phần bị cắt khuất.
+Bốn câu DGT302-510, DGT302-519, DGT302-521, DGT302-529 có điểm chưa thống nhất giữa dòng đáp án và phần giải thích, đã được gắn nhãn.
+Mặc định chấm theo dòng đáp án nguồn. Sau khi đối chiếu, bạn có thể chọn Hiệu chỉnh đáp án; lựa chọn lưu riêng trong tiến độ của bạn.
+Nội dung văn bản được nhận dạng từ ảnh nên có thể có lỗi ký hiệu; luôn có ảnh gốc để kiểm tra.
+
+PHÍM TẮT
+1–4: chọn đáp án A–D
+Enter: kiểm tra / câu tiếp theo
+Mũi tên trái/phải: chuyển câu
+B: đánh dấu
+Space: lật thẻ ghi nhớ
+
+MÃ NGUỒN
+src/: giao diện và logic ứng dụng
+scripts/build_bank.py: trích ngân hàng từ kết quả OCR
+scripts/package.py: đóng gói thành file HTML độc lập
+scripts/test_app.cjs: kiểm tra luồng học và thi
+Các ảnh gốc trong 4 thư mục được giữ nguyên.

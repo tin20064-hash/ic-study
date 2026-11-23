@@ -1,0 +1,12 @@
+.teaching-explanation { margin: 1.25rem 0; font-size: 1rem; line-height: 1.8; }
+.teaching-explanation h4 { margin: 0 0 .5rem; font-size: .9rem; font-weight: 750; color: var(--text); }
+.teaching-explanation p { margin: 0 0 .75rem; }
+.teaching-explanation p:last-child { margin-bottom: 0; }
+.teaching-memory { margin-top: 1rem; padding: .85rem 1rem; border-left: 3px solid var(--accent); border-radius: 0 .65rem .65rem 0; background: rgba(var(--accent-rgb), .07); }
+.teaching-memory h4 { color: var(--accent); }
+.teaching-comparisons { margin-top: 1.25rem; }
+.teaching-comparisons dl { margin: .65rem 0 0; display: grid; gap: .75rem; }
+.teaching-comparison { padding: .85rem 1rem; border: 1px solid var(--line); border-radius: .75rem; background: rgba(var(--accent-rgb), .035); }
+.teaching-comparison dt { font-weight: 750; color: var(--text); margin-bottom: .3rem; }
+.teaching-comparison dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .teaching-comparison { padding: .75rem .8rem; } }

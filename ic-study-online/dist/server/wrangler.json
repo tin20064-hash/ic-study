@@ -1,0 +1,1 @@
+{"name":"ic-study","main":"index.js","compatibility_date":"2026-11-08","assets":{"directory":"../client","binding":"ASSETS","run_worker_first":true},"d1_databases":[{"binding":"DB","database_name":"ic-study-db","database_id":"00000000-0000-4000-8000-000000000000"}],"r2_buckets":[{"binding":"BUCKET","bucket_name":"ic-study-wallpapers"}]}

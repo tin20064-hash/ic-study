@@ -1,0 +1,3050 @@
+[
+  {
+    "id": "ici-vtcmos",
+    "subject": "ICI211",
+    "pattern": "VTCMOS|variable.threshold",
+    "mechanism": "VTCMOS dùng body bias để thay đổi điện áp ngưỡng. Trong giới hạn công nghệ cho phép, ngưỡng thấp giúp tăng dòng lái và rút ngắn trễ; ngưỡng cao làm giảm dòng rò dưới ngưỡng. Hai chế độ tối ưu hai mục tiêu khác nhau, không có trạng thái vừa tốc độ vô hạn vừa không tiêu thụ điện.",
+    "comparisons": [
+      {
+        "concept": "Active / tốc độ cao",
+        "explanation": "Khi khối đang tính toán, ưu tiên đường tới hạn chạy nhanh; chấp nhận mức rò lớn hơn để đổi lấy ngưỡng thấp."
+      },
+      {
+        "concept": "Standby / dòng rò thấp",
+        "explanation": "Khi khối tạm nghỉ, phân cực thân ngược có thể nâng ngưỡng để giảm rò. Đây là lợi ích của chế độ chờ, không phải mục tiêu chính của active."
+      },
+      {
+        "concept": "Noise margin và dynamic current",
+        "explanation": "Biên chống nhiễu luôn hữu hạn; dòng nạp/xả tụ vẫn tồn tại khi chuyển mạch. Body bias không làm hai đại lượng này trở thành vô hạn hoặc bằng zero."
+      }
+    ]
+  },
+  {
+    "id": "ici-mtcmos",
+    "subject": "ICI211",
+    "pattern": "MTCMOS|multi.threshold|high.VT|low.VT",
+    "mechanism": "MTCMOS phối hợp transistor ngưỡng thấp và cao. Thiết bị ngưỡng thấp đặt ở nơi cần tốc độ; thiết bị ngưỡng cao hoặc sleep transistor hạn chế đường rò khi chờ. Cắt nguồn logic có thể làm mất trạng thái nếu không có phần tử retention.",
+    "comparisons": [
+      {
+        "concept": "Low-VT",
+        "explanation": "Dùng ở critical path để tăng dòng lái, với đánh đổi rò cao hơn."
+      },
+      {
+        "concept": "High-VT / sleep transistor",
+        "explanation": "Dùng để giảm rò hoặc ngắt đường nguồn của khối lúc standby; không có nghĩa ngắt mọi clock hay mọi tụ trong chip."
+      },
+      {
+        "concept": "Clock gating",
+        "explanation": "Dừng chuyển mạch clock để giảm công suất động; tự nó không cắt dòng rò như power gating."
+      }
+    ]
+  },
+  {
+    "id": "ici-delay-names",
+    "subject": "ICI211",
+    "pattern": "(?:tPLH|tPHL|rise time|fall time|propagation delay.*represent|transition.*propagation|transition time)|(?:switching analysis)",
+    "mechanism": "Ký hiệu trễ được đọc theo chiều chuyển của đầu ra. Mốc 50% ở đầu vào và đầu ra dùng để đo độ trễ lan truyền; mốc 10–90% hoặc 90–10% dùng để đo độ dài sườn. Một mạch có thể có sườn nhanh nhưng vẫn có trễ lan truyền đáng kể.",
+    "comparisons": [
+      {
+        "concept": "tPLH",
+        "explanation": "Đầu ra LOW→HIGH: đo từ sự kiện đầu vào tại 50% đến khi đầu ra lên tới 50%."
+      },
+      {
+        "concept": "tPHL",
+        "explanation": "Đầu ra HIGH→LOW: cũng đo giữa hai mốc 50%; không đồng nhất với fall time."
+      },
+      {
+        "concept": "Rise time / fall time",
+        "explanation": "Đo riêng sườn đầu ra: lên 10→90% hoặc xuống 90→10%. Không phải khoảng trễ từ input sang output."
+      },
+      {
+        "concept": "Tải điện dung / power-delay product",
+        "explanation": "Tải C ảnh hưởng trễ nhưng không phải tên một chiều chuyển mức. Tích công suất–trễ là thước đo năng lượng, không phải tPLH hay tPHL."
+      }
+    ]
+  },
+  {
+    "id": "ici-adiabatic",
+    "subject": "ICI211",
+    "pattern": "adiabatic|stepwise charging",
+    "mechanism": "Với tụ C nạp từ 0 lên V bằng một bước qua điện trở, nguồn cấp CV², tụ giữ CV²/2 và phần còn lại thành nhiệt. Chia thành nhiều bước điện áp nhỏ, đủ chậm so với RC, làm giảm chênh áp và tổn hao dẫn. Phần clock/nguồn nhiều mức vẫn có chi phí nên hệ thực không đạt năng lượng bằng zero.",
+    "comparisons": [
+      {
+        "concept": "Resistive energy loss",
+        "explanation": "Đây là phần giảm trực tiếp nhờ dòng nạp nhỏ hơn và chênh áp từng bước thấp hơn."
+      },
+      {
+        "concept": "Leakage current",
+        "explanation": "Là dòng rò ngay cả khi không chuyển mức. Nạp chậm hơn thậm chí có thể tăng năng lượng rò do thời gian kéo dài."
+      },
+      {
+        "concept": "Clock gating / threshold scaling",
+        "explanation": "Gating giảm số lần chuyển mạch; thay ngưỡng tác động tốc độ–rò. Hai cách này khác cơ chế nạp đoạn nhiệt."
+      }
+    ]
+  },
+  {
+    "id": "ici-multivibrator",
+    "subject": "ICI211",
+    "pattern": "monostable|multivibrator|astable|bistable",
+    "mechanism": "Trạng thái ổn định là điểm mà mạch có thể tự giữ lâu nếu không bị tác động. Trạng thái tạm chỉ tồn tại một khoảng rồi tự trở về. Vì vậy phải đếm số trạng thái giữ bền, không đếm số mức điện áp logic mà đầu ra có thể đi qua.",
+    "comparisons": [
+      {
+        "concept": "Monostable",
+        "explanation": "Có một trạng thái ổn định; xung kích đưa sang trạng thái tạm rồi mạch tự quay về. Dùng tạo một xung có độ rộng xác định."
+      },
+      {
+        "concept": "Bistable",
+        "explanation": "Có hai trạng thái ổn định; cần kích để chuyển giữa chúng. Dùng lưu một bit, như latch."
+      },
+      {
+        "concept": "Astable",
+        "explanation": "Không có trạng thái ổn định; mạch tự dao động. Dùng tạo clock/xung lặp, không dùng giữ bit tĩnh."
+      }
+    ]
+  },
+  {
+    "id": "ici-latch-clock",
+    "subject": "ICI211",
+    "pattern": "clocked latch|D.latch|latch.*input|master.slave|two.latch|non.overlap|two.phase clock|clocking scheme|race.through|clock.*overlap",
+    "mechanism": "Latch nhạy mức: trong pha cho phép, Q theo D; khi khóa, mạch giữ giá trị trước đó. Ghép hai latch dùng các pha đối nhau tạo hành vi gần nhạy cạnh. Nếu cả hai cùng mở, dữ liệu có thể xuyên qua nhiều tầng trong một chu kỳ, gây race-through.",
+    "comparisons": [
+      {
+        "concept": "Level-sensitive latch",
+        "explanation": "Dùng khi cần cửa sổ lấy dữ liệu theo mức enable hoặc clock; không phải chỉ lấy đúng một thời điểm cạnh."
+      },
+      {
+        "concept": "Edge-triggered flip-flop",
+        "explanation": "Lấy dữ liệu quanh cạnh hoạt động; master và slave được tổ chức để không đồng thời trong suốt."
+      },
+      {
+        "concept": "Hai pha không chồng lấn",
+        "explanation": "Tạo khoảng bảo vệ để hai latch không cùng mở. Không tự tăng noise margin hay loại bỏ toàn bộ transistor clock."
+      },
+      {
+        "concept": "Asynchronous / analog",
+        "explanation": "Mạch không đồng bộ không dùng một clock chung để điều khiển mọi bước; latch số có clock không vì thế trở thành phần tử analog liên tục."
+      }
+    ]
+  },
+  {
+    "id": "ici-sdff",
+    "subject": "ICI211",
+    "pattern": "SDFF|semi.dynamic",
+    "mechanism": "SDFF trong các câu này là Semi-Dynamic Flip-Flop: phần đầu động giúp đánh giá nhanh, phần sau tĩnh giữ kết quả. Lợi ích tốc độ nằm ở đường clock-to-Q và cấu trúc xử lý, nhưng vẫn phải thỏa setup/hold và vẫn có công suất, tải clock, rò. Không đồng nhất SDFF với mọi sense-amplifier flip-flop.",
+    "comparisons": [
+      {
+        "concept": "Semi-Dynamic FF",
+        "explanation": "Chọn khi hỏi cấu trúc kết hợp front end động với latch tĩnh để cải thiện tốc độ."
+      },
+      {
+        "concept": "Sense-amplifier FF",
+        "explanation": "Là họ dùng bộ khuếch đại vi sai để chốt tín hiệu nhỏ; tên SAFF không tự là cách khai triển của SDFF."
+      },
+      {
+        "concept": "Setup / hold và robustness",
+        "explanation": "Là các ràng buộc thời gian và độ bền vận hành cần kiểm tra riêng; không suy ra setup vô hạn, không rò hay output delay hằng."
+      }
+    ]
+  },
+  {
+    "id": "ici-pseudo",
+    "subject": "ICI211",
+    "pattern": "(?:pseudo.?nmos|pseudo.?nMOS|pseudo.NMOS)|(?:ratioed logic)",
+    "mechanism": "Pseudo-nMOS có pMOS tải luôn bật và mạng nMOS kéo xuống. Khi output thấp, hai nhánh có thể cùng dẫn nên xuất hiện dòng DC; mức thấp còn phụ thuộc tỉ lệ độ mạnh hai mạng. Việc dùng ít pMOS điều khiển theo input có thể giảm diện tích hoặc tải vào, nhưng không bảo đảm mọi chuyển mức đều nhanh hơn.",
+    "comparisons": [
+      {
+        "concept": "Static power dissipation",
+        "explanation": "Nhược điểm khi pull-down đang dẫn và pMOS tải vẫn bật; khác công suất động do nạp/xả tụ."
+      },
+      {
+        "concept": "Smaller area / lower input load",
+        "explanation": "Có ích khi thay mạng pMOS bổ sung phức tạp bằng một tải. Với inverter, lợi ích tải vào đến từ việc input chỉ lái nMOS."
+      },
+      {
+        "concept": "Complementary static CMOS",
+        "explanation": "Ở input logic hợp lệ, lý tưởng chỉ một mạng dẫn nên gần như không có đường DC từ VDD xuống ground."
+      },
+      {
+        "concept": "Infinite speed / zero current",
+        "explanation": "Không phải mô hình vật lý hợp lệ của pseudo-nMOS; còn R, C và dòng tĩnh nên không thể dùng như ưu điểm chuẩn."
+      }
+    ]
+  },
+  {
+    "id": "ici-design-style",
+    "subject": "ICI211",
+    "pattern": "(?:FPGA|full.custom|standard.cell|gate.array|design style|design methodology|updateability|technology.*adapt)|(?:implementation choice|500 units)",
+    "mechanism": "Lựa chọn công nghệ thiết kế phụ thuộc số lượng sản phẩm, thời gian phát triển và nhu cầu đổi chức năng. Tối ưu từng transistor thường cho hiệu năng/diện tích tốt nhưng tốn công và chi phí ban đầu; dùng cấu trúc có sẵn giảm rủi ro phát triển nhưng thêm overhead.",
+    "comparisons": [
+      {
+        "concept": "FPGA",
+        "explanation": "Lập trình lại sau chế tạo, phù hợp prototype, lô nhỏ hoặc cần cập nhật phần cứng. LUT thực hiện logic; flip-flop giữ trạng thái; carry chain tăng tốc phép toán."
+      },
+      {
+        "concept": "Standard-cell ASIC",
+        "explanation": "Ghép các cell logic đã thiết kế và đặc tả sẵn, phù hợp cân bằng giữa năng suất thiết kế và hiệu năng."
+      },
+      {
+        "concept": "Full-custom",
+        "explanation": "Tự tối ưu cấu trúc, sizing, layout; thường chọn khi hiệu năng/diện tích và sản lượng đủ lớn để bù chi phí phát triển."
+      },
+      {
+        "concept": "Gate array",
+        "explanation": "Dùng mảng transistor nền chế tạo trước rồi tùy biến liên kết; không có tính cập nhật sau chế tạo như FPGA."
+      }
+    ]
+  },
+  {
+    "id": "ici-interconnect",
+    "subject": "ICI211",
+    "pattern": "interconnect|wire|crosstalk|T.model|coupling|bus.*partition|partitioned bus",
+    "mechanism": "Dây thực có R, C và có thể có L phân bố. Dây dài cần mô hình phân bố để phản ánh tín hiệu lan qua từng đoạn; dây ngắn có thể gom thành lumped RC. Với hình học và vật liệu cố định, R=ρL/A và điện dung ghép gần C=εA/d: hai công thức mô tả hai ảnh hưởng khác nhau.",
+    "comparisons": [
+      {
+        "concept": "Lumped RC",
+        "explanation": "Phù hợp dây đủ ngắn so với thời gian biến thiên tín hiệu; đơn giản hóa tính trễ nhưng không mô tả đầy đủ dây dài."
+      },
+      {
+        "concept": "Distributed RC / T-model",
+        "explanation": "Chia dây thành các đoạn R và C để ước lượng trễ chính xác hơn. T-model không dùng để xác định threshold hay mobility transistor."
+      },
+      {
+        "concept": "Crosstalk",
+        "explanation": "Do ghép điện dung giữa dây lân cận. Chuyển ngược chiều thường tăng tải hiệu dụng và trễ hơn chuyển cùng chiều."
+      },
+      {
+        "concept": "Partitioning / hình học",
+        "explanation": "Chỉ kích hoạt một đoạn bus làm giảm C chuyển mạch. Tăng tiết diện giảm R; giảm khoảng cách dây thường tăng điện dung ghép, không làm C giảm."
+      }
+    ]
+  },
+  {
+    "id": "ici-pass-gate",
+    "subject": "ICI211",
+    "pattern": "(?:transmission gate|pass.transistor|NMOS pass|nMOS pass|multiplexer|2:1)|(?:NMOS transistor pass)",
+    "mechanism": "nMOS truyền mức 0 tốt nhưng mức 1 bị giới hạn khi VGS giảm tới VT; pMOS có điểm mạnh ngược lại. Transmission gate ghép hai transistor song song, điều khiển bằng hai tín hiệu bổ sung, để truyền cả hai mức tốt hơn. TG là công tắc hai chiều, không phải bộ khuếch đại có gain.",
+    "comparisons": [
+      {
+        "concept": "nMOS đơn",
+        "explanation": "Strong 0, weak 1: thường gặp sụt ngưỡng khi đưa mức HIGH qua pass transistor."
+      },
+      {
+        "concept": "pMOS đơn",
+        "explanation": "Strong 1, weak 0: bù điểm yếu của nMOS trong một transmission gate."
+      },
+      {
+        "concept": "Transmission gate",
+        "explanation": "Truyền 0/1 gần rail-to-rail và ON resistance tương đối phẳng khi sizing phù hợp; điện trở vẫn hữu hạn và thay đổi theo điện áp."
+      },
+      {
+        "concept": "MUX 2:1",
+        "explanation": "Khi S=0 chọn D0, S=1 chọn D1: Y=¬S·D0+S·D1. Đảo hai nhánh điều khiển sẽ đảo ý nghĩa lựa chọn."
+      }
+    ]
+  },
+  {
+    "id": "ici-load-inverter",
+    "subject": "ICI211",
+    "pattern": "enhancement.load|resistive.load|saturated.*load|load.*inverter",
+    "mechanism": "Inverter dùng tải điện trở hoặc nMOS tải khác static CMOS bổ sung: tải kéo lên cạnh tranh với transistor kéo xuống. Cách bias quyết định tải ở vùng tuyến tính hay bão hòa, mức HIGH/LOW và noise margin. Khi nMOS kéo xuống cutoff và bỏ qua rò, không có đường dòng DC qua nhánh đó.",
+    "comparisons": [
+      {
+        "concept": "Saturated enhancement-load",
+        "explanation": "Gate và drain tải có thể dùng chung VDD; chỉ cần một nguồn nhưng mức HIGH có thể bị sụt ngưỡng."
+      },
+      {
+        "concept": "Linear enhancement-load",
+        "explanation": "Cần bias thích hợp để giữ tải ở vùng tuyến tính; trong so sánh được nêu có thể cho swing/noise margin tốt hơn tải enhancement bão hòa."
+      },
+      {
+        "concept": "Resistive load + driver OFF",
+        "explanation": "Dòng lý tưởng bằng zero, output bị kéo lên qua điện trở. Output không tự bằng ground hay điện áp âm."
+      }
+    ]
+  },
+  {
+    "id": "ici-stability",
+    "subject": "ICI211",
+    "pattern": "disturbance|stable systems|positive feedback|metastable|regenerat",
+    "mechanism": "Cần phân biệt ổn định tiệm cận, dao động bền và điểm metastable. Gần điểm metastable của latch tái sinh, feedback dương làm sai lệch nhỏ ban đầu tăng lên để chọn một trạng thái logic. Đây không phải kết luận rằng mọi feedback dương luôn tăng tín hiệu vô hạn.",
+    "comparisons": [
+      {
+        "concept": "Ổn định tiệm cận",
+        "explanation": "Nhiễu nhỏ tắt dần và hệ trở lại điểm cân bằng; giống hệ có suy giảm."
+      },
+      {
+        "concept": "Metastable / tái sinh",
+        "explanation": "Điểm cân bằng không bền giữa hai trạng thái của latch; sai lệch có thể tăng gần theo hàm mũ rồi bị giới hạn bởi rail nguồn."
+      },
+      {
+        "concept": "Dao động không tắt",
+        "explanation": "Có thể là hệ trung tính hoặc limit cycle tùy mô hình; không đồng nhất với nhiễu tắt dần."
+      },
+      {
+        "concept": "Eliminate feedback",
+        "explanation": "Không phải hệ quả của ổn định: chính feedback được thiết kế phù hợp có thể tạo ổn định."
+      }
+    ]
+  },
+  {
+    "id": "ici-energy-bands",
+    "subject": "ICI211",
+    "pattern": "(?:electron affinity|conduction.vacuum|vacuum.*conduction)|(?:work function)",
+    "mechanism": "Electron affinity χ là khoảng năng lượng từ đáy dải dẫn Ec tới mức chân không Evac: χ=Evac−Ec. Đây là tham số giản đồ năng lượng, không phải điện áp gate cần để tạo kênh. Work function lại đo từ mức Fermi tới chân không.",
+    "comparisons": [
+      {
+        "concept": "Electron affinity",
+        "explanation": "Chân không trừ đáy conduction band; dùng khi phân tích tiếp xúc vật liệu và band alignment."
+      },
+      {
+        "concept": "Work function",
+        "explanation": "Chân không trừ mức Fermi, nên có phụ thuộc vị trí Fermi và loại vật liệu."
+      },
+      {
+        "concept": "Depletion charge / oxide field",
+        "explanation": "Lần lượt là điện tích vùng nghèo và điện trường oxide; khác đơn vị và không định nghĩa electron affinity."
+      }
+    ]
+  },
+  {
+    "id": "ici-mos-surface",
+    "subject": "ICI211",
+    "pattern": "accumulation|depletion condition|depletion region|inversion.*MOS|MOS capacitor",
+    "mechanism": "Với MOS nền p, điện áp gate âm hút lỗ trống về bề mặt; gate dương vừa phải đẩy lỗ trống đi, để lại ion acceptor bất động. Khi gate dương đủ lớn, electron trở thành hạt tải chiếm ưu thế ở bề mặt và tạo lớp đảo. Các diễn giải đổi dấu khi đổi loại nền.",
+    "comparisons": [
+      {
+        "concept": "Accumulation",
+        "explanation": "Tích tụ hạt tải đa số; nền p tích tụ lỗ trống khi gate âm."
+      },
+      {
+        "concept": "Depletion",
+        "explanation": "Hạt tải đa số bị đẩy khỏi bề mặt; chưa hình thành kênh electron mạnh."
+      },
+      {
+        "concept": "Inversion",
+        "explanation": "Hạt tải thiểu số chiếm ưu thế ở bề mặt; trong nMOS nền p là electron."
+      },
+      {
+        "concept": "Oxide breakdown",
+        "explanation": "Hư hỏng do điện trường oxide quá lớn, không phải một chế độ tích tụ/nghèo/đảo bình thường."
+      }
+    ]
+  },
+  {
+    "id": "ici-test-flow",
+    "subject": "ICI211",
+    "pattern": "(?:testability|fault detection|RTL|register.transfer|architectural description|abstraction level|regularity|locality|hierarchy|verification effort|regular layout)|(?:design refinement|design domain|domain.*functionality|physical domain|floorplan|stick diagram|hierarchical decomposition)",
+    "mechanism": "Thiết kế số dùng các mức trừu tượng và nguyên tắc tổ chức để kiểm soát độ phức tạp. Mô tả hành vi/kiến trúc được tinh chỉnh sang RTL, rồi logic và layout. Tính dễ kiểm thử, tính lặp cấu trúc và đặt các khối gần nhau giải quyết các mục tiêu khác nhau.",
+    "comparisons": [
+      {
+        "concept": "RTL",
+        "explanation": "Mô tả thanh ghi và phép chuyển/xử lý dữ liệu giữa chúng theo chu kỳ; khác layout hoặc công đoạn chế tạo mask."
+      },
+      {
+        "concept": "Testability",
+        "explanation": "Giúp điều khiển/quan sát trạng thái và phát hiện lỗi, thường đánh giá bằng fault coverage; không phải chất lượng vật liệu đóng gói."
+      },
+      {
+        "concept": "Regularity",
+        "explanation": "Lặp các cấu trúc tương tự để dễ thiết kế và kiểm chứng; không bảo đảm triệt tiêu mọi trễ hoặc lỗi chế tạo."
+      },
+      {
+        "concept": "Locality / hierarchy",
+        "explanation": "Locality đặt khối giao tiếp nhiều gần nhau để giảm dây dài. Hierarchy chia hệ thành các tầng/khối để quản lý, không tự thay cho locality."
+      }
+    ]
+  },
+  {
+    "id": "ici-memory-types",
+    "subject": "ICI211",
+    "pattern": "(?:SRAM|DRAM|self.refresh|memory.*refresh|refresh.*memory|static random|read stability|write operation)|(?:sense amplifier|multi.stage decoding|memory architecture)",
+    "mechanism": "SRAM giữ bit bằng hồi tiếp của các inverter khi còn nguồn; DRAM giữ bit bằng điện tích trên tụ nên phải refresh. Trong cell SRAM 6T, transistor access nối bitline với nút lưu: quá mạnh khi đọc có thể phá trạng thái, nhưng khi ghi lại cần đủ mạnh để lật trạng thái cũ.",
+    "comparisons": [
+      {
+        "concept": "SRAM / noise margin",
+        "explanation": "Không cần refresh định kỳ như DRAM, nhưng vẫn volatile và có leakage. SNM đo khả năng chịu nhiễu mà không mất bit."
+      },
+      {
+        "concept": "DRAM / self-refresh",
+        "explanation": "Điện tích rò dần nên cần nạp lại; self-refresh phù hợp giữ dữ liệu với mức công suất standby thấp."
+      },
+      {
+        "concept": "SRAM read vs write",
+        "explanation": "Khi đọc cần pull-down giữ chắc mức 0 trước access; khi ghi access phải thắng pull-up đủ mức. Không áp dụng cùng một tỉ lệ mạnh/yếu cho cả hai thao tác."
+      },
+      {
+        "concept": "8T SRAM / sense amplifier",
+        "explanation": "Cổng đọc tách riêng giảm read disturb; sense amplifier phát hiện chênh áp bitline nhỏ, không chờ luôn đủ rail-to-rail."
+      }
+    ]
+  },
+  {
+    "id": "ici-flash",
+    "subject": "ICI211",
+    "pattern": "flash|floating.gate|hot.electron injection",
+    "mechanism": "Flash lưu trạng thái bằng điện tích làm dịch threshold của cell, nên vẫn giữ dữ liệu khi mất nguồn. NOR ưu tiên đọc ngẫu nhiên; NAND ưu tiên mật độ và xử lý theo trang/khối. Cơ chế lập trình phụ thuộc kiến trúc, không được gán hot-electron injection cho mọi loại flash.",
+    "comparisons": [
+      {
+        "concept": "NOR Flash",
+        "explanation": "Thích hợp truy cập ngẫu nhiên nhanh và thực thi mã ở cấu hình phù hợp; lập trình NOR floating-gate truyền thống thường dùng hot-electron injection."
+      },
+      {
+        "concept": "NAND Flash",
+        "explanation": "Mật độ cao, giá mỗi bit thấp, đọc/ghi theo page và xóa theo block; thường dùng tunneling để thay đổi điện tích."
+      },
+      {
+        "concept": "SRAM / DRAM",
+        "explanation": "Đều volatile; SRAM dùng latch, DRAM dùng tụ và refresh. Không phải nơi áp dụng quy trình xóa khối flash."
+      }
+    ]
+  },
+  {
+    "id": "ici-dynamic",
+    "subject": "ICI211",
+    "pattern": "(?:dynamic logic|dynamic CMOS|dynamic gate|dynamic node|dynamic latch|domino|keeper|NORA|dynamic shift|n.type dynamic|precharge|charge sharing|charge.storage)|(?:synchronous dynamic circuits|static logic circuits)",
+    "mechanism": "Logic động lưu điện áp bằng điện tích trên nút có C. Pha precharge nạp nút; pha evaluate cho mạng logic quyết định có xả hay không. Nút không được kéo mạnh liên tục ở cả hai mức nên rò, charge sharing và nhiễu có thể làm sai kết quả.",
+    "comparisons": [
+      {
+        "concept": "Precharge / evaluate n-type",
+        "explanation": "CLK thấp thường nạp nút HIGH; CLK cao cho phép pull-down đánh giá. Quy ước này không áp nguyên xi cho p-type dynamic."
+      },
+      {
+        "concept": "Domino",
+        "explanation": "Mỗi tầng động nối qua inverter tĩnh để đầu vào tầng n-type sau chỉ chuyển đơn điệu 0→1 trong evaluate. Nối trực tiếp hai tầng động có thể tạo chuyển 1→0 không an toàn."
+      },
+      {
+        "concept": "Keeper",
+        "explanation": "Bù rò và giữ mức precharge; keeper quá mạnh tăng tranh chấp khi cần xả nên chậm hơn. Không thay thế mạng evaluate."
+      },
+      {
+        "concept": "Charge sharing / leakage",
+        "explanation": "Sharing phân bố lại Q giữa các tụ, có thể tính Vfinal=ΣCiVi/ΣCi. Leakage làm mất Q theo thời gian, ΔV=ΔQ/C."
+      },
+      {
+        "concept": "NORA / static CMOS",
+        "explanation": "NORA là No Race, tổ chức logic động theo pha để tránh race. Static CMOS giữ mức bằng đường dẫn nguồn, không chỉ bằng tụ treo."
+      }
+    ]
+  },
+  {
+    "id": "ici-mos-current",
+    "subject": "ICI211",
+    "pattern": "channel.length modulation|saturation|pinch.off|drain current|overdrive|transconductance|square.law|operating region|W/L|gate.source voltage",
+    "mechanism": "Với nMOS kênh dài ở strong inversion: cutoff khi VGS<VT; triode khi 0≤VDS<VGS−VT; saturation khi VDS≥VGS−VT. Trong mô hình square-law, ID≈β(VGS−VT)²/2 với β∝W/L. Channel-length modulation làm ID còn tăng nhẹ theo VDS ở saturation.",
+    "comparisons": [
+      {
+        "concept": "Triode / saturation",
+        "explanation": "So VDS với overdrive VGS−VT, không so trực tiếp với VGS. Pinch-off gần drain không có nghĩa dòng drain bằng zero."
+      },
+      {
+        "concept": "Thay W/L / overdrive",
+        "explanation": "Tăng đôi W ở cùng L và overdrive cho dòng gần gấp đôi; tăng đôi overdrive cho dòng gần gấp bốn trong mô hình này."
+      },
+      {
+        "concept": "gm / ro",
+        "explanation": "gm=∂ID/∂VGS đo độ nhạy theo gate; ro liên quan độ dốc theo VDS. Không dùng threshold hoặc điện dung thay đơn vị của gm."
+      },
+      {
+        "concept": "Channel-length modulation / DIBL",
+        "explanation": "CLM làm dòng saturation tăng theo VDS; DIBL làm hàng rào nguồn giảm và VT giảm khi VDS tăng. Hai cơ chế không phải body effect."
+      }
+    ]
+  },
+  {
+    "id": "ici-body-short",
+    "subject": "ICI211",
+    "pattern": "(?:body effect|body bias|VSB|hot.carrier|hot carrier|short.channel|short channel|drain.induced|DIBL|deep.submicron)|(?:nMOS body)",
+    "mechanism": "Body effect ở nMOS nền p làm VT tăng khi phân cực ngược source–body VSB tăng. Các hiệu ứng kênh ngắn lại liên quan điện trường và hình học nhỏ; DIBL có thể làm VT giảm khi VDS tăng. Cần giữ rõ điện áp nào đang được thay đổi.",
+    "comparisons": [
+      {
+        "concept": "Body effect",
+        "explanation": "Tăng reverse VSB → VT tăng, transistor khó bật hơn ở cùng VGS."
+      },
+      {
+        "concept": "DIBL",
+        "explanation": "Tăng VDS làm drain hạ hàng rào gần source, VT có thể giảm; thường rõ ở kênh ngắn."
+      },
+      {
+        "concept": "Hot-carrier effect",
+        "explanation": "Hạt tải được gia tốc bởi điện trường lớn có thể gây suy giảm oxide/interface; thường đáng lo ở thiết bị nhỏ, không phải tụ lý tưởng phân cực ngược."
+      },
+      {
+        "concept": "Oxide capacitance / channel length",
+        "explanation": "Là thông số hình học/vật liệu; body effect không tự làm oxide mỏng đi hay kéo dài kênh vật lý."
+      }
+    ]
+  },
+  {
+    "id": "ici-cmos-power",
+    "subject": "ICI211",
+    "pattern": "(?:power|leakage|switching activity|frequency.*voltage|DVFS|voltage.*frequency scaling|charged.*energy|energy.*charg|charging event|steady.state current|static current)|(?:pipelining)",
+    "mechanism": "Tách công suất thành chuyển mạch, ngắn mạch và rò. Công suất chuyển mạch thường Pdyn=αCLVDD²f; rò gần Pstatic=VDD·Ileak. α phải theo đúng quy ước đếm sự kiện nạp. Giảm VDD có hiệu quả bình phương nhưng có thể làm đường logic chậm hơn.",
+    "comparisons": [
+      {
+        "concept": "Dynamic switching",
+        "explanation": "Do nạp/xả điện dung. Giảm C, số lần chuyển hoặc f làm giảm Pdyn; VDD xuất hiện bình phương, không phải VT lũy thừa ba."
+      },
+      {
+        "concept": "Short-circuit power",
+        "explanation": "Có đường VDD→ground khi nMOS và pMOS cùng dẫn trong lúc input chuyển; khác dòng rò ở mức logic ổn định."
+      },
+      {
+        "concept": "Static leakage",
+        "explanation": "Vẫn có khi không switching. CMOS lý tưởng ở input 0/1 có một transistor OFF nên dòng tĩnh gần zero; thực tế còn subthreshold, junction và gate leakage."
+      },
+      {
+        "concept": "Năng lượng trên tụ / từ nguồn",
+        "explanation": "Nạp từ 0 lên V: tụ giữ CV²/2, nguồn cấp CV²; cả chu kỳ nạp–xả tiêu tán CV² trong mô hình RC thông thường."
+      },
+      {
+        "concept": "DVFS / pipeline",
+        "explanation": "DVFS giảm V và f khi tải công việc thấp; pipeline có thể cho giảm V ở cùng throughput nhờ rút ngắn đường logic mỗi tầng nhưng thêm overhead thanh ghi."
+      }
+    ]
+  },
+  {
+    "id": "ici-clock-timing",
+    "subject": "ICI211",
+    "pattern": "(?:clock.to.Q|clock period|clock frequency|maximum clock|setup|hold time|active edge|triggered|DETFF|flip.flop.*samples)|(?:after the active clock edge|metastability|asynchronous input|\\bDDR\\b|Double Data Rate)",
+    "mechanism": "Một đường đồng bộ cần đủ thời gian để flip-flop nguồn đổi Q, logic tổ hợp ổn định và flip-flop đích đáp ứng setup. Khi bỏ skew/jitter, Tclk≥tcq+tcomb+tsetup. Hold là ràng buộc đường nhanh sau cạnh, không được cộng vào biểu thức đường chậm một cách máy móc.",
+    "comparisons": [
+      {
+        "concept": "Setup time",
+        "explanation": "Dữ liệu phải ổn định trước cạnh lấy mẫu; vi phạm có thể gây lấy sai hoặc metastability."
+      },
+      {
+        "concept": "Hold time",
+        "explanation": "Dữ liệu phải tiếp tục ổn định sau cạnh; giảm tần số clock thường không tự chữa vi phạm hold."
+      },
+      {
+        "concept": "Clock-to-Q",
+        "explanation": "Khoảng từ cạnh clock tới khi Q phản ánh dữ liệu đã lấy; không phải thời gian dữ liệu phải có sẵn trước cạnh."
+      },
+      {
+        "concept": "DFF / DETFF",
+        "explanation": "DFF thường lấy một cạnh được chỉ định; DETFF lấy cả hai cạnh, nên cùng số lần capture/s có thể dùng tần số clock thấp hơn."
+      }
+    ]
+  },
+  {
+    "id": "ici-vtc",
+    "subject": "ICI211",
+    "pattern": "VTC|voltage transfer|VIH|noise margin|symmetric.*inverter|switching threshold|switching point|switching margins|inverter property",
+    "mechanism": "VTC là quan hệ DC Vout theo Vin. VM là điểm Vin=Vout; VIH/VIL là các biên input logic hợp lệ, thường được lấy ở độ dốc −1. Noise margin HIGH và LOW đo khoảng an toàn giữa output được bảo đảm và input được chấp nhận, không đo trực tiếp tốc độ chuyển.",
+    "comparisons": [
+      {
+        "concept": "VIH / VIL",
+        "explanation": "VIH là input HIGH nhỏ nhất được bảo đảm; VIL là input LOW lớn nhất được bảo đảm. Không nhầm VIH với output HIGH."
+      },
+      {
+        "concept": "VOH / VOL và noise margins",
+        "explanation": "NMH=VOH−VIH, NML=VIL−VOL. Cần cả mức output sát rail và vùng chuyển đủ dốc."
+      },
+      {
+        "concept": "VM≈VDD/2",
+        "explanation": "Với inverter cân xứng phù hợp, giúp cân bằng hai noise margin. Không đòi Wn=Wp vì mobility nMOS và pMOS khác nhau."
+      },
+      {
+        "concept": "Sizing cùng tỉ lệ",
+        "explanation": "Nhân cả hai width cùng hệ số giữ gần tỉ lệ độ mạnh nên VM có thể gần giữ nguyên; input C và drive current vẫn đổi."
+      }
+    ]
+  },
+  {
+    "id": "ici-sr-latch",
+    "subject": "ICI211",
+    "pattern": "SR latch|NOR.based.*latch|Set.reset|reset operation|S and R|cross.coupled NOR",
+    "mechanism": "Latch SR NOR dùng hai cổng NOR hồi tiếp chéo và input tác động mức HIGH. Trạng thái giữ phụ thuộc trạng thái trước đó, nên không thể chỉ nhìn input hiện tại mà suy ra toàn bộ Q. Quy ước active-high NOR khác active-low NAND.",
+    "comparisons": [
+      {
+        "concept": "S=1, R=0",
+        "explanation": "Set: Q lên 1."
+      },
+      {
+        "concept": "S=0, R=1",
+        "explanation": "Reset: Q xuống 0."
+      },
+      {
+        "concept": "S=0, R=0",
+        "explanation": "Hold: giữ trạng thái trước, không phải trạng thái cấm của latch NOR."
+      },
+      {
+        "concept": "S=1, R=1",
+        "explanation": "Hai output cùng bị ép LOW; khi nhả đồng thời có thể dẫn tới kết quả không xác định. Với SR NAND active-low, tổ hợp cấm lại là hai input LOW."
+      }
+    ]
+  },
+  {
+    "id": "ici-cmos-gates",
+    "subject": "ICI211",
+    "pattern": "(?:(?:NAND|pull.up|pull.down|PUN|PDN|OAI|Boolean function|dual.*network|transistor.*CMOS|CMOS.*transistor|Vin = 0)|(?:\\bNOR gate\\b|CMOS.*inverter.*devices|complex gate sizing|combinational logic|CMOS inverter provide))|(?:CMOS inverter use)",
+    "mechanism": "Trong CMOS bổ sung, PDN nMOS nối output xuống ground cho các tổ hợp làm Y=0; PUN pMOS là mạng đối ngẫu nối output lên VDD khi Y=1. Nhánh nối tiếp cần đồng thời dẫn, nhánh song song chỉ cần một đường dẫn. Đọc PDN rồi lấy phủ định để tìm hàm output.",
+    "comparisons": [
+      {
+        "concept": "NAND / NOR",
+        "explanation": "NAND có PDN nối tiếp và PUN song song; NOR ngược lại. NAND hai input chỉ LOW khi cả hai input HIGH."
+      },
+      {
+        "concept": "OAI",
+        "explanation": "OR–AND–Invert: thực hiện phép OR, AND rồi đảo theo cấu trúc được nêu; không phải tên của một giao diện analog."
+      },
+      {
+        "concept": "Đếm và sizing",
+        "explanation": "CMOS NAND N input thông thường có 2N transistor. N nMOS nối tiếp thường cần tăng width mỗi con gần N lần để giữ điện trở tổng như inverter đơn vị."
+      },
+      {
+        "concept": "Inverter input LOW",
+        "explanation": "nMOS OFF, pMOS ON → output HIGH. Input HIGH đổi vai; cả hai cùng ON chủ yếu trong vùng chuyển, không phải trạng thái DC lý tưởng mọi lúc."
+      }
+    ]
+  },
+  {
+    "id": "ici-memory-size",
+    "subject": "ICI211",
+    "pattern": "address bits|storage capacity|words|cells.*row|memory.*bits|memory.*array|array.*cells",
+    "mechanism": "Tách số địa chỉ và số bit tại mỗi địa chỉ. N words cần log₂N bit địa chỉ nếu N là lũy thừa hai, còn tổng dung lượng là N×b với b bit/word. Không nhân b vào số word trước khi tính địa chỉ trừ khi đề hỏi địa chỉ từng bit.",
+    "comparisons": [
+      {
+        "concept": "Address bits",
+        "explanation": "Ví dụ 1024 words cần 10 bit địa chỉ word dù mỗi word rộng 8 hay 16 bit."
+      },
+      {
+        "concept": "Capacity",
+        "explanation": "256×16 là 4096 bit. Với K=1024, 64K×8 là 524288 bit, không phải 65536 bit."
+      },
+      {
+        "concept": "Mảng vuông",
+        "explanation": "Nếu có N cell một-bit và số hàng bằng số cột, mỗi hàng có √N cell; không dùng log₂N thay cho căn bậc hai."
+      }
+    ]
+  },
+  {
+    "id": "ici-delay-rc",
+    "subject": "ICI211",
+    "pattern": "(?:0.69|effective resistance|fixed external load|propagation delay.*inverter|delay estimation|t ≈ C|capacitance.*load|gate.*drives)|(?:lumped capacitance|Elmore|switching performance)",
+    "mechanism": "Với mô hình một cực, nút RC tiến theo hàm mũ và chạm 50% sau ln(2)RC≈0,69RC. Mô hình dòng trung bình lại dùng t≈CΔV/Iavg. Đây là xấp xỉ trễ có giả thiết cụ thể, không phải lúc nào cũng được thay lẫn nhau.",
+    "comparisons": [
+      {
+        "concept": "RC delay",
+        "explanation": "R tính ohm, C tính farad cho t theo giây; 1 kΩ×1 fF=1 ps. Quên 0,69 hoặc đổi sai fF/pF gây lệch đáp án."
+      },
+      {
+        "concept": "Average-current delay",
+        "explanation": "Dùng điện tích cần chuyển CΔV chia Iavg; phù hợp khi đã biết hoặc ước lượng dòng nạp trung bình."
+      },
+      {
+        "concept": "Tăng width / fan-out",
+        "explanation": "Tăng width giảm R dẫn nhưng tăng C vào. Tăng số cổng tải làm CL tăng, thường tăng trễ nếu driver không đổi."
+      }
+    ]
+  },
+  {
+    "id": "ici-scaling-yield",
+    "subject": "ICI211",
+    "pattern": "(?:scaling|yield|manufacturing cost|fabrication run|functional dies|die area|overlap capacitance|access time)|(?:memory density|growth of IC complexity|Manufacturing advancements)",
+    "mechanism": "Các đại lượng hình học, tốc độ và chi phí cần dùng đúng mô hình. Constant-field scaling lý tưởng giảm đồng thời kích thước và điện áp theo 1/S để giữ điện trường; mô hình này không mô tả hoàn hảo công nghệ hiện đại. Yield đo tỉ lệ die hoạt động, không phải số bit nhớ hoặc phần trăm diện tích routing.",
+    "comparisons": [
+      {
+        "concept": "Constant-field scaling",
+        "explanation": "Dimensions và voltage cùng chia S; delay lý tưởng chia S. Nếu f tăng S, công suất mỗi cổng giảm nhưng mật độ cổng tăng nên power density có thể gần giữ nguyên."
+      },
+      {
+        "concept": "Constant-voltage scaling",
+        "explanation": "Giữ điện áp khi thu nhỏ hình học nên điện trường tăng; không được gọi là constant-field."
+      },
+      {
+        "concept": "Yield / cost per good die",
+        "explanation": "Yield=good dies/total dies. Chi phí một die tốt bằng tổng chi phí liên quan chia số die tốt; die lớn dễ gặp defect hơn ở cùng defect density."
+      },
+      {
+        "concept": "Access time / retention / overlap C",
+        "explanation": "Access time đo tốc độ truy cập, retention đo thời gian giữ dữ liệu. Overlap capacitance chủ yếu do hình học chồng gate nên gần voltage-independent hơn junction capacitance."
+      }
+    ]
+  },
+  {
+    "id": "dgt-dft-definitions",
+    "subject": "DGT302",
+    "pattern": "(?:(?:Analysis Equation|forward.*transform|forward DFT|exact.*defined|Fourier Series|Fourier Transform is mainly|DFT can be viewed|DFT.*DTFT|DTFT.*period|period.*DTFT)|(?:Synthesis Equation|Inverse DFT|discrete.time, aperiodic|principal interval|X\\(ω\\).*sampled.*N equally|DTFT X\\(ω\\).*two.sided))|(?:Discrete Fourier Transform.*considered)",
+    "mechanism": "DFT xử lý N mẫu bằng N giá trị phổ: X[k]=Σ từ n=0 đến N−1 x[n]e^(−j2πkn/N). DTFT xử lý dãy rời rạc bằng một hàm liên tục theo ω và tuần hoàn 2π. Dấu trừ thuộc phép phân tích theo quy ước đang dùng; phép biến đổi ngược DFT có dấu cộng và hệ số 1/N.",
+    "comparisons": [
+      {
+        "concept": "DFT",
+        "explanation": "Tổng hữu hạn N mẫu, tần số lấy tại ωk=2πk/N. FFT chỉ là thuật toán tính cùng DFT, không tạo một định nghĩa phổ mới."
+      },
+      {
+        "concept": "IDFT",
+        "explanation": "Khôi phục x[n] bằng dấu mũ dương và 1/N khi forward DFT không chuẩn hóa. Bỏ 1/N làm biên độ khôi phục lớn gấp N."
+      },
+      {
+        "concept": "DTFT",
+        "explanation": "Tổng theo mọi n nguyên, biến ω liên tục; không thay tổng bằng tích phân theo t. Với record N mẫu zero bên ngoài, DFT lấy N mẫu đều của DTFT đó."
+      },
+      {
+        "concept": "CTFT / Fourier series",
+        "explanation": "CTFT dùng tích phân cho tín hiệu thời gian liên tục; Fourier series mô tả tín hiệu tuần hoàn bằng các hệ số điều hòa."
+      }
+    ]
+  },
+  {
+    "id": "dgt-inverse-scale",
+    "subject": "DGT302",
+    "pattern": "1/N factor|inverse.*amplitude|reconstructed amplitudes",
+    "mechanism": "Với forward DFT không có hệ số chuẩn hóa, trực giao các hàm mũ cho Σk e^(j2πk(n−m)/N)=N khi n=m modulo N. Vì vậy inverse phải chia N để khôi phục đúng biên độ. Các thư viện có thể dùng quy ước chuẩn hóa khác nên cần đọc cặp forward/inverse cùng nhau.",
+    "comparisons": [
+      {
+        "concept": "Không chuẩn hóa forward",
+        "explanation": "Inverse cần 1/N; bỏ đi làm mọi mẫu ra lớn gấp N."
+      },
+      {
+        "concept": "Chuẩn hóa unitary",
+        "explanation": "Cả hai phía dùng 1/√N thì năng lượng được bảo toàn trực tiếp. Không trộn 1/√N của quy ước này với 1/N của quy ước kia."
+      },
+      {
+        "concept": "Zero-padding",
+        "explanation": "Đổi số điểm lấy mẫu phổ, không sửa được lỗi gain do quên chuẩn hóa."
+      }
+    ]
+  },
+  {
+    "id": "dgt-parseval",
+    "subject": "DGT302",
+    "pattern": "Parseval|conservation of energy|energy.*frequency|energy.*time domain",
+    "mechanism": "Theo quy ước DFT forward không chuẩn hóa, Σn|x[n]|²=(1/N)Σk|X[k]|². Phải lấy bình phương độ lớn, kể cả khi x hoặc X là số phức. Hệ số 1/N xuất phát từ chuẩn hóa của cặp biến đổi, không phải suy hao năng lượng vật lý.",
+    "comparisons": [
+      {
+        "concept": "Tổng bình phương độ lớn",
+        "explanation": "Là năng lượng của record; |X|²=X·X* nên luôn thực không âm."
+      },
+      {
+        "concept": "Tổng |x| hoặc |X|",
+        "explanation": "Là chuẩn L1, không phải biểu thức Parseval năng lượng L2."
+      },
+      {
+        "concept": "Không có 1/N",
+        "explanation": "Có thể xuất hiện nếu dùng DFT unitary 1/√N ở cả hai chiều; sai nếu áp cho forward không chuẩn hóa trong câu này."
+      },
+      {
+        "concept": "Nhân N phía phổ",
+        "explanation": "Đảo ngược hệ số chuẩn hóa; ví dụ x=[1,0,0,0] có phổ [1,1,1,1], tổng phổ bằng 4 nhưng năng lượng x bằng 1."
+      }
+    ]
+  },
+  {
+    "id": "dgt-fft-count",
+    "subject": "DGT302",
+    "pattern": "complex multiplications|complex additions|computational complexity|FFT stages|number of.*stages|Levinson.*complexity|reduce computational complexity",
+    "mechanism": "Radix-2 với N=2^v có v=log₂N tầng, mỗi tầng N/2 butterfly. Theo phép đếm chuẩn có tính twiddle đơn giản, tổng nhân phức là (N/2)log₂N, còn cộng phức là Nlog₂N. Số phép nhân thực tế có thể thấp hơn nhờ bỏ nhân ±1, ±j.",
+    "comparisons": [
+      {
+        "concept": "N²",
+        "explanation": "Độ phức tạp của DFT trực tiếp; mỗi output cộng N tích và có N output."
+      },
+      {
+        "concept": "N log₂N",
+        "explanation": "Bậc độ phức tạp FFT và phép đếm cộng phức radix-2; không phải số tầng."
+      },
+      {
+        "concept": "(N/2)log₂N",
+        "explanation": "Số nhân phức theo mô hình butterfly chuẩn. N=1024 cho 5120, không phải khẳng định tối ưu mọi phép nhân phần cứng."
+      },
+      {
+        "concept": "O(p²) Levinson–Durbin",
+        "explanation": "Là bài giải hệ Toeplitz bậc p, khác phép đếm FFT theo N. Không tráo hai thuật toán chỉ vì cùng giảm độ phức tạp."
+      }
+    ]
+  },
+  {
+    "id": "dgt-fft-radix",
+    "subject": "DGT302",
+    "pattern": "radix.4|radix.2|divide.and.conquer|FFT dramatically|DFT.*FFT|FFT.*DFT|property.*FFT",
+    "mechanism": "FFT phân rã DFT lớn thành các DFT nhỏ rồi tái sử dụng các hệ số mũ có tính tuần hoàn và đối xứng. Với radix-2 thuần, N là lũy thừa 2; radix-4 thuần dùng lũy thừa 4. Kết quả biến đổi không đổi so với tính DFT trực tiếp ở cùng N và quy ước chuẩn hóa.",
+    "comparisons": [
+      {
+        "concept": "Radix-2 / radix-4",
+        "explanation": "N=2^v và N=4^v tương ứng với phân rã thuần hai nhánh hoặc bốn nhánh ở mọi tầng."
+      },
+      {
+        "concept": "Mixed-radix / độ dài khác",
+        "explanation": "Thư viện có thể dùng mixed-radix hoặc thuật toán khác. “Không phải power of two” không có nghĩa không tồn tại FFT."
+      },
+      {
+        "concept": "Zero extension",
+        "explanation": "Khi bị giới hạn dùng radix-2 và được phép đệm, chọn NFFT là lũy thừa 2 đủ lớn; đó là DFT của record đã đệm, không phải giữ nguyên mọi bin của DFT độ dài cũ."
+      }
+    ]
+  },
+  {
+    "id": "dgt-twiddle",
+    "subject": "DGT302",
+    "pattern": "(?:twiddle|butterfly|Bit.Reversed|bit.revers|\\bDIT\\b|\\bDIF\\b|in.place|one memory array|minimum RAM)|(?:multiplication by -j)",
+    "mechanism": "W_N=e^(−j2π/N) là một phép quay phức. Trong DIT, nhánh dưới thường được nhân twiddle trước phép cộng/trừ; trong DIF, twiddle áp vào nhánh hiệu sau cộng/trừ. Hoán vị bit-reversal là sắp xếp chỉ số dữ liệu, không thay giá trị toán học của DFT.",
+    "comparisons": [
+      {
+        "concept": "Twiddle và ±j",
+        "explanation": "W8²=e^(−jπ/2)=−j. Nhân a+jb với −j cho b−ja, chỉ đổi vị trí phần thực/ảo và dấu."
+      },
+      {
+        "concept": "DIT / DIF chuẩn",
+        "explanation": "DIT thường dùng input bit-reversed, output natural; DIF input natural, output bit-reversed. Có các triển khai tự xử lý hoán vị nên phải theo cấu trúc đề."
+      },
+      {
+        "concept": "Bit reversal",
+        "explanation": "Viết chỉ số bằng đúng log₂N bit rồi đảo: với N=8, 3=011₂ thành 110₂=6."
+      },
+      {
+        "concept": "In-place",
+        "explanation": "Ghi đè kết quả butterfly vào chính bộ nhớ input để giảm RAM; không đồng nghĩa tăng N hoặc zero-padding."
+      }
+    ]
+  },
+  {
+    "id": "dgt-z-roc",
+    "subject": "DGT302",
+    "pattern": "z.transform|z-domain|Region of Convergence|\\bROC\\b|unit circle|z-plane|H\\(z\\)|system function",
+    "mechanism": "Biến đổi z là X(z)=Σn x[n]z^(−n), đi kèm miền hội tụ. Cực không nằm trong ROC; zero vẫn có thể nằm trong ROC. Thay z=e^(jω) chỉ cho DTFT tại nơi vòng đơn vị thuộc ROC, nên một biểu thức đại số giống nhau chưa quyết định hoàn toàn dãy thời gian.",
+    "comparisons": [
+      {
+        "concept": "Dãy phải / dãy trái",
+        "explanation": "Dãy phải thường có ROC bên ngoài cực ngoài cùng; dãy trái bên trong cực trong cùng. Dãy hai phía có thể cho một vành khuyên."
+      },
+      {
+        "concept": "Ổn định BIBO",
+        "explanation": "ROC phải chứa toàn bộ |z|=1. Nếu còn giả thiết nhân quả và hệ hữu tỉ, các cực không triệt tiêu phải nằm trong vòng đơn vị."
+      },
+      {
+        "concept": "Cộng hai dãy",
+        "explanation": "ROC của tổng ít nhất chứa phần giao; triệt tiêu cực có thể mở rộng ROC. Không kết luận luôn đúng bằng giao."
+      },
+      {
+        "concept": "Pole / zero / hình vuông",
+        "explanation": "Pole làm tổng không hữu hạn tại điểm đó; zero chỉ là nơi giá trị bằng zero. ROC của biến đổi z hai phía có cấu trúc theo bán kính, không phải một miền hình vuông tùy ý."
+      }
+    ]
+  },
+  {
+    "id": "dgt-z-sequence",
+    "subject": "DGT302",
+    "pattern": "delayed sequence|finite.duration|unilateral|initial conditions|z-transform.*sequence|exact z.transform",
+    "mechanism": "Trước khi biến đổi, viết rõ mỗi giá trị thuộc chỉ số n nào. Mỗi mẫu x[n] góp x[n]z^(−n); một số zero trong dãy vẫn chiếm vị trí chỉ số dù không tạo hạng khác zero. Với dãy a^n u[n−n0], tổng hình học bắt đầu ở n0 cho tử a^n0 z^(−n0).",
+    "comparisons": [
+      {
+        "concept": "Dịch mốc n=0",
+        "explanation": "Đổi mốc thời gian làm đổi các số mũ z; không được tự chọn mốc chỉ để khớp một đáp án."
+      },
+      {
+        "concept": "Dãy hình học phải",
+        "explanation": "a^n u[n−n0] → a^n0 z^(−n0)/(1−az⁻¹), ROC |z|>|a|. Ví dụ a=10, n0=2 cho tử 100z⁻²."
+      },
+      {
+        "concept": "Unilateral z-transform",
+        "explanation": "Tổng từ n=0, tiện giải phương trình sai phân có điều kiện đầu; không tự đồng nghĩa với mọi dãy hai phía."
+      },
+      {
+        "concept": "Số mũ dương",
+        "explanation": "Có thể tương ứng mẫu ở chỉ số âm. Không phải cứ thấy z² là công thức sai; phải so với mốc thời gian của đề."
+      }
+    ]
+  },
+  {
+    "id": "dgt-convolution",
+    "subject": "DGT302",
+    "pattern": "convol|parallel|cascade|polynomial|frequency.domain relation|output spectrum|Y\\(ω\\)|Y\\[|LTI.*frequency domain",
+    "mechanism": "Tích chập rời rạc y[n]=Σk x[k]h[n−k] mô tả output của hệ LTI. Biến đổi sang tần số hoặc z làm tích chập thành phép nhân: Y=XH. Với hai nhánh nối tiếp, input đi qua cả hai đáp ứng nên phải tích chập; hai nhánh song song cộng output nên cộng các đáp ứng xung.",
+    "comparisons": [
+      {
+        "concept": "Nối tiếp",
+        "explanation": "h_eq=h1*h2; ở miền tần số H_eq=H1H2."
+      },
+      {
+        "concept": "Song song",
+        "explanation": "h_eq=h1+h2. Viết y=x*h1+x*h2 rồi dùng tính tuyến tính để kiểm tra."
+      },
+      {
+        "concept": "Nhân từng mẫu",
+        "explanation": "Khác tích chập; nhân trong thời gian tương ứng tích chập phổ, có hệ số tùy quy ước biến đổi."
+      },
+      {
+        "concept": "Độ dài / đa thức",
+        "explanation": "Hai dãy hữu hạn dài L,M có miền chỉ số kết quả dài L+M−1. Tích hai đa thức tương đương tích chập các hệ số, không phải nhân từng vị trí."
+      }
+    ]
+  },
+  {
+    "id": "dgt-circular",
+    "subject": "DGT302",
+    "pattern": "circular|Overlap.Save|overlap.save|overlap.add|common FFT length|N.point.*linear convolution|Hamming.*filtering",
+    "mechanism": "Nhân hai DFT N điểm rồi IDFT tạo tích chập vòng theo modulo N. Để nhận tích chập tuyến tính của hai dãy hữu hạn phải đệm đủ N≥L+M−1. Xử lý từng khối dài dùng overlap-save hoặc overlap-add để xử lý đúng phần biên.",
+    "comparisons": [
+      {
+        "concept": "Circular convolution",
+        "explanation": "Các mẫu ngoài miền N bị cuộn vòng về đầu; phù hợp xử lý chu kỳ hoặc phép toán DFT không đệm đủ."
+      },
+      {
+        "concept": "Zero-padding",
+        "explanation": "Chọn N≥L+M−1 tránh chồng vòng của kết quả tuyến tính; nếu radix-2 bắt buộc, lấy power of two kế tiếp đủ lớn."
+      },
+      {
+        "concept": "Overlap-save",
+        "explanation": "Chồng input M−1 mẫu, bỏ M−1 output đầu mỗi khối do bị alias vòng; giữ phần output hợp lệ."
+      },
+      {
+        "concept": "Hamming window",
+        "explanation": "Dùng giảm leakage khi phân tích phổ. Tự nhân window vào mỗi khối overlap-save làm thay đổi dữ liệu/biên độ, không phải bước bắt buộc của tích chập khối chính xác."
+      }
+    ]
+  },
+  {
+    "id": "dgt-correlation",
+    "subject": "DGT302",
+    "pattern": "correlation|Cross.Correlation|Cross-Correlation|rxy|autocorrelation",
+    "mechanism": "Tương quan đo độ giống khi dịch hai tín hiệu tương đối; với tín hiệu phức cần liên hợp theo quy ước tương quan đang dùng. Tích chập là phép tổ hợp h[n−k] để tính output LTI. Đỉnh tương quan có thể gợi ý độ trễ tương đối, không tự chứng minh hai tín hiệu có quan hệ nhân quả.",
+    "comparisons": [
+      {
+        "concept": "Cross-correlation",
+        "explanation": "So hai tín hiệu khác nhau theo lag, thường dùng tìm độ trễ hoặc mẫu tín hiệu trong nhiễu."
+      },
+      {
+        "concept": "Autocorrelation",
+        "explanation": "So tín hiệu với chính nó; mô tả phụ thuộc theo lag, dùng trong Yule–Walker và PSD."
+      },
+      {
+        "concept": "Convolution",
+        "explanation": "Có đảo chỉ số theo h[n−k], không liên hợp như quy ước correlation phức. Nếu viết correlation thành convolution phải đảo thời gian và liên hợp đúng phía."
+      },
+      {
+        "concept": "Peak / amplitude",
+        "explanation": "Vị trí đỉnh nói về lag; độ cao đỉnh còn phụ thuộc năng lượng, chuẩn hóa và nhiễu nên không chỉ là độ trễ."
+      }
+    ]
+  },
+  {
+    "id": "dgt-shift-differentiate",
+    "subject": "DGT302",
+    "pattern": "differentiat|multiplying.*index|n.x\\(n\\)|n·x|Frequency Shifting|Modulation.*property|cos\\(2π|cosine modulation|Linearity property|a1.*x1|duality",
+    "mechanism": "Bắt đầu từ kernel e^(−jωn) để suy dấu: dX/dω=−jΣn nx[n]e^(−jωn), nên nx[n]↔j·dX/dω. Nhân x[n] với e^(jω0n) dịch phổ thành X(ω−ω0). Các phép dịch thời gian và dịch tần số là hai quy tắc khác nhau.",
+    "comparisons": [
+      {
+        "concept": "Nhân n",
+        "explanation": "Đạo hàm phổ và nhân j; với na^n u[n] thu được ae^(−jω)/(1−ae^(−jω))² nếu |a|<1."
+      },
+      {
+        "concept": "Nhân cos",
+        "explanation": "Tách cos thành hai mũ phức có hệ số 1/2, tạo hai bản phổ dịch sang ±ω0. Một bản dịch đơn ứng với mũ phức, không phải cosine."
+      },
+      {
+        "concept": "Dịch thời gian",
+        "explanation": "x[n−n0] tạo thừa số pha e^(−jωn0), không dịch toàn bộ vị trí phổ."
+      },
+      {
+        "concept": "Tuyến tính / đối ngẫu DFT",
+        "explanation": "Tổ hợp a1x1+a2x2 biến thành a1X1+a2X2. Với DFT không chuẩn hóa, biến đổi lại dãy X[n] cho N·x[−k modulo N], cần giữ N và đảo chỉ số."
+      }
+    ]
+  },
+  {
+    "id": "dgt-symmetry",
+    "subject": "DGT302",
+    "pattern": "Conjugate Symmetry|conjugate symmetry|Phase spectrum|even symmetry|real.valued.*DFT|DFT of a real|real-valued signal|real sequence|symmetry.*DFT",
+    "mechanism": "Nếu x[n] thực thì X(−ω)=X*(ω): phần thực chẵn, phần ảo lẻ, độ lớn chẵn. Pha có tính lẻ modulo 2π tại nơi phổ khác zero. Nếu x[n] còn chẵn, các phần sin triệt tiêu làm phổ thực chẵn.",
+    "comparisons": [
+      {
+        "concept": "Real signal",
+        "explanation": "Có đối xứng liên hợp; không suy ra phổ hoàn toàn thực nếu tín hiệu chưa chẵn."
+      },
+      {
+        "concept": "Real + even",
+        "explanation": "Phổ thực chẵn; pha là 0 khi phổ dương hoặc π modulo 2π khi phổ âm. Tại zero không xác định pha."
+      },
+      {
+        "concept": "Magnitude / phase",
+        "explanation": "Magnitude chẵn không có nghĩa phase chẵn. Nhảy pha do cách quấn pha không làm mất đối xứng modulo 2π."
+      },
+      {
+        "concept": "Real-input DFT",
+        "explanation": "Các bin k và N−k liên hợp nhau, nên có thể giảm lượng tính/lưu. Không phải mọi bin đều bằng nhau hoặc bằng zero."
+      }
+    ]
+  },
+  {
+    "id": "dgt-sampling",
+    "subject": "DGT302",
+    "pattern": "(?:sampling|sampler|sampled spectrum|samples have been|same samples|Nyquist|anti.alias|Aliasing|aliasing|repeated copies|sampling rate)|(?:analog signal is sampled)",
+    "mechanism": "Lấy mẫu tuần hoàn làm phổ analog được lặp tại các bội fs. Với tín hiệu thông thấp giới hạn ở fmax, chọn fs>2fmax là điều kiện an toàn để các bản phổ không chồng; tại đúng biên cần thêm giả thiết về thành phần ở mép. Một khi hai thành phần đã alias vào cùng mẫu thì không thể tách bằng lọc số thông thường.",
+    "comparisons": [
+      {
+        "concept": "Nyquist rate / Nyquist frequency",
+        "explanation": "Tốc độ Nyquist của tín hiệu là 2fmax; tần số Nyquist của bộ lấy mẫu là fs/2. Hai đại lượng không đổi tên cho nhau."
+      },
+      {
+        "concept": "Anti-aliasing",
+        "explanation": "Lọc trước sampler hoặc trước downsampler để loại phần sẽ chồng phổ. Lọc sau không khôi phục thông tin đã gộp mất."
+      },
+      {
+        "concept": "Oversampling / tăng số bit",
+        "explanation": "Tăng fs tạo thêm khoảng bảo vệ phổ và có thể phân tán nhiễu lượng tử. Tăng bit giảm sai số biên độ nhưng không tự chữa aliasing ở fs cũ."
+      },
+      {
+        "concept": "Bandpass sampling",
+        "explanation": "Có thể fs<2fmax nếu biết dải chiếm chỗ và chọn được khoảng fs không chồng các bản phổ. Không được chỉ lấy 2×bandwidth mà bỏ vị trí hai mép dải."
+      }
+    ]
+  },
+  {
+    "id": "dgt-multirate",
+    "subject": "DGT302",
+    "pattern": "(?:(?:downsampl|Downsampling|Decimation|decimation|Multirate|multirate|interpolat|Interpolation|upsampl|anti.imaging|Polyphase|polyphase|Noble|sample.rate converter|upfirdn|factor I/D)|(?:Zero.stuffing))|(?:sample.rate conversion)",
+    "mechanism": "Upsampling hệ số I chèn I−1 zero giữa các mẫu nên tạo ảnh phổ; downsampling hệ số D giữ x[Dm] nên giảm tốc độ và có thể alias. Bộ đổi tốc I/D thường upsample, lọc rồi downsample; bộ lọc làm việc trên lưới tốc độ cao.",
+    "comparisons": [
+      {
+        "concept": "Downsample",
+        "explanation": "y[m]=x[Dm], fs_out=fs_in/D. Phổ là (1/D)Σr X((ω−2πr)/D), không chỉ X(Dω)."
+      },
+      {
+        "concept": "Upsample / anti-imaging",
+        "explanation": "Chèn zero không tự nội suy. Lọc loại ảnh phổ và dùng gain I để giữ biên độ DC theo quy ước thông thường."
+      },
+      {
+        "concept": "Đổi I/D",
+        "explanation": "Cutoff lý tưởng trên lưới sau upsample là min(π/I,π/D). Ví dụ 3/4 dùng ωc=π/4, tức 1/4 Nyquist của lưới đó, gain 3."
+      },
+      {
+        "concept": "Polyphase / Noble identities",
+        "explanation": "Sắp lại phép lọc và thay tốc độ để tránh nhân với zero hoặc tính mẫu sắp bỏ. Mục tiêu là hiệu quả tính toán, không đổi kết quả bộ đổi tốc tương đương."
+      }
+    ]
+  },
+  {
+    "id": "dgt-window",
+    "subject": "DGT302",
+    "pattern": "window|Window|STFT|Gabor|leakage|closely spaced|Zero.padding|zero.padding|zero-padding|smoother.looking",
+    "mechanism": "Cắt record hữu hạn là nhân tín hiệu với cửa sổ thời gian, nên phổ thật bị tích chập với phổ cửa sổ. Cửa sổ có sidelobe cao làm năng lượng rò sang vùng khác; main lobe rộng làm khó tách hai tone gần nhau. Chọn window phải xét đúng mục tiêu leakage hay resolution.",
+    "comparisons": [
+      {
+        "concept": "Rectangular",
+        "explanation": "Main lobe hẹp ở cùng độ dài nhưng sidelobe cao; cắt đột ngột dễ leakage."
+      },
+      {
+        "concept": "Hamming / Blackman",
+        "explanation": "Sidelobe thấp hơn nhưng main lobe rộng hơn. Blackman thường giảm peak sidelobe mạnh hơn Hamming trong nhóm window này."
+      },
+      {
+        "concept": "Tăng độ dài record",
+        "explanation": "Có thể tăng khả năng phân giải tần số vì quan sát lâu hơn; STFT vì vậy định vị thời gian kém hơn."
+      },
+      {
+        "concept": "Zero-padding",
+        "explanation": "Lấy mẫu đường phổ dày hơn, giúp hiển thị hoặc ước lượng đỉnh; không tự tách được hai tone mà record ngắn chưa phân giải."
+      }
+    ]
+  },
+  {
+    "id": "dgt-fir-linear",
+    "subject": "DGT302",
+    "pattern": "(?:linear.phase|Linear.phase|antisymmetr|group delay|phase distortion|Type I|Type II|Type IV|Type Ill)|(?:different frequencies are delayed)",
+    "mechanism": "FIR hệ số thực có generalized linear phase khi h[n] đối xứng hoặc phản đối xứng quanh tâm. Khi đáp ứng không qua zero, pha tuyến tính cho group delay không đổi, nên các thành phần phổ trong băng truyền bị trễ như nhau. Biên độ vẫn có thể thay đổi, vì vậy linear phase không có nghĩa không lọc gì.",
+    "comparisons": [
+      {
+        "concept": "Đối xứng / phản đối xứng",
+        "explanation": "h[n]=h[N−1−n] hoặc h[n]=−h[N−1−n]. Group delay thường là (N−1)/2 với N taps."
+      },
+      {
+        "concept": "Type III / IV",
+        "explanation": "Có phản đối xứng nên tổng h[n]=0, bắt buộc H(0)=0; không dùng làm lowpass có gain DC khác zero."
+      },
+      {
+        "concept": "Constant phase vs linear phase",
+        "explanation": "Pha hằng là trường hợp đặc biệt; điều cần tránh phase distortion là trễ nhóm không đổi trên dải xét."
+      },
+      {
+        "concept": "IIR",
+        "explanation": "Có thể gần tuyến tính pha trong một dải hoặc được xử lý hai chiều offline; không được suy ra mọi IIR causal có exact linear phase."
+      }
+    ]
+  },
+  {
+    "id": "dgt-fir-iir",
+    "subject": "DGT302",
+    "pattern": "(?:\\bIIR\\b|\\bFIR\\b|Direct Form|direct form|difference.equation realization|difference equation|Unit Delay|unit delay|DSP.*building blocks)|(?:Nonrecursive|basic building blocks|SciPy function.*applying)",
+    "mechanism": "FIR có đáp ứng xung hữu hạn; IIR có đáp ứng kéo dài vô hạn. Bộ lọc IIR hữu tỉ thường dùng feedback để hiện thực gọn, còn FIR luôn có thể hiện thực feed-forward hữu hạn. Phân loại theo đáp ứng xung, không chỉ nhìn một sơ đồ có dây hồi tiếp hay không.",
+    "comparisons": [
+      {
+        "concept": "FIR",
+        "explanation": "Dễ đạt linear phase chính xác với hệ số phù hợp và BIBO ổn định khi hệ số hữu hạn; thường cần nhiều taps hơn cho cùng độ dốc lọc."
+      },
+      {
+        "concept": "IIR",
+        "explanation": "Thường đạt yêu cầu biên độ bằng bậc thấp hơn; phải kiểm tra ổn định và nhạy lượng tử hệ số."
+      },
+      {
+        "concept": "Direct Form I / II",
+        "explanation": "DFII dùng chung đường delay nên giảm bộ nhớ trạng thái; không bảo đảm luôn ít sai số số học hơn DFI."
+      },
+      {
+        "concept": "SOS / cascade biquad",
+        "explanation": "Chia bậc cao thành section bậc hai thường cải thiện độ bền số. Các phần tử cơ bản hiện thực phương trình sai phân là cộng, nhân và trễ một mẫu z⁻¹."
+      }
+    ]
+  },
+  {
+    "id": "dgt-minphase",
+    "subject": "DGT302",
+    "pattern": "(?:minimum.phase|Minimum.Phase|inverse filter|direct inverse|frequency.domain inversion|same magnitude|identical magnitude|all.pass)|(?:equal magnitude responses)",
+    "mechanism": "Với hệ minimum-phase theo quy ước nhân quả ổn định, nghịch đảo cũng nhân quả và ổn định. Trong hệ hữu tỉ phù hợp, zero nằm trong vòng đơn vị trở thành pole ổn định của nghịch đảo. Nếu H gần zero trong một dải, chia Y/H sẽ khuếch đại nhiễu nên tính khả nghịch đại số chưa đủ cho xử lý tốt.",
+    "comparisons": [
+      {
+        "concept": "Minimum-phase",
+        "explanation": "Thích hợp equalization/inversion ổn định; nghịch đảo có thể FIR hoặc IIR, không bắt buộc một loại."
+      },
+      {
+        "concept": "All-pass",
+        "explanation": "Độ lớn bằng một nhưng thay đổi pha. Hai hệ cùng magnitude có thể khác nhau bởi một thừa số all-pass."
+      },
+      {
+        "concept": "Zero trên vòng đơn vị",
+        "explanation": "Nghịch đảo có điểm kỳ dị ở tần số đó; không thể khôi phục ổn định chính xác thành phần đã bị triệt."
+      },
+      {
+        "concept": "Magnitude rất nhỏ",
+        "explanation": "Chưa bằng zero nhưng noise bị chia cho số nhỏ và phóng đại; cần regularization hoặc Wiener filtering thay vì inverse thẳng."
+      }
+    ]
+  },
+  {
+    "id": "dgt-fixedpoint",
+    "subject": "DGT302",
+    "pattern": "fixed.point|Fixed.point|Floating.point|floating.point|finite.word|finite.precision|quantiz.*coefficient|Truncation|truncation|rounding|right shift|overflow|dynamic range|word.length|word length",
+    "mechanism": "Số hữu hạn bit tạo hai loại vấn đề: sai số biểu diễn/làm tròn và tràn khi vượt miền giá trị. Lượng tử hệ số có thể dịch pole/zero; lượng tử kết quả phép toán gây nhiễu và đôi khi limit cycle. Phải theo đúng quy ước làm tròn và định nghĩa dấu error.",
+    "comparisons": [
+      {
+        "concept": "Bỏ bit bù hai",
+        "explanation": "Với no-overflow và e=quantized−exact, bỏ LSB tương đương floor nên error không dương, có thể có bias âm. Truncation về zero lại có dấu error tùy dấu tín hiệu."
+      },
+      {
+        "concept": "Rounding",
+        "explanation": "Thường giảm bias trong mô hình sai số phân bố phù hợp; không loại sạch quantization noise."
+      },
+      {
+        "concept": "Stage scaling",
+        "explanation": "Dịch phải sau tầng FFT giảm nguy cơ overflow, đổi lại giảm biên độ và có thể mất bit hữu ích; không chữa bằng cách bỏ mọi chuẩn hóa."
+      },
+      {
+        "concept": "Fixed vs floating point",
+        "explanation": "Fixed-point thường lợi chi phí/điện năng ở phần cứng phù hợp; floating-point có exponent nên dynamic range lớn hơn. Không thể kết luận một loại luôn chính xác hơn ở mọi thuật toán."
+      }
+    ]
+  },
+  {
+    "id": "dgt-wiener-prediction",
+    "subject": "DGT302",
+    "pattern": "(?:Wiener|wiener|Yule.Walker|Levinson|predict|Prediction|innovations|Innovations|whitening|AR model|ARMA|MA\\)|stationary process|Toeplitz|orthogonality)|(?:statistics change rapidly)",
+    "mechanism": "Wiener filtering tìm ước lượng tuyến tính tối thiểu MSE. Với FIR, phương trình Rxx·w=rxd dùng tự tương quan input và tương quan chéo input–desired. Linear prediction là trường hợp dự đoán chính tín hiệu từ mẫu đã có, nên các tương quan liên quan có thể rút về autocorrelation.",
+    "comparisons": [
+      {
+        "concept": "Wiener–Hopf",
+        "explanation": "Cần tương quan chéo với tín hiệu đích để chọn đúng mục tiêu; chỉ biết autocorrelation input thường chưa đủ cho mọi bài lọc."
+      },
+      {
+        "concept": "Yule–Walker / AR",
+        "explanation": "Phù hợp mô hình AR/prediction của cùng quá trình. Levinson–Durbin tận dụng Toeplitz để giải O(p²), thay vì inverse tổng quát O(p³)."
+      },
+      {
+        "concept": "Causal / noncausal",
+        "explanation": "Noncausal có thêm dữ liệu tương lai nên MMSE không lớn hơn causal; có thể bằng nhau nếu dữ liệu thêm không có ích."
+      },
+      {
+        "concept": "Orthogonality / innovations",
+        "explanation": "Error tối ưu trực giao với không gian dữ liệu dùng để ước lượng. Innovations là phần thông tin mới chưa dự đoán được, không phải đảm bảo error bằng zero."
+      },
+      {
+        "concept": "AR / MA / adaptive",
+        "explanation": "AR dùng output quá khứ, MA dùng nhiễu trắng hiện tại/quá khứ, ARMA kết hợp. Thống kê đổi nhanh thường cần bộ thích nghi thay vì hệ số cố định."
+      }
+    ]
+  },
+  {
+    "id": "dgt-lattice",
+    "subject": "DGT302",
+    "pattern": "Lattice|lattice|reflection coefficient|reflection coefficients",
+    "mechanism": "Lattice tổ chức lọc theo các tầng có hệ số phản xạ, thuận tiện mở rộng bậc và cập nhật thích nghi. Với all-pole lattice nhân quả theo quy ước Schur, điều kiện ổn định là từng |km|<1. Không thay điều kiện từng hệ số bằng tổng hệ số.",
+    "comparisons": [
+      {
+        "concept": "|km|<1",
+        "explanation": "Bảo đảm điều kiện Schur ở mỗi bước của lattice all-pole; bằng 1 là biên, không phải ổn định BIBO chặt."
+      },
+      {
+        "concept": "km=0",
+        "explanation": "Một trường hợp đặc biệt hợp lệ nhưng không cần tất cả hệ số đều zero."
+      },
+      {
+        "concept": "Tăng bậc predictor",
+        "explanation": "Có thể mô tả quá trình tốt hơn nhưng thêm tham số và chi phí; không bảo đảm luôn tốt hơn trên dữ liệu ít hoặc overfit."
+      },
+      {
+        "concept": "FIR lattice coefficient cuối",
+        "explanation": "Theo cấu trúc chuẩn đã cho, hệ số phản xạ cuối lấy từ hệ số cuối đã chuẩn hóa; cần theo đúng dấu/quy ước của sơ đồ, không tự dùng công thức khác."
+      }
+    ]
+  },
+  {
+    "id": "dgt-bilinear",
+    "subject": "DGT302",
+    "pattern": "Bilinear|bilinear|prewarp|Prewarp|s.plane left",
+    "mechanism": "Bilinear transform s=(2/T)(1−z⁻¹)/(1+z⁻¹) ánh xạ nửa mặt phẳng trái vào trong vòng đơn vị, giữ ổn định của prototype analog. Quan hệ tần số Ω=(2/T)tan(ω/2) là phi tuyến nên gây frequency warping. Prewarping tính mép analog tương ứng trước khi thiết kế.",
+    "comparisons": [
+      {
+        "concept": "Ω analog / ω digital",
+        "explanation": "Ω thường có đơn vị rad/s, ω là rad/sample; T tính giây/mẫu. Không tự thêm π nếu đề cho ω=0,2 thay vì 0,2π."
+      },
+      {
+        "concept": "Prewarping",
+        "explanation": "Dùng Ωc=(2/T)tan(ωc/2) để khớp mép digital mong muốn; không phải đổi magnitude bằng một cos hoặc sin bất kỳ."
+      },
+      {
+        "concept": "Stable mapping",
+        "explanation": "LHP→inside unit circle; trục jΩ→unit circle. Không ánh xạ hệ analog ổn định ra ngoài vòng đơn vị."
+      },
+      {
+        "concept": "Impulse invariance",
+        "explanation": "Là phương pháp khác, có thể gây aliasing phổ analog; không đồng nghĩa với bilinear vốn gây warping."
+      }
+    ]
+  },
+  {
+    "id": "dgt-filter-response",
+    "subject": "DGT302",
+    "pattern": "(?:3.dB|3-dB|low.pass|lowpass|Lowpass|high.pass|highpass|Butterworth|Chebyshev|notch|zeros occur|frequency.*magnitude|magnitude.*sinusoidal|\\|H\\(e)|(?:pole.zero configuration|digital oscillator)",
+    "mechanism": "Đáp ứng độ lớn cho biết hệ số khuếch đại của từng tần số; đáp ứng pha cho biết dịch pha. Lowpass giữ vùng gần DC, highpass giữ vùng tần số cao, notch triệt một dải hẹp. Tần số −3 dB là nơi công suất còn một nửa, tương ứng magnitude 1/√2 so với mức tham chiếu.",
+    "comparisons": [
+      {
+        "concept": "First-order lowpass",
+        "explanation": "H(z)=b0/(1−az⁻¹), 0<a<1 có gain lớn nhất gần DC. Nếu chuẩn hóa b0=1−a thì H(0)=1; điểm −3 dB trong [0,π] chỉ tồn tại khi a đủ lớn."
+      },
+      {
+        "concept": "Butterworth / Chebyshev I",
+        "explanation": "Butterworth maximally flat, không ripple passband; Chebyshev I chấp nhận ripple passband để có chuyển tiếp dốc hơn ở bậc so sánh."
+      },
+      {
+        "concept": "Notch / comb zeros",
+        "explanation": "Với H(z)=1−z^(−M), zero thỏa e^(−jωM)=1 nên ω=2πk/M; không đặt zero ở vị trí tùy ý ngoài vòng đơn vị để triệt đúng một tone."
+      },
+      {
+        "concept": "Lowpass→highpass FIR",
+        "explanation": "Nhân h[n] với (−1)^n dịch phổ π; không chỉ tăng gain hoặc đảo thời gian dãy."
+      }
+    ]
+  },
+  {
+    "id": "dgt-adc-hold",
+    "subject": "DGT302",
+    "pattern": "(?:ADC|converter|Holding|holding|sample.and.hold|Zero.Order Hold|zero.order hold|D/A|reconstruction|quantization.*modeled|Quantization in ADC)|(?:Quantization is the process)",
+    "mechanism": "ADC gồm lấy mẫu theo thời gian, lượng tử biên độ và mã hóa. Sample-and-hold giữ điện áp đủ ổn định để bộ chuyển đổi xử lý. DAC kiểu zero-order hold giữ từng mức đến mẫu kế tiếp nên tạo đáp ứng dạng sinc và các ảnh phổ cần lọc tái tạo.",
+    "comparisons": [
+      {
+        "concept": "SAR / flash / dual-slope",
+        "explanation": "SAR quyết định lần lượt từng bit; flash so sánh song song nhiều ngưỡng để nhanh nhưng tốn comparator; dual-slope tích phân hai pha để đo ổn định nhưng chậm."
+      },
+      {
+        "concept": "Sampling / quantization",
+        "explanation": "Sampling rời rạc hóa thời gian; quantization làm tròn biên độ vào các mức hữu hạn. Hai bước gây hai loại sai khác nhau."
+      },
+      {
+        "concept": "Quantization noise",
+        "explanation": "Với lượng tử đều và giả thiết error gần uniform, phương sai Δ²/12. Mô hình white noise không đúng vô điều kiện với mọi input nhỏ/tuần hoàn."
+      },
+      {
+        "concept": "Holding / ideal reconstruction",
+        "explanation": "Holding tạo bậc thang, không tự khôi phục chính xác tín hiệu band-limited. Nội suy sinc/lọc lowpass lý tưởng mới là kết quả tái tạo lý tưởng dưới điều kiện sampling."
+      }
+    ]
+  },
+  {
+    "id": "dgt-dct",
+    "subject": "DGT302",
+    "pattern": "DCT|JPEG|image compression|energy compaction",
+    "mechanism": "DCT biểu diễn block ảnh bằng các hàm cosine có tính mở rộng chẵn. Ảnh tự nhiên thường tương quan mạnh giữa pixel lân cận nên nhiều năng lượng tập trung ở một số hệ số tần số thấp. Chính bước lượng tử/bỏ hệ số mới gây mất mát, không phải DCT tự làm dữ liệu biến mất.",
+    "comparisons": [
+      {
+        "concept": "Energy compaction",
+        "explanation": "Phần lớn năng lượng nằm trong ít hệ số, thuận lợi mã hóa và lượng tử thích nghi."
+      },
+      {
+        "concept": "High-frequency coefficients",
+        "explanation": "Thường có thể lượng tử mạnh hơn trong nén ảnh vì nhạy cảm thị giác và năng lượng, nhưng không phải mọi ảnh đều có chúng nhỏ."
+      },
+      {
+        "concept": "DCT vs DFT",
+        "explanation": "DCT dùng cosine và thường ra hệ số thực cho input thực; DFT dùng hàm mũ phức và có cấu trúc đối xứng liên hợp."
+      }
+    ]
+  },
+  {
+    "id": "dgt-system-properties",
+    "subject": "DGT302",
+    "pattern": "(?:linear system|memoryless|causal|Causal|BIBO|stable|uncertainty|random signal|random signals|random.*statistical|digital processing|DSP processor|block delays|delays a discrete)|(?:Time.Invariant|characteristics do not change|complex exponential|Discrete.time signals|microphone)",
+    "mechanism": "Tính chất hệ phải được kiểm tra riêng: tuyến tính là chồng chất, nhân quả là không dùng input tương lai, không nhớ là chỉ dùng input cùng thời điểm. Ổn định BIBO là input bị chặn luôn cho output bị chặn; không yêu cầu mọi input hoặc mọi output đều bằng zero.",
+    "comparisons": [
+      {
+        "concept": "Tuyến tính",
+        "explanation": "T[a·x1+b·x2]=a·T[x1]+b·T[x2]. Có nhớ hoặc có trễ không tự làm hệ phi tuyến."
+      },
+      {
+        "concept": "Nhân quả / không nhớ",
+        "explanation": "y[n]=x[n−1] nhân quả nhưng có nhớ; y[n]=x[n+1] không nhân quả; y[n]=2x[n] không nhớ."
+      },
+      {
+        "concept": "BIBO",
+        "explanation": "Với LTI, tổng |h[n]| hữu hạn là điều kiện tương ứng. Nhân quả chưa đủ để kết luận ổn định."
+      },
+      {
+        "concept": "Random / digital processing",
+        "explanation": "Random signal cần mô tả bằng phân bố, trung bình, tương quan. DSP số lợi khả năng lập trình/lặp lại nhưng vẫn có giới hạn precision và tài nguyên; bộ xử lý thường tối ưu multiply-accumulate."
+      }
+    ]
+  },
+  {
+    "id": "cos-source-coding",
+    "subject": "COS201",
+    "pattern": "Huffman|Huffman|Lempel|LZ|dictionary|prefix|average code length|source entropy|lossless",
+    "mechanism": "Mã hóa nguồn giảm dư thừa mà vẫn cần khôi phục đúng thông tin. Prefix-free cho phép biết ngay ranh giới khi đọc từ trái sang phải; uniquely decodable là tính chất rộng hơn. Huffman tối ưu độ dài trung bình trong lớp mã prefix nhị phân mã từng ký hiệu khi biết xác suất, không phải tối ưu mọi bộ nén.",
+    "comparisons": [
+      {
+        "concept": "Huffman",
+        "explanation": "Gán từ ngắn cho ký hiệu phổ biến. Nếu có đúng 2^k ký hiệu đồng xác suất, mọi từ dài k bit; 3 ký hiệu đồng xác suất có thể dài 1,2,2 nên không phải luôn fixed-length."
+      },
+      {
+        "concept": "Không prefix-free",
+        "explanation": "Không còn bảo đảm giải mã tức thời, nhưng có thể vẫn uniquely decodable nếu chờ thêm ký hiệu. Không được suy ra dữ liệu chắc chắn không giải mã được."
+      },
+      {
+        "concept": "Lempel–Ziv",
+        "explanation": "Học chuỗi lặp bằng từ điển, phù hợp khi chưa biết thống kê. Từ điển lớn tăng bộ nhớ và độ dài tham chiếu, không bảo đảm mọi file nén tốt hơn."
+      },
+      {
+        "concept": "Entropy bound",
+        "explanation": "Với mô hình mã lossless uniquely decodable và nguồn được chỉ định, độ dài trung bình không nhỏ hơn entropy tương ứng; block coding và adaptive coding cần xét đúng mô hình thống kê."
+      }
+    ]
+  },
+  {
+    "id": "cos-information",
+    "subject": "COS201",
+    "pattern": "entropy|Entropy|information.*logarith|mutual information|capacity|Capacity|optimal input distribution|BSC|binary symmetric channel",
+    "mechanism": "Tự thông tin của sự kiện xác suất p là −log₂p; các sự kiện độc lập nhân xác suất nhưng cộng thông tin. Entropy lấy trung bình đại lượng này. Capacity là tốc độ thông tin tin cậy tối đa theo mô hình kênh và ràng buộc input, không chỉ là số bit được phát vật lý mỗi giây.",
+    "comparisons": [
+      {
+        "concept": "Entropy",
+        "explanation": "Đo mức bất định trung bình; với alphabet N ký hiệu cố định, đạt log₂N khi đồng xác suất."
+      },
+      {
+        "concept": "Mutual information",
+        "explanation": "I(X;Y)=H(X)−H(X|Y). Nhiễu làm output khó xác định input hơn nên thường tăng bất định có điều kiện."
+      },
+      {
+        "concept": "Channel capacity",
+        "explanation": "Tối đa I(X;Y) trên phân bố input được phép. Không chọn một phân bố tùy ý rồi gọi mọi tốc độ của nó là capacity."
+      },
+      {
+        "concept": "BSC p=1/2",
+        "explanation": "Output không cho biết input nên capacity bằng zero. p=0 và p=1 là hai kênh xác định có thể truyền một bit/use nếu biết quy tắc."
+      }
+    ]
+  },
+  {
+    "id": "cos-matched",
+    "subject": "COS201",
+    "pattern": "matched filter|matched-filter|correlator|optimal sampling instant|sampling.*optimal instant|signal.to.noise.*maximize",
+    "mechanism": "Trong nhiễu trắng, matched filter dùng h(t)=K·s*(T−t) để tối đa SNR tại thời điểm lấy mẫu T cho một waveform đã biết. Khi thay vào tích chập tại T, output là tích vô hướng/correlation với waveform tham chiếu. Tối ưu tại một thời điểm không có nghĩa nhiễu bị loại sạch.",
+    "comparisons": [
+      {
+        "concept": "Matched filter",
+        "explanation": "Phù hợp waveform được biết trong white noise; shape filter phụ thuộc xung cần phát hiện."
+      },
+      {
+        "concept": "Correlator",
+        "explanation": "Nhân input với waveform tham chiếu rồi tích phân trong cửa sổ; cho cùng thống kê quyết định ở cuối cửa sổ T."
+      },
+      {
+        "concept": "Cuối bit / giữa bit",
+        "explanation": "Xung hỗ trợ [0,T] với matched filter tương ứng lấy tại T. “Giữa bit” có thể là timing tối ưu của hệ đã có delay khác; không áp một vị trí tuyệt đối cho mọi receiver."
+      },
+      {
+        "concept": "Colored noise",
+        "explanation": "Cần tính tới phổ nhiễu, ví dụ whitening rồi matched filtering; matched filter đơn giản cho white noise không còn tự tối ưu mọi bài."
+      }
+    ]
+  },
+  {
+    "id": "cos-pll-coherent",
+    "subject": "COS201",
+    "pattern": "PLL|Phase.Locked|phase synchronization|phase error|carrier.reference|coherent detection|coherent DSB|product detection|DSB.SC.*removes",
+    "mechanism": "Coherent detection cần tham chiếu đúng tần số và pha. Với một nhánh DSB-SC, nhân với oscillator lệch pha φ rồi lowpass làm thông điệp bị nhân cosφ; với hai nhánh I/Q, lệch pha còn quay toàn bộ chòm sao và trộn hai thành phần.",
+    "comparisons": [
+      {
+        "concept": "PLL locked",
+        "explanation": "Tần số được bám, phase error không trôi và có thể là một hằng khác zero. “Hằng” và “zero hoặc hằng” đều có thể diễn đạt trạng thái khóa."
+      },
+      {
+        "concept": "Lệch 90° ở một nhánh DSB-SC",
+        "explanation": "Thành phần thông điệp tỉ lệ cos90°=0, nên nhánh mong muốn bị triệt trong mô hình lý tưởng."
+      },
+      {
+        "concept": "Lệch pha I/Q",
+        "explanation": "Nói chung gây quay/trộn I với Q. Không kết luận chỉ đổi biên độ từng nhánh mà giữ nguyên quyết định."
+      },
+      {
+        "concept": "Envelope / differential detector",
+        "explanation": "Envelope không cần pha tuyệt đối nếu AM có carrier và envelope hợp lệ. Differential detection dùng thay đổi pha giữa ký hiệu thay cho tham chiếu pha tuyệt đối."
+      }
+    ]
+  },
+  {
+    "id": "cos-modulation-am",
+    "subject": "COS201",
+    "pattern": "(?:\\bAM\\b|Amplitude Modulation|Amplitude modulation|amplitude modulation|DSB|SSB|VSB|envelope detector|modulation factor μ|modulation index μ|carrier power|sideband)|(?:modulation index \\(p\\)|modulation scheme.*bandwidth.efficient)",
+    "mechanism": "AM làm biên độ carrier thay đổi theo thông điệp. Conventional AM có carrier cộng hai sideband, còn DSB-SC triệt carrier nhưng vẫn giữ hai sideband. Khi message bandwidth là W, DSB chiếm khoảng 2W còn SSB chỉ khoảng W trong mô hình lý tưởng.",
+    "comparisons": [
+      {
+        "concept": "Conventional AM",
+        "explanation": "Envelope detector dùng được nếu không overmodulation và carrier còn đủ. Với message chuẩn hóa, thường cần 0≤μ≤1 để envelope không đổi dấu."
+      },
+      {
+        "concept": "DSB-SC",
+        "explanation": "Tiết kiệm công suất carrier nhưng cần coherent detection; không tự tiết kiệm một nửa băng thông như SSB."
+      },
+      {
+        "concept": "SSB / VSB",
+        "explanation": "SSB gửi một sideband, lợi băng thông nhưng lọc/tạo tín hiệu khó hơn. VSB giữ một sideband chính và phần vestige của sideband kia để dung hòa."
+      },
+      {
+        "concept": "Hiệu suất single-tone",
+        "explanation": "η=μ²/(2+μ²), tối đa 1/3 ở μ=1; lúc đó carrier chiếm 2/3 tổng power. Không tráo hai phần này."
+      }
+    ]
+  },
+  {
+    "id": "cos-modulation-fm",
+    "subject": "COS201",
+    "pattern": "(?:\\bFM\\b|\\bPM\\b|frequency modulation|Frequency modulation|angle.modulat|Angle modulation|NBFM|zero.crossing|Bessel|discriminator|De.emphasis|de.emphasis|pre.emphasis)|(?:instantaneous frequency)",
+    "mechanism": "Angle modulation giữ carrier amplitude lý tưởng không đổi và thay đổi pha tổng. FM cho instantaneous frequency tỉ lệ message; PM cho phase deviation tỉ lệ message. Vì frequency là đạo hàm phase nên hai định nghĩa liên hệ qua đạo hàm/tích phân, không phải đổi tên cho nhau.",
+    "comparisons": [
+      {
+        "concept": "FM / PM",
+        "explanation": "Với phase θ(t) tính radian, fi(t)=(1/2π)dθ/dt. FM dùng tích phân message trong phase; PM đặt message trực tiếp vào phase."
+      },
+      {
+        "concept": "NBFM / wideband FM",
+        "explanation": "FM đơn âm có β=Δf/fm. β nhỏ cho xấp xỉ carrier và hai sideband chính; β lớn cần nhiều sideband, thường ước lượng bandwidth bằng quy tắc Carson."
+      },
+      {
+        "concept": "Bessel / Fourier coefficients",
+        "explanation": "Với FM đơn âm, biên độ các sideband là hệ số Bessel Jn(β), đồng thời chính là hệ số Fourier của tín hiệu đó. Hai cách gọi có thể tương đương."
+      },
+      {
+        "concept": "Discriminator / de-emphasis",
+        "explanation": "Discriminator đổi lệch tần số thành điện áp; sau tách FM lý tưởng noise PSD tăng theo f². De-emphasis giảm thành phần cao tần để bù pre-emphasis và hạn chế nhiễu."
+      },
+      {
+        "concept": "Limiter / threshold",
+        "explanation": "Limiter loại biến thiên biên độ trước tách FM nhưng không chữa mọi phase noise. Gần threshold, chất lượng tụt mạnh; không dùng công thức above-threshold vô điều kiện."
+      }
+    ]
+  },
+  {
+    "id": "cos-iq",
+    "subject": "COS201",
+    "pattern": "(?:I.Q|I—Q|quadrature|Quadrature|complex envelope|g_tilde|I and Q|Q.*stands)|(?:IQ modulation|mixer|Mixer|heterodyn)",
+    "mechanism": "Biểu diễn passband bằng hai carrier lệch 90°: s(t)=I(t)cosωct−Q(t)sinωct theo một quy ước thông dụng. Complex envelope là I+jQ. Dấu trước sin có thể đổi theo quy ước, nhưng I/Q vẫn là hai tọa độ của cùng một tín hiệu chứ không phải hai băng tần độc lập.",
+    "comparisons": [
+      {
+        "concept": "I / in-phase",
+        "explanation": "Thành phần đồng pha với carrier tham chiếu, thường gắn nhánh cosine."
+      },
+      {
+        "concept": "Q / quadrature",
+        "explanation": "Thành phần lệch pha 90°, thường gắn nhánh sine theo dấu quy ước. Không phải “quality” hay cặp DC/AC."
+      },
+      {
+        "concept": "QAM",
+        "explanation": "Mã hóa thông tin bằng vị trí cả biên độ và pha trong mặt phẳng I/Q."
+      },
+      {
+        "concept": "Mixer",
+        "explanation": "Nhân hai waveform tạo các thành phần tổng và hiệu tần số; một bộ cộng hoặc integrator không thay cho phép nhân đó."
+      }
+    ]
+  },
+  {
+    "id": "cos-digital-modulation",
+    "subject": "COS201",
+    "pattern": "(?:BPSK|QPSK|QAM|PSK|FSK|DPSK|constellation|Gray coding|Gray code|decision threshold|Eb/N0|Q.function|Q-function|error probability|BER)|(?:nonlinear power amplifier|threshold placed at zero)",
+    "mechanism": "Quyết định ký hiệu trong AWGN phụ thuộc khoảng cách giữa các điểm chòm sao so với noise. Với M điểm, mỗi ký hiệu mang log₂M bit nếu dùng đủ nhãn; tăng M ở cùng average energy làm các điểm gần nhau hơn và thường tăng error. Cần so cùng BER, pulse shape và điều kiện năng lượng khi kết luận hiệu quả.",
+    "comparisons": [
+      {
+        "concept": "BPSK / BFSK",
+        "explanation": "Coherent antipodal BPSK có hai waveform đối nhau; coherent orthogonal BFSK có khoảng cách nhỏ hơn ở cùng Eb nên cần khoảng 3 dB Eb/N0 thêm để đạt cùng BER."
+      },
+      {
+        "concept": "QAM / PSK cùng M",
+        "explanation": "Cùng log₂M bit/ký hiệu. QAM dùng amplitude+phase, PSK amplitude cố định; không suy ra QAM luôn tiết kiệm băng thông hơn nếu M giống nhau."
+      },
+      {
+        "concept": "Constant-envelope FSK",
+        "explanation": "Phù hợp amplifier nonlinear bão hòa hơn QAM biên độ biến thiên. Cần waveform FSK thật sự constant envelope, không chỉ tên ghép chữ FSK."
+      },
+      {
+        "concept": "DPSK / Gray labeling",
+        "explanation": "Differential detection dùng tương quan pha giữa ký hiệu; Gray labeling làm hai điểm láng giềng khác một bit để giảm số bit lỗi khi nhầm láng giềng, không tăng khoảng cách hình học."
+      },
+      {
+        "concept": "Threshold / Q function",
+        "explanation": "Hai mức −A,+A đồng xác suất trong AWGN đối xứng có ngưỡng 0. Q(x) đo tail chuẩn Gaussian; QPSK/QAM có nhiều miền quyết định chứ không một ngưỡng vô hướng chung."
+      }
+    ]
+  },
+  {
+    "id": "cos-ofdm",
+    "subject": "COS201",
+    "pattern": "OFDM|subcarrier|IFFT|FFT.*receiver|FFT.*transmitter|equalization|H_k|zero.forcing",
+    "mechanism": "OFDM chia luồng thành nhiều subcarrier trực giao; khoảng cách lý tưởng Δf=1/Tu với Tu là useful symbol duration. IFFT tổng hợp các tone ở transmitter, FFT chiếu tín hiệu thu lên các tone. Cyclic prefix đủ dài giúp mô hình mỗi subcarrier chỉ còn nhân bởi Hk khi đồng bộ phù hợp.",
+    "comparisons": [
+      {
+        "concept": "IFFT / FFT",
+        "explanation": "IFFT tạo waveform đa sóng mang từ các ký hiệu tần số; FFT thu hồi các hệ số, không tự giải mã FEC hoặc loại mọi noise."
+      },
+      {
+        "concept": "Orthogonality / ICI",
+        "explanation": "Sai spacing, timing hoặc carrier frequency có thể làm các carrier rò lẫn, gây inter-carrier interference."
+      },
+      {
+        "concept": "Zero forcing",
+        "explanation": "Khi Hk≠0, chia Yk/Hk để bù gain/phase; Hk rất nhỏ sẽ khuếch đại noise. Không được nhân thêm Hk rồi gọi là nghịch đảo."
+      },
+      {
+        "concept": "FEC và mất subcarrier",
+        "explanation": "Chỉ phục hồi nếu mã/interleaving còn đủ redundancy và tổn thất trong khả năng sửa lỗi. OFDM không tự bảo đảm không mất dữ liệu khi một tone bị triệt."
+      }
+    ]
+  },
+  {
+    "id": "cos-isi-eye",
+    "subject": "COS201",
+    "pattern": "\\bISI\\b|intersymbol|Eye diagram|eye diagram|symbol rate|zero.\\bISI\\b|optimal instant|clock jitter|eye.*close|bandwidth.*Rs",
+    "mechanism": "Xung đi qua kênh có bộ nhớ có thể kéo dài và chồng vào thời điểm quyết định các ký hiệu lân cận. Zero-ISI yêu cầu tổng đáp ứng xung tại các điểm nT khác 0 phải bằng zero. Equalization, pulse shaping và timing recovery xử lý các phần khác nhau của bài toán.",
+    "comparisons": [
+      {
+        "concept": "ISI",
+        "explanation": "Nhiễu có cấu trúc phụ thuộc chuỗi dữ liệu và impulse response kênh; không chỉ là một noise độc lập có thể cộng variance tùy ý."
+      },
+      {
+        "concept": "AWGN",
+        "explanation": "Biến ngẫu nhiên cộng vào tín hiệu; không tạo cùng quy luật phụ thuộc ký hiệu trước/sau như bộ nhớ kênh."
+      },
+      {
+        "concept": "Eye diagram",
+        "explanation": "Độ mở theo trục đứng phản ánh biên noise margin; độ mở ngang phản ánh khoảng timing an toàn. Méo/ISI/jitter làm mắt khép."
+      },
+      {
+        "concept": "Bandwidth / symbol rate",
+        "explanation": "Với Nyquist baseband lý tưởng, B tối thiểu là Rs/2. Giữ pulse shape/roll-off, giảm Rs thường giảm occupied bandwidth; lấy sai timing có thể tái xuất ISI."
+      }
+    ]
+  },
+  {
+    "id": "cos-pcm-dm",
+    "subject": "COS201",
+    "pattern": "PCM|PAM|PPM|Delta Modulation|delta modulation|\\bDM\\b|delta.sigma|granular|slope overload|quantiz|bits per sample|SQNR|ADC|Manchester|sample.and.hold|aperture|flat.top|Sinc envelope",
+    "mechanism": "PCM mã hóa biên độ mẫu bằng b bit nên có L=2^b mức và bitrate Rb=bfs. Delta modulation chỉ gửi hướng tăng/giảm một bước Δ nên cần cân bằng độ dốc theo kịp và độ mịn ở vùng biến thiên chậm. Sampling, quantization và coding là ba bước khác nhau.",
+    "comparisons": [
+      {
+        "concept": "Granular noise",
+        "explanation": "Bước Δ quá lớn so với biến thiên nhỏ, làm tín hiệu xấp xỉ nhảy quanh input. Giảm Δ giúp nhưng có thể làm slope overload nặng hơn."
+      },
+      {
+        "concept": "Slope overload",
+        "explanation": "Input dốc hơn khả năng Δ/T; tăng Δ hoặc tăng fs giúp theo kịp. Không nhầm với granular do bước quá thô."
+      },
+      {
+        "concept": "Uniform quantization",
+        "explanation": "Δ nhỏ hơn khi tăng bit ở cùng full scale; SQNR full-scale sine lý tưởng gần 6,02b+1,76 dB. Tăng 8→10 bit lợi khoảng 12 dB; không tự loại aliasing."
+      },
+      {
+        "concept": "PAM / PPM / Manchester",
+        "explanation": "PAM mang thông tin ở amplitude nên nhạy méo amplitude; PPM ở vị trí xung; Manchester dùng transition giữa bit hỗ trợ đồng bộ và có chi phí bandwidth."
+      },
+      {
+        "concept": "Flat-top / aperture",
+        "explanation": "Giữ mẫu hữu hạn thời gian tạo suy giảm dạng sinc theo tần số; có thể equalize trong dải phù hợp nhưng không chữa sampling dưới Nyquist."
+      }
+    ]
+  },
+  {
+    "id": "cos-sampling",
+    "subject": "COS201",
+    "pattern": "Nyquist|sampling|Sampling|Aliasing|aliasing|undersampling|sample.*rate|sampled.*spectrum",
+    "mechanism": "Với tín hiệu baseband giới hạn [−W,W], cần fs≥2W trong mô hình lý tưởng có điều kiện biên; thực hành chọn fs>2W để dành transition band cho filter. Sampling làm lặp phổ cách nhau fs. Khi các bản sao chồng, nhiều tín hiệu analog khác nhau có thể tạo cùng dãy mẫu.",
+    "comparisons": [
+      {
+        "concept": "Nyquist rate",
+        "explanation": "2W của tín hiệu; khác tần số Nyquist fs/2 của sampler."
+      },
+      {
+        "concept": "Đúng fs=2W",
+        "explanation": "Không có guard band cho filter thực, và trường hợp tone đúng biên còn phụ thuộc pha. Không phải lựa chọn thực tế luôn an toàn."
+      },
+      {
+        "concept": "Aliasing",
+        "explanation": "Mất khả năng phân biệt tần số sau lấy mẫu; cần anti-alias filter trước sampler, không chỉ tăng bit ADC."
+      },
+      {
+        "concept": "Sampling vs time shifting",
+        "explanation": "Sampling tạo các bản sao phổ; dịch thời gian chỉ nhân một hệ số phase, không tạo dãy bản sao tần số."
+      }
+    ]
+  },
+  {
+    "id": "cos-probability",
+    "subject": "COS201",
+    "pattern": "(?:CDF|PDF|Gaussian distribution|standard deviation|variance|Variance|Covariance|covariance|Conditional probability|conditional probability|Marginal|marginal|joint|Joint|independent|Pearson|correlation lies|uniform distribution)|(?:Covanance|correlation coefficient|expected value|probability of any event)",
+    "mechanism": "PDF là mật độ xác suất của biến liên tục; CDF F(x)=P(X≤x) là xác suất tích lũy. Mean chỉ vị trí trung tâm, variance chỉ mức phân tán quanh mean. Không đồng nhất variance với mean hoặc với toàn bộ công suất nếu mean khác zero.",
+    "comparisons": [
+      {
+        "concept": "PDF / CDF",
+        "explanation": "Với biến liên tục, F(x)=∫ từ −∞ đến x f(u)du và f=F′ ở nơi khả vi. CDF không giảm, từ 0 đến 1; PDF có thể lớn hơn 1 nhưng diện tích phải bằng 1."
+      },
+      {
+        "concept": "Mean / variance / standard deviation",
+        "explanation": "σ²=E[(X−μ)²], σ=√σ². Gaussian được xác định bởi μ và σ²; uniform [a,b] có PDF hằng trên khoảng đó."
+      },
+      {
+        "concept": "Joint / marginal / conditional",
+        "explanation": "Joint mô tả nhiều biến cùng lúc; marginal tích phân bỏ các biến khác; conditional xét dưới điều kiện một sự kiện/giá trị đã biết."
+      },
+      {
+        "concept": "Independence / correlation",
+        "explanation": "Độc lập cho fXY=fXfY và thường dẫn tới covariance zero khi moments tồn tại; covariance zero không luôn đủ cho độc lập. Pearson ρ nằm trong [−1,1] nếu hai variance hữu hạn và khác zero."
+      }
+    ]
+  },
+  {
+    "id": "cos-noise",
+    "subject": "COS201",
+    "pattern": "white noise|White noise|AWGN|additive|noise.*power|noise.*component|mean corresponds|Noise|noise|random process|random.*waveform|autocorrelation",
+    "mechanism": "AWGN là mô hình noise cộng, có phân bố Gaussian và PSD phẳng theo tần số trên dải mô hình. Ba tính chất này độc lập về ý nghĩa: “white” nói về phổ, “Gaussian” nói về phân bố, “additive” nói cách noise vào phương trình r=s+n.",
+    "comparisons": [
+      {
+        "concept": "White / Gaussian",
+        "explanation": "White không bắt buộc mọi phân bố biên đều Gaussian; Gaussian không tự bảo đảm PSD phẳng."
+      },
+      {
+        "concept": "Mean / variance / power",
+        "explanation": "Với điện áp trên 1 Ω, E[X²]=σ²+μ². Variance là công suất thành phần biến thiên quanh mean, còn μ tạo thành phần DC."
+      },
+      {
+        "concept": "Narrowband noise",
+        "explanation": "Được tạo khi lọc noise qua bandpass; có thể biểu diễn bằng hai thành phần I/Q baseband quanh carrier."
+      },
+      {
+        "concept": "Autocorrelation",
+        "explanation": "Đo sự giống nhau theo time lag; decay nhanh thường gợi ý thời gian tương quan ngắn, không tự suy ra noise variance bằng zero."
+      },
+      {
+        "concept": "SNR và bandwidth",
+        "explanation": "Power noise phải tích phân PSD trên đúng noise bandwidth. SNR_ref dùng N0W theo quy ước baseband không nhất thiết giống RF input SNR."
+      }
+    ]
+  },
+  {
+    "id": "cos-channel-coding",
+    "subject": "COS201",
+    "pattern": "channel cod|repetition cod|syndrome|Syndrome|minimum Hamming|convolutional code|constraint length|modern codes|LDPC|Turbo|Polar",
+    "mechanism": "Mã hóa kênh thêm redundancy có cấu trúc để phát hiện/sửa sai. Với block code khoảng cách tối thiểu dmin, phát hiện chắc tới dmin−1 lỗi bit và sửa chắc tới floor((dmin−1)/2) lỗi theo nearest-neighbor. Khoảng cách và code rate/complexity phải được so cùng bối cảnh.",
+    "comparisons": [
+      {
+        "concept": "Syndrome zero",
+        "explanation": "Nhận được một codeword hợp lệ; có thể không có lỗi hoặc lỗi đúng bằng một codeword khác. Không bảo đảm tuyệt đối dữ liệu ban đầu đúng."
+      },
+      {
+        "concept": "Repetition code",
+        "explanation": "Dễ hiểu và giải mã nhưng tốn nhiều channel uses cho ít bit thông tin, nên hiệu suất rate thấp."
+      },
+      {
+        "concept": "Convolutional / constraint length",
+        "explanation": "Bộ nhớ dài hơn cho phép mã tốt hơn trong họ thiết kế phù hợp, nhưng số trạng thái và chi phí giải mã tăng; không bảo đảm mọi tăng bậc đều cải thiện."
+      },
+      {
+        "concept": "LDPC / Turbo / Polar",
+        "explanation": "Dùng cấu trúc và giải mã khai thác redundancy hiệu quả, có thể tiến gần giới hạn capacity; không làm noise biến mất hay cho rate tùy ý."
+      }
+    ]
+  },
+  {
+    "id": "cos-fourier-filters",
+    "subject": "COS201",
+    "pattern": "(?:Fourier|LTI|BIBO|low.pass|Low.pass|filter|Filter|frequency response|amplitude response|Signum|sgn\\(|periodic signals|spectrum.*cos|cos.*spectrum|Dirac comb|time shift|Time shift|time.*compression|compression in time|causal)|(?:frequency.domain representation|equivalently.*domains|impulse response)",
+    "mechanism": "Phân tích Fourier tách tín hiệu theo tần số; hệ LTI tác động bằng Y(f)=H(f)X(f). H(f) mô tả gain và phase từng tần số. Impulse response h(t) quyết định toàn bộ hệ LTI initially at rest; causal và BIBO stable là hai ràng buộc khác nhau.",
+    "comparisons": [
+      {
+        "concept": "Lowpass / bandpass",
+        "explanation": "Lowpass giữ vùng gần DC; bandpass chọn dải quanh carrier. Input bandpass filter giúp chọn kênh và loại thành phần ngoài dải trước xử lý."
+      },
+      {
+        "concept": "Causality / stability",
+        "explanation": "Causal LTI có h(t)=0 khi t<0; BIBO stable cần ∫|h(t)|dt hữu hạn. Stable chưa tự có nghĩa causal."
+      },
+      {
+        "concept": "Periodic / cosine",
+        "explanation": "Tín hiệu tuần hoàn có line spectrum; cos(2πfct) cho hai thành phần tại ±fc. Dirac comb biến đổi thành comb tần số với spacing nghịch chu kỳ."
+      },
+      {
+        "concept": "Time shift / time scaling",
+        "explanation": "Dịch thời gian nhân phase tuyến tính; nén thời gian mở rộng phổ. Không tráo hai phép với việc dịch carrier."
+      },
+      {
+        "concept": "FIR / Butterworth",
+        "explanation": "FIR có đáp ứng hữu hạn nhưng có thể cần nhiều taps; Butterworth có magnitude maximally flat không ripple. Tồn tại Fourier thông thường được bảo đảm bởi điều kiện tuyệt đối khả tích, không bởi mọi tính chất nghe có vẻ “ổn định”."
+      }
+    ]
+  },
+  {
+    "id": "cos-system-architecture",
+    "subject": "COS201",
+    "pattern": "(?:OSI|layer|Layer|transmitter|Transmitter|receiver|Receiver|carrier|Carrier|multiplex|Multiplex|channel|Channel|software|Software|deterministic|deterministic|signal.level foundation|digital communication|analog communication|narrowband)|(?:converting a message|purpose of modulation|communication defined|physically transmitted|Band.pass signals|Fading in wireless)",
+    "mechanism": "Một liên kết truyền thông thường có nguồn, source coding, channel coding, modulation, kênh và chuỗi thu tương ứng. Modulation đưa message tới waveform phù hợp môi trường; multiplexing cho nhiều luồng dùng chung tài nguyên. Từng khối giải quyết một nhiệm vụ, không phải mọi khối đều “giảm noise”.",
+    "comparisons": [
+      {
+        "concept": "Transmitter / receiver",
+        "explanation": "Phát tạo và đưa waveform vào kênh; thu phải đồng bộ, chọn kênh, cân bằng và quyết định trong noise nên thường phức tạp hơn."
+      },
+      {
+        "concept": "Carrier / mixer",
+        "explanation": "Đưa baseband lên RF giúp dùng anten và chia sẻ phổ phù hợp; không tự tăng thông tin nguồn. Mixer tạo sum/difference frequencies bằng phép nhân."
+      },
+      {
+        "concept": "FDM / TDM",
+        "explanation": "Chia sẻ theo dải tần hoặc time slots. QAM I/Q dùng carrier cùng tần số lệch 90°, không phải FDM hai carrier khác tần số."
+      },
+      {
+        "concept": "OSI / SDR",
+        "explanation": "OSI có 7 lớp; modulation ở physical layer. SDR chuyển nhiều chức năng radio sang xử lý có thể lập trình, nhưng vẫn cần phần cứng analog phù hợp."
+      },
+      {
+        "concept": "Deterministic / random",
+        "explanation": "Deterministic được xác định bởi mô tả và điều kiện đã cho; random cần mô hình xác suất. Digitization cho tái sinh và mã sửa lỗi nhưng méo/noise vật lý vẫn là các waveform analog."
+      }
+    ]
+  },
+  {
+    "id": "los-build-systems",
+    "subject": "LOS201",
+    "pattern": "(?:Yocto|BitBake|build system|Build System|BSP|bblayers|IMAGE_INSTALL|image recipe|recipe|SDK|hundreds of packages|manually builds|root filesystem generation)|(?:install additional packages|minimize image size|third.party layer|local.conf)",
+    "mechanism": "Build system quản lý recipe, dependency, toolchain và cấu hình để tạo cùng một bộ software cho target. Lợi ích chính là tái lập và tích hợp có kiểm soát; không phải tự động làm CPU nhanh hơn hoặc bỏ nhu cầu debug. Layer tách phần theo board, policy và ứng dụng để tái sử dụng.",
+    "comparisons": [
+      {
+        "concept": "Yocto / Buildroot",
+        "explanation": "Đều hỗ trợ tạo hệ embedded Linux; cách tổ chức và quản lý metadata khác nhau. Không phải một Linux kernel mới hay một bootloader."
+      },
+      {
+        "concept": "bblayers.conf / local.conf",
+        "explanation": "bblayers.conf liệt kê layer được tìm; local.conf đặt cấu hình build cục bộ. Recipe và machine configuration có vai trò riêng."
+      },
+      {
+        "concept": "IMAGE_INSTALL / require",
+        "explanation": "IMAGE_INSTALL yêu cầu package được đưa vào image. require nạp metadata khác và báo lỗi nếu thiếu, không tự tải một package từ Internet."
+      },
+      {
+        "concept": "populate_sdk / BSP",
+        "explanation": "Task populate_sdk tạo SDK cho image; BSP layer gom hỗ trợ phần cứng/board, không thay cho toàn bộ application stack."
+      },
+      {
+        "concept": "Release support",
+        "explanation": "Sản phẩm dùng lâu cần theo dõi hỗ trợ, vá bảo mật và khả năng rebuild của release; bản mới nhất không tự có nghĩa phù hợp nhất cho mọi sản phẩm."
+      }
+    ]
+  },
+  {
+    "id": "los-cross-dev",
+    "subject": "LOS201",
+    "pattern": "(?:cross.develop|cross.compil|toolchain|arm.linux.gnueabihf|GNU tool|compiler collection)|(?:compile C programs)",
+    "mechanism": "Cross development chạy compiler và công cụ trên host để tạo mã cho target có CPU/ABI khác. Mã nguồn viết trên x86 vẫn có thể được biên dịch thành ARM nếu dùng đúng toolchain và thư viện target. Compiler không làm chương trình target chạy trực tiếp trên CPU host.",
+    "comparisons": [
+      {
+        "concept": "Cross compiler",
+        "explanation": "Ví dụ arm-linux-gnueabihf-gcc chạy trên workstation nhưng sinh chương trình cho ARM hard-float ABI phù hợp."
+      },
+      {
+        "concept": "Native compiler",
+        "explanation": "Chạy và tạo chương trình cho cùng nền tảng; không đồng nghĩa mọi GCC đều là cross compiler."
+      },
+      {
+        "concept": "SDK / sysroot",
+        "explanation": "SDK đóng gói toolchain và môi trường phát triển; sysroot cung cấp header/library của target, không lấy tùy tiện thư viện x86 của host."
+      },
+      {
+        "concept": "GCC / GDB",
+        "explanation": "GCC biên dịch, GDB debug. Hai công cụ có thể cùng trong toolchain nhưng không thay vai trò cho nhau."
+      }
+    ]
+  },
+  {
+    "id": "los-realtime",
+    "subject": "LOS201",
+    "pattern": "(?:real.time|real time|RTOS|deterministic response|periodic execution|response latency|every 5 ms|safety.critical|certification)|(?:average response time)",
+    "mechanism": "Real-time là đáp ứng đúng deadline với giới hạn latency có thể đánh giá, không chỉ chạy nhanh trung bình. Một hệ có average response thấp nhưng đôi lúc treo lâu vẫn có thể thất bại trong điều khiển. Lựa chọn Linux/RTOS còn phụ thuộc tài nguyên, driver, chứng nhận và yêu cầu hệ thống.",
+    "comparisons": [
+      {
+        "concept": "Worst-case latency / jitter",
+        "explanation": "Là trọng tâm khi cần chu kỳ 5 ms chắc chắn; average throughput hoặc kích thước image không thay cho giới hạn trễ."
+      },
+      {
+        "concept": "RT scheduling / preemption",
+        "explanation": "Có thể ưu tiên task và giảm đoạn không ngắt, nhưng cần xét priority inversion, IRQ và thời gian tài nguyên bị khóa."
+      },
+      {
+        "concept": "Linux vs RTOS",
+        "explanation": "Linux có hệ sinh thái/networking/phân tách process phong phú; RTOS nhỏ có thể thuận lợi cho footprint và tính xác định ở hệ đơn giản."
+      },
+      {
+        "concept": "Certification",
+        "explanation": "Sản phẩm safety-critical cần chứng cứ và quy trình phù hợp; không được suy ra “Linux mã nguồn mở” là tự đạt chứng nhận."
+      }
+    ]
+  },
+  {
+    "id": "los-boot",
+    "subject": "LOS201",
+    "pattern": "bootloader|U.Boot|BIOS|Falcon|diskboot|setenv|bootm|boot.*address|0x60000000|0:0|head\\.o|Freeing init memory|init memory|initramfs|root mount panic|kernel.*boot|boot.*kernel|board.*initializ",
+    "mechanism": "Chuỗi boot chuẩn bị phần cứng, tải kernel và mô tả phần cứng, rồi kernel mount root filesystem và chạy init user space. Kernel biên dịch được không bảo đảm cả chuỗi boot đã đủ. Sai địa chỉ load, DTB hoặc root= có thể làm hệ dừng trước khi chạy application.",
+    "comparisons": [
+      {
+        "concept": "Bootloader / U-Boot",
+        "explanation": "Khởi tạo phần cứng ở mức cần thiết và nạp/chuyển quyền cho kernel. Falcon Mode rút ngắn đường boot bằng cách bỏ bớt command interpreter trong cấu hình hỗ trợ."
+      },
+      {
+        "concept": "Kernel head.o / init memory",
+        "explanation": "head.o làm các bước khởi đầu phụ thuộc kiến trúc. Bộ nhớ dành riêng cho hàm __init có thể được giải phóng sau boot; không phải xóa toàn bộ kernel."
+      },
+      {
+        "concept": "Rootfs / initramfs",
+        "explanation": "Chứa user-space binary, library và config. Thiếu initramfs lẫn root device hợp lệ có thể gây VFS mount panic; thêm DTB không tạo rootfs thay thế."
+      },
+      {
+        "concept": "U-Boot syntax",
+        "explanation": "setenv sửa biến môi trường; phần device:partition như 0:0 chỉ thiết bị/phân vùng theo lệnh. Địa chỉ RAM phải đúng board, không áp 0x60000000 cho mọi ARM."
+      }
+    ]
+  },
+  {
+    "id": "los-console-init",
+    "subject": "LOS201",
+    "pattern": "(?:/dev/console|serial output|PL011|ttyAMA|serial console|early boot messages|inittab|rcS|askfirst|initialization after kernel|init starts|usable user.space)|(?:PID 1)",
+    "mechanism": "Kernel và init user space làm hai giai đoạn khác nhau. Serial console cung cấp log từ sớm khi network/SSH còn chưa chạy; driver UART và console= phải khớp phần cứng. BusyBox init đọc inittab để chạy script hệ thống rồi mở shell theo action được cấu hình.",
+    "comparisons": [
+      {
+        "concept": "PL011 / ttyAMA0",
+        "explanation": "Với UART PL011 của vexpress trong lab, enable driver và console=ttyAMA0,115200 khớp thiết bị; không đổi tùy tiện thành ttyS0 vốn thuộc loại UART khác."
+      },
+      {
+        "concept": "-nographic / SSH",
+        "explanation": "QEMU -nographic có thể chuyển serial ra terminal. SSH là dịch vụ user space cần network nên không thay thế log boot đầu tiên."
+      },
+      {
+        "concept": "sysinit / askfirst",
+        "explanation": "sysinit chạy rcS lúc khởi tạo; askfirst đợi xác nhận trên console rồi mới chạy chương trình, thường dùng mở shell tương tác."
+      },
+      {
+        "concept": "/dev/console",
+        "explanation": "Device node cho console I/O; không là nơi lưu boot parameters, không tự tải shared libraries."
+      }
+    ]
+  },
+  {
+    "id": "los-busybox",
+    "subject": "LOS201",
+    "pattern": "BusyBox|busybox|\\bash\\b|symlinks.*executable|name used to invoke",
+    "mechanism": "BusyBox là một chương trình multicall: nhiều tiện ích dùng chung code và hạ tầng trong một binary. Tên gọi trong argv[0] hoặc applet được chỉ rõ quyết định chức năng. Điều này giảm dung lượng so với đóng gói từng bản đầy đủ riêng biệt, nhưng không có nghĩa mọi applet đều sẵn nếu chưa được build vào.",
+    "comparisons": [
+      {
+        "concept": "Symlink ls / cp / mount",
+        "explanation": "Các tên trỏ về cùng BusyBox, chương trình chọn applet theo tên gọi; không cần thư viện riêng cho mỗi tên symlink."
+      },
+      {
+        "concept": "ash",
+        "explanation": "Shell nhẹ thường được BusyBox cung cấp. bash, zsh, fish là các shell khác, không phải tên chung mọi BusyBox shell."
+      },
+      {
+        "concept": "Static linking",
+        "explanation": "Hữu ích cho initramfs không kèm shared libraries. Dynamic BusyBox vẫn dùng được nếu đã cấp loader và library phù hợp."
+      },
+      {
+        "concept": "Init",
+        "explanation": "Có thể là một applet BusyBox điều khiển startup; BusyBox không vì thế trở thành Linux kernel hay bootloader."
+      }
+    ]
+  },
+  {
+    "id": "los-device-driver",
+    "subject": "LOS201",
+    "pattern": "(?:device driver|file_operations|device.*numbers|major|minor|custom peripheral|character device|VFS layer|Virtual File System|hardware registers)|(?:opening the device|file operations|device filenames)",
+    "mechanism": "VFS cho user space một giao diện I/O thống nhất và điều phối tới các callback của filesystem/driver. Với character device, device number và đăng ký cdev nối node /dev với driver. Tên file tự nó không đủ để biết callback nào phục vụ thiết bị.",
+    "comparisons": [
+      {
+        "concept": "Major / minor",
+        "explanation": "Major giúp chọn driver/nhóm xử lý, minor phân biệt thiết bị hoặc chức năng dưới driver. Đổi tên file không thay cặp số này."
+      },
+      {
+        "concept": "file_operations",
+        "explanation": "Chứa callback như read, write, mmap, open. NULL ở một callback optional không mặc định gây crash; con trỏ hỏng hoặc lỗi trong callback mới là vấn đề phải debug."
+      },
+      {
+        "concept": "mmap hardware registers",
+        "explanation": "Cho truy cập vùng mapped trực tiếp, có thể giảm overhead gọi hệ thống lặp. Vẫn cần kiểm soát quyền, memory ordering và đồng bộ; không tự an toàn mọi thao tác."
+      },
+      {
+        "concept": "VFS vs driver",
+        "explanation": "VFS thống nhất giao diện, driver vẫn chứa logic phụ thuộc hardware. VFS không tự thay thế toàn bộ driver hoặc xóa major/minor."
+      }
+    ]
+  },
+  {
+    "id": "los-module",
+    "subject": "LOS201",
+    "pattern": "(?:modprobe|insmod|module_param|parameter.*module|module.*parameter|loadable.*module)|(?:building a driver as a module)",
+    "mechanism": "Kernel module được nạp vào kernel đang chạy, không phải process user-space độc lập. Cấu hình tham số có thể ảnh hưởng hành vi mà không cần biên dịch lại, nhưng cách expose qua sysfs còn phụ thuộc permission của module_param. Cần phân biệt module đã nạp với device node đã có.",
+    "comparisons": [
+      {
+        "concept": "insmod",
+        "explanation": "Nạp file module cụ thể; không tự giải quyết toàn bộ dependency như modprobe."
+      },
+      {
+        "concept": "modprobe",
+        "explanation": "Dùng metadata dependency và cấu hình để tìm/nạp các module cần thiết; không tự biên dịch source driver."
+      },
+      {
+        "concept": "module_param(...,int,0)",
+        "explanation": "Có thể truyền giá trị khi nạp. Permission 0 không tạo thuộc tính sysfs đọc/ghi thông thường; không có nghĩa chỉ user-space application mới dùng được."
+      },
+      {
+        "concept": "/dev node",
+        "explanation": "Có module/cdev chưa đủ nếu node hoặc quyền truy cập còn thiếu. Udev/devtmpfs có thể tạo node theo cấu hình hệ."
+      }
+    ]
+  },
+  {
+    "id": "los-kbuild",
+    "subject": "LOS201",
+    "pattern": "(?:vmlinux|vmlinuz|zImage|uImage|autoconf\\.h|built.in|built-in|Kbuild|arch/|architecture.specific|System.map|kernel source tree|linked.*kernel)|(?:vexpress_defconfig)",
+    "mechanism": "Build kernel tạo nhiều artifact cho các mục đích khác nhau. File ELF chứa symbol để debug không nhất thiết là image nén bootloader tải. Một số tên artifact trong giáo trình thuộc Kbuild đời cũ, nên phải theo ngữ cảnh phiên bản của câu hỏi.",
+    "comparisons": [
+      {
+        "concept": "vmlinux",
+        "explanation": "ELF kernel không nén, phù hợp symbol/debug nếu được build với thông tin cần thiết."
+      },
+      {
+        "concept": "zImage / vmlinuz / uImage",
+        "explanation": "zImage thường là image kernel nén tự giải nén theo kiến trúc; vmlinuz là tên image nén thường gặp; uImage thêm header theo định dạng legacy U-Boot. Không dùng chúng thay nm hoặc System.map."
+      },
+      {
+        "concept": "built-in.o / built-in.a",
+        "explanation": "Artifact gộp object built-in theo từng thư mục; .o là kiểu legacy được đề nêu, kernel mới thường dùng archive .a. modules.dep là dependency của module, không chứa machine code kernel."
+      },
+      {
+        "concept": "autoconf.h / arch/",
+        "explanation": "autoconf.h chứa macro cấu hình được sinh; arch/ chứa phần phụ thuộc kiến trúc. Hai nơi không thay cho rootfs ứng dụng."
+      }
+    ]
+  },
+  {
+    "id": "los-debug-tools",
+    "subject": "LOS201",
+    "pattern": "(?:debug|Debug|GDB|KGDB|gdb|ftrace|dmesg|oops|profil|\\bnm\\b|smem|smemcap|instrumentation)|(?:\\bProfile\\b)",
+    "mechanism": "Chọn công cụ theo lớp vấn đề: log kernel, lời gọi hệ thống, hàm kernel, lỗi source hoặc bottleneck hiệu năng. Một chương trình chạy đúng nhưng chậm nên được profile trước khi sửa ngẫu nhiên. Debug sớm trong kernel khó hơn vì lỗi có thể ảnh hưởng toàn hệ và dịch vụ chưa sẵn.",
+    "comparisons": [
+      {
+        "concept": "dmesg / oops",
+        "explanation": "dmesg đọc kernel ring buffer. Oops thường chứa vị trí fault, register và stack trace; khả năng tiếp tục phụ thuộc lỗi và cấu hình panic, không bảo đảm recover."
+      },
+      {
+        "concept": "GDB / gdbserver / KGDB",
+        "explanation": "GDB debug chương trình qua symbol, có thể giao tiếp gdbserver trên target; KGDB dùng cho kernel. Thiếu debug info hoặc tối ưu hóa cao làm mapping source khó hơn."
+      },
+      {
+        "concept": "ftrace / profiler / strace",
+        "explanation": "ftrace quan sát đường hàm/sự kiện kernel, profiler tìm hot spot, strace theo syscall user space. Không chọn dmesg thay mọi công cụ này."
+      },
+      {
+        "concept": "nm / smemcap",
+        "explanation": "nm liệt kê symbol object/ELF. smemcap thu thông tin memory để smem phân tích ở host khi target không chạy được môi trường cần thiết."
+      }
+    ]
+  },
+  {
+    "id": "los-filesystems-flash",
+    "subject": "LOS201",
+    "pattern": "(?:flash|Flash|NAND|NOR|UBIFS|JFFS|MTD|\\bECC\\b|SquashFS|tmpfs|filesystem.*compress|compressed.*filesystem|persistent configuration|power cycles|RAM.based)|(?:wear leveling|M TD abstraction)",
+    "mechanism": "RAM filesystem và flash filesystem khác nhau ở tính bền dữ liệu, ràng buộc ghi/xóa và dung lượng. Flash thường program bit theo một chiều giữa hai lần erase; xóa theo block nên ghi lại tùy ý như RAM có thể thất bại. Các tầng MTD/UBI/filesystem giải quyết các phần khác nhau của thiết bị.",
+    "comparisons": [
+      {
+        "concept": "NAND / NOR",
+        "explanation": "NAND mật độ lớn và xử lý page/block, thường cần ECC và quản lý bad block; NOR thuận lợi random read và code execution ở cấu hình phù hợp."
+      },
+      {
+        "concept": "MTD / UBI / UBIFS",
+        "explanation": "MTD trừu tượng hóa flash; UBI quản lý volume/wear/bad block trên MTD; UBIFS là filesystem chạy trên UBI. Không đặt UBIFS trực tiếp “trên ext4”."
+      },
+      {
+        "concept": "JFFS2 / SquashFS",
+        "explanation": "JFFS2 là flash filesystem có giới hạn thời gian scan/memory khi device lớn. SquashFS là compressed read-only filesystem, hợp image firmware bất biến."
+      },
+      {
+        "concept": "tmpfs / persistence",
+        "explanation": "tmpfs dùng virtual memory, có thể swap nhưng không tự bền qua reboot. Cần lưu cấu hình trên storage bền nếu phải giữ sau mất điện."
+      },
+      {
+        "concept": "ECC / erase-before-write",
+        "explanation": "ECC sửa/phát hiện lỗi bit trong giới hạn mã. Nó không cho phép bỏ quy tắc erase trước khi đổi bit 0→1 trên flash."
+      }
+    ]
+  },
+  {
+    "id": "los-network-boot",
+    "subject": "LOS201",
+    "pattern": "TFTP|NFS|root=/dev/nfs|network.*boot|boot.*network|root filesystem.*host|library.*host.*target",
+    "mechanism": "Network boot giúp target dùng kernel hoặc rootfs do host cung cấp, thuận tiện cập nhật nhanh và debug. TFTP thường tải image khi boot, còn NFS cung cấp một cây filesystem được mount để dùng lâu dài. Hai dịch vụ khác nhau dù cùng dùng mạng.",
+    "comparisons": [
+      {
+        "concept": "TFTP",
+        "explanation": "Giao thức đơn giản truyền file như kernel/DTB/initramfs; không tự cung cấp rootfs có thao tác file đầy đủ như NFS."
+      },
+      {
+        "concept": "NFS root",
+        "explanation": "Root filesystem được export từ host. Sửa binary/library trong export có thể được target dùng mà không flash lại toàn image."
+      },
+      {
+        "concept": "SSH / syslog",
+        "explanation": "SSH cho đăng nhập từ xa khi user space/network hoạt động; syslog ghi log. Không chọn chúng làm dịch vụ mount khi root=/dev/nfs."
+      },
+      {
+        "concept": "Lỗi mount",
+        "explanation": "Tải kernel thành công chưa chứng minh NFS server/export/bootargs đều đúng; cần kiểm tra riêng đường rootfs."
+      }
+    ]
+  },
+  {
+    "id": "los-mmu-memory",
+    "subject": "LOS201",
+    "pattern": "(?:virtual memory|Virtual memory|\\bMMU\\b|NOMMU|\\bpage\\b|/proc/|memory mapping|mapping type|mapping.*zero|munmap|mmap|out.of.memory|OOM|swap|sharing RAM|private computer|user mode.*kernel memory)|(?:memory leak|Memory Management Unit|mapping is used|supplement RAM|pseudo.filesystem)",
+    "mechanism": "Virtual memory ánh xạ địa chỉ ảo sang trang vật lý và tạo phân tách không gian địa chỉ giữa process. MMU thực thi phần dịch/protection ở hardware; Linux NOMMU có các giới hạn khác. Địa chỉ ảo không tự biến thành thêm dung lượng RAM/flash vật lý.",
+    "comparisons": [
+      {
+        "concept": "Page / /proc/PID/maps",
+        "explanation": "Page là đơn vị mapping; maps liệt kê các vùng ánh xạ và thuộc tính của process, không phải thống kê CPU scheduler hay socket."
+      },
+      {
+        "concept": "mmap / munmap",
+        "explanation": "mmap tạo mapping; munmap hủy mapping. Anonymous mapping khởi tạo nội dung zero; MAP_SHARED cho phép chia sẻ thay đổi, MAP_PRIVATE dùng copy-on-write theo ngữ nghĩa mapping."
+      },
+      {
+        "concept": "Swap / OOM",
+        "explanation": "Swap là vùng lưu hỗ trợ memory ảo, chậm hơn RAM và không thay thế vô hạn RAM. OOM có thể do memory pressure lớn, leak hoặc cấu hình giới hạn; không phải mọi thiếu RAM đều do một nguyên nhân."
+      },
+      {
+        "concept": "Protection / NOMMU",
+        "explanation": "Truy cập kernel memory từ user mode trái quyền gây fault. Không MMU thì isolation/mapping tính năng bị hạn chế; phải dùng kernel cấu hình hỗ trợ NOMMU chứ không mong MMU image tự chạy."
+      }
+    ]
+  },
+  {
+    "id": "los-process-life",
+    "subject": "LOS201",
+    "pattern": "fork|exec|clone|process memory|Text segment|text segment|Data segment|data segment|initialized global|segment.*grows|running instance|new process|own termination|_exit|processes and threads|process.*thread",
+    "mechanism": "Process là instance chương trình đang chạy với tài nguyên và không gian địa chỉ của nó. Thread trong cùng process thường chia sẻ address space và nhiều tài nguyên nhưng có register/stack thực thi riêng. Tạo process và thay chương trình đang chạy là hai thao tác khác nhau.",
+    "comparisons": [
+      {
+        "concept": "fork",
+        "explanation": "Tạo child với không gian địa chỉ logic riêng; triển khai có thể dùng copy-on-write để tránh sao chép ngay. Ghi vào data của child không tự sửa data riêng của parent."
+      },
+      {
+        "concept": "execve",
+        "explanation": "Thay image của process hiện tại bằng chương trình mới, giữ cùng PID khi thành công; không tạo thêm một child chỉ vì gọi exec."
+      },
+      {
+        "concept": "clone / _exit",
+        "explanation": "clone là cơ chế Linux cho phép chọn tài nguyên chia sẻ khi tạo task; _exit kết thúc caller trực tiếp, không chạy atexit/flush stdio như exit chuẩn C."
+      },
+      {
+        "concept": "Text / data / BSS / stack",
+        "explanation": "Text chứa mã máy, thường read-only và có thể share; data chứa global đã khởi tạo khác zero; BSS cho zero/uninitialized; stack phục vụ call frame, tự thay đổi theo gọi/return."
+      }
+    ]
+  },
+  {
+    "id": "los-ipc-sync",
+    "subject": "LOS201",
+    "pattern": "(?:IPC|pipe|FIFO|socket|Sockets|shared memory|shared counter|condition.variable|condition variable|mutex|semaphore|unidirectional|producer.consumer|race condition|synchronization units|notify.*event)|(?:pthread_cond_wait)",
+    "mechanism": "IPC chuyển dữ liệu hoặc thông báo giữa các process; đồng bộ kiểm soát thứ tự/truy cập tài nguyên. Shared memory giảm sao chép nhưng không làm thao tác đồng thời tự an toàn. Cần xác định cùng host hay qua mạng, dạng stream hay message, và quan hệ giữa các process.",
+    "comparisons": [
+      {
+        "concept": "Pipe / FIFO",
+        "explanation": "Pipe thông thường là byte stream một chiều có read/write end; FIFO có tên trong filesystem để các process không cùng quan hệ cha–con có thể mở."
+      },
+      {
+        "concept": "Socket",
+        "explanation": "Có thể dùng trên cùng host qua UNIX-domain hoặc qua mạng với các address family phù hợp. BSD socket là nhóm IPC khác nguồn gốc System V IPC."
+      },
+      {
+        "concept": "Shared memory",
+        "explanation": "Nhiều process truy cập vùng chung, hợp trao đổi dữ liệu lớn/nhanh; cần mutex/semaphore/atomic/protocol phù hợp, không tránh race chỉ bằng mmap."
+      },
+      {
+        "concept": "Mutex / condition variable",
+        "explanation": "Mutex bảo vệ critical section. Condition variable chờ một điều kiện trên shared state; kiểm tra điều kiện trong vòng while với mutex, vì wake-up không tự chứng minh điều kiện đã đúng."
+      },
+      {
+        "concept": "Signal / message queue",
+        "explanation": "Signal chủ yếu báo sự kiện; queue giữ message theo cơ chế của API. ipcs liệt kê System V IPC objects, không phải mọi socket/network packet."
+      }
+    ]
+  },
+  {
+    "id": "los-permissions-paths",
+    "subject": "LOS201",
+    "pattern": "permission|UID|superuser|user ID|group names|usernames|filename length|pathname|directory entry|directory hierarchy|symbolic link|symbolic links|link.*containing|root character|parent directory|/etc/group|/etc/passwd",
+    "mechanism": "Tên file, identity và quyền truy cập là ba lớp khác nhau. Permission bits trên directory điều khiển duyệt tên/thao tác entry, không có cùng ý nghĩa hoàn toàn với file thường. Effective credentials thường quyết định quyền kiểm tra tại thời điểm truy cập tài nguyên.",
+    "comparisons": [
+      {
+        "concept": "Directory r / x / w",
+        "explanation": "r cho đọc danh sách tên; x cho search/traverse các thành phần đường dẫn; w cùng x thường cần để tạo/xóa/đổi entry. Có r chưa chắc mở được mọi file bên trong."
+      },
+      {
+        "concept": "UID / root / group",
+        "explanation": "UID 0 là root. /etc/passwd ánh xạ tên user–UID, /etc/group tên group–GID. Real UID chỉ danh tính gốc; effective UID thường dùng cho quyền thao tác."
+      },
+      {
+        "concept": "Absolute / relative / dot",
+        "explanation": "Absolute path bắt đầu /; relative dựa current working directory. “.” là chính directory, “..” là directory cha."
+      },
+      {
+        "concept": "Symbolic / hard link",
+        "explanation": "Symlink chứa pathname đích và có thể dangling; hard link là một tên khác cùng inode, không phải file text chứa tên đích."
+      },
+      {
+        "concept": "Filename length",
+        "explanation": "Giới hạn component ext4 thường 255 byte, khác độ dài toàn đường dẫn và khác số ký tự Unicode nếu encoding dùng nhiều byte."
+      }
+    ]
+  },
+  {
+    "id": "los-systemcalls-signals",
+    "subject": "LOS201",
+    "pattern": "system call|system calls|System call|kernel entry|signal|Signal|Control.C|Control-C|kill\\(|\\bread\\b|file offset|lseek|universality of I/O|user mode to kernel",
+    "mechanism": "System call là giao diện process yêu cầu kernel làm việc có đặc quyền. File descriptor là handle cho nhiều đối tượng I/O, nhưng từng loại không hỗ trợ mọi operation giống nhau. Signal là thông báo bất đồng bộ; gửi được signal không đồng nghĩa đã đợi process kết thúc.",
+    "comparisons": [
+      {
+        "concept": "read / write / lseek",
+        "explanation": "read nhận byte, write gửi byte, lseek đổi file offset nếu object seekable. Pipe/socket thông thường không lseek được như file regular."
+      },
+      {
+        "concept": "kill / signals",
+        "explanation": "kill gửi signal tới target được chỉ định, không chỉ riêng SIGKILL. Control-C thường phát SIGINT cho foreground process group."
+      },
+      {
+        "concept": "SIGKILL / SIGSTOP",
+        "explanation": "Process không thể catch hoặc ignore hai signal này; SIGTERM, SIGINT thường có thể cài handler."
+      },
+      {
+        "concept": "Universality of I/O",
+        "explanation": "Giao diện open/read/write/close dùng thống nhất cho nhiều object; không chứng minh mọi device có cùng hành vi hoặc cùng tốc độ."
+      },
+      {
+        "concept": "Privilege transition",
+        "explanation": "Trap/syscall instruction chuyển có kiểm soát sang kernel mode; không phải user app tự ghi tùy ý vào kernel memory."
+      }
+    ]
+  },
+  {
+    "id": "los-standards",
+    "subject": "LOS201",
+    "pattern": "POSIX|SUSv|UNIX 98|LSB|standard|Standard|Austin Group|curses|header files|IEEE|1003",
+    "mechanism": "Các chuẩn mô tả các lớp khác nhau: ngôn ngữ C, API hệ điều hành, shell/utilities hoặc tương thích nhị phân. Vì có quan hệ bao hàm và lịch sử phiên bản, cần đọc đúng năm/tập đặc tả được hỏi, không suy từ một keyword như “UNIX”.",
+    "comparisons": [
+      {
+        "concept": "C89 / C90",
+        "explanation": "Chuẩn hóa cú pháp/ngữ nghĩa C và standard library; không tự bao gồm toàn bộ POSIX threads, sockets hoặc curses."
+      },
+      {
+        "concept": "POSIX.1 / .1b / .1c",
+        "explanation": "POSIX.1 là nền API, .1b là realtime extensions lịch sử, .1c là threads. Các nội dung được hợp nhất trong các phiên bản sau."
+      },
+      {
+        "concept": "SUSv2 / SUSv3",
+        "explanation": "SUSv2 gắn branding UNIX 98; SUSv3 (2001) hợp nhất cơ sở POSIX và có volume X/Open Curses. Hỏi curses chung có thể còn dính các đặc tả SVID cũ."
+      },
+      {
+        "concept": "SUS volumes / LSB",
+        "explanation": "Base Definitions gồm header/type/định nghĩa, Shell and Utilities mô tả shell/commands. LSB tập trung tính tương thích của Linux, khác một chuẩn ngôn ngữ C."
+      },
+      {
+        "concept": "Austin Group",
+        "explanation": "Hợp tác IEEE, The Open Group và ISO/IEC JTC1/SC22 để duy trì đặc tả chung; không phải một distro hoặc kernel fork."
+      }
+    ]
+  },
+  {
+    "id": "los-unix-history",
+    "subject": "LOS201",
+    "pattern": "(?:UNIX|BSD|Bill Joy|Bell Lab|Bell Laboratories|Linus|Torvalds|Minix|MINIX|Finnish|Helsinki|1989|1990|1969|1970|32V|Seventh Edition|release cycle|stable/development|2\\.6)|(?:teaching operating system)",
+    "mechanism": "Các câu lịch sử cần ghép đúng nhân vật, hệ thống, mốc và phạm vi phiên bản; tên hiện đại có thể được nhắc trong bối cảnh cũ. Một câu hỏi về artifact/kernel release trong giáo trình không nên được suy thành mô tả tất cả Linux hiện nay.",
+    "comparisons": [
+      {
+        "concept": "Thompson / Ritchie / Joy",
+        "explanation": "Ken Thompson gắn với khởi đầu UNIX; Dennis Ritchie thiết kế C; Bill Joy gắn BSD, C shell và đồng sáng lập Sun. Không tráo vai trò chỉ vì đều liên quan UNIX."
+      },
+      {
+        "concept": "UNIX 1969 / PDP-11 / VAX",
+        "explanation": "UNIX ban đầu năm 1969 trên PDP-7; chuyển sang PDP-11 năm 1970; bản 32V là port lên VAX. Các máy thuộc các giai đoạn khác nhau."
+      },
+      {
+        "concept": "BSD",
+        "explanation": "4.2BSD nổi bật với sockets/TCP-IP; 4.4BSD-Lite và bản cuối 4.4BSD-Lite2 là các mốc khác nhau. NetBSD nhấn mạnh portability, OpenBSD nhấn mạnh security."
+      },
+      {
+        "concept": "Linux / MINIX",
+        "explanation": "Linus phát triển Linux khi ở University of Helsinki, chịu ảnh hưởng môi trường MINIX nhưng Linux không phải tên mới của MINIX."
+      },
+      {
+        "concept": "2.6 release model",
+        "explanation": "Với series 2.6 trong ngữ cảnh lịch sử, phát triển chuyển sang tích hợp liên tục vào mainline thay mô hình odd/even cũ; feature releases thường khoảng vài tháng, không áp chu kỳ một con số cố định cho mọi thời kỳ."
+      }
+    ]
+  },
+  {
+    "id": "los-gnu-user-tools",
+    "subject": "LOS201",
+    "pattern": "(?:GNU|GPL|FSF|Stallman|Hurd|Mach|distribution|Slackware|shell|Shell|Korn|Bourne|C shell|shared libraries|shared library|dynamic linker|archive|object modules|text editor)|(?:environment variables)",
+    "mechanism": "GNU cung cấp nhiều công cụ user space và license framework, còn Linux là kernel. Shell diễn giải lệnh và điều phối chương trình; compiler, editor và dynamic linker giải các nhiệm vụ khác. Phân biệt vai trò giúp loại các lựa chọn có tên quen nhưng sai lớp chức năng.",
+    "comparisons": [
+      {
+        "concept": "Shells",
+        "explanation": "sh là Bourne shell gắn Seventh Edition; bash là Bourne Again Shell; ksh do David Korn; csh gắn Bill Joy. BusyBox thường có ash nhẹ."
+      },
+      {
+        "concept": "GNU tools",
+        "explanation": "GCC biên dịch, GDB debug, Emacs là editor mở rộng. GNU Hurd là kernel dựa trên Mach, không phải tên gọi khác của Linux."
+      },
+      {
+        "concept": "FSF / GPL",
+        "explanation": "FSF thành lập 1985; GPLv1 phát hành 1989, GPLv3 năm 2007. Năm lập tổ chức không đồng nghĩa năm phát hành từng license."
+      },
+      {
+        "concept": "Dynamic linker / archive",
+        "explanation": "Runtime loader như ld.so tìm/nạp shared libraries cần thiết. Static archive .a gom object modules; không phải chương trình tự chạy để nạp .so."
+      },
+      {
+        "concept": "Distribution / GNU/Linux",
+        "explanation": "Distro gói kernel, user space, package policy; Slackware là một distro lâu đời. Cách gọi GNU/Linux nhấn mạnh phần đóng góp GNU, không biến shell thành kernel."
+      }
+    ]
+  },
+  {
+    "id": "los-kernel-responsibility",
+    "subject": "LOS201",
+    "pattern": "(?:kernel|Kernel|daemon|Daemon|interrupt|Interrupt|Linux.*appropriate|Linux.*product|Linux.*bare.metal|software stack|root filesystem|rootfs|embedded device)|(?:routing of packets|embedded system)",
+    "mechanism": "Kernel quản lý process, memory, thiết bị và network, còn application/library chạy ở user space. Driver làm cầu nối thiết bị với kernel; daemon là service user space chạy nền. Phân tầng giúp thay thế/kiểm thử từng phần nhưng không xóa phụ thuộc giữa chúng.",
+    "comparisons": [
+      {
+        "concept": "Process / memory / network management",
+        "explanation": "Scheduler chia CPU; memory manager phân phối/protect RAM; network subsystem xử lý protocol/routing. Không gọi mọi nhiệm vụ này là filesystem."
+      },
+      {
+        "concept": "Interrupt / polling",
+        "explanation": "Interrupt báo sự kiện để CPU không phải busy-wait khi sự kiện thưa. Khi tốc độ sự kiện cao, polling/batching có thể hiệu quả hơn; interrupt không tự thay DMA."
+      },
+      {
+        "concept": "Daemon",
+        "explanation": "Background service thường độc lập phiên login tương tác; không phải kernel module hoặc synchronization object."
+      },
+      {
+        "concept": "Minimal rootfs",
+        "explanation": "Chỉ giữ binary/library/config cần thiết để giảm footprint và attack surface; không cần desktop GUI hoặc JVM để hệ embedded có thể hoạt động."
+      }
+    ]
+  },
+  {
+    "id": "ici-ring",
+    "subject": "ICI211",
+    "pattern": "ring oscillator|inverter.stage arrangement",
+    "mechanism": "Một vòng số với các inverter thông thường cần tổng đảo lẻ và trễ lan truyền để trạng thái không thể đứng yên ở một mức logic lý tưởng. Với N tầng giống nhau, một chu kỳ đi hai lượt vòng nên T≈2Ntpd và f≈1/(2Ntpd). Tần số phụ thuộc cả N lẫn trễ từng tầng, không chỉ một tham số oxide đơn lẻ.",
+    "comparisons": [
+      {
+        "concept": "Số lẻ N≥3",
+        "explanation": "Cấu hình ring oscillator số thông thường tạo net inversion và trễ vòng."
+      },
+      {
+        "concept": "Số chẵn",
+        "explanation": "Có thể giữ một mẫu logic ổn định như vòng hồi tiếp dương; không tự bảo đảm dao động theo cùng cơ chế."
+      },
+      {
+        "concept": "Một inverter / tần số",
+        "explanation": "Một vòng analog có điều kiện riêng không đồng nghĩa ring số N≥3 trong đề. Tăng số tầng ở cùng tpd làm giảm f, không tăng f."
+      }
+    ]
+  },
+  {
+    "id": "ici-bootstrap",
+    "subject": "ICI211",
+    "pattern": "bootstrapp|bootstrapping",
+    "mechanism": "Bootstrapping dùng ghép điện dung và trình tự chuyển mạch để đẩy một nút lên cao hơn mức nguồn tham chiếu trong một khoảng thời gian. Gate drive cao hơn có thể giữ pass transistor dẫn đủ mạnh khi output tiến gần HIGH, bù sụt ngưỡng. Đây là tăng điện áp điều khiển động, không phải xóa VT vật lý.",
+    "comparisons": [
+      {
+        "concept": "Tăng internal node voltage",
+        "explanation": "Đúng với node được bootstrap, giúp tránh mất full output swing ở mạch phù hợp."
+      },
+      {
+        "concept": "Giảm oxide C / loại R",
+        "explanation": "Không phải cơ chế: bootstrap cần điện dung ghép và transistor vẫn có điện trở dẫn."
+      },
+      {
+        "concept": "Body effect",
+        "explanation": "Có thể vẫn làm VT thay đổi theo bias; bootstrap không tự triệt body effect. Vượt điện áp oxide/thiết bị cho phép còn có rủi ro reliability."
+      }
+    ]
+  },
+  {
+    "id": "ici-junction-cap",
+    "subject": "ICI211",
+    "pattern": "junction capacitance|overlap capacitance",
+    "mechanism": "Junction capacitance xuất phát từ vùng nghèo p–n và thay đổi theo điện áp phân cực. Reverse bias lớn hơn làm vùng nghèo rộng hơn nên capacitance thường giảm. Overlap capacitance lại chủ yếu do gate chồng lên source/drain qua oxide nên gần là điện dung hình học cố định.",
+    "comparisons": [
+      {
+        "concept": "Junction C",
+        "explanation": "Dùng khi xét bias của tiếp giáp source/body hoặc drain/body; không chỉ do mobility hay drain current."
+      },
+      {
+        "concept": "Overlap C",
+        "explanation": "Liên quan diện tích chồng và độ dày oxide, xấp xỉ voltage-independent trong mô hình đơn giản."
+      },
+      {
+        "concept": "Gate/channel C",
+        "explanation": "Có thể thay đổi theo operating region và phân bố kênh, nên không gộp mọi điện dung MOS thành một hằng giống nhau."
+      }
+    ]
+  },
+  {
+    "id": "ici-sequential-combinational",
+    "subject": "ICI211",
+    "pattern": "sequential logic circuits|synchronous sequential|JK latch|combinational circuits|current inputs.*factor|previous input history",
+    "mechanism": "Combinational logic cho output theo input hiện tại. Sequential logic có trạng thái lưu lịch sử; output có thể phụ thuộc state và input tùy mô hình. Clock điều phối thời điểm cập nhật trạng thái trong hệ đồng bộ, không làm mất nhu cầu tuân thủ setup/hold.",
+    "comparisons": [
+      {
+        "concept": "Combinational",
+        "explanation": "Không có trạng thái lưu chủ đích: ví dụ adder logic; không cần hồi tiếp tái sinh để nhớ bit."
+      },
+      {
+        "concept": "Sequential",
+        "explanation": "Dùng latch/flip-flop/state để giữ ảnh hưởng lịch sử; Moore output theo state, Mealy theo state và input."
+      },
+      {
+        "concept": "JK latch / flip-flop",
+        "explanation": "J=K=0 hold, 1/0 set, 0/1 reset, 1/1 toggle theo phần tử/timing. Khắc phục input cấm kiểu SR, nhưng JK level-sensitive còn có thể gặp race-around nếu mở quá lâu."
+      }
+    ]
+  },
+  {
+    "id": "ici-fram",
+    "subject": "ICI211",
+    "pattern": "\\bFRAM\\b|ferroelectric",
+    "mechanism": "FRAM lưu thông tin bằng hai hướng phân cực bền của vật liệu sắt điện. Khác tụ DRAM chỉ giữ điện tích dễ rò, phân cực có thể được giữ khi mất nguồn. Cách đọc/ghi và giới hạn endurance phụ thuộc công nghệ, không nên suy ra vô hạn chỉ vì là nonvolatile.",
+    "comparisons": [
+      {
+        "concept": "FRAM",
+        "explanation": "Polarization states của vật liệu ferroelectric lưu bit."
+      },
+      {
+        "concept": "Flash",
+        "explanation": "Lưu điện tích trapped/floating gate làm đổi VT, không phải cơ chế phân cực FRAM."
+      },
+      {
+        "concept": "DRAM / SRAM",
+        "explanation": "DRAM dùng điện tích tụ cần refresh; SRAM dùng latch hồi tiếp khi còn nguồn. Hai loại này không phải FRAM."
+      }
+    ]
+  },
+  {
+    "id": "ici-adder-layout",
+    "subject": "ICI211",
+    "pattern": "adders|ripple.carry|internal voltage regulators",
+    "mechanism": "Adder lớn có thể chia thành các khối và tổ chức đường carry để kiểm soát độ dài đường tới hạn. Ripple-carry là cách đơn giản nhất: mỗi tầng full adder đợi carry tầng trước, nên trễ tăng theo số bit. Các quyết định logic/kiến trúc phải tách khỏi việc điều hòa nguồn hoặc bố trí hình học.",
+    "comparisons": [
+      {
+        "concept": "Ripple-carry",
+        "explanation": "Ghép nối tiếp các full adder; dễ thiết kế nhưng carry phải truyền qua nhiều tầng."
+      },
+      {
+        "concept": "Divide and conquer",
+        "explanation": "Chia khối và ghép kết quả, dùng ở các kiến trúc tăng tốc phù hợp; không có nghĩa random placement hoặc tạo bản sao analog."
+      },
+      {
+        "concept": "Voltage regulator",
+        "explanation": "Điều hòa nguồn để hỗ trợ độ tin cậy và hiệu quả năng lượng; không phải một cấu trúc carry của adder."
+      }
+    ]
+  },
+  {
+    "id": "dgt-qmf",
+    "subject": "DGT302",
+    "pattern": "QMF|Perfect Reconstruction|perfect reconstruction|two.channel.*bank|synthesis pair",
+    "mechanism": "Filter bank hai kênh phải kiểm tra riêng thành phần alias và thành phần truyền mong muốn. Với QMF H1(z)=H0(−z), chọn G0=H0, G1=−H0(−z) làm hạng alias H0(−z)G0(z)+H1(−z)G1(z) triệt tiêu. Triệt alias chưa đủ để mọi dạng méo biên độ biến mất.",
+    "comparisons": [
+      {
+        "concept": "QMF mirror",
+        "explanation": "Thay z bằng −z dịch đáp ứng π. H0=1+z⁻¹ cho H1=1−z⁻¹ theo quy ước đề."
+      },
+      {
+        "concept": "Synthesis pair cùng đảo dấu",
+        "explanation": "Đảo đồng thời dấu hai nhánh vẫn triệt alias nhưng đổi dấu tổng output; cần quy ước gain/sign để một đáp án là duy nhất."
+      },
+      {
+        "concept": "Perfect reconstruction",
+        "explanation": "Output chỉ khác input bởi gain và delay được phép; không phải chỉ nhìn magnitude từng nhánh hoặc triệt một phần alias."
+      },
+      {
+        "concept": "Inverse từng filter",
+        "explanation": "Đặt Gk=1/Hk không tự giải điều kiện alias cancellation hay ổn định của cả bank."
+      }
+    ]
+  },
+  {
+    "id": "dgt-sigma-delta",
+    "subject": "DGT302",
+    "pattern": "Sigma.Delta|sigma.delta|noise shaping|noise transfer",
+    "mechanism": "Sigma–delta dùng oversampling và feedback để đưa phần lớn quantization noise ra ngoài dải quan tâm. Tích phân trong đường thuận của cấu trúc đang xét tạo noise transfer có zero gần DC; sau đó lowpass và decimation bỏ phần noise ngoài dải. Không được chỉ nói tăng fs là mọi noise biến mất.",
+    "comparisons": [
+      {
+        "concept": "Integrator trước quantizer",
+        "explanation": "Vai trò của Σ trong cấu trúc sigma–delta cơ bản; không thay sample-and-hold bằng tên gọi khác."
+      },
+      {
+        "concept": "Noise shaping",
+        "explanation": "NTF=(1−z⁻¹)^L làm noise thấp ở gần DC. Với giả thiết high-OSR và small-angle, in-band noise giảm theo OSR^(−(2L+1))."
+      },
+      {
+        "concept": "Bậc hai",
+        "explanation": "NTF=(1−z⁻¹)² cho xấp xỉ σe²π⁴/(5·OSR⁵); bậc một cho σe²π²/(3·OSR³). Phải giữ cả hệ số tích phân 1/5 hoặc 1/3."
+      },
+      {
+        "concept": "Delta modulation",
+        "explanation": "DM theo dấu thay đổi biên độ và có granular/slope overload; không đồng nhất với noise-shaping sigma–delta chỉ vì đều có một quantizer."
+      }
+    ]
+  },
+  {
+    "id": "dgt-scipy",
+    "subject": "DGT302",
+    "pattern": "SciPy|scipy|Python",
+    "mechanism": "Tên các hàm chỉ các tác vụ khác nhau: thiết kế hệ số, áp dụng filter và đánh giá response không phải một phép toán. Chọn đúng theo input/output đề yêu cầu; có b,a rồi cần H(e^jω) là bài đánh giá response, không cần thiết kế lại filter.",
+    "comparisons": [
+      {
+        "concept": "freqz",
+        "explanation": "Tính frequency response từ b,a hoặc dạng được hỗ trợ; không lọc một record thời gian như lfilter."
+      },
+      {
+        "concept": "lfilter",
+        "explanation": "Áp FIR/IIR vào dãy mẫu; triển khai thông dụng dạng direct-form II transposed. High-order IIR thường nên dùng SOS với sosfilt."
+      },
+      {
+        "concept": "firwin / butter",
+        "explanation": "firwin thiết kế FIR window-based; butter thiết kế Butterworth IIR. Chúng trả hệ số/design chứ không tự là FFT của tín hiệu."
+      },
+      {
+        "concept": "upfirdn",
+        "explanation": "Thực hiện chuỗi upsample–FIR–downsample hiệu quả bằng polyphase; không phải hàm thiết kế bilinear IIR."
+      }
+    ]
+  },
+  {
+    "id": "dgt-ofdm",
+    "subject": "DGT302",
+    "pattern": "FFT/IFFT pairs|OFDM",
+    "mechanism": "OFDM dùng IFFT để tổng hợp nhiều subcarrier từ các ký hiệu tần số và FFT để tách chúng ở receiver. Orthogonality cho phép các phổ carrier chồng nhau nhưng vẫn tách ở đúng điểm lấy mẫu khi đủ điều kiện đồng bộ. FFT/IFFT không tự làm channel coding.",
+    "comparisons": [
+      {
+        "concept": "IFFT transmitter",
+        "explanation": "Biến vector ký hiệu subcarrier thành block mẫu thời gian."
+      },
+      {
+        "concept": "FFT receiver",
+        "explanation": "Biến block thời gian đã đồng bộ về các hệ số subcarrier; sau đó còn equalization và demapping."
+      },
+      {
+        "concept": "ADC / PWM / cảm biến",
+        "explanation": "Có thể dùng DSP ở một bước nào đó nhưng không bắt buộc dựa trên cặp FFT/IFFT theo kiến trúc cốt lõi như OFDM."
+      }
+    ]
+  },
+  {
+    "id": "dgt-frequency-axis",
+    "subject": "DGT302",
+    "pattern": "fundamental frequency range|frequencies near|radians/sample|radians.sample|discrete.time angular frequency",
+    "mechanism": "Tần số rời rạc ω được đo rad/sample và tương đương modulo 2π. Khoảng principal thường dùng [−π,π] hoặc một khoảng dài 2π khác; [−π,π] là khoảng tâm zero. Vì tuần hoàn, tần số ngoài khoảng không tạo một loại dao động rời rạc hoàn toàn mới.",
+    "comparisons": [
+      {
+        "concept": "ω=0",
+        "explanation": "DC, tức dãy không đổi hoặc biến thiên rất chậm khi gần zero."
+      },
+      {
+        "concept": "|ω|=π",
+        "explanation": "Nyquist, xen kẽ dấu ở mỗi mẫu cho tone thực cosπn; khác DC."
+      },
+      {
+        "concept": "Tần số âm",
+        "explanation": "Mô tả chiều quay mũ phức; với tín hiệu thực liên hệ với phía dương qua đối xứng liên hợp."
+      },
+      {
+        "concept": "Hz vs rad/sample",
+        "explanation": "ω=2πf/fs. Không tự dùng giá trị f tính Hz thay trực tiếp vào sin/cos của một công thức digital."
+      }
+    ]
+  },
+  {
+    "id": "cos-energy-theorems",
+    "subject": "COS201",
+    "pattern": "theorem.*total energy|Rayleigh|Parseval",
+    "mechanism": "Rayleigh/Parseval phát biểu cùng năng lượng khi mô tả tín hiệu ở miền thời gian hay tần số, với chuẩn hóa Fourier được dùng. Với CTFT theo tần số Hz, ∫|x(t)|²dt=∫|X(f)|²df. Nếu dùng angular frequency ω, phía phổ có hệ số 1/(2π).",
+    "comparisons": [
+      {
+        "concept": "Parseval / Rayleigh",
+        "explanation": "Chọn khi hỏi tổng năng lượng giữa hai miền; phải là bình phương độ lớn."
+      },
+      {
+        "concept": "Sampling / Nyquist theorem",
+        "explanation": "Nói về điều kiện lấy mẫu và khôi phục tín hiệu band-limited, không phải đẳng thức năng lượng."
+      },
+      {
+        "concept": "Convolution theorem",
+        "explanation": "Nói tích chập thời gian tương ứng nhân phổ, khác định lý bảo toàn năng lượng."
+      },
+      {
+        "concept": "Energy / power",
+        "explanation": "Tín hiệu năng lượng hữu hạn và tín hiệu công suất trung bình hữu hạn cần mô tả theo loại phù hợp; không thay mọi integral bằng một power tức thời."
+      }
+    ]
+  },
+  {
+    "id": "cos-delta-process",
+    "subject": "COS201",
+    "pattern": "Dirac delta|sample function|ensemble|Ensemble",
+    "mechanism": "Một random process là họ biến ngẫu nhiên được đánh chỉ số theo thời gian. Cố định một kết quả thí nghiệm cho một sample function, tức một waveform cụ thể; ensemble là tập những waveform có thể xảy ra. Dirac delta lại là phân bố dùng trong phân tích tín hiệu, không phải một sample function ngẫu nhiên.",
+    "comparisons": [
+      {
+        "concept": "Sample function / ensemble",
+        "explanation": "Một đường tín hiệu theo thời gian là một realization; tập mọi realization là ensemble. PDF mô tả xác suất, không phải chính một waveform."
+      },
+      {
+        "concept": "Dirac delta",
+        "explanation": "Được định nghĩa qua tác dụng dưới tích phân: ∫x(t)δ(t−t0)dt=x(t0). Cách nói “cao vô hạn, rộng zero, diện tích một” là trực giác, không phải hàm thông thường hữu hạn."
+      },
+      {
+        "concept": "Kronecker delta",
+        "explanation": "δ[n] rời rạc bằng 1 tại n=0, zero ở nơi khác; khác Dirac delta liên tục dù cùng dùng tên impulse."
+      }
+    ]
+  },
+  {
+    "id": "cos-fom",
+    "subject": "COS201",
+    "pattern": "Figure of Merit|figure of merit",
+    "mechanism": "Figure of Merit trong câu này là tỉ số SNR output trên SNR tham chiếu input/channel theo quy ước đang dùng. Phải biết bandwidth noise và định nghĩa tham chiếu trước khi so hai hệ. Với FM above threshold, kết quả còn phụ thuộc modulation index và giả thiết phổ message.",
+    "comparisons": [
+      {
+        "concept": "SNRout / SNRref",
+        "explanation": "Đo mức cải thiện hoặc suy giảm SNR qua bộ modulation/demodulation; không phải chỉ là frequency hay power loss."
+      },
+      {
+        "concept": "FM",
+        "explanation": "Tăng deviation/modulation index có thể tăng noise performance theo mô hình above threshold, đổi lại bandwidth lớn hơn."
+      },
+      {
+        "concept": "Dưới threshold",
+        "explanation": "Không dùng tiếp công thức tuyến tính lý tưởng để hứa SNR vẫn tăng; FM có threshold effect."
+      }
+    ]
+  },
+  {
+    "id": "los-network-units",
+    "subject": "LOS201",
+    "pattern": "unit of information sent over a network|IP network layer",
+    "mechanism": "Tên đơn vị dữ liệu phụ thuộc lớp protocol đang xét. Cùng một payload có thể được đóng trong TCP segment, IP packet và Ethernet frame khi đi qua các lớp. Không chọn theo từ “mạng” chung mà phải đọc lớp được chỉ định.",
+    "comparisons": [
+      {
+        "concept": "IP packet",
+        "explanation": "Đơn vị ở network layer theo câu hỏi; chứa IP header và payload."
+      },
+      {
+        "concept": "TCP segment",
+        "explanation": "Đơn vị transport của TCP; có thể được mang trong một IP packet."
+      },
+      {
+        "concept": "Ethernet frame",
+        "explanation": "Đơn vị data-link có địa chỉ MAC và framing của liên kết; không đồng nhất với IP packet."
+      },
+      {
+        "concept": "Block",
+        "explanation": "Thường dùng ở storage/block device; không là tên chuẩn của IP protocol data unit."
+      }
+    ]
+  },
+  {
+    "id": "los-c-language",
+    "subject": "LOS201",
+    "pattern": "system programming language",
+    "mechanism": "C thích hợp viết nhiều thành phần hệ thống vì kết hợp mã biên dịch hiệu quả, thao tác bit/pointer và khả năng diễn đạt cấu trúc dữ liệu sát máy. Đây là lý do kỹ thuật, không phải vì C do một hội đồng lớn thiết kế hoặc vì nó tự bảo đảm memory safety.",
+    "comparisons": [
+      {
+        "concept": "C",
+        "explanation": "Cho kiểm soát layout và thao tác dữ liệu/địa chỉ với overhead nhỏ; người lập trình vẫn phải quản lý memory và undefined behavior."
+      },
+      {
+        "concept": "Assembly",
+        "explanation": "Kiểm soát trực tiếp instruction nhưng thường ít portable và khó quản lý chương trình lớn hơn."
+      },
+      {
+        "concept": "Ngôn ngữ mức cao",
+        "explanation": "Có thể tăng năng suất hoặc memory safety; không vì thế mọi ngôn ngữ đều có chi phí hay khả năng truy cập hardware như nhau."
+      }
+    ]
+  },
+  {
+    "id": "los-hardware",
+    "subject": "LOS201",
+    "pattern": "Device Tree|processor architecture|\\bDMA\\b",
+    "mechanism": "Kernel cần biết phần cứng thật và có driver tương ứng. Device Tree cung cấp mô tả board không tự discover được: địa chỉ register, interrupt, clock và liên kết device. DMA là cơ chế chuyển dữ liệu khác: controller tự chuyển giữa memory/device sau khi CPU thiết lập.",
+    "comparisons": [
+      {
+        "concept": "Device Tree / DTB",
+        "explanation": "Mô tả hardware cho kernel, không biên dịch driver hoặc cất application binary. Mô tả đúng nhưng thiếu driver vẫn chưa dùng được thiết bị."
+      },
+      {
+        "concept": "DMA",
+        "explanation": "Giảm việc CPU copy từng byte cho chuyển dữ liệu lớn; vẫn cần lập trình, đồng bộ/cache coherency và xử lý hoàn tất."
+      },
+      {
+        "concept": "ARM / x86 / SPARC",
+        "explanation": "Là các kiến trúc CPU khác nhau; build target phải đúng ISA/ABI. ARM phổ biến trong bối cảnh embedded Linux của giáo trình, không phải kiến trúc duy nhất Linux hỗ trợ."
+      }
+    ]
+  },
+  {
+    "id": "dgt-eigenfunction",
+    "subject": "DGT302",
+    "pattern": "complex exponential|magnitude.*sinusoidal input|sinusoidal input.*magnitude",
+    "mechanism": "Thay x[n]=Ae^(jω0n) vào tổng tích chập LTI: y[n]=Ae^(jω0n)·Σk h[k]e^(−jω0k). Tổng cuối chính là H(e^jω0) nếu hội tụ. Vì chỉ nhân một hằng phức, tần số không đổi; magnitude H đổi biên độ và argument H đổi pha.",
+    "comparisons": [
+      {
+        "concept": "Eigenfunction",
+        "explanation": "Mũ phức là eigenfunction của LTI: giữ dạng và chỉ nhân một eigenvalue H(e^jω0)."
+      },
+      {
+        "concept": "Magnitude / phase",
+        "explanation": "|H| nhân amplitude, ∠H cộng phase. Không có nghĩa phase luôn giữ nguyên hoặc mọi hệ stable đều triệt input."
+      },
+      {
+        "concept": "Transient",
+        "explanation": "Phần do điều kiện đầu hoặc lúc bật input, khác steady-state được hỏi. Với xung bật tại n=0 còn cần tách phần quá độ."
+      },
+      {
+        "concept": "Aliasing / notch",
+        "explanation": "Aliasing do biểu diễn/lấy mẫu làm trùng tần số; notch là trường hợp H bằng zero ở một tần số. Cả hai không phải tên chung cho eigenfunction."
+      }
+    ]
+  },
+  {
+    "id": "dgt-output-psd",
+    "subject": "DGT302",
+    "pattern": "output PSD|Sxx|Syy|power spectral density.*output",
+    "mechanism": "Với input WSS và hệ LTI ổn định thỏa điều kiện cần, output PSD bằng Syy(e^jω)=|H(e^jω)|²Sxx(e^jω). Phải bình phương magnitude vì PSD là đại lượng công suất; output waveform spectrum Y=HX lại chỉ nhân H một lần.",
+    "comparisons": [
+      {
+        "concept": "Y=HX",
+        "explanation": "Quan hệ phổ waveform trong bài biến đổi tín hiệu, giữ cả phase của H."
+      },
+      {
+        "concept": "Syy=|H|²Sxx",
+        "explanation": "Quan hệ mật độ công suất, thực không âm; phase H không xuất hiện như một nhân tử phức đơn."
+      },
+      {
+        "concept": "Autocorrelation / PSD",
+        "explanation": "Là cặp Fourier theo Wiener–Khinchin trong điều kiện phù hợp; không đồng nhất cross-correlation input–desired với mọi PSD output."
+      }
+    ]
+  },
+  {
+    "id": "ici-elmore",
+    "subject": "ICI211",
+    "pattern": "Elmore|shared upstream resistance",
+    "mechanism": "Elmore delay của một output trong RC tree là tổng Ci nhân với phần điện trở chung giữa đường từ nguồn tới tụ i và đường từ nguồn tới output. Vì vậy vị trí tụ quan trọng, không chỉ tổng C. Một tụ sau điện trở upstream lớn có thể tác động mạnh tới nhiều node phía sau.",
+    "comparisons": [
+      {
+        "concept": "Điện trở chung lớn",
+        "explanation": "Với Ci bằng nhau, hệ số Ri,shared lớn làm đóng góp trễ lớn hơn."
+      },
+      {
+        "concept": "Tụ tại nguồn lý tưởng",
+        "explanation": "Không có điện trở chung upstream trong mô hình đó nên không có cùng đóng góp Elmore tới output như tụ xa."
+      },
+      {
+        "concept": "0,69RC một cực",
+        "explanation": "Là xấp xỉ mốc 50% cho một node RC đơn; không thay toàn bộ RC tree bằng việc nói mọi tụ có trọng số giống nhau."
+      }
+    ]
+  },
+  {
+    "id": "ici-design-domains",
+    "subject": "ICI211",
+    "pattern": "design domain|domain.*functionality|physical domain|floorplan|stick diagram|top.down|hierarchical decomposition|design refinement|growth of IC complexity",
+    "mechanism": "Ba cách nhìn thiết kế là behavior (hệ làm gì), structure (gồm khối nào nối nhau) và physical (đặt/vẽ ra sao). Top-down đi từ specification/architecture tới logic, circuit rồi layout, có kiểm chứng lặp lại giữa các mức. Không bắt đầu bằng mask rồi tự suy ra specification.",
+    "comparisons": [
+      {
+        "concept": "Behavioral",
+        "explanation": "Mô tả chức năng/thuật toán hoặc chuyển trạng thái, chưa ấn định vị trí transistor."
+      },
+      {
+        "concept": "Structural",
+        "explanation": "Ghép module, register, adder hoặc gate bằng các kết nối; hierarchy giúp chia việc và kiểm chứng."
+      },
+      {
+        "concept": "Physical",
+        "explanation": "Floorplan đặt các block, placement/routing đặt cell và nối dây; stick diagram chỉ quan hệ vị trí/layer tương đối, không phải kích thước mask chính xác."
+      },
+      {
+        "concept": "Độ phức tạp IC",
+        "explanation": "Tiến bộ chế tạo cho tích hợp nhiều transistor hơn; hierarchy và CAD giúp quản lý hệ lớn. Giảm clock hoặc đổi packaging không tự giải thích số transistor tăng."
+      }
+    ]
+  },
+  {
+    "id": "ici-memory-periphery",
+    "subject": "ICI211",
+    "pattern": "sense amplifier|multi.stage decoding|internal voltage regulators|memory density|access time",
+    "mechanism": "Ô nhớ lưu bit nhưng còn cần decoder chọn hàng/cột, sense amplifier đọc chênh lệch nhỏ và mạch nguồn giữ hoạt động ổn định. Tách chức năng peripheral giúp tránh nhầm dung lượng, tốc độ và thời gian giữ dữ liệu.",
+    "comparisons": [
+      {
+        "concept": "Sense amplifier",
+        "explanation": "Khuếch đại chênh áp nhỏ giữa bitline để quyết định bit; không đo clock overlap hoặc oxide-threshold shift làm tác vụ chính."
+      },
+      {
+        "concept": "Multi-stage decoding",
+        "explanation": "Chia fan-in và buffering để tăng tốc/drive trong mảng lớn; không có mục tiêu chính là tạo leakage hoặc charge sharing."
+      },
+      {
+        "concept": "Memory density / access time",
+        "explanation": "Density là bit/diện tích, access time là thời gian có dữ liệu sau yêu cầu. Retention time là thời gian giữ bit."
+      },
+      {
+        "concept": "Internal regulator",
+        "explanation": "Kiểm soát nguồn cục bộ hỗ trợ vận hành/reliability; không biến decoder thành clock generator."
+      }
+    ]
+  },
+  {
+    "id": "ici-input-slew",
+    "subject": "ICI211",
+    "pattern": "input transition time|input slew",
+    "mechanism": "Gate delay phụ thuộc không chỉ tải mà còn độ nhanh của input. Input chậm làm transistor đi qua vùng dẫn một phần lâu hơn, nên thời điểm output đáp ứng và short-circuit current thay đổi. Library timing vì vậy thường có bảng theo input slew và output load.",
+    "comparisons": [
+      {
+        "concept": "Input transition",
+        "explanation": "Độ dài sườn input, ảnh hưởng accuracy của delay calculation; không phải oxide thickness hay junction depth."
+      },
+      {
+        "concept": "Propagation delay",
+        "explanation": "Đo thời gian từ sự kiện input tới sự kiện output tại mốc quy ước, khác chính thời gian sườn."
+      },
+      {
+        "concept": "Capacitive load",
+        "explanation": "Là trục khác của timing table; giữ load giống nhau chưa làm gate delay giống nếu input slew khác."
+      }
+    ]
+  },
+  {
+    "id": "dgt-delta-modulation",
+    "subject": "DGT302",
+    "pattern": "delta modulation|slope.overload|slope overload|granular",
+    "mechanism": "Trong delta modulation, mỗi lần cập nhật chỉ tăng hoặc giảm Δ sau khoảng T. Độ dốc lớn nhất của đường bậc thang là Δ/T, nên phải theo kịp độ lớn độ dốc input để tránh slope overload. Độ dốc âm nhanh cũng gây overload, vì vậy trị tuyệt đối là thiết yếu.",
+    "comparisons": [
+      {
+        "concept": "Chống slope overload",
+        "explanation": "max_t|dx/dt|≤Δ/T; input sin biên độ A, tần số f có độ dốc cực đại 2πfA."
+      },
+      {
+        "concept": "Granular noise",
+        "explanation": "Δ quá lớn so với vùng input biến thiên chậm, làm output nhảy quanh tín hiệu; đây là trường hợp ngược với thiếu khả năng theo độ dốc."
+      },
+      {
+        "concept": "Tăng Δ / tăng fs",
+        "explanation": "Cả hai giúp theo dốc nhanh; tăng Δ có thể làm granular tăng. Tăng bit ở ADC khác không tự sửa cấu hình Δ/T của bộ DM."
+      },
+      {
+        "concept": "Biên độ / đạo hàm bậc hai",
+        "explanation": "|x| là mức tín hiệu, |d²x/dt²| là độ biến thiên của dốc. Không thay cho |dx/dt| trong điều kiện theo dốc."
+      }
+    ]
+  },
+  {
+    "id": "dgt-cutoff-derivation",
+    "subject": "DGT302",
+    "pattern": "3.dB cutoff|3-dB cutoff|3-dB frequency|cutoff.*4a",
+    "mechanism": "Với H(z)=(1−a)/(1−az⁻¹), |H(e^jω)|²=(1−a)²/(1+a²−2a cosω). Đặt giá trị này bằng 1/2 vì gain DC đã chuẩn hóa bằng 1, rồi chuyển vế: 2(1−2a+a²)=1+a²−2a cosωc. Suy ra cosωc=(4a−1−a²)/(2a).",
+    "comparisons": [
+      {
+        "concept": "−3 dB",
+        "explanation": "Công suất bằng 1/2, magnitude bằng 1/√2; không đặt magnitude bằng 1/2 rồi gọi cùng cutoff."
+      },
+      {
+        "concept": "Điều kiện tồn tại",
+        "explanation": "Cosine phải thuộc [−1,1]. Với 0<a<1, cutoff trong [0,π] tồn tại khi a≥3−2√2; a nhỏ quá thì tới Nyquist vẫn chưa giảm 3 dB."
+      },
+      {
+        "concept": "(1+a²)/(2a)",
+        "explanation": "Là phần xuất hiện trong mẫu trước khi đặt half-power; bỏ tử chuẩn hóa và bước chuyển vế sẽ cho sai điều kiện."
+      },
+      {
+        "concept": "cosωc=a",
+        "explanation": "Không là nghiệm tổng quát của half-power ở hệ này; chỉ có thể trùng trong một trường hợp đặc biệt, không dùng như công thức chung."
+      }
+    ]
+  },
+  {
+    "id": "dgt-one-sided",
+    "subject": "DGT302",
+    "pattern": "One.Sided|One-Sided|one.sided|Z⁺|Z\\+|unilateral|Time Reversal",
+    "mechanism": "Biến đổi z một phía cộng từ n=0 nên dịch dãy qua mốc đầu phải mang theo các giá trị ban đầu. Tính trực tiếp Z+{y[n−1]} cho z⁻¹Y+(z)+y[−1]. Bỏ y[−1] chỉ hợp khi điều kiện đầu tương ứng bằng zero.",
+    "comparisons": [
+      {
+        "concept": "One-sample delay",
+        "explanation": "Trong trạng thái nghỉ, biểu thức rút về z⁻¹Y; ngoài trạng thái nghỉ phải giữ hạng initial value."
+      },
+      {
+        "concept": "Two-sided transform",
+        "explanation": "Dịch thời gian thông thường cho z⁻¹Y với tổng hai phía, còn tác dụng lên ROC cần được xét riêng."
+      },
+      {
+        "concept": "Time reversal",
+        "explanation": "Với biến đổi hai phía, x[−n]↔X(z⁻¹) và ROC bị nghịch đảo bán kính. Đây không phải một delay một mẫu."
+      },
+      {
+        "concept": "z vs z⁻¹",
+        "explanation": "z⁻¹ biểu diễn delay, z liên quan advance; không đổi hai dấu vì thấy cùng chữ “shift”."
+      }
+    ]
+  },
+  {
+    "id": "dgt-geometric-dtft",
+    "subject": "DGT302",
+    "pattern": "DTFT.*a\\^|DTFT.*aⁿ|decaying exponential|two.sided exponentially",
+    "mechanism": "Đặt r=ae^(−jω). Với x[n]=a^n u[n], tổng từ n=0 là Σr^n=1/(1−r) khi |a|<1. Nếu dãy là a^|n| thì phải cộng cả phần chỉ số âm và tránh đếm đôi mẫu n=0, cho (1−a²)/(1−2a cosω+a²) với a thực |a|<1.",
+    "comparisons": [
+      {
+        "concept": "Một phía a^n u[n]",
+        "explanation": "Tử là 1, mẫu 1−ae^(−jω); đổi thành dấu cộng là đổi cơ số/dao động của dãy."
+      },
+      {
+        "concept": "Hai phía a^|n|",
+        "explanation": "Phổ thực chẵn vì dãy thực chẵn; tử 1−a² và mẫu có −2a cosω. Tử 1+a² không xuất phát từ tổng đúng."
+      },
+      {
+        "concept": "n·a^n u[n]",
+        "explanation": "Nhân n dẫn tới j·đạo hàm phổ, tạo tử ae^(−jω) và mẫu bình phương; không dùng công thức một phía nguyên bản cho dãy đã nhân n."
+      }
+    ]
+  },
+  {
+    "id": "ici-dvfs",
+    "subject": "ICI211",
+    "pattern": "dynamic voltage and frequency scaling|\\bDVFS\\b",
+    "mechanism": "DVFS giảm voltage và clock khi workload cho phép. V thấp giảm năng lượng chuyển mạch gần theo V² nhưng cũng làm gate chậm hơn, nên phải chọn frequency tương ứng với timing mới. Đây là thay đổi điểm vận hành, khác thu nhỏ hình học transistor trong một công nghệ mới.",
+    "comparisons": [
+      {
+        "concept": "DVFS",
+        "explanation": "Thường giảm V và f cùng nhau khi nhu cầu throughput giảm; không giữ f quá cao nếu timing ở V mới không đáp ứng."
+      },
+      {
+        "concept": "Constant-field scaling",
+        "explanation": "Thu nhỏ kích thước thiết bị lẫn voltage theo lý thuyết scaling; không phải thao tác runtime của DVFS."
+      },
+      {
+        "concept": "Clock gating / power gating",
+        "explanation": "Clock gating ngừng clock ở phần không dùng; power gating ngắt nguồn của khối để giảm rò. Không tự đồng nghĩa với DVFS."
+      }
+    ]
+  },
+  {
+    "id": "ici-time-borrow",
+    "subject": "ICI211",
+    "pattern": "time.borrow|two.phase latch.based pipeline",
+    "mechanism": "Latch mở trong một khoảng của pha clock, nên dữ liệu tới trễ trong một stage có thể dùng một phần thời gian vốn thuộc stage kế tiếp. Time borrowing phân phối lại slack giữa các stage, khác việc giảm trễ vật lý của mọi gate. Phải kiểm tra cả setup, hold và non-overlap.",
+    "comparisons": [
+      {
+        "concept": "Latch-based pipeline",
+        "explanation": "Có cửa sổ transparency nên có thể time-borrow trong giới hạn pha."
+      },
+      {
+        "concept": "Strict edge-triggered pipeline",
+        "explanation": "Lấy mẫu quanh một cạnh nên không có cùng cửa sổ mượn thời gian của latch."
+      },
+      {
+        "concept": "Non-overlap / hold",
+        "explanation": "Dùng để ngăn race-through và bảo đảm dữ liệu không xuyên quá xa; time borrowing không xóa các ràng buộc này."
+      }
+    ]
+  },
+  {
+    "id": "los-linker-tables",
+    "subject": "LOS201",
+    "pattern": "linker.generated tables|command.line parameters and initialization",
+    "mechanism": "Kernel có thể đặt các mô tả handler vào các section đặc biệt qua macro khi biên dịch. Linker gom chúng thành một vùng; code khởi tạo duyệt vùng để tìm và gọi handler. Cách này tránh phải sửa một danh sách thủ công trung tâm mỗi khi thêm component.",
+    "comparisons": [
+      {
+        "concept": "Linker tables",
+        "explanation": "Đăng ký tự động bằng section/macro, phục vụ initcall hoặc boot parameter theo cơ chế cụ thể."
+      },
+      {
+        "concept": "Symbol table",
+        "explanation": "Tra tên/địa chỉ để liên kết/debug; không phải mọi symbol đều tự là init handler."
+      },
+      {
+        "concept": "Module metadata",
+        "explanation": "Phục vụ thông tin module/dependency. Init tables cũng dùng cho phần built-in nên không giới hạn chỉ loadable module."
+      }
+    ]
+  },
+  {
+    "id": "dgt-time-reversal",
+    "subject": "DGT302",
+    "pattern": "Time Reversal|time.domain x\\(-n\\)",
+    "mechanism": "Trong tổng biến đổi z hai phía, đổi biến m=−n cho Z{x[−n]}=Σm x[m]z^m=X(z⁻¹). Phép đảo thời gian đổi dãy phải thành dãy trái và nghịch đảo bán kính ROC, nên phải giữ cả biểu thức và miền hội tụ.",
+    "comparisons": [
+      {
+        "concept": "X(z⁻¹)",
+        "explanation": "Tương ứng đảo thời gian x[−n]; ROC r1<|z|<r2 đổi thành 1/r2<|z|<1/r1 với các quy ước biên phù hợp."
+      },
+      {
+        "concept": "z⁻¹X(z)",
+        "explanation": "Tương ứng delay một mẫu theo biến đổi hai phía, không đảo thứ tự toàn bộ dãy."
+      },
+      {
+        "concept": "X(−z)",
+        "explanation": "Tương ứng nhân (−1)^n ở thời gian, tức dịch phổ π; khác thay z bằng nghịch đảo."
+      }
+    ]
+  },
+  {
+    "id": "cos-noise-margin",
+    "subject": "COS201",
+    "pattern": "noise margin",
+    "mechanism": "Noise margin là khoảng nhiễu đầu vào hoặc tại điểm quyết định mà hệ còn chịu được trước khi đổi kết quả logic/ký hiệu theo định nghĩa đang dùng. Nó khác SNR trung bình và không hứa nhiễu bị loại bỏ. Với waveform/chòm sao, vị trí ngưỡng và khoảng cách tới biên quyết định rất quan trọng.",
+    "comparisons": [
+      {
+        "concept": "Decision/noise margin",
+        "explanation": "Khoảng an toàn tới ngưỡng hoặc biên quyết định; margin lớn hơn thường chịu nhiễu tốt hơn khi các điều kiện khác giống nhau."
+      },
+      {
+        "concept": "SNR",
+        "explanation": "Tỉ lệ power tín hiệu/noise theo bandwidth; không cùng đơn vị hay định nghĩa với một khoảng điện áp tới threshold."
+      },
+      {
+        "concept": "ISI / bandwidth",
+        "explanation": "ISI có thể làm giảm margin bằng cách dịch sample, còn bandwidth là dải tần chiếm chỗ; cả hai không phải tên khác của noise margin."
+      }
+    ]
+  },
+  {
+    "id": "dgt-signal-types",
+    "subject": "DGT302",
+    "pattern": "Discrete.time signals|microphone|discrete in:|signal classification|random signals described|random signals.*statistical",
+    "mechanism": "Phân loại tín hiệu cần xét riêng trục thời gian, biên độ và tính ngẫu nhiên. Lấy mẫu làm thời gian rời rạc nhưng biên độ vẫn có thể là số thực bất kỳ; lượng tử mới giới hạn các mức biên độ. Một tín hiệu discrete-time không bắt buộc tuần hoàn hoặc deterministic.",
+    "comparisons": [
+      {
+        "concept": "Continuous-time / analog",
+        "explanation": "Được xác định theo thời gian liên tục; điện áp microphone chưa qua lấy mẫu là ví dụ thông thường."
+      },
+      {
+        "concept": "Discrete-time",
+        "explanation": "Chỉ xét x[n] tại chỉ số mẫu nguyên; không tự nói biên độ đã được lượng tử."
+      },
+      {
+        "concept": "Quantized / digital",
+        "explanation": "Biên độ chọn trong một tập mức hữu hạn theo bộ lượng tử; khác thao tác chọn mốc thời gian."
+      },
+      {
+        "concept": "Deterministic / random",
+        "explanation": "Phân biệt khả năng xác định waveform với nhu cầu mô tả xác suất; một random sequence vẫn là discrete-time nếu được đánh theo n."
+      }
+    ]
+  },
+  {
+    "id": "dgt-lti-stability",
+    "subject": "DGT302",
+    "pattern": "BIBO|BOTH causal and stable|causal.*stable|stable.*causal|pole condition|locations of its poles|unit circle.*guarantee|both causality",
+    "mechanism": "Với LTI, bounded input cho bounded output khi tổng |h[n]| hữu hạn. Điều này tương đương ROC chứa vòng đơn vị đối với biến đổi z của đáp ứng xung trong bối cảnh đang dùng. Nếu thêm nhân quả và hệ hữu tỉ, ROC nằm ngoài cực ngoài cùng nên mọi cực không bị triệt phải có |p|<1.",
+    "comparisons": [
+      {
+        "concept": "Ổn định nhưng không bắt buộc nhân quả",
+        "explanation": "Với cực 0,5 và 2, vành 0,5<|z|<2 chứa vòng đơn vị nên có thể ổn định nhưng đáp ứng hai phía."
+      },
+      {
+        "concept": "Nhân quả và ổn định",
+        "explanation": "Chọn ROC bên ngoài cực ngoài cùng nhưng vẫn chứa |z|=1; với hệ hữu tỉ điều này yêu cầu tất cả cực còn lại ở trong vòng đơn vị."
+      },
+      {
+        "concept": "Cực trên vòng đơn vị",
+        "explanation": "Mode có thể không tắt; dao động tự do bounded chưa chứng minh BIBO stable với mọi bounded input."
+      },
+      {
+        "concept": "Cực / zero",
+        "explanation": "Cực chi phối hội tụ và mode tự do; zero có thể ở trong/ngoài vòng đơn vị mà hệ vẫn BIBO stable. Zero quan trọng thêm khi xét nghịch đảo minimum-phase."
+      }
+    ]
+  },
+  {
+    "id": "dgt-hardware-mac",
+    "subject": "DGT302",
+    "pattern": "DSP processor|multiply.accumulate|multiply.accumulation",
+    "mechanism": "Các bộ lọc và biến đổi số chứa nhiều tổng tích dạng Σakx[n−k]. DSP processor thường tối ưu multiply-accumulate để nhân một cặp số rồi cộng vào accumulator với ít chu kỳ. Đây là tối ưu phần cứng cho kiểu phép toán lặp, không thay định nghĩa thuật toán.",
+    "comparisons": [
+      {
+        "concept": "MAC",
+        "explanation": "Hợp FIR/IIR, correlation và nhiều phép biến đổi vì đều có tổng tích."
+      },
+      {
+        "concept": "Accumulator / delay memory",
+        "explanation": "Giữ tổng trung gian và dữ liệu mẫu; không phải bộ tạo noise hay bộ điều chế RF analog."
+      },
+      {
+        "concept": "FFT / ADC",
+        "explanation": "FFT là thuật toán có thể chạy trên DSP; ADC chuyển analog sang mã số trước xử lý. Hai khái niệm không phải tên thay thế cho instruction MAC."
+      }
+    ]
+  },
+  {
+    "id": "dgt-digital-advantages",
+    "subject": "DGT302",
+    "pattern": "advantage of digital processing",
+    "mechanism": "Xử lý số biểu diễn thuật toán bằng phép toán có thể lập trình và lặp lại, thuận tiện thay đổi hệ số hoặc chức năng mà không thay toàn bộ linh kiện analog. Đổi lại phải lấy mẫu, lượng tử và dùng tài nguyên tính toán. Ưu điểm programmability không đồng nghĩa miễn mọi noise, error hoặc delay.",
+    "comparisons": [
+      {
+        "concept": "Programmability / reproducibility",
+        "explanation": "Cùng dữ liệu, hệ số và quy tắc số học cho kết quả có thể kiểm soát, tiện cập nhật và kiểm thử."
+      },
+      {
+        "concept": "Analog processing",
+        "explanation": "Có thể xử lý liên tục với latency/phần cứng phù hợp cho một nhiệm vụ cố định; không phải mọi bài đều nên đổi sang DSP."
+      },
+      {
+        "concept": "Finite precision / sampling",
+        "explanation": "DSP vẫn có quantization, overflow và aliasing nếu thiết kế không đúng. Không chọn “hoàn toàn không có noise” làm ưu điểm chung."
+      }
+    ]
+  }
+]

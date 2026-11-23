@@ -1,0 +1,1778 @@
+{
+  "subject": "ICI211",
+  "reviewedCount": 247,
+  "ledger": [
+    {
+      "id": "ICI211-250",
+      "status": "fix",
+      "whyVi": "Nêu cơ chế nối active với tốc độ, tránh chỉ học chuỗi keyword."
+    },
+    {
+      "id": "ICI211-251",
+      "status": "fix",
+      "whyVi": "Phân biệt hướng chuyển đầu ra với thời gian sườn lên."
+    },
+    {
+      "id": "ICI211-252",
+      "status": "fix",
+      "whyVi": "Nêu dấu hiệu và cơ chế hao phí đúng câu hỏi."
+    },
+    {
+      "id": "ICI211-253",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-254",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-255",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ giải nghĩa tên cấu trúc, chưa trỏ vào ưu điểm tốc độ được hỏi."
+    },
+    {
+      "id": "ICI211-256",
+      "status": "fix",
+      "whyVi": "Nối đặc điểm mạch với nhược điểm công suất."
+    },
+    {
+      "id": "ICI211-257",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-258",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-259",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-260",
+      "status": "fix",
+      "whyVi": "Bổ sung điều kiện saturated, tránh áp dụng mẹo single-supply cho mọi enhancement-load."
+    },
+    {
+      "id": "ICI211-261",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-262",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-263",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-264",
+      "status": "fix",
+      "whyVi": "Mẹo cũ quá chung, bổ sung đúng loại nền và hạt tải của đề."
+    },
+    {
+      "id": "ICI211-265",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-266",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-267",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-268",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-269",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-270",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-271",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-272",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-273",
+      "status": "fix",
+      "whyVi": "Giữ rõ ON và xấp xỉ; không suy thành điện trở hằng trong mọi trạng thái."
+    },
+    {
+      "id": "ICI211-274",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-275",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-276",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-277",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-278",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-279",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-280",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-281",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-282",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-283",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-284",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-285",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-286",
+      "status": "fix",
+      "whyVi": "Gắn điểm cực đại với đúng giả thiết đối xứng và quét chậm."
+    },
+    {
+      "id": "ICI211-287",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-288",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-289",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-290",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-291",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-292",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-293",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-295",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-296",
+      "status": "fix",
+      "whyVi": "Nối dấu hiệu non-overlap với sự cố cần tránh."
+    },
+    {
+      "id": "ICI211-297",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-298",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-299",
+      "status": "fix",
+      "whyVi": "Mẹo cũ dừng ở tên đường đọc, bổ sung hệ quả đúng đáp án."
+    },
+    {
+      "id": "ICI211-300",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-301",
+      "status": "fix",
+      "whyVi": "Thay mẹo tính chung bằng hai bước trực tiếp theo số liệu đề."
+    },
+    {
+      "id": "ICI211-302",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-303",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-304",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-305",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-306",
+      "status": "fix",
+      "whyVi": "Nhấn điện trở chung, tránh chọn nhầm tụ có tổng điện trở đường đi lớn nhất."
+    },
+    {
+      "id": "ICI211-307",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-308",
+      "status": "fix",
+      "whyVi": "Đưa phép chia nhanh và bẫy nhầm bình phương."
+    },
+    {
+      "id": "ICI211-309",
+      "status": "fix",
+      "whyVi": "Nêu điều kiện giữ nguyên và phép tính cụ thể."
+    },
+    {
+      "id": "ICI211-310",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-311",
+      "status": "fix",
+      "whyVi": "Mẹo chỉ rõ hai thành phần đáp án cần có."
+    },
+    {
+      "id": "ICI211-312",
+      "status": "fix",
+      "whyVi": "Mẹo cũ thiếu điều khiển bổ sung theo lựa chọn đúng."
+    },
+    {
+      "id": "ICI211-313",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-314",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-315",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-316",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-317",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-318",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-319",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-320",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-321",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nêu cấu trúc, trong khi câu hỏi hỏi lý do đặt inverter."
+    },
+    {
+      "id": "ICI211-322",
+      "status": "fix",
+      "whyVi": "Cụ thể hóa phép cộng và bẫy timing."
+    },
+    {
+      "id": "ICI211-323",
+      "status": "fix",
+      "whyVi": "Nêu đủ lợi ích và đánh đổi đúng tình huống."
+    },
+    {
+      "id": "ICI211-324",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-325",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-326",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-327",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-328",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-329",
+      "status": "fix",
+      "whyVi": "Nêu rõ đại lượng cần dùng và thông tin gây nhiễu."
+    },
+    {
+      "id": "ICI211-330",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-331",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-332",
+      "status": "fix",
+      "whyVi": "Liên kết tính không đảo được hỏi với cơ chế đơn điệu."
+    },
+    {
+      "id": "ICI211-333",
+      "status": "fix",
+      "whyVi": "Gắn với giá trị cụ thể và trễ đầu ra."
+    },
+    {
+      "id": "ICI211-334",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-335",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-336",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-337",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-338",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-339",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-340",
+      "status": "fix",
+      "whyVi": "Giữ giả thiết other factors fixed thay cho mẹo chung."
+    },
+    {
+      "id": "ICI211-341",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-342",
+      "status": "fix",
+      "whyVi": "Không áp dụng bình phương cho tỉ lệ chiều rộng."
+    },
+    {
+      "id": "ICI211-343",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-344",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-345",
+      "status": "fix",
+      "whyVi": "Mẹo cũ trade-off quá chung, chưa cho cách chọn vùng dùng từng loại VT."
+    },
+    {
+      "id": "ICI211-346",
+      "status": "fix",
+      "whyVi": "Bám đúng cụm viết tắt NO RAce, tránh biến CMOS thành phần bắt buộc của tên viết tắt."
+    },
+    {
+      "id": "ICI211-347",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-348",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-349",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-350",
+      "status": "fix",
+      "whyVi": "Giữ đổi đơn vị và nêu trực tiếp quan hệ cần dùng."
+    },
+    {
+      "id": "ICI211-351",
+      "status": "fix",
+      "whyVi": "Gắn điểm cực đại với đúng giả thiết đối xứng và quét chậm."
+    },
+    {
+      "id": "ICI211-352",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-353",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-354",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện transistor đã bật trước khi dùng bất đẳng thức triode."
+    },
+    {
+      "id": "ICI211-355",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-356",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-357",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc VM, bỏ sót hai rail được hỏi."
+    },
+    {
+      "id": "ICI211-358",
+      "status": "fix",
+      "whyVi": "Liên hệ đầu vào giảm với cơ chế không thể phục hồi nút động."
+    },
+    {
+      "id": "ICI211-359",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-360",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-361",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-362",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-363",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-364",
+      "status": "fix",
+      "whyVi": "Giữ đúng chế độ DC và giả thiết lý tưởng."
+    },
+    {
+      "id": "ICI211-365",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-366",
+      "status": "fix",
+      "whyVi": "Bổ sung điều kiện saturated, tránh áp dụng mẹo single-supply cho mọi enhancement-load."
+    },
+    {
+      "id": "ICI211-367",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-368",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-369",
+      "status": "fix",
+      "whyVi": "Cụ thể hóa phép căn bằng lũy thừa hai."
+    },
+    {
+      "id": "ICI211-370",
+      "status": "fix",
+      "whyVi": "Mẹo cũ alternate quá ngắn, thiếu non-overlapping của đáp án."
+    },
+    {
+      "id": "ICI211-371",
+      "status": "fix",
+      "whyVi": "Cụ thể hóa số tầng và phân biệt tăng từng transistor với tăng cả chuỗi."
+    },
+    {
+      "id": "ICI211-372",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ sót điều kiện ít nhất ba tầng."
+    },
+    {
+      "id": "ICI211-373",
+      "status": "fix",
+      "whyVi": "Bỏ keyword high volume vốn không xuất hiện trong hai stem này."
+    },
+    {
+      "id": "ICI211-374",
+      "status": "fix",
+      "whyVi": "Thay ghi nhớ đáp án bằng phép triệt tiêu tỷ lệ, đúng điều kiện frequency scales S."
+    },
+    {
+      "id": "ICI211-375",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-376",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-377",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-378",
+      "status": "fix",
+      "whyVi": "Cung cấp phép tính trọng số và bẫy thường gặp."
+    },
+    {
+      "id": "ICI211-379",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-380",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-381",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-382",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-383",
+      "status": "fix",
+      "whyVi": "Nêu rõ đại lượng hình học so với overdrive bình phương."
+    },
+    {
+      "id": "ICI211-384",
+      "status": "fix",
+      "whyVi": "Nhấn đúng điều kiện đối xứng, tránh half-supply dùng cho mọi inverter."
+    },
+    {
+      "id": "ICI211-385",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-386",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-387",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-388",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-389",
+      "status": "fix",
+      "whyVi": "Thay nhắc tên transconductance bằng cách phân biệt hai đạo hàm."
+    },
+    {
+      "id": "ICI211-390",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-391",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-392",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-393",
+      "status": "fix",
+      "whyVi": "Thay lời nhắc đổi đơn vị chung bằng đường tính nhanh cụ thể."
+    },
+    {
+      "id": "ICI211-394",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-395",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-396",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-397",
+      "status": "fix",
+      "whyVi": "Bổ sung tác dụng thay vì chỉ nêu weak feedback."
+    },
+    {
+      "id": "ICI211-398",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-399",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nêu tên monotonicity, chưa giải thích chiều chuyển gây lỗi."
+    },
+    {
+      "id": "ICI211-400",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-401",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-402",
+      "status": "fix",
+      "whyVi": "Mẹo cũ quá chung, bổ sung đúng loại nền và hạt tải của đề."
+    },
+    {
+      "id": "ICI211-403",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-404",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-405",
+      "status": "fix",
+      "whyVi": "Nêu số liệu và mẫu số đúng."
+    },
+    {
+      "id": "ICI211-406",
+      "status": "fix",
+      "whyVi": "Sửa phát biểu 2N quá rộng trong mẹo cũ."
+    },
+    {
+      "id": "ICI211-407",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-408",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-409",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-410",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-411",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-412",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-413",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-414",
+      "status": "fix",
+      "whyVi": "Mẹo clock active mơ hồ, chưa nói HIGH/LOW mà câu hỏi yêu cầu."
+    },
+    {
+      "id": "ICI211-415",
+      "status": "fix",
+      "whyVi": "Nối dấu hiệu non-overlap với sự cố cần tránh."
+    },
+    {
+      "id": "ICI211-416",
+      "status": "fix",
+      "whyVi": "Mẹo cũ dừng ở tên đường đọc, bổ sung hệ quả đúng đáp án."
+    },
+    {
+      "id": "ICI211-417",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-418",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-419",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-420",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-421",
+      "status": "fix",
+      "whyVi": "Nêu dấu hiệu và cơ chế hao phí đúng câu hỏi."
+    },
+    {
+      "id": "ICI211-422",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-423",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-424",
+      "status": "fix",
+      "whyVi": "Nêu đúng ưu điểm tốc độ đang được hỏi."
+    },
+    {
+      "id": "ICI211-425",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ gọi weak-one, thiếu lý do dừng truyền được hỏi."
+    },
+    {
+      "id": "ICI211-426",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-427",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp lại hiện tượng, chưa chỉ cơ chế cần chọn."
+    },
+    {
+      "id": "ICI211-428",
+      "status": "fix",
+      "whyVi": "Bỏ keyword high volume vốn không xuất hiện trong hai stem này."
+    },
+    {
+      "id": "ICI211-429",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-430",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-431",
+      "status": "fix",
+      "whyVi": "Thêm cách tính nhanh tỷ lệ phần trăm."
+    },
+    {
+      "id": "ICI211-432",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-433",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-434",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-435",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-436",
+      "status": "fix",
+      "whyVi": "Liên hệ giảm tải với đúng đại lượng speed/signal strength của lựa chọn."
+    },
+    {
+      "id": "ICI211-437",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-438",
+      "status": "fix",
+      "whyVi": "Phân biệt hướng chuyển đầu ra với thời gian sườn lên."
+    },
+    {
+      "id": "ICI211-439",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-440",
+      "status": "fix",
+      "whyVi": "Mẹo lấy ở đầu HIGH/LOW không đủ chỉ cách trừ chính xác."
+    },
+    {
+      "id": "ICI211-441",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-442",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc velocity saturation, chưa trả lời vì sao sai mô hình."
+    },
+    {
+      "id": "ICI211-443",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-444",
+      "status": "fix",
+      "whyVi": "Chỉ đường nhân lũy thừa hai theo số liệu đề."
+    },
+    {
+      "id": "ICI211-445",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-446",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-447",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-448",
+      "status": "fix",
+      "whyVi": "Nêu phép cộng rồi lấy nghịch đảo và đổi đơn vị."
+    },
+    {
+      "id": "ICI211-449",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-450",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-451",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ giải thích K, thiếu phép tính tổng dung lượng."
+    },
+    {
+      "id": "ICI211-452",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-453",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-454",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-455",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ bảo đảo, thiếu cách dựng hàm từ mạng đã cho."
+    },
+    {
+      "id": "ICI211-456",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-457",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-458",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-459",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-460",
+      "status": "fix",
+      "whyVi": "Nêu bẫy phân biệt DIBL với channel-length modulation."
+    },
+    {
+      "id": "ICI211-461",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-462",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-463",
+      "status": "fix",
+      "whyVi": "Giữ điều kiện fixed throughput và tính có thể của câu hỏi."
+    },
+    {
+      "id": "ICI211-464",
+      "status": "fix",
+      "whyVi": "Nối đặc điểm mạch với nhược điểm công suất."
+    },
+    {
+      "id": "ICI211-465",
+      "status": "fix",
+      "whyVi": "Thay nhắc hai công thức bằng dấu hiệu phân biệt đúng từ khóa đề."
+    },
+    {
+      "id": "ICI211-466",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-467",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-468",
+      "status": "fix",
+      "whyVi": "Nêu liên hệ vật lý đúng hai chiều chuyển trong đề."
+    },
+    {
+      "id": "ICI211-469",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-470",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-471",
+      "status": "fix",
+      "whyVi": "Nêu cơ chế nối active với tốc độ, tránh chỉ học chuỗi keyword."
+    },
+    {
+      "id": "ICI211-472",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-473",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-474",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-475",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-476",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-477",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-478",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-479",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-480",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp giá trị công suất, thiếu lý do đường dòng bị cắt."
+    },
+    {
+      "id": "ICI211-481",
+      "status": "fix",
+      "whyVi": "Bám đúng cụm viết tắt NO RAce, tránh biến CMOS thành phần bắt buộc của tên viết tắt."
+    },
+    {
+      "id": "ICI211-482",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-483",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-484",
+      "status": "fix",
+      "whyVi": "Đưa bước bình phương trực tiếp theo dữ kiện đề."
+    },
+    {
+      "id": "ICI211-485",
+      "status": "fix",
+      "whyVi": "Bám đúng cụm viết tắt NO RAce, tránh biến CMOS thành phần bắt buộc của tên viết tắt."
+    },
+    {
+      "id": "ICI211-486",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-487",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-488",
+      "status": "fix",
+      "whyVi": "Nêu cách phân biệt yếu tố bình phương với các thừa số tuyến tính."
+    },
+    {
+      "id": "ICI211-489",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-490",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-491",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-492",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-493",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-494",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp lại dual networks, chưa giải thích mục đích thiết kế."
+    },
+    {
+      "id": "ICI211-495",
+      "status": "fix",
+      "whyVi": "Nêu dấu hiệu và cơ chế hao phí đúng câu hỏi."
+    },
+    {
+      "id": "ICI211-496",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    },
+    {
+      "id": "ICI211-497",
+      "status": "keep",
+      "whyVi": "Đã đối chiếu stem, các phương án, đáp án và lời giải; mẹo nhận diện đúng nội dung/điều kiện đang hỏi."
+    }
+  ],
+  "changes": [
+    {
+      "id": "ICI211-250",
+      "tip": "Active VTCMOS cần nhanh → body bias hạ VT để tăng tốc chuyển mạch.",
+      "whyVi": "Nêu cơ chế nối active với tốc độ, tránh chỉ học chuỗi keyword."
+    },
+    {
+      "id": "ICI211-471",
+      "tip": "Active VTCMOS cần nhanh → body bias hạ VT để tăng tốc chuyển mạch.",
+      "whyVi": "Nêu cơ chế nối active với tốc độ, tránh chỉ học chuỗi keyword."
+    },
+    {
+      "id": "ICI211-251",
+      "tip": "Đọc hai chữ cuối tPLH: đầu ra chuyển Low → High; đây là trễ lan truyền, không phải thời gian rise.",
+      "whyVi": "Phân biệt hướng chuyển đầu ra với thời gian sườn lên."
+    },
+    {
+      "id": "ICI211-438",
+      "tip": "Đọc hai chữ cuối tPLH: đầu ra chuyển Low → High; đây là trễ lan truyền, không phải thời gian rise.",
+      "whyVi": "Phân biệt hướng chuyển đầu ra với thời gian sườn lên."
+    },
+    {
+      "id": "ICI211-252",
+      "tip": "Stepwise charging chia điện áp nạp thành nhiều bước nhỏ → giảm phần năng lượng mất trên điện trở.",
+      "whyVi": "Nêu dấu hiệu và cơ chế hao phí đúng câu hỏi."
+    },
+    {
+      "id": "ICI211-421",
+      "tip": "Stepwise charging chia điện áp nạp thành nhiều bước nhỏ → giảm phần năng lượng mất trên điện trở.",
+      "whyVi": "Nêu dấu hiệu và cơ chế hao phí đúng câu hỏi."
+    },
+    {
+      "id": "ICI211-495",
+      "tip": "Stepwise charging chia điện áp nạp thành nhiều bước nhỏ → giảm phần năng lượng mất trên điện trở.",
+      "whyVi": "Nêu dấu hiệu và cơ chế hao phí đúng câu hỏi."
+    },
+    {
+      "id": "ICI211-255",
+      "tip": "Hỏi ưu điểm tốc độ của SDFF → chọn clock-to-Q nhanh; tầng vào động, tầng giữ đầu ra tĩnh.",
+      "whyVi": "Mẹo cũ chỉ giải nghĩa tên cấu trúc, chưa trỏ vào ưu điểm tốc độ được hỏi.",
+      "reason": "SDFF dùng tầng vào động để giảm trễ clock-to-Q và latch tĩnh để giữ đầu ra.",
+      "references": [
+        {
+          "title": "Stanford EE371 · Latch and Flip-Flop Design",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_08_1up.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-256",
+      "tip": "Pseudo-nMOS có PMOS tải luôn bật; đầu ra LOW tạo đường dòng DC → công suất tĩnh.",
+      "whyVi": "Nối đặc điểm mạch với nhược điểm công suất.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-464",
+      "tip": "Pseudo-nMOS có PMOS tải luôn bật; đầu ra LOW tạo đường dòng DC → công suất tĩnh.",
+      "whyVi": "Nối đặc điểm mạch với nhược điểm công suất.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-260",
+      "tip": "Đọc đúng saturated enhancement-load: gate tải nối nguồn VDD → dùng một nguồn; không suy cho linear-load.",
+      "whyVi": "Bổ sung điều kiện saturated, tránh áp dụng mẹo single-supply cho mọi enhancement-load.",
+      "references": [
+        {
+          "title": "UBC · Design of CMOS Inverter",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-366",
+      "tip": "Đọc đúng saturated enhancement-load: gate tải nối nguồn VDD → dùng một nguồn; không suy cho linear-load.",
+      "whyVi": "Bổ sung điều kiện saturated, tránh áp dụng mẹo single-supply cho mọi enhancement-load.",
+      "references": [
+        {
+          "title": "UBC · Design of CMOS Inverter",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-264",
+      "tip": "Nền p + gate dương trước inversion → đẩy lỗ trống ra, để lại acceptor ion hóa: depletion.",
+      "whyVi": "Mẹo cũ quá chung, bổ sung đúng loại nền và hạt tải của đề."
+    },
+    {
+      "id": "ICI211-402",
+      "tip": "Nền p + gate dương trước inversion → đẩy lỗ trống ra, để lại acceptor ion hóa: depletion.",
+      "whyVi": "Mẹo cũ quá chung, bổ sung đúng loại nền và hạt tải của đề."
+    },
+    {
+      "id": "ICI211-273",
+      "tip": "TG đang ON: Rn và Rp mắc song song, bù biến thiên theo mức tín hiệu → RON gần hằng, không bằng 0.",
+      "whyVi": "Giữ rõ ON và xấp xỉ; không suy thành điện trở hằng trong mọi trạng thái."
+    },
+    {
+      "id": "ICI211-286",
+      "tip": "Đề cho inverter đối xứng, quét chậm → dòng trực tiếp cực đại gần VM ≈ VDD/2 vì cả hai transistor cùng dẫn.",
+      "whyVi": "Gắn điểm cực đại với đúng giả thiết đối xứng và quét chậm."
+    },
+    {
+      "id": "ICI211-351",
+      "tip": "Đề cho inverter đối xứng, quét chậm → dòng trực tiếp cực đại gần VM ≈ VDD/2 vì cả hai transistor cùng dẫn.",
+      "whyVi": "Gắn điểm cực đại với đúng giả thiết đối xứng và quét chậm."
+    },
+    {
+      "id": "ICI211-296",
+      "tip": "Hai pha clock không chồng → tránh latch cùng mở/race-through; tìm phương án nói ngăn overlap.",
+      "whyVi": "Nối dấu hiệu non-overlap với sự cố cần tránh.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-415",
+      "tip": "Hai pha clock không chồng → tránh latch cùng mở/race-through; tìm phương án nói ngăn overlap.",
+      "whyVi": "Nối dấu hiệu non-overlap với sự cố cần tránh.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-299",
+      "tip": "8T SRAM có đường đọc tách khỏi nút lưu → ít read disturb → ổn định đọc tốt hơn.",
+      "whyVi": "Mẹo cũ dừng ở tên đường đọc, bổ sung hệ quả đúng đáp án."
+    },
+    {
+      "id": "ICI211-416",
+      "tip": "8T SRAM có đường đọc tách khỏi nút lưu → ít read disturb → ổn định đọc tốt hơn.",
+      "whyVi": "Mẹo cũ dừng ở tên đường đọc, bổ sung hệ quả đúng đáp án."
+    },
+    {
+      "id": "ICI211-301",
+      "tip": "Tính NML = 0,65−0,10 = 0,55; NMH = 1,80−1,05 = 0,75 V. Hỏi smaller → lấy 0,55 V.",
+      "whyVi": "Thay mẹo tính chung bằng hai bước trực tiếp theo số liệu đề."
+    },
+    {
+      "id": "ICI211-306",
+      "tip": "Các C bằng nhau → so điện trở CHUNG với đường tới output; shared R lớn nhất đóng góp trễ lớn nhất.",
+      "whyVi": "Nhấn điện trở chung, tránh chọn nhầm tụ có tổng điện trở đường đi lớn nhất."
+    },
+    {
+      "id": "ICI211-308",
+      "tip": "Cùng overdrive và công nghệ → ID tỉ lệ W/L; lấy 8 ÷ 2 = 4, không bình phương tỉ lệ kích thước.",
+      "whyVi": "Đưa phép chia nhanh và bẫy nhầm bình phương."
+    },
+    {
+      "id": "ICI211-309",
+      "tip": "Chỉ f tăng đôi, các yếu tố khác giữ nguyên → P tăng đôi: 4 × 2 = 8 mW.",
+      "whyVi": "Nêu điều kiện giữ nguyên và phép tính cụ thể."
+    },
+    {
+      "id": "ICI211-311",
+      "tip": "Hỏi điện trở dây → R = ρL/A: tìm cả resistivity lẫn geometry, không chỉ chiều dài.",
+      "whyVi": "Mẹo chỉ rõ hai thành phần đáp án cần có."
+    },
+    {
+      "id": "ICI211-312",
+      "tip": "NMOS truyền 0 tốt, PMOS truyền 1 tốt → mắc song song và điều khiển bù để truyền đủ hai mức.",
+      "whyVi": "Mẹo cũ thiếu điều khiển bổ sung theo lựa chọn đúng."
+    },
+    {
+      "id": "ICI211-321",
+      "tip": "Ngõ ra động giảm 1→0 khi evaluate; inverter đảo thành 0→1 cho tầng sau → giao tiếp đơn điệu.",
+      "whyVi": "Mẹo cũ chỉ nêu cấu trúc, trong khi câu hỏi hỏi lý do đặt inverter.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-322",
+      "tip": "Tmin = tCQ + tlogic + tsetup = 120 + 600 + 80 = 800 ps; không cộng hold time vào công thức này.",
+      "whyVi": "Cụ thể hóa phép cộng và bẫy timing.",
+      "references": [
+        {
+          "title": "Stanford EE371 · Latch and Flip-Flop Design",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_08_1up.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-323",
+      "tip": "Hỏi tăng read stability dù tốn diện tích → chọn 8T có read path riêng, tránh kéo nhiễu nút lưu.",
+      "whyVi": "Nêu đủ lợi ích và đánh đổi đúng tình huống."
+    },
+    {
+      "id": "ICI211-329",
+      "tip": "Hỏi địa chỉ word → chỉ dùng số word: 1024 = 2^10 nên cần 10 bit; bỏ qua độ rộng 8 bit/word.",
+      "whyVi": "Nêu rõ đại lượng cần dùng và thông tin gây nhiễu."
+    },
+    {
+      "id": "ICI211-332",
+      "tip": "Mỗi cặp dynamic + inverter cho ngõ ra chỉ tăng khi evaluate → chuỗi domino chuẩn thực hiện hàm không đảo.",
+      "whyVi": "Liên kết tính không đảo được hỏi với cơ chế đơn điệu.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-333",
+      "tip": "D flip-flop lấy D tại cạnh lên: D = 1 → Q = 1 sau tCQ, không đảo D.",
+      "whyVi": "Gắn với giá trị cụ thể và trễ đầu ra."
+    },
+    {
+      "id": "ICI211-340",
+      "tip": "Giữ ε không đổi: C ≈ εA/d → giảm diện tích ghép A hoặc tăng khoảng cách d thì C giảm.",
+      "whyVi": "Giữ giả thiết other factors fixed thay cho mẹo chung."
+    },
+    {
+      "id": "ICI211-342",
+      "tip": "Đề giữ L và overdrive, chỉ W gấp đôi → ID cũng gấp đôi: IA/IB = 2.",
+      "whyVi": "Không áp dụng bình phương cho tỉ lệ chiều rộng."
+    },
+    {
+      "id": "ICI211-345",
+      "tip": "Đường tới hạn cần nhanh → low-VT; vị trí ít nhạy timing dùng high-VT để giảm rò.",
+      "whyVi": "Mẹo cũ trade-off quá chung, chưa cho cách chọn vùng dùng từng loại VT."
+    },
+    {
+      "id": "ICI211-346",
+      "tip": "Tách chữ NORA thành NO RAce → chọn tên logic tránh race.",
+      "whyVi": "Bám đúng cụm viết tắt NO RAce, tránh biến CMOS thành phần bắt buộc của tên viết tắt."
+    },
+    {
+      "id": "ICI211-481",
+      "tip": "Tách chữ NORA thành NO RAce → chọn tên logic tránh race.",
+      "whyVi": "Bám đúng cụm viết tắt NO RAce, tránh biến CMOS thành phần bắt buộc của tên viết tắt."
+    },
+    {
+      "id": "ICI211-485",
+      "tip": "Tách chữ NORA thành NO RAce → chọn tên logic tránh race.",
+      "whyVi": "Bám đúng cụm viết tắt NO RAce, tránh biến CMOS thành phần bắt buộc của tên viết tắt."
+    },
+    {
+      "id": "ICI211-350",
+      "tip": "Mất điện tích → ΔV = ΔQ/C; fC/fF = V nên lấy 2/20 = 0,10 V.",
+      "whyVi": "Giữ đổi đơn vị và nêu trực tiếp quan hệ cần dùng."
+    },
+    {
+      "id": "ICI211-354",
+      "tip": "Tính overdrive 1,2−0,4 = 0,8 V; VGS>VT và VDS=0,3<0,8 → triode.",
+      "whyVi": "Thêm điều kiện transistor đã bật trước khi dùng bất đẳng thức triode."
+    },
+    {
+      "id": "ICI211-357",
+      "tip": "Muốn cả hai noise margin lớn: VM gần VDD/2, đồng thời VOL gần 0 và VOH gần VDD.",
+      "whyVi": "Mẹo cũ chỉ nhắc VM, bỏ sót hai rail được hỏi."
+    },
+    {
+      "id": "ICI211-358",
+      "tip": "Evaluate n-type không tự nạp lại nút đã xả → đầu vào giảm 1→0 là chuyển mức cần tránh.",
+      "whyVi": "Liên hệ đầu vào giảm với cơ chế không thể phục hồi nút động.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-364",
+      "tip": "Đề nói cutoff + steady-state DC + bỏ leakage → nhánh NMOS hở, dòng qua điện trở tải bằng 0.",
+      "whyVi": "Giữ đúng chế độ DC và giả thiết lý tưởng."
+    },
+    {
+      "id": "ICI211-369",
+      "tip": "Mảng vuông → lấy căn tổng số ô: 1.048.576 = 2^20 → mỗi cạnh 2^10 = 1024 ô.",
+      "whyVi": "Cụ thể hóa phép căn bằng lũy thừa hai."
+    },
+    {
+      "id": "ICI211-370",
+      "tip": "Master/slave phải mở luân phiên → chọn hai pha bù nhau và không chồng, tránh cả hai latch cùng trong suốt.",
+      "whyVi": "Mẹo cũ alternate quá ngắn, thiếu non-overlapping của đáp án.",
+      "references": [
+        {
+          "title": "Stanford EE371 · Latch and Flip-Flop Design",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_08_1up.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-371",
+      "tip": "4 NMOS nối tiếp làm R tổng tăng khoảng 4 lần → tăng W mỗi NMOS khoảng 4 lần để bù.",
+      "whyVi": "Cụ thể hóa số tầng và phân biệt tăng từng transistor với tăng cả chuỗi."
+    },
+    {
+      "id": "ICI211-372",
+      "tip": "Vòng inverter thông thường cần số tầng lẻ và ít nhất 3; chỉ thấy odd là chưa đủ giả thiết của đề.",
+      "whyVi": "Mẹo cũ bỏ sót điều kiện ít nhất ba tầng."
+    },
+    {
+      "id": "ICI211-373",
+      "tip": "Hỏi tối ưu hiệu năng sâu nhất → full-custom vì chỉnh được từng transistor và layout.",
+      "whyVi": "Bỏ keyword high volume vốn không xuất hiện trong hai stem này.",
+      "reason": "Full-custom cho phép tối ưu trực tiếp kích thước transistor, mạch và layout, nên có mức tự do tối ưu hiệu năng cao nhất trong các lựa chọn."
+    },
+    {
+      "id": "ICI211-428",
+      "tip": "Hỏi tối ưu hiệu năng sâu nhất → full-custom vì chỉnh được từng transistor và layout.",
+      "whyVi": "Bỏ keyword high volume vốn không xuất hiện trong hai stem này.",
+      "reason": "Full-custom cho phép tối ưu trực tiếp kích thước transistor, mạch và layout, nên có mức tự do tối ưu hiệu năng cao nhất trong các lựa chọn."
+    },
+    {
+      "id": "ICI211-374",
+      "tip": "Scaling 1/S: C→C/S, V→V/S, f→Sf nên P/gate→P/S²; số gate/diện tích tăng S² → mật độ công suất giữ nguyên.",
+      "whyVi": "Thay ghi nhớ đáp án bằng phép triệt tiêu tỷ lệ, đúng điều kiện frequency scales S.",
+      "references": [
+        {
+          "title": "MIT · MOSFET scaling",
+          "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/036333b326d0db0a3589ef6ee6eb0dc4_lecture32.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-378",
+      "tip": "Chia sẻ điện tích: Vf = (30×1,2 + 10×0)/(30+10) = 0,9 V; không lấy trung bình hai điện áp.",
+      "whyVi": "Cung cấp phép tính trọng số và bẫy thường gặp."
+    },
+    {
+      "id": "ICI211-383",
+      "tip": "Đề giữ các tham số khác: ID = ½β(VGS−VT)², với β∝W/L → tăng W/L làm dòng tăng tuyến tính.",
+      "whyVi": "Nêu rõ đại lượng hình học so với overdrive bình phương."
+    },
+    {
+      "id": "ICI211-384",
+      "tip": "βn=βp và hai ngưỡng đối xứng → VM=VDD/2=1,8/2=0,9 V.",
+      "whyVi": "Nhấn đúng điều kiện đối xứng, tránh half-supply dùng cho mọi inverter."
+    },
+    {
+      "id": "ICI211-389",
+      "tip": "Đề hỏi độ nhạy ID theo VGS → gm = ∂ID/∂VGS; đừng nhầm với độ nhạy theo VDS.",
+      "whyVi": "Thay nhắc tên transconductance bằng cách phân biệt hai đạo hàm."
+    },
+    {
+      "id": "ICI211-393",
+      "tip": "fF × MHz = nW: 0,2 × 20 × 1² × 500 = 2000 nW = 2 μW.",
+      "whyVi": "Thay lời nhắc đổi đơn vị chung bằng đường tính nhanh cụ thể."
+    },
+    {
+      "id": "ICI211-397",
+      "tip": "Keeper phải bù leakage để giữ mức precharge nhưng đủ yếu cho evaluate xả nút → tìm giữ điện tích/rò.",
+      "whyVi": "Bổ sung tác dụng thay vì chỉ nêu weak feedback.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-399",
+      "tip": "Hai tầng dynamic trực tiếp: ngõ ra tầng đầu có thể giảm 1→0, trái yêu cầu ngõ vào chỉ tăng của tầng sau.",
+      "whyVi": "Mẹo cũ chỉ nêu tên monotonicity, chưa giải thích chiều chuyển gây lỗi.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-405",
+      "tip": "Giá mỗi die tốt = 600.000/10.000 = 60 USD; chia cho số die hoạt động, không phải mọi die chế tạo.",
+      "whyVi": "Nêu số liệu và mẫu số đúng."
+    },
+    {
+      "id": "ICI211-406",
+      "tip": "NAND CMOS 3 input: 3 NMOS + 3 PMOS = 6; quy tắc 2N ở đây dành cho NAND/NOR đơn, không mọi hàm N input.",
+      "whyVi": "Sửa phát biểu 2N quá rộng trong mẹo cũ.",
+      "references": [
+        {
+          "title": "UBC · Design of CMOS Inverter",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-414",
+      "tip": "Đề cho transistor evaluate là NMOS nối CLK: CLK HIGH bật nhánh xả → pha evaluation.",
+      "whyVi": "Mẹo clock active mơ hồ, chưa nói HIGH/LOW mà câu hỏi yêu cầu.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-424",
+      "tip": "SDFF dùng tầng vào động để giảm clock-to-Q; tìm ưu điểm trễ ra nhanh, không phải chỉ tên semi-dynamic.",
+      "whyVi": "Nêu đúng ưu điểm tốc độ đang được hỏi.",
+      "references": [
+        {
+          "title": "Stanford EE371 · Latch and Flip-Flop Design",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_08_1up.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-425",
+      "tip": "NMOS truyền HIGH tới khi VGS tụt còn VT → Vout dừng gần VDD−VT, tạo weak 1.",
+      "whyVi": "Mẹo cũ chỉ gọi weak-one, thiếu lý do dừng truyền được hỏi."
+    },
+    {
+      "id": "ICI211-427",
+      "tip": "Đang saturation mà ID vẫn tăng theo VDS → pinch-off lấn về source, Leff giảm: channel-length modulation.",
+      "whyVi": "Mẹo cũ lặp lại hiện tượng, chưa chỉ cơ chế cần chọn."
+    },
+    {
+      "id": "ICI211-431",
+      "tip": "Yield = die đạt / die chế tạo ×100% = 1,5/2,0 ×100% = 75%.",
+      "whyVi": "Thêm cách tính nhanh tỷ lệ phần trăm."
+    },
+    {
+      "id": "ICI211-436",
+      "tip": "Giải mã nhiều tầng chia tải/fanout → tín hiệu chọn có thể nhanh và khỏe hơn; không phải tăng dung lượng bit.",
+      "whyVi": "Liên hệ giảm tải với đúng đại lượng speed/signal strength của lựa chọn."
+    },
+    {
+      "id": "ICI211-440",
+      "tip": "NMH = 1,8−1,1 = 0,7 V; NML = 0,7−0 = 0,7 V. HIGH: VOH−VIH; LOW: VIL−VOL.",
+      "whyVi": "Mẹo lấy ở đầu HIGH/LOW không đủ chỉ cách trừ chính xác."
+    },
+    {
+      "id": "ICI211-442",
+      "tip": "Square-law giả sử vận tốc tăng theo điện trường; kênh ngắn làm vận tốc chạm trần → giả sử tuyến tính bị sai.",
+      "whyVi": "Mẹo cũ chỉ nhắc velocity saturation, chưa trả lời vì sao sai mô hình.",
+      "references": [
+        {
+          "title": "MIT · MOSFET scaling",
+          "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/036333b326d0db0a3589ef6ee6eb0dc4_lecture32.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-444",
+      "tip": "Dung lượng bit = word × bit/word = 256 × 16 = 2^8 × 2^4 = 4096 bit.",
+      "whyVi": "Chỉ đường nhân lũy thừa hai theo số liệu đề."
+    },
+    {
+      "id": "ICI211-448",
+      "tip": "Tmin=100+750+150=1000 ps=1 ns; lấy nghịch đảo → fmax=1 GHz.",
+      "whyVi": "Nêu phép cộng rồi lấy nghịch đảo và đổi đơn vị.",
+      "references": [
+        {
+          "title": "Stanford EE371 · Latch and Flip-Flop Design",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_08_1up.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-451",
+      "tip": "64 K × 8 bit = 2^6 × 2^10 × 2^3 = 2^19 = 524.288 bit; K ở đề là 1024.",
+      "whyVi": "Mẹo cũ chỉ giải thích K, thiếu phép tính tổng dung lượng."
+    },
+    {
+      "id": "ICI211-455",
+      "tip": "PDN: song song A,B → A+B; nối tiếp C → (A+B)C; đầu ra đảo → NOT[(A+B)C].",
+      "whyVi": "Mẹo cũ chỉ bảo đảo, thiếu cách dựng hàm từ mạng đã cho."
+    },
+    {
+      "id": "ICI211-460",
+      "tip": "VDS tăng mà VT giảm → drain hạ rào source: DIBL; CLM chủ yếu mô tả dòng saturation tăng do Leff giảm.",
+      "whyVi": "Nêu bẫy phân biệt DIBL với channel-length modulation."
+    },
+    {
+      "id": "ICI211-463",
+      "tip": "Giữ throughput: pipeline rút ngắn delay mỗi tầng → có thể hạ VDD để giảm P∝VDD², không tự bảo đảm tiết kiệm.",
+      "whyVi": "Giữ điều kiện fixed throughput và tính có thể của câu hỏi."
+    },
+    {
+      "id": "ICI211-465",
+      "tip": "Đọc drawn from supply → CV² = 40×1² = 40 fJ; stored on capacitor mới là ½CV².",
+      "whyVi": "Thay nhắc hai công thức bằng dấu hiệu phân biệt đúng từ khóa đề."
+    },
+    {
+      "id": "ICI211-468",
+      "tip": "Hai dây chuyển ngược chiều làm ΔV trên tụ ghép thay đổi mạnh hơn → tải ghép hiệu dụng và trễ có thể tăng.",
+      "whyVi": "Nêu liên hệ vật lý đúng hai chiều chuyển trong đề."
+    },
+    {
+      "id": "ICI211-480",
+      "tip": "Ở mức logic hợp lệ, một transistor OFF cắt đường VDD→GND → dòng DC lý tưởng gần 0.",
+      "whyVi": "Mẹo cũ lặp giá trị công suất, thiếu lý do đường dòng bị cắt.",
+      "references": [
+        {
+          "title": "UBC · Design of CMOS Inverter",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ICI211-484",
+      "tip": "Overdrive gấp đôi, β giữ nguyên → ID nhân 2² = 4, không chỉ nhân 2.",
+      "whyVi": "Đưa bước bình phương trực tiếp theo dữ kiện đề."
+    },
+    {
+      "id": "ICI211-488",
+      "tip": "Trong P=αCVDD²f, VDD có số mũ 2 còn α,C,f bậc 1 → chọn supply voltage squared.",
+      "whyVi": "Nêu cách phân biệt yếu tố bình phương với các thừa số tuyến tính."
+    },
+    {
+      "id": "ICI211-494",
+      "tip": "PUN/PDN bù nhau: mỗi tổ hợp vào ổn định chỉ một mạng dẫn → đầu ra nối một rail, tránh floating và dòng DC xuyên.",
+      "whyVi": "Mẹo cũ lặp lại dual networks, chưa giải thích mục đích thiết kế.",
+      "references": [
+        {
+          "title": "David Harris · Dynamic Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ]
+    }
+  ]
+}

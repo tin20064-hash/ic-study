@@ -1,0 +1,8 @@
+.study-formula { display: inline-block; max-width: 100%; padding: .45rem .1rem; vertical-align: middle; color: inherit; user-select: text; }
+.study-formula math { font-family: "Cambria Math", "STIX Two Math", "Noto Sans Math", math; font-size: 1.35rem; font-weight: 400; color: inherit; }
+.study-formula annotation { display: none; }
+.math-source-tail { font: inherit; margin-left: .25rem; }
+.option:has(.study-formula) { min-height: 5.6rem; align-items: center; }
+.option > span[lang] { min-width: 0; overflow-wrap: anywhere; }
+.option .study-formula { overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
+@media(max-width:600px) { .study-formula math { font-size: 1.18rem; } .option:has(.study-formula) { padding-block: 1rem; } }

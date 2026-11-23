@@ -1,0 +1,199 @@
+01 In Linux virtual memory management, what is a pageo
+A. A fixed-size unit of memory used for mapping virtual and physical addresses | B. A region of memory reserved for a single thread | C. A filesystem block used to store file data | D. A kernel structure representing a process
+KEY [0] MATCH LOS201-63 0.9899 REUSE LOS201-63
+
+02 Which scenario is most appropriate for shared memory created using
+A. Inter-process communication with low overhead | B. Request-response communication through a UNIX domain socket | C. Sending byte-stream data through a named pipe | D. Publish-subscribe message exchange using a messaging framework
+KEY [0] MATCH LOS201-64 0.9635 REUSE LOS201-64
+
+03 A developer examines What information is primarily obtained from this file?
+A. CPU scheduling statistics | B. Process memory mappings | C. NeWork socket states | D. Thread priorities
+KEY [1] MATCH LOS201-65 0.908 REUSE LOS201-65
+
+04 Why does the Yocto Project use a layered architecture?
+A. To separate and manage metadata, BSPs, distributions, and application customizations independently. | B. To eliminate the need for BitBake recipes. | C. To store root filesystems in multiple partitions | D. To perform runtime package management on the target system
+KEY [0] MATCH LOS201-66 1.0 REUSE LOS201-66
+
+05 A build engineer wants to minimize image size while retaining required functionality. Which build-system feature is most relevant?
+A. Fine-grained package selection and configuration | B. Automatic overclocking of the target CPU | C. Dynamic replacement of the kernel scheduler | D. Disabling all shared libraries
+KEY [0] MATCH LOS201-67 0.9961 REUSE LOS201-67
+
+06 A company supports multiple hardware platforms sharing a common somnare stack- Why is a build system particularly beneficial in this environment?
+A. It enables configuration reuse and platform-specific customization | B. It removes the need for bootloaders | C. It guarantees identical hardware behavior | D. It eliminates cross-compilers
+KEY [0] MATCH LOS201-68 0.9792 REUSE LOS201-68
+
+07 Which TWO techniques can improve Linux real-time performance?
+A. Reducing long non-preemptible kernel sections | B. Using real-time scheduling policies | C. Increasing filesystem fragmentation | D. Disabling all device drivers
+KEY [0, 1] MATCH LOS201-69 0.9917 REUSE LOS201-69
+
+08 An embedded controller must guarantee periodic execution of a task every 5 ms- Which evaluation criterion is most important when validating the platform?
+A. Worst-case scheduling and interrupt latency | B. Filesystem compression ratio | C. Number of installed utilities | D. Kernel image size only
+KEY [0] MATCH LOS201-70 0.9967 REUSE LOS201-70
+
+09 A system architect divides the software stack into bootloader, kernel, libraries, and applications- What is the primary benefit of this layered architecture?
+A. Each layer can evolve independently while providing well-defined interfaces | B. The kernel no longer requires device drivers | C. Applications gain direct access to physical memory by default | D. The root filesystem becomes unnecessary
+KEY [0] MATCH LOS201-71 0.9967 REUSE LOS201-71
+
+10 What is the primary responsibility of the bootloader?
+A. Initialize hardware and load the kernel | B. Run user applications | C. Manage filesystems | D. Compile source code
+KEY [0] MATCH LOS201-72 1.0 REUSE LOS201-72
+
+11 A project manager evaluates whether Linux is appropriate for a new embedded product. Which factor most strongly distinguishes Linux from a traditional bare-metal firmware approach?
+A. Linux provides standardized operating system services and process isolation | B. Linux removes all memory constraints | C. Linux eliminates interrupt handling | D. Linux requires no boot process
+KEY [0] MATCH LOS201-73 0.9972 REUSE LOS201-73
+
+12 Why does BusyBox help reduce the size of an embedded Linux root filesystem?
+A. It uses a multicall binary that shares code among many utilities | B. It compresses the kernel image at runtime. | C. It stores user applications inside the Device Tree Blob. | D. It eliminates the need for a root filesystem.
+KEY [0] MATCH LOS201-74 0.9933 REUSE LOS201-74
+
+13 How does BusyBox reduce storage requirements?
+A. Multiple utilities share a single executable | B. Compresses RAM | C. Eliminates drivers | D. Uses larger binaries
+KEY [0] MATCH LOS201-75 1.0 REUSE LOS201-75
+
+14 A student wants serial output from the ARMv7 guest to appear in the terminal- Which pair of settings is most consistent with the lab?
+A. Enable ARM AMBA PLOII support and use | B. Disable all serial drivers and use | C. Enable IJSB mass storage and use •console=/dev/sdal'. | D. Use only because QEMIJ '-nographic• does not support UART output-
+KEY None MATCH LOS201-76 0.9962 REUSE 
+
+15 A developer observes the boot message 'Freeing init memory: 296K'. What does this message indicate?
+A. The root filesystem has been unmounted | B. Memory occupied by one-time initialization code and data has been reclaimed | C. The page cache has been flushed | D. Unused device drivers have been unloaded
+KEY [1] MATCH LOS201-77 0.9947 REUSE LOS201-77
+
+16 For a commercial product expected to remain in service for years, why is understanding Yocto release support important?
+A. Because support periods affect maintenance and security updates | B. Because releases determine CPU clock speed | C. Because unsupported releases cannot build images | D. Because support changes the ABI automatically
+KEY [0] MATCH LOS201-78 0.9957 REUSE LOS201-78
+
+17 Which BitBake task generates an SDK for a specific image?
+A. bitbake sdk | B. bitbake image-sdk | C. bitbake -c populate_sdk <image> | D. bltbake -c toolchain
+KEY [2] MATCH LOS201-79 0.9912 REUSE LOS201-79
+
+18 Why are BSP layers valuable in embedded Linux development?
+A. They abstract hardware-specific support and configuration | B. They remove the need for kernels | C. They replace root filesystems | D. They eliminate cross-compilers
+KEY [0] MATCH LOS201-80 1.0 REUSE LOS201-80
+
+19 Which TWO limitations are likely when an embedded processor lacks MMU support and runs an appropriate no-MMU Linux configuration?
+A. Virtual memory features may be unavailable | B. Memory isolation between processes may be limited | C. The processor automatically becomes multicore | D. Interrupt handling is disabled
+KEY None MATCH LOS201-81 0.79 REUSE 
+
+20 What is an interrupt?
+A. A filesystem image | B. A compiler warning | C. A shell command | D. An event that temporarily changes program execution flow
+KEY [3] MATCH LOS201-82 0.9756 REUSE LOS201-82
+
+21 A character device driver is loaded successfully, but user applications cannot access it through /dev- Which TWO conditions are most likely missing?
+A. A valid device node with the correct major/minor numbers | B. Registration of file_operations callbacks | C. A mounted NFS root filesystem | D. A kernel command-line parameter specifying the driver name
+KEY [0, 1] MATCH LOS201-83 0.9965 REUSE LOS201-83
+
+22 A driver successfully registers itself, but opening the device from user space triggers a kernel crash. Which design issue is the most likely cause?
+A. An invalid or NULL callback in file_operations | B. A missing DHCP server | C. A corrupted initramfs image | D. An incorrect kernel command line
+KEY [0] MATCH LOS201-84 0.9966 REUSE LOS201-84
+
+23 Why does Linux use major and minor device numbers instead of embedding driver-specific identifiers directly into device filenames?
+A. To separate driver selection from device instance identification | B. To eliminate the need for device nodes | C. To avoid dynamic memory allocation | D. To allow device drivers to bypass the VFS layer
+KEY [0] MATCH LOS201-85 0.9961 REUSE LOS201-85
+
+24 A developer uses arm-linux-gnueabihf-gcc on an x86 workstation to build software for a Cortex-A9 board. What is this toolchain an example of?
+A. A native toolchain | B. A cross-toolchain | C. A kernel build system | D. A bootloader package
+KEY [1] MATCH LOS201-86 0.9964 REUSE LOS201-86
+
+25 An embedded Linux target boots using a kernel loaded via TFTP and a root filesystem mounted over NFS. Which TWO benefits make this setup particularly useful during development?
+A. Rapid testing without reflashing storage devices | B. Direct modification of target files from the host system | C. Elimination of network dependencies | D. Automatic kernel recompilation after source changes
+KEY [0, 1] MATCH LOS201-87 0.9971 REUSE LOS201-87
+
+26 A developer updates a shared library on the host system that exports an NFS root filesystem. After rebooting the target, the new library is immediately available. What principle does this demonstrate?
+A. The target accesses files directly from the exported host filesystem | B. The library was embedded into the kernel image | C. The bootloader dynamically patched the executable | D. The device driver automatically regenerated the library
+KEY [0] MATCH LOS201-88 0.9975 REUSE LOS201-88
+
+27 What is the purpose of nmo
+A. Mount filesystems | B. Debug hardware | C. Transfer files | D. Display symbols in object files
+KEY [3] MATCH LOS201-89 0.9804 REUSE LOS201-89
+
+28 A developer compiles an application with optimization enabled but forgets to include debugging information. What is the most likely consequence when using GDB?
+A. Limited visibility of source lines and variables | B. The application cannot execute | C. The linker will fail automatically | D. The kernel will reject the executable
+KEY [0] MATCH LOS201-90 1.0 REUSE LOS201-90
+
+29 What is the primary purpose of SquashFSQ
+A. Compressed read-only storage | B. Network file sharing | C. Database storage | D. Swap management
+KEY [0] MATCH LOS201-91 0.9873 REUSE LOS201-91
+
+30 What is tmpfs?
+A. A network protocol | B. A RAM-based file system | C. A bootloader image | D. A flash-only file system
+KEY [1] MATCH LOS201-92 0.963 REUSE LOS201-92
+
+31 Which TWO statements correctly describe the role of architecture-specific directories under arch/O
+A. They contain processor-specific startup and initialization code | B. They replace all generic kernel subsystems | C. They provide machine- and CPU-dependent implementations | D. They are used only for loadable kernel modules
+KEY [0, 2] MATCH LOS201-93 0.9897 REUSE LOS201-93
+
+32 A developer is exploring the kernel source tree to understand board-specific initialization code for an ARM platform. Which directory pattern is most relevant according to the chapter?
+A. arch/arm/mach-* | B. drivers/board/ | C. kerneVplatforms/ | D. usr/boards/
+KEY [0] MATCH LOS201-94 0.9973 REUSE LOS201-94
+
+33 A developer modifies kernel source code and expects the changes to appear in the final bootable image. Which TWO kernel build artifacts should be examined first to verify that the modified object files were linked into the final kernel image?
+A. vmlinux | B. System.map | C. built-in.o files | D. modules.dep
+KEY [0, 2] MATCH LOS201-95 0.8897 REUSE 
+
+34 A student boots QEMU with *-kernel zlmage• and *-dtb vexpress-v2p-ca9.dtb' but no initramfs is supplied. The , kernel stops with a VFS root mount panic. What is the most likely reason?
+A. The kernel cannot find a root filesystem because no initramfs image or root device was provided. | B. The CPU is not Cortex-A9 because '-cpu cortex-as is ignored by QEMU- | C. The PLOI 1 driver is always disabled in 'vexpress_defconfig• | D. The •zlmage' file must always be replaced by •ulmage• for ARMv7.
+KEY [0] MATCH LOS201-96 0.9348 REUSE LOS201-96
+
+35 A team wants to automate root filesystem generation rather than manually copying binaries, libraries, and configuration files. According to the chapter, which TWO open-source build systems are specifically highlighted for this purpose?
+A. Buildroot | B. OpenEmbedded/BitBake | C. Docker | D. OpenStack
+KEY [0, 1] MATCH LOS201-97 0.9978 REUSE LOS201-97
+
+36 An embedded device boots successfully into user space using a root filesystem with only a few directories and files- Which design principle is BEST demonstrated by this configuration?
+A. Providing every GNU utility by default | B. Minimizing storage usage while satisfying kernel and user-space dependencies | C. Prioritizing graphical user interfaces during startup | D. Eliminating all shared libraries
+KEY [1] MATCH LOS201-98 1.0 REUSE LOS201-98
+
+37 A developer wants to start a new process that first duplicates the current process and then replaces the child process image with another program- Which pair of functions best matches this design?
+A. pthread_create() and pthread_join() | B. fork() and exec() | C. mutex_lock() and mutex_unlock() | D. send() and recv()
+KEY [1] MATCH LOS201-99 0.9974 REUSE LOS201-99
+
+38 An embedded application must prioritize deterministic response over fairness for a critical control activity. Which scheduling category should be considered?
+A. Time-shared scheduling only | B. Real-time scheduling policy | C. Best-effort desktop scheduling only | D. Batch compilation scheduling
+KEY [1] MATCH LOS201-100 0.9968 REUSE LOS201-100
+
+39 A shared counter is updated by two threads in the same process. Which design prevents race conditions most directly?
+A. Protect the counter with a mutex around each read-modify-write operation. | B. Store the counter in a local variable of one function only but access it from all threads. | C. Call fork() before each increment I-I | D. Use printf() before each update to serialize execution.
+KEY [0] MATCH LOS201-101 0.9956 REUSE LOS201-101
+
+40 A U-Boot command loads a kernel image using 'diskboot 0x400000 0:0'. What does the value '0:0' represent?
+A. Kernel load address and DTB address | B. Device number and partition number | C. CPU number and core number | D. Flash bank and erase block
+KEY [1] MATCH LOS201-102 0.9474 REUSE LOS201-102
+
+41 Which command is used to modify an environment variable in U-Boot?
+A. imd | B. setenv | C. loady | D. saveenv
+KEY [1] MATCH LOS201-103 1.0 REUSE LOS201-103
+
+42 What is the main difference between BIOS and an embedded bootloader?
+A. Embedded bootloaders are board-specific and configurable | B. No difference | C. BIOS replaces the kernel | D. BIOS loads Linux faster
+KEY [0] MATCH LOS201-104 0.9926 REUSE LOS201-104
+
+43 A developer examines a kernel oops message after a driver crash. Which information is most likely to be present in the report?
+A. Call trace showing the sequence of kernel functions leading to the fault | B. System calls issued by the application before the crash | C. Shared library dependencies loaded by the process | D. CPU utilization statistics collected over time
+KEY [0] MATCH LOS201-105 0.996 REUSE LOS201-105
+
+44 Which TWO goals are commonly achieved through kernel debugging instrumentation?
+A. Identifying execution paths | B. Observing subsystem interactions | C. Automatically optimizing compiler output | D. Replacing performance profiling
+KEY [0, 1] MATCH LOS201-106 1.0 REUSE LOS201-106
+
+45 Why is ftrace useful in Linux kernel debugging?
+A. It helps analyze kernel function execution and runtime behavior. | B. It displays shared library dependencies of applications | C. It detects memory leaks in user-space programs. | D. It loads kernel modules dynamically.
+KEY [0] MATCH LOS201-107 0.9892 REUSE LOS201-107
+
+46 Why does NAND flash typically require error-correcting codes (ECC) while many NOR flash deployments can operate with less aggressive correction mechanisms?
+A. NAND devices are more susceptible to bit errors and higher storage densities | B. NOR flash does not store binary data | C. ECC is prohibited on NOR devices | D. NAND flash operates only in read-only mode
+KEY [0] MATCH LOS201-108 0.9967 REUSE LOS201-108
+
+47 Why is JFFS2 less suitable for very large NAND devices?
+A. Mount time and memory usage scale poorly | B. It lacks journaling | C. It cannot store files | D. It supports only NOR
+KEY [0] MATCH LOS201-109 1.0 REUSE LOS201-109
+
+48 What is the role of ECC in flash memory?
+A. Compress data | B. Create partitions | C. Increase CPU speed | D. Detect and correct bit errors
+KEY [3] MATCH LOS201-110 0.9873 REUSE LOS201-110
+
+49 A safety-critical medical device requires extensive certification. What concern about Linux should be considered?
+A. Linux cannot run on ARM processors | B. Regulatory verification effort may increase project complexity | C. Linux does not support networking | D. Linux cannot be customized
+KEY [1] MATCH LOS201-111 0.9955 REUSE LOS201-111
+
+50 Which situation is most likely to justify choosing Linux over a small RTOSQ
+A. A device with complex networking and user interfaces | B. An 8-bit microcontroller with 256 KB Flash | C. A single-purpose timing circuit | D. A battery-powered sensor with 64 KB RAM
+KEY [0] MATCH LOS201-112 0.9933 REUSE LOS201-112

@@ -1,0 +1,669 @@
+[
+  {
+    "id": "ici211-su26-fe-re-022",
+    "question": "What type of mechanism does FRAM use to store information in semiconductor memory technology?",
+    "options": [
+      "Floating gate electrons Polarization charge states C. Dynamic capacitor charge D. Static latch circuits"
+    ],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "ici211-su26-fe-032",
+    "question": "What type of circuit structures are commonly used in multiplexers for digital and CMOS circuit design?",
+    "options": [
+      "Transmission gate structures",
+      "Bipolar transistor stages Resistive divider circuits D Dynamic capacitor arrays"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-fa26-fe-004",
+    "question": "Noise PSD at FM output becomes: Flat B. Linear C. Parabolic D. Constant",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-fa26-fe-006",
+    "question": "In AM, the bandwidth required is:",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-fa26-fe-024",
+    "question": "Carson's rule estimates FM bandwidth as: C. 2(Af+ fm) D. Afonly",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-fa26-fe-042",
+    "question": "A sample function represents:",
+    "options": [
+      "A variable",
+      "One realization of a random process A PDF D. A system"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-fa26-fe-043",
+    "question": "The correlation coefficient lies in the range:",
+    "options": [
+      "[0, 11 D. (—00, 00)"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-su26-fe-re-009",
+    "question": "To avoid envelope distortion in AM, the condition is: D. Vl<0",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "cos201-su26-fe-re-035",
+    "question": "If channel error probability p = 0.5 in BSC, capacity is: 1 B. 05 D. Infinite",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "cos201-su26-fe-re-036",
+    "question": "The total area under a PDF curve equals: B. 05 D. 00",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "cos201-su26-fe-re-039",
+    "question": "The probability of any event must lie within:",
+    "options": [
+      "(—00, 00) C. [1, 00)"
+    ],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "cos201-su26-fe-002",
+    "question": "FM noise power grows proportional to: D. IIW",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-su26-fe-006",
+    "question": "Maximum efficiency of AM (Figure of Merit) is: B. 1/2 c. 1/3",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-su26-fe-024",
+    "question": "The bandwidth of NBFM is approximately: C. Infinite D. w/2",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-su26-fe-030",
+    "question": "The Nyquist rate is defined as:",
+    "options": [
+      "fs=W",
+      "fs=2W C. D. fs=W/2"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "cos201-su26-fe-038",
+    "question": "The Fourier transform of a signal exists if the signal is: periodic B. Absolutely integrable C. Constant D. Discrete E. Linear",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-fa26-fe-015",
+    "question": "Which component typically loads the Linux kernel into RAMO Kernel B. Bootloader C. init D. Device Tree",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-fa26-fe-029",
+    "question": "Which processor architecture is most widely used in modern embedded Linux systemsQ",
+    "options": [
+      "Itanium",
+      "Alpha",
+      "ARM spARC"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-fa26-fe-032",
+    "question": "A target board obtains neworking information automatically during boot. Which parameter source is primarily responsible for assigning the target's IP configuration?",
+    "options": [
+      "DHCP server TFTP server Kernel Makefile D BusyBox configuration"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-su26-fe-re-030",
+    "question": "What is tmpfsQ",
+    "options": [
+      "A network protocol",
+      "A RAM-based file system",
+      "A bootloader image",
+      "A flash-only file system"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-su26-fe-re-033",
+    "question": "A developer modifies kernel source code and expects the changes to appear in the final bootable image Which TWO kernel build artifacts should be examined first to verl$' that the modified object files were linked into the final kernel image? vmlinux B. System.map C. built-in-o files D. modules-dep",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-su26-fe-re-040",
+    "question": "A U-Boot command loads a kernel image using 'diskboot 0:0'. What does the value '0:0' representO",
+    "options": [
+      "Kernel load address and DTB address Device number and partition number C. CPU number and core number D. Flash bank and erase block"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "los201-su26-fe-038",
+    "question": "What is KGDBO",
+    "options": [
+      "A kernel debugger that allows remote debugging of the Linux kernel",
+      "A tool for tracing user-space system calls",
+      "A performance profiling framework for Linux",
+      "A utility for analyzing ELF executables"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "los201-su26-fe-044",
+    "question": "What does UBIFS run on top oP B. tmpfs C. UBI D. procfs",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "los201-su26-fe-049",
+    "question": "A board-specific driver has been configured as built-in rather than as a module. Into which component of the kernel image is it most likely linkecP drivers/built-in.o B. lib/lib.a C. usr/built-in.o D arch/arm/kerneVhead-o",
+    "options": [],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "los201-su26-fe-050",
+    "question": "What is the purpose of autoconf.hO",
+    "options": [
+      "Manage memory Store boot parameters C. Load modules D. Expose configuration options to C source code"
+    ],
+    "sourceAnswer": [
+      3
+    ]
+  },
+  {
+    "id": "dgt302-fa26-fe-003",
+    "question": "Which of the following defines the correct property for the Z-transform of the complex conjugated sequence",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-004",
+    "question": "The Time Reversal property states that folding a signal in the time domain x(-n) corresponds to replacing with what value in the z-domain?",
+    "options": [
+      "-z D."
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-006",
+    "question": "For a 2nd-order Sigma-Delta Modulator (SDM) with a noise transfer function Hn(z) = (1 z-1)2, integrating the - shaped noise PSD over the baseband [-B, B] utilizing the small-angle approximation reveals that the in-band noise power cn2 is proportional to: D. (ce2)/12",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-010",
+    "question": "In the physical D/A reconstruction process, a Zero-Order Hold (ZOH) circuit is modeled as a rectangular pulse h(t) of duration T. What is the magnitude of its corresponding frequency (the envelope)? response that causes high-frequency attenuation Sinc sin 2TTFT A. 21TFT 1 for all F B. = sin TIFT c. TIFT sin TtF D.",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-016",
+    "question": "See figure",
+    "options": [
+      "non-causal IIR Wiener filter, which to infinite future assumes access and past data, achieve absolute minimum MSE E ncin. An can an optimal causal IIR Wiener filter, constrained to only present and past Accordink data, achieves MSE E c to the theory of Spectral an in. Factorization in optimum filtering, what is the strict relationship between these errors? A. nc min",
+      "Efnin E nc > min -o D. ElinCin + 00"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-017",
+    "question": "See figure In Backward Linear Prediction, the algorithm attempts to predict a past sample x(n p) using p future/recent samples. For a stationary random how the optimum backward coefficients (k) process, are c related to the forward coefficients (k)? a cp(k) (k)",
+    "options": [
+      "l/ap = cp(k) (k) = —ap cp(k) a*p (k) = cp(k) ap(p k) = —"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-021",
+    "question": "Consider a discrete-time signal x(n) with its continuous spectrum X(w). If X(w) is sampled strictly at N equally spaced frequencies = 2TTk/N to form X(k), the corresponding time-domain x(n). sequence retrieved by the N-point IDFT represents a time-aliased version of What is the mathematical expression for this reconstructed time sequence xp(n)?",
+    "options": [
+      "xp(n) n¯rN) = x r=—oo xp(n) x(n) WR(n) = • 1 C. xp(n) —x(n) = e-j2rr/N D. X (n) r=—oo"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-024",
+    "question": "What is the peak side-lobe level of a standard Rectangular window in the frequency domain, which characterizes its poor leakage suppressionQ",
+    "options": [
+      "-13dB",
+      "-31 dB -41 dB D. -57 dB"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-027",
+    "question": "See figure Determine the exact DTF T X(o) of the two-sided exponentially decaying x(n) aln forlal 1 sequence = < (Hint: decompose it into anu(n) a-nu(-n 1) and simplify using Euler's + formula). 1 a2 —",
+    "options": [
+      "c. a2 1 2a coso + a2 1 + 2a coso + — 1 a2 2a sin o —",
+      "D. a2 1 2a coso + a2 1 2a coso + — —"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-029",
+    "question": "In digital signal processing, the discrete-time frequency variable w is fundamentally bounded within which of the following ranges due to the aliasing phenomenon0 —00 < 0) < 00 B. 0 o 2n D.",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-031",
+    "question": "The Energy Density Spectrum Sxx(w), which describes how the total energy of an aperiodic discrete signal is distributed across frequency, is defined as: sxx(o) 12 A. sxx(o) x(o) (o) B. + = 1 sxx(o) c. = 2TT sxx(o) LX(O) D. =",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-033",
+    "question": "A simple digital oscillator that continually generates a pure sinusoidal signal y(n) = cos(won)u(n) without decaying must have its poles located exactly at: B. C. D.",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-037",
+    "question": "In the mathematical derivation of the Decimation-ln-Frequency (DIF) algorithm, the odd- indexed frequency components X(2r + 1) are derived by computing the (N/2)-point DFT of which specific intermediate sequence? (x(n)",
+    "options": [
+      "+ - B. (x(n) 2)) C. x(n + N/ — D. x(2n + 1)wÆ1"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-040",
+    "question": "Which mathematical substitution of the twiddle factor is the fundamental key that allows an N- point DFT to be reduced into two N-2 point DFTs? WFI B. WN/2 - 1/171 C. —",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-043",
+    "question": "See figure In standard two-channel QNIF bank, if the given analysis lowpass a z-l, filter is Ho(z) 1 + what must be the transfer function of the = analysis highpass filter HI(z) to establish the required quadrature mirror relationship? —2",
+    "options": [
+      "HI (Z) 1 + = Z B. C. HI (z) 1 = — D."
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-047",
+    "question": "According to the Associative Property, two LTI systems connected in series (cascade) with impulse responses hl(n) and h2(n) can be replaced by a single equivalent system with impulse response: heq(n) hl(n) h2(n)",
+    "options": [
+      "+ — heq(n) hl(n) h2(n)",
+      "= * he (n) hl(n) h2(n)",
+      "• q — heq(n) D. —"
+    ],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-fa26-fe-049",
+    "question": "The output y(n) of an LTI system to an arbitrary input x(n) is determined by the Convolution Sum formula, which is mathematically expressed as: y(n) x(k)h(n + k) = B. y(n) x(n) h(k n) = — c. y(n) x(k)h(n = — D. y(n) x(k)x(n k) = —",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-su26-fe-re-001",
+    "question": "According to the Time Delay property of the One-Sided z-transform, what is the correct algebraic expression for a delay by 1 sample, - C. -zy(0)",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-011",
+    "question": "Given a 3rd-order FIR filter with the system function H(z). What is the exact value of the reflection coefficient for its equivalent Lattice structure? 13 éz-2 H(z) 1 + —z-1 + 3 = 24",
+    "options": [
+      "1/3",
+      "13/24",
+      "5/8"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-015",
+    "question": "The Levinson-Durbin algorithm is revolutionary for solving the Yule-Walker equations because it exploits the Toeplitz structure to reduce computational complexity from O(p3) down to:",
+    "options": [
+      "O(pA2)",
+      "O(pA4)",
+      "O(NA2)"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-016",
+    "question": "The Innovations Representation models any stationary random process x(n) with a specific PSD as the output of a stable LTI filter driven by which specific inputo White noise B. A single unit impulse C. A deterministic sine wave D A constant DC signal",
+    "options": [],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-018",
+    "question": "Directly computing an -point DFT using the standard summation formula demands computational complexity proportional to:",
+    "options": [
+      "O(Nlog2N)",
+      "0(N2)",
+      "O(N)"
+    ],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-020",
+    "question": "The Analysis Equation (Forward DFT) that transforms an N-point time-domain sequence x(n) into an N-point frequency sequence X(k) is mathematically defined as: N-1 x(k) (n) —j2rtkn/N = x e N—l x(k) (n) ej2TTkn/N B. = x N-1 1 x(k) x(n) -j2Ttkn/N c. = e — x(k) =",
+    "options": [],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-023",
+    "question": "According to the Linearity property of the DTF T: The transform of al.rl(n) + a2x2(n) is: alX1(G)) a2X2(G)) A. QIXI(G)) ct2X2(G)) B. + X1 (ctlG)) + X2(ct2G)) C. I(QI D. +",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-024",
+    "question": "Multiplying a time sequence by the index n i.e., nx(n) is mathematically equivalent to which operation on its DTFT spectrum",
+    "options": [
+      "Integrating X(o) over o",
+      "Multiplying X(w) over jw"
+    ],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-029",
+    "question": "For a fractional sample rate converter by factor VD, the cascaded anti-imaging and anti-aliasing filters can be combined into a single lowpass filter. What is the required cutoff frequency w_c of this combined filter?",
+    "options": [
+      "min(n/l, n/D)",
+      "max(n/l, n/D)",
+      "n/(lD)"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-030",
+    "question": "See figure Based Proakis 11.2, discrete x(n) by on a sequence a factor of D 2 produces the signal Xd(n) x(2n). In the frequency = = domain, what is the exact mathematical relationship between the new spectrum and the original spectrum B. c. + 2Tt)l - — D.",
+    "options": [],
+    "sourceAnswer": [
+      3
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-033",
+    "question": "In the frequency domain, the output spectrum Y(o) of an L Tl system is related to the input spectrum X(w) and the frequency response H(w) by which fundamental equation?",
+    "options": [
+      "Y(o) ="
+    ],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-034",
+    "question": "Determine the exact mathematical relationship for the 3-dB cutoff bandwidth of the first-order lowpass filter H(z) (I-a)/(l-az-l) (where O &lt; a &lt;l). The 3-dB frequency must satisfy which = of the following equations? 1 a2 — — A. B. I—a c. D.",
+    "options": [],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-037",
+    "question": "A relaxed LTI system is Causal if and only if its impulse response h(n) satisfies the condition: h(k) 0 = k=—oo B. h(n) 0 = C. h(n) 0 > 0 = D. h(k) < oo",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-039",
+    "question": "The Commutative Property of convolution states that the order of convolution does not matter. This is mathematically written as: [x(n) hl(n)] h2(n) x(n) [hl(n) 112 * * = * * x(n) [hl(n) + h2(n)] x(n) hl(n) + x(n) h2(n) B. * = * * x(n) ö(n) c. * x(n) h(n) h(n) x(n) D. * = *",
+    "options": [],
+    "sourceAnswer": [
+      3
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-041",
+    "question": "Compute the convolution y(n) of the signals x(n) = 1,3,1 and h(n) = What is the total length (number of non-zero samples) of the resulting sequence y(n)?",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-043",
+    "question": "When comparing FIR and IIR designs for the exact same magnitude specifications (e.g., sharp cutoff and deep stopband), which filter type generally requires a significantly lower order (fewer coefficients)?",
+    "options": [
+      "IIR Filter. FIR Filter with a Rectangular window C. FIR Filter with a Blackman window. D. Non-causal Moving Average Filter."
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-047",
+    "question": "Let X(k) be the N-point DFT of the sequence x(n), where O s n s N-1. Based on the Duality property of the DFT, what is the exact N-point DFT of the sequence s(n) = X(n)? k)",
+    "options": [
+      "or N • — 1 x(k) B. — • C. x(—k) D. N x(k) •"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-048",
+    "question": "For an 8-point FFT N = 8, requiring 3 bits), what is the correctly calculated Bit-Reversed index corresponding to the natural decimal index 3? 4",
+    "options": [],
+    "sourceAnswer": [
+      3
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-049",
+    "question": "What is the total number of complex additions required to compute an N-point DFT using the Radix-2 FFT algorithm? B. C. Elog2 N D. 2N log2N",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-re-050",
+    "question": "Evaluate the exact complex value of the buiddle factor W28",
+    "options": [],
+    "sourceAnswer": null
+  },
+  {
+    "id": "dgt302-su26-fe-002",
+    "question": "Determine the exact z-transform of the finite-duration signal x(n) = 1 (where the arrow indicates the origin n = 0 at the first sample value 2).",
+    "options": [
+      "X(z) = 2+4z-' + 5z-2 + 7z-3 + = 2Z2 + 4Z + 5 + 7z-l + Z -3 C. X(z) = 2+4Z+5z2+7z3+zs D. X(z) = 2z-l + 4z-2+ 5z-3 + 7z-4+ z-€"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-004",
+    "question": "What is the mathematical definition of the direct (two-sided) z-transform for a discrete-time x(n)? sequence",
+    "options": [
+      "X(z) = x(z) (n)z¯n",
+      "= x",
+      "x(z) = D."
+    ],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-019",
+    "question": "In the Window Method for FIR filter design, what is the correct mathematical relationship used obtain the practical impulse response h(n) from the ideal infinite response h_d(n) and the window w(n)?",
+    "options": [
+      "h(n) hd (n)/w(n) = hd (n) w(n) * C. h(n) hd(n) + w(n) = D. h(n) hd(n) w(n) — • D. D"
+    ],
+    "sourceAnswer": [
+      3
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-022",
+    "question": "You want to convert the sampling rate of a signal by a fractional factor of 3/4 (Interpolate by 3, Decimate by 4). Using Python's scipy.signal.upfirdn, what is the appropriate normalized cutoff frequency (relative to Nyquist) and the ideal DC Gain for the combined anti-aliasing/anti-imaging FIR filterQ",
+    "options": [
+      "Normalized Cutoff -1/4, Gain =3 -",
+      "Normalized Cutoff = 1/3, Gain Normalized Cutoff = 3/4, Gain =3 D. Normalized Cutoff — 1/4, Gain = 1 —"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-026",
+    "question": "If Wo finite-duration signals x(n) and h(n) have lengths Lx and Lh respectively, what is the exact number of samples in their linear convolution sequenceQ",
+    "options": [
+      "Lx + Lh",
+      "Max(Lx, Lh) D."
+    ],
+    "sourceAnswer": [
+      3
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-027",
+    "question": "The Direct Form II (Canonic Form) implementation improves upon Direct Form I by merging the delay elements. What is the total number of memory delays required for this highly memory-efficient structurel B. MxN C. max(M,N) D. MIN",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-028",
+    "question": "If a system's characteristics do not change over time, meaning a delayed input x(n-k) produces an identically delayed output y(n-k), the system is classified as. Time-Variant B. Linear C. Time-Invariant D Dynamic",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-029",
+    "question": "Two LTI systems connected in parallel can be mathematically replaced by a single equivalent system with the impulse response:",
+    "options": [
+      "heq(n) = hl(n) * h2(n)",
+      "he (n) hl(n) h2(n) = q — C. heq(n) hl(n) h2(n) D. = •"
+    ],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-031",
+    "question": "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" Wn is introduced. How is it mathematically definedQ exp(j2n/n) exp(-j2n/n) exp(-jn/n) exp(jn/n)",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-032",
+    "question": "According to Parseval's Theorem for the DFT, which equation correctly represents the conservation of energy between the time domain and frequency domain? lx(n) 12 = N-1 1 lx(n) 12 B. = — n=O N—l 1 lx(n) I lx(k) I c. n=O N-1 12 D. lx(n) =",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-033",
+    "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if is created by xs(n) its N-point DFT a new sequence = is: 1 2 e-j2rkko/N X (k) B. • 1 c. —X (k) cos(2TTko/N) 2 D.",
+    "options": [],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-034",
+    "question": "Assuming that the lengths of discrete-time signals x(n) and h(n) are L and M, respectively. When is the N-point circular convolution between these signals strictly equal to the linear convolution beureen them0 A-NSL+M-I C. N2L+M-1",
+    "options": [],
+    "sourceAnswer": [
+      2
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-042",
+    "question": "Consider the causal decaying exponential sequence x(n) an.u(n) with lal &lt; 1. What is its exact = Discrete-Time Fourier Transform X(w) ? 1 1 + ae-JC0 1 B. a c. 1 D.",
+    "options": [],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-043",
+    "question": "See figure Using the frequency differentiation dX(o) property x(n) j— n f--i do evaluate the DTF T of the x(n) 1 sequence = < c. (1 ae-jo)2 —ae¯jG) -- B. D. (1 ae-jo)2",
+    "options": [],
+    "sourceAnswer": [
+      0
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-045",
+    "question": "The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform (DTF T) of x(n) sequence is mathematically defined as:",
+    "options": [
+      "(n) ejwn x B. c. N—l (n) -j2rkn/N D. x e"
+    ],
+    "sourceAnswer": [
+      1
+    ]
+  },
+  {
+    "id": "dgt302-su26-fe-049",
+    "question": "To design a simple Notch filter that completely rejects and zeroes out a specific interference frequency (e.g., 60 Hz hum), where MUST the zeros be placed on the z-plane?",
+    "options": [
+      "Exactly on the unit circle at angles",
+      "At the origin z = 0 Outside the unit circle at z = 2 D. Exactly at z = -1 only"
+    ],
+    "sourceAnswer": [
+      0
+    ]
+  }
+]

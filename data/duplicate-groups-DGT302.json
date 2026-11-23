@@ -1,0 +1,1689 @@
+{
+  "subject": "DGT302",
+  "groups": [
+    {
+      "ids": [
+        "DGT302-585",
+        "DGT302-500",
+        "DGT302-613",
+        "DGT302-638",
+        "DGT302-663",
+        "DGT302-666",
+        "DGT302-691",
+        "DGT302-773"
+      ],
+      "reasonVi": "Cùng kiểm tra phép liên hệ z-transform và DTFT/đáp ứng tần số bằng cách đánh giá trên vòng đơn vị. Giữ 585 vì ghi rõ điều kiện ROC và ký hiệu H(z) đã sửa; các câu kia chỉ đảo chiều hỏi hoặc đổi cách diễn đạt.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-500": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-613": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-638": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-663": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-666": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-691": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-773": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-612",
+        "DGT302-553",
+        "DGT302-662",
+        "DGT302-665",
+        "DGT302-754"
+      ],
+      "reasonVi": "Cùng bài toán điều kiện cực của hệ hữu tỉ nhân quả để BIBO ổn định: mọi cực nằm trong vòng đơn vị. Giữ 612 vì nêu rõ hữu tỉ và nhân quả; không gộp câu chỉ hỏi ROC ổn định hoặc hỏi đồng thời cực và ROC.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-553": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-662": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-665": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-754": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-547",
+        "DGT302-602"
+      ],
+      "reasonVi": "Cùng so sánh các cửa sổ cơ bản để chọn Blackman có sidelobe/leakage thấp nhất trong các lựa chọn. Giữ 547 có giả thiết cùng độ dài và mức sidelobe đã hiệu chỉnh.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-602": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-527",
+        "DGT302-653",
+        "DGT302-706"
+      ],
+      "reasonVi": "Cùng xét tăng độ dài FIR cửa sổ chữ nhật: vùng chuyển tiếp hẹp hơn nhưng overshoot Gibbs không biến mất; hai câu ngắn chỉ diễn đạt lại kết luận của 527.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-653": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-706": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-512",
+        "DGT302-741"
+      ],
+      "reasonVi": "Cùng yêu cầu chiều dài FFT/đệm zero tối thiểu L+M−1 để chập vòng không cuộn chồng và bằng chập tuyến tính. Không có số liệu hay giả thiết mới.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-741": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-514",
+        "DGT302-774"
+      ],
+      "reasonVi": "Cùng nhận biết phổ của tín hiệu được lấy mẫu là các bản sao cách nhau Fs. Một câu hỏi hiệu ứng, câu kia nhận diện chính hiện tượng đó; không thay đổi điều kiện lấy mẫu.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-774": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-526",
+        "DGT302-798"
+      ],
+      "reasonVi": "Cùng ánh xạ thao tác upsample–FIR–downsample với hàm upfirdn; một câu hỏi chức năng của hàm, câu kia hỏi tên hàm cho cùng thao tác.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-798": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-534",
+        "DGT302-765"
+      ],
+      "reasonVi": "Cùng liên hệ cấu trúc lattice với reflection coefficients. Một câu hỏi tên tham số, câu kia đảo chiều hỏi cấu trúc, không thêm phép tính hoặc điều kiện mới.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-765": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-539",
+        "DGT302-727"
+      ],
+      "reasonVi": "Cùng kiểm tra quan hệ pha tuyến tính ↔ độ trễ nhóm không đổi, nhằm tránh méo do lệch trễ. Giữ 539 đã làm rõ chỉ méo pha; điều kiện FIR trong 727 không thay đổi quan hệ được hỏi.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-727": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-752",
+        "DGT302-563",
+        "DGT302-784"
+      ],
+      "reasonVi": "Cùng lựa chọn/giải thích cascade biquads/SOS cho IIR bậc cao để giảm nhạy số học. Giữ 752 vì chỉ rõ SOS và khuyến nghị SciPy; 563/784 hỏi cùng lựa chọn bằng lời tổng quát.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-563": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-784": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-629",
+        "DGT302-565",
+        "DGT302-682"
+      ],
+      "reasonVi": "Cùng kiểm tra Levinson–Durbin khai thác Toeplitz để hạ chi phí từ bậc ba xuống bậc hai. Giữ 629 có biểu thức O(p³)→O(p²) và lý do đầy đủ đã sửa OCR.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-565": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-682": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-571",
+        "DGT302-642",
+        "DGT302-695"
+      ],
+      "reasonVi": "Cùng hỏi nguyên nhân DCT thích hợp nén ảnh: energy compaction vào ít hệ số. Giữ 571 diễn đạt rõ hệ số tần số thấp và ngữ cảnh JPEG; không phải một phép tính mới.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-642": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-695": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-582",
+        "DGT302-797"
+      ],
+      "reasonVi": "Cùng hỏi hàm SciPy đánh giá đáp ứng tần số bộ lọc số: freqz. 582 bổ sung hệ số b,a nhưng không thay đổi tác vụ cần chọn.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-797": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-583",
+        "DGT302-709",
+        "DGT302-728",
+        "DGT302-740",
+        "DGT302-755",
+        "DGT302-791"
+      ],
+      "reasonVi": "Cùng định lý chập thời gian ↔ nhân phổ, tương đương Y=XH cho y=x*h. Khác nhau ở việc hỏi tên phép toán hay chọn phương trình, không có trường hợp tính toán riêng.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-709": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-728": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-740": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-755": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-791": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-604",
+        "DGT302-655"
+      ],
+      "reasonVi": "Cùng câu định nghĩa tuyến tính bằng tính chồng chất f(ax1+bx2)=af(x1)+bf(x2); đề và lựa chọn lặp lại.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-655": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-605",
+        "DGT302-656"
+      ],
+      "reasonVi": "Cùng câu nhận biết FFT tận dụng tính tuần hoàn và đối xứng; đề và lựa chọn lặp lại.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-656": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-606",
+        "DGT302-657",
+        "DGT302-723"
+      ],
+      "reasonVi": "Cùng định nghĩa nhân quả theo đầu vào hiện tại/quá khứ; 723 chỉ đổi thứ tự đáp án, không thêm điều kiện.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-657": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-723": [
+          3,
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-607",
+        "DGT302-608",
+        "DGT302-658"
+      ],
+      "reasonVi": "Cùng câu AR được dùng trong mã hóa tiếng nói vì mô hình hóa vocal tract hiệu quả với ít tham số; nội dung lựa chọn không đổi.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-608": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-658": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-609",
+        "DGT302-659"
+      ],
+      "reasonVi": "Cùng tình huống thống kê tín hiệu/nhiễu biến đổi theo thời gian và chọn adaptive LMS; không có mô hình hoặc số liệu mới.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-659": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-610",
+        "DGT302-660"
+      ],
+      "reasonVi": "Cùng trường hợp thêm Hamming vào Overlap-Save chuẩn gây điều chế biên độ; nguyên văn đề và lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-660": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-611",
+        "DGT302-661",
+        "DGT302-664"
+      ],
+      "reasonVi": "Cùng câu yêu cầu đặt anti-alias trước sampler vì không thể tách lại phổ đã chồng; không có khác biệt về điều kiện.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-661": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-664": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-614",
+        "DGT302-667"
+      ],
+      "reasonVi": "Cùng định nghĩa FIR có đáp ứng xung hữu hạn; đề và các lựa chọn lặp lại.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-667": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-615",
+        "DGT302-668"
+      ],
+      "reasonVi": "Cùng nhận xét tăng bậc predictor làm MMSE tối ưu không tăng; cả hai đã sửa cùng lựa chọn để không khẳng định luôn giảm.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-668": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-616",
+        "DGT302-669",
+        "DGT302-726"
+      ],
+      "reasonVi": "Cùng ưu điểm số học của lattice: ít nhạy hơn với lượng tử hóa hệ số/fixed-point. Câu 726 chỉ đổi ngữ cảnh thành thích nghi nhưng không hỏi thêm một tính chất khác.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-669": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-726": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-617",
+        "DGT302-670",
+        "DGT302-775"
+      ],
+      "reasonVi": "Cùng nhận biết tính in-place của FFT giúp dùng một mảng và giảm RAM; 775 là cách hỏi đảo chiều của 617/670.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-670": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-775": [
+          null,
+          null,
+          0,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-618",
+        "DGT302-671"
+      ],
+      "reasonVi": "Cùng câu chọn quan sát dài hơn để phân biệt hai tone gần nhau; mọi lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-671": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-619",
+        "DGT302-672",
+        "DGT302-725"
+      ],
+      "reasonVi": "Cùng định nghĩa BIBO: mọi đầu vào bị chặn tạo đầu ra bị chặn; 725 chỉ hoán vị lựa chọn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-672": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-725": [
+          2,
+          3,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-620",
+        "DGT302-673",
+        "DGT302-769"
+      ],
+      "reasonVi": "Cùng xác định zero-padding chỉ tăng mật độ/nội suy các điểm phổ DTFT, không thêm thông tin hay phân giải thật. Câu 769 chỉ mô tả lại bằng phổ nhìn mịn hơn.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-673": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-769": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-621",
+        "DGT302-674"
+      ],
+      "reasonVi": "Cùng phép ánh xạ bilinear từ nửa trái s-plane vào trong vòng đơn vị; đề và đáp án lặp lại.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-674": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-622",
+        "DGT302-675"
+      ],
+      "reasonVi": "Cùng nguyên lý trực giao: sai số dự đoán tối ưu trực giao với các mẫu quá khứ được dùng; không có bài toán mới.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-675": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-623",
+        "DGT302-676"
+      ],
+      "reasonVi": "Cùng so sánh Direct Form II với Form I về giảm phần tử nhớ. Không gộp câu 528 yêu cầu công thức số lượng bộ trễ cụ thể.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-676": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-624",
+        "DGT302-677",
+        "DGT302-746"
+      ],
+      "reasonVi": "Cùng mục đích anti-aliasing là loại dải trên giới hạn Nyquist trước lấy mẫu; 746 chỉ đổi vị trí đáp án.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-677": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-746": [
+          0,
+          2,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-625",
+        "DGT302-678"
+      ],
+      "reasonVi": "Cùng hỏi hiện thực bên trong scipy.signal.lfilter: transposed Direct Form II; cả hai đã bỏ khẳng định ưu việt số học không đúng.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-678": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-626",
+        "DGT302-679"
+      ],
+      "reasonVi": "Cùng độ phức tạp radix-2 FFT O(N log₂N); đề và lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-679": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-627",
+        "DGT302-628",
+        "DGT302-680",
+        "DGT302-681"
+      ],
+      "reasonVi": "Cùng phép biến đổi FIR thông thấp thành thông cao bằng đổi dấu hệ số xen kẽ, tương đương nhân (−1)^n; các bản chỉ đổi thứ tự lựa chọn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-628": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "DGT302-680": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-681": [
+          3,
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-630",
+        "DGT302-683"
+      ],
+      "reasonVi": "Cùng câu số phép toán của butterfly radix-2: một tích phức dùng chung và hai phép cộng/trừ; đề và lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-683": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-631",
+        "DGT302-684"
+      ],
+      "reasonVi": "Cùng chuẩn bị chiều dài không phải lũy thừa 2 cho một FFT radix-2-only bằng zero-padding; hai bản đã được sửa giả thiết giống hệt.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-684": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-632",
+        "DGT302-685",
+        "DGT302-732"
+      ],
+      "reasonVi": "Cùng định nghĩa hệ không nhớ chỉ phụ thuộc đầu vào hiện tại; 732 chỉ thay vị trí các distractor.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-685": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-732": [
+          3,
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-633",
+        "DGT302-686"
+      ],
+      "reasonVi": "Cùng điều kiện Nyquist cơ bản Fs>2Fmax và cùng bốn lựa chọn, không có số liệu mới.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-686": [
+          null,
+          null,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-634",
+        "DGT302-651",
+        "DGT302-687",
+        "DGT302-704"
+      ],
+      "reasonVi": "Cùng kiểm tra chi phí lãng phí khi chèn zero rồi lọc trực tiếp và cách polyphase tránh các tích với zero. Hai dạng hỏi ưu điểm/nhược điểm là cùng tác vụ so sánh hiệu quả nội suy.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-651": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "DGT302-687": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-704": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-635",
+        "DGT302-688"
+      ],
+      "reasonVi": "Cùng câu JPEG thường loại hệ số tần số cao sau lượng tử hóa; không có block ảnh hay phép tính khác.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-688": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-636",
+        "DGT302-689"
+      ],
+      "reasonVi": "Cùng giải thích vì sao Overlap-Save bỏ M−1 mẫu đầu do chập vòng; đề và lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-689": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-637",
+        "DGT302-690"
+      ],
+      "reasonVi": "Cùng câu viết đầy đủ chữ ROC là Region of Convergence; lặp nguyên văn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-690": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-639",
+        "DGT302-692"
+      ],
+      "reasonVi": "Cùng mục tiêu của bộ lọc Wiener: sai số ước lượng bình phương trung bình; không gộp với câu predictor khác bài toán thống kê.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-692": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-640",
+        "DGT302-693"
+      ],
+      "reasonVi": "Cùng đỉnh cross-correlation xác định độ trễ khớp tốt nhất; không có quy ước dấu hoặc dữ liệu tín hiệu khác nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-693": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-641",
+        "DGT302-694",
+        "DGT302-776"
+      ],
+      "reasonVi": "Cùng tính đối xứng liên hợp/Hermitian của DFT tín hiệu thực. 776 hỏi khai thác tính chất đó để giảm tính toán nhưng vẫn chỉ chọn tên cùng một tính chất.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-694": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-776": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-643",
+        "DGT302-696",
+        "DGT302-757"
+      ],
+      "reasonVi": "Cùng ưu điểm tính linh hoạt phần mềm của xử lý số; 757 chỉ hoán vị các lựa chọn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-696": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-757": [
+          3,
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-644",
+        "DGT302-697"
+      ],
+      "reasonVi": "Cùng câu Fourier Series chủ yếu biểu diễn tín hiệu tuần hoàn; đề và lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-697": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-645",
+        "DGT302-698"
+      ],
+      "reasonVi": "Cùng mô hình nhiễu trắng xấp xỉ cho lỗi lượng tử ADC; không có giả thiết phân bố/số bit khác.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-698": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-646",
+        "DGT302-699"
+      ],
+      "reasonVi": "Cùng câu tăng N gấp đôi thì số tầng FFT radix-2 tăng một; không có N cụ thể hay mô hình FFT khác.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-699": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-647",
+        "DGT302-700"
+      ],
+      "reasonVi": "Cùng câu DSP processor tối ưu cho MAC; các lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-700": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-648",
+        "DGT302-701",
+        "DGT302-721"
+      ],
+      "reasonVi": "Cùng khối Unit Delay gây trễ một mẫu; 721 chỉ đổi vị trí phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-701": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-721": [
+          2,
+          0,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-649",
+        "DGT302-702"
+      ],
+      "reasonVi": "Cùng so sánh main-lobe hẹp nhất ở cùng chiều dài M và chọn rectangular; đề và lựa chọn giống nhau.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-702": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-650",
+        "DGT302-703"
+      ],
+      "reasonVi": "Cùng câu IIR thông thường chứa feedback; không thêm cấu trúc hay phương trình riêng.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-703": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-652",
+        "DGT302-705"
+      ],
+      "reasonVi": "Cùng tình huống hai hệ ổn định có magnitude giống nhưng phase khác nên waveform có thể khác; lặp nguyên văn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-705": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-654",
+        "DGT302-707"
+      ],
+      "reasonVi": "Cùng phép giảm tần số lấy mẫu Fs/D khi downsample D; không có D hay Fs cụ thể khác.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-707": [
+          null,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-717",
+        "DGT302-742"
+      ],
+      "reasonVi": "Cùng ứng dụng unilateral z-transform cho phương trình sai phân có điều kiện ban đầu; chỉ đổi thứ tự phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-742": [
+          0,
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-719",
+        "DGT302-747"
+      ],
+      "reasonVi": "Cùng miền hội tụ của dãy nhân quả ở ngoài cực ngoài cùng; chỉ hoán vị lựa chọn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-747": [
+          3,
+          0,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-738",
+        "DGT302-744"
+      ],
+      "reasonVi": "Cùng quan hệ lấy mẫu dưới Nyquist gây chồng phổ/aliasing. Một câu hỏi hiện tượng khi giảm Fs, câu kia hỏi điều kiện gây hiện tượng, không có số liệu mới.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-744": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-739",
+        "DGT302-793"
+      ],
+      "reasonVi": "Cùng ý nghĩa khái niệm của Parseval là bảo toàn năng lượng giữa hai miền. Không gộp câu 521 kiểm tra hệ số chuẩn hóa 1/N cụ thể.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-793": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-762",
+        "DGT302-763",
+        "DGT302-764"
+      ],
+      "reasonVi": "Cùng câu phối hợp điều kiện ROC ngoài cực ngoài cùng và cực trong vòng đơn vị cho nhân quả + ổn định; ba bản giống hoàn toàn.",
+      "kind": "exact",
+      "optionMaps": {
+        "DGT302-763": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "DGT302-764": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-768",
+        "DGT302-792"
+      ],
+      "reasonVi": "Cùng nguyên tắc FFT chia DFT lớn thành các DFT nhỏ và ghép lại. Hai cách hỏi vì sao nhanh/chia để trị yêu cầu cùng một đáp án về recursive decomposition.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-792": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-780",
+        "DGT302-767"
+      ],
+      "reasonVi": "Cùng thao tác zero-stuffing tạo ảnh phổ và vì thế cần low-pass anti-imaging. Giữ 780 vì phân biệt rõ zero-stuffing với nội suy hoàn chỉnh, tránh chữ always trong 767.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-767": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "DGT302-786",
+        "DGT302-788"
+      ],
+      "reasonVi": "Cùng tác vụ đặt lọc chống alias trước downsample; làm ngược có thể gây mất thông tin do chồng phổ mà lọc sau không sửa được. Giữ 786 có phát biểu lý do chính xác hơn.",
+      "kind": "reworded",
+      "optionMaps": {
+        "DGT302-788": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "keptDistinct": [
+    {
+      "ids": [
+        "DGT302-501",
+        "DGT302-612",
+        "DGT302-762"
+      ],
+      "reasonVi": "501 hỏi ROC chứa vòng đơn vị; 612 hỏi điều kiện cực khi đã giả sử nhân quả; 762 hỏi đồng thời cực và ROC. Đây là các nhiệm vụ khác nhau, không gộp chỉ vì cùng ổn định."
+    },
+    {
+      "ids": [
+        "DGT302-504",
+        "DGT302-731",
+        "DGT302-618"
+      ],
+      "reasonVi": "504 hỏi giới hạn bất định; 731 hỏi chiều thay đổi độ phân giải khi tăng cửa sổ; 618 hỏi chọn cách phân biệt tone gần nhau. Cùng STFT nhưng điều kiện và yêu cầu khác."
+    },
+    {
+      "ids": [
+        "DGT302-507",
+        "DGT302-540",
+        "DGT302-713",
+        "DGT302-745",
+        "DGT302-779"
+      ],
+      "reasonVi": "Lần lượt hỏi lợi ích minimum-phase, zero biến thành pole khi nghịch đảo, điều kiện H≠0, vị trí zero minimum-phase và khuếch đại nhiễu khi H nhỏ; không phải cùng câu hỏi."
+    },
+    {
+      "ids": [
+        "DGT302-508",
+        "DGT302-600",
+        "DGT302-715",
+        "DGT302-772"
+      ],
+      "reasonVi": "Định nghĩa WN, tính W8², ý nghĩa hình học twiddle và hiện thực phần cứng phép nhân −j là các nhiệm vụ riêng; 600 có phép tính cụ thể."
+    },
+    {
+      "ids": [
+        "DGT302-511",
+        "DGT302-547",
+        "DGT302-649",
+        "DGT302-572",
+        "DGT302-737"
+      ],
+      "reasonVi": "Trade-off taper, cửa sổ sidelobe thấp nhất, cửa sổ main-lobe hẹp nhất, hiệu ứng cắt ngắn và off-bin leakage hỏi những thuộc tính/điều kiện khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-512",
+        "DGT302-549",
+        "DGT302-591",
+        "DGT302-735"
+      ],
+      "reasonVi": "512 hỏi padding để chập vòng bằng chập thẳng; 549 hỏi chiều dài tổng quát; 591 có dữ liệu cụ thể; 735 hỏi cơ chế modulo. Giữ riêng các mục tiêu."
+    },
+    {
+      "ids": [
+        "DGT302-513",
+        "DGT302-596",
+        "DGT302-714",
+        "DGT302-720"
+      ],
+      "reasonVi": "Thứ tự vào/ra DIF, vị trí twiddle DIF, vị trí twiddle DIT và mục đích bit-reversal là các tính chất khác; đặc biệt DIT/DIF không được gộp."
+    },
+    {
+      "ids": [
+        "DGT302-516",
+        "DGT302-579",
+        "DGT302-545",
+        "DGT302-756"
+      ],
+      "reasonVi": "516 yêu cầu tính cutoff và gain cho 3/4; 579 hỏi công thức cutoff tổng quát; 545 hỏi trình tự xử lý; 756 hỏi lý do gain I. Giữ bài tính và các đại lượng khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-517",
+        "DGT302-718",
+        "DGT302-782"
+      ],
+      "reasonVi": "517 yêu cầu tên eigenfunction; 718 yêu cầu mô tả tần số/biên độ/pha đầu ra; 782 hỏi riêng ý nghĩa |H|. Cùng LTI nhưng câu trả lời kiểm tra các kỹ năng khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-518",
+        "DGT302-599",
+        "DGT302-626",
+        "DGT302-646",
+        "DGT302-568"
+      ],
+      "reasonVi": "Số phép nhân với N=1024, công thức phép cộng, bậc độ phức tạp, số tầng khi N gấp đôi và DFT trực tiếp là năm bài toán khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-519",
+        "DGT302-576"
+      ],
+      "reasonVi": "Nhân cos tạo hai dịch phổ với hệ số 1/2; nhân một hàm mũ phức chỉ tạo một dịch phổ. Điều kiện khác nên phải giữ cả hai."
+    },
+    {
+      "ids": [
+        "DGT302-521",
+        "DGT302-739"
+      ],
+      "reasonVi": "521 kiểm tra phương trình Parseval có hệ số 1/N; 739 chỉ hỏi ý nghĩa bảo toàn năng lượng. Không mất câu về chuẩn hóa khi gộp câu khái niệm."
+    },
+    {
+      "ids": [
+        "DGT302-523",
+        "DGT302-542",
+        "DGT302-570"
+      ],
+      "reasonVi": "Định nghĩa DTFT, z-transform và DFT có miền biến đổi, giới hạn tổng và kernel khác nhau; độ giống câu chữ không phải trùng."
+    },
+    {
+      "ids": [
+        "DGT302-524",
+        "DGT302-648"
+      ],
+      "reasonVi": "Bộ ba building blocks không trùng câu nhận biết riêng Unit Delay một mẫu."
+    },
+    {
+      "ids": [
+        "DGT302-525",
+        "DGT302-544",
+        "DGT302-631"
+      ],
+      "reasonVi": "Radix-4 yêu cầu power-of-four; radix-2 power-of-two; câu 631 hỏi chuẩn bị dữ liệu bằng padding. Điều kiện và nhiệm vụ khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-528",
+        "DGT302-623"
+      ],
+      "reasonVi": "528 hỏi số bộ trễ max(M,N); 623 chỉ hỏi đại lượng được giảm khi so Form I/II. Giữ công thức định lượng."
+    },
+    {
+      "ids": [
+        "DGT302-530",
+        "DGT302-639"
+      ],
+      "reasonVi": "530 là mục tiêu dự đoán tuyến tính; 639 là mục tiêu bộ lọc Wiener ước lượng tín hiệu. Cùng MSE nhưng bài toán thống kê khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-532",
+        "DGT302-729"
+      ],
+      "reasonVi": "MA là all-zero; AR là all-pole. Cấu trúc khác nhau và distractor gần nhau nên không được gộp."
+    },
+    {
+      "ids": [
+        "DGT302-533",
+        "DGT302-573"
+      ],
+      "reasonVi": "533 hỏi ROC khi cộng các z-transform; 573 hỏi tuyến tính DTFT theo hệ số. Cùng linearity nhưng miền và điều cần tìm khác."
+    },
+    {
+      "ids": [
+        "DGT302-535",
+        "DGT302-510",
+        "DGT302-574"
+      ],
+      "reasonVi": "DTFT của a^n u[n], DTFT của n a^n u[n] và tính chất đạo hàm tần số tổng quát là những phép tính/đầu vào khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-536",
+        "DGT302-633"
+      ],
+      "reasonVi": "Tên Nyquist/folding frequency Fs/2 khác bài chọn điều kiện lấy mẫu Fs>2Fmax."
+    },
+    {
+      "ids": [
+        "DGT302-537",
+        "DGT302-743"
+      ],
+      "reasonVi": "537 hỏi vị trí zero để notch một ω0; 743 yêu cầu giải zeros của comb H(z)=1−z^−M. Không cùng phép tính."
+    },
+    {
+      "ids": [
+        "DGT302-538",
+        "DGT302-543",
+        "DGT302-572"
+      ],
+      "reasonVi": "Nhân thời gian tương ứng chập phổ; công thức tạo FIR hd·w; và hậu quả leakage/resolution của cắt ngắn là các câu khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-539",
+        "DGT302-594"
+      ],
+      "reasonVi": "539 hỏi pha/độ trễ nhóm; 594 hỏi điều kiện đối xứng của các hệ số FIR. Không gộp chỉ vì linear phase."
+    },
+    {
+      "ids": [
+        "DGT302-554",
+        "DGT302-583",
+        "DGT302-790",
+        "DGT302-794"
+      ],
+      "reasonVi": "Tỉ số Y(z)/X(z), tích phổ biên độ Y=XH, PSD nhân |H|² và tên định lý chập trong z-domain kiểm tra các quan hệ không đồng nhất."
+    },
+    {
+      "ids": [
+        "DGT302-555",
+        "DGT302-501"
+      ],
+      "reasonVi": "555 là bài ROC cụ thể với các cực 0.5 và 2; 501 là điều kiện ổn định tổng quát. Giữ bài vận dụng số."
+    },
+    {
+      "ids": [
+        "DGT302-556",
+        "DGT302-724"
+      ],
+      "reasonVi": "Thời gian rời rạc theo chỉ số nguyên không trùng lượng tử hóa biên độ ADC."
+    },
+    {
+      "ids": [
+        "DGT302-557",
+        "DGT302-766"
+      ],
+      "reasonVi": "557 tính một wedge bandpass với số liệu cụ thể; 766 hỏi điều kiện không chồng các bản phổ. Giữ bài tính."
+    },
+    {
+      "ids": [
+        "DGT302-558",
+        "DGT302-514"
+      ],
+      "reasonVi": "558 hỏi mô hình nhân impulse train trong thời gian; 514 hỏi kết quả lặp phổ ở miền tần số. Không đồng nhất nhiệm vụ."
+    },
+    {
+      "ids": [
+        "DGT302-560",
+        "DGT302-734",
+        "DGT302-780"
+      ],
+      "reasonVi": "560 hỏi loại bộ lọc D/A tương tự; 734 hỏi kernel sinc lý tưởng; 780 hỏi ảnh phổ sau chèn zero ở rate số. Khác hệ/biểu diễn."
+    },
+    {
+      "ids": [
+        "DGT302-561",
+        "DGT302-534"
+      ],
+      "reasonVi": "561 tính hệ số phản xạ K3 từ đa thức cụ thể; 534 chỉ nhận diện tên tham số lattice."
+    },
+    {
+      "ids": [
+        "DGT302-562",
+        "DGT302-614",
+        "DGT302-650"
+      ],
+      "reasonVi": "562 phân biệt định nghĩa FIR/IIR và hiện thực thông thường; 614 hỏi độ dài đáp ứng FIR; 650 hỏi feedback của IIR. Không gộp hai mô hình thành một."
+    },
+    {
+      "ids": [
+        "DGT302-566",
+        "DGT302-781"
+      ],
+      "reasonVi": "566 mô hình tạo quá trình bằng white innovations; 781 hỏi whitening loại tương quan phục vụ dự đoán. Hai chiều xử lý và yêu cầu khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-567",
+        "DGT302-603",
+        "DGT302-753"
+      ],
+      "reasonVi": "Vế phải Wiener–Hopf, nguồn gốc autocorrelation Yule–Walker và so sánh hai hệ phương trình là ba mục tiêu thống kê riêng."
+    },
+    {
+      "ids": [
+        "DGT302-569",
+        "DGT302-620"
+      ],
+      "reasonVi": "569 định nghĩa DFT như mẫu DTFT của record hữu hạn; 620 hỏi tác dụng khi zero-padding. Đầu vào/thao tác hỏi khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-575",
+        "DGT302-577",
+        "DGT302-641"
+      ],
+      "reasonVi": "Phase của real signal, phổ của real-even signal và Hermitian DFT có giả thiết khác nhau; real-even là điều kiện thêm quan trọng."
+    },
+    {
+      "ids": [
+        "DGT302-578",
+        "DGT302-654",
+        "DGT302-580",
+        "DGT302-770"
+      ],
+      "reasonVi": "Định nghĩa chọn mẫu x[Dm], rate Fs/D, công thức alias-sum D=2 và hiệu ứng giãn phổ là các đại lượng khác nhau, không gộp toàn bộ multirate."
+    },
+    {
+      "ids": [
+        "DGT302-581",
+        "DGT302-634",
+        "DGT302-708"
+      ],
+      "reasonVi": "Polyphase tổng quát, bỏ tích với zero trong nội suy và Noble identity đổi thứ tự lọc/rate là các cơ chế khác nhau; chỉ gộp các bản cùng tác vụ skip-zero."
+    },
+    {
+      "ids": [
+        "DGT302-582",
+        "DGT302-625",
+        "DGT302-796"
+      ],
+      "reasonVi": "freqz đánh giá đáp ứng, cấu trúc nội bộ lfilter và chọn lfilter để lọc dữ liệu là các câu khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-586",
+        "DGT302-760"
+      ],
+      "reasonVi": "586 phân loại một H(z) cụ thể; 760 hỏi mục đích low-pass nói chung. Giữ trường hợp có công thức."
+    },
+    {
+      "ids": [
+        "DGT302-587",
+        "DGT302-606"
+      ],
+      "reasonVi": "587 dùng điều kiện h[n]=0 với n<0 của LTI nghỉ ban đầu; 606 định nghĩa nhân quả theo đầu vào. Hai biểu diễn/kỹ năng riêng."
+    },
+    {
+      "ids": [
+        "DGT302-593",
+        "DGT302-595",
+        "DGT302-621",
+        "DGT302-712",
+        "DGT302-750"
+      ],
+      "reasonVi": "Bậc FIR/IIR, pre-warping, ánh xạ ổn định bilinear, Chebyshev ripple và drawback warping là các câu thiết kế khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-597",
+        "DGT302-598",
+        "DGT302-720"
+      ],
+      "reasonVi": "DFT duality, phép đảo bit số 3 trong N=8 và mục đích bit-reversal là các phép tính/khái niệm riêng."
+    },
+    {
+      "ids": [
+        "DGT302-605",
+        "DGT302-768"
+      ],
+      "reasonVi": "Đối xứng/tuần hoàn twiddle không đồng nhất với bước chia để trị thành các DFT nhỏ; giữ cả property và algorithm decomposition."
+    },
+    {
+      "ids": [
+        "DGT302-611",
+        "DGT302-711",
+        "DGT302-786"
+      ],
+      "reasonVi": "611 đặt lọc trước sampler; 711 đánh giá ba thay đổi hậu lấy mẫu; 786 hỏi lọc trước downsample số. Giữ khác biệt can thiệp và thao tác lấy mẫu."
+    },
+    {
+      "ids": [
+        "DGT302-615",
+        "DGT302-736"
+      ],
+      "reasonVi": "Tăng bậc predictor và cho phép quan sát tương lai mở rộng hai tập nghiệm khác nhau; không gộp chỉ vì MMSE không tăng."
+    },
+    {
+      "ids": [
+        "DGT302-644",
+        "DGT302-710",
+        "DGT302-717"
+      ],
+      "reasonVi": "Fourier Series cho periodic, Fourier Transform cho aperiodic và unilateral Z cho initial conditions là ba loại biểu diễn khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-716",
+        "DGT302-771"
+      ],
+      "reasonVi": "Oversampling giảm nhiễu trong băng qua tăng rate; tăng bits ADC giảm bước lượng tử. Hai thay đổi phần cứng khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-722",
+        "DGT302-789"
+      ],
+      "reasonVi": "Phân loại tín hiệu là random theo tính bất định khác câu giải thích vì sao phải dùng mô tả thống kê."
+    },
+    {
+      "ids": [
+        "DGT302-749",
+        "DGT302-761",
+        "DGT302-783"
+      ],
+      "reasonVi": "Nguy cơ overflow, phép right-shift chống overflow và lỗi rounding/truncation là các mục tiêu fixed-point khác nhau."
+    },
+    {
+      "ids": [
+        "DGT302-751",
+        "DGT302-758"
+      ],
+      "reasonVi": "Ưu thế power/area của fixed-point khác ưu thế dynamic range của floating-point."
+    },
+    {
+      "ids": [
+        "DGT302-759",
+        "DGT302-785"
+      ],
+      "reasonVi": "Một câu chọn Fs an toàn cho fmax=8 kHz, câu kia đánh giá Fs=12 kHz bị alias. Có số liệu/quyết định khác nhau nên giữ cả hai."
+    },
+    {
+      "ids": [
+        "DGT302-795",
+        "DGT302-799"
+      ],
+      "reasonVi": "firwin thiết kế FIR, butter thiết kế IIR Butterworth; similarity câu chữ không được gộp hai hàm khác nhau."
+    }
+  ],
+  "summary": {
+    "reviewedQuestions": 298,
+    "duplicateGroups": 64,
+    "hiddenAliases": 98,
+    "visibleAfterDedupe": 200,
+    "mappingPolicy": "Option maps are conservative: exact normalized option text only; null when alternatives are not safely identical. Preserve unmapped legacy answer records under hidden aliases rather than guessing.",
+    "canonicalPolicy": "Prefer clearer corrected record for 585,612,547,752,629,780; use lowest ID among otherwise comparable records. Correction metadata/source references for aliases must remain stored."
+  }
+}

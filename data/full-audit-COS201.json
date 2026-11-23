@@ -1,0 +1,4315 @@
+{
+  "subject": "COS201",
+  "reviewedAt": "2026-11-09",
+  "scope": "All 214 rows and all alternatives inspected independently; no app/progress edits. Distinguishes correct answer from malformed/ambiguous stem.",
+  "summary": {
+    "total": 214,
+    "changeRows": 68,
+    "required": 47,
+    "clarify": 21,
+    "changedKeys": [
+      "COS201-829"
+    ],
+    "needsContext": [
+      852,
+      886,
+      898
+    ]
+  },
+  "ledger": [
+    {
+      "id": "COS201-800",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Structured redundancy lets a decoder exploit valid-codeword structure; bandwidth or power increase alone is not coding gain.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-801",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        4
+      ],
+      "rationale": "Non-prefix-free does not imply non-uniquely-decodable: {0,01} is a counterexample; instant decoding is not guaranteed.",
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ]
+    },
+    {
+      "id": "COS201-802",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For coherent BPSK in AWGN, Pb=Q(sqrt(2Eb/N0)); its high-SNR tail decreases approximately exponentially, not universally for every channel.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-803",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Angle modulation places the message in the instantaneous phase/frequency of a fixed-amplitude carrier.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-804",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Regenerative decisions prevent analog noise from accumulating stage after stage, but decision errors are still possible.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-805",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Sampling exactly at the Nyquist rate leaves no transition band for a practical anti-alias/reconstruction filter.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-806",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Frequency lock means a constant phase difference, possibly zero; the original B and C are logically overlapping.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-807",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "At its decision sample, a matched filter computes the inner product with a conjugated template, equal to a correlator.",
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ]
+    },
+    {
+      "id": "COS201-808",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Multiplying sinusoids uses cos(a)cos(b)=[cos(a+b)+cos(a-b)]/2, producing sum/difference frequency translation.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-809",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "The receiver must extract weak impaired signals, synchronize and compensate the channel; the other choices are not the general reason.",
+      "references": []
+    },
+    {
+      "id": "COS201-810",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "For fixed line coding/pulse shaping, PCM bit rate=Nchannels*fs*nbits, so raising any factor raises required bandwidth.",
+      "references": []
+    },
+    {
+      "id": "COS201-811",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "The Nyquist rate of a real lowpass signal with highest frequency W is 2W; exact-boundary reconstruction needs additional conditions.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-812",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A basic delta modulator sends one quantized up/down bit indicating the sign of the prediction error, not its full numerical difference.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ]
+    },
+    {
+      "id": "COS201-813",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Carrier translation enables efficient radiation and channel separation; it does not by itself compress message bandwidth.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-814",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "An ideal constant-envelope FSK waveform does not encode information in amplitude, so amplitude compression need not erase its message.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/continuous-phase-modulation.html"
+      ]
+    },
+    {
+      "id": "COS201-815",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Static Huffman coding is constructed from source-symbol probabilities; adaptive variants are a separate case.",
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ]
+    },
+    {
+      "id": "COS201-816",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Above FM threshold with white input noise, discriminator noise PSD is proportional to f^2; integrating over [0,W] yields W^3.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-817",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "OFDM divides a frequency-selective wideband channel into narrow subcarriers; a sufficiently long cyclic prefix helps handle multipath.",
+      "references": []
+    },
+    {
+      "id": "COS201-818",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Noise degrades detection/reconstruction and therefore limits communication performance.",
+      "references": []
+    },
+    {
+      "id": "COS201-819",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Ideal white noise has constant power spectral density; whiteness does not mean zero power.",
+      "references": []
+    },
+    {
+      "id": "COS201-820",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A filter selectively alters frequency components; among the listed definitions frequency-selective system is the appropriate one.",
+      "references": []
+    },
+    {
+      "id": "COS201-821",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "QAM branches are mixed with orthogonal references and low-pass filtered to remove the twice-carrier terms.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-822",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Conventional double-sideband AM includes a transmitted carrier and both sidebands.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-823",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        4
+      ],
+      "rationale": "ISI is structured mixing from adjacent symbols via channel memory, unlike independent additive white noise.",
+      "references": []
+    },
+    {
+      "id": "COS201-824",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Multiplexing combines several message streams onto a shared transmission channel.",
+      "references": []
+    },
+    {
+      "id": "COS201-825",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "SSB transmits only one sideband and requires message bandwidth W, rather than roughly 2W for DSB AM.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-826",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A scalar Gaussian law is specified by mean and variance; standard deviation can replace variance.",
+      "references": []
+    },
+    {
+      "id": "COS201-827",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Equal-energy orthogonal BFSK has squared distance 2Eb versus 4Eb for antipodal BPSK; coherent AWGN detection therefore needs twice Eb, about 3.01 dB.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-828",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Layering exposes interfaces and permits components to be designed/tested independently; it does not inherently change RF bandwidth.",
+      "references": []
+    },
+    {
+      "id": "COS201-829",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A larger LZ dictionary may improve phrase matches but increases memory and reference-index cost; no monotonic compression-ratio guarantee exists.",
+      "references": [
+        "https://dspace.mit.edu/bitstream/handle/1721.1/98262/18-310c-fall-2007/contents/lecture-notes/6_lempelziv.pdf"
+      ]
+    },
+    {
+      "id": "COS201-830",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "An ideal lowpass has a rectangular magnitude response; its sharp discontinuity implies a noncausal infinite-duration ideal impulse response.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-831",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "F_X(x)=P(X<=x), so the CDF accumulates probability up to x.",
+      "references": []
+    },
+    {
+      "id": "COS201-832",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For a known deterministic signal in white noise, Cauchy-Schwarz gives the matched filter H(f)=kS*(f)e^(-j2pi fT) as the SNR maximizer.",
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ]
+    },
+    {
+      "id": "COS201-833",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Lost orthogonality gives nonzero cross-inner-products between subcarriers and hence intercarrier interference.",
+      "references": []
+    },
+    {
+      "id": "COS201-834",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Independent probabilities multiply, so -log(pq)=-log p-log q gives additive self-information.",
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ]
+    },
+    {
+      "id": "COS201-835",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "A frequency discriminator converts instantaneous frequency variation to a baseband voltage.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-836",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "About 10 dB is a conventional approximate FM-discriminator threshold, not a universal receiver-independent constant.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-837",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Uncompensated bandwidth limitation can spread symbol pulses; a bandlimited Nyquist pulse need not cause ISI at sampling instants.",
+      "references": []
+    },
+    {
+      "id": "COS201-838",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "FM defines instantaneous frequency as fc+kf*m(t); carrier amplitude is held constant.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-839",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Absolute integrability is a sufficient condition for an ordinary Fourier transform, not a necessary condition for all generalized transforms.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-840",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For continuous-time LTI BIBO stability, integral |h(t)| dt is finite; finite energy alone does not suffice.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-841",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Conditional probability updates the event law when another event/information is given.",
+      "references": []
+    },
+    {
+      "id": "COS201-842",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For small modulation index, the carrier and first pair of sidebands dominate NBFM, giving approximate bandwidth 2W.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-843",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A CDF is nondecreasing because events {X<=x} are nested as x increases.",
+      "references": []
+    },
+    {
+      "id": "COS201-844",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "A transmitter maps the message into a waveform appropriate to the medium; the source and destination have different functions.",
+      "references": []
+    },
+    {
+      "id": "COS201-845",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For conventional AM with one sinusoidal tone and 0<=mu<=1, sideband/total power=mu^2/(2+mu^2), whose maximum is 1/3.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-846",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A time shift multiplies the spectrum by exp(-j2pi f t0), changing phase without changing magnitude.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-847",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "The OFDM receiver FFT projects the received block onto orthogonal discrete-frequency subcarriers.",
+      "references": []
+    },
+    {
+      "id": "COS201-848",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Standard deviation is sqrt(variance), with the same units as the original scalar variable.",
+      "references": []
+    },
+    {
+      "id": "COS201-849",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "With fixed delta step, increasing fs raises the maximum staircase tracking slope Delta*fs and reduces slope overload.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ]
+    },
+    {
+      "id": "COS201-851",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For coherent DSB-SC product detection, the message term is scaled by cos(phi); at phi=90 degrees it vanishes. General I/Q detection instead rotates the constellation.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-852",
+      "status": "needs_context",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "The indicated chapter overview is plausible for a communications course, but the exact course-specific scope needs the original syllabus/slides.",
+      "references": [],
+      "contextNeeded": "Exact course-specific chapter scope needs the original course outline."
+    },
+    {
+      "id": "COS201-853",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For fixed sharp magnitude specifications, an FIR usually needs more coefficients than an IIR; FIR can be stable and linear phase.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-854",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Propagation loss is a medium impairment; up-conversion, coding and demodulation are deliberate processing operations.",
+      "references": []
+    },
+    {
+      "id": "COS201-855",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Under the stated I+jQ convention the complex envelope is g_I+j*g_Q. The source image shows A=a(t)*cos(phi(t)), which OCR truncated.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-856",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "The OSI reference model has seven layers.",
+      "references": []
+    },
+    {
+      "id": "COS201-857",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "VSB sends one full sideband plus a vestige of the other, between SSB and double-sideband AM in bandwidth/demodulation complexity.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-858",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "I denotes in-phase and Q denotes quadrature; these are orthogonal carrier components.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-859",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "cos(2pi fc t) has Fourier impulses of weight 1/2 at f=+fc and f=-fc.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-860",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A baseband message occupying up to W shifts to sidebands fc-W through fc+W, for AM bandwidth 2W.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-861",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "DSB-SC suppresses the carrier term and retains upper/lower message sidebands.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-862",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "A periodic signal has Fourier-series lines; its Fourier transform in the distributional sense is a weighted impulse train.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-863",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Optical fiber is a physical propagation medium; synchronization and protocol/modulator blocks are processing abstractions.",
+      "references": []
+    },
+    {
+      "id": "COS201-864",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Carrier/timing recovery from an unknown received waveform is receiver processing; generic synchronization can also exist in a transmitter.",
+      "references": []
+    },
+    {
+      "id": "COS201-865",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Conventional AM varies the carrier envelope proportional to the message while keeping nominal frequency fixed.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-866",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "With a normalized message, mu>1 can make the AM envelope change sign and defeat a simple envelope detector; the OCR stem lost mu.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-867",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Magnitude |H(f)| is the amplitude/gain response, while arg H is phase and minus its slope is group delay.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-868",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A Costas loop recovers a coherent carrier reference for suppressed-carrier modulation; an envelope detector cannot do so.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-869",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Software-defined radio implements suitable radio signal-processing functions with programmable software/DSP hardware.",
+      "references": []
+    },
+    {
+      "id": "COS201-870",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Narrowband passband signaling requires occupied bandwidth W much smaller than carrier center fc.",
+      "references": []
+    },
+    {
+      "id": "COS201-871",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "A switching modulator generates multiple translated bands; a bandpass filter selects the desired one.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-872",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Parseval/Rayleigh equates time-domain energy with frequency-domain energy under the applicable transform normalization.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-873",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "An initially-at-rest LTI system is determined by h through y=x*h.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-874",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "For a single-tone AM signal at mu=1, Ptotal=Pc*(1+mu^2/2)=1.5Pc, giving Pc/Ptotal=2/3.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-875",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The Fourier transform of an ideal periodic impulse train is another reciprocal-spacing impulse train.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-876",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "FDM assigns different frequency bands to different simultaneously transmitted streams.",
+      "references": []
+    },
+    {
+      "id": "COS201-877",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "For a nonzero normalized AM message recovered by an ideal envelope detector, 0<mu<=1 avoids overmodulation.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-878",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "x(at) transforms to (1/|a|)X(f/a); time compression expands spectral scale.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-879",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Both absolute integrability and the identically-zero signal guarantee an ordinary Fourier transform. The original alternatives B/C are both valid.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-880",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "For an initially-at-rest LTI system, causality is equivalent to h(t)=0 for t<0.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-881",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "The Paley-Wiener causality criterion constrains realizable causal finite-energy transfer magnitudes; the other named criteria do not express that condition.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-882",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "A transmitter maps the message into a waveform appropriate to the medium; the source and destination have different functions.",
+      "references": []
+    },
+    {
+      "id": "COS201-883",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "A zero-forcing frequency-domain equalizer divides Y_k by a nonzero H_k; at a channel null this inverse is undefined and near nulls it enhances noise.",
+      "references": []
+    },
+    {
+      "id": "COS201-884",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Physical noise/distortion are continuous analog phenomena even when the information alphabet is digital.",
+      "references": []
+    },
+    {
+      "id": "COS201-885",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Multiplying sinusoids uses cos(a)cos(b)=[cos(a+b)+cos(a-b)]/2, producing sum/difference frequency translation.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-886",
+      "status": "needs_context",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "The question asks the particular course/textbook focus; PHY is consistent with these questions but requires the actual syllabus to certify.",
+      "references": [],
+      "contextNeeded": "Exact course/textbook layer emphasis needs original syllabus."
+    },
+    {
+      "id": "COS201-887",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "I/Q multiplexing uses cos and sin references at the same fc, with inner product zero over the suitable interval.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-888",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A deterministic signal is specified as a function of time rather than as a random realization; it need not be constant.",
+      "references": []
+    },
+    {
+      "id": "COS201-889",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Butterworth magnitude response is maximally flat in the passband; Chebyshev and elliptic families introduce ripple.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-890",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "The Paley-Wiener causality criterion constrains realizable causal finite-energy transfer magnitudes; the other named criteria do not express that condition.",
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ]
+    },
+    {
+      "id": "COS201-891",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "SSB transmits only one sideband and requires message bandwidth W, rather than roughly 2W for DSB AM.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-892",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "8-VSB is the ATSC 1.0 terrestrial PHY; ATSC 3.0 uses OFDM. Calling 8-VSB modern ATSC without a version is misleading.",
+      "references": [
+        "https://www.atsc.org/wp-content/uploads/2020/05/Horspool_-_Transmission_Site_Planning_for_ATSC_3.0.pdf"
+      ]
+    },
+    {
+      "id": "COS201-893",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "sgn(t) is +1 for t>0 and -1 for t<0; the value at zero is separate.",
+      "references": []
+    },
+    {
+      "id": "COS201-894",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Angle modulation places the message in the instantaneous phase/frequency of a fixed-amplitude carrier.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-895",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "NBFM assumes beta much smaller than 1 so higher-order Bessel sidebands are negligible.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-896",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Analog PAM conveys information in pulse height, so amplitude distortion/noise directly corrupts it. Digital PAM is nevertheless common on modern wired links.",
+      "references": []
+    },
+    {
+      "id": "COS201-897",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Only in an additive-noise channel can the received waveform be represented directly as desired signal plus noise; general fading channels need a channel operator too.",
+      "references": []
+    },
+    {
+      "id": "COS201-898",
+      "status": "needs_context",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The source invokes the integrate-before-DM interpretation of delta-sigma. Modern sigma-delta is principally oversampling/noise shaping; exact claimed slope-overload benefit depends on architecture.",
+      "references": [
+        "https://www.ti.com/video/6309772987112"
+      ],
+      "contextNeeded": "The claimed slope-overload advantage depends on which integrate-before-DM architecture the course defines; primary modern sigma-delta references emphasize oversampling/noise shaping. Do not silently replace key D without that context."
+    },
+    {
+      "id": "COS201-899",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "An ideal fixed-envelope angle-modulated carrier has constant average power for a fixed load; instantaneous cos^2 power still oscillates.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-900",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Speech often spends substantial time at weak levels; a fixed uniform step creates disproportionately large relative error there, motivating companding.",
+      "references": []
+    },
+    {
+      "id": "COS201-901",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Standard deviation is sqrt(variance), with the same units as the original scalar variable.",
+      "references": []
+    },
+    {
+      "id": "COS201-902",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For conventional AM with one sinusoidal tone and 0<=mu<=1, sideband/total power=mu^2/(2+mu^2), whose maximum is 1/3.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-903",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For a baseband support [-W,W], the general undersampling inequality is fs<2W. fs=W is also a violating special case, so the original options overlap.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-904",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The marginal density is found by integrating the joint density over the unwanted continuous variables.",
+      "references": []
+    },
+    {
+      "id": "COS201-905",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "FM discriminator noise is strongest at high audio frequencies; de-emphasis attenuates these frequencies after inverse pre-emphasis.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-906",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "I denotes in-phase and Q denotes quadrature; these are orthogonal carrier components.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-907",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "F_X(x)=P(X<=x), so the CDF accumulates probability up to x.",
+      "references": []
+    },
+    {
+      "id": "COS201-908",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "An RF bandpass input filter restricts received noise/interference bandwidth while passing the wanted RF band.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-909",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Autocorrelation compares a signal/process with a time-shifted copy; at zero lag it also relates to power.",
+      "references": []
+    },
+    {
+      "id": "COS201-910",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Aliasing identifies different frequency components after sampling and appears as overlapping periodic spectral replicas.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-911",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Rapidly decaying normalized autocorrelation indicates loss of similarity over short time separations, consistent with rapid variation.",
+      "references": []
+    },
+    {
+      "id": "COS201-912",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "An amplitude limiter removes unwanted envelope fluctuations before FM discrimination; it does not directly remove phase/frequency noise.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-913",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "For fixed line coding/pulse shaping, PCM bit rate=Nchannels*fs*nbits, so raising any factor raises required bandwidth.",
+      "references": []
+    },
+    {
+      "id": "COS201-914",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "2^(2R)=4^R is exponential in R; +1 bit multiplies ideal quantization SNR by 4 (~6.02dB). The OCR exponent is malformed.",
+      "references": []
+    },
+    {
+      "id": "COS201-915",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The mapping from message to cos of an integrated/scaled message is nonlinear, so angle modulation is not a linear input-output process.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-916",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For real scalar variables with finite positive variances, Cauchy-Schwarz bounds Pearson correlation between -1 and 1.",
+      "references": []
+    },
+    {
+      "id": "COS201-917",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "An ideally phase-aligned DSB-SC product detector retains the in-phase baseband branch and rejects the quadrature branch after low-pass filtering.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-918",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "PPM encodes pulse displacement relative to a time reference, analogous to carrier phase modulation.",
+      "references": []
+    },
+    {
+      "id": "COS201-919",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "PLLs track phase/frequency and support carrier synchronization and some FM demodulators.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-920",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "A time-varying instantaneous frequency generally produces unequal zero-crossing spacings; constant-message/static-phase cases are exceptions.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-921",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "A continuous uniform law has equal density on its bounded support; individual point probabilities are zero, not a common positive probability.",
+      "references": []
+    },
+    {
+      "id": "COS201-922",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "FM defines instantaneous frequency as fc+kf*m(t); carrier amplitude is held constant.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-923",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Covariance measures signed linear co-variation about the means; zero covariance does not generally imply independence.",
+      "references": []
+    },
+    {
+      "id": "COS201-924",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Stereo sound has left/right audio channels, carried as sum/difference information in an FM stereo multiplex.",
+      "references": []
+    },
+    {
+      "id": "COS201-925",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "With the conventional I/Q carrier basis, quadrature is associated with the sine basis (possibly a minus sign by convention).",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-926",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For an absolutely continuous distribution, the PDF is the derivative of the CDF almost everywhere.",
+      "references": []
+    },
+    {
+      "id": "COS201-927",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Flat-top sampling holds each sample over a finite rectangular pulse; ideal impulse sampling is different.",
+      "references": []
+    },
+    {
+      "id": "COS201-928",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Ideal white noise has constant power spectral density; whiteness does not mean zero power.",
+      "references": []
+    },
+    {
+      "id": "COS201-929",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "AWGN expands to additive white Gaussian noise: additive channel, flat PSD, Gaussian sample statistics.",
+      "references": []
+    },
+    {
+      "id": "COS201-930",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Independence gives f_XY(x,y)=f_X(x)f_Y(y) wherever joint/marginal densities exist.",
+      "references": []
+    },
+    {
+      "id": "COS201-931",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Autocorrelation compares a signal/process with a time-shifted copy; at zero lag it also relates to power.",
+      "references": []
+    },
+    {
+      "id": "COS201-932",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "A detector figure of merit is a ratio comparing output SNR with the defined reference/channel input SNR, a noise-performance measure.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-933",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "With the conventional I/Q carrier basis, quadrature is associated with the sine basis (possibly a minus sign by convention).",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-934",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "PPM places information in pulse timing rather than pulse amplitude, so limiting can reject amplitude perturbations; timing jitter still matters.",
+      "references": []
+    },
+    {
+      "id": "COS201-935",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Above threshold with white input noise, FM discriminator baseband noise PSD grows with audio frequency squared.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-936",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Flat-top sampling holds each sample over a finite rectangular pulse; ideal impulse sampling is different.",
+      "references": []
+    },
+    {
+      "id": "COS201-937",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Bandpass filtering white noise around a high carrier with small fractional bandwidth yields narrowband noise.",
+      "references": []
+    },
+    {
+      "id": "COS201-938",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A real bandpass noise process can be expressed by in-phase and quadrature lowpass components.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-939",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "For sinusoidal single-tone FM, explicit line coefficients are Bessel J_n(beta); they are also Fourier-series coefficients, so the original A/D wording overlaps.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-940",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Above the FM threshold and with suitable deviation/bandwidth, angle modulation can offer better noise immunity than conventional AM.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-941",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        4
+      ],
+      "rationale": "Granular noise occurs when delta step size is too large relative to slowly varying signal levels.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ]
+    },
+    {
+      "id": "COS201-942",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "An ideally phase-aligned DSB-SC product detector retains the in-phase baseband branch and rejects the quadrature branch after low-pass filtering.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-943",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A joint PDF describes simultaneous values of two continuous random variables rather than one marginal alone.",
+      "references": []
+    },
+    {
+      "id": "COS201-944",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A time-independent mean of a stationary process contributes a DC component; a general nonstationary mean need not be DC.",
+      "references": []
+    },
+    {
+      "id": "COS201-945",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The marginal density is found by integrating the joint density over the unwanted continuous variables.",
+      "references": []
+    },
+    {
+      "id": "COS201-946",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Variance is E[(X-E X)^2], measuring spread rather than mean or carrier frequency.",
+      "references": []
+    },
+    {
+      "id": "COS201-947",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For single-tone FM, beta=peak frequency deviation/modulating frequency.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-948",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Above threshold the FM noise-performance factor depends on deviation (or beta) as well as message bandwidth/power assumptions.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-949",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "An ideal fixed-envelope angle-modulated carrier has constant average power for a fixed load; instantaneous cos^2 power still oscillates.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-950",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Angle modulation places the message in the instantaneous phase/frequency of a fixed-amplitude carrier.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-951",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A random process is an indexed family X(t,omega): time index and random outcome specify a realization.",
+      "references": []
+    },
+    {
+      "id": "COS201-952",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Angle modulation places the message in the instantaneous phase/frequency of a fixed-amplitude carrier.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-953",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A sample-and-hold pulse introduces sinc droop; a suitable equalizer compensates this amplitude response over the signal band.",
+      "references": []
+    },
+    {
+      "id": "COS201-954",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Conditional probability updates the event law when another event/information is given.",
+      "references": []
+    },
+    {
+      "id": "COS201-955",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "A finite rectangular hold pulse has H(f)=T sinc(fT)e^(-jpi fT), so its aperture effect includes sinc magnitude droop and linear phase delay.",
+      "references": []
+    },
+    {
+      "id": "COS201-956",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Wideband angle modulation can require a larger bandwidth than AM; the advantage is not free of bandwidth cost.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-957",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Variance of a stationary noise voltage equals the mean-square zero-mean (AC) component; interpreting it as watts requires a resistance normalization.",
+      "references": []
+    },
+    {
+      "id": "COS201-958",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "An RF bandpass input filter restricts received noise/interference bandwidth while passing the wanted RF band.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-959",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Manchester encoding forces a mid-bit transition that conveys timing, aiding clock recovery; it normally costs bandwidth.",
+      "references": []
+    },
+    {
+      "id": "COS201-960",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Quantization noise dominates specifically when its power exceeds channel-noise power; a small BER by itself is not a power comparison.",
+      "references": []
+    },
+    {
+      "id": "COS201-961",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For fixed line coding/pulse shaping, PCM bit rate=Nchannels*fs*nbits, so raising any factor raises required bandwidth.",
+      "references": []
+    },
+    {
+      "id": "COS201-962",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "At fixed full scale with an ideal full-scale sinusoid, quantizer SNR is approximately 6.02n+1.76dB; two more bits add 12.04dB.",
+      "references": []
+    },
+    {
+      "id": "COS201-963",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Continuous-phase constant-envelope FSK is suited to saturated nonlinear PAs; ideal rectangular-pulse BPSK can also be constant-envelope, so the original generic choices are ambiguous.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/continuous-phase-modulation.html"
+      ]
+    },
+    {
+      "id": "COS201-964",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Uniform probabilities give a balanced Huffman tree only with 2^k symbols. Three equal symbols give code lengths 1,2,2, not a fixed-length code.",
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ]
+    },
+    {
+      "id": "COS201-965",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Slope overload means |dx/dt|>Delta/T; describing Delta as too small can be an equivalent relative condition, so the original alternatives B/D overlap.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ]
+    },
+    {
+      "id": "COS201-966",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Zero syndrome means the received vector is a codeword/no error was detected; a nonzero error equal to a codeword can remain undetected.",
+      "references": []
+    },
+    {
+      "id": "COS201-967",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "With pulse shape/rolloff fixed, occupied modulation bandwidth scales with symbol rate; other signaling families need extra assumptions.",
+      "references": []
+    },
+    {
+      "id": "COS201-968",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For coherent BPSK in AWGN, Pb=Q(sqrt(2Eb/N0)); its high-SNR tail decreases approximately exponentially, not universally for every channel.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-969",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Speech often spends substantial time at weak levels; a fixed uniform step creates disproportionately large relative error there, motivating companding.",
+      "references": []
+    },
+    {
+      "id": "COS201-970",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Uncompensated bandwidth limitation can spread symbol pulses; a bandlimited Nyquist pulse need not cause ISI at sampling instants.",
+      "references": []
+    },
+    {
+      "id": "COS201-971",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "For a baseband support [-W,W], the general undersampling inequality is fs<2W. fs=W is also a violating special case, so the original options overlap.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-972",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "A uniquely-decodable binary lossless code obeys expected length >= entropy in bits under the standard symbol/block model.",
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ]
+    },
+    {
+      "id": "COS201-973",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Gray labels make nearest-neighbor symbol errors tend to flip one bit, lowering BER without changing symbol geometry.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-974",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Eye diagrams overlay symbol intervals and reveal timing margin, noise and ISI via eye opening/closure.",
+      "references": []
+    },
+    {
+      "id": "COS201-975",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "For coherent BPSK in AWGN, Pb=Q(sqrt(2Eb/N0)); its high-SNR tail decreases approximately exponentially, not universally for every channel.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-976",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Differential phase detection uses the previous symbol as a reference, avoiding an absolute carrier-phase reference; timing/frequency synchronization are still needed.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-977",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Increased uncompensated dispersion/noise reduces decision/timing margin and tends to close the eye.",
+      "references": []
+    },
+    {
+      "id": "COS201-978",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        4
+      ],
+      "rationale": "ISI is structured mixing from adjacent symbols via channel memory, unlike independent additive white noise.",
+      "references": []
+    },
+    {
+      "id": "COS201-979",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "OFDM orthogonality depends on subcarrier spacing and useful symbol interval; a generic rolloff statement is not the defining condition.",
+      "references": []
+    },
+    {
+      "id": "COS201-980",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Aliasing identifies different frequency components after sampling and appears as overlapping periodic spectral replicas.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-981",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Multiplying a waveform by a periodic sampling comb replicates its spectrum periodically in frequency.",
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    },
+    {
+      "id": "COS201-982",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "A carrier-phase mismatch rotates/mixes I and Q components for a general nontrivial phase offset; exact multiples of pi cause special sign cases.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-983",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Flat-top sampling holds each sample over a finite rectangular pulse; ideal impulse sampling is different.",
+      "references": []
+    },
+    {
+      "id": "COS201-984",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "With a fixed input law, extra channel noise degrades the observation and generally increases conditional uncertainty H(X|Y), reducing mutual information.",
+      "references": []
+    },
+    {
+      "id": "COS201-985",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        4
+      ],
+      "rationale": "Non-prefix-free does not imply non-uniquely-decodable: {0,01} is a counterexample; instant decoding is not guaranteed.",
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ]
+    },
+    {
+      "id": "COS201-986",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "A carrier-phase mismatch rotates/mixes I and Q components for a general nontrivial phase offset; exact multiples of pi cause special sign cases.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-987",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Channel capacity is defined as the maximum I(X;Y) over admissible input distributions, subject to the channel constraints.",
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ]
+    },
+    {
+      "id": "COS201-988",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Manchester encoding forces a mid-bit transition that conveys timing, aiding clock recovery; it normally costs bandwidth.",
+      "references": []
+    },
+    {
+      "id": "COS201-989",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "AWGN adds a random voltage/sample component; derived amplitude, phase and timing estimates can all be affected.",
+      "references": []
+    },
+    {
+      "id": "COS201-990",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "At fixed average symbol energy and noise, smaller minimum Euclidean separation generally raises symbol/bit error probability.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-991",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "For equal-prior antipodal +/-A signaling in symmetric AWGN, the ML/MAP threshold is zero, also the arithmetic mean of the two noiseless levels.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-992",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "FEC plus adequate interleaving/redundancy can recover erased subcarrier data only within the code capability; recovery is not unconditional.",
+      "references": []
+    },
+    {
+      "id": "COS201-993",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Independent probabilities multiply, so -log(pq)=-log p-log q gives additive self-information.",
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ]
+    },
+    {
+      "id": "COS201-994",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Discrete entropy is expected self-information -sum p log2 p, measured in bits per symbol.",
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ]
+    },
+    {
+      "id": "COS201-995",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "At fixed N0, doubling Eb doubles Eb/N0 and adds 10log10(2)=3.0103dB; generic signal power SNR needs other quantities fixed.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-996",
+      "status": "change",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "A basic delta modulator sends one quantized up/down bit indicating the sign of the prediction error, not its full numerical difference.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ]
+    },
+    {
+      "id": "COS201-997",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Clock jitter perturbs the sample instant; voltage error is approximately signal slope times timing error.",
+      "references": []
+    },
+    {
+      "id": "COS201-998",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Huffman minimizes expected symbol-code length among binary prefix codes for the specified symbol probabilities, not among every possible block/arithmetic code.",
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ]
+    },
+    {
+      "id": "COS201-999",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Lost orthogonality gives nonzero cross-inner-products between subcarriers and hence intercarrier interference.",
+      "references": []
+    },
+    {
+      "id": "COS201-1000",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The OFDM transmitter IFFT combines the data-modulated discrete-frequency subcarriers into a time-domain block.",
+      "references": []
+    },
+    {
+      "id": "COS201-1001",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        2
+      ],
+      "rationale": "Sampling away from the intended decision instant generally reduces noise/ISI margin and increases error in a noisy bandlimited digital receiver.",
+      "references": []
+    },
+    {
+      "id": "COS201-1002",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "The OFDM receiver FFT projects the received block onto orthogonal discrete-frequency subcarriers.",
+      "references": []
+    },
+    {
+      "id": "COS201-1003",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "A finite rectangular hold pulse has H(f)=T sinc(fT)e^(-jpi fT), so its aperture effect includes sinc magnitude droop and linear phase delay.",
+      "references": []
+    },
+    {
+      "id": "COS201-1004",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "For a known deterministic signal in white noise, Cauchy-Schwarz gives the matched filter H(f)=kS*(f)e^(-j2pi fT) as the SNR maximizer.",
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ]
+    },
+    {
+      "id": "COS201-1005",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "For equal-prior antipodal +/-A signaling in symmetric AWGN, the ML/MAP threshold is zero, also the arithmetic mean of the two noiseless levels.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-1006",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "At fixed average symbol energy and noise, smaller minimum Euclidean separation generally raises symbol/bit error probability.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-1007",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "The Gaussian Q function is a tail probability and appears in AWGN decision-error formulas.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-1008",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "An n-fold repetition code carries one information bit in n transmitted bits, giving rate 1/n and high redundancy.",
+      "references": []
+    },
+    {
+      "id": "COS201-1009",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Guaranteed correction is t=floor((dmin-1)/2). Raising dmin can leave t unchanged (3 to 4: t remains 1), so strictly increases is not always true.",
+      "references": []
+    },
+    {
+      "id": "COS201-1010",
+      "status": "change",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "Equal-energy orthogonal BFSK has squared distance 2Eb versus 4Eb for antipodal BPSK; coherent AWGN detection therefore needs twice Eb, about 3.01 dB.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-1011",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "At fixed Rs, ideal zero-ISI baseband signaling needs bandwidth at least Rs/2; reducing it below this bound prevents zero-ISI pulse shaping.",
+      "references": []
+    },
+    {
+      "id": "COS201-1012",
+      "status": "reviewed",
+      "canonicalAnswer": [
+        3
+      ],
+      "rationale": "For a fixed finite alphabet, entropy is maximized by uniform probabilities because uncertainty is largest.",
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ]
+    },
+    {
+      "id": "COS201-1013",
+      "status": "change",
+      "canonicalAnswer": [
+        0
+      ],
+      "rationale": "Passband radio uses carrier translation for practical antenna radiation and allocation to an RF band; not all wired/baseband links require it.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-1014",
+      "status": "change",
+      "canonicalAnswer": [
+        1
+      ],
+      "rationale": "Regenerative decisions prevent analog noise from accumulating stage after stage, but decision errors are still possible.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "COS201-802",
+      "priority": "required",
+      "original": {
+        "question": "Why does BER decrease exponentially with Eb/N0?",
+        "options": [
+          "Linear relation",
+          "Q-function behavior",
+          "Noise decreases linearly",
+          "Signal increases linearly"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For coherent BPSK over AWGN, why does the BER decrease approximately exponentially at high Eb/N0?"
+      },
+      "reason": "Với BPSK đồng bộ trong AWGN, Pb=Q(√(2Eb/N0)); phần đuôi Q giảm gần theo hàm mũ khi Eb/N0 lớn.",
+      "tip": "BPSK + AWGN + high SNR → Q-tail, không áp dụng cho mọi kênh.",
+      "note": "For coherent BPSK in AWGN, Pb=Q(sqrt(2Eb/N0)); its high-SNR tail decreases approximately exponentially, not universally for every channel.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-968",
+      "priority": "required",
+      "original": {
+        "question": "Why does BER decrease exponentially with Eb/N0?",
+        "options": [
+          "Linear relation",
+          "Q-function behavior",
+          "Noise decreases linearly",
+          "Signal increases linearly"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For coherent BPSK over AWGN, why does the BER decrease approximately exponentially at high Eb/N0?"
+      },
+      "reason": "Với BPSK đồng bộ trong AWGN, Pb=Q(√(2Eb/N0)); phần đuôi Q giảm gần theo hàm mũ khi Eb/N0 lớn.",
+      "tip": "BPSK + AWGN + high SNR → Q-tail, không áp dụng cho mọi kênh.",
+      "note": "For coherent BPSK in AWGN, Pb=Q(sqrt(2Eb/N0)); its high-SNR tail decreases approximately exponentially, not universally for every channel.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-804",
+      "priority": "required",
+      "original": {
+        "question": "What is the main advantage of digital communication over analog?",
+        "options": [
+          "Higher bandwidth",
+          "Noise accumulation immunity",
+          "Lower cost always",
+          "Simpler circuits"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Higher bandwidth",
+          "Regenerative decisions limit accumulated analog noise, although decision errors remain possible",
+          "Lower cost always",
+          "Simpler circuits"
+        ]
+      },
+      "reason": "Tái tạo các mức số hạn chế cộng dồn nhiễu tương tự; nhiễu đủ lớn vẫn gây quyết định sai.",
+      "tip": "digital regeneration → hạn chế noise accumulation, không miễn nhiễm mọi nhiễu.",
+      "note": "Regenerative decisions prevent analog noise from accumulating stage after stage, but decision errors are still possible.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-1014",
+      "priority": "required",
+      "original": {
+        "question": "What is the main advantage of digital communication over analog?",
+        "options": [
+          "Simpler circuits",
+          "Noise accumulation immunity",
+          "Higher bandwidth",
+          "Lower cost always"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Simpler circuits",
+          "Regenerative decisions limit accumulated analog noise, although decision errors remain possible",
+          "Higher bandwidth",
+          "Lower cost always"
+        ]
+      },
+      "reason": "Tái tạo các mức số hạn chế cộng dồn nhiễu tương tự; nhiễu đủ lớn vẫn gây quyết định sai.",
+      "tip": "digital regeneration → hạn chế noise accumulation, không miễn nhiễm mọi nhiễu.",
+      "note": "Regenerative decisions prevent analog noise from accumulating stage after stage, but decision errors are still possible.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-806",
+      "priority": "required",
+      "original": {
+        "question": "A PLL is considered locked when:",
+        "options": [
+          "Frequency differs",
+          "Phase error is constant",
+          "Phase error is zero or constant",
+          "Signal amplitude is zero"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "options": [
+          "Frequency differs",
+          "Phase error grows continuously because the frequencies remain different",
+          "Phase error is zero or constant",
+          "Signal amplitude is zero"
+        ]
+      },
+      "reason": "PLL khóa khi hai tần số bám nhau và sai lệch pha hằng; hằng đó có thể bằng zero.",
+      "tip": "locked → constant phase error, không bắt buộc zero.",
+      "note": "Original B (constant) and C (zero or constant) overlap; repair B while preserving key C.",
+      "originalAcceptedAlternatives": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-812",
+      "priority": "required",
+      "original": {
+        "question": "Delta Modulation transmits:",
+        "options": [
+          "Full amplitude",
+          "Only difference between samples",
+          "Frequency only",
+          "Phase only"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Full amplitude",
+          "One bit indicating the sign of the difference between the input sample and its predicted value",
+          "Frequency only",
+          "Phase only"
+        ]
+      },
+      "reason": "DM cơ bản gửi một bit chỉ chiều tăng/giảm so với mức dự đoán, không gửi toàn bộ hiệu số.",
+      "tip": "DM → 1-bit sign of prediction error.",
+      "note": "A basic delta modulator sends one quantized up/down bit indicating the sign of the prediction error, not its full numerical difference.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-996",
+      "priority": "required",
+      "original": {
+        "question": "Delta Modulation transmits:",
+        "options": [
+          "Full amplitude",
+          "Phase only",
+          "Only difference between samples",
+          "Frequency only"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "options": [
+          "Full amplitude",
+          "Phase only",
+          "One bit indicating the sign of the difference between the input sample and its predicted value",
+          "Frequency only"
+        ]
+      },
+      "reason": "DM cơ bản gửi một bit chỉ chiều tăng/giảm so với mức dự đoán, không gửi toàn bộ hiệu số.",
+      "tip": "DM → 1-bit sign of prediction error.",
+      "note": "A basic delta modulator sends one quantized up/down bit indicating the sign of the prediction error, not its full numerical difference.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-816",
+      "priority": "required",
+      "original": {
+        "question": "FM noise power grows proportional to:",
+        "options": [
+          "W",
+          "W²",
+          "W³",
+          "1/W"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "For an ideal FM discriminator operating above threshold with white input noise, the post-detection noise power integrated over a message bandwidth W grows proportional to:"
+      },
+      "reason": "PSD nhiễu sau discriminator tỷ lệ f²; tích phân từ 0 đến W cho hệ số W³.",
+      "tip": "Above threshold: ∫₀ᵂ f²df → W³.",
+      "note": "Above FM threshold with white input noise, discriminator noise PSD is proportional to f^2; integrating over [0,W] yields W^3.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-827",
+      "priority": "required",
+      "original": {
+        "question": "The 3 dB penalty in BFSK is due to:",
+        "options": [
+          "Noise",
+          "Orthogonal signaling",
+          "Frequency shift",
+          "Bandwidth"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "Compared with coherent antipodal BPSK at the same BER in AWGN, why does coherent orthogonal BFSK require about 3 dB more Eb/N0?"
+      },
+      "reason": "Ở cùng Eb, d² của BFSK trực giao là 2Eb, còn BPSK đối cực là 4Eb; cần gấp đôi Eb ≈ 3 dB.",
+      "tip": "coherent orthogonal BFSK vs BPSK → 3 dB, cùng BER/AWGN.",
+      "note": "Equal-energy orthogonal BFSK has squared distance 2Eb versus 4Eb for antipodal BPSK; coherent AWGN detection therefore needs twice Eb, about 3.01 dB.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-1010",
+      "priority": "required",
+      "original": {
+        "question": "The 3 dB penalty in BFSK is due to:",
+        "options": [
+          "Frequency shift",
+          "Bandwidth",
+          "Noise",
+          "Orthogonal signaling"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "Compared with coherent antipodal BPSK at the same BER in AWGN, why does coherent orthogonal BFSK require about 3 dB more Eb/N0?"
+      },
+      "reason": "Ở cùng Eb, d² của BFSK trực giao là 2Eb, còn BPSK đối cực là 4Eb; cần gấp đôi Eb ≈ 3 dB.",
+      "tip": "coherent orthogonal BFSK vs BPSK → 3 dB, cùng BER/AWGN.",
+      "note": "Equal-energy orthogonal BFSK has squared distance 2Eb versus 4Eb for antipodal BPSK; coherent AWGN detection therefore needs twice Eb, about 3.01 dB.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-829",
+      "priority": "required",
+      "original": {
+        "question": "If LZ dictionary grows larger, compression ratio will:",
+        "options": [
+          "Decrease",
+          "Increase",
+          "Stay same",
+          "Become zero"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "When an LZ-type compressor is allowed a larger dictionary, which statement is generally valid?",
+        "options": [
+          "Decrease",
+          "Increase",
+          "Stay same",
+          "Become zero",
+          "Compression may improve through longer matches, but index/memory overhead also grows; the compression ratio is not guaranteed to increase."
+        ],
+        "answer": [
+          4
+        ]
+      },
+      "reason": "Từ điển lớn có thể tìm được chuỗi khớp dài hơn nhưng cần chỉ mục dài hơn và thêm bộ nhớ. Tỷ lệ nén không tăng đơn điệu với mọi dữ liệu.",
+      "tip": "LZ dictionary lớn → tradeoff, không bảo đảm ratio tăng.",
+      "note": "A larger LZ dictionary may improve phrase matches but increases memory and reference-index cost; no monotonic compression-ratio guarantee exists.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://dspace.mit.edu/bitstream/handle/1721.1/98262/18-310c-fall-2007/contents/lecture-notes/6_lempelziv.pdf"
+      ],
+      "kind": "key"
+    },
+    {
+      "id": "COS201-832",
+      "priority": "clarify",
+      "original": {
+        "question": "Why does matched filter maximize SNR?",
+        "options": [
+          "It removes noise",
+          "It matches signal spectrum",
+          "It increases bandwidth",
+          "It reduces energy"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For a known deterministic signal in white additive noise, why does a matched filter maximize the sampled output SNR?"
+      },
+      "reason": "Bất đẳng thức Cauchy–Schwarz đạt dấu bằng khi bộ lọc là phiên bản đảo thời gian/liên hợp của tín hiệu cần thu.",
+      "tip": "Matched filter tối ưu SNR trong white noise.",
+      "note": "For a known deterministic signal in white noise, Cauchy-Schwarz gives the matched filter H(f)=kS*(f)e^(-j2pi fT) as the SNR maximizer.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-1004",
+      "priority": "clarify",
+      "original": {
+        "question": "Why does matched filter maximize SNR?",
+        "options": [
+          "It matches signal spectrum",
+          "It removes noise",
+          "It increases bandwidth",
+          "It reduces energy"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For a known deterministic signal in white additive noise, why does a matched filter maximize the sampled output SNR?"
+      },
+      "reason": "Bất đẳng thức Cauchy–Schwarz đạt dấu bằng khi bộ lọc là phiên bản đảo thời gian/liên hợp của tín hiệu cần thu.",
+      "tip": "Matched filter tối ưu SNR trong white noise.",
+      "note": "For a known deterministic signal in white noise, Cauchy-Schwarz gives the matched filter H(f)=kS*(f)e^(-j2pi fT) as the SNR maximizer.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-837",
+      "priority": "required",
+      "original": {
+        "question": "ISI mainly occurs due to:",
+        "options": [
+          "Infinite bandwidth",
+          "Band-limited channels",
+          "Sampling",
+          "Encoding"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "In an uncompensated link without a zero-ISI pulse-shaping design, which channel property commonly causes symbol pulses to spread and overlap?"
+      },
+      "reason": "Giới hạn băng có thể làm xung trải dài; thiết kế Nyquist đúng vẫn có thể triệt ISI tại thời điểm lấy mẫu.",
+      "tip": "band limit + không bù/tạo xung đúng → có thể ISI, không phải luôn luôn.",
+      "note": "Uncompensated bandwidth limitation can spread symbol pulses; a bandlimited Nyquist pulse need not cause ISI at sampling instants.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-845",
+      "priority": "required",
+      "original": {
+        "question": "Maximum efficiency of AM (Figure of Merit) is:",
+        "options": [
+          "1",
+          "1/2",
+          "1/3",
+          "2"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "For conventional AM with a single sinusoidal message, what is the maximum sideband-to-total power efficiency without overmodulation (0 ≤ μ ≤ 1)?"
+      },
+      "reason": "AM một tone có η=μ²/(2+μ²); tại μ=1 đạt 1/3. Không suy rộng 1/3 cho mọi dạng thông điệp hay mọi định nghĩa FOM.",
+      "tip": "Single-tone AM, μ=1 → ηmax=1/3.",
+      "note": "For conventional AM with one sinusoidal tone and 0<=mu<=1, sideband/total power=mu^2/(2+mu^2), whose maximum is 1/3.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-902",
+      "priority": "required",
+      "original": {
+        "question": "Maximum efficiency of AM (Figure of Merit) is:",
+        "options": [
+          "2",
+          "1/3",
+          "1/2",
+          "1"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For conventional AM with a single sinusoidal message, what is the maximum sideband-to-total power efficiency without overmodulation (0 ≤ μ ≤ 1)?"
+      },
+      "reason": "AM một tone có η=μ²/(2+μ²); tại μ=1 đạt 1/3. Không suy rộng 1/3 cho mọi dạng thông điệp hay mọi định nghĩa FOM.",
+      "tip": "Single-tone AM, μ=1 → ηmax=1/3.",
+      "note": "For conventional AM with one sinusoidal tone and 0<=mu<=1, sideband/total power=mu^2/(2+mu^2), whose maximum is 1/3.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-851",
+      "priority": "required",
+      "original": {
+        "question": "In coherent detection, if the local oscillator has a 90-degree phase error (phi = 900), the recovered output will be:",
+        "options": [
+          "Inverted",
+          "The same as input",
+          "Zero",
+          "Doubled"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "In coherent DSB-SC product detection of a single message branch, a 90° carrier-reference phase error makes the recovered message component:"
+      },
+      "reason": "Thành phần thông điệp ở đầu ra tỷ lệ cosφ; cos90°=0. Với thu I/Q tổng quát, lệch pha làm quay chòm sao.",
+      "tip": "DSB-SC single-branch: 90° → cos90°=0.",
+      "note": "For coherent DSB-SC product detection, the message term is scaled by cos(phi); at phi=90 degrees it vanishes. General I/Q detection instead rotates the constellation.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-855",
+      "priority": "required",
+      "original": {
+        "question": "A complex envelope g_tilde(t) is defined as:",
+        "options": [
+          "a(t) *",
+          "g_l(t) + j*g_Q(t).",
+          "The Fourier transform of g(t).",
+          "g_l(t) - j*g_Q(t)."
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "a(t) · cos(φ(t))",
+          "g_l(t) + j*g_Q(t).",
+          "The Fourier transform of g(t).",
+          "g_l(t) - j*g_Q(t)."
+        ]
+      },
+      "reason": "Biểu diễn đường bao phức gom hai thành phần trực giao thành I+jQ.",
+      "tip": "complex envelope → I + jQ.",
+      "note": "Restore the complete A expression directly read in COS201/Screenshot (855).png; key B remains valid.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "COS201-859",
+      "priority": "required",
+      "original": {
+        "question": "The spectrum of a cosine function COS(2Tt f_c t) consists of:",
+        "options": [
+          "A sinc function.",
+          "A single impulse at f_c.",
+          "A continuous spectrum from -f_c to f_c.",
+          "Two delta impulses at ± f_c."
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "The Fourier transform spectrum of cos(2πf_c t) consists of:"
+      },
+      "reason": "Cosine thực là tổng hai mũ phức quay ngược chiều, tạo hai delta tại ±fc.",
+      "tip": "cos → pair of impulses ±fc.",
+      "note": "Restore the malformed cosine argument COS(2Tt f_c t); selected key remains D.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "COS201-864",
+      "priority": "required",
+      "original": {
+        "question": "Which functional component is typically found in a receiver but NOT in a transmitter?",
+        "options": [
+          "Modulator",
+          "Synchronization",
+          "Protocol Stack",
+          "Antenna"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Modulator",
+          "Recovery of carrier phase and symbol timing from the received waveform",
+          "Protocol Stack",
+          "Antenna"
+        ]
+      },
+      "reason": "Khôi phục pha sóng mang và thời điểm symbol từ tín hiệu nhận là chức năng phía thu; đồng bộ nói chung cũng có thể tồn tại trong máy phát.",
+      "tip": "Receiver → carrier/timing recovery from received waveform.",
+      "note": "Carrier/timing recovery from an unknown received waveform is receiver processing; generic synchronization can also exist in a transmitter.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-866",
+      "priority": "required",
+      "original": {
+        "question": "What happens if > 1 in a standard AM system?",
+        "options": [
+          "Noise is eliminated",
+          "Power efficiency increases",
+          "Bandwidth is reduced",
+          "Envelope distortion (Phase reversals)"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "For conventional AM with normalized message amplitude, what happens when the modulation index μ > 1?"
+      },
+      "reason": "Khi μ>1, đường bao đi qua zero và đảo pha, làm tách sóng đường bao bị méo.",
+      "tip": "overmodulation → μ>1.",
+      "note": "The original OCR lost the μ symbol, leaving a grammatically incomplete question.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "COS201-874",
+      "priority": "required",
+      "original": {
+        "question": "The carrier power in a 100% modulated AM signal (μ = 1) accounts for what percentage of total power?",
+        "options": [
+          "66.7% (Note: Pc = (1/2)Ac², PSB = (1/4)Ac² → Pc = (2/3)·Ptotal)",
+          "100%",
+          "50%",
+          "33.3%"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For conventional AM with a single sinusoidal message at 100% modulation (μ = 1), what fraction of total average power is carrier power?"
+      },
+      "reason": "Một tone tại μ=1: Ptotal=Pc(1+1/2)=1,5Pc nên Pc/Ptotal=2/3≈66,7%.",
+      "tip": "Single-tone 100% AM → carrier 2/3 of total.",
+      "note": "For a single-tone AM signal at mu=1, Ptotal=Pc*(1+mu^2/2)=1.5Pc, giving Pc/Ptotal=2/3.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-879",
+      "priority": "required",
+      "original": {
+        "question": "The Fourier transform exists if the signal is:",
+        "options": [
+          "Periodically repeating.",
+          "Zero at all times.",
+          "Absolutely integrable.",
+          "Infinite in energy."
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "Which standard integrability condition guarantees an ordinary Fourier transform for a signal?",
+        "options": [
+          "Periodically repeating.",
+          "Growing as exp(t²) over the whole real line",
+          "Absolutely integrable.",
+          "Infinite in energy."
+        ]
+      },
+      "reason": "Khả tích tuyệt đối là điều kiện đủ cho FT thường. Tín hiệu zero trong lựa chọn cũ cũng có FT, nên cặp lựa chọn cũ không duy nhất.",
+      "tip": "Ordinary FT sufficient condition → ∫|x(t)|dt < ∞.",
+      "note": "Both absolute integrability and the identically-zero signal guarantee an ordinary Fourier transform. The original alternatives B/C are both valid.",
+      "originalAcceptedAlternatives": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-880",
+      "priority": "clarify",
+      "original": {
+        "question": "For a system to be causal, its impulse response h(t) must be zero for:",
+        "options": [
+          "t > 0.",
+          "t = 0.",
+          "All t.",
+          "t < 0."
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "For an initially-at-rest LTI system to be causal, its impulse response h(t) must be zero for:"
+      },
+      "reason": "Hệ nhân quả không có đáp ứng trước khi xung tại t=0 được đưa vào.",
+      "tip": "causal → h(t)=0 khi t<0.",
+      "note": "For an initially-at-rest LTI system, causality is equivalent to h(t)=0 for t<0.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-11-discrete-time-fourier-transform/"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-883",
+      "priority": "required",
+      "original": {
+        "question": "In WLAN channel estimation, what is used to compensate for channel distortion?",
+        "options": [
+          "Using an ideal low-pass filter.",
+          "Increasing the transmitter power.",
+          "Reducing the signal bandwidth.",
+          "Multiplying the received signal's DFT by 1/H_k."
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "In WLAN frequency-domain zero-forcing equalization, when H_k ≠ 0, which operation compensates the multiplicative channel response?"
+      },
+      "reason": "Với Yk=HkXk+Nk, zero forcing nhân Yk với 1/Hk. Gần điểm triệt kênh sẽ khuếch đại nhiễu; Hk=0 không nghịch đảo được.",
+      "tip": "Zero forcing → Yk/Hk, chỉ khi Hk≠0.",
+      "note": "A zero-forcing frequency-domain equalizer divides Y_k by a nonzero H_k; at a channel null this inverse is undefined and near nulls it enhances noise.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-892",
+      "priority": "required",
+      "original": {
+        "question": "Modern Digital TV (ATSC) uses which specific type of modulation derived from the principles in this chapter?",
+        "options": [
+          "8-VSB",
+          "16-QAM",
+          "4 AM",
+          "2-PSK"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "Which modulation is used by the legacy ATSC 1.0 terrestrial digital-TV physical layer?"
+      },
+      "reason": "ATSC 1.0 dùng 8-VSB; ATSC 3.0 dùng OFDM, nên không gọi chung mọi ATSC hiện đại là 8-VSB.",
+      "tip": "ATSC 1.0 → 8-VSB; ATSC 3.0 → OFDM.",
+      "note": "8-VSB is the ATSC 1.0 terrestrial PHY; ATSC 3.0 uses OFDM. Calling 8-VSB modern ATSC without a version is misleading.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.atsc.org/wp-content/uploads/2020/05/Horspool_-_Transmission_Site_Planning_for_ATSC_3.0.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-896",
+      "priority": "clarify",
+      "original": {
+        "question": "Why is PAM rarely used directly for transmission?",
+        "options": [
+          "It requires high frequency",
+          "It is sensitive to amplitude distortion",
+          "It cannot be sampled",
+          "It has low power"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For analog PAM transmitted without regenerative digital decisions, which property makes the message vulnerable to channel amplitude distortion?"
+      },
+      "reason": "PAM chứa thông tin ở biên độ xung nên nhiễu và méo biên độ tác động trực tiếp.",
+      "tip": "PAM → amplitude-sensitive.",
+      "note": "Avoid falsely claiming that PAM is rarely used on modern digital wired links.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-897",
+      "priority": "clarify",
+      "original": {
+        "question": "The received signal in a noisy channel is:",
+        "options": [
+          "Sum of signal and noise",
+          "Only noise",
+          "Only the transmitted signal",
+          "Signal minus noise"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "In the additive-noise channel model r(t) = s(t) + n(t), the received signal is:"
+      },
+      "reason": "Trong mô hình kênh nhiễu cộng, tín hiệu thu là r(t)=s(t)+n(t).",
+      "tip": "additive noise → signal + noise.",
+      "note": "Only in an additive-noise channel can the received waveform be represented directly as desired signal plus noise; general fading channels need a channel operator too.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-900",
+      "priority": "required",
+      "original": {
+        "question": "Uniform quantization performs poorly for speech because:",
+        "options": [
+          "Speech is high frequency",
+          "Speech is periodic",
+          "Speech is low amplitude",
+          "Speech is random"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "options": [
+          "Speech is high frequency",
+          "Speech is periodic",
+          "Speech often has weak-amplitude segments with large relative error for a fixed uniform step",
+          "Speech is random"
+        ]
+      },
+      "reason": "Các đoạn tiếng nói yếu có sai số lượng tử lớn tương đối khi dùng bước đều; companding dành mức lượng tử dày hơn quanh zero.",
+      "tip": "Weak speech segments → companding / nonuniform quantization.",
+      "note": "Speech often spends substantial time at weak levels; a fixed uniform step creates disproportionately large relative error there, motivating companding.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-969",
+      "priority": "required",
+      "original": {
+        "question": "Uniform quantization performs poorly for speech because:",
+        "options": [
+          "Speech is periodic",
+          "Speech is low amplitude",
+          "Speech is random",
+          "Speech is high frequency"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Speech is periodic",
+          "Speech often has weak-amplitude segments with large relative error for a fixed uniform step",
+          "Speech is random",
+          "Speech is high frequency"
+        ]
+      },
+      "reason": "Các đoạn tiếng nói yếu có sai số lượng tử lớn tương đối khi dùng bước đều; companding dành mức lượng tử dày hơn quanh zero.",
+      "tip": "Weak speech segments → companding / nonuniform quantization.",
+      "note": "Speech often spends substantial time at weak levels; a fixed uniform step creates disproportionately large relative error there, motivating companding.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-903",
+      "priority": "required",
+      "original": {
+        "question": "Aliasing occurs when:",
+        "options": [
+          "fs = W",
+          "fs < 2W",
+          "fs > 2W",
+          "fs = 2W"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For a real baseband signal occupying [−W, W], which inequality describes the full undersampling range that violates the Nyquist bound (rather than just one special sampling rate)?"
+      },
+      "reason": "Dải vi phạm tổng quát là fs<2W. fs=W chỉ là một trường hợp nằm trong dải đó, nên đề cũ có hai lựa chọn đúng theo nghĩa “xảy ra khi”.",
+      "tip": "Full range → fs<2W; fs=W chỉ là trường hợp riêng.",
+      "note": "For a baseband support [-W,W], the general undersampling inequality is fs<2W. fs=W is also a violating special case, so the original options overlap.",
+      "originalAcceptedAlternatives": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-971",
+      "priority": "required",
+      "original": {
+        "question": "Aliasing occurs when:",
+        "options": [
+          "fs < 2W",
+          "fs = W",
+          "fs > 2W",
+          "fs = 2W"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For a real baseband signal occupying [−W, W], which inequality describes the full undersampling range that violates the Nyquist bound (rather than just one special sampling rate)?"
+      },
+      "reason": "Dải vi phạm tổng quát là fs<2W. fs=W chỉ là một trường hợp nằm trong dải đó, nên đề cũ có hai lựa chọn đúng theo nghĩa “xảy ra khi”.",
+      "tip": "Full range → fs<2W; fs=W chỉ là trường hợp riêng.",
+      "note": "For a baseband support [-W,W], the general undersampling inequality is fs<2W. fs=W is also a violating special case, so the original options overlap.",
+      "originalAcceptedAlternatives": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-914",
+      "priority": "required",
+      "original": {
+        "question": "The formula SNR is proportional to 2A(2R) implies:",
+        "options": [
+          "No growth",
+          "Logarithmic growth",
+          "Linear growth",
+          "Exponential growth"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "For an ideal uniform quantizer in the high-resolution regime, SNR ∝ 2^(2R) implies what type of growth with bits per sample R?"
+      },
+      "reason": "2^(2R)=4^R là hàm mũ; thêm một bit làm SNR lý tưởng nhân 4, tương đương khoảng 6,02 dB.",
+      "tip": "+1 bit → ×4 linear SNR → +6,02 dB.",
+      "note": "2^(2R)=4^R is exponential in R; +1 bit multiplies ideal quantization SNR by 4 (~6.02dB). The OCR exponent is malformed.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "ocr"
+    },
+    {
+      "id": "COS201-916",
+      "priority": "clarify",
+      "original": {
+        "question": "The correlation coefficient lies in the range:",
+        "options": [
+          "[0, 1]",
+          "[1, 2]",
+          "[-1, 1]",
+          "(-∞, ∞)"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "For two real scalar variables with finite, nonzero variances, Pearson correlation lies in:"
+      },
+      "reason": "Bất đẳng thức Cauchy–Schwarz chặn độ lớn hệ số tương quan chuẩn hóa không vượt 1.",
+      "tip": "correlation coefficient → −1…1.",
+      "note": "For real scalar variables with finite positive variances, Cauchy-Schwarz bounds Pearson correlation between -1 and 1.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-920",
+      "priority": "required",
+      "original": {
+        "question": "Zero-crossings in angle-modulated signals are:",
+        "options": [
+          "Irregularly spaced",
+          "Equally spaced",
+          "Random",
+          "Constant"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "In an FM signal whose instantaneous frequency varies with a nonconstant message, zero-crossing spacings are generally:"
+      },
+      "reason": "Tốc độ pha thay đổi làm khoảng cách giữa các lần qua zero biến thiên; tín hiệu có tần số tức thời hằng là ngoại lệ.",
+      "tip": "Varying instantaneous frequency → generally uneven zero crossings.",
+      "note": "A time-varying instantaneous frequency generally produces unequal zero-crossing spacings; constant-message/static-phase cases are exceptions.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-921",
+      "priority": "required",
+      "original": {
+        "question": "A uniform distribution implies that:",
+        "options": [
+          "All values are equally likely",
+          "It has a peak",
+          "Values are concentrated",
+          "It is decreasing"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For a continuous uniform distribution on a finite interval [a,b], which statement is correct?",
+        "options": [
+          "The probability density is constant on [a,b]; equal-length subintervals have equal probabilities",
+          "It has a peak",
+          "Values are concentrated",
+          "It is decreasing"
+        ]
+      },
+      "reason": "Uniform liên tục là mật độ hằng trên miền hỗ trợ. Xác suất của một điểm riêng lẻ vẫn bằng 0.",
+      "tip": "Uniform continuous → constant PDF on its support.",
+      "note": "A continuous uniform law has equal density on its bounded support; individual point probabilities are zero, not a common positive probability.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-926",
+      "priority": "clarify",
+      "original": {
+        "question": "The probability density function (PDF) is:",
+        "options": [
+          "The mean value",
+          "The derivative of CDF",
+          "The integral of CDF",
+          "The variance"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For an absolutely continuous random variable, its PDF equals the following (where the derivative exists):"
+      },
+      "reason": "Với phân bố liên tục khả vi, mật độ f(x) là đạo hàm của xác suất tích lũy F(x).",
+      "tip": "PDF = d(CDF)/dx.",
+      "note": "For an absolutely continuous distribution, the PDF is the derivative of the CDF almost everywhere.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-932",
+      "priority": "required",
+      "original": {
+        "question": "The Figure of Merit measures:",
+        "options": [
+          "Efficiency of demodulation",
+          "Frequency",
+          "Power loss only",
+          "Bandwidth"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "options": [
+          "The output SNR divided by the specified reference input/channel SNR",
+          "Frequency",
+          "Power loss only",
+          "Bandwidth"
+        ]
+      },
+      "reason": "Figure of merit so sánh SNR sau tách sóng với SNR chuẩn tham chiếu; phải biết quy ước chuẩn hóa của mô hình.",
+      "tip": "Noise figure of merit → SNRout / SNRreference.",
+      "note": "A detector figure of merit is a ratio comparing output SNR with the defined reference/channel input SNR, a noise-performance measure.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-935",
+      "priority": "clarify",
+      "original": {
+        "question": "FM noise increases with:",
+        "options": [
+          "High frequency",
+          "Carrier",
+          "Low frequency",
+          "DC component"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "Above threshold with white input noise, the FM discriminator baseband noise PSD grows as the audio frequency increases, so noise is strongest toward:"
+      },
+      "reason": "Sau bộ phân biệt FM, PSD nhiễu tăng theo bình phương tần số.",
+      "tip": "FM noise → high frequencies worse.",
+      "note": "Above threshold with white input noise, FM discriminator baseband noise PSD grows with audio frequency squared.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-937",
+      "priority": "clarify",
+      "original": {
+        "question": "Narrowband noise is obtained by:",
+        "options": [
+          "Sampling",
+          "Filtering white noise",
+          "Amplification",
+          "Modulation"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Sampling",
+          "Passing white noise through a narrow band-pass filter around a carrier frequency",
+          "Amplification",
+          "Modulation"
+        ]
+      },
+      "reason": "Lọc thông dải nhiễu trắng quanh một tần số trung tâm tạo nhiễu hẹp băng.",
+      "tip": "narrowband noise → filter white noise.",
+      "note": "Bandpass filtering white noise around a high carrier with small fractional bandwidth yields narrowband noise.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-939",
+      "priority": "required",
+      "original": {
+        "question": "The amplitudes of FM spectral components are determined by:",
+        "options": [
+          "Bessel functions",
+          "Exponential functions",
+          "Linear scaling",
+          "Fourier series coefficients"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For single-tone sinusoidal FM, which special-function family explicitly gives the carrier and sideband amplitude coefficients?",
+        "options": [
+          "Bessel functions",
+          "Exponential functions",
+          "Linear scaling",
+          "Carrier frequency alone"
+        ]
+      },
+      "reason": "FM một tone có hệ số Jn(β), là hàm Bessel. Các hệ số đó cũng là hệ số Fourier, nên lựa chọn D cũ mô tả cùng đối tượng theo nghĩa rộng.",
+      "tip": "Sinusoidal single-tone FM → Jn(β).",
+      "note": "For sinusoidal single-tone FM, explicit line coefficients are Bessel J_n(beta); they are also Fourier-series coefficients, so the original A/D wording overlaps.",
+      "originalAcceptedAlternatives": [
+        [
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-944",
+      "priority": "clarify",
+      "original": {
+        "question": "In communication systems, the mean corresponds to:",
+        "options": [
+          "Noise",
+          "DC component",
+          "Frequency",
+          "AC component"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For a stationary random process with a time-independent mean, the mean corresponds to which signal component?"
+      },
+      "reason": "Trung bình là thành phần không đổi theo thời gian, tương ứng DC trong mô tả tín hiệu.",
+      "tip": "mean → DC.",
+      "note": "A time-independent mean of a stationary process contributes a DC component; a general nonstationary mean need not be DC.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-947",
+      "priority": "clarify",
+      "original": {
+        "question": "The FM modulation index is given by:",
+        "options": [
+          "Ratio of carrier to noise",
+          "Ratio of amplitude to frequency",
+          "Ratio of frequency deviation to modulating frequency",
+          "Ratio of power to bandwidth"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "For single-tone sinusoidal FM, the modulation index β is:"
+      },
+      "reason": "Với FM một tone, β bằng độ lệch tần số cực đại Δf chia tần số điều chế fm.",
+      "tip": "FM index → β=Δf/fm.",
+      "note": "For single-tone FM, beta=peak frequency deviation/modulating frequency.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-949",
+      "priority": "clarify",
+      "original": {
+        "question": "In angle modulation, transmitted power is:",
+        "options": [
+          "Constant",
+          "Variable",
+          "Zero",
+          "Dependent on frequency"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For ideal angle modulation with fixed carrier amplitude and a fixed load, the transmitted average power is:"
+      },
+      "reason": "Biên độ sóng mang lý tưởng không đổi nên công suất trung bình không đổi theo thông điệp.",
+      "tip": "angle modulation → constant envelope → constant power.",
+      "note": "An ideal fixed-envelope angle-modulated carrier has constant average power for a fixed load; instantaneous cos^2 power still oscillates.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-955",
+      "priority": "required",
+      "original": {
+        "question": "The aperture effect in PAM causes:",
+        "options": [
+          "Aliasing",
+          "Noise amplification",
+          "Frequency distortion",
+          "Phase shift"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "Which frequency-dependent magnitude distortion is caused by the aperture effect of a flat-top sample-and-hold?",
+        "options": [
+          "Aliasing",
+          "Noise amplification",
+          "Sinc-shaped amplitude attenuation (high-frequency droop)",
+          "Phase shift"
+        ]
+      },
+      "reason": "Xung giữ mẫu hữu hạn có biên độ sinc, làm cao tần suy giảm. Nó còn tạo trễ pha tuyến tính, nên đề cần chỉ rõ đang hỏi méo biên độ.",
+      "tip": "Sample-and-hold aperture → sinc magnitude droop.",
+      "note": "A finite rectangular hold pulse has H(f)=T sinc(fT)e^(-jpi fT), so its aperture effect includes sinc magnitude droop and linear phase delay.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-957",
+      "priority": "clarify",
+      "original": {
+        "question": "Variance is directly related to:",
+        "options": [
+          "DC power",
+          "AC noise power",
+          "Frequency",
+          "Phase"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For stationary noise voltage measured across a unit resistance, its variance equals the power of which component?"
+      },
+      "reason": "Sau khi bỏ trung bình, công suất trung bình của nhiễu chính là phương sai.",
+      "tip": "variance → AC noise power.",
+      "note": "Variance of a stationary noise voltage equals the mean-square zero-mean (AC) component; interpreting it as watts requires a resistance normalization.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-960",
+      "priority": "clarify",
+      "original": {
+        "question": "In a PCM system, quantization noise dominates when:",
+        "options": [
+          "Channel noise is low",
+          "Frequency is high",
+          "Sampling rate is low",
+          "Bit error rate is low."
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "At fixed quantizer settings, which condition directly makes quantization-noise power dominate over additive channel-noise power?",
+        "options": [
+          "Channel-noise power is much lower than the quantization-noise power",
+          "Frequency is high",
+          "Sampling rate is low",
+          "Bit error rate is low."
+        ]
+      },
+      "reason": "Khi nhiễu kênh rất nhỏ, sai số lượng tử hóa còn lại trở thành nguồn nhiễu chính.",
+      "tip": "quiet channel PCM → quantization dominates.",
+      "note": "Quantization noise dominates specifically when its power exceeds channel-noise power; a small BER by itself is not a power comparison.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-962",
+      "priority": "required",
+      "original": {
+        "question": "Increasing ADC bits from 8 to 10 improves SNR by:",
+        "options": [
+          "10 dB",
+          "6 dB",
+          "3 dB",
+          "12 dB"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "For an ideal uniform ADC with fixed full scale and a full-scale sinusoidal input, raising resolution from 8 to 10 bits improves quantization SNR by approximately:"
+      },
+      "reason": "SNR≈6,02n+1,76 dB cho sinus full-scale; tăng 2 bit cho 12,04 dB≈12 dB.",
+      "tip": "Ideal full-scale sine → 6,02 dB/bit.",
+      "note": "At fixed full scale with an ideal full-scale sinusoid, quantizer SNR is approximately 6.02n+1.76dB; two more bits add 12.04dB.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-963",
+      "priority": "required",
+      "original": {
+        "question": "If amplifier is nonlinear, suitable modulation is:",
+        "options": [
+          "OFDM",
+          "QAM",
+          "BPSK",
+          "FSK"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "Which of these waveforms is naturally suitable for a saturated nonlinear power amplifier because its RF envelope remains constant?",
+        "options": [
+          "OFDM",
+          "QAM",
+          "Root-raised-cosine pulse-shaped BPSK with an envelope that varies",
+          "Continuous-phase FSK with a constant envelope"
+        ]
+      },
+      "reason": "CPFSK có đường bao hằng. BPSK lý tưởng không tạo xung có thể cũng hằng biên độ, nên phải phân biệt với BPSK đã pulse-shape làm biến thiên đường bao.",
+      "tip": "Nonlinear saturated PA → constant-envelope CPFSK.",
+      "note": "Continuous-phase constant-envelope FSK is suited to saturated nonlinear PAs; ideal rectangular-pulse BPSK can also be constant-envelope, so the original generic choices are ambiguous.",
+      "originalAcceptedAlternatives": [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/continuous-phase-modulation.html"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-964",
+      "priority": "required",
+      "original": {
+        "question": "If Huffman coding is applied to equal probabilities, result is:",
+        "options": [
+          "Compression failure",
+          "No coding",
+          "Fixed-length codes",
+          "Variable-length codes"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "For an alphabet of exactly 2^k equally likely symbols, what codeword-length pattern does optimal binary Huffman coding produce?"
+      },
+      "reason": "Có 2^k ký hiệu đồng xác suất thì mọi từ mã dài k bit. Nếu có 3 ký hiệu đồng xác suất, độ dài 1,2,2 là phản ví dụ cho đề cũ.",
+      "tip": "Equal probabilities + 2^k symbols → fixed length k.",
+      "note": "Uniform probabilities give a balanced Huffman tree only with 2^k symbols. Three equal symbols give code lengths 1,2,2, not a fixed-length code.",
+      "originalAcceptedAlternatives": [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-965",
+      "priority": "required",
+      "original": {
+        "question": "Slope overload distortion occurs when:",
+        "options": [
+          "Delta too large",
+          "Signal slope exceeds tracking capability",
+          "Noise is high",
+          "Delta too small"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Delta too large",
+          "Signal slope exceeds tracking capability",
+          "Noise is high",
+          "Delta is small while the input remains constant"
+        ]
+      },
+      "reason": "Định nghĩa quá tải dốc là |dx/dt|>Δ/T. Bước nhỏ trên đoạn đầu vào hằng không tự gây quá tải dốc.",
+      "tip": "Slope overload → input slope > Δ/T.",
+      "note": "Slope overload means |dx/dt|>Delta/T; describing Delta as too small can be an equivalent relative condition, so the original alternatives B/D overlap.",
+      "originalAcceptedAlternatives": [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117104069/chapter_7/7_37.html"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-967",
+      "priority": "clarify",
+      "original": {
+        "question": "If symbol rate decreases in M-ary system, bandwidth will:",
+        "options": [
+          "Double",
+          "Increase",
+          "Stay same",
+          "Decrease"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "With modulation pulse shape and roll-off held fixed, if the symbol rate decreases, the required occupied bandwidth generally will:"
+      },
+      "reason": "Với cùng dạng xung và roll-off, tốc độ symbol thấp hơn cần ít băng thông hơn.",
+      "tip": "BW ∝ symbol rate.",
+      "note": "With pulse shape/rolloff fixed, occupied modulation bandwidth scales with symbol rate; other signaling families need extra assumptions.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-970",
+      "priority": "required",
+      "original": {
+        "question": "Why do band-limited channels cause ISI?",
+        "options": [
+          "Reduce amplitude",
+          "Remove high-frequency components",
+          "Increase power",
+          "Increase noise"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "Without channel equalization or a zero-ISI pulse-shaping design, why can band limitation make symbol pulses spread and cause ISI?"
+      },
+      "reason": "Loại bớt thành phần phổ có thể kéo dài xung và gây chồng symbol. Bộ lọc Nyquist đúng vẫn có thể không ISI tại thời điểm quyết định.",
+      "tip": "Band limitation can cause pulse spreading; ISI is not inevitable.",
+      "note": "Uncompensated bandwidth limitation can spread symbol pulses; a bandlimited Nyquist pulse need not cause ISI at sampling instants.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-972",
+      "priority": "clarify",
+      "original": {
+        "question": "If average code length < entropy, result is:",
+        "options": [
+          "Impossible without loss",
+          "Higher efficiency",
+          "Reduced noise",
+          "Better compression"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For a lossless uniquely-decodable binary source code under the standard symbol-coding model, what would an average code length below the source entropy imply?"
+      },
+      "reason": "Entropy là cận dưới độ dài trung bình cho mã nguồn không mất mát theo các giả thiết thông thường.",
+      "tip": "lossless → average length ≥ entropy.",
+      "note": "A uniquely-decodable binary lossless code obeys expected length >= entropy in bits under the standard symbol/block model.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/80c7258fd6bc5780797975eabb6fd747_MIT6_050JS08_textbook.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-975",
+      "priority": "clarify",
+      "original": {
+        "question": "Given Eb/N0 increases by 3 dB, BER will:",
+        "options": [
+          "Increase",
+          "Become zero",
+          "Decrease significantly",
+          "Stay same"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "For the same coherent BPSK system in AWGN with all other parameters fixed, increasing Eb/N0 by 3 dB makes its theoretical BER:"
+      },
+      "reason": "Tăng Eb/N0 làm khoảng cách tín hiệu so với nhiễu lớn hơn, nên xác suất lỗi giảm.",
+      "tip": "+3 dB Eb/N0 → better BER.",
+      "note": "For coherent BPSK in AWGN, Pb=Q(sqrt(2Eb/N0)); its high-SNR tail decreases approximately exponentially, not universally for every channel.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-976",
+      "priority": "required",
+      "original": {
+        "question": "Why does DPSK eliminate the need for PLL?",
+        "options": [
+          "Uses noise",
+          "Uses amplitude",
+          "Uses previous symbol as reference",
+          "Uses frequency"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "Why can noncoherent differential DPSK detection avoid an absolute carrier-phase reference?"
+      },
+      "reason": "So sánh pha với symbol trước thay vì một pha tuyệt đối; vẫn cần đồng bộ thời gian/tần số phù hợp.",
+      "tip": "DPSK differential detector → previous symbol as phase reference.",
+      "note": "Differential phase detection uses the previous symbol as a reference, avoiding an absolute carrier-phase reference; timing/frequency synchronization are still needed.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-979",
+      "priority": "required",
+      "original": {
+        "question": "If roll-off between subcarriers is incorrect, OFDM will:",
+        "options": [
+          "Increase SNR",
+          "Reduce bandwidth",
+          "Lose orthogonality",
+          "Improve"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "If OFDM subcarrier spacing or useful symbol timing violates the orthogonality condition, the subcarriers will:"
+      },
+      "reason": "Trực giao phụ thuộc khoảng cách sóng mang và khoảng tích phân hữu ích. Vi phạm điều kiện đó sinh ICI; “roll-off sai” không phải mô tả tổng quát chính xác.",
+      "tip": "OFDM → Δf·Tu integer + timing phù hợp; mất trực giao → ICI.",
+      "note": "OFDM orthogonality depends on subcarrier spacing and useful symbol interval; a generic rolloff statement is not the defining condition.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-982",
+      "priority": "clarify",
+      "original": {
+        "question": "What happens if carrier phase is not synchronized in coherent detection?",
+        "options": [
+          "Bandwidth reduces",
+          "Signal disappears",
+          "Noise is removed",
+          "IQ components interfere"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "question": "In coherent I/Q detection, a carrier-reference phase error that is not an integer multiple of 90° generally causes:"
+      },
+      "reason": "Lệch pha quay vector I+jQ, tạo các thành phần chéo I cosφ−Q sinφ và I sinφ+Q cosφ.",
+      "tip": "Carrier phase error → I/Q rotation and mixing.",
+      "note": "A carrier-phase mismatch rotates/mixes I and Q components for a general nontrivial phase offset; exact multiples of pi cause special sign cases.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-986",
+      "priority": "clarify",
+      "original": {
+        "question": "If PLL fails in coherent detection, result is:",
+        "options": [
+          "Reduced bandwidth",
+          "IQ mixing error",
+          "Noise removal",
+          "Improved signal"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "In coherent I/Q detection, a carrier-reference phase error that is not an integer multiple of 90° generally causes:"
+      },
+      "reason": "Lệch pha quay vector I+jQ, tạo các thành phần chéo I cosφ−Q sinφ và I sinφ+Q cosφ.",
+      "tip": "Carrier phase error → I/Q rotation and mixing.",
+      "note": "A carrier-phase mismatch rotates/mixes I and Q components for a general nontrivial phase offset; exact multiples of pi cause special sign cases.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-989",
+      "priority": "clarify",
+      "original": {
+        "question": "AWGN primarily affects:",
+        "options": [
+          "Signal amplitude randomly",
+          "Pulse shape",
+          "Timing",
+          "Frequency only"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "In the additive white Gaussian noise model, what is directly added to the received waveform samples?",
+        "options": [
+          "A random Gaussian voltage/sample component",
+          "Pulse shape",
+          "Timing",
+          "Frequency only"
+        ]
+      },
+      "reason": "AWGN cộng một giá trị ngẫu nhiên vào từng mẫu, làm điểm tín hiệu thu lệch ngẫu nhiên.",
+      "tip": "additive Gaussian → random sample displacement.",
+      "note": "AWGN adds a random voltage/sample component; derived amplitude, phase and timing estimates can all be affected.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-991",
+      "priority": "required",
+      "original": {
+        "question": "In BPSK constellation, decision threshold is:",
+        "options": [
+          "Minimum",
+          "Zero",
+          "Average",
+          "Maximum"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+        "options": [
+          "Minimum",
+          "Zero",
+          "A/2",
+          "Maximum"
+        ]
+      },
+      "reason": "Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.",
+      "tip": "Equal-prior ±A + symmetric AWGN → threshold 0.",
+      "note": "For equal-prior antipodal +/-A signaling in symmetric AWGN, the ML/MAP threshold is zero, also the arithmetic mean of the two noiseless levels.",
+      "originalAcceptedAlternatives": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-1005",
+      "priority": "required",
+      "original": {
+        "question": "The decision threshold for binary symmetric signaling is:",
+        "options": [
+          "Zero",
+          "Maximum value",
+          "Minimum value",
+          "Average value"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+        "options": [
+          "Zero",
+          "Maximum value",
+          "Minimum value",
+          "A/2"
+        ]
+      },
+      "reason": "Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.",
+      "tip": "Equal-prior ±A + symmetric AWGN → threshold 0.",
+      "note": "For equal-prior antipodal +/-A signaling in symmetric AWGN, the ML/MAP threshold is zero, also the arithmetic mean of the two noiseless levels.",
+      "originalAcceptedAlternatives": [
+        [
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-995",
+      "priority": "required",
+      "original": {
+        "question": "If bit energy doubles, what happens to SNR?",
+        "options": [
+          "Decreases",
+          "Doubles",
+          "Halves",
+          "No change"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "With noise spectral density N0 held fixed, if bit energy Eb doubles, what happens to the linear ratio Eb/N0?"
+      },
+      "reason": "N0 không đổi thì Eb/N0 nhân 2, tương đương tăng 3,0103 dB.",
+      "tip": "Fixed N0: ×2 Eb → ×2 Eb/N0 → +3 dB.",
+      "note": "At fixed N0, doubling Eb doubles Eb/N0 and adds 10log10(2)=3.0103dB; generic signal power SNR needs other quantities fixed.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-998",
+      "priority": "required",
+      "original": {
+        "question": "Why is Huffman coding optimal?",
+        "options": [
+          "Minimizes average code length",
+          "Removes noise",
+          "Uses fixed-length codes",
+          "Increases entropy"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "For known source-symbol probabilities, why is binary Huffman coding optimal among binary prefix codes that encode one symbol at a time?"
+      },
+      "reason": "Huffman tối thiểu hóa độ dài mã kỳ vọng trong lớp mã prefix theo ký hiệu. Không khẳng định thắng mọi mã khối hoặc arithmetic coding.",
+      "tip": "Huffman optimal → symbol-by-symbol binary prefix code.",
+      "note": "Huffman minimizes expected symbol-code length among binary prefix codes for the specified symbol probabilities, not among every possible block/arithmetic code.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-1006",
+      "priority": "clarify",
+      "original": {
+        "question": "Why does increasing M in QAM increase BER?",
+        "options": [
+          "Smaller distance between points",
+          "Larger bandwidth",
+          "Lower frequency",
+          "Higher power"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "At fixed average symbol energy and AWGN level, why does increasing square M-QAM order generally increase the error probability?"
+      },
+      "reason": "Giữ công suất trung bình mà tăng M làm các điểm QAM sít nhau, nhiễu dễ gây nhầm hơn.",
+      "tip": "more QAM points → smaller distance.",
+      "note": "At fixed average symbol energy and noise, smaller minimum Euclidean separation generally raises symbol/bit error probability.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-1009",
+      "priority": "required",
+      "original": {
+        "question": "If minimum distance increases, error correction ability will:",
+        "options": [
+          "Stay same",
+          "Increase",
+          "Become zero",
+          "Decrease"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Stay same",
+          "Not decrease; guaranteed correction is t = floor((d_min − 1)/2), so some increases leave t unchanged",
+          "Become zero",
+          "Decrease"
+        ]
+      },
+      "reason": "Số lỗi bảo đảm sửa được t=⌊(dmin−1)/2⌋. Tăng dmin từ 3 lên 4 vẫn chỉ sửa được 1 lỗi, nên không luôn tăng nghiêm ngặt.",
+      "tip": "Correct t errors ↔ dmin≥2t+1; t tăng theo bậc thang.",
+      "note": "Guaranteed correction is t=floor((dmin-1)/2). Raising dmin can leave t unchanged (3 to 4: t remains 1), so strictly increases is not always true.",
+      "originalAcceptedAlternatives": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "references": [],
+      "kind": "disambiguation"
+    },
+    {
+      "id": "COS201-1011",
+      "priority": "required",
+      "original": {
+        "question": "If bandwidth is reduced below Nyquist limit, what occurs?",
+        "options": [
+          "ISI increases",
+          "BER decreases",
+          "Signal improves",
+          "Noise decreases"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "At a fixed symbol rate Rs, what happens to the possibility of zero-ISI baseband transmission if available ideal bandwidth is below Rs/2?",
+        "options": [
+          "Zero-ISI pulse shaping is no longer possible at that symbol rate",
+          "BER decreases",
+          "Signal improves",
+          "Noise decreases"
+        ]
+      },
+      "reason": "Tiêu chuẩn Nyquist yêu cầu B≥Rs/2 để có truyền không ISI lý tưởng; băng thấp hơn không đáp ứng ở cùng tốc độ symbol.",
+      "tip": "Nyquist zero-ISI bound → B≥Rs/2.",
+      "note": "At fixed Rs, ideal zero-ISI baseband signaling needs bandwidth at least Rs/2; reducing it below this bound prevents zero-ISI pulse shaping.",
+      "originalAcceptedAlternatives": [],
+      "references": [],
+      "kind": "qualification"
+    },
+    {
+      "id": "COS201-1013",
+      "priority": "required",
+      "original": {
+        "question": "Why must baseband signals be modulated onto a carrier?",
+        "options": [
+          "To enable wireless transmission",
+          "To increase power",
+          "To reduce bandwidth",
+          "To reduce noise"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "In conventional passband radio communication, why are baseband messages translated onto an RF carrier?",
+        "options": [
+          "To support efficient practical antenna radiation and use an allocated RF band",
+          "To increase power",
+          "To reduce bandwidth",
+          "To reduce noise"
+        ]
+      },
+      "reason": "Sóng mang đưa thông điệp vào dải RF phù hợp anten và phân kênh; không phải mọi đường truyền baseband đều bắt buộc điều chế lên RF.",
+      "tip": "Passband radio → practical antenna + allocated RF band.",
+      "note": "Passband radio uses carrier translation for practical antenna radiation and allocation to an RF band; not all wired/baseband links require it.",
+      "originalAcceptedAlternatives": [],
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ],
+      "kind": "qualification"
+    }
+  ],
+  "keywordCards": [
+    {
+      "id": "COS201-KW01",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW02",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW03",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW04",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW05",
+      "status": "clarify",
+      "reason": "Equal-probability 2^k-symbol Huffman is a valid fixed-length special case.",
+      "changes": {
+        "options": [
+          "Mã prefix có thể có độ dài khác nhau; ký hiệu phổ biến thường có mã ngắn",
+          "Mọi ký hiệu bắt buộc có mã cùng độ dài",
+          "Là mã sửa lỗi kênh bắt buộc",
+          "Luôn cần đúng 8 bit/ký hiệu"
+        ]
+      }
+    },
+    {
+      "id": "COS201-KW06",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW07",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW08",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW09",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW10",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW11",
+      "status": "reviewed",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions."
+    },
+    {
+      "id": "COS201-KW12",
+      "status": "change",
+      "reason": "All four alternatives inspected; selected content agrees with the corresponding theory and conditions.",
+      "changes": {
+        "options": [
+          "Fs > 2B để bảo đảm tránh chồng phổ, kể cả khi có thành phần ở biên B",
+          "Fs = B/2",
+          "Fs < B trong mọi trường hợp",
+          "Fs không liên quan B"
+        ],
+        "reason": "Fs=2B là tốc độ Nyquist nhưng trường hợp đúng biên cần điều kiện bổ sung: sin(2πBt) lấy mẫu tại Fs=2B cho toàn zero. Dùng Fs>2B để bảo đảm với mọi thành phần đến B."
+      },
+      "references": [
+        "https://www.mathworks.com/help/signal/ug/avoid-aliasing-in-signal-downsampling.html"
+      ]
+    }
+  ],
+  "independentChecks": [
+    {
+      "case": "coherent BFSK vs BPSK",
+      "result": "d_BFSK²=2Eb, d_BPSK²=4Eb; energy ratio 2 = 3.0103dB"
+    },
+    {
+      "case": "Huffman uniform 3 symbols",
+      "result": "Optimal lengths [1,2,2], average 5/3; not all equal although all probabilities equal"
+    },
+    {
+      "case": "minimum Hamming distance",
+      "result": "t(3)=floor(2/2)=1; t(4)=floor(3/2)=1; not strictly increasing"
+    },
+    {
+      "case": "single-tone AM",
+      "result": "eta=mu²/(2+mu²); eta(1)=1/3; Pc/Ptotal=1/(1+mu²/2)=2/3"
+    },
+    {
+      "case": "2 additional ADC bits",
+      "result": "20log10(2²)=12.0412dB under ideal full-scale-sine assumptions"
+    },
+    {
+      "case": "Nyquist boundary",
+      "result": "sin(2pi B*n/(2B))=sin(pi n)=0 for all integer n, so equality needs endpoint conditions"
+    }
+  ],
+  "source855OptionA": "Viewed original screenshot: a(t) * cos(phi(t)); restored truncated OCR."
+}

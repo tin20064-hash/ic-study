@@ -1,0 +1,3020 @@
+{
+  "subject": "LOS201",
+  "questions": [
+    {
+      "id": "LOS201-13",
+      "subject": "LOS201",
+      "question": "An embedded target lacks Python support, but memory accounting data must be analyzed using smem. Which tool can capture the required information for later host-side analysis?",
+      "options": [
+        "smemcap",
+        "gdbserver",
+        "objdump",
+        "cpio"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-14",
+      "subject": "LOS201",
+      "question": "Which TWO conditions are commonly associated with an out-of-memory (OOM) event?",
+      "options": [
+        "Allocated memory demand exceeds available resources",
+        "The OOM killer may terminate processes",
+        "All allocations are automatically compressed",
+        "The kernel disables virtual memory"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-15",
+      "subject": "LOS201",
+      "question": "Which benefit is most commonly achieved when a device driver maps hardware registers into user space using mmap()?",
+      "options": [
+        "Reduced overhead by allowing direct access to device memory mappings",
+        "Automatic synchronization between all processes accessing the device",
+        "Elimination of the need for device drivers in the kernel",
+        "Transparent network communication with remote devices"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-16",
+      "subject": "LOS201",
+      "question": "Why are Open Source Build Systems considered essential for complex embedded Linux products containing hundreds of packages?",
+      "options": [
+        "They provide scalable automation for building, integrating, and maintaining complete software distributions",
+        "They replace the Linux kernel source tree",
+        "They remove the need for root filesystems",
+        "They eliminate software updates"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-17",
+      "subject": "LOS201",
+      "question": "A development team manually builds the toolchain, kernel, bootloader, libraries, and root filesystem for each release. Which primary problem is an Open Source Build System intended to solve?",
+      "options": [
+        "Automating dependency tracking and reproducible system generation",
+        "Eliminating the need for a Linux kernel",
+        "Replacing all debugging tools",
+        "Avoiding cross-compilation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-18",
+      "subject": "LOS201",
+      "question": "Which TWO challenges are reduced by adopting an integrated build system instead of manually assembling embedded Linux components?",
+      "options": [
+        "Dependency resolution",
+        "Software version management",
+        "Physical hardware failures",
+        "Network cable faults"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-19",
+      "subject": "LOS201",
+      "question": "Which statement best describes a real-time system?",
+      "options": [
+        "A system that always executes as fast as possible",
+        "A system that must respond within specified timing constraints",
+        "A system with the highest processor frequency",
+        "A system that never uses interrupts"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-20",
+      "subject": "LOS201",
+      "question": "A developer is evaluating a Linux system for industrial control. Which metric is more important than average response time?",
+      "options": [
+        "Worst-case response latency",
+        "Kernel image size",
+        "Number of installed packages",
+        "Filesystem compression ratio"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-21",
+      "subject": "LOS201",
+      "question": "Which flash type is commonly used for large-capacity storage?",
+      "options": [
+        "SRAM",
+        "Cache",
+        "NOR Flash",
+        "NAND Flash"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-22",
+      "subject": "LOS201",
+      "question": "What is the purpose of a cross-development environment?",
+      "options": [
+        "Manage flash memory",
+        "Replace debugging tools",
+        "Increase CPU speed",
+        "Develop software on one platform for another target platform"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-23",
+      "subject": "LOS201",
+      "question": "An engineering team successfully builds a Linux kernel but the target system still cannot boot into a usable environment. According to the embedded Linux architecture presented in the chapter, which TWO additional components are fundamentally required?",
+      "options": [
+        "A bootloader",
+        "A root file system",
+        "A desktop GUI environment",
+        "A Java Virtual Machine"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-24",
+      "subject": "LOS201",
+      "question": "Which shell is commonly provided by BusyBox?",
+      "options": [
+        "fish",
+        "bash only",
+        "zsh",
+        "ash"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-25",
+      "subject": "LOS201",
+      "question": "A developer creates symbolic links such as 'ls', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?",
+      "options": [
+        "By inspecting the name used to invoke the executable",
+        "By parsing kernel boot parameters",
+        "By reading the current process ID",
+        "By loading separate shared libraries for each command"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-26",
+      "subject": "LOS201",
+      "question": "Which TWO statements best describe the purpose of the Virtual File System (VFS) layer in relation to device drivers?",
+      "options": [
+        "It provides a uniform interface to user-space system calls",
+        "It directly replaces all device-specific driver code",
+        "It dispatches operations through file_operations structures",
+        "It eliminates the need for major/minor device numbers"
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LOS201-27",
+      "subject": "LOS201",
+      "question": "A kernel module declares a parameter using module_param(debug_enable, int, 0). Which TWO statements are correct?",
+      "options": [
+        "The parameter value can be supplied when loading the module",
+        "The parameter automatically becomes a kernel command-line option",
+        "The parameter can influence driver behavior without recompilation",
+        "The parameter is accessible only from user-space applications"
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LOS201-28",
+      "subject": "LOS201",
+      "question": "A developer loads a driver using modprobe instead of insmod. What is the primary advantage of modprobe?",
+      "options": [
+        "It automatically resolves and loads dependent modules",
+        "It bypasses module licensing checks",
+        "It compiles the driver before loading",
+        "It automatically creates device nodes"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-29",
+      "subject": "LOS201",
+      "question": "What is the primary responsibility of head.o?",
+      "options": [
+        "Setup CPU environment",
+        "Mount rootfs",
+        "Load modules",
+        "Create processes"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-30",
+      "subject": "LOS201",
+      "question": "Why does the Linux kernel use linker-generated tables for processing command-line parameters and initialization routines?",
+      "options": [
+        "To eliminate the need for configuration files",
+        "To allow automatic discovery and invocation of registered handlers without hard-coded lists",
+        "To reduce the kernel image size by removing symbol tables",
+        "To support only loadable kernel modules"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-31",
+      "subject": "LOS201",
+      "question": "A developer uses a remote debugging session and notices that breakpoints are working correctly even though execution occurs on the target board. What mechanism enables this capability?",
+      "options": [
+        "The debugger communicates with a remote debugging stub such as gdbserver",
+        "The compiler executes directly on the target kernel",
+        "The bootloader intercepts all function calls",
+        "The root filesystem mirrors source code automatically"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-32",
+      "subject": "LOS201",
+      "question": "An embedded Linux application performs correctly but consumes excessive CPU time. Which development methodology is most appropriate before modifying the source code?",
+      "options": [
+        "Profile the application to identify performance bottlenecks",
+        "Rebuild the bootloader",
+        "Replace the root filesystem",
+        "Disable debugging symbols"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-33",
+      "subject": "LOS201",
+      "question": "An embedded developer must choose between a RAM-based filesystem and a flash-based filesystem for persistent configuration storage. Which factor is the most critical consideration?",
+      "options": [
+        "Whether data must survive power cycles",
+        "The CPU clock frequency",
+        "The kernel image compression format",
+        "The number of serial ports"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-34",
+      "subject": "LOS201",
+      "question": "A root filesystem image is compressed before deployment to an embedded target with limited flash capacity. What is the primary trade-off introduced by this design?",
+      "options": [
+        "Reduced storage usage at the cost of decompression overhead",
+        "Higher RAM usage with no storage savings",
+        "Increased filesystem corruption risk by definition",
+        "Elimination of mount operations"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-35",
+      "subject": "LOS201",
+      "question": "In an image recipe, what is the purpose of the 'require' statement?",
+      "options": [
+        "Load a base recipe and extend it",
+        "Download packages from the internet",
+        "Compile the Linux kernel",
+        "Generate an SDK"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-36",
+      "subject": "LOS201",
+      "question": "Which file stores the list of layers that BitBake searches for metadata?",
+      "options": [
+        "local.conf",
+        "machine.conf",
+        "bblayers.conf",
+        "sdk.conf"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-37",
+      "subject": "LOS201",
+      "question": "Which variable is commonly extended to install additional packages into an image during development?",
+      "options": [
+        "KERNEL_FEATURES",
+        "IMAGE_INSTALL",
+        "PACKAGE_CLASSES",
+        "BBPATH"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-38",
+      "subject": "LOS201",
+      "question": "Why is the /dev/console device node considered critical in a minimal root filesystem?",
+      "options": [
+        "It provides network access during boot",
+        "It allows the kernel to load shared libraries",
+        "It enables standard input/output access for system interaction",
+        "It stores kernel boot parameters"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-39",
+      "subject": "LOS201",
+      "question": "A student creates /etc/inittab with '::sysinit:/etc/init.d/rcS' and '::askfirst:-/bin/sh'. What practical behavior should this produce after BusyBox init starts?",
+      "options": [
+        "It runs the system initialization script and then offers an interactive shell.",
+        "It rebuilds the kernel modules and recompiles the DTB.",
+        "It disables the PL011 serial console and redirects output to the host GUI.",
+        "It changes the U-Boot memory map to start at 0x00000000."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-40",
+      "subject": "LOS201",
+      "question": "What is the purpose of system initialization after kernel boot?",
+      "options": [
+        "Increase clock speed",
+        "Load BIOS",
+        "Prepare a usable user-space environment",
+        "Format storage"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-41",
+      "subject": "LOS201",
+      "question": "What is the primary difference between processes and threads?",
+      "options": [
+        "Threads run only in kernel mode",
+        "There is no difference",
+        "Threads share process resources while processes have separate address spaces",
+        "Processes cannot execute code"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-42",
+      "subject": "LOS201",
+      "question": "In the producer-consumer condition-variable example, why is the shared condition protected by a mutex?",
+      "options": [
+        "Because the condition is shared state and must be tested and updated safely.",
+        "Because pthread_cond_wait() requires network connectivity.",
+        "Because mutexes convert a process into a daemon.",
+        "Because condition variables cannot be used with pthreads."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-43",
+      "subject": "LOS201",
+      "question": "Which statement best describes a daemon in an embedded Linux system?",
+      "options": [
+        "A foreground process that must always read from the user's terminal.",
+        "A background service process that usually runs independently of an interactive login session.",
+        "A Linux kernel module loaded by insmod.",
+        "A thread synchronization object used by pthreads."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-44",
+      "subject": "LOS201",
+      "question": "Why are interrupts preferred over polling?",
+      "options": [
+        "Replace DMA",
+        "Improve file compression",
+        "Reduce CPU overhead",
+        "Increase RAM usage"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-45",
+      "subject": "LOS201",
+      "question": "Why is virtual memory important in Linux systems?",
+      "options": [
+        "Increases flash capacity",
+        "Eliminates scheduling",
+        "Provides isolation and memory protection",
+        "Removes interrupts"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-46",
+      "subject": "LOS201",
+      "question": "A developer wants to reduce boot time by bypassing the full U-Boot command interpreter and loading Linux directly from a known storage location. Which approach best matches this requirement?",
+      "options": [
+        "Booting through TFTP every time",
+        "Using Falcon Mode",
+        "Loading Linux through JTAG",
+        "Using an initramfs-only system"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-47",
+      "subject": "LOS201",
+      "question": "Which bootloader is most commonly used in embedded Linux systems?",
+      "options": [
+        "GRUB",
+        "U-Boot",
+        "LILO",
+        "BIOS"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-48",
+      "subject": "LOS201",
+      "question": "Why does the lab emphasize that vexpress-a9 RAM starts at 0x60000000 rather than 0x00000000?",
+      "options": [
+        "Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot.",
+        "Because all ARM systems reserve 0x00000000 exclusively for the Linux root filesystem.",
+        "Because QEMU requires the initramfs to be larger than 512 MB.",
+        "Because bootm only works when RAM begins at 0x00000000."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-49",
+      "subject": "LOS201",
+      "question": "Which TWO characteristics distinguish kernel debugging from user-space debugging?",
+      "options": [
+        "Errors can affect the entire system rather than a single process",
+        "Debugging tools may be limited during early boot stages",
+        "Kernel code executes with fewer privileges than applications",
+        "Kernel faults are automatically isolated from the operating system"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-50",
+      "subject": "LOS201",
+      "question": "What is KGDB?",
+      "options": [
+        "A kernel debugger that allows remote debugging of the Linux kernel",
+        "A tool for tracing user-space system calls",
+        "A performance profiling framework for Linux",
+        "A utility for analyzing ELF executables"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-51",
+      "subject": "LOS201",
+      "question": "What is the primary purpose of the dmesg command?",
+      "options": [
+        "Display messages stored in the kernel ring buffer",
+        "Trace system calls made by a process",
+        "Show shared library dependencies of an executable",
+        "Monitor process memory consumption"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-52",
+      "subject": "LOS201",
+      "question": "A developer successfully loads the kernel over the network but receives an error when mounting the root filesystem. Which service should be investigated first if the kernel command line specifies root=/dev/nfs?",
+      "options": [
+        "NFS server",
+        "Syslog daemon",
+        "SSH server",
+        "DNS server"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-53",
+      "subject": "LOS201",
+      "question": "What is TFTP commonly used for?",
+      "options": [
+        "Manage source code",
+        "Debug applications",
+        "Transfer boot images and kernels",
+        "Create filesystems"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-54",
+      "subject": "LOS201",
+      "question": "An engineer wants to debug startup failures before network services become available on the target. Which interface is generally the most reliable for capturing early boot messages?",
+      "options": [
+        "Serial console",
+        "Web browser",
+        "SSH session",
+        "NFS export log"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-55",
+      "subject": "LOS201",
+      "question": "A developer attempts to overwrite data on a flash page without erasing the corresponding erase block first. What outcome should be expected on most flash technologies?",
+      "options": [
+        "The operation may fail or produce undefined results because erase-before-write rules are violated",
+        "The data will always be updated atomically",
+        "The filesystem automatically disables flash protection",
+        "The kernel transparently converts the device into RAM"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-56",
+      "subject": "LOS201",
+      "question": "What does UBIFS run on top of?",
+      "options": [
+        "ext4",
+        "tmpfs",
+        "UBI",
+        "procfs"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-57",
+      "subject": "LOS201",
+      "question": "Which TWO statements best describe the purpose of the MTD abstraction layer in Linux?",
+      "options": [
+        "It provides a uniform API for memory-based storage devices",
+        "It hides hardware-specific flash operations from higher software layers",
+        "It replaces the Virtual File System entirely",
+        "It manages user-space process creation"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-58",
+      "subject": "LOS201",
+      "question": "What is the relationship between the kernel and user space?",
+      "options": [
+        "They are unrelated",
+        "The kernel provides services used by user-space applications",
+        "User space controls the kernel directly",
+        "The kernel runs inside applications"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-59",
+      "subject": "LOS201",
+      "question": "A developer is integrating a custom peripheral not supported by mainline Linux. What is the most likely requirement?",
+      "options": [
+        "Create or adapt device support software",
+        "Replace the bootloader",
+        "Disable the MMU",
+        "Recompile GCC only"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-60",
+      "subject": "LOS201",
+      "question": "Which kernel image is the uncompressed ELF binary used for debugging?",
+      "options": [
+        "initrd",
+        "zImage",
+        "uImage",
+        "vmlinux"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-61",
+      "subject": "LOS201",
+      "question": "In a legacy Linux kernel build that aggregates built-in objects using relocatable built-in.o files, a driver under drivers/ is configured built-in rather than as a module. Which listed aggregation artifact contains that driver code?",
+      "options": [
+        "drivers/built-in.o",
+        "lib/lib.a",
+        "usr/built-in.o",
+        "arch/arm/kernel/head.o"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-62",
+      "subject": "LOS201",
+      "question": "What is the purpose of autoconf.h?",
+      "options": [
+        "Manage memory",
+        "Store boot parameters",
+        "Load modules",
+        "Expose configuration options to C source code"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-63",
+      "subject": "LOS201",
+      "question": "In Linux virtual memory management, what is a page?",
+      "options": [
+        "A fixed-size unit of memory used for mapping virtual and physical addresses",
+        "A region of memory reserved for a single thread",
+        "A filesystem block used to store file data",
+        "A kernel structure representing a process"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-64",
+      "subject": "LOS201",
+      "question": "Which scenario is most appropriate for shared memory created using mmap()?",
+      "options": [
+        "Inter-process communication with low overhead",
+        "Request-response communication through a UNIX domain socket",
+        "Sending byte-stream data through a named pipe",
+        "Publish-subscribe message exchange using a messaging framework"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-65",
+      "subject": "LOS201",
+      "question": "A developer examines /proc/<pid>/maps. What information is primarily obtained from this file?",
+      "options": [
+        "CPU scheduling statistics",
+        "Process memory mappings",
+        "Network socket states",
+        "Thread priorities"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-66",
+      "subject": "LOS201",
+      "question": "Why does the Yocto Project use a layered architecture?",
+      "options": [
+        "To separate and manage metadata, BSPs, distributions, and application customizations independently.",
+        "To eliminate the need for BitBake recipes.",
+        "To store root filesystems in multiple partitions.",
+        "To perform runtime package management on the target system."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-67",
+      "subject": "LOS201",
+      "question": "A build engineer wants to minimize image size while retaining required functionality. Which build-system feature is most relevant?",
+      "options": [
+        "Fine-grained package selection and configuration",
+        "Automatic overclocking of the target CPU",
+        "Dynamic replacement of the kernel scheduler",
+        "Disabling all shared libraries"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-68",
+      "subject": "LOS201",
+      "question": "A company supports multiple hardware platforms sharing a common software stack. Why is a build system particularly beneficial in this environment?",
+      "options": [
+        "It enables configuration reuse and platform-specific customization",
+        "It removes the need for bootloaders",
+        "It guarantees identical hardware behavior",
+        "It eliminates cross-compilers"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-69",
+      "subject": "LOS201",
+      "question": "Which TWO techniques can improve Linux real-time performance?",
+      "options": [
+        "Reducing long non-preemptible kernel sections",
+        "Using real-time scheduling policies",
+        "Increasing filesystem fragmentation",
+        "Disabling all device drivers"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-70",
+      "subject": "LOS201",
+      "question": "An embedded controller must guarantee periodic execution of a task every 5 ms. Which evaluation criterion is most important when validating the platform?",
+      "options": [
+        "Worst-case scheduling and interrupt latency",
+        "Filesystem compression ratio",
+        "Number of installed utilities",
+        "Kernel image size only"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-71",
+      "subject": "LOS201",
+      "question": "A system architect divides the software stack into bootloader, kernel, libraries, and applications. What is the primary benefit of this layered architecture?",
+      "options": [
+        "Each layer can evolve independently while providing well-defined interfaces",
+        "The kernel no longer requires device drivers",
+        "Applications gain direct access to physical memory by default",
+        "The root filesystem becomes unnecessary"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-72",
+      "subject": "LOS201",
+      "question": "What is the primary responsibility of the bootloader?",
+      "options": [
+        "Initialize hardware and load the kernel",
+        "Run user applications",
+        "Manage filesystems",
+        "Compile source code"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-73",
+      "subject": "LOS201",
+      "question": "A project manager evaluates whether Linux is appropriate for a new embedded product. Which factor most strongly distinguishes Linux from a traditional bare-metal firmware approach?",
+      "options": [
+        "Linux provides standardized operating system services and process isolation",
+        "Linux removes all memory constraints",
+        "Linux eliminates interrupt handling",
+        "Linux requires no boot process"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-74",
+      "subject": "LOS201",
+      "question": "Why does BusyBox help reduce the size of an embedded Linux root filesystem?",
+      "options": [
+        "It uses a multicall binary that shares code among many utilities.",
+        "It compresses the kernel image at runtime.",
+        "It stores user applications inside the Device Tree Blob.",
+        "It eliminates the need for a root filesystem."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-75",
+      "subject": "LOS201",
+      "question": "How does BusyBox reduce storage requirements?",
+      "options": [
+        "Multiple utilities share a single executable",
+        "Compresses RAM",
+        "Eliminates drivers",
+        "Uses larger binaries"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-76",
+      "subject": "LOS201",
+      "question": "A student wants serial output from the ARMv7 guest to appear in the terminal. Which pair of settings is most consistent with the lab?",
+      "options": [
+        "Enable ARM AMBA PL011 support and use `console=ttyAMA0,115200`.",
+        "Disable all serial drivers and use `console=ttyS0,9600`.",
+        "Enable USB mass storage and use `console=/dev/sda1`.",
+        "Use `console=tty0` only because QEMU `-nographic` does not support UART output."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-77",
+      "subject": "LOS201",
+      "question": "A developer observes the boot message 'Freeing init memory: 296K'. What does this message indicate?",
+      "options": [
+        "The root filesystem has been unmounted",
+        "Memory occupied by one-time initialization code and data has been reclaimed",
+        "The page cache has been flushed",
+        "Unused device drivers have been unloaded"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-78",
+      "subject": "LOS201",
+      "question": "For a commercial product expected to remain in service for years, why is understanding Yocto release support important?",
+      "options": [
+        "Because support periods affect maintenance and security updates",
+        "Because releases determine CPU clock speed",
+        "Because unsupported releases cannot build images",
+        "Because support changes the ABI automatically"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-79",
+      "subject": "LOS201",
+      "question": "Which BitBake task generates an SDK for a specific image?",
+      "options": [
+        "bitbake sdk",
+        "bitbake image-sdk",
+        "bitbake -c populate_sdk <image>",
+        "bitbake -c toolchain"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-80",
+      "subject": "LOS201",
+      "question": "Why are BSP layers valuable in embedded Linux development?",
+      "options": [
+        "They abstract hardware-specific support and configuration",
+        "They remove the need for kernels",
+        "They replace root filesystems",
+        "They eliminate cross-compilers"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-81",
+      "subject": "LOS201",
+      "question": "Which TWO limitations are expected when Linux is appropriately configured to run on an embedded processor without an MMU?",
+      "options": [
+        "Virtual memory features may be unavailable",
+        "Memory isolation between processes may be limited",
+        "The processor automatically becomes multicore",
+        "Interrupt handling is disabled"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-82",
+      "subject": "LOS201",
+      "question": "What is an interrupt?",
+      "options": [
+        "A filesystem image",
+        "A compiler warning",
+        "A shell command",
+        "An event that temporarily changes program execution flow"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-83",
+      "subject": "LOS201",
+      "question": "A character device driver is loaded successfully, but user applications cannot access it through /dev. Which TWO conditions are most likely missing?",
+      "options": [
+        "A valid device node with the correct major/minor numbers",
+        "Registration of file_operations callbacks",
+        "A mounted NFS root filesystem",
+        "A kernel command-line parameter specifying the driver name"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-84",
+      "subject": "LOS201",
+      "question": "A driver successfully registers itself, but opening the device from user space triggers a kernel crash. Which design issue is the most likely cause?",
+      "options": [
+        "An invalid function pointer or a bug inside the driver open callback",
+        "A missing DHCP server",
+        "A corrupted initramfs image",
+        "An incorrect kernel command line"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-85",
+      "subject": "LOS201",
+      "question": "Why does Linux use major and minor device numbers instead of embedding driver-specific identifiers directly into device filenames?",
+      "options": [
+        "To separate driver selection from device instance identification",
+        "To eliminate the need for device nodes",
+        "To avoid dynamic memory allocation",
+        "To allow device drivers to bypass the VFS layer"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-86",
+      "subject": "LOS201",
+      "question": "A developer uses arm-linux-gnueabihf-gcc on an x86 workstation to build software for a Cortex-A9 board. What is this toolchain an example of?",
+      "options": [
+        "A native toolchain",
+        "A cross-toolchain",
+        "A kernel build system",
+        "A bootloader package"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-87",
+      "subject": "LOS201",
+      "question": "An embedded Linux target boots using a kernel loaded via TFTP and a root filesystem mounted over NFS. Which TWO benefits make this setup particularly useful during development?",
+      "options": [
+        "Rapid testing without reflashing storage devices",
+        "Direct modification of target files from the host system",
+        "Elimination of network dependencies",
+        "Automatic kernel recompilation after source changes"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-88",
+      "subject": "LOS201",
+      "question": "A developer updates a shared library on the host system that exports an NFS root filesystem. After rebooting the target, the new library is immediately available. What principle does this demonstrate?",
+      "options": [
+        "The target accesses files directly from the exported host filesystem",
+        "The library was embedded into the kernel image",
+        "The bootloader dynamically patched the executable",
+        "The device driver automatically regenerated the library"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-89",
+      "subject": "LOS201",
+      "question": "What is the purpose of nm?",
+      "options": [
+        "Mount filesystems",
+        "Debug hardware",
+        "Transfer files",
+        "Display symbols in object files"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-90",
+      "subject": "LOS201",
+      "question": "A developer compiles an application with optimization enabled but forgets to include debugging information. What is the most likely consequence when using GDB?",
+      "options": [
+        "Limited visibility of source lines and variables",
+        "The application cannot execute",
+        "The linker will fail automatically",
+        "The kernel will reject the executable"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-91",
+      "subject": "LOS201",
+      "question": "What is the primary purpose of SquashFS?",
+      "options": [
+        "Compressed read-only storage",
+        "Network file sharing",
+        "Database storage",
+        "Swap management"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-92",
+      "subject": "LOS201",
+      "question": "What is tmpfs?",
+      "options": [
+        "A network protocol",
+        "A RAM-based file system",
+        "A bootloader image",
+        "A flash-only file system"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-93",
+      "subject": "LOS201",
+      "question": "Which TWO statements correctly describe the role of architecture-specific directories under arch/ ?",
+      "options": [
+        "They contain processor-specific startup and initialization code",
+        "They replace all generic kernel subsystems",
+        "They provide machine- and CPU-dependent implementations",
+        "They are used only for loadable kernel modules"
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LOS201-94",
+      "subject": "LOS201",
+      "question": "A developer is exploring the kernel source tree to understand board-specific initialization code for an ARM platform. Which directory pattern is most relevant according to the chapter?",
+      "options": [
+        "arch/arm/mach-*",
+        "drivers/board/",
+        "kernel/platforms/",
+        "usr/boards/"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-95",
+      "subject": "LOS201",
+      "question": "In the legacy Linux Kbuild model, which TWO listed artifacts are respectively the final uncompressed ELF kernel and an intermediate aggregation of built-in objects?",
+      "options": [
+        "vmlinux",
+        "System.map",
+        "built-in.o files",
+        "modules.dep"
+      ],
+      "answer": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LOS201-96",
+      "subject": "LOS201",
+      "question": "A student boots QEMU with -kernel zImage and -dtb vexpress-v2p-ca9.dtb, but supplies neither an initramfs nor a usable root device/root= setting. The kernel stops with a VFS root mount panic. What is the most likely reason?",
+      "options": [
+        "The kernel cannot find a root filesystem because no initramfs image or root device was provided.",
+        "The CPU is not Cortex-A9 because -cpu cortex-a9 is ignored by QEMU.",
+        "The PL011 driver is always disabled in vexpress_defconfig.",
+        "The zImage file must always be replaced by uImage for ARMv7."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-97",
+      "subject": "LOS201",
+      "question": "A team wants to automate root filesystem generation rather than manually copying binaries, libraries, and configuration files. According to the chapter, which TWO open-source build systems are specifically highlighted for this purpose?",
+      "options": [
+        "Buildroot",
+        "OpenEmbedded/BitBake",
+        "Docker",
+        "OpenStack"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-98",
+      "subject": "LOS201",
+      "question": "An embedded device boots successfully into user space using a root filesystem with only a few directories and files. Which design principle is BEST demonstrated by this configuration?",
+      "options": [
+        "Providing every GNU utility by default",
+        "Minimizing storage usage while satisfying kernel and user-space dependencies",
+        "Prioritizing graphical user interfaces during startup",
+        "Eliminating all shared libraries"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-99",
+      "subject": "LOS201",
+      "question": "A developer wants to start a new process that first duplicates the current process and then replaces the child process image with another program. Which pair of functions best matches this design?",
+      "options": [
+        "pthread_create() and pthread_join()",
+        "fork() and exec()",
+        "mutex_lock() and mutex_unlock()",
+        "send() and recv()"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-100",
+      "subject": "LOS201",
+      "question": "An embedded application must prioritize deterministic response over fairness for a critical control activity. Which scheduling category should be considered?",
+      "options": [
+        "Time-shared scheduling only",
+        "Real-time scheduling policy",
+        "Best-effort desktop scheduling only",
+        "Batch compilation scheduling"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-101",
+      "subject": "LOS201",
+      "question": "A shared counter is updated by two threads in the same process. Which design prevents race conditions most directly?",
+      "options": [
+        "Protect the counter with a mutex around each read-modify-write operation.",
+        "Store the counter in a local variable of one function only but access it from all threads.",
+        "Call fork() before each increment.",
+        "Use printf() before each update to serialize execution."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-102",
+      "subject": "LOS201",
+      "question": "A U-Boot command loads a kernel image using 'diskboot 0x400000 0:0'. What does '0:0' represent?",
+      "options": [
+        "Kernel load address and DTB address",
+        "Device number and partition number",
+        "CPU number and core number",
+        "Flash bank and erase block"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-103",
+      "subject": "LOS201",
+      "question": "Which command is used to modify an environment variable in U-Boot?",
+      "options": [
+        "imd",
+        "setenv",
+        "loady",
+        "saveenv"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-104",
+      "subject": "LOS201",
+      "question": "What is the main difference between BIOS and an embedded bootloader?",
+      "options": [
+        "Embedded bootloaders are board-specific and configurable",
+        "No difference",
+        "BIOS replaces the kernel",
+        "BIOS loads Linux faster"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-105",
+      "subject": "LOS201",
+      "question": "A developer examines a kernel oops message after a driver crash. Which information is most likely to be present in the report?",
+      "options": [
+        "Call trace showing the sequence of kernel functions leading to the fault",
+        "System calls issued by the application before the crash",
+        "Shared library dependencies loaded by the process",
+        "CPU utilization statistics collected over time"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-106",
+      "subject": "LOS201",
+      "question": "Which TWO goals are commonly achieved through kernel debugging instrumentation?",
+      "options": [
+        "Identifying execution paths",
+        "Observing subsystem interactions",
+        "Automatically optimizing compiler output",
+        "Replacing performance profiling"
+      ],
+      "answer": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LOS201-107",
+      "subject": "LOS201",
+      "question": "Why is ftrace useful in Linux kernel debugging?",
+      "options": [
+        "It helps analyze kernel function execution and runtime behavior.",
+        "It displays shared library dependencies of applications.",
+        "It detects memory leaks in user-space programs.",
+        "It loads kernel modules dynamically."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-108",
+      "subject": "LOS201",
+      "question": "Why does NAND flash typically require error-correcting codes (ECC) while many NOR flash deployments can operate with less aggressive correction mechanisms?",
+      "options": [
+        "NAND devices are more susceptible to bit errors and higher storage densities",
+        "NOR flash does not store binary data",
+        "ECC is prohibited on NOR devices",
+        "NAND flash operates only in read-only mode"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-109",
+      "subject": "LOS201",
+      "question": "Why is JFFS2 less suitable for very large NAND devices?",
+      "options": [
+        "Mount time and memory usage scale poorly",
+        "It lacks journaling",
+        "It cannot store files",
+        "It supports only NOR"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-110",
+      "subject": "LOS201",
+      "question": "What is the role of ECC in flash memory?",
+      "options": [
+        "Compress data",
+        "Create partitions",
+        "Increase CPU speed",
+        "Detect and correct bit errors"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-111",
+      "subject": "LOS201",
+      "question": "A safety-critical medical device requires extensive certification. What concern about Linux should be considered?",
+      "options": [
+        "Linux cannot run on ARM processors",
+        "Regulatory verification effort may increase project complexity",
+        "Linux does not support networking",
+        "Linux cannot be customized"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-112",
+      "subject": "LOS201",
+      "question": "Which situation is most likely to justify choosing Linux over a small RTOS?",
+      "options": [
+        "A device with complex networking and user interfaces",
+        "An 8-bit microcontroller with 256 KB Flash",
+        "A single-purpose timing circuit",
+        "A battery-powered sensor with 64 KB RAM"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-114",
+      "subject": "LOS201",
+      "question": "What is the primary goal of the Linux Standard Base (LSB)?",
+      "options": [
+        "Source code portability",
+        "Binary application compatibility",
+        "Kernel debugging",
+        "UI standardization"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-115",
+      "subject": "LOS201",
+      "question": "What is the name for kernel entry points used by processes to request tasks?",
+      "options": [
+        "Library functions",
+        "System calls",
+        "Shell commands",
+        "Device drivers"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-116",
+      "subject": "LOS201",
+      "question": "Which 1989/1990 standard defined the syntax of C and its standard library?",
+      "options": [
+        "C99",
+        "POSIX.1",
+        "C89 (ISO C90)",
+        "SVID"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-117",
+      "subject": "LOS201",
+      "question": "Which POSIX extension (1003.1c) defined the API for threads?",
+      "options": [
+        "POSIX.1a",
+        "POSIX.1b",
+        "POSIX.1c",
+        "POSIX.1d"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-118",
+      "subject": "LOS201",
+      "question": "In a conventional executable memory layout, which writable segment normally stores global variables explicitly initialized to a nonzero value?",
+      "options": [
+        "Text",
+        "Data",
+        "Heap",
+        "Stack"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-119",
+      "subject": "LOS201",
+      "question": "Which 2001 UNIX specification collection includes the POSIX base specifications plus X/Open Curses Issue 4 Version 2 as an additional volume?",
+      "options": [
+        "C89",
+        "POSIX.1",
+        "SUSv3",
+        "SVID"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-120",
+      "subject": "LOS201",
+      "question": "Which system call is used to destroy a memory mapping?",
+      "options": [
+        "close()",
+        "munmap()",
+        "mremap()",
+        "free()"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-121",
+      "subject": "LOS201",
+      "question": "Which branding is applied to implementations certified against SUSv2?",
+      "options": [
+        "UNIX 95",
+        "UNIX 98",
+        "UNIX 03",
+        "Linux"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-122",
+      "subject": "LOS201",
+      "question": "Which system call is used to change the file offset for random access?",
+      "options": [
+        "read()",
+        "write()",
+        "lseek()",
+        "open()"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-123",
+      "subject": "LOS201",
+      "question": "What happens if a process in user mode tries to access kernel memory?",
+      "options": [
+        "Access is granted",
+        "The kernel crashes",
+        "Hardware exception",
+        "The system shuts down"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-124",
+      "subject": "LOS201",
+      "question": "Which memory segment grows and shrinks as functions return?",
+      "options": [
+        "Data",
+        "Heap",
+        "Stack",
+        "Text"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-125",
+      "subject": "LOS201",
+      "question": "Why is C considered a highly effective \"system programming language\"?",
+      "options": [
+        "It was designed by a large committee",
+        "It combines efficient compiled code with low-level memory and data operations.",
+        "It is a complex, high-level language",
+        "It was designed for mathematical logic"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-126",
+      "subject": "LOS201",
+      "question": "Which BSD release introduced the sockets API and a complete TCP/IP implementation?",
+      "options": [
+        "3BSD",
+        "4.1BSD",
+        "4.2BSD",
+        "4.4BSD"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-127",
+      "subject": "LOS201",
+      "question": "In SUSv3, which part contains the specifications for header files?",
+      "options": [
+        "XBD",
+        "XSH",
+        "XCU",
+        "XRAT"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-128",
+      "subject": "LOS201",
+      "question": "Which function directly exposes the kernel file-descriptor read system-call interface, unlike formatted stdio or a memory allocator?",
+      "options": [
+        "printf()",
+        "scanf()",
+        "read()",
+        "malloc()"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-129",
+      "subject": "LOS201",
+      "question": "Which graduate student co-founded Sun Microsystems and authored the C shell?",
+      "options": [
+        "Bill Joy",
+        "David Korn",
+        "Dennis Ritchie",
+        "Linus Torvalds"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-130",
+      "subject": "LOS201",
+      "question": "Which signal cannot be caught or ignored by a process?",
+      "options": [
+        "SIGINT",
+        "SIGTERM",
+        "SIGKILL",
+        "SIGUSR1"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-131",
+      "subject": "LOS201",
+      "question": "Which task involves the routing of packets on behalf of user processes?",
+      "options": [
+        "Memory management",
+        "Networking",
+        "Device access",
+        "System calls"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-132",
+      "subject": "LOS201",
+      "question": "Which system call is used to send a signal to a process?",
+      "options": [
+        "signal()",
+        "raise()",
+        "kill()",
+        "send()"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-133",
+      "subject": "LOS201",
+      "question": "What is the common maximum length, in bytes, of one filename component on Linux filesystems such as ext4?",
+      "options": [
+        "64",
+        "128",
+        "255",
+        "1024"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-134",
+      "subject": "LOS201",
+      "question": "In the filename vmlinuz, what does the z historically signify?",
+      "options": [
+        "Zero-copy",
+        "Compressed",
+        "Zone-mapped",
+        "Zealous"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-135",
+      "subject": "LOS201",
+      "question": "What character represents the root of the single directory hierarchy?",
+      "options": [
+        ".",
+        "..",
+        "/",
+        "~"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-136",
+      "subject": "LOS201",
+      "question": "What is the default signal sent when a user types Control-C?",
+      "options": [
+        "SIGKILL",
+        "SIGSTOP",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-137",
+      "subject": "LOS201",
+      "question": "Which shell was developed as the successor to sh by David Korn?",
+      "options": [
+        "bash",
+        "zsh",
+        "ksh",
+        "tcsh"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-138",
+      "subject": "LOS201",
+      "question": "Which POSIX sub-standard (1003.1b) defined realtime extensions like async I/O?",
+      "options": [
+        "POSIX.1a",
+        "POSIX.1b",
+        "POSIX.1c",
+        "POSIX.1g"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-139",
+      "subject": "LOS201",
+      "question": "What term is used for the software unit that handles networking in the kernel?",
+      "options": [
+        "Shell",
+        "Device driver",
+        "Protocol stack",
+        "File system"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-140",
+      "subject": "LOS201",
+      "question": "Which shell is a recursive acronym for \"Bourne again shell\"?",
+      "options": [
+        "sh",
+        "ksh",
+        "csh",
+        "bash"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-141",
+      "subject": "LOS201",
+      "question": "What was the outcome of the USL vs. BSDi lawsuit for the 4.4BSD-Lite release?",
+      "options": [
+        "BSDi was banned",
+        "AT&T code was removed",
+        "BSDi was bought by AT&T",
+        "All code became proprietary"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-142",
+      "subject": "LOS201",
+      "question": "Who is credited with the initial development of UNIX at Bell Laboratories?",
+      "options": [
+        "Dennis Ritchie",
+        "Linus Torvalds",
+        "Ken Thompson",
+        "Richard Stallman"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-143",
+      "subject": "LOS201",
+      "question": "Which teaching operating system served as the inspiration for Linux?",
+      "options": [
+        "MULTICS",
+        "Minix",
+        "NeXTStep",
+        "386/BSD"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-144",
+      "subject": "LOS201",
+      "question": "Which type of link is actually a file containing the name of another file?",
+      "options": [
+        "Hard link",
+        "Symbolic link",
+        "Inode link",
+        "Primary link"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-145",
+      "subject": "LOS201",
+      "question": "What happens to the Text segment during an execve()?",
+      "options": [
+        "It is preserved",
+        "It is shared",
+        "It is replaced",
+        "It is cleared"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-146",
+      "subject": "LOS201",
+      "question": "Which file contains group names and their numeric group IDs?",
+      "options": [
+        "/etc/passwd",
+        "/etc/shadow",
+        "/etc/group",
+        "/etc/sudoers"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-147",
+      "subject": "LOS201",
+      "question": "Which listed interface terminates the calling process without invoking functions registered with atexit()?",
+      "options": [
+        "kill()",
+        "wait()",
+        "_exit()",
+        "stop()"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-148",
+      "subject": "LOS201",
+      "question": "Which mapping type initializes the memory pages to zero?",
+      "options": [
+        "File mapping",
+        "Anonymous mapping",
+        "Shared mapping",
+        "Static mapping"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-149",
+      "subject": "LOS201",
+      "question": "Which system call replaces the process memory with a new program?",
+      "options": [
+        "fork()",
+        "execve()",
+        "brk()",
+        "mmap()"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-150",
+      "subject": "LOS201",
+      "question": "For a directory, what does \"execute\" permission allow?",
+      "options": [
+        "Listing filenames",
+        "Deleting the directory",
+        "Accessing files within it",
+        "Renaming it"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-151",
+      "subject": "LOS201",
+      "question": "Which IPC mechanism provides a byte-stream channel addressed by a filesystem pathname, allowing unrelated local processes to open it?",
+      "options": [
+        "Pipe",
+        "FIFO",
+        "Signal",
+        "Stack"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-152",
+      "subject": "LOS201",
+      "question": "What is the Unix universality of I/O concept?",
+      "options": [
+        "All I/O uses networking",
+        "Same system calls work on all file types",
+        "No system calls are required",
+        "Files are read-only by default"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-153",
+      "subject": "LOS201",
+      "question": "Which numeric user ID (UID) is always assigned to the superuser?",
+      "options": [
+        "1",
+        "1000",
+        "0",
+        "-1"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-154",
+      "subject": "LOS201",
+      "question": "What is the name of a collection of object modules in a single file?",
+      "options": [
+        "Kernel",
+        "Script",
+        "Library",
+        "Socket"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-155",
+      "subject": "LOS201",
+      "question": "Which command-line tool is used to display System V IPC objects?",
+      "options": [
+        "ls",
+        "ipcs",
+        "ps",
+        "netstat"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-156",
+      "subject": "LOS201",
+      "question": "Which Finnish university was Linus Torvalds attending when he created Linux?",
+      "options": [
+        "Aalto",
+        "Helsinki",
+        "Turku",
+        "Tampere"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-157",
+      "subject": "LOS201",
+      "question": "In what year was the first version of the GPL released?",
+      "options": [
+        "1985",
+        "1987",
+        "1989",
+        "1991"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-158",
+      "subject": "LOS201",
+      "question": "What program handles the loading of shared libraries at run time?",
+      "options": [
+        "The compiler",
+        "The linker",
+        "The dynamic linker",
+        "The kernel"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-159",
+      "subject": "LOS201",
+      "question": "Stallman argues that the term for the entire system should be what?",
+      "options": [
+        "Linux",
+        "FSF/Linux",
+        "GNU/Linux",
+        "OpenUNlX"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-160",
+      "subject": "LOS201",
+      "question": "Which type of mapping is used for interprocess communication?",
+      "options": [
+        "Private anonymous",
+        "Shared mapping",
+        "Static archive",
+        "Kernel mapping"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-161",
+      "subject": "LOS201",
+      "question": "Which IPC mechanism allows two processes to share a region of memory?",
+      "options": [
+        "Message Queue",
+        "Shared Memory",
+        "Socket",
+        "Pipe"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-162",
+      "subject": "LOS201",
+      "question": "Which task performed by the kernel involves arbitrating access to hardware?",
+      "options": [
+        "Scheduling",
+        "Device access",
+        "Virtual memory",
+        "Login accounting"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-163",
+      "subject": "LOS201",
+      "question": "Which shell was the standard for Seventh Edition UNIX?",
+      "options": [
+        "bash",
+        "csh",
+        "ksh",
+        "sh (Bourne)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-164",
+      "subject": "LOS201",
+      "question": "What is the name for a named pipe that exists in the file system?",
+      "options": [
+        "Socket",
+        "FIFO",
+        "Signal",
+        "Message"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-165",
+      "subject": "LOS201",
+      "question": "In SUSv3, which part specifies the operation of the shell and commands?",
+      "options": [
+        "XBD",
+        "XSH",
+        "XCU (Shell and Utilities)",
+        "XRAT"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-166",
+      "subject": "LOS201",
+      "question": "What term is used for the reserved area of disk used to supplement RAM?",
+      "options": [
+        "Buffer cache",
+        "Heap",
+        "Swap area",
+        "Stack"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-167",
+      "subject": "LOS201",
+      "question": "At the network layer (for example, IP), what is the usual name of the protocol data unit?",
+      "options": [
+        "Frame",
+        "Segment",
+        "Packet",
+        "Block"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-168",
+      "subject": "LOS201",
+      "question": "Which permission on a directory allows a user to list its contents?",
+      "options": [
+        "Read",
+        "Write",
+        "Execute",
+        "Search"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-169",
+      "subject": "LOS201",
+      "question": "Which IPC mechanism is used to notify a process that an event occurred?",
+      "options": [
+        "Pipe",
+        "FIFO",
+        "Signal",
+        "Socket"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-170",
+      "subject": "LOS201",
+      "question": "Which IPC type originated from BSD rather than System V?",
+      "options": [
+        "Sockets",
+        "Semaphores",
+        "Message Queues",
+        "Shared Memory"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-171",
+      "subject": "LOS201",
+      "question": "What provides the abstraction of a \"virtual private computer\" for each user?",
+      "options": [
+        "The shell",
+        "The hardware",
+        "The kernel",
+        "The BIOS"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-172",
+      "subject": "LOS201",
+      "question": "What is the exact name, including the final revision number, of the last BSD distribution released by Berkeley CSRG?",
+      "options": [
+        "Net/ 2",
+        "3BSD",
+        "4.4BSD-Lite",
+        "2BSD",
+        "4.4BSD-Lite Release 2 (1995)"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "id": "LOS201-173",
+      "subject": "LOS201",
+      "question": "Who designed and implemented the C programming language to assist in rewriting the UNIX kernel?",
+      "options": [
+        "Bill Joy",
+        "David Korn",
+        "Dennis Ritchie",
+        "Ken Thompson"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-174",
+      "subject": "LOS201",
+      "question": "Which tool is used to search for shared libraries at run time?",
+      "options": [
+        "ld",
+        "gcc",
+        "ld.so (dynamic linker)",
+        "make"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-175",
+      "subject": "LOS201",
+      "question": "Which memory segment is marked read-only and shared between processes?",
+      "options": [
+        "Data",
+        "Heap",
+        "Text",
+        "Stack"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-176",
+      "subject": "LOS201",
+      "question": "Which system call creates a mapping of a file into virtual memory?",
+      "options": [
+        "fork()",
+        "mmap()",
+        "read()",
+        "open()"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-177",
+      "subject": "LOS201",
+      "question": "Which UID is used by Unix permission checks for access to System V IPC resources such as message queues, shared memory, and semaphores?",
+      "options": [
+        "Real UID",
+        "Effective UID",
+        "Saved UID",
+        "Login UID"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-178",
+      "subject": "LOS201",
+      "question": "On which hardware was the port known as \"32V\" (Seventh Edition) based?",
+      "options": [
+        "PDP-11",
+        "VAX-11/780",
+        "Intel 80386",
+        "Motorola 68000"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-179",
+      "subject": "LOS201",
+      "question": "Which type of pathname starts with the root character / ?",
+      "options": [
+        "Relative",
+        "Short",
+        "Absolute",
+        "Virtual"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-180",
+      "subject": "LOS201",
+      "question": "In what year was the Free Software Foundation (FSF) established?",
+      "options": [
+        "1980",
+        "1984",
+        "1985",
+        "1991"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-181",
+      "subject": "LOS201",
+      "question": "What resides in the Text segment of a process memory?",
+      "options": [
+        "Global variables",
+        "Local variables",
+        "Machine instructions",
+        "Dynamic allocations"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-182",
+      "subject": "LOS201",
+      "question": "A process with an effective UID of 0 is referred to as what?",
+      "options": [
+        "Zombie",
+        "Daemon",
+        "Privileged process",
+        "Kernel thread"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-183",
+      "subject": "LOS201",
+      "question": "Which IPC mechanism allows communication between processes on different hosts?",
+      "options": [
+        "FIFO",
+        "Message Queue",
+        "Socket",
+        "Signal"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-184",
+      "subject": "LOS201",
+      "question": "Which hardware feature allows switching from user mode to kernel mode?",
+      "options": [
+        "RAM bus",
+        "A controlled system-call or trap instruction that enters the kernel",
+        "Disk controller",
+        "Network card"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-185",
+      "subject": "LOS201",
+      "question": "Which kernel task involves sharing RAM in an equitable and efficient fashion?",
+      "options": [
+        "Process scheduling",
+        "Memory management",
+        "Networking",
+        "File system provision"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-186",
+      "subject": "LOS201",
+      "question": "What is the term for a running instance of a program?",
+      "options": [
+        "binary",
+        "script",
+        "process",
+        "object"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-187",
+      "subject": "LOS201",
+      "question": "What is the typical name for the IPC synchronization units?",
+      "options": [
+        "Links",
+        "Sockets",
+        "Semaphores",
+        "Descriptors"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-188",
+      "subject": "LOS201",
+      "question": "Under which organization's auspices were the POSIX standards developed?",
+      "options": [
+        "The Open Group",
+        "FSF",
+        "IEEE",
+        "ISO"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-189",
+      "subject": "LOS201",
+      "question": "In what year was the first UNIX implementation developed?",
+      "options": [
+        "1967",
+        "1969",
+        "1971",
+        "1973"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-190",
+      "subject": "LOS201",
+      "question": "Which edition of UNIX was the first to be widely used outside of AT&T/Bell Labs?",
+      "options": [
+        "Second Edition",
+        "Fourth Edition",
+        "Sixth Edition",
+        "Seventh Edition"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-191",
+      "subject": "LOS201",
+      "question": "What happens to the Data segment during a fork()?",
+      "options": [
+        "It is shared",
+        "It is deleted",
+        "It is duplicated",
+        "It is moved to the Heap"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-192",
+      "subject": "LOS201",
+      "question": "Which ambitious GNU kernel design was based on the Mach microkernel?",
+      "options": [
+        "Linux",
+        "Minix",
+        "HURD",
+        "Solaris"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-193",
+      "subject": "LOS201",
+      "question": "Which BSD variant emphasizes portability across a wide range of hardware?",
+      "options": [
+        "FreeBSD",
+        "NetBSD",
+        "OpenBSD",
+        "DragonFly BSD"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-194",
+      "subject": "LOS201",
+      "question": "Which GNU tool is the standard compiler collection used on Linux systems?",
+      "options": [
+        "ACC",
+        "GCC",
+        "LCC",
+        "TCC"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-195",
+      "subject": "LOS201",
+      "question": "Which GNU program is a highly extensible text editor created by Stallman?",
+      "options": [
+        "vi",
+        "nano",
+        "Emacs",
+        "ed"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-196",
+      "subject": "LOS201",
+      "question": "Which directory entry refers to the parent directory?",
+      "options": [
+        ".",
+        "..",
+        "/",
+        "root"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-197",
+      "subject": "LOS201",
+      "question": "Which distribution is identified as the oldest surviving commercial Linux distribution?",
+      "options": [
+        "Debian",
+        "Red Hat",
+        "Slackware",
+        "Ubuntu"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-198",
+      "subject": "LOS201",
+      "question": "Which Linux-specific system call is used to create a new process/thread?",
+      "options": [
+        "fork()",
+        "execve()",
+        "clone()",
+        "wait()"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-199",
+      "subject": "LOS201",
+      "question": "Which System V release is considered the \"definitive\" version appearing in 1989?",
+      "options": [
+        "Release 1",
+        "Release 2",
+        "Release 3",
+        "Release 4"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-200",
+      "subject": "LOS201",
+      "question": "Which mechanism is used for high-speed IPC by avoiding data copying?",
+      "options": [
+        "Pipe",
+        "FIFO",
+        "Shared Memory",
+        "Socket"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-201",
+      "subject": "LOS201",
+      "question": "In 1970, UNIX was rewritten for which machine to utilize its new and powerful capabilities?",
+      "options": [
+        "PDP-7",
+        "PDP-11",
+        "Interdata 7/32",
+        "IBM zSeries"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-202",
+      "subject": "LOS201",
+      "question": "What is a \"unidirectional\" data channel between related processes?",
+      "options": [
+        "Socket",
+        "Shared Memory",
+        "Pipe",
+        "Semaphore"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-203",
+      "subject": "LOS201",
+      "question": "Which directory entry refers to the directory itself?",
+      "options": [
+        "..",
+        ".",
+        "/",
+        "~"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-204",
+      "subject": "LOS201",
+      "question": "Which file stores the mapping of usernames to numeric UIDs?",
+      "options": [
+        "/etc/shadow",
+        "/etc/group",
+        "/etc/passwd",
+        "/etc/users"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-205",
+      "subject": "LOS201",
+      "question": "What is the primary role of the shell?",
+      "options": [
+        "Memory management",
+        "Command interpretation",
+        "Process scheduling",
+        "Disk driver control"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-206",
+      "subject": "LOS201",
+      "question": "What was the name of the unofficial 1984 standard produced by UNIX vendors?",
+      "options": [
+        "/usr/group",
+        "FSF",
+        "BSD",
+        "SVR4"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-207",
+      "subject": "LOS201",
+      "question": "What is the primary benefit of virtual memory management isolation?",
+      "options": [
+        "Faster CPU speed",
+        "Process and kernel protection",
+        "No need for physical RAM",
+        "Infinite storage"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-208",
+      "subject": "LOS201",
+      "question": "Which GPL version was released in 2007?",
+      "options": [
+        "Version 1",
+        "Version 2",
+        "Version 3",
+        "Version 4"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-209",
+      "subject": "LOS201",
+      "question": "Which standard body collaborated with IEEE and The Open Group to form the Austin Group?",
+      "options": [
+        "ISO/IEC",
+        "FSF",
+        "GNU",
+        "Linux Foundation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "LOS201-210",
+      "subject": "LOS201",
+      "question": "Which BSD variant emphasizes security above other features?",
+      "options": [
+        "FreeBSD",
+        "NetBSD",
+        "OpenBSD",
+        "Solaris"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "LOS201-211",
+      "subject": "LOS201",
+      "question": "During the later Linux 2.6.x mainline development era (for example, 2.6.33–2.6.38), approximately how long was a new feature-release cycle?",
+      "options": [
+        "1 month",
+        "3 months",
+        "6 months",
+        "1 year"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "LOS201-212",
+      "subject": "LOS201",
+      "question": "Which version of the Linux kernel brought an end to separate stable/development branches?",
+      "options": [
+        "1",
+        "2",
+        "2.4",
+        "2.6"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "LOS201-213",
+      "subject": "LOS201",
+      "question": "The FSF was founded primarily to support what?",
+      "options": [
+        "Hardware development",
+        "The GNU project",
+        "Commercial UNIX vendors",
+        "The IEEE"
+      ],
+      "answer": [
+        1
+      ]
+    }
+  ],
+  "sameStemGroups": [],
+  "candidates": [
+    {
+      "ids": [
+        "LOS201-29",
+        "LOS201-72"
+      ],
+      "similarity": 0.878
+    },
+    {
+      "ids": [
+        "LOS201-196",
+        "LOS201-203"
+      ],
+      "similarity": 0.867
+    },
+    {
+      "ids": [
+        "LOS201-62",
+        "LOS201-89"
+      ],
+      "similarity": 0.809
+    },
+    {
+      "ids": [
+        "LOS201-145",
+        "LOS201-191"
+      ],
+      "similarity": 0.785
+    },
+    {
+      "ids": [
+        "LOS201-19",
+        "LOS201-43"
+      ],
+      "similarity": 0.768
+    },
+    {
+      "ids": [
+        "LOS201-51",
+        "LOS201-91"
+      ],
+      "similarity": 0.74
+    },
+    {
+      "ids": [
+        "LOS201-91",
+        "LOS201-205"
+      ],
+      "similarity": 0.73
+    },
+    {
+      "ids": [
+        "LOS201-51",
+        "LOS201-205"
+      ],
+      "similarity": 0.714
+    },
+    {
+      "ids": [
+        "LOS201-26",
+        "LOS201-57"
+      ],
+      "similarity": 0.711
+    },
+    {
+      "ids": [
+        "LOS201-114",
+        "LOS201-205"
+      ],
+      "similarity": 0.693
+    },
+    {
+      "ids": [
+        "LOS201-89",
+        "LOS201-91"
+      ],
+      "similarity": 0.679
+    },
+    {
+      "ids": [
+        "LOS201-62",
+        "LOS201-91"
+      ],
+      "similarity": 0.667
+    },
+    {
+      "ids": [
+        "LOS201-146",
+        "LOS201-204"
+      ],
+      "similarity": 0.667
+    },
+    {
+      "ids": [
+        "LOS201-41",
+        "LOS201-104"
+      ],
+      "similarity": 0.661
+    },
+    {
+      "ids": [
+        "LOS201-29",
+        "LOS201-91"
+      ],
+      "similarity": 0.657
+    },
+    {
+      "ids": [
+        "LOS201-51",
+        "LOS201-62"
+      ],
+      "similarity": 0.657
+    },
+    {
+      "ids": [
+        "LOS201-122",
+        "LOS201-132"
+      ],
+      "similarity": 0.653
+    },
+    {
+      "ids": [
+        "LOS201-157",
+        "LOS201-189"
+      ],
+      "similarity": 0.652
+    },
+    {
+      "ids": [
+        "LOS201-72",
+        "LOS201-205"
+      ],
+      "similarity": 0.64
+    },
+    {
+      "ids": [
+        "LOS201-193",
+        "LOS201-210"
+      ],
+      "similarity": 0.637
+    },
+    {
+      "ids": [
+        "LOS201-51",
+        "LOS201-72"
+      ],
+      "similarity": 0.635
+    },
+    {
+      "ids": [
+        "LOS201-51",
+        "LOS201-89"
+      ],
+      "similarity": 0.633
+    },
+    {
+      "ids": [
+        "LOS201-29",
+        "LOS201-205"
+      ],
+      "similarity": 0.627
+    },
+    {
+      "ids": [
+        "LOS201-89",
+        "LOS201-110"
+      ],
+      "similarity": 0.627
+    },
+    {
+      "ids": [
+        "LOS201-110",
+        "LOS201-205"
+      ],
+      "similarity": 0.623
+    },
+    {
+      "ids": [
+        "LOS201-62",
+        "LOS201-110"
+      ],
+      "similarity": 0.621
+    },
+    {
+      "ids": [
+        "LOS201-132",
+        "LOS201-198"
+      ],
+      "similarity": 0.621
+    },
+    {
+      "ids": [
+        "LOS201-180",
+        "LOS201-189"
+      ],
+      "similarity": 0.62
+    }
+  ]
+}

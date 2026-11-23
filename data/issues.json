@@ -1,0 +1,2979 @@
+[
+  {
+    "id": "DGT302-508",
+    "question": "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" WN is introduced. How is it mathematically defined?",
+    "options": [
+      "WN = exp(j2T1/N)",
+      "WN = exp(-j2n/N)",
+      "WN = exp(-jn/N) - exp(jn/N)"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        898,
+        "Giåi thich: He s6 twiddle durqc dinh nghTa lä WN = eA(-j2n/N), t(rc mét phép quay 2T1/N theo Chibu am trén vöng trön dcm vi (B). Nhö dé cöng th(rc DFT viét gon thånh tang cia x(n)"
+      ],
+      [
+        922,
+        "nhån WNA(kn). Däu am kh6p däu am trong cöng th(rc DFT thuän. A c6 däu durang, lä he s6 dung cho IDFT. Cvå D thiéu he s6 2. (Trong ånh g6c, k' hiéu bi hién thi thånh chtr n,"
+      ],
+      [
+        947,
+        "minh dä sdra lei.)"
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" WN is introduced."
+      ],
+      [
+        348,
+        "How is it mathematically defined?"
+      ],
+      [
+        395,
+        "A. WN = exp(j2T1/N)"
+      ],
+      [
+        436,
+        "B. WN = exp(-j2n/N)"
+      ],
+      [
+        476,
+        "C. WN = exp(-jn/N)"
+      ],
+      [
+        517,
+        "- exp(jn/N)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-510",
+    "question": "Using the frequency differentiation property n•x(n) e j•dX(w)/dw, evaluate the DTFT of the sequence x(n) = for lal < 1 C. eA(-jw) / (1 -",
+    "options": [],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån D"
+      ],
+      [
+        898,
+        "Giåi thich: E)åp än g6c ghi D, nhcrng khi tinh lei thi két quå düng phåi lå A. Däy cé DTF T lå 1/(1 - Dao håm theo w cho nhån thém j thi durqc"
+      ],
+      [
+        921,
+        "- toc dép än A. Cé thé kiém tra bång bién d6i z quen thuöc: c6 bién d6i z lå - thay z = eA(jw) cüng ra A. B sai däu & mau s6, C"
+      ],
+      [
+        946,
+        "thiéu he s6 a. Ben nén håi lei giång vién cåu nåy. (Anh g6c khång c6 tiéu dE cåu 11.)"
+      ]
+    ],
+    "slide": [
+      [
+        317,
+        "Using the frequency differentiation property n•x(n) e j•dX(w)/dw, evaluate the DTFT of"
+      ],
+      [
+        347,
+        "the sequence x(n) = for lal < 1"
+      ],
+      [
+        476,
+        "C. eA(-jw) / (1 -"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-512",
+    "question": "Assuming that the lengths of discrete-time signals x(n) and h(n) are L and M, respectively. When is the N-point circular convolution between these signals strictly equal to the linear convolution between them?",
+    "options": [
+      "N<L+M-I",
+      "N 20M",
+      "N2L+M-1"
+    ],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: Tich chap tuyén tinh cba hai däy dåi L vå M cho két quå dåi L + M - 1 mäu. Tich chap vöng N diém chi trüng v6i tich chap tuyén tinh khi N dt Ion dé ch(ra hét két quå, toc N L"
+      ],
+      [
+        922,
+        "+ M - 1 (C). Néu N nhå hon, ph>n duåi sé quän ngurqc vb dÄu däy (time-domain aliasing). A nåi ngu•qc dibu kien. B (N L•M) cüng düng nhcrng thtra rät nhibu, khöng phåi diEu kien"
+      ],
+      [
+        946,
+        "chinh xåc. D chi düng trong mét truröng hqp rät han ché."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Assuming that the lengths of discrete-time signals x(n) and h(n) are L and M,"
+      ],
+      [
+        348,
+        "respectively. When is the N-point circular convolution between these signals strictly"
+      ],
+      [
+        377,
+        "equal to the linear convolution between them?"
+      ],
+      [
+        427,
+        "A.N<L+M-I"
+      ],
+      [
+        467,
+        "B. N 20M"
+      ],
+      [
+        508,
+        "C. N2L+M-1"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-519",
+    "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = its N-point DFT is:",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        897,
+        "Giåi thich: E)åp än g6c ghi B, nhcrng theo l' thuyét thi dép än düng phåi lä A. Ta c6 cos bång mét ndra t6ng cia eA(j2nkOn/N) vå eA(-j2nkOn/N). Theo tinh chät dich en, nhån m6i håm"
+      ],
+      [
+        921,
+        "mü låm ph6 dich vöng di mét khoång +kO hoäc -ld). Vi vay DFT cba xs(n) lå (1/2)•[X((k - kO))N + X((k + kO))N], toc dép ån A. B thvc chät lå tinh chät dich vöng theo thöi gian, khi x(n) bi tré"
+      ],
+      [
+        945,
+        "ld) mäu. D lä két quå khi nhån mét håm mü ph(rc duy nhät ch(r khöng phåi cos. Ban nén håi lai giång vién cåu nåy."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency"
+      ],
+      [
+        348,
+        "Shift (Modulation) property, if a new sequence is created by xs(n) ="
+      ],
+      [
+        377,
+        "its N-point DFT is:"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-523",
+    "question": "The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform (DTFT) of a sequence x(n) is mathematically defined as: = Sum from n = -oo to oo of = Sum from n = -oo to oo of = Integral from -oo to of dt = Sum from n = O to N-1 of",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        898,
+        "Giåi thich: D TFT thuän durqc dinh nghTa lä tang Vö hen cia v6i n chay tir am Vö cüng dén durang Vö cüng (B). Két quå lå mét håm lién tuc theo w, tuh hoån v6i chu ky 211. A"
+      ],
+      [
+        922,
+        "sai däu mü, däu durang düng cho bién d6i ngurqc. C lä bién d6i Fourier cba tin hiéu lién tuc (CTFT). D lå DFT, gbm N diém röi rec theo k."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform"
+      ],
+      [
+        348,
+        "(DTFT) of a sequence x(n) is mathematically defined as:"
+      ],
+      [
+        396,
+        "= Sum from n = -oo to oo of"
+      ],
+      [
+        437,
+        "= Sum from n = -oo to oo of"
+      ],
+      [
+        477,
+        "= Integral from -oo to of dt"
+      ],
+      [
+        518,
+        "= Sum from n = O to N-1 of"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-528",
+    "question": "The Direct Form II (Canonic Form) implementation improves upon Direct Form I by merging the delay elements. What is the total number of memory delays required for this highly memory-efficient structure? C. max(M,N)",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: Direct Form I ding hai däy tré riéng: M phän ttr cho phän ttr s6 (phia dEu våo) vå N phän ttr cho phän måu s6 (phia dbu ra), t6ng cong M + N (A). Direct Form II d6i thü' tv hai"
+      ],
+      [
+        921,
+        "kh6i, dät phEn toån truröc, nén hai däy tré thånh dung Chung, vå chi CEn s6 phEn ttr tré bång bac 16n hon, t(rc max(M, N) (C). Dåy lå s6 phän ttr tré t6i thiéu, nén goi lä dang"
+      ],
+      [
+        945,
+        "chinh tåc (canonic). Bvå D khöng cé nghTa."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "The Direct Form II (Canonic Form) implementation improves upon Direct Form I by"
+      ],
+      [
+        348,
+        "merging the delay elements. What is the total number of memory delays required for"
+      ],
+      [
+        377,
+        "this highly memory-efficient structure?"
+      ],
+      [
+        507,
+        "C. max(M,N)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-535",
+    "question": "Consider the causal decaying exponential sequence x(n) = with lal < 1. What is its exact Discrete-Time Fourier Transform X(w)? B. 1/(1 _ eA(-jW))",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        897,
+        "Giåi thich: X(w) bång t6ng cia v6i n tlr O dén Vö cüng, t(rc lå mét cap s6 nhån v6i cöng böi Vi lal < 1 nan cäp s6 nåy höi tu vb 1/(1 - (B). Dåy lå cäp bién"
+      ],
+      [
+        922,
+        "d6i co bån nhät, an thuöc löng. A sai däu, (rng däy (-a)An. C sai vi tri cia a. D sai däu mü, (rng v6i däy lat thöi gian"
+      ]
+    ],
+    "slide": [
+      [
+        317,
+        "Consider the causal decaying exponential sequence x(n) = with lal < 1. What is"
+      ],
+      [
+        348,
+        "its exact Discrete-Time Fourier Transform X(w)?"
+      ],
+      [
+        436,
+        "B. 1/(1"
+      ],
+      [
+        477,
+        "_ eA(-jW))"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-542",
+    "question": "What is the mathematical definition of the direct (two-sided) z-transform for a discrete-time sequence x(n)?",
+    "options": [
+      "X(z) = Sum from n = O to of = Sum from n = -oo to of = Sum from n = -oo to oo of = Integral from -oo to of dt"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        898,
+        "Giåi thich: Bién d6i z hai phia lä tang cia n chay tlr am Vö cüng dén durang Vö cüng (B). A chi Wy t6ng ttr n = O nén lå bién d6i z mét phia, düng khi giåi phurang trinh sai"
+      ],
+      [
+        922,
+        "phån c6 dibu kién dbu. C lä DTFT, t(rc bién d6i z tinh trén vöng trön don vi. D dung tich phån theo thöi gian lién Wc, khöng phåi dinh nghTa cho däy röi rec."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "What is the mathematical definition of the direct (two-sided) z-transform for a"
+      ],
+      [
+        348,
+        "discrete-time sequence x(n)?"
+      ],
+      [
+        396,
+        "A. X(z) = Sum from n = O to of"
+      ],
+      [
+        437,
+        "= Sum from n = -oo to of"
+      ],
+      [
+        477,
+        "= Sum from n = -oo to oo of"
+      ],
+      [
+        518,
+        "= Integral from -oo to of dt"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-551",
+    "question": "According to the Time Delay property of the One-Sided z-transform, what is the correct algebraic expression for a delay by 1 sample, Z+{y(n - 1)}?",
+    "options": [
+      "zA-1 Y+(z)",
+      "zA-1 Y+(z) + y(-l)",
+      "zY+(z) - zy(O)"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        897,
+        "Giåi thich: Bién d6i z mét phia chi läy t6ng ttr n = O. Khi dich tra y(n-l), mau y(-l) (diéu kien dEu) IQt våo vi tri n = 0 cba tang, nén ngoåi s6 hang cön cong thém y(-l) (B). Chinh"
+      ],
+      [
+        921,
+        "nhö tinh chät nåy må bién d6i z mot phia giåi durqc phurong trinh sai phån cé diEu kién dEu khäc O. A chi düng v6i bién d6i z hai phia, hoäc khi diEu kien dEu \"ng 0. C lå cöng th(rc cho"
+      ],
+      [
+        947,
+        "dich som y(n+l). D sai deng."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "According to the Time Delay property of the One-Sided z-transform, what is the correct"
+      ],
+      [
+        348,
+        "algebraic expression for a delay by 1 sample, Z+{y(n - 1)}?"
+      ],
+      [
+        396,
+        "A. zA-1 Y+(z)"
+      ],
+      [
+        437,
+        "B. zA-1 Y+(z) + y(-l)"
+      ],
+      [
+        477,
+        "C. zY+(z) - zy(O)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-555",
+    "question": "A linear time-invariant system is characterized by the system function H(z) = (3 - 4zA-1) / [(1 - - 2zA-1)]. What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?",
+    "options": [
+      "Izl < 0.5 c. Izl > 0.5 D. Izl>2"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        898,
+        "Giåi thich: He c6 hai cvc tei z = 0.5 vå z = 2. C6 ba miEn höi tu cé thé chon: Izl < 0.5, 0.5< Izl <2vå Izl > 2. H? chi 6n dinh khi ROC ch(ra vöng trön don vi Izl = 1, nén ROC phåi lä vånh"
+      ],
+      [
+        922,
+        "khän 0.5< Izl < 2 (B). Khi dé he an dinh nhu'ng khöng nhån quå, vi dép (rng xung lå däy hai phia. ROC Izl > 2 (D) cho he nhån quå nhu'ng khöng 6n dinh. ROC Izl < 0.5 (A) cho he phån"
+      ],
+      [
+        946,
+        "nhån quå, cüng khöng 6n dinh. ROC Izl > 0.5 (C) khöng hqp le, vi ROC khöng durqc ch(ra cvc z = 2."
+      ]
+    ],
+    "slide": [
+      [
+        317,
+        "A linear time-invariant system is characterized by the system function H(z) = (3 - 4zA-1) /"
+      ],
+      [
+        348,
+        "[(1 - - 2zA-1)]. What is the required Region of Convergence (ROC) of H(z) such"
+      ],
+      [
+        377,
+        "that this system guarantees BIBO stability?"
+      ],
+      [
+        425,
+        "A. Izl < 0.5"
+      ],
+      [
+        506,
+        "c. Izl > 0.5"
+      ],
+      [
+        546,
+        "D. Izl>2"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-561",
+    "question": "Given a 3rd-order FIR filter with the system function H(z) = 1 + (13/24)zA-1 + (5/8)zA-2 + (1/3)zA-3. What is the exact value of the reflection coefficient K3 for its equivalent Lattice structure?",
+    "options": [
+      "1/3",
+      "13/24",
+      "5/8"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån A"
+      ],
+      [
+        897,
+        "Giåi thich: cäu trüc lattice, he s6 phån xe cu6i cüng bång he s6 bac cao nhät cba da th(rc FIR khi he s6 dEu tién bång 1, t(rc K3 = a3(3) - 1/3 (A). Céc he s6 K2 vå Kl durqc tinh ngu•qc"
+      ],
+      [
+        921,
+        "dEn bång de quy Levinson. 13/24 (B) vå 5/8 (C) lå Céc he s6 a3(1) vå a3(2), chura phåi he s6 phån xa. K = 1 (D) sé låm he suy bién."
+      ]
+    ],
+    "slide": [
+      [
+        317,
+        "Given a 3rd-order FIR filter with the system function H(z) = 1 + (13/24)zA-1 + (5/8)zA-2 +"
+      ],
+      [
+        347,
+        "(1/3)zA-3. What is the exact value of the reflection coefficient K3 for its equivalent"
+      ],
+      [
+        377,
+        "Lattice structure?"
+      ],
+      [
+        425,
+        "A. 1/3"
+      ],
+      [
+        465,
+        "B. 13/24"
+      ],
+      [
+        506,
+        "c. 5/8"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-565",
+    "question": "The Levinson-Durbin algorithm is revolutionary for solving the Yule-Walker equations because it exploits the Toeplitz structure to reduce computational complexity from O(p3) down to:",
+    "options": [
+      "O(pA2)",
+      "O(pA4)",
+      "O(NA2)"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån A"
+      ],
+      [
+        897,
+        "Giåi thich: Levinson-Durbin tan dung cäu trüc Toeplitz (d6i x(rng, Céc du'öng chéo bång nhau) cba ma tran tv turong quan. Nö giåi he theo de quy béc: tlr bac m suy ra béc m+l chi CEn"
+      ],
+      [
+        922,
+        "O(m) phép tinh, nén t6ng cong an O(p2) (A), thay vi O(p3) nhcr khtr Gauss. Ngoåi ra thuät toän cön cho ra luön Céc he s6 phån xa düng cho cäu trüc lattice. B vå D lä dé ph(rc tap sai. C"
+      ],
+      [
+        946,
+        "düng sai bién"
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "The Levinson-Durbin algorithm is revolutionary for solving the Yule-Walker equations"
+      ],
+      [
+        347,
+        "because it exploits the Toeplitz structure to reduce computational complexity from O(p3)"
+      ],
+      [
+        377,
+        "down to:"
+      ],
+      [
+        426,
+        "A. O(pA2)"
+      ],
+      [
+        466,
+        "B. O(pA4)"
+      ],
+      [
+        507,
+        "C. O(NA2)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-568",
+    "question": "Directly computing an N-point DFT using the standard summation formula demands computational complexity proportional to:",
+    "options": [
+      "O(Nlog2N)",
+      "0(N2) D. O(2AN)"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        897,
+        "Giåi thich: M6i diém X(k) CEn N phép nhån ph(rc, vå c6 N diém k, nén tinh DFT trvc tiép en N2 phép nhån, t(rc dé ph(rc tap O(N2) (B). FFT giåm xu6ng O(N•log2 N) (A). Vi du v6i N"
+      ],
+      [
+        922,
+        "1024, tinh trvc tiép CEn khoång 1 trieu phép nhån, cön FFT chi an khoång 5 nghin. C vå D khöng düng."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Directly computing an N-point DFT using the standard summation formula demands"
+      ],
+      [
+        348,
+        "computational complexity proportional to:"
+      ],
+      [
+        396,
+        "A. O(Nlog2N)"
+      ],
+      [
+        436,
+        "B. 0(N2)"
+      ],
+      [
+        518,
+        "D. O(2AN)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-570",
+    "question": "The Analysis Equation (Forward DFT) that transforms an N-point time-domain sequence x(n) into an N-point frequency sequence X(k) is mathematically defined as: = sum from n = O to N-1 of = sum from n = O to N-1 of = (I/N) • sum from n = O to N-1 of = sum from n = -oo to oo of",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån A"
+      ],
+      [
+        898,
+        "Giåi thich: DFT thuän lå t6ng cba v6i n two dén N-1, khöng cé he s6 1/N (A). B c6 däu mü durong, lå deng cba IDFT. C cö he s6 1/N, lå quy ur6c dung cho IDFT (mot s6"
+      ],
+      [
+        922,
+        "tåi lieu dät I/N & chiEu thuän nhcrng khång ph6 bién). D läy t6ng Vö hen, lå deng lai sai v6i DTFT."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "The Analysis Equation (Forward DFT) that transforms an N-point time-domain sequence"
+      ],
+      [
+        348,
+        "x(n) into an N-point frequency sequence X(k) is mathematically defined as:"
+      ],
+      [
+        396,
+        "= sum from n = O to N-1 of"
+      ],
+      [
+        437,
+        "= sum from n = O to N-1 of"
+      ],
+      [
+        476,
+        "= (I/N) • sum from n = O to N-1 of"
+      ],
+      [
+        518,
+        "= sum from n = -oo to oo of"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-573",
+    "question": "According to the Linearity property of the DTFT, the transform of al•xl(n) + a2•x2(n) is:",
+    "options": [
+      "al.X1(w) a2.X2(w)",
+      "al.X1(w) + a2.X2(w)",
+      "Xl(al.w) + X2(a2.w)"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        897,
+        "Giåi thich: D TFT lå phép bién d6i tuyén tinh: bién d6i cia mét t6 hqp tuyén tinh bång t6 hqp tuyén tinh cia Céc bién d6i. Vi vay bién d6i cia al•xl(n) + a2•x2(n) lå al•X1(w) +"
+      ],
+      [
+        921,
+        "(B). A düng phép nhån, sai. C co giän tÄn s6, cüng sai. D tron län Céc he s6 vå phép nhån. Meo: bién d6i Fourier, z hay Laplace déu c6 tinh tuyén tinh nåy."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "According to the Linearity property of the DTFT, the transform of al•xl(n) + a2•x2(n) is:"
+      ],
+      [
+        367,
+        "A. al.X1(w) a2.X2(w)"
+      ],
+      [
+        407,
+        "B. al.X1(w) + a2.X2(w)"
+      ],
+      [
+        448,
+        "C. Xl(al.w) + X2(a2.w)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-578",
+    "question": "In Multirate Digital Signal Processing, the mathematical operation of Decimation (Downsampling) by an integer factor D is defined as generating a new sequence y(m) such that: = x(m/D) C. y(m) = x(mD) = x(m - D)",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: Giåm mäu D En nghia lå gitr lai mét mzu trong m6i D mäu, nén y(m) = x(mD) (C). Vi du v6i D = x(0), y(l) - x(4). B lä phép nöi suy (giän däy, chén mäu). A lå"
+      ],
+      [
+        921,
+        "phép nhån bién dö. D lå phép tré. Trur6c khi giåm mau an cé bé Ipc ch6ng chbng ph6 cåt tai JI/D."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "In Multirate Digital Signal Processing, the mathematical operation of Decimation"
+      ],
+      [
+        348,
+        "(Downsampling) by an integer factor D is defined as generating a new sequence y(m)"
+      ],
+      [
+        377,
+        "such that:"
+      ],
+      [
+        465,
+        "= x(m/D)"
+      ],
+      [
+        507,
+        "C. y(m) = x(mD)"
+      ],
+      [
+        547,
+        "= x(m - D)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-579",
+    "question": "For a fractional sample rate converter by factor I/D, the cascaded anti-imaging and anti-aliasing filters can be combined into a single lowpass filter. What is the required cutoff frequency w_c of this combined filter?",
+    "options": [
+      "min(n/l, n/D)",
+      "max(n/l, TI/D)"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån A"
+      ],
+      [
+        897,
+        "Giåi thich: Bö loc gop phåi låm cüng lüc hai viéc: khtr ånh ph6 sau khi chén s6 0 (\"t tai JT/I) vå ch6ng chbng ph6 trur&c khi giåm mau (cåt tai JI/D). Vi vay en s6 cåt phåi lå giå tri nhå hon"
+      ],
+      [
+        922,
+        "trong hai giå tri då, min(n/l, JT/D) (A). Néu chvn giå tri Ion hon (B), mot trong hai yéu Cbu khång durqc dép (rng. C vå D khöng düng cöng th(rc."
+      ]
+    ],
+    "slide": [
+      [
+        317,
+        "For a fractional sample rate converter by factor I/D, the cascaded anti-imaging and"
+      ],
+      [
+        348,
+        "anti-aliasing filters can be combined into a single lowpass filter. What is the required"
+      ],
+      [
+        377,
+        "cutoff frequency w_c of this combined filter?"
+      ],
+      [
+        425,
+        "A. min(n/l, n/D)"
+      ],
+      [
+        465,
+        "B. max(n/l, TI/D)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-583",
+    "question": "In the frequency domain, the output spectrum Y(w) of an LTI system is related to the input spectrum X(w) and the frequency response H(w) by which fundamental equation? = X(w) * H(w) = X(w) + H(w)",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        898,
+        "Giåi thich: Theo dinh l\"' tich chap, trong mibn thöi gian dEu ra lä tich chap y x * h, nén trong miEn en s6 Y(w) - (B). lå l' do phån tich he LTI trong miEn en s6 rät dcm"
+      ],
+      [
+        922,
+        "giån. A düng däu * (tich chap) trong mibn en s6, lå sai. C D khöng düng."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "In the frequency domain, the output spectrum Y(w) of an LTI system is related to the"
+      ],
+      [
+        348,
+        "input spectrum X(w) and the frequency response H(w) by which fundamental equation?"
+      ],
+      [
+        396,
+        "= X(w) * H(w)"
+      ],
+      [
+        477,
+        "= X(w) + H(w)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-591",
+    "question": "Compute the convolution y(n) of the signals x(n) = {1, 3, 1} and h(n) = {1, 2, 2}. What is the total length (number of non-zero samples) of the resulting sequence y(n)?",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: Tich chap hai däy dåi L =3våM = 3 cho két quå dåi L + M - 1 = 5 mäu (C). Tinh cu thé: y(n) - {1, 5, 9, 8, 2}, cå 5 mäu dbu khåc 0. Céc Iva chon 3, 4 vå 6 khöng kh6p cöng"
+      ],
+      [
+        923,
+        "th(rc."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Compute the convolution y(n) of the signals x(n) = {1, 3, 1} and h(n) = {1, 2, 2}. What is"
+      ],
+      [
+        348,
+        "the total length (number of non-zero samples) of the resulting sequence y(n)?"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-597",
+    "question": "Let X(k) be the N-point DFT of the sequence x(n), where O n N-1. Based on the Duality property of the DFT, what is the exact N-point DFT of the sequence s(n) = X(n)?",
+    "options": [
+      "N•x((-k))N or - k) C. x(-k)"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån A"
+      ],
+      [
+        897,
+        "Giåi thich: Tinh d6i ngäu: néu x(n) cé DFT lä X(k), thi däy s(n) - X(n) c6 DFT lå N nhån x((-k)) theo modulo N, toc N•x(N - k) (A). Két quå lå tin hieu g6c bi lat vöng theo thöi gian vå nhån N"
+      ],
+      [
+        922,
+        "län. He s6 N xuät hién vi DFT thuän khöng cé he s6 1/N. B sai he s6, C thiéu phép läy modulo vå he s6 N, D sai hoån toån."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Let X(k) be the N-point DFT of the sequence x(n), where O n N-1. Based on the"
+      ],
+      [
+        348,
+        "Duality property of the DFT, what is the exact N-point DFT of the sequence s(n) = X(n)?"
+      ],
+      [
+        396,
+        "A. N•x((-k))N or - k)"
+      ],
+      [
+        477,
+        "C. x(-k)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-598",
+    "question": "For an 8-point FFT (N = 8, requiring 3 bits), what is the correctly calculated Bit-Reversed index corresponding to the natural decimal index 3?",
+    "options": [],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån D"
+      ],
+      [
+        898,
+        "Giåi thich: S6 3 viét deng 3 bit lå 011. Dåo ngurqc th(r tv bit durqc 110, t(rc s6 6 trong he thäp phån (D). Dåy lå thc? tv våo CEn ding cho FFT DIT 8 diém. Th(r tv dåo bit dEy dd' cba 0"
+      ],
+      [
+        922,
+        "dén 7 lå: 0, 4, 2, 6, 1, 5, 3, 7. Meo: viét deng nhi phån rbi doc ngurqc tir phåi sang tråi."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "For an 8-point FFT (N = 8, requiring 3 bits), what is the correctly calculated Bit-Reversed"
+      ],
+      [
+        348,
+        "index corresponding to the natural decimal index 3?"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-599",
+    "question": "What is the total number of complex additions required to compute an N-point DFT using the Radix-2 FFT algorithm? B. N.Iog2(N) D. 2N.log2(N)",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        897,
+        "Giåi thich: FFT co s6 2 cö log2 N t>ng, m6i eng N/2 butterfly, m6i butterfly c6 2 phép cong ph(rc, mét phép cong vå mot phép tar. Vi vay tang s6 phép cong lå N•log2 N (B). Cön s6 phép"
+      ],
+      [
+        922,
+        "nhån ph(rc lå (N/2)•log2 N (C). N2 (A) lå cia DFT tinh trvc tiép. D gäp dåi giå tri that."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "What is the total number of complex additions required to compute an N-point DFT"
+      ],
+      [
+        348,
+        "using the Radix-2 FFT algorithm?"
+      ],
+      [
+        437,
+        "B. N.Iog2(N)"
+      ],
+      [
+        518,
+        "D. 2N.log2(N)"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-600",
+    "question": "Evaluate the exact complex value of the twiddle factor W8A2 D.",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        895,
+        "Giåi thich: W8A2 = = eA(-jn/2), toc quay mét g6c 90 dé theo chiEu am trén vöng trön dcm vi. Két quå lå COS(JT/2) - = -j (C). Ånh g6c cia cåu nåy khång c6 döng \"Dép"
+      ],
+      [
+        923,
+        "ån\", nén dép än C durqc tinh theo dinh nghia. Céc giä tri khåc: W8AO = 1 (A), W8A4 = -1 (B), W8A6"
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Evaluate the exact complex value of the twiddle factor W8A2"
+      ],
+      [
+        489,
+        "D."
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-654",
+    "question": "Downsampling by D changes the sampling rate to B. D fs C. fs/D D. fS+D",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: Giff lai 1 trong D mau nan t6c dé läy mau bång fs chia D."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Downsampling by D changes the sampling rate to"
+      ],
+      [
+        407,
+        "B. D fs"
+      ],
+      [
+        447,
+        "C. fs/D"
+      ],
+      [
+        488,
+        "D. fS+D"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-707",
+    "question": "Downsampling by D changes the sampling rate to B. D fs C. fs/D D. fS+D",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: Cåu nåy tring mét cåu phia trur6c trong tåi lieu g6c. Giff lai 1 trong D mau nén t6c dé läy mau bång fs chia D."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Downsampling by D changes the sampling rate to"
+      ],
+      [
+        407,
+        "B. D fs"
+      ],
+      [
+        447,
+        "C. fs/D"
+      ],
+      [
+        488,
+        "D. fS+D"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-741",
+    "question": "Minimum zero-padding length for exact linear convolution is:",
+    "options": [
+      "max(L,M)",
+      "L+M-I"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån B"
+      ],
+      [
+        898,
+        "Giåi thich: Tich chap tuyén tinh cba hai däy dåi Lvå M cé dé dåi L+M-I. Phåi dem dén it nhät dö dåi nåy thi tich chap vöng m6i khöng bi quän."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "Minimum zero-padding length for exact linear convolution is:"
+      ],
+      [
+        367,
+        "A. max(L,M)"
+      ],
+      [
+        408,
+        "B. L+M-I"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-743",
+    "question": "For H(z) = 1 - zA(-M), at which frequencies do magnitude zeros occur? A . w = n(2k + I)/M for integer k B. w = TikM for integer k C . w = 2nk/M for integer k D . w = 2TIM/k for integer k",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån C"
+      ],
+      [
+        897,
+        "Giåi thich: H bång 0 khi z mü M bång 1, t(rc Céc diém khöng cåch déu trén vöng trön don vi tei w bång 2JTk/M (bé Ipc räng lurqc)"
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "For H(z) = 1 - zA(-M), at which frequencies do magnitude zeros occur?"
+      ],
+      [
+        366,
+        "A . w = n(2k + I)/M for integer k"
+      ],
+      [
+        407,
+        "B. w = TikM for integer k"
+      ],
+      [
+        447,
+        "C . w = 2nk/M for integer k"
+      ],
+      [
+        487,
+        "D . w = 2TIM/k for integer k"
+      ]
+    ]
+  },
+  {
+    "id": "DGT302-748",
+    "question": "The DTFT is periodic with period: C. 00 D. 411",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        876,
+        "Dép ån A"
+      ],
+      [
+        898,
+        "Giåi thich: D TFT luön tuh hoån theo w v6i chu kV 211, vi e mü jwn khöng d6i khi w täng thém 211."
+      ]
+    ],
+    "slide": [
+      [
+        318,
+        "The DTFT is periodic with period:"
+      ],
+      [
+        449,
+        "C. 00"
+      ],
+      [
+        489,
+        "D. 411"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-811",
+    "question": "The Nyquist rate is defined as:",
+    "options": [
+      "fs=W B .fs=2W C. D."
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån B"
+      ],
+      [
+        907,
+        "Giåi thich: T6c dé Nyquist lå en s6 läy mau t6i thiéu, bång 2 En bäng thöng W cia tin hieu."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "The Nyquist rate is defined as:"
+      ],
+      [
+        369,
+        "A. fs=W"
+      ],
+      [
+        410,
+        "B .fs=2W"
+      ],
+      [
+        452,
+        "C."
+      ],
+      [
+        493,
+        "D."
+      ]
+    ]
+  },
+  {
+    "id": "COS201-816",
+    "question": "FM noise power grows proportional to:",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån C"
+      ],
+      [
+        907,
+        "Giåi thich: Ph6 nhiéu sau giåi dibu ché FM täng theo binh phurong en s6. Cöng dbn trén cå bäng W thi cöng suät nhiéu ti le v6i lap phurang cba W."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "FM noise power grows proportional to:"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-836",
+    "question": "FM threshold effect typically occurs around: C. 10 dB D. 20 dB",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån C"
+      ],
+      [
+        907,
+        "Giåi thich: Khi ti s6 s6ng mang trén nhiéu xu6ng du'&i khoång 10 dB, nhiéu län ét vå chät lurqng FM sut giåm dét ngöt. Hien turqng nåy goi lå hiéu (rng ngur&ng."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "FM threshold effect typically occurs around:"
+      ],
+      [
+        451,
+        "C. 10 dB"
+      ],
+      [
+        492,
+        "D. 20 dB"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-842",
+    "question": "The bandwidth of NBFM is approximately: C. Infinite",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån B"
+      ],
+      [
+        908,
+        "Giåi thich: NBFM cö chi s6 dibu ché nhå, ph6 gi6ng AM gbm song mang vå hai dåi bién, nan bäng thöng khoång 2W."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "The bandwidth of NBFM is approximately:"
+      ],
+      [
+        451,
+        "C. Infinite"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-845",
+    "question": "Maximum efficiency of AM (Figure of Merit) is: B. 1/2 c. 1/3",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån C"
+      ],
+      [
+        908,
+        "Giåi thich: diéu ché don tone & m(rc 100%, figure of merit cia AM t6i da chi lä 1/3, vi ph>n Ion cöng suät nam & s6ng mang."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "Maximum efficiency of AM (Figure of Merit) is:"
+      ],
+      [
+        409,
+        "B. 1/2"
+      ],
+      [
+        450,
+        "c. 1/3"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-856",
+    "question": "How many layers are in the well-known OSI model?",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån A"
+      ],
+      [
+        909,
+        "Giåi thich: OSI c6 7 16p: Physical, Data Link, Network, Transport, Session, Presentation, Application."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "How many layers are in the well-known OSI model?"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-860",
+    "question": "What is the required bandwidth for a conventional AM signal if the message bandwidth",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån B"
+      ],
+      [
+        907,
+        "Giåi thich: AM chuan cé hai dåi bién, m6i dåi rong W, nén bäng thöng lå 2W."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "What is the required bandwidth for a conventional AM signal if the message bandwidth"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-870",
+    "question": "A band-pass signal with bandwidth W centered at f_c is considered 'narrowband' if: C.W fc D. fc 0",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån A"
+      ],
+      [
+        908,
+        "Giåi thich: Tin hieu durqc coi lå bäng hep khi bäng thöng W rät nhå so v6i en s6 song mang fc."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "A band-pass signal with bandwidth W centered at f_c is considered 'narrowband' if:"
+      ],
+      [
+        451,
+        "C.W fc"
+      ],
+      [
+        492,
+        "D. fc 0"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-874",
+    "question": "The carrier power in a 100% modulated AM signal (g = 1) accounts for what percentage of total power?",
+    "options": [
+      "66.7% (Note: Pc = 1/2 AcA2, PSB = 1/4 AcA2 Pc = 2/3 * Ptotal)",
+      "100% D. 33.3%"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån A"
+      ],
+      [
+        905,
+        "Giåi thich: d moc dibu ché 100%, t6ng cöng suät hai dåi bién chi bång mét ntra cöng suät song mang. Vi vay s6ng mang chiém khoång 2/3 t6ng cöng suät."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "The carrier power in a 100% modulated AM signal (g = 1) accounts for what percentage"
+      ],
+      [
+        350,
+        "of total power?"
+      ],
+      [
+        398,
+        "A. 66.7% (Note: Pc = 1/2 AcA2, PSB = 1/4 AcA2 Pc = 2/3 * Ptotal)"
+      ],
+      [
+        441,
+        "B. 100%"
+      ],
+      [
+        523,
+        "D. 33.3%"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-877",
+    "question": "To recover the message signal using an envelope detector, what is the required relationship for the modulation factor g? C. can be any value",
+    "options": [],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån D"
+      ],
+      [
+        908,
+        "Giåi thich: Bö tåch song du'öng bao chi khöi phvc düng khi he s6 dibu ché khöng vcrqt quå 1, dé tränh quå dibu ché."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "To recover the message signal using an envelope detector, what is the required"
+      ],
+      [
+        350,
+        "relationship for the modulation factor g?"
+      ],
+      [
+        481,
+        "C. can be any value"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-880",
+    "question": "For a system to be causal, its impulse response h(t) must be zero for:",
+    "options": [
+      "t>O C. All t. D.t<O"
+    ],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån D"
+      ],
+      [
+        907,
+        "Giåi thich: He nhån quå khöng phån (rng trur&c khi cé dEu våo, nan dép (rng xung phåi bång O v6i moi thöi diém am."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "For a system to be causal, its impulse response h(t) must be zero for:"
+      ],
+      [
+        370,
+        "A.t>O"
+      ],
+      [
+        451,
+        "C. All t."
+      ],
+      [
+        493,
+        "D.t<O"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-902",
+    "question": "Maximum efficiency of AM (Figure of Merit) is: B. 1/3 c. 1/2",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån B"
+      ],
+      [
+        908,
+        "Giåi thich: Figure of merit t6i da cba AM lå 1/3, (rng v6i diEu ché dcm tone & moc 100%."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "Maximum efficiency of AM (Figure of Merit) is:"
+      ],
+      [
+        409,
+        "B. 1/3"
+      ],
+      [
+        450,
+        "c. 1/2"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-916",
+    "question": "The correlation coefficient lies in the range: D. (-vö cüng, Vö cüng)",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån C"
+      ],
+      [
+        907,
+        "Giåi thich: He s6 turong quan luön nåm trong doan tw -1 dén 1."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "The correlation coefficient lies in the range:"
+      ],
+      [
+        491,
+        "D. (-vö cüng, Vö cüng)"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-918",
+    "question": "PPM is analogous to which analog modulation scheme?",
+    "options": [
+      "DSB",
+      "AM"
+    ],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån D"
+      ],
+      [
+        909,
+        "Giåi thich: PPM mä håa tin våo vi tri xung theo thöi gian, twang tv PM mä håa tin våo pha."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "PPM is analogous to which analog modulation scheme?"
+      ],
+      [
+        370,
+        "A. DSB"
+      ],
+      [
+        411,
+        "B. AM"
+      ]
+    ]
+  },
+  {
+    "id": "COS201-962",
+    "question": "Increasing ADC bits from 8 to 10 improves SNR by:",
+    "options": [
+      "10 dB",
+      "20 dB D. 12 dB"
+    ],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        886,
+        "Dép ån D"
+      ],
+      [
+        907,
+        "Giåi thich: M6i bit thém våo cåi thien SNR khoång 6 dB, nén thém 2 bit durqc khoång 12 dB."
+      ]
+    ],
+    "slide": [
+      [
+        320,
+        "Increasing ADC bits from 8 to 10 improves SNR by:"
+      ],
+      [
+        369,
+        "A. 10 dB"
+      ],
+      [
+        410,
+        "B. 20 dB"
+      ],
+      [
+        492,
+        "D. 12 dB"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-308",
+    "question": "Two long-channel nMOS devices have equal process parameters and overdrive voltage. Device A has W/L — 8 and device B has W/L = 2. What is the ideal saturation-current ratio IA/IB? D. 64",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        850,
+        "Dép an: B. 4"
+      ]
+    ],
+    "slide": [
+      [
+        302,
+        "Two long-channel nMOS devices have equal process parameters and overdrive voltage. Device A has W/L —"
+      ],
+      [
+        331,
+        "8 and device B has W/L = 2. What is the ideal saturation-current ratio IA/IB?"
+      ],
+      [
+        520,
+        "D. 64"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-309",
+    "question": "A circuit consumes 4 mw dynamic power at 200 MHz. If only frequency doubles and all other factors remain constant, what is the new dynamic power? B. 4 mw C. 16 mw",
+    "options": [],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        850,
+        "Dép an: D. 8 mw"
+      ],
+      [
+        894,
+        "Giåi thich: Dynamic power duqc tinh theo:"
+      ],
+      [
+        941,
+        "\\[ P_{dynamic}=\\alpha C VA2f i]"
+      ],
+      [
+        983,
+        "Khi chi frequency tänq qåp döi, dynamic power cünq tänq qåp döi: mWh)."
+      ]
+    ],
+    "slide": [
+      [
+        305,
+        "A circuit consumes 4 mw dynamic power at 200 MHz. If only frequency doubles and all other factors remain"
+      ],
+      [
+        334,
+        "constant, what is the new dynamic power?"
+      ],
+      [
+        430,
+        "B. 4 mw"
+      ],
+      [
+        478,
+        "C. 16 mw"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-329",
+    "question": "A memory contains 1024 words of 8 bits each. How many address bits are required to select one word?",
+    "options": [
+      "16",
+      "10",
+      "13"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        842,
+        "Dép an: B. 10"
+      ],
+      [
+        883,
+        "Giåi thich: Sb address bits can thiét dé chon 1024 words:"
+      ],
+      [
+        974,
+        "Möi dia chi chon mét word 8 bits. Sb bit trong m6i word khöng läm thay ddi sb address bits."
+      ]
+    ],
+    "slide": [
+      [
+        308,
+        "A memory contains 1024 words of 8 bits each. How many address bits are required to select one word?"
+      ],
+      [
+        358,
+        "A. 16"
+      ],
+      [
+        407,
+        "B. 10"
+      ],
+      [
+        456,
+        "c. 13"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-333",
+    "question": "A positive-edge-triggered D flip-flop samples D = 1 immediately before the active edge. Ignoring setup/hold violations, what value appears at Q after the clock-to-Q delay? B. High impedance D. An oscillating value",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép an: C. 1"
+      ],
+      [
+        885,
+        "Giåi thich: Positive-edge-triggered D flip-flop låy mäu input D tai rising edge. Vi D = 1 trudc canh clock Vä bö qua setup/hold violations, Q sé chuyén thånh HIGH sau clock-to-Q delay."
+      ]
+    ],
+    "slide": [
+      [
+        305,
+        "A positive-edge-triggered D flip-flop samples D = 1 immediately before the active edge. Ignoring"
+      ],
+      [
+        337,
+        "setup/hold violations, what value appears at Q after the clock-to-Q delay?"
+      ],
+      [
+        439,
+        "B. High impedance"
+      ],
+      [
+        540,
+        "D. An oscillating value"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-342",
+    "question": "Two saturated MOSFETs have the same L and overdrive voltage, but transistor A has twice the width of transistor B. Ignoring short-channel effects, what is ID,A/ID,B? c. 0.5",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: A. 2"
+      ],
+      [
+        888,
+        "Giåi thich: Trong saturation theo square-law model:"
+      ],
+      [
+        977,
+        "Cüng L Vä overdrive, dÖng drain ty le vdi W. W cia A gap döi B nén döng cüng gap döi."
+      ]
+    ],
+    "slide": [
+      [
+        307,
+        "Two saturated MOSFETs have the same L and overdrive voltage, but transistor A has twice the width of"
+      ],
+      [
+        339,
+        "transistor B. Ignoring short-channel effects, what is ID,A/ID,B?"
+      ],
+      [
+        450,
+        "c. 0.5"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-350",
+    "question": "A dynamic node with capacitance 20 fF loses 2 fC of charge during evaluation. What voltage droop results from AV = AQ/C? B. 0.10 v c. 0.01 v D. IOV",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: A. 1.0 V"
+      ]
+    ],
+    "slide": [
+      [
+        300,
+        "A dynamic node with capacitance 20 fF loses 2 fC of charge during evaluation. What voltage droop results"
+      ],
+      [
+        330,
+        "from AV = AQ/C?"
+      ],
+      [
+        409,
+        "B. 0.10 v"
+      ],
+      [
+        438,
+        "c. 0.01 v"
+      ],
+      [
+        469,
+        "D. IOV"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-358",
+    "question": "During evaluation of an n-type dynamic gate, which input transition is generally unsafe?",
+    "options": [
+      "No transition at all C. A monotonic O 1 transition"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: B. 1"
+      ],
+      [
+        885,
+        "Giåi thich: Trong evaluation, n-type dynamic gate düng NMOS network dé discharge dynamic node. Input transition 1—+0 c0 thé låm dudng discharge bi ngåt sau khi node dä"
+      ],
+      [
+        911,
+        "discharge, dän dén trang thåi logic sai. Vöi cåc dynamic gate thöng thudng, input evaluation nén chuyén monotonic 0+1."
+      ]
+    ],
+    "slide": [
+      [
+        309,
+        "During evaluation of an n-type dynamic gate, which input transition is generally unsafe?"
+      ],
+      [
+        360,
+        "A. No transition at all"
+      ],
+      [
+        423,
+        "C. A monotonic O 1 transition"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-392",
+    "question": "A regular layout is reused many times in a datapath. Which combined benefit is most defensible? A Removal of the need for timing analysis B. Guaranteed maximum yield independent of die area C. Elimination of all interconnect delay and power D. Lower verification effort and more predictable physical implementation",
+    "options": [],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: D. Lower verification effort and more predictable physical implementation"
+      ],
+      [
+        886,
+        "Giåi thich: Reusing regular layout structures giüp giåm effort verification vå låm physical implementation dé dv doån hon. Tuy nhién, vän can timing analysis."
+      ]
+    ],
+    "slide": [
+      [
+        306,
+        "A regular layout is reused many times in a datapath. Which combined benefit is most defensible?"
+      ],
+      [
+        356,
+        "A Removal of the need for timing analysis"
+      ],
+      [
+        386,
+        "B. Guaranteed maximum yield independent of die area"
+      ],
+      [
+        417,
+        "C. Elimination of all interconnect delay and power"
+      ],
+      [
+        447,
+        "D. Lower verification effort and more predictable physical implementation"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-393",
+    "question": "Fora = 0.2, CL = 20fF, VDD = 1 V, and f 500 MHz, what is the switching power aCLVDD2f?",
+    "options": [
+      "0.2 pw",
+      "20 pw",
+      "200 pw"
+    ],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: D. 2 PW"
+      ]
+    ],
+    "slide": [
+      [
+        307,
+        "Fora = 0.2, CL = 20fF, VDD = 1 V, and f 500 MHz, what is the switching power aCLVDD2f?"
+      ],
+      [
+        361,
+        "A. 0.2 pw"
+      ],
+      [
+        392,
+        "B. 20 pw"
+      ],
+      [
+        424,
+        "C. 200 pw"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-405",
+    "question": "A fabrication run costs $600,000 and produces 10,000 functional dies. Ignoring packaging cost, what is the manufacturing cost per functional die? B. $600 c. $6,000 D. $60",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        843,
+        "Answer: B. $600"
+      ]
+    ],
+    "slide": [
+      [
+        301,
+        "A fabrication run costs $600,000 and produces 10,000 functional dies. Ignoring packaging cost, what is the"
+      ],
+      [
+        331,
+        "manufacturing cost per functional die?"
+      ],
+      [
+        408,
+        "B. $600"
+      ],
+      [
+        437,
+        "c. $6,000"
+      ],
+      [
+        467,
+        "D. $60"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-406",
+    "question": "How many transistors are required by a conventional complementary static CMOS three-input NAND gate? B. 12",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: C. 6"
+      ],
+      [
+        885,
+        "Giåi thich: NAND3 gbm 3 PMOS måc parallel Vä 3 NMOS måc series. Töng sb transistor:"
+      ],
+      [
+        935,
+        "3+3=6 i]"
+      ]
+    ],
+    "slide": [
+      [
+        303,
+        "How many transistors are required by a conventional complementary static CMOS three-input NAND gate?"
+      ],
+      [
+        379,
+        "B. 12"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-431",
+    "question": "A chip contains 2.0 million fabricated dies, of which 1.5 million pass all tests. What is the manufacturing yield? B. 75%",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Answer: B."
+      ],
+      [
+        888,
+        "Giåi thich."
+      ]
+    ],
+    "slide": [
+      [
+        307,
+        "A chip contains 2.0 million fabricated dies, of which 1.5 million pass all tests. What is the manufacturing"
+      ],
+      [
+        338,
+        "yield?"
+      ],
+      [
+        419,
+        "B. 75%"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-440",
+    "question": "For a CMOS inverter with VOH = 1.8 V, VIH 1.1 V, VIL 0.7 V, and VOL O V, what are NMH and NML? 1.8 V and NML = OV (B) NMH = o.7V and NML= 11V (C) NMH = 1.1 V and NML - 07 V (D) NMH = 0.7 V and NML -07 V",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: C. NMH - - 1.1 V and NML -0 7 V"
+      ]
+    ],
+    "slide": [
+      [
+        300,
+        "For a CMOS inverter with VOH = 1.8 V, VIH 1.1 V, VIL 0.7 V, and VOL O V, what are NMH and NML?"
+      ],
+      [
+        345,
+        "1.8 V and NML = OV"
+      ],
+      [
+        374,
+        "(B) NMH = o.7V and NML= 11V"
+      ],
+      [
+        402,
+        "(C) NMH = 1.1 V and NML - 07 V"
+      ],
+      [
+        430,
+        "(D) NMH = 0.7 V and NML -07 V"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-455",
+    "question": "Which Boolean function is implemented by a static CMOS gate whose pull-down network has A and B in parallel and that combination in series with C? (D) Y = NOT(AB + C)",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: C. Y"
+      ]
+    ],
+    "slide": [
+      [
+        306,
+        "Which Boolean function is implemented by a static CMOS gate whose pull-down network has A and B in"
+      ],
+      [
+        335,
+        "parallel and that combination in series with C?"
+      ],
+      [
+        465,
+        "(D) Y = NOT(AB + C)"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-465",
+    "question": "A node with capacitance 40 fF is charged from O to 1 V. Using E = CLVDD2, how much energy is drawn from the supply for one charging event?",
+    "options": [
+      "40 f]",
+      "20fJ (D) 80 fJ"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: A. 40 fJ"
+      ]
+    ],
+    "slide": [
+      [
+        297,
+        "A node with capacitance 40 fF is charged from O to 1 V. Using E = CLVDD2, how much energy is drawn from"
+      ],
+      [
+        328,
+        "the supply for one charging event?"
+      ],
+      [
+        374,
+        "(A) 40 f]"
+      ],
+      [
+        403,
+        "(B) 20fJ"
+      ],
+      [
+        461,
+        "(D) 80 fJ"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-469",
+    "question": "A transmission-gate 2:1 multiplexer selects DO when S = O and DI when S = 1. Which Boolean expression describes its output? = SDO + SDI (B) Y = S(DO + DI) (C) Y = SDO + SDI (D) Y - DODI",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: A"
+      ],
+      [
+        871,
+        "Giåi thich: Khi S = 0, S = 1 nén Y = DO. Khi S = 1, Y = DI . Däy lä biéu thüc chuan cia 2:1 Multiplexer."
+      ]
+    ],
+    "slide": [
+      [
+        307,
+        "A transmission-gate 2:1 multiplexer selects DO when S = O and DI when S = 1. Which Boolean expression"
+      ],
+      [
+        336,
+        "describes its output?"
+      ],
+      [
+        381,
+        "= SDO + SDI"
+      ],
+      [
+        413,
+        "(B) Y = S(DO + DI)"
+      ],
+      [
+        439,
+        "(C) Y = SDO + SDI"
+      ],
+      [
+        471,
+        "(D) Y - DODI"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-484",
+    "question": "For a long-channel nMOS in saturation, ID — 0.5ß(VGS - VT)2. If the overdrive voltage doubles while ß is unchanged, by what factor does ID increase? (D) 64",
+    "options": [],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: A"
+      ]
+    ],
+    "slide": [
+      [
+        298,
+        "For a long-channel nMOS in saturation, ID — 0.5ß(VGS - VT)2. If the overdrive voltage doubles while ß is"
+      ],
+      [
+        330,
+        "unchanged, by what factor does ID increase?"
+      ],
+      [
+        465,
+        "(D) 64"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-488",
+    "question": "Which factor has a strong influence on switching power in CMOS and digital circuit operation? A Frequency inverse relation B. Resistance independent behavior C. Supply voltage squared D. Threshold voltage cubed",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: C"
+      ]
+    ],
+    "slide": [
+      [
+        298,
+        "Which factor has a strong influence on switching power in CMOS and digital circuit operation?"
+      ],
+      [
+        348,
+        "A Frequency inverse relation"
+      ],
+      [
+        378,
+        "B. Resistance independent behavior"
+      ],
+      [
+        409,
+        "C. Supply voltage squared"
+      ],
+      [
+        439,
+        "D. Threshold voltage cubed"
+      ]
+    ]
+  },
+  {
+    "id": "ICI211-496",
+    "question": "Which circuit structure is commonly used in multiplexers for digital and CMOS circuit design? A Bipolar transistor stages B. Dynamic capacitor arrays C. Transmission gate structures D. Resistive divider circuits",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        830,
+        "Answer: C"
+      ],
+      [
+        871,
+        "Giåi thich: Transmission gate gbm nMOS PMOS måc song song, diéu khién böi tin hieu select Vä complement, thudng duqc düng dé xäy dung multiplexer CMOS."
+      ]
+    ],
+    "slide": [
+      [
+        300,
+        "Which circuit structure is commonly used in multiplexers for digital and CMOS circuit design?"
+      ],
+      [
+        349,
+        "A Bipolar transistor stages"
+      ],
+      [
+        380,
+        "B. Dynamic capacitor arrays"
+      ],
+      [
+        410,
+        "C. Transmission gate structures"
+      ],
+      [
+        441,
+        "D. Resistive divider circuits"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-103",
+    "question": "Which command is used to modify an environment variable in U-Boot?",
+    "options": [
+      "imd",
+      "setenv",
+      "loady D . saveenv"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån B"
+      ],
+      [
+        866,
+        "Giåi thich: Lenh setenv teo hoäc thay d6i bién möi truröng trong RAM, vi du \"setenv bootargs console=ttyAMAO root=/dev/nfs\" (B). saveenv (D) chi ghi Céc bién hién c6 xu6ng flash dé"
+      ],
+      [
+        889,
+        "giCr lai sau khi kh&i döng lei, chü' khöng trvc tiép thay d6i giå tri bién. E)åy lå ch6 dé nh>m. imd (A) dQC dCr lieu qua 12C, cön loady (C) nhän file qua c6ng serial \"ng giao th(rc Ymodem."
+      ],
+      [
+        914,
+        "Meo nh6: setenv dé dät giä tri, saveenv dé luru lei."
+      ],
+      [
+        938,
+        "(DE RE khöng c6 dép än g6c, dép én durqc xåc dinh theo kién th(rc mån hQC.)"
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which command is used to modify an environment variable in U-Boot?"
+      ],
+      [
+        361,
+        "A. imd"
+      ],
+      [
+        400,
+        "B. setenv"
+      ],
+      [
+        437,
+        "C. loady"
+      ],
+      [
+        476,
+        "D . saveenv"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-135",
+    "question": "What character represents the root of the single directory hierarchy?",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        866,
+        "Giåi thich: Däu gach chéo / lå thur muc g6c cba toån bé cay thur muc duy nhät trong UNIX."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "What character represents the root of the single directory hierarchy?"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-151",
+    "question": "Which IPC mechanism is best suited for unrelated processes on one host? FIFO C. Signal D. Stack",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån B"
+      ],
+      [
+        866,
+        "Giåi thich: FIFO (named pipe) cé tan trong filesystem nén Céc tién trinh khöng cé quan he cha con vån mb durqc. Pipe thuröng chi düng durqc gitra Céc tién trinh c6 quan he ho hång."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which IPC mechanism is best suited for unrelated processes on one host?"
+      ],
+      [
+        400,
+        "FIFO"
+      ],
+      [
+        437,
+        "C. Signal"
+      ],
+      [
+        475,
+        "D. Stack"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-153",
+    "question": "Which numeric user ID (UID) is always assigned to the superuser? B. 1000",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        865,
+        "Giåi thich: Superuser (root) luön cé UID bång 0."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which numeric user ID (UID) is always assigned to the superuser?"
+      ],
+      [
+        400,
+        "B. 1000"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-161",
+    "question": "Which IPC mechanism allows two processes to share a region of memory?",
+    "options": [
+      "Message Queue",
+      "Shared Memory",
+      "Socket"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån B"
+      ],
+      [
+        867,
+        "Giåi thich: Shared memory cho phép hai tien trinh cong truy cap mot ving Chung."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which IPC mechanism allows two processes to share a region of memory?"
+      ],
+      [
+        362,
+        "A. Message Queue"
+      ],
+      [
+        399,
+        "B. Shared Memory"
+      ],
+      [
+        437,
+        "C. Socket"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-164",
+    "question": "What is the name for a named pipe that exists in the file system?",
+    "options": [
+      "Socket FIFO C. Signal D. Message"
+    ],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån B"
+      ],
+      [
+        866,
+        "Giåi thich: FIFO lå tan goi cba named pipe, mot pipe c6 tan tbn tai nhu' mét file trong filesystem."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "What is the name for a named pipe that exists in the file system?"
+      ],
+      [
+        361,
+        "A. Socket"
+      ],
+      [
+        400,
+        "FIFO"
+      ],
+      [
+        437,
+        "C. Signal"
+      ],
+      [
+        476,
+        "D. Message"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-169",
+    "question": "Which IPC mechanism is used to notify a process that an event occurred? FIFO C. Signal D. Socket",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        866,
+        "Giåi thich: Signal düng dé båo cho tién trinh biét mét sv kién dä xåy ra, vi du Ctrl+C hoäc tién trinh con két thüc."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which IPC mechanism is used to notify a process that an event occurred?"
+      ],
+      [
+        400,
+        "FIFO"
+      ],
+      [
+        437,
+        "C. Signal"
+      ],
+      [
+        475,
+        "D. Socket"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-183",
+    "question": "Which IPC mechanism allows communication between processes on different hosts? FIFO B. Message Queue C. Socket D. Signal",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        866,
+        "Giåi thich: Socket cho phép giao tiép gitra Céc tién trinh trén Céc måy khäc nhau qua meng."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which IPC mechanism allows communication between processes on different hosts?"
+      ],
+      [
+        362,
+        "FIFO"
+      ],
+      [
+        400,
+        "B. Message Queue"
+      ],
+      [
+        437,
+        "C. Socket"
+      ],
+      [
+        475,
+        "D. Signal"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-188",
+    "question": "Under which organization's auspices were the POSIX standards developed?",
+    "options": [
+      "The Open Group C. IEEE D. ISO"
+    ],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        866,
+        "Giåi thich: Céc chuan POSIX durqc xåy dvng dudi sv båo trq cia IEEE."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Under which organization's auspices were the POSIX standards developed?"
+      ],
+      [
+        361,
+        "A. The Open Group"
+      ],
+      [
+        438,
+        "C. IEEE"
+      ],
+      [
+        476,
+        "D. ISO"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-195",
+    "question": "Which GNU program is a highly extensible text editor created by Stallman? B . nano C. Emacs D. ed",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        866,
+        "Giåi thich: Emacs lå trinh soan thåo cé khå näng mb rong rät cao, do Stallman viét."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which GNU program is a highly extensible text editor created by Stallman?"
+      ],
+      [
+        400,
+        "B . nano"
+      ],
+      [
+        438,
+        "C. Emacs"
+      ],
+      [
+        475,
+        "D. ed"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-196",
+    "question": "Which directory entry refers to the parent directory? D. root",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån B"
+      ],
+      [
+        865,
+        "Giåi thich: Muc . \" \" trong mbi thur muc trö t6i thur muc Cha."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which directory entry refers to the parent directory?"
+      ],
+      [
+        476,
+        "D. root"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-200",
+    "question": "Which mechanism is used for high-speed IPC by avoiding data copying? FIFO C. Shared Memory D. Socket",
+    "options": [],
+    "answer": [
+      2
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån C"
+      ],
+      [
+        866,
+        "Giåi thich: Shared memory lå IPC nhanh nhät vi dCr lieu khöng phåi sao chép qua kernel."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which mechanism is used for high-speed IPC by avoiding data copying?"
+      ],
+      [
+        400,
+        "FIFO"
+      ],
+      [
+        437,
+        "C. Shared Memory"
+      ],
+      [
+        475,
+        "D. Socket"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-203",
+    "question": "Which directory entry refers to the directory itself? B..",
+    "options": [],
+    "answer": [
+      1
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån B"
+      ],
+      [
+        865,
+        "Giåi thich: Muc . . \" \" trong mbi thur muc trö t6i chinh thur muc d6."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which directory entry refers to the directory itself?"
+      ],
+      [
+        400,
+        "B.."
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-206",
+    "question": "What was the name of the unofficial 1984 standard produced by UNIX vendors?",
+    "options": [
+      "/usr/group C. BSD D. SVR4"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån A"
+      ],
+      [
+        866,
+        "Giåi thich: Näm 1984, nh6m nguröi düng UNIX tan /usr/group du'a ra chuan khöng chinh th(rc, sau nåy lå co cho POSIX."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "What was the name of the unofficial 1984 standard produced by UNIX vendors?"
+      ],
+      [
+        360,
+        "A. /usr/group"
+      ],
+      [
+        438,
+        "C. BSD"
+      ],
+      [
+        476,
+        "D. SVR4"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-209",
+    "question": "Which standard body collaborated with IEEE and The Open Group to form the Austin Group?",
+    "options": [
+      "ISO/IEC C. GNU D. Linux Foundation"
+    ],
+    "answer": [
+      0
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån A"
+      ],
+      [
+        867,
+        "Giåi thich: Austin Group durqc thånh lap bbi IEEE, The Open Group vå ISO/IEC J TC 1."
+      ]
+    ],
+    "slide": [
+      [
+        316,
+        "Which standard body collaborated with IEEE and The Open Group to form the Austin"
+      ],
+      [
+        343,
+        "Group?"
+      ],
+      [
+        388,
+        "A. ISO/IEC"
+      ],
+      [
+        466,
+        "C. GNU"
+      ],
+      [
+        503,
+        "D. Linux Foundation"
+      ]
+    ]
+  },
+  {
+    "id": "LOS201-212",
+    "question": "Which version of the Linux kernel brought an end to separate stable/development branches? c. 24 D. 26",
+    "options": [],
+    "answer": [
+      3
+    ],
+    "notes": [
+      [
+        844,
+        "Dép ån D"
+      ],
+      [
+        865,
+        "Giåi thich: Tir kernel 2.6, Linux khöng cön tåch nhänh 6n dinh (y chÅn) vå nhänh phåt trién (y lé)."
+      ]
+    ],
+    "slide": [
+      [
+        315,
+        "Which version of the Linux kernel brought an end to separate stable/development"
+      ],
+      [
+        343,
+        "branches?"
+      ],
+      [
+        466,
+        "c. 24"
+      ],
+      [
+        504,
+        "D. 26"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,3071 @@
+{
+  "subject": "ICI211",
+  "reviewedCount": 247,
+  "ledger": [
+    {
+      "id": "ICI211-250",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTCMOS ở chế độ active giảm ngưỡng bằng body bias để transistor chuyển mạch nhanh hơn."
+    },
+    {
+      "id": "ICI211-251",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "tPLH đo độ trễ lan truyền khi đầu ra chuyển từ mức thấp lên cao."
+    },
+    {
+      "id": "ICI211-252",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nạp nhiều bước làm chênh lệch điện áp mỗi lần nhỏ hơn, giảm năng lượng mất trên điện trở."
+    },
+    {
+      "id": "ICI211-253",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mạch monostable có một trạng thái bền và một trạng thái tạm thời sau kích thích."
+    },
+    {
+      "id": "ICI211-254",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Latch có clock chỉ cập nhật khi mức điều khiển cho phép, phối hợp hoạt động đồng bộ."
+    },
+    {
+      "id": "ICI211-255",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "SDFF là Semi-Dynamic Flip-Flop: tầng vào động giúp thao tác nhanh, tầng latch tĩnh giữ đầu ra. Nó không phải tên viết tắt “Sense Delay”."
+    },
+    {
+      "id": "ICI211-256",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PMOS tải luôn bật nên khi đầu ra thấp có dòng DC từ nguồn xuống mass."
+    },
+    {
+      "id": "ICI211-257",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "FPGA có logic và liên kết lập trình được sau khi chip đã được chế tạo."
+    },
+    {
+      "id": "ICI211-258",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện trở và điện dung dây phân bố dọc chiều dài, nên dây dài cần mô hình RC phân bố."
+    },
+    {
+      "id": "ICI211-259",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS và PMOS bổ trợ nhau, giúp transmission gate truyền cả hai mức logic đầy đủ hơn."
+    },
+    {
+      "id": "ICI211-260",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tải enhancement mắc kiểu bão hòa có thể dùng chung một nguồn với transistor kéo xuống."
+    },
+    {
+      "id": "ICI211-261",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm."
+    },
+    {
+      "id": "ICI211-262",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn."
+    },
+    {
+      "id": "ICI211-263",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Các inverter CMOS hồi tiếp tạo hai mức rail-to-rail với khả năng chống nhiễu tốt."
+    },
+    {
+      "id": "ICI211-264",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số."
+    },
+    {
+      "id": "ICI211-265",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Testability xét khả năng kích hoạt, quan sát và phát hiện lỗi của chip."
+    },
+    {
+      "id": "ICI211-266",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "RTL mô tả việc chuyển dữ liệu và phép toán giữa các thanh ghi theo clock."
+    },
+    {
+      "id": "ICI211-267",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Self-refresh tự duy trì dữ liệu nhớ trong standby, giảm hoạt động điều khiển bên ngoài."
+    },
+    {
+      "id": "ICI211-268",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nút động lưu điện tích trong pha evaluate; precharge khôi phục điện tích. Không đòi hỏi đường DC liên tục và không nên giữ evaluate vô hạn khi có rò."
+    },
+    {
+      "id": "ICI211-269",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS ngừng truyền mức cao khi VGS giảm đến VT, nên đầu ra cao chỉ khoảng VDD−VT."
+    },
+    {
+      "id": "ICI211-270",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với dây ngắn, có thể gom điện trở và điện dung thành các phần tử tập trung."
+    },
+    {
+      "id": "ICI211-271",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tăng VDS làm chiều dài kênh hiệu dụng giảm, khiến dòng bão hòa vẫn tăng."
+    },
+    {
+      "id": "ICI211-272",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "tPHL đo độ trễ lan truyền khi đầu ra chuyển từ cao xuống thấp."
+    },
+    {
+      "id": "ICI211-273",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện trở NMOS và PMOS bù xu hướng biến thiên cho nhau theo điện áp tín hiệu."
+    },
+    {
+      "id": "ICI211-274",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Static logic duy trì mức đầu ra bằng mạng kéo lên hoặc kéo xuống khi nguồn và đầu vào giữ nguyên."
+    },
+    {
+      "id": "ICI211-275",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NOR Flash cho phép truy cập ngẫu nhiên nhanh, phù hợp đọc mã lệnh trực tiếp."
+    },
+    {
+      "id": "ICI211-276",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai ngõ S và R dùng đặt hoặc xóa trạng thái lưu."
+    },
+    {
+      "id": "ICI211-277",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PMOS dẫn khi cổng thấp, tạo mạng kéo đầu ra lên VDD."
+    },
+    {
+      "id": "ICI211-278",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Các lớp và dây kim loại gần nhau tạo điện dung ký sinh qua điện môi."
+    },
+    {
+      "id": "ICI211-279",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "LUT lưu bảng chân trị; các bit đầu vào chọn giá trị hàm Boolean tương ứng."
+    },
+    {
+      "id": "ICI211-280",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Biên nhiễu thấp là khoảng cách giữa mức vào thấp tối đa và mức ra thấp tối đa."
+    },
+    {
+      "id": "ICI211-281",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Thiết bị di động phụ thuộc pin và giới hạn tản nhiệt nên cần giảm công suất tiêu thụ."
+    },
+    {
+      "id": "ICI211-282",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nút động không được giữ liên tục bởi nguồn, nên rò điện và chia sẻ điện tích có thể làm sai mức."
+    },
+    {
+      "id": "ICI211-283",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTC là đường đặc tính điện áp ra theo điện áp vào trong trạng thái tĩnh."
+    },
+    {
+      "id": "ICI211-284",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Sense amplifier khuếch đại chênh lệch rất nhỏ giữa các bitline để quyết định bit nhớ."
+    },
+    {
+      "id": "ICI211-285",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "D-latch có một đầu vào dữ liệu D, trạng thái được giữ hoặc truyền theo tín hiệu enable."
+    },
+    {
+      "id": "ICI211-286",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Dòng ngắn mạch lớn khi cả NMOS và PMOS cùng dẫn mạnh gần điểm chuyển của inverter."
+    },
+    {
+      "id": "ICI211-287",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Phân tích chuyển mạch theo dõi điện áp và độ trễ theo thời gian."
+    },
+    {
+      "id": "ICI211-288",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Clock phân chia pha precharge và evaluate trong logic động đồng bộ."
+    },
+    {
+      "id": "ICI211-289",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Access time là thời gian từ yêu cầu truy cập đến dữ liệu hợp lệ, quyết định tốc độ nhớ."
+    },
+    {
+      "id": "ICI211-290",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "MTCMOS tắt transistor sleep ngưỡng cao để ngắt đường cấp nguồn của khối logic khi standby."
+    },
+    {
+      "id": "ICI211-291",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Trong khoảng chuyển mức, NMOS và PMOS cùng bật tạo đường trực tiếp VDD xuống mass."
+    },
+    {
+      "id": "ICI211-292",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Yield là tỷ lệ chip chế tạo đạt chức năng và yêu cầu kiểm tra."
+    },
+    {
+      "id": "ICI211-293",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn."
+    },
+    {
+      "id": "ICI211-295",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau."
+    },
+    {
+      "id": "ICI211-296",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai pha không chồng lấn tránh các latch cùng mở và dữ liệu chạy xuyên gây race."
+    },
+    {
+      "id": "ICI211-297",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ghép điện dung nâng điện áp nút nội bộ, giúp cổng điều khiển vượt mức thông thường."
+    },
+    {
+      "id": "ICI211-298",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Transmission gate đóng hoặc ngắt đường tín hiệu theo lựa chọn, rất phù hợp làm mux."
+    },
+    {
+      "id": "ICI211-299",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "8T SRAM tách đường đọc khỏi nút lưu nên giảm read disturb và tăng ổn định đọc."
+    },
+    {
+      "id": "ICI211-300",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Full scaling giảm đồng thời kích thước và điện áp theo cùng tỷ lệ để giữ điện trường xấp xỉ không đổi."
+    },
+    {
+      "id": "ICI211-301",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NML=.65−.1=.55 V; NMH=1.8−1.05=.75 V; minimum=.55 V."
+    },
+    {
+      "id": "ICI211-302",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Bộ khuếch đại cảm nhận phân biệt chênh lệch điện áp nhỏ trên bitline."
+    },
+    {
+      "id": "ICI211-303",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai inverter mắc hồi tiếp chéo tạo hai trạng thái bền để lưu một bit."
+    },
+    {
+      "id": "ICI211-304",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Dây rộng làm R giảm nhưng có thể làm C ký sinh tăng, nên tích RC không giảm tương ứng."
+    },
+    {
+      "id": "ICI211-305",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NOR chỉ ra cao khi tất cả đầu vào thấp; có một đầu vào cao là đầu ra thấp."
+    },
+    {
+      "id": "ICI211-306",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Đóng góp của tụ Cj là Cj nhân điện trở chung giữa đường root→tụ và root→output. Chỉ khi Cj bằng nhau mới xếp đóng góp theo điện trở chung."
+    },
+    {
+      "id": "ICI211-307",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Thiết kế top-down đi từ yêu cầu tổng thể đến kiến trúc, logic/mạch rồi bố trí vật lý."
+    },
+    {
+      "id": "ICI211-308",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "(W/L)A/(W/L)B=8/2=4."
+    },
+    {
+      "id": "ICI211-309",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "P doubles with f: 4 mW→8 mW."
+    },
+    {
+      "id": "ICI211-310",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Clock gating chặn xung clock ở khối không cần hoạt động, giảm chuyển mạch vô ích."
+    },
+    {
+      "id": "ICI211-311",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện trở dây R=ρL/A, phụ thuộc điện trở suất và hình học."
+    },
+    {
+      "id": "ICI211-312",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS truyền tốt mức 0, PMOS truyền tốt mức 1; mắc song song với điều khiển bù cho swing đầy đủ."
+    },
+    {
+      "id": "ICI211-313",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Lỗ trống có độ linh động thấp hơn electron, nên PMOS cần rộng hơn để cân bằng dòng."
+    },
+    {
+      "id": "ICI211-314",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Setup yêu cầu dữ liệu ổn định đủ lâu trước cạnh clock tác động."
+    },
+    {
+      "id": "ICI211-315",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mạng kéo tĩnh duy trì đầu ra hợp lệ khi đầu vào ổn định, không cần refresh điện tích định kỳ."
+    },
+    {
+      "id": "ICI211-316",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Latch trong suốt một phần chu kỳ cho phép tầng chậm mượn thời gian của tầng tiếp theo."
+    },
+    {
+      "id": "ICI211-317",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PMOS mạnh hơn cần Vin cao hơn để NMOS cân bằng được dòng, nên điểm chuyển dịch lên."
+    },
+    {
+      "id": "ICI211-318",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mạch tuần tự đồng bộ cập nhật trạng thái theo tín hiệu clock chung."
+    },
+    {
+      "id": "ICI211-319",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện áp phân cực thay đổi độ rộng vùng nghèo của tiếp giáp, làm điện dung thay đổi."
+    },
+    {
+      "id": "ICI211-320",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với dây đủ ngắn, gom R và C vào mô hình tập trung là xấp xỉ hợp lý."
+    },
+    {
+      "id": "ICI211-321",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Inverter phục hồi mức và biến đầu ra động thành tín hiệu chỉ tăng trong pha evaluate cho tầng sau."
+    },
+    {
+      "id": "ICI211-322",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "120+600+80=800 ps."
+    },
+    {
+      "id": "ICI211-323",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Đường đọc riêng trong 8T tránh kéo nhiễu nút lưu, đổi lại thêm transistor và diện tích."
+    },
+    {
+      "id": "ICI211-324",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ngõ ra tầng động có thể chuyển 1→0 khi evaluate. Đặt cổng đảo tĩnh sau nó tạo tín hiệu 0→1 cho tầng động tiếp theo; đây là cặp dynamic/static của domino."
+    },
+    {
+      "id": "ICI211-325",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Có thể cấu hình lại hàm logic và liên kết FPGA sau khi sản xuất."
+    },
+    {
+      "id": "ICI211-326",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Kênh ngắn hiệu dụng hơn khi VDS tăng làm dòng bão hòa có độ dốc dương."
+    },
+    {
+      "id": "ICI211-327",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Dây dài có R và C phân bố suốt chiều dài, nên một cặp RC tập trung không mô tả đủ độ trễ."
+    },
+    {
+      "id": "ICI211-328",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Body thấp hơn source làm VSB tăng; body effect làm điện áp ngưỡng NMOS tăng."
+    },
+    {
+      "id": "ICI211-329",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "log2(1024 words)=10 address bits."
+    },
+    {
+      "id": "ICI211-330",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tụ lưu DRAM mất điện tích qua dòng rò, làm dữ liệu suy giảm nếu không refresh."
+    },
+    {
+      "id": "ICI211-331",
+      "status": "change",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm."
+    },
+    {
+      "id": "ICI211-332",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Các đầu vào tầng domino chỉ được tăng trong evaluate; inverter sau tầng động tạo giao tiếp đơn điệu này."
+    },
+    {
+      "id": "ICI211-333",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "D flip-flop chốt D tại cạnh tác động; D=1 thì Q thành 1 sau tCQ."
+    },
+    {
+      "id": "ICI211-334",
+      "status": "change",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": ".69×2000×100e−15=138e−12 s."
+    },
+    {
+      "id": "ICI211-335",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Full scaling giữ điện trường bằng cách giảm điện áp cùng tỷ lệ với kích thước."
+    },
+    {
+      "id": "ICI211-336",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện tích trên tụ DRAM rò dần nên phải đọc và nạp lại định kỳ."
+    },
+    {
+      "id": "ICI211-337",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nâng điện áp điều khiển bằng bootstrap giúp bù sụt áp ngưỡng của pass transistor."
+    },
+    {
+      "id": "ICI211-338",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "CMOS lý tưởng không có dòng DC ổn định; thực tế công suất tĩnh chủ yếu do các cơ chế rò."
+    },
+    {
+      "id": "ICI211-339",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hold yêu cầu dữ liệu giữ nguyên thêm một khoảng sau cạnh clock."
+    },
+    {
+      "id": "ICI211-340",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Theo ý đề, giảm kích thước vùng ghép điện dung có thể làm C giảm; thực tế còn tùy khoảng cách và cấu trúc lớp."
+    },
+    {
+      "id": "ICI211-341",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "R=ρL/A nên tăng tiết diện A làm điện trở giảm khi vật liệu và chiều dài giữ nguyên."
+    },
+    {
+      "id": "ICI211-342",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "ID∝W, width ratio 2 implies ID ratio2."
+    },
+    {
+      "id": "ICI211-343",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Sườn vào chậm thay đổi thời gian transistor cùng dẫn và thời gian nạp/xả đầu ra."
+    },
+    {
+      "id": "ICI211-344",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NAND chỉ xuống thấp khi tất cả đầu vào cao."
+    },
+    {
+      "id": "ICI211-345",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Low-VT cho đường quan trọng tốc độ cao; high-VT giảm rò ở nơi ít nhạy thời gian."
+    },
+    {
+      "id": "ICI211-346",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NORA là tên kiến trúc CMOS động nhằm tránh race trong hoạt động theo clock."
+    },
+    {
+      "id": "ICI211-347",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Khi đọc 6T, access transistor không được thắng pull-down và nâng nút đang lưu 0 quá cao."
+    },
+    {
+      "id": "ICI211-348",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Khi đọc 6T, access transistor không được thắng pull-down và nâng nút đang lưu 0 quá cao."
+    },
+    {
+      "id": "ICI211-349",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai latch trong suốt ở hai pha đối nhau tạo hành vi chốt theo cạnh."
+    },
+    {
+      "id": "ICI211-350",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "2 fC /20 fF=.10 V."
+    },
+    {
+      "id": "ICI211-351",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với inverter cân đối và ngõ vào quét chậm, dòng trực tiếp lớn nhất xấp xỉ vùng VM≈VDD/2. Gần VTN, NMOS mới bắt đầu dẫn nên dòng chưa cực đại."
+    },
+    {
+      "id": "ICI211-352",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Công suất rò gồm dòng dưới ngưỡng, rò tiếp giáp phân cực ngược và có thể cả rò qua oxide cổng."
+    },
+    {
+      "id": "ICI211-353",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTC là đường đặc tính điện áp ra theo điện áp vào trong trạng thái tĩnh."
+    },
+    {
+      "id": "ICI211-354",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VDS=.3 < VGS−VT=.8 V and VGS>VT → triode."
+    },
+    {
+      "id": "ICI211-355",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "LUT lưu bảng chân trị; các bit đầu vào chọn giá trị hàm Boolean tương ứng."
+    },
+    {
+      "id": "ICI211-356",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Giảm tải cho phép hạ tần số và điện áp cùng lúc, tiết kiệm công suất động mạnh."
+    },
+    {
+      "id": "ICI211-357",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai rail ra gần lý tưởng và điểm chuyển ở giữa giúp cân bằng, tăng cả hai biên nhiễu."
+    },
+    {
+      "id": "ICI211-358",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Sau khi nút động đã xả, nó không tự nạp lại trong evaluate; đầu vào 1→0 có thể làm mất điều kiện đơn điệu."
+    },
+    {
+      "id": "ICI211-359",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Chia bus chỉ kích hoạt phần cần dùng, giảm điện dung phải nạp/xả mỗi lần."
+    },
+    {
+      "id": "ICI211-360",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nút động không được giữ liên tục bởi nguồn, nên rò điện và chia sẻ điện tích có thể làm sai mức."
+    },
+    {
+      "id": "ICI211-361",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VT = VT0 + γ[√(2φF+VSB)−√(2φF)]; tăng VSB trong phân cực ngược làm VT tăng."
+    },
+    {
+      "id": "ICI211-362",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Standard-cell ghép các cổng đã thiết kế và đặc trưng sẵn thay vì vẽ mọi transistor từ đầu."
+    },
+    {
+      "id": "ICI211-363",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nguồn bias cổng bổ sung giữ transistor tải ở vùng tuyến tính và giúp VOH đạt VDD, cải thiện noise margin so với tải enhancement bão hòa."
+    },
+    {
+      "id": "ICI211-364",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Transistor kéo xuống tắt thì không có đường DC xuống mass, nên dòng lý tưởng bằng zero."
+    },
+    {
+      "id": "ICI211-365",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Full-custom cho phép tối ưu từng transistor và layout, hợp sản lượng cao khi chấp nhận chi phí thiết kế lớn."
+    },
+    {
+      "id": "ICI211-366",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tải enhancement mắc kiểu bão hòa có thể dùng chung một nguồn với transistor kéo xuống."
+    },
+    {
+      "id": "ICI211-367",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn."
+    },
+    {
+      "id": "ICI211-368",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Giảm cả chiều dài đặc trưng và điện áp 1/S giữ tỷ số V/L, tức điện trường, không đổi."
+    },
+    {
+      "id": "ICI211-369",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "sqrt(1048576)=1024 cells/row."
+    },
+    {
+      "id": "ICI211-370",
+      "status": "change",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai latch được mở ở hai pha khác nhau để tránh cùng trong suốt. Transmission gate tổ hợp nói chung không bắt buộc một sơ đồ clock hai pha."
+    },
+    {
+      "id": "ICI211-371",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Four equal series resistances require roughly4× each width for unit inverter pull-down."
+    },
+    {
+      "id": "ICI211-372",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Số tầng đảo lẻ tạo đảo pha tổng; cùng độ trễ vòng làm mạch tự dao động."
+    },
+    {
+      "id": "ICI211-373",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Full-custom cho phép tối ưu từng transistor và layout, hợp sản lượng cao khi chấp nhận chi phí thiết kế lớn."
+    },
+    {
+      "id": "ICI211-374",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Cg∝1/S, V²∝1/S², f∝S, density∝S² → constant power/area."
+    },
+    {
+      "id": "ICI211-375",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Bốn đầu vào giống nhau mắc làm tải có tổng điện dung cổng bằng bốn lần một đầu vào."
+    },
+    {
+      "id": "ICI211-376",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "OAI thực hiện phép OR, sau đó AND rồi đảo đầu ra."
+    },
+    {
+      "id": "ICI211-377",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Clock phân chia pha precharge và evaluate trong logic động đồng bộ."
+    },
+    {
+      "id": "ICI211-378",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "1.2×30/(30+10)=.9 V."
+    },
+    {
+      "id": "ICI211-379",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mạch monostable có một trạng thái bền và một trạng thái tạm thời sau kích thích."
+    },
+    {
+      "id": "ICI211-380",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS ngừng truyền mức cao khi VGS giảm đến VT, nên đầu ra cao chỉ khoảng VDD−VT."
+    },
+    {
+      "id": "ICI211-381",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Reset đưa bit lưu Q về zero trong định nghĩa SR latch thông thường."
+    },
+    {
+      "id": "ICI211-382",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn."
+    },
+    {
+      "id": "ICI211-383",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Theo mô hình bình phương, ID=½μCox(W/L)(VGS−VT)² nên tăng W/L làm ID tăng."
+    },
+    {
+      "id": "ICI211-384",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Equal β and |VT| give VM=VDD/2=.9 V."
+    },
+    {
+      "id": "ICI211-385",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai cổng NOR hồi tiếp chéo lưu trạng thái và nhận hai tín hiệu Set/Reset."
+    },
+    {
+      "id": "ICI211-386",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Đặt các khối thường trao đổi gần nhau rút ngắn dây, giảm độ trễ và năng lượng truyền."
+    },
+    {
+      "id": "ICI211-387",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "SNM đo mức nhiễu DC lớn nhất ô nhớ chịu được trước khi đổi trạng thái lưu."
+    },
+    {
+      "id": "ICI211-388",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NAND Flash tổ chức cell nối chuỗi giúp mật độ cao, nhưng đọc ngẫu nhiên kém thuận tiện hơn NOR."
+    },
+    {
+      "id": "ICI211-389",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "gm là đạo hàm ∂ID/∂VGS tại điểm làm việc, đo độ nhạy dòng theo điện áp cổng."
+    },
+    {
+      "id": "ICI211-390",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Trong khoảng chuyển mức, NMOS và PMOS cùng bật tạo đường trực tiếp VDD xuống mass."
+    },
+    {
+      "id": "ICI211-391",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn."
+    },
+    {
+      "id": "ICI211-392",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Lặp lại layout đã kiểm chứng giảm công sức kiểm tra và làm đặc tính vật lý dễ dự đoán hơn."
+    },
+    {
+      "id": "ICI211-393",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": ".2×20e−15×1²×500e6=2e−6 W."
+    },
+    {
+      "id": "ICI211-394",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "RTL mô tả việc chuyển dữ liệu và phép toán giữa các thanh ghi theo clock."
+    },
+    {
+      "id": "ICI211-395",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mạch tuần tự có trạng thái lưu, nên đầu ra còn phụ thuộc lịch sử thông qua trạng thái trước."
+    },
+    {
+      "id": "ICI211-396",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Self-refresh tự duy trì dữ liệu nhớ trong standby, giảm hoạt động điều khiển bên ngoài."
+    },
+    {
+      "id": "ICI211-397",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Keeper yếu bù dòng rò để giữ mức precharge, nhưng vẫn phải cho mạng evaluate kéo xuống được."
+    },
+    {
+      "id": "ICI211-398",
+      "status": "change",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "SRAM lưu bit bằng trạng thái mạch tĩnh, không cần refresh như DRAM khi còn nguồn."
+    },
+    {
+      "id": "ICI211-399",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Đầu ra tầng động đầu tiên có thể giảm 1→0 trong evaluate, vi phạm yêu cầu đầu vào chỉ tăng của tầng sau."
+    },
+    {
+      "id": "ICI211-400",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn."
+    },
+    {
+      "id": "ICI211-401",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Testability xét khả năng kích hoạt, quan sát và phát hiện lỗi của chip."
+    },
+    {
+      "id": "ICI211-402",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số."
+    },
+    {
+      "id": "ICI211-403",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Thiết bị di động phụ thuộc pin và giới hạn tản nhiệt nên cần giảm công suất tiêu thụ."
+    },
+    {
+      "id": "ICI211-404",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Sense amplifier khuếch đại chênh lệch rất nhỏ giữa các bitline để quyết định bit nhớ."
+    },
+    {
+      "id": "ICI211-405",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "600000/10000=60 USD/functional die."
+    },
+    {
+      "id": "ICI211-406",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "3 nMOS + 3 pMOS=6 transistors."
+    },
+    {
+      "id": "ICI211-407",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": ".8×.002=.0016 W=1.6 mW."
+    },
+    {
+      "id": "ICI211-408",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Phân tích chuyển mạch theo dõi điện áp và độ trễ theo thời gian."
+    },
+    {
+      "id": "ICI211-409",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PMOS dẫn khi cổng thấp, tạo mạng kéo đầu ra lên VDD."
+    },
+    {
+      "id": "ICI211-410",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Thiết bị kích thước nhỏ có điện trường mạnh gần drain, làm hạt tải đạt năng lượng cao."
+    },
+    {
+      "id": "ICI211-411",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VDS,sat=VGS−VT=1.8−.5=1.3 V."
+    },
+    {
+      "id": "ICI211-412",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Yield là tỷ lệ chip chế tạo đạt chức năng và yêu cầu kiểm tra."
+    },
+    {
+      "id": "ICI211-413",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "D-latch có một đầu vào dữ liệu D, trạng thái được giữ hoặc truyền theo tín hiệu enable."
+    },
+    {
+      "id": "ICI211-414",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với gate động n-type chuẩn, clock tác động mở transistor evaluate để mạng NMOS có thể xả nút."
+    },
+    {
+      "id": "ICI211-415",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai pha không chồng lấn tránh các latch cùng mở và dữ liệu chạy xuyên gây race."
+    },
+    {
+      "id": "ICI211-416",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "8T SRAM tách đường đọc khỏi nút lưu nên giảm read disturb và tăng ổn định đọc."
+    },
+    {
+      "id": "ICI211-417",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "FRAM lưu trạng thái phân cực bền của vật liệu sắt điện."
+    },
+    {
+      "id": "ICI211-418",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "JK cho phép cả J và K cùng bật bằng cách đảo trạng thái, thay cho trạng thái cấm của SR."
+    },
+    {
+      "id": "ICI211-419",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Vi phạm setup/hold có thể đưa flip-flop vào mức siêu ổn định với thời gian phân giải không xác định."
+    },
+    {
+      "id": "ICI211-420",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Buffer chia dây dài thành nhiều đoạn RC ngắn, giảm thành phần trễ tăng theo bình phương chiều dài."
+    },
+    {
+      "id": "ICI211-421",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nạp nhiều bước làm chênh lệch điện áp mỗi lần nhỏ hơn, giảm năng lượng mất trên điện trở."
+    },
+    {
+      "id": "ICI211-422",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PDN conducts for AB+C; series A,B in parallel with C."
+    },
+    {
+      "id": "ICI211-423",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "(.9/1.2)²=.5625."
+    },
+    {
+      "id": "ICI211-424",
+      "status": "reviewed",
+      "selectedAnswer": [
+        4
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "SDFF dùng tầng động trước latch tĩnh để giảm trễ. Khả năng drive còn phụ thuộc tầng ra và sizing; không phải ưu điểm định nghĩa của mọi SDFF."
+    },
+    {
+      "id": "ICI211-425",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS ngừng truyền mức cao khi VGS giảm đến VT, nên đầu ra cao chỉ khoảng VDD−VT."
+    },
+    {
+      "id": "ICI211-426",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "RTL mô tả việc chuyển dữ liệu và phép toán giữa các thanh ghi theo clock."
+    },
+    {
+      "id": "ICI211-427",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tăng VDS làm chiều dài kênh hiệu dụng giảm, khiến dòng bão hòa vẫn tăng."
+    },
+    {
+      "id": "ICI211-428",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Full-custom cho phép tối ưu từng transistor và layout, hợp sản lượng cao khi chấp nhận chi phí thiết kế lớn."
+    },
+    {
+      "id": "ICI211-429",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ngắt nguồn bằng sleep transistor giảm rò nhưng thêm diện tích, trở đường nguồn và thời gian thức dậy."
+    },
+    {
+      "id": "ICI211-430",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS mạnh hơn cân bằng PMOS ngay tại Vin thấp hơn, nên điểm chuyển dịch về ground."
+    },
+    {
+      "id": "ICI211-431",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "1.5/2=.75=75%."
+    },
+    {
+      "id": "ICI211-432",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Công suất động tỷ lệ VDD², nên giảm điện áp rất hiệu quả nhưng làm transistor chậm hơn."
+    },
+    {
+      "id": "ICI211-433",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMOS dẫn tốt ở mức thấp, PMOS dẫn tốt ở mức cao. Hai nhánh song song bù nhau nên R_ON tương đương khá phẳng theo điện áp, không bằng zero và không hoàn toàn hằng."
+    },
+    {
+      "id": "ICI211-434",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Biên nhiễu thấp là khoảng cách giữa mức vào thấp tối đa và mức ra thấp tối đa."
+    },
+    {
+      "id": "ICI211-435",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Miền hành vi mô tả hệ thống làm gì, trước khi chọn cấu trúc và bố trí vật lý."
+    },
+    {
+      "id": "ICI211-436",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Giải mã nhiều tầng chia fanout và đường dây, giúp tín hiệu chọn dòng truyền nhanh và khỏe hơn."
+    },
+    {
+      "id": "ICI211-437",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện trở và điện dung dây phân bố dọc chiều dài, nên dây dài cần mô hình RC phân bố."
+    },
+    {
+      "id": "ICI211-438",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "tPLH đo độ trễ lan truyền khi đầu ra chuyển từ mức thấp lên cao."
+    },
+    {
+      "id": "ICI211-439",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Pass transistor đóng hoặc mở đường truyền tín hiệu theo điện áp cổng."
+    },
+    {
+      "id": "ICI211-440",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NMH=1.8−1.1=.7; NML=.7−0=.7 V."
+    },
+    {
+      "id": "ICI211-441",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Pha precharge bật PMOS nạp nút động lên VDD trước khi đánh giá."
+    },
+    {
+      "id": "ICI211-442",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ở điện trường mạnh, vận tốc hạt tải tiến tới giới hạn thay vì tăng tuyến tính, làm sai mô hình square-law."
+    },
+    {
+      "id": "ICI211-443",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Thanh ghi dịch động giữ bit bằng điện tích trên điện dung nút khi khóa truyền tắt."
+    },
+    {
+      "id": "ICI211-444",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "256×16=4096 bits."
+    },
+    {
+      "id": "ICI211-445",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Access time là thời gian từ yêu cầu truy cập đến dữ liệu hợp lệ, quyết định tốc độ nhớ."
+    },
+    {
+      "id": "ICI211-446",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTC dốc ở vùng chuyển và mức logic có biên nhiễu rộng giúp tái tạo mức sạch sau nhiễu nhỏ."
+    },
+    {
+      "id": "ICI211-447",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tăng cùng tỷ lệ hai W giữ βn/βp nên điểm cân bằng dòng và VM gần như giữ nguyên."
+    },
+    {
+      "id": "ICI211-448",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Tmin=100+750+150=1000 ps → fmax=1 GHz."
+    },
+    {
+      "id": "ICI211-449",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Activity factor mô tả tần suất/xác suất chuyển mức hữu hiệu gây nạp xả điện dung."
+    },
+    {
+      "id": "ICI211-450",
+      "status": "change",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": ".69×4000×50e−15=138 ps."
+    },
+    {
+      "id": "ICI211-451",
+      "status": "change",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "65536×8=524288 bits."
+    },
+    {
+      "id": "ICI211-452",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PMOS tải luôn ON nên NMOS phải đủ mạnh để kéo thấp, tạo logic phụ thuộc tỷ lệ kích thước."
+    },
+    {
+      "id": "ICI211-453",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện dung ghép khiến chuyển mức trên dây này gây nhiễu điện áp trên dây lân cận."
+    },
+    {
+      "id": "ICI211-454",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với SR dùng NOR, S=R=1 ép cả hai đầu ra thấp, phá tính bù và gây bất định khi nhả đồng thời."
+    },
+    {
+      "id": "ICI211-455",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PDN=(A+B)C, CMOS output is its complement."
+    },
+    {
+      "id": "ICI211-456",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Keeper mạnh giữ mức chống nhiễu tốt hơn nhưng tranh dòng với mạng xả, làm evaluate chậm."
+    },
+    {
+      "id": "ICI211-457",
+      "status": "reviewed",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NOR Flash cho phép truy cập ngẫu nhiên nhanh, phù hợp đọc mã lệnh trực tiếp."
+    },
+    {
+      "id": "ICI211-458",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Die lớn có xác suất gặp ít nhất một khuyết tật cao hơn khi mật độ lỗi giữ nguyên."
+    },
+    {
+      "id": "ICI211-459",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Các inverter CMOS hồi tiếp tạo hai mức rail-to-rail với khả năng chống nhiễu tốt."
+    },
+    {
+      "id": "ICI211-460",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện áp drain cao hạ rào thế gần source, làm điện áp ngưỡng hiệu dụng giảm."
+    },
+    {
+      "id": "ICI211-461",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "MTCMOS tắt transistor sleep ngưỡng cao để ngắt đường cấp nguồn của khối logic khi standby."
+    },
+    {
+      "id": "ICI211-462",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Một PMOS tải thay cả mạng pull-up bổ sung giúp giảm số transistor và diện tích."
+    },
+    {
+      "id": "ICI211-463",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Pipeline rút ngắn đường tổ hợp mỗi tầng, cho phép giảm VDD mà vẫn giữ thông lượng yêu cầu."
+    },
+    {
+      "id": "ICI211-464",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "PMOS tải luôn bật nên khi đầu ra thấp có dòng DC từ nguồn xuống mass."
+    },
+    {
+      "id": "ICI211-465",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Energy drawn from supply CV²=40 fJ; capacitor stores CV²/2=20 fJ."
+    },
+    {
+      "id": "ICI211-466",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Khả năng cập nhật công nghệ giúp chuyển thiết kế sang quy trình mới với công sức hợp lý."
+    },
+    {
+      "id": "ICI211-467",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Transistor rộng hơn giảm điện trở dẫn, nạp/xả tải ngoài cố định nhanh hơn."
+    },
+    {
+      "id": "ICI211-468",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai dây chuyển ngược chiều làm chênh điện áp qua tụ ghép thay đổi mạnh hơn, tăng tải hiệu dụng."
+    },
+    {
+      "id": "ICI211-469",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mux truth table S0→D0,S1→D1 gives NOT(S)D0+SD1."
+    },
+    {
+      "id": "ICI211-470",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Vin=0 tắt NMOS và bật PMOS, kéo đầu ra lên VDD."
+    },
+    {
+      "id": "ICI211-471",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTCMOS ở chế độ active giảm ngưỡng bằng body bias để transistor chuyển mạch nhanh hơn."
+    },
+    {
+      "id": "ICI211-472",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mô hình T chia điện trở dây quanh điện dung tương đương, xấp xỉ phân bố tốt hơn mô hình đơn giản."
+    },
+    {
+      "id": "ICI211-473",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Chiều dài kênh rất nhỏ khiến trường drain và bão hòa vận tốc ảnh hưởng mạnh."
+    },
+    {
+      "id": "ICI211-474",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": ".69×5000×20e−15=69 ps."
+    },
+    {
+      "id": "ICI211-475",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "FPGA tránh chi phí chế tạo riêng và có thể cập nhật phần cứng, hợp sản lượng nhỏ."
+    },
+    {
+      "id": "ICI211-476",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "tPHL đo độ trễ lan truyền khi đầu ra chuyển từ cao xuống thấp."
+    },
+    {
+      "id": "ICI211-477",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Điện dung overlap chủ yếu do hình học cổng chồng source/drain nên thường xấp xỉ không đổi theo điện áp."
+    },
+    {
+      "id": "ICI211-478",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau."
+    },
+    {
+      "id": "ICI211-479",
+      "status": "change",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn."
+    },
+    {
+      "id": "ICI211-480",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ở mức logic hợp lệ, một transistor tắt nên không có đường DC lý tưởng từ VDD xuống ground."
+    },
+    {
+      "id": "ICI211-481",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NORA là tên kiến trúc CMOS động nhằm tránh race trong hoạt động theo clock."
+    },
+    {
+      "id": "ICI211-482",
+      "status": "change",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nếu cả hai latch cùng trong suốt, dữ liệu có thể chạy xuyên nhiều tầng thay vì dừng đúng pha."
+    },
+    {
+      "id": "ICI211-483",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Khi switch lấy mẫu tắt, điện tích còn trên tụ nội bộ giữ giá trị logic tạm thời."
+    },
+    {
+      "id": "ICI211-484",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "ID∝Vov², doubling overdrive multiplies current4."
+    },
+    {
+      "id": "ICI211-485",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "NORA là tên kiến trúc CMOS động nhằm tránh race trong hoạt động theo clock."
+    },
+    {
+      "id": "ICI211-486",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ở mức logic hợp lệ, một transistor tắt nên không có đường DC lý tưởng từ VDD xuống ground."
+    },
+    {
+      "id": "ICI211-487",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai ngõ S và R dùng đặt hoặc xóa trạng thái lưu."
+    },
+    {
+      "id": "ICI211-488",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Mỗi lần chuyển mạch nạp/xả tụ; công suất động chứa bình phương điện áp nguồn."
+    },
+    {
+      "id": "ICI211-489",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Regularity lặp các khối có cấu trúc tương tự để đơn giản hóa thiết kế và layout."
+    },
+    {
+      "id": "ICI211-490",
+      "status": "change",
+      "selectedAnswer": [
+        1
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nút động lưu điện tích trong pha evaluate; precharge khôi phục điện tích. Không đòi hỏi đường DC liên tục và không nên giữ evaluate vô hạn khi có rò."
+    },
+    {
+      "id": "ICI211-491",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Với SR dùng NOR, S=R=1 ép cả hai đầu ra thấp, phá tính bù và gây bất định khi nhả đồng thời."
+    },
+    {
+      "id": "ICI211-492",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Sau kiến trúc, RTL cụ thể hóa các thanh ghi và luồng dữ liệu trước khi tổng hợp thành cổng."
+    },
+    {
+      "id": "ICI211-493",
+      "status": "reviewed",
+      "selectedAnswer": [
+        0
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Ghép điện dung nâng điện áp nút nội bộ, giúp cổng điều khiển vượt mức thông thường."
+    },
+    {
+      "id": "ICI211-494",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Hai mạng bù nhau để đầu ra được kéo về đúng một rail cho mỗi tổ hợp vào hợp lệ."
+    },
+    {
+      "id": "ICI211-495",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Nạp nhiều bước làm chênh lệch điện áp mỗi lần nhỏ hơn, giảm năng lượng mất trên điện trở."
+    },
+    {
+      "id": "ICI211-496",
+      "status": "reviewed",
+      "selectedAnswer": [
+        2
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Transmission gate đóng hoặc ngắt đường tín hiệu theo lựa chọn, rất phù hợp làm mux."
+    },
+    {
+      "id": "ICI211-497",
+      "status": "reviewed",
+      "selectedAnswer": [
+        3
+      ],
+      "method": "All alternatives inspected; classical circuit model and units checked",
+      "rationale": "Khi ghi 0, access transistor phải thắng PMOS pull-up để đảo trạng thái ô nhớ."
+    }
+  ],
+  "changes": [
+    {
+      "id": "ICI211-259",
+      "changes": {
+        "question": "Compared with a single nMOS pass transistor, what signal-transfer benefit does a CMOS transmission gate provide?",
+        "options": [
+          "Capacitor leakage current",
+          "Passing both strong logic 0 and strong logic 1",
+          "Oxide breakdown voltage",
+          "Threshold voltage mismatch"
+        ]
+      },
+      "reason": "NMOS và PMOS bổ trợ nhau, giúp transmission gate truyền cả hai mức logic đầy đủ hơn.",
+      "tip": "transmission gate → strong 0 + strong 1.",
+      "note": "Làm rõ full-swing transfer; transmission gate không phải bộ khuếch đại tăng gain.",
+      "references": [
+        {
+          "title": "UCSB: pass transistors and transmission gates",
+          "url": "https://courses.ece.ucsb.edu/ECE125/125_W09Banerjee/Lectures/Lecture4.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-261",
+      "changes": {
+        "question": "What happens to sufficiently small disturbances around an asymptotically stable circuit operating point?"
+      },
+      "reason": "Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm.",
+      "tip": "asymptotically stable → disturbances decay.",
+      "note": "Thêm điều kiện ổn định tiệm cận để phát biểu suy giảm nhiễu là đúng.",
+      "references": [
+        {
+          "title": "MIT: Lyapunov and asymptotic stability",
+          "url": "https://underactuated.mit.edu/lyapunov.html"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-331",
+      "changes": {
+        "question": "What happens to sufficiently small disturbances around an asymptotically stable circuit operating point?"
+      },
+      "reason": "Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm.",
+      "tip": "asymptotically stable → disturbances decay.",
+      "note": "Thêm điều kiện ổn định tiệm cận để phát biểu suy giảm nhiễu là đúng.",
+      "references": [
+        {
+          "title": "MIT: Lyapunov and asymptotic stability",
+          "url": "https://underactuated.mit.edu/lyapunov.html"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-264",
+      "changes": {
+        "question": "In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion?",
+        "options": [
+          "Holes accumulate surface",
+          "Majority holes are repelled from the surface, leaving ionized acceptors",
+          "Electrons form channel",
+          "Oxide breaks down"
+        ]
+      },
+      "reason": "Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số.",
+      "tip": "depletion → repel majority carriers.",
+      "note": "Nêu rõ nền p; chiều loại hạt tải phụ thuộc loại nền.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-402",
+      "changes": {
+        "question": "In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion?",
+        "options": [
+          "Electrons form channel",
+          "Majority holes are repelled from the surface, leaving ionized acceptors",
+          "Holes accumulate surface",
+          "Oxide breaks down"
+        ]
+      },
+      "reason": "Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số.",
+      "tip": "depletion → repel majority carriers.",
+      "note": "Nêu rõ nền p; chiều loại hạt tải phụ thuộc loại nền.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-268",
+      "changes": {
+        "options": [
+          "Constant threshold scaling",
+          "Continuous conduction paths",
+          "Infinite voltage supply",
+          "Periodic precharge/evaluate cycles that restore dynamic-node charge"
+        ]
+      },
+      "reason": "Nút động lưu điện tích trong pha evaluate; precharge khôi phục điện tích. Không đòi hỏi đường DC liên tục và không nên giữ evaluate vô hạn khi có rò.",
+      "tip": "dynamic logic → precharge / evaluate, lưu điện tích.",
+      "note": "Diễn đạt chính xác cơ chế precharge/evaluate thay cho refresh mơ hồ.",
+      "references": [
+        {
+          "title": "David Harris: Dynamic Circuits, pp. 2–4",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-490",
+      "changes": {
+        "options": [
+          "Continuous conduction paths",
+          "Periodic precharge/evaluate cycles that restore dynamic-node charge",
+          "Infinite voltage supply",
+          "Constant threshold scaling"
+        ]
+      },
+      "reason": "Nút động lưu điện tích trong pha evaluate; precharge khôi phục điện tích. Không đòi hỏi đường DC liên tục và không nên giữ evaluate vô hạn khi có rò.",
+      "tip": "dynamic logic → precharge / evaluate, lưu điện tích.",
+      "note": "Diễn đạt chính xác cơ chế precharge/evaluate thay cho refresh mơ hồ.",
+      "references": [
+        {
+          "title": "David Harris: Dynamic Circuits, pp. 2–4",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-273",
+      "changes": {
+        "question": "While enabled over the signal range, how does the ON resistance of a suitably sized CMOS transmission gate approximately vary?"
+      },
+      "reason": "Điện trở NMOS và PMOS bù xu hướng biến thiên cho nhau theo điện áp tín hiệu.",
+      "tip": "transmission gate → roughly constant resistance.",
+      "note": "Chỉ xét trạng thái ON; khi OFF, transmission gate không có điện trở thấp.",
+      "references": [
+        {
+          "title": "UCSB: pass transistors and transmission gates",
+          "url": "https://courses.ece.ucsb.edu/ECE125/125_W09Banerjee/Lectures/Lecture4.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-293",
+      "changes": {
+        "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?"
+      },
+      "reason": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.",
+      "tip": "long-channel saturation → VDS ≥ VGS−VT → pinch-off.",
+      "note": "Bổ sung mô hình kênh dài để không nhầm với bão hòa vận tốc ở kênh ngắn.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-400",
+      "changes": {
+        "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?"
+      },
+      "reason": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.",
+      "tip": "long-channel saturation → VDS ≥ VGS−VT → pinch-off.",
+      "note": "Bổ sung mô hình kênh dài để không nhầm với bão hòa vận tốc ở kênh ngắn.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-479",
+      "changes": {
+        "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?"
+      },
+      "reason": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.",
+      "tip": "long-channel saturation → VDS ≥ VGS−VT → pinch-off.",
+      "note": "Bổ sung mô hình kênh dài để không nhầm với bão hòa vận tốc ở kênh ngắn.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-295",
+      "changes": {
+        "question": "Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2?"
+      },
+      "reason": "VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau.",
+      "tip": "symmetric DC VTC → balanced noise margins.",
+      "note": "Giới hạn ở đặc tính DC; tách khỏi giả thiết trễ lên/xuống bằng nhau.",
+      "references": [
+        {
+          "title": "UBC: CMOS inverter and noise margins",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-478",
+      "changes": {
+        "question": "Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2?"
+      },
+      "reason": "VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau.",
+      "tip": "symmetric DC VTC → balanced noise margins.",
+      "note": "Giới hạn ở đặc tính DC; tách khỏi giả thiết trễ lên/xuống bằng nhau.",
+      "references": [
+        {
+          "title": "UBC: CMOS inverter and noise margins",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-306",
+      "changes": {
+        "question": "For equal-valued capacitors and a fixed observed output in an RC tree, which capacitor contributes most to the Elmore delay?"
+      },
+      "reason": "Đóng góp của tụ Cj là Cj nhân điện trở chung giữa đường root→tụ và root→output. Chỉ khi Cj bằng nhau mới xếp đóng góp theo điện trở chung.",
+      "tip": "equal C → largest shared R → largest delay contribution.",
+      "note": "Thêm điều kiện các tụ bằng nhau và cố định nút quan sát.",
+      "references": [
+        {
+          "title": "Boyd et al.: Digital Circuit Optimization, RC-tree delay",
+          "url": "https://stanford.edu/~boyd/papers/pdf/gp_digital_ckt.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-322",
+      "changes": {
+        "question": "A flip-flop has setup time 80 ps, clock-to-Q delay 120 ps, and combinational path delay 600 ps. Ignoring clock skew, what is the minimum clock period?"
+      },
+      "reason": "Tmin = tCQ + tcomb + tsetup = 120 + 600 + 80 = 800 ps.",
+      "tip": "minimum clock period → clock-to-Q + logic + setup.",
+      "note": "Khôi phục đơn vị ps bị OCR sai; tính lại tổng 800 ps.",
+      "references": [
+        {
+          "title": "Stanford EE371: clocking and domino stages",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_10_1up.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-324",
+      "changes": {
+        "question": "In conventional domino logic, which element is placed between successive n-type dynamic logic stages to enforce a rising-only evaluation interface?",
+        "options": [
+          "Bipolar feedback loops",
+          "Continuous resistor loads",
+          "A static inverting CMOS gate, commonly a static inverter",
+          "Dynamic stages buffers"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "reason": "Ngõ ra tầng động có thể chuyển 1→0 khi evaluate. Đặt cổng đảo tĩnh sau nó tạo tín hiệu 0→1 cho tầng động tiếp theo; đây là cặp dynamic/static của domino.",
+      "tip": "domino → dynamic gate + static inverter.",
+      "note": "Đổi khóa D → C; dynamic stage không thay thế cổng đảo tĩnh ngăn giữa các tầng.",
+      "references": [
+        {
+          "title": "David Harris: Dynamic Circuits, pp. 2–4",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ],
+      "kind": "key"
+    },
+    {
+      "id": "ICI211-334",
+      "changes": {
+        "question": "A wire has R = 2 kΩ and total C = 100 fF. Using the first-order estimate 0.69RC, what delay is expected?"
+      },
+      "reason": "t = 0,69RC = 0,69·(2×10³)·(100×10⁻¹⁵) s = 138 ps.",
+      "tip": "kΩ × fF = ps; 0,69 × 2 × 100 = 138.",
+      "note": "Khôi phục kΩ; 0,69×2000×100 fF = 138 ps.",
+      "references": [
+        {
+          "title": "David Harris: Interconnect RC",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect4.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-351",
+      "changes": {
+        "options": [
+          "Vin near VTN, well below VDD/2",
+          "Vin equals 0 V",
+          "Vin equals VDD",
+          "Vin near the inverter switching point VM ≈ VDD/2"
+        ]
+      },
+      "reason": "Với inverter cân đối và ngõ vào quét chậm, dòng trực tiếp lớn nhất xấp xỉ vùng VM≈VDD/2. Gần VTN, NMOS mới bắt đầu dẫn nên dòng chưa cực đại.",
+      "tip": "peak direct-path current → near VM, not near VTN.",
+      "note": "Ảnh cũ có A (Vin=Vout) tương đương D tại VM. Chỉnh phương án A để đề một lựa chọn chỉ còn D rõ ràng.",
+      "references": [
+        {
+          "title": "UBC: CMOS inverter and noise margins",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ],
+      "kind": "ambiguous_choice"
+    },
+    {
+      "id": "ICI211-361",
+      "changes": {
+        "question": "For an nMOS whose source-body junction becomes more reverse biased (VSB increases), which device parameter increases?"
+      },
+      "reason": "VT = VT0 + γ[√(2φF+VSB)−√(2φF)]; tăng VSB trong phân cực ngược làm VT tăng.",
+      "tip": "reverse body bias / VSB↑ → VT↑.",
+      "note": "Thêm chiều phân cực thân; forward body bias có thể làm VT giảm.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-364",
+      "changes": {
+        "question": "In an ideal resistive-load nMOS inverter with its pull-down transistor in cutoff, what is the steady-state DC conduction current, neglecting leakage?"
+      },
+      "reason": "Transistor kéo xuống tắt thì không có đường DC xuống mass, nên dòng lý tưởng bằng zero.",
+      "tip": "cutoff → no conduction current.",
+      "note": "Chỉ xét dòng dẫn DC lý tưởng khi transistor kéo xuống cutoff.",
+      "references": [
+        {
+          "title": "David Harris: Static Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect6.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-368",
+      "changes": {
+        "options": [
+          "Dimensions remain constant while voltage scales by 1/S",
+          "Dimensions scale by 1/S while voltage remains constant",
+          "Dimensions and voltage both scale by S",
+          "Dimensions and voltage both scale by 1/S"
+        ]
+      },
+      "reason": "Giảm cả chiều dài đặc trưng và điện áp 1/S giữ tỷ số V/L, tức điện trường, không đổi.",
+      "tip": "constant field → dimensions/S, voltage/S.",
+      "note": "Sửa OCR I/S thành 1/S.",
+      "references": [
+        {
+          "title": "MIT: Constant-field MOSFET scaling",
+          "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/036333b326d0db0a3589ef6ee6eb0dc4_lecture32.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-370",
+      "changes": {
+        "question": "In a master-slave transmission-gate flip-flop, which clock-phase arrangement alternately enables the two level-sensitive latches?",
+        "options": [
+          "Continuous asynchronous control",
+          "Single clock signal",
+          "Complementary, non-overlapping clock phases",
+          "Dynamic bootstrap voltage"
+        ]
+      },
+      "reason": "Hai latch được mở ở hai pha khác nhau để tránh cùng trong suốt. Transmission gate tổ hợp nói chung không bắt buộc một sơ đồ clock hai pha.",
+      "tip": "master/slave TG latches → alternate clock phases.",
+      "note": "Nêu rõ mạch master-slave; không suy rộng mọi transmission gate đều cần clock hai pha.",
+      "references": [
+        {
+          "title": "Stanford EE371: clocking and domino stages",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_10_1up.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-372",
+      "changes": {
+        "options": [
+          "An odd number of at least three inverting stages in a conventional inverter ring",
+          "Even inverter stages",
+          "Single inverter stage",
+          "Transmission line stages"
+        ]
+      },
+      "reason": "Số tầng đảo lẻ tạo đảo pha tổng; cùng độ trễ vòng làm mạch tự dao động.",
+      "tip": "ring oscillator → odd number of inverters.",
+      "note": "Nêu cấu trúc vòng inverter thông thường có số tầng lẻ ≥3, tránh phương án một inverter mơ hồ.",
+      "references": [
+        {
+          "title": "David Harris: Static Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect6.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-374",
+      "changes": {
+        "question": "Under ideal constant-field scaling by S > 1, device dimensions and voltages scale by 1/S. What happens to dynamic power density if clock frequency scales by S?",
+        "options": [
+          "It increases by S³",
+          "It ideally remains approximately constant",
+          "It increases by S",
+          "It decreases by S²"
+        ]
+      },
+      "reason": "Công suất mỗi cổng giảm theo diện tích trong scaling lý tưởng, nên công suất trên một đơn vị diện tích gần giữ nguyên.",
+      "tip": "ideal constant-field → power density constant.",
+      "note": "Khôi phục 1/S, S³, S²; phân biệt công suất mỗi cổng với mật độ công suất.",
+      "references": [
+        {
+          "title": "MIT: Constant-field MOSFET scaling",
+          "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/036333b326d0db0a3589ef6ee6eb0dc4_lecture32.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-378",
+      "changes": {
+        "question": "A 30 fF dynamic node initially at 1.2 V shares charge with an initially discharged 10 fF internal node. Ignoring other effects, what is the final voltage?"
+      },
+      "reason": "Bảo toàn điện tích: Vf=(30×1,2+10×0)/(30+10)=0,9 V.",
+      "tip": "charge sharing → tổng C·V chia tổng C.",
+      "note": "Khôi phục 10 fF bị OCR thành IO; tính lại chia sẻ điện tích.",
+      "references": [
+        {
+          "title": "David Harris: Dynamic Circuits, pp. 2–4",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-384",
+      "changes": {
+        "question": "For a symmetric long-channel CMOS inverter with VDD = 1.8 V, VTN = 0.4 V, |VTP| = 0.4 V, and βn = βp, what is the approximate switching threshold VM?"
+      },
+      "reason": "Hai nhánh có ngưỡng và sức dẫn cân bằng nên điểm chuyển ở VDD/2=0,9 V.",
+      "tip": "symmetric inverter → half supply.",
+      "note": "Khôi phục VDD, VTN, |VTP| và βn=βp bị mất; VM=0,9 V.",
+      "references": [
+        {
+          "title": "UBC: CMOS inverter and noise margins",
+          "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-398",
+      "changes": {
+        "options": [
+          "Signal retention array",
+          "Sequential register access",
+          "Static Random-Access Memory",
+          "Synchronous random architecture"
+        ]
+      },
+      "reason": "SRAM lưu bit bằng trạng thái mạch tĩnh, không cần refresh như DRAM khi còn nguồn.",
+      "tip": "SRAM → Static Random Access Memory.",
+      "note": "Khôi phục đầy đủ chữ Memory trong viết tắt SRAM.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-407",
+      "changes": {
+        "options": [
+          "0.16 mW",
+          "2.5 mW",
+          "16 mW",
+          "1.6 mW"
+        ]
+      },
+      "reason": "P_static = VDD·I_leak = 0,8 V·2 mA = 1,6 mW.",
+      "tip": "V × mA → mW.",
+      "note": "Chuẩn hóa đơn vị mW; 0,8 V × 2 mA = 1,6 mW.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-414",
+      "changes": {
+        "question": "In a conventional n-type dynamic gate with an nMOS evaluation transistor driven by CLK, which clock level enables evaluation?",
+        "options": [
+          "Clock signal inactive",
+          "Threshold voltage removed",
+          "Dynamic node isolated",
+          "CLK = HIGH (active evaluation phase)"
+        ]
+      },
+      "reason": "Với gate động n-type chuẩn, clock tác động mở transistor evaluate để mạng NMOS có thể xả nút.",
+      "tip": "evaluate → clock active.",
+      "note": "Nêu rõ dynamic n-type có transistor evaluate NMOS, tránh đảo cực tính với p-type.",
+      "references": [
+        {
+          "title": "David Harris: Dynamic Circuits, pp. 2–4",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-423",
+      "changes": {
+        "question": "If VDD is reduced from 1.2 V to 0.9 V while α, CL, and f remain unchanged, what fraction of the original dynamic power remains?",
+        "options": [
+          "1.78",
+          "0.5625",
+          "1.33",
+          "0.75"
+        ]
+      },
+      "reason": "Tỷ lệ Pnew/Pold=(0,9/1,2)²=0,5625 khi α, C và f giữ nguyên.",
+      "tip": "VDD scaling → square of voltage ratio.",
+      "note": "Khôi phục dấu thập phân và α; giữ đáp án 0,5625.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-431",
+      "changes": {
+        "question": "A manufacturing batch contains 2.0 million fabricated dies, of which 1.5 million pass all tests. What is the manufacturing yield?"
+      },
+      "reason": "Yield=1,5/2,0=0,75=75%.",
+      "tip": "yield → passed ÷ fabricated.",
+      "note": "Sửa chip chứa nhiều dies thành lô sản xuất; yield=75%.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "wording"
+    },
+    {
+      "id": "ICI211-450",
+      "changes": {
+        "question": "A first-order RC node has R = 4 kΩ and C = 50 fF. Using t ≈ 0.69RC, what is the estimated propagation delay?"
+      },
+      "reason": "t = 0,69RC = 0,69·(4×10³)·(50×10⁻¹⁵) s = 138 ps.",
+      "tip": "RC = 200 ps → 0,69RC = 138 ps.",
+      "note": "Khôi phục kΩ, fF và dấu xấp xỉ; kết quả 138 ps.",
+      "references": [
+        {
+          "title": "David Harris: Interconnect RC",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect4.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-451",
+      "changes": {
+        "question": "A 64 K × 8 memory, with K = 1024 words, stores how many bits in total?"
+      },
+      "reason": "64K=65.536 từ; nhân 8 được 524.288 bit.",
+      "tip": "memory K → 1024.",
+      "note": "Nêu rõ K=1024 và tổ chức theo word; tổng 524288 bits.",
+      "references": [
+        {
+          "title": "David Harris: CMOS transistor and gate fundamentals",
+          "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-462",
+      "changes": {
+        "question": "Compared with complementary static CMOS implementing the same logic function, what advantage can pseudo-nMOS provide?"
+      },
+      "reason": "Một PMOS tải thay cả mạng pull-up bổ sung giúp giảm số transistor và diện tích.",
+      "tip": "pseudo-NMOS benefit → smaller area.",
+      "note": "Bổ sung mốc so sánh để ưu điểm giảm transistor/diện tích có nghĩa.",
+      "references": [
+        {
+          "title": "David Harris: Static Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect6.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-463",
+      "changes": {
+        "question": "At a fixed required throughput, how can pipelining potentially reduce dynamic power?",
+        "options": [
+          "Increasing threshold voltage",
+          "Allowing a lower supply voltage by reducing combinational delay per stage",
+          "Eliminating dynamic switching",
+          "Removing register overhead"
+        ]
+      },
+      "reason": "Pipeline rút ngắn đường tổ hợp mỗi tầng, cho phép giảm VDD mà vẫn giữ thông lượng yêu cầu.",
+      "tip": "pipelining for low power → voltage reduction.",
+      "note": "Nêu điều kiện thông lượng cố định; pipeline không tự động giảm công suất nếu không giảm VDD.",
+      "references": [
+        {
+          "title": "Stanford EE371: clocking and domino stages",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_10_1up.pdf"
+        }
+      ],
+      "kind": "clarification"
+    },
+    {
+      "id": "ICI211-474",
+      "changes": {
+        "question": "An inverter drives CL = 20 fF through an effective pull-down resistance of 5 kΩ. Using tPHL ≈ 0.69RCL, what is the estimated delay?"
+      },
+      "reason": "0,69·5000·20×10⁻¹⁵=69×10⁻¹² s=69 ps.",
+      "tip": "RC=100 ps → delay 69 ps.",
+      "note": "Sửa kQ và z thành kΩ, ≈; tính lại 69 ps.",
+      "references": [
+        {
+          "title": "David Harris: Interconnect RC",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect4.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-482",
+      "changes": {
+        "question": "A two-latch pipeline uses non-overlapping clock phases φ1 and φ2. Why must the phases not overlap?"
+      },
+      "reason": "Nếu cả hai latch cùng trong suốt, dữ liệu có thể chạy xuyên nhiều tầng thay vì dừng đúng pha.",
+      "tip": "non-overlap → prevent simultaneous transparency.",
+      "note": "Khôi phục ký hiệu hai pha clock bị OCR hỏng.",
+      "references": [
+        {
+          "title": "Stanford EE371: clocking and domino stages",
+          "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_10_1up.pdf"
+        }
+      ],
+      "kind": "ocr"
+    },
+    {
+      "id": "ICI211-486",
+      "changes": {
+        "question": "For a CMOS inverter at a valid steady-state logic level, what is the ideal DC supply current, apart from real-device leakage?"
+      },
+      "reason": "Ở mức logic hợp lệ, một transistor tắt nên không có đường DC lý tưởng từ VDD xuống ground.",
+      "tip": "static CMOS → ideally zero DC current.",
+      "note": "Giới hạn ở mức logic hợp lệ; ngõ vào analog giữa hai rail có thể làm cả hai transistor dẫn.",
+      "references": [
+        {
+          "title": "David Harris: Static Circuits",
+          "url": "https://pages.hmc.edu/harris/class/hal/lect6.pdf"
+        }
+      ],
+      "kind": "clarification"
+    }
+  ],
+  "keywordChanges": [],
+  "references": [
+    {
+      "title": "David Harris: Dynamic Circuits, pp. 2–4",
+      "url": "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+    },
+    {
+      "title": "David Harris: CMOS transistor and gate fundamentals",
+      "url": "https://pages.hmc.edu/harris/class/e158/lect0-intro.pdf"
+    },
+    {
+      "title": "David Harris: Static Circuits",
+      "url": "https://pages.hmc.edu/harris/class/hal/lect6.pdf"
+    },
+    {
+      "title": "David Harris: Interconnect RC",
+      "url": "https://pages.hmc.edu/harris/class/hal/lect4.pdf"
+    },
+    {
+      "title": "Boyd et al.: Digital Circuit Optimization, RC-tree delay",
+      "url": "https://stanford.edu/~boyd/papers/pdf/gp_digital_ckt.pdf"
+    },
+    {
+      "title": "UBC: CMOS inverter and noise margins",
+      "url": "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+    },
+    {
+      "title": "UCSB: pass transistors and transmission gates",
+      "url": "https://courses.ece.ucsb.edu/ECE125/125_W09Banerjee/Lectures/Lecture4.pdf"
+    },
+    {
+      "title": "Stanford EE371: clocking and domino stages",
+      "url": "https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/lectures/Old/Older/lect_10_1up.pdf"
+    },
+    {
+      "title": "MIT: Lyapunov and asymptotic stability",
+      "url": "https://underactuated.mit.edu/lyapunov.html"
+    },
+    {
+      "title": "MIT: Constant-field MOSFET scaling",
+      "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/036333b326d0db0a3589ef6ee6eb0dc4_lecture32.pdf"
+    }
+  ],
+  "arithmeticChecks": {
+    "301": "NML=.65−.1=.55 V; NMH=1.8−1.05=.75 V; minimum=.55 V.",
+    "308": "(W/L)A/(W/L)B=8/2=4.",
+    "309": "P doubles with f: 4 mW→8 mW.",
+    "322": "120+600+80=800 ps.",
+    "329": "log2(1024 words)=10 address bits.",
+    "334": ".69×2000×100e−15=138e−12 s.",
+    "342": "ID∝W, width ratio 2 implies ID ratio2.",
+    "350": "2 fC /20 fF=.10 V.",
+    "354": "VDS=.3 < VGS−VT=.8 V and VGS>VT → triode.",
+    "369": "sqrt(1048576)=1024 cells/row.",
+    "371": "Four equal series resistances require roughly4× each width for unit inverter pull-down.",
+    "374": "Cg∝1/S, V²∝1/S², f∝S, density∝S² → constant power/area.",
+    "378": "1.2×30/(30+10)=.9 V.",
+    "384": "Equal β and |VT| give VM=VDD/2=.9 V.",
+    "393": ".2×20e−15×1²×500e6=2e−6 W.",
+    "405": "600000/10000=60 USD/functional die.",
+    "406": "3 nMOS + 3 pMOS=6 transistors.",
+    "407": ".8×.002=.0016 W=1.6 mW.",
+    "411": "VDS,sat=VGS−VT=1.8−.5=1.3 V.",
+    "422": "PDN conducts for AB+C; series A,B in parallel with C.",
+    "423": "(.9/1.2)²=.5625.",
+    "431": "1.5/2=.75=75%.",
+    "440": "NMH=1.8−1.1=.7; NML=.7−0=.7 V.",
+    "444": "256×16=4096 bits.",
+    "448": "Tmin=100+750+150=1000 ps → fmax=1 GHz.",
+    "450": ".69×4000×50e−15=138 ps.",
+    "451": "65536×8=524288 bits.",
+    "455": "PDN=(A+B)C, CMOS output is its complement.",
+    "465": "Energy drawn from supply CV²=40 fJ; capacitor stores CV²/2=20 fJ.",
+    "469": "Mux truth table S0→D0,S1→D1 gives NOT(S)D0+SD1.",
+    "474": ".69×5000×20e−15=69 ps.",
+    "484": "ID∝Vov², doubling overdrive multiplies current4."
+  },
+  "notes": "One new wrong key (324). Other repairs remove OCR loss or specify assumptions. No claim that a simplified long-channel model applies to every modern device.",
+  "keywordLedger": [
+    {
+      "id": "ICI211-KW01",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW02",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW03",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW04",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW05",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW06",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW07",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW08",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW09",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW10",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW11",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    },
+    {
+      "id": "ICI211-KW12",
+      "status": "reviewed",
+      "rationale": "Đã kiểm tra bốn lựa chọn; công thức/định nghĩa phù hợp mô hình ghi trong thẻ."
+    }
+  ]
+}

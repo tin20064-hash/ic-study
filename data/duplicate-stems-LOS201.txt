@@ -1,0 +1,200 @@
+LOS201-13 | An embedded target lacks Python support, but memory accounting data must be analyzed using smem. Which tool can capture the required information for later host-side analysis? | smemcap
+LOS201-14 | Which TWO conditions are commonly associated with an out-of-memory (OOM) event? | Allocated memory demand exceeds available resources + The OOM killer may terminate processes
+LOS201-15 | Which benefit is most commonly achieved when a device driver maps hardware registers into user space using mmap()? | Reduced overhead by allowing direct access to device memory mappings
+LOS201-16 | Why are Open Source Build Systems considered essential for complex embedded Linux products containing hundreds of packages? | They provide scalable automation for building, integrating, and maintaining complete software distributions
+LOS201-17 | A development team manually builds the toolchain, kernel, bootloader, libraries, and root filesystem for each release. Which primary problem is an Open Source Build System intended to solve? | Automating dependency tracking and reproducible system generation
+LOS201-18 | Which TWO challenges are reduced by adopting an integrated build system instead of manually assembling embedded Linux components? | Dependency resolution + Software version management
+LOS201-19 | Which statement best describes a real-time system? | A system that must respond within specified timing constraints
+LOS201-20 | A developer is evaluating a Linux system for industrial control. Which metric is more important than average response time? | Worst-case response latency
+LOS201-21 | Which flash type is commonly used for large-capacity storage? | NAND Flash
+LOS201-22 | What is the purpose of a cross-development environment? | Develop software on one platform for another target platform
+LOS201-23 | An engineering team successfully builds a Linux kernel but the target system still cannot boot into a usable environment. According to the embedded Linux architecture presented in the chapter, which TWO additional components are fundamentally required? | A bootloader + A root file system
+LOS201-24 | Which shell is commonly provided by BusyBox? | ash
+LOS201-25 | A developer creates symbolic links such as 'ls', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute? | By inspecting the name used to invoke the executable
+LOS201-26 | Which TWO statements best describe the purpose of the Virtual File System (VFS) layer in relation to device drivers? | It provides a uniform interface to user-space system calls + It dispatches operations through file_operations structures
+LOS201-27 | A kernel module declares a parameter using module_param(debug_enable, int, 0). Which TWO statements are correct? | The parameter value can be supplied when loading the module + The parameter can influence driver behavior without recompilation
+LOS201-28 | A developer loads a driver using modprobe instead of insmod. What is the primary advantage of modprobe? | It automatically resolves and loads dependent modules
+LOS201-29 | What is the primary responsibility of head.o? | Setup CPU environment
+LOS201-30 | Why does the Linux kernel use linker-generated tables for processing command-line parameters and initialization routines? | To allow automatic discovery and invocation of registered handlers without hard-coded lists
+LOS201-31 | A developer uses a remote debugging session and notices that breakpoints are working correctly even though execution occurs on the target board. What mechanism enables this capability? | The debugger communicates with a remote debugging stub such as gdbserver
+LOS201-32 | An embedded Linux application performs correctly but consumes excessive CPU time. Which development methodology is most appropriate before modifying the source code? | Profile the application to identify performance bottlenecks
+LOS201-33 | An embedded developer must choose between a RAM-based filesystem and a flash-based filesystem for persistent configuration storage. Which factor is the most critical consideration? | Whether data must survive power cycles
+LOS201-34 | A root filesystem image is compressed before deployment to an embedded target with limited flash capacity. What is the primary trade-off introduced by this design? | Reduced storage usage at the cost of decompression overhead
+LOS201-35 | In an image recipe, what is the purpose of the 'require' statement? | Load a base recipe and extend it
+LOS201-36 | Which file stores the list of layers that BitBake searches for metadata? | bblayers.conf
+LOS201-37 | Which variable is commonly extended to install additional packages into an image during development? | IMAGE_INSTALL
+LOS201-38 | Why is the /dev/console device node considered critical in a minimal root filesystem? | It enables standard input/output access for system interaction
+LOS201-39 | A student creates /etc/inittab with '::sysinit:/etc/init.d/rcS' and '::askfirst:-/bin/sh'. What practical behavior should this produce after BusyBox init starts? | It runs the system initialization script and then offers an interactive shell.
+LOS201-40 | What is the purpose of system initialization after kernel boot? | Prepare a usable user-space environment
+LOS201-41 | What is the primary difference between processes and threads? | Threads share process resources while processes have separate address spaces
+LOS201-42 | In the producer-consumer condition-variable example, why is the shared condition protected by a mutex? | Because the condition is shared state and must be tested and updated safely.
+LOS201-43 | Which statement best describes a daemon in an embedded Linux system? | A background service process that usually runs independently of an interactive login session.
+LOS201-44 | Why are interrupts preferred over polling? | Reduce CPU overhead
+LOS201-45 | Why is virtual memory important in Linux systems? | Provides isolation and memory protection
+LOS201-46 | A developer wants to reduce boot time by bypassing the full U-Boot command interpreter and loading Linux directly from a known storage location. Which approach best matches this requirement? | Using Falcon Mode
+LOS201-47 | Which bootloader is most commonly used in embedded Linux systems? | U-Boot
+LOS201-48 | Why does the lab emphasize that vexpress-a9 RAM starts at 0x60000000 rather than 0x00000000? | Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot.
+LOS201-49 | Which TWO characteristics distinguish kernel debugging from user-space debugging? | Errors can affect the entire system rather than a single process + Debugging tools may be limited during early boot stages
+LOS201-50 | What is KGDB? | A kernel debugger that allows remote debugging of the Linux kernel
+LOS201-51 | What is the primary purpose of the dmesg command? | Display messages stored in the kernel ring buffer
+LOS201-52 | A developer successfully loads the kernel over the network but receives an error when mounting the root filesystem. Which service should be investigated first if the kernel command line specifies root=/dev/nfs? | NFS server
+LOS201-53 | What is TFTP commonly used for? | Transfer boot images and kernels
+LOS201-54 | An engineer wants to debug startup failures before network services become available on the target. Which interface is generally the most reliable for capturing early boot messages? | Serial console
+LOS201-55 | A developer attempts to overwrite data on a flash page without erasing the corresponding erase block first. What outcome should be expected on most flash technologies? | The operation may fail or produce undefined results because erase-before-write rules are violated
+LOS201-56 | What does UBIFS run on top of? | UBI
+LOS201-57 | Which TWO statements best describe the purpose of the MTD abstraction layer in Linux? | It provides a uniform API for memory-based storage devices + It hides hardware-specific flash operations from higher software layers
+LOS201-58 | What is the relationship between the kernel and user space? | The kernel provides services used by user-space applications
+LOS201-59 | A developer is integrating a custom peripheral not supported by mainline Linux. What is the most likely requirement? | Create or adapt device support software
+LOS201-60 | Which kernel image is the uncompressed ELF binary used for debugging? | vmlinux
+LOS201-61 | In a legacy Linux kernel build that aggregates built-in objects using relocatable built-in.o files, a driver under drivers/ is configured built-in rather than as a module. Which listed aggregation artifact contains that driver code? | drivers/built-in.o
+LOS201-62 | What is the purpose of autoconf.h? | Expose configuration options to C source code
+LOS201-63 | In Linux virtual memory management, what is a page? | A fixed-size unit of memory used for mapping virtual and physical addresses
+LOS201-64 | Which scenario is most appropriate for shared memory created using mmap()? | Inter-process communication with low overhead
+LOS201-65 | A developer examines /proc/<pid>/maps. What information is primarily obtained from this file? | Process memory mappings
+LOS201-66 | Why does the Yocto Project use a layered architecture? | To separate and manage metadata, BSPs, distributions, and application customizations independently.
+LOS201-67 | A build engineer wants to minimize image size while retaining required functionality. Which build-system feature is most relevant? | Fine-grained package selection and configuration
+LOS201-68 | A company supports multiple hardware platforms sharing a common software stack. Why is a build system particularly beneficial in this environment? | It enables configuration reuse and platform-specific customization
+LOS201-69 | Which TWO techniques can improve Linux real-time performance? | Reducing long non-preemptible kernel sections + Using real-time scheduling policies
+LOS201-70 | An embedded controller must guarantee periodic execution of a task every 5 ms. Which evaluation criterion is most important when validating the platform? | Worst-case scheduling and interrupt latency
+LOS201-71 | A system architect divides the software stack into bootloader, kernel, libraries, and applications. What is the primary benefit of this layered architecture? | Each layer can evolve independently while providing well-defined interfaces
+LOS201-72 | What is the primary responsibility of the bootloader? | Initialize hardware and load the kernel
+LOS201-73 | A project manager evaluates whether Linux is appropriate for a new embedded product. Which factor most strongly distinguishes Linux from a traditional bare-metal firmware approach? | Linux provides standardized operating system services and process isolation
+LOS201-74 | Why does BusyBox help reduce the size of an embedded Linux root filesystem? | It uses a multicall binary that shares code among many utilities.
+LOS201-75 | How does BusyBox reduce storage requirements? | Multiple utilities share a single executable
+LOS201-76 | A student wants serial output from the ARMv7 guest to appear in the terminal. Which pair of settings is most consistent with the lab? | Enable ARM AMBA PL011 support and use `console=ttyAMA0,115200`.
+LOS201-77 | A developer observes the boot message 'Freeing init memory: 296K'. What does this message indicate? | Memory occupied by one-time initialization code and data has been reclaimed
+LOS201-78 | For a commercial product expected to remain in service for years, why is understanding Yocto release support important? | Because support periods affect maintenance and security updates
+LOS201-79 | Which BitBake task generates an SDK for a specific image? | bitbake -c populate_sdk <image>
+LOS201-80 | Why are BSP layers valuable in embedded Linux development? | They abstract hardware-specific support and configuration
+LOS201-81 | Which TWO limitations are expected when Linux is appropriately configured to run on an embedded processor without an MMU? | Virtual memory features may be unavailable + Memory isolation between processes may be limited
+LOS201-82 | What is an interrupt? | An event that temporarily changes program execution flow
+LOS201-83 | A character device driver is loaded successfully, but user applications cannot access it through /dev. Which TWO conditions are most likely missing? | A valid device node with the correct major/minor numbers + Registration of file_operations callbacks
+LOS201-84 | A driver successfully registers itself, but opening the device from user space triggers a kernel crash. Which design issue is the most likely cause? | An invalid function pointer or a bug inside the driver open callback
+LOS201-85 | Why does Linux use major and minor device numbers instead of embedding driver-specific identifiers directly into device filenames? | To separate driver selection from device instance identification
+LOS201-86 | A developer uses arm-linux-gnueabihf-gcc on an x86 workstation to build software for a Cortex-A9 board. What is this toolchain an example of? | A cross-toolchain
+LOS201-87 | An embedded Linux target boots using a kernel loaded via TFTP and a root filesystem mounted over NFS. Which TWO benefits make this setup particularly useful during development? | Rapid testing without reflashing storage devices + Direct modification of target files from the host system
+LOS201-88 | A developer updates a shared library on the host system that exports an NFS root filesystem. After rebooting the target, the new library is immediately available. What principle does this demonstrate? | The target accesses files directly from the exported host filesystem
+LOS201-89 | What is the purpose of nm? | Display symbols in object files
+LOS201-90 | A developer compiles an application with optimization enabled but forgets to include debugging information. What is the most likely consequence when using GDB? | Limited visibility of source lines and variables
+LOS201-91 | What is the primary purpose of SquashFS? | Compressed read-only storage
+LOS201-92 | What is tmpfs? | A RAM-based file system
+LOS201-93 | Which TWO statements correctly describe the role of architecture-specific directories under arch/ ? | They contain processor-specific startup and initialization code + They provide machine- and CPU-dependent implementations
+LOS201-94 | A developer is exploring the kernel source tree to understand board-specific initialization code for an ARM platform. Which directory pattern is most relevant according to the chapter? | arch/arm/mach-*
+LOS201-95 | In the legacy Linux Kbuild model, which TWO listed artifacts are respectively the final uncompressed ELF kernel and an intermediate aggregation of built-in objects? | vmlinux + built-in.o files
+LOS201-96 | A student boots QEMU with -kernel zImage and -dtb vexpress-v2p-ca9.dtb, but supplies neither an initramfs nor a usable root device/root= setting. The kernel stops with a VFS root mount panic. What is the most likely reason? | The kernel cannot find a root filesystem because no initramfs image or root device was provided.
+LOS201-97 | A team wants to automate root filesystem generation rather than manually copying binaries, libraries, and configuration files. According to the chapter, which TWO open-source build systems are specifically highlighted for this purpose? | Buildroot + OpenEmbedded/BitBake
+LOS201-98 | An embedded device boots successfully into user space using a root filesystem with only a few directories and files. Which design principle is BEST demonstrated by this configuration? | Minimizing storage usage while satisfying kernel and user-space dependencies
+LOS201-99 | A developer wants to start a new process that first duplicates the current process and then replaces the child process image with another program. Which pair of functions best matches this design? | fork() and exec()
+LOS201-100 | An embedded application must prioritize deterministic response over fairness for a critical control activity. Which scheduling category should be considered? | Real-time scheduling policy
+LOS201-101 | A shared counter is updated by two threads in the same process. Which design prevents race conditions most directly? | Protect the counter with a mutex around each read-modify-write operation.
+LOS201-102 | A U-Boot command loads a kernel image using 'diskboot 0x400000 0:0'. What does '0:0' represent? | Device number and partition number
+LOS201-103 | Which command is used to modify an environment variable in U-Boot? | setenv
+LOS201-104 | What is the main difference between BIOS and an embedded bootloader? | Embedded bootloaders are board-specific and configurable
+LOS201-105 | A developer examines a kernel oops message after a driver crash. Which information is most likely to be present in the report? | Call trace showing the sequence of kernel functions leading to the fault
+LOS201-106 | Which TWO goals are commonly achieved through kernel debugging instrumentation? | Identifying execution paths + Observing subsystem interactions
+LOS201-107 | Why is ftrace useful in Linux kernel debugging? | It helps analyze kernel function execution and runtime behavior.
+LOS201-108 | Why does NAND flash typically require error-correcting codes (ECC) while many NOR flash deployments can operate with less aggressive correction mechanisms? | NAND devices are more susceptible to bit errors and higher storage densities
+LOS201-109 | Why is JFFS2 less suitable for very large NAND devices? | Mount time and memory usage scale poorly
+LOS201-110 | What is the role of ECC in flash memory? | Detect and correct bit errors
+LOS201-111 | A safety-critical medical device requires extensive certification. What concern about Linux should be considered? | Regulatory verification effort may increase project complexity
+LOS201-112 | Which situation is most likely to justify choosing Linux over a small RTOS? | A device with complex networking and user interfaces
+LOS201-114 | What is the primary goal of the Linux Standard Base (LSB)? | Binary application compatibility
+LOS201-115 | What is the name for kernel entry points used by processes to request tasks? | System calls
+LOS201-116 | Which 1989/1990 standard defined the syntax of C and its standard library? | C89 (ISO C90)
+LOS201-117 | Which POSIX extension (1003.1c) defined the API for threads? | POSIX.1c
+LOS201-118 | In a conventional executable memory layout, which writable segment normally stores global variables explicitly initialized to a nonzero value? | Data
+LOS201-119 | Which 2001 UNIX specification collection includes the POSIX base specifications plus X/Open Curses Issue 4 Version 2 as an additional volume? | SUSv3
+LOS201-120 | Which system call is used to destroy a memory mapping? | munmap()
+LOS201-121 | Which branding is applied to implementations certified against SUSv2? | UNIX 98
+LOS201-122 | Which system call is used to change the file offset for random access? | lseek()
+LOS201-123 | What happens if a process in user mode tries to access kernel memory? | Hardware exception
+LOS201-124 | Which memory segment grows and shrinks as functions return? | Stack
+LOS201-125 | Why is C considered a highly effective "system programming language"? | It combines efficient compiled code with low-level memory and data operations.
+LOS201-126 | Which BSD release introduced the sockets API and a complete TCP/IP implementation? | 4.2BSD
+LOS201-127 | In SUSv3, which part contains the specifications for header files? | XBD
+LOS201-128 | Which function directly exposes the kernel file-descriptor read system-call interface, unlike formatted stdio or a memory allocator? | read()
+LOS201-129 | Which graduate student co-founded Sun Microsystems and authored the C shell? | Bill Joy
+LOS201-130 | Which signal cannot be caught or ignored by a process? | SIGKILL
+LOS201-131 | Which task involves the routing of packets on behalf of user processes? | Networking
+LOS201-132 | Which system call is used to send a signal to a process? | kill()
+LOS201-133 | What is the common maximum length, in bytes, of one filename component on Linux filesystems such as ext4? | 255
+LOS201-134 | In the filename vmlinuz, what does the z historically signify? | Compressed
+LOS201-135 | What character represents the root of the single directory hierarchy? | /
+LOS201-136 | What is the default signal sent when a user types Control-C? | SIGINT
+LOS201-137 | Which shell was developed as the successor to sh by David Korn? | ksh
+LOS201-138 | Which POSIX sub-standard (1003.1b) defined realtime extensions like async I/O? | POSIX.1b
+LOS201-139 | What term is used for the software unit that handles networking in the kernel? | Protocol stack
+LOS201-140 | Which shell is a recursive acronym for "Bourne again shell"? | bash
+LOS201-141 | What was the outcome of the USL vs. BSDi lawsuit for the 4.4BSD-Lite release? | AT&T code was removed
+LOS201-142 | Who is credited with the initial development of UNIX at Bell Laboratories? | Ken Thompson
+LOS201-143 | Which teaching operating system served as the inspiration for Linux? | Minix
+LOS201-144 | Which type of link is actually a file containing the name of another file? | Symbolic link
+LOS201-145 | What happens to the Text segment during an execve()? | It is replaced
+LOS201-146 | Which file contains group names and their numeric group IDs? | /etc/group
+LOS201-147 | Which listed interface terminates the calling process without invoking functions registered with atexit()? | _exit()
+LOS201-148 | Which mapping type initializes the memory pages to zero? | Anonymous mapping
+LOS201-149 | Which system call replaces the process memory with a new program? | execve()
+LOS201-150 | For a directory, what does "execute" permission allow? | Accessing files within it
+LOS201-151 | Which IPC mechanism provides a byte-stream channel addressed by a filesystem pathname, allowing unrelated local processes to open it? | FIFO
+LOS201-152 | What is the Unix universality of I/O concept? | Same system calls work on all file types
+LOS201-153 | Which numeric user ID (UID) is always assigned to the superuser? | 0
+LOS201-154 | What is the name of a collection of object modules in a single file? | Library
+LOS201-155 | Which command-line tool is used to display System V IPC objects? | ipcs
+LOS201-156 | Which Finnish university was Linus Torvalds attending when he created Linux? | Helsinki
+LOS201-157 | In what year was the first version of the GPL released? | 1989
+LOS201-158 | What program handles the loading of shared libraries at run time? | The dynamic linker
+LOS201-159 | Stallman argues that the term for the entire system should be what? | GNU/Linux
+LOS201-160 | Which type of mapping is used for interprocess communication? | Shared mapping
+LOS201-161 | Which IPC mechanism allows two processes to share a region of memory? | Shared Memory
+LOS201-162 | Which task performed by the kernel involves arbitrating access to hardware? | Device access
+LOS201-163 | Which shell was the standard for Seventh Edition UNIX? | sh (Bourne)
+LOS201-164 | What is the name for a named pipe that exists in the file system? | FIFO
+LOS201-165 | In SUSv3, which part specifies the operation of the shell and commands? | XCU (Shell and Utilities)
+LOS201-166 | What term is used for the reserved area of disk used to supplement RAM? | Swap area
+LOS201-167 | At the network layer (for example, IP), what is the usual name of the protocol data unit? | Packet
+LOS201-168 | Which permission on a directory allows a user to list its contents? | Read
+LOS201-169 | Which IPC mechanism is used to notify a process that an event occurred? | Signal
+LOS201-170 | Which IPC type originated from BSD rather than System V? | Sockets
+LOS201-171 | What provides the abstraction of a "virtual private computer" for each user? | The kernel
+LOS201-172 | What is the exact name, including the final revision number, of the last BSD distribution released by Berkeley CSRG? | 4.4BSD-Lite Release 2 (1995)
+LOS201-173 | Who designed and implemented the C programming language to assist in rewriting the UNIX kernel? | Dennis Ritchie
+LOS201-174 | Which tool is used to search for shared libraries at run time? | ld.so (dynamic linker)
+LOS201-175 | Which memory segment is marked read-only and shared between processes? | Text
+LOS201-176 | Which system call creates a mapping of a file into virtual memory? | mmap()
+LOS201-177 | Which UID is used by Unix permission checks for access to System V IPC resources such as message queues, shared memory, and semaphores? | Effective UID
+LOS201-178 | On which hardware was the port known as "32V" (Seventh Edition) based? | VAX-11/780
+LOS201-179 | Which type of pathname starts with the root character / ? | Absolute
+LOS201-180 | In what year was the Free Software Foundation (FSF) established? | 1985
+LOS201-181 | What resides in the Text segment of a process memory? | Machine instructions
+LOS201-182 | A process with an effective UID of 0 is referred to as what? | Privileged process
+LOS201-183 | Which IPC mechanism allows communication between processes on different hosts? | Socket
+LOS201-184 | Which hardware feature allows switching from user mode to kernel mode? | A controlled system-call or trap instruction that enters the kernel
+LOS201-185 | Which kernel task involves sharing RAM in an equitable and efficient fashion? | Memory management
+LOS201-186 | What is the term for a running instance of a program? | process
+LOS201-187 | What is the typical name for the IPC synchronization units? | Semaphores
+LOS201-188 | Under which organization's auspices were the POSIX standards developed? | IEEE
+LOS201-189 | In what year was the first UNIX implementation developed? | 1969
+LOS201-190 | Which edition of UNIX was the first to be widely used outside of AT&T/Bell Labs? | Sixth Edition
+LOS201-191 | What happens to the Data segment during a fork()? | It is duplicated
+LOS201-192 | Which ambitious GNU kernel design was based on the Mach microkernel? | HURD
+LOS201-193 | Which BSD variant emphasizes portability across a wide range of hardware? | NetBSD
+LOS201-194 | Which GNU tool is the standard compiler collection used on Linux systems? | GCC
+LOS201-195 | Which GNU program is a highly extensible text editor created by Stallman? | Emacs
+LOS201-196 | Which directory entry refers to the parent directory? | ..
+LOS201-197 | Which distribution is identified as the oldest surviving commercial Linux distribution? | Slackware
+LOS201-198 | Which Linux-specific system call is used to create a new process/thread? | clone()
+LOS201-199 | Which System V release is considered the "definitive" version appearing in 1989? | Release 4
+LOS201-200 | Which mechanism is used for high-speed IPC by avoiding data copying? | Shared Memory
+LOS201-201 | In 1970, UNIX was rewritten for which machine to utilize its new and powerful capabilities? | PDP-11
+LOS201-202 | What is a "unidirectional" data channel between related processes? | Pipe
+LOS201-203 | Which directory entry refers to the directory itself? | .
+LOS201-204 | Which file stores the mapping of usernames to numeric UIDs? | /etc/passwd
+LOS201-205 | What is the primary role of the shell? | Command interpretation
+LOS201-206 | What was the name of the unofficial 1984 standard produced by UNIX vendors? | /usr/group
+LOS201-207 | What is the primary benefit of virtual memory management isolation? | Process and kernel protection
+LOS201-208 | Which GPL version was released in 2007? | Version 3
+LOS201-209 | Which standard body collaborated with IEEE and The Open Group to form the Austin Group? | ISO/IEC
+LOS201-210 | Which BSD variant emphasizes security above other features? | OpenBSD
+LOS201-211 | During the later Linux 2.6.x mainline development era (for example, 2.6.33–2.6.38), approximately how long was a new feature-release cycle? | 3 months
+LOS201-212 | Which version of the Linux kernel brought an end to separate stable/development branches? | 2.6
+LOS201-213 | The FSF was founded primarily to support what? | The GNU project

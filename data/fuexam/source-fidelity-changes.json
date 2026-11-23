@@ -1,0 +1,1919 @@
+[
+  {
+    "id": "ici211-su26-fe-re-003",
+    "before": {
+      "question": "Which change decreases interconnect coupling capacitance, with other dimensions held fixed?",
+      "options": [
+        "Reduced wire spacing",
+        "Reducing coupling area or increasing dielectric separation",
+        "Increased threshold voltage",
+        "Saturated carrier velocity"
+      ]
+    },
+    "after": {
+      "question": "Under what condition does capacitance decrease in an interconnect or VLSI structure?",
+      "options": [
+        "Reduced wire spacing conditions",
+        "Reduced wire dimension effects",
+        "Increased threshold voltage levels",
+        "Saturated carrier velocity effects"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-007",
+    "before": {
+      "question": "What clocking scheme alternately enables the two transmission-gate latches in a master-slave flip-flop?",
+      "options": [
+        "Single clock signal",
+        "Two-phase clocking scheme",
+        "Continuous asynchronous control",
+        "Dynamic bootstrap voltage"
+      ]
+    },
+    "after": {
+      "question": "What type of clocking scheme is used in CMOS transmission gate logic circuits?",
+      "options": [
+        "Single clock signal",
+        "Two-phase clocking scheme",
+        "Continuous asynchronous control",
+        "Dynamic bootstrap voltage"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-009",
+    "before": {
+      "question": "For an n-type dynamic CMOS gate with an nMOS evaluation transistor driven by CLK, when does evaluation occur?",
+      "options": [
+        "Clock signal active",
+        "Clock signal inactive",
+        "Threshold voltage removed",
+        "Dynamic node isolated"
+      ]
+    },
+    "after": {
+      "question": "Under what condition does the evaluation phase occur in a dynamic CMOS logic circuit?",
+      "options": [
+        "Clock signal active",
+        "Clock signal inactive",
+        "Threshold voltage removed",
+        "Dynamic node isolated"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-020",
+    "before": {
+      "question": "What does SRAM stand for in semiconductor memory?",
+      "options": [
+        "Static Random-Access Memory",
+        "Sequential register access",
+        "Synchronous random architecture",
+        "Signal retention array"
+      ]
+    },
+    "after": {
+      "question": "What does SRAM stand for in semiconductor memory?",
+      "options": [
+        "Static random access",
+        "Sequential register access",
+        "Synchronous random architecture",
+        "Signal retention array"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-024",
+    "before": {
+      "question": "As source-body reverse bias increases in an nMOS, what does the body effect cause?",
+      "options": [
+        "Threshold voltage increase",
+        "Oxide thickness reduction",
+        "Channel length increase",
+        "Mobility enhancement effect"
+      ]
+    },
+    "after": {
+      "question": "What does the body effect cause in a MOSFET device?",
+      "options": [
+        "Threshold voltage increase",
+        "Oxide thickness reduction",
+        "Channel length increase",
+        "Mobility enhancement effect"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-035",
+    "before": {
+      "question": "What is the ideal steady-state current in a CMOS inverter at a valid static input logic level, apart from leakage?",
+      "options": [
+        "Ideally zero except leakage current",
+        "Extremely large during operation",
+        "Independent of leakage effects",
+        "Equal to threshold current"
+      ]
+    },
+    "after": {
+      "question": "What is the value of the steady-state current in a CMOS inverter during normal operation?",
+      "options": [
+        "Ideally zero except leakage current",
+        "Extremely large during operation",
+        "Independent of leakage effects",
+        "Equal to threshold current"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-041",
+    "before": {
+      "question": "What types of components are mainly included in leakage current in CMOS digital circuit operation?",
+      "options": [
+        "Regenerative clock current",
+        "Dynamic oscillating current",
+        "Capacitive inductive current",
+        "Subthreshold leakage and reverse-biased junction leakage"
+      ]
+    },
+    "after": {
+      "question": "What types of components are mainly included in leakage current in CMOS digital circuit operation?",
+      "options": [
+        "Regenerative clock current",
+        "Dynamic oscillating current",
+        "Capacitive inductive current",
+        "Reverse subthreshold current"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-re-050",
+    "before": {
+      "question": "What advantages does an embedded SDFF (Semi-Dynamic Flip-Flop) provide in high-performance sequential digital circuit design?",
+      "options": [
+        "Improved operation speed",
+        "Infinite setup margins",
+        "Zero power consumption",
+        "Constant output delays"
+      ]
+    },
+    "after": {
+      "question": "What advantages does an embedded SDFF (Sense Delay Flip-Flop) provide in high-performance sequential digital circuit design?",
+      "options": [
+        "Improved operation speed",
+        "Infinite setup margins",
+        "Zero power consumption",
+        "Constant output delays"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-013",
+    "before": {
+      "question": "What percentage does manufacturing yield represent?",
+      "options": [
+        "Routing layer utilization",
+        "Available memory blocks",
+        "Power distribution buses",
+        "Functional fabricated chips"
+      ]
+    },
+    "after": {
+      "question": "What does yield represent the percentage of?",
+      "options": [
+        "Routing layer utilization",
+        "Available memory blocks",
+        "Power distribution buses",
+        "Functional fabricated chips"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-016",
+    "before": {
+      "question": "What is the major advantage of an FPGA?",
+      "options": [
+        "Lowest fabrication complexity",
+        "Post-fabrication customization",
+        "Maximum transistor density",
+        "Minimal routing overhead"
+      ]
+    },
+    "after": {
+      "question": "What is the major advantage of FPGA?",
+      "options": [
+        "Lowest fabrication complexity",
+        "Post-fabrication customization",
+        "Maximum transistor density",
+        "Minimal routing overhead"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-024",
+    "before": {
+      "question": "Under what condition does a long-channel nMOS in strong inversion enter the saturation region?",
+      "options": [
+        "Channel pinch-off formation",
+        "Oxide capacitance reduction",
+        "Body bias elimination",
+        "Reverse gate conduction"
+      ]
+    },
+    "after": {
+      "question": "Under what condition does a MOSFET enter the saturation region?",
+      "options": [
+        "Channel pinch-off formation",
+        "Oxide capacitance reduction",
+        "Body bias elimination",
+        "Reverse gate conduction"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-028",
+    "before": {
+      "question": "What happens in the semiconductor region during depletion of a MOS structure with a p-type body and positive gate bias below inversion?",
+      "options": [
+        "Holes accumulate at the surface",
+        "Holes are repelled from the surface",
+        "Electrons form a channel",
+        "Oxide breaks down"
+      ]
+    },
+    "after": {
+      "question": "What happens in the semiconductor region during the depletion condition of a MOS structure?",
+      "options": [
+        "Holes accumulate surface",
+        "Holes repel substrate",
+        "Electrons form channel",
+        "Oxide breaks down"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-029",
+    "before": {
+      "question": "Compared with one nMOS pass transistor, what signal-transfer benefit does a CMOS transmission gate provide?",
+      "options": [
+        "Capacitor leakage current",
+        "Passing both strong logic 0 and strong logic 1",
+        "Oxide breakdown voltage",
+        "Threshold voltage mismatch"
+      ]
+    },
+    "after": {
+      "question": "What aspect of digital signal performance do transmission gates help improve in CMOS circuits?",
+      "options": [
+        "Capacitor leakage current",
+        "Signal drive strength",
+        "Oxide breakdown voltage",
+        "Threshold voltage mismatch"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-030",
+    "before": {
+      "question": "Which statement describes an nMOS pass transistor when transferring logic levels?",
+      "options": [
+        "Strong logic one",
+        "Weak logic one",
+        "Equal voltage swings",
+        "Infinite drive current"
+      ]
+    },
+    "after": {
+      "question": "Which of the following statements best describes the behavior of an NMOS pass transistor when transferring logic levels in digital circuits?",
+      "options": [
+        "Strong logic one",
+        "Weak logic one",
+        "Equal voltage swings",
+        "Infinite drive current"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-034",
+    "before": {
+      "question": "How does transmission-gate on-resistance typically behave over the input-voltage range?",
+      "options": [
+        "Roughly constant value",
+        "Infinite during switching",
+        "Strongly nonlinear always",
+        "Equal threshold voltage"
+      ]
+    },
+    "after": {
+      "question": "How does the resistance of a transmission gate typically behave during circuit operation?",
+      "options": [
+        "Roughly constant value",
+        "Infinite during switching",
+        "Strongly nonlinear always",
+        "Equal threshold voltage"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-038",
+    "before": {
+      "question": "What DC noise-margin property characterizes a CMOS inverter with a symmetric voltage transfer curve?",
+      "options": [
+        "Equal switching margins",
+        "Zero leakage current",
+        "Infinite transconductance ratio",
+        "Minimum output voltage"
+      ]
+    },
+    "after": {
+      "question": "What is required to achieve a symmetric inverter design in CMOS circuits?",
+      "options": [
+        "Equal switching margins",
+        "Zero leakage current",
+        "Infinite transconductance ratio",
+        "Minimum output voltage"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-039",
+    "before": {
+      "question": "Under what input condition does direct-path current approximately peak in a symmetric CMOS inverter during a slow input sweep?",
+      "options": [
+        "Vin equals threshold",
+        "Vin equals ground",
+        "Vout equals VDD",
+        "Current becomes zero",
+        "Vin near the switching point VM ≈ VDD/2"
+      ]
+    },
+    "after": {
+      "question": "Under what condition does the peak supply current occur in a CMOS inverter circuit?",
+      "options": [
+        "Vin equals threshold",
+        "Vin equals ground",
+        "Vout equals VDD",
+        "Current becomes zero"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-044",
+    "before": {
+      "question": "What happens to small disturbances around an asymptotically stable operating point during circuit operation?",
+      "options": [
+        "Grow exponentially larger",
+        "Decay gradually away",
+        "Cause continuous oscillation",
+        "Eliminate feedback action"
+      ]
+    },
+    "after": {
+      "question": "What happens to small disturbances in stable systems during circuit operation?",
+      "options": [
+        "Grow exponentially larger",
+        "Decay gradually away",
+        "Cause continuous oscillation",
+        "Eliminate feedback action"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-045",
+    "before": {
+      "question": "What aspect does SDFF (Semi-Dynamic Flip-Flop) improve in sequential digital circuit performance?",
+      "options": [
+        "Faster switching robustness",
+        "Reduced setup margins",
+        "Dynamic threshold instability",
+        "Oscillating latch behavior"
+      ]
+    },
+    "after": {
+      "question": "What aspect does SDFF (Sense Delay Flip-Flop) improve in sequential digital circuit performance?",
+      "options": [
+        "Faster switching robustness",
+        "Reduced setup margins",
+        "Dynamic threshold instability",
+        "Oscillating latch behavior"
+      ]
+    }
+  },
+  {
+    "id": "ici211-su26-fe-048",
+    "before": {
+      "question": "What does standby operation in MTCMOS (Multi-Threshold CMOS) disconnect to reduce leakage?",
+      "options": [
+        "Oscillating current mirrors",
+        "Capacitive output nodes",
+        "Dynamic clock networks",
+        "Logic supply paths"
+      ]
+    },
+    "after": {
+      "question": "What does standby operation in an MTCMOS (Multi-Threshold CMOS) circuit disconnect to reduce leakage power consumption?",
+      "options": [
+        "Oscillating current mirrors",
+        "Capacitive output nodes",
+        "Dynamic clock networks",
+        "Logic supply paths"
+      ]
+    }
+  },
+  {
+    "id": "cos201-fa26-fe-001",
+    "before": {
+      "question": "What do the I and Q components stand for?",
+      "options": [
+        "DC and AC",
+        "Input and output",
+        "In-phase and quadrature",
+        "DC and AC"
+      ]
+    },
+    "after": {
+      "question": "In-phase and quadrature",
+      "options": [
+        "DC and AC",
+        "Input and output",
+        "In-phase and quadrature",
+        "DC and AC"
+      ]
+    }
+  },
+  {
+    "id": "cos201-fa26-fe-014",
+    "before": {
+      "question": "With sufficient FEC redundancy, if one OFDM subcarrier is lost, the system can:",
+      "options": [
+        "Fail completely",
+        "Lose all data",
+        "Recover using FEC",
+        "Stop transmission"
+      ]
+    },
+    "after": {
+      "question": "If one OFDM subcarrier is lost, system will:",
+      "options": [
+        "Fail completely",
+        "Lose all data",
+        "Recover using FEC",
+        "Stop transmission"
+      ]
+    }
+  },
+  {
+    "id": "cos201-fa26-fe-030",
+    "before": {
+      "question": "Granular noise occurs when:",
+      "options": [
+        "Step size too small",
+        "Signal is fast",
+        "Frequency is high",
+        "Sampling is low",
+        "Step size too large for a small or slowly varying input"
+      ]
+    },
+    "after": {
+      "question": "Granular noise occurs when:",
+      "options": [
+        "Step size too small",
+        "Signal is fast",
+        "Frequency is high",
+        "Sampling is low"
+      ]
+    }
+  },
+  {
+    "id": "cos201-fa26-fe-046",
+    "before": {
+      "question": "In a matched-filter receiver for a bit transmitted over [0, T], the optimal sampling instant occurs:",
+      "options": [
+        "At start of bit",
+        "At end of bit period",
+        "At midpoint",
+        "Randomly"
+      ]
+    },
+    "after": {
+      "question": "The optimal sampling instant occurs:",
+      "options": [
+        "At start of bit",
+        "At end of bit period",
+        "At midpoint",
+        "Randomly"
+      ]
+    }
+  },
+  {
+    "id": "cos201-fa26-fe-048",
+    "before": {
+      "question": "For equiprobable symmetric antipodal signaling in AWGN, the optimum binary decision threshold is:",
+      "options": [
+        "Maximum value",
+        "Zero",
+        "Minimum value",
+        "Average value"
+      ]
+    },
+    "after": {
+      "question": "The decision threshold for binary symmetric signaling is:",
+      "options": [
+        "Maximum value",
+        "Zero",
+        "Minimum value",
+        "Average value"
+      ]
+    }
+  },
+  {
+    "id": "cos201-su26-fe-re-012",
+    "before": {
+      "question": "Why does QPSK have same BER as BPSKO",
+      "options": [
+        "Same amplitude",
+        "Same bandwidth",
+        "Independent I/Q channels",
+        "Same frequency"
+      ]
+    },
+    "after": {
+      "question": "Why does QPSK have same BER as BPSK?",
+      "options": [
+        "Same amplitude",
+        "Same bandwidth",
+        "Independent I/Q channels",
+        "Same frequency"
+      ]
+    }
+  },
+  {
+    "id": "cos201-su26-fe-re-031",
+    "before": {
+      "question": "If Huffman coding is applied to 2^k equally probable symbols, the result can use:",
+      "options": [
+        "Variable-length codes",
+        "Fixed-length codes",
+        "No coding",
+        "Compression failure"
+      ]
+    },
+    "after": {
+      "question": "If Huffman coding is applied to equal probabilities, result is:",
+      "options": [
+        "Variable-length codes",
+        "Fixed-length codes",
+        "No coding",
+        "Compression failure"
+      ]
+    }
+  },
+  {
+    "id": "cos201-su26-fe-re-047",
+    "before": {
+      "question": "Why is the decision threshold placed at zero for equiprobable symmetric antipodal signals in AWGN?",
+      "options": [
+        "Maximizes signal",
+        "Minimizes total error",
+        "Removes noise",
+        "Reduces ISI"
+      ]
+    },
+    "after": {
+      "question": "Why is threshold placed at zero for equiprobable bits?",
+      "options": [
+        "Maximizes signal",
+        "Minimizes total error",
+        "Removes noise",
+        "Reduces ISI"
+      ]
+    }
+  },
+  {
+    "id": "cos201-su26-fe-031",
+    "before": {
+      "question": "If prefix condition is violated, decoder will:",
+      "options": [
+        "Work normally",
+        "Become ambiguous",
+        "Increase speed",
+        "Reduce noise",
+        "Instantaneous decoding is not guaranteed; unique decoding with lookahead may still be possible"
+      ]
+    },
+    "after": {
+      "question": "If prefix condition is violated, decoder will:",
+      "options": [
+        "Work normally",
+        "Become ambiguous",
+        "Increase speed",
+        "Reduce noise"
+      ]
+    }
+  },
+  {
+    "id": "cos201-su26-fe-034",
+    "before": {
+      "question": "If LZ dictionary grows larger, compression ratio will:",
+      "options": [
+        "Decrease",
+        "Increase",
+        "Stay same",
+        "Become zero",
+        "It depends on repeated patterns and the cost of larger dictionary indices"
+      ]
+    },
+    "after": {
+      "question": "If LZ dictionary grows larger, compression ratio will:",
+      "options": [
+        "Decrease",
+        "Increase",
+        "Stay same",
+        "Become zero"
+      ]
+    }
+  },
+  {
+    "id": "cos201-su26-fe-035",
+    "before": {
+      "question": "What preparation can make static Huffman coding less suitable for real-time streaming of an unknown source?",
+      "options": [
+        "High noise",
+        "Requires full source statistics",
+        "Low efficiency",
+        "High bandwidth"
+      ]
+    },
+    "after": {
+      "question": "Why is Huffman coding not suitable for real-time systems?",
+      "options": [
+        "High noise",
+        "Requires full source statistics",
+        "Low efficiency",
+        "High bandwidth"
+      ]
+    }
+  },
+  {
+    "id": "los201-fa26-fe-017",
+    "before": {
+      "question": "Which kernel structure commonly represents file operations?",
+      "options": [
+        "mm_struct",
+        "task_struct",
+        "inode cache",
+        "file_operations"
+      ]
+    },
+    "after": {
+      "question": "Which kernel structure commonly represents file operations?",
+      "options": [
+        "mm_struct",
+        "task_struct",
+        "inode_cache",
+        "file_operations"
+      ]
+    }
+  },
+  {
+    "id": "los201-su26-fe-re-019",
+    "before": {
+      "question": "Which TWO limitations are likely when an embedded processor lacks MMU support and runs an appropriate no-MMU Linux configuration?",
+      "options": [
+        "Virtual memory features may be unavailable",
+        "Memory isolation between processes may be limited",
+        "The processor automatically becomes multicore",
+        "Interrupt handling is disabled"
+      ]
+    },
+    "after": {
+      "question": "Which TWO consequences are likely if an embedded processor lacks MMU support but attempts to run a Linux configuration designed for MMU-based systems?",
+      "options": [
+        "Virtual memory features may be unavailable",
+        "Memory isolation between processes may be limited",
+        "The processor automatically becomes multicore",
+        "Interrupt handling is disabled"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-001",
+    "before": {
+      "question": "Determine the z-transform of the unit step sequence x(n) = u(n) and its corresponding Region of Convergence (ROC).",
+      "options": [
+        "X(z) = 1+z⁻¹, ROC: |z|>0",
+        "X(z) = 1/(1+z⁻¹), ROC: |z|>1",
+        "X(z) = 1/(1-z⁻¹), ROC: |z|>1",
+        "X(z) = 1-z⁻¹, ROC: |z|>0"
+      ]
+    },
+    "after": {
+      "question": "Determine the z-transform of the unit step sequence x(n) = u(n) and its corresponding Region of Convergence (ROC).",
+      "options": [
+        "X(z) = (1 + z⁻¹), ROC: |z|>0",
+        "X(z) = 1/(1 + z⁻¹), ROC: |z|>1",
+        "X(z) = 1/(1 - z⁻¹), ROC: |z|>1",
+        "X(z) = (1 - z⁻¹), ROC: |z|>0"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-007",
+    "before": {
+      "question": "The Noise Transfer Function (NTF) of a 1st-order Sigma-Delta Modulator in the z-domain is Hn(z) = 1-z⁻¹. This acts as a:",
+      "options": [
+        "Lowpass filter, suppressing noise at high frequencies",
+        "Highpass filter, suppressing quantization noise in the baseband and pushing it to high frequencies",
+        "Bandpass filter",
+        "All-pass filter"
+      ]
+    },
+    "after": {
+      "question": "The Noise Transfer Function (NTF) of a 1st-order Sigma-Delta Modulator in the Z-domain is Hn(z) = 1 - z⁻¹. This acts as a:",
+      "options": [
+        "Lowpass filter, suppressing noise at high frequencies.",
+        "Highpass filter, suppressing quantization noise heavily in the baseband and pushing it to high frequencies.",
+        "Bandpass filter.",
+        "All-pass filter."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-013",
+    "before": {
+      "question": "Convert the FIR filter with Direct Form coefficients A2(z) = 1+(3/8)z⁻¹+(1/2)z⁻² into a lattice structure. By performing step-down recursion, determine the reflection coefficients K1 and K2.",
+      "options": [
+        "K1 = 1/4, K2 = 1/2",
+        "K1 = 3/8, K2 = 1/2",
+        "K1 = 1/2, K2 = 3/8",
+        "K1 = 1/4, K2 = 3/8"
+      ]
+    },
+    "after": {
+      "question": "Convert the FIR filter with Direct Form coefficients A2(z) = 1 + (3/8)z⁻¹ + (1/2)z⁻² into a Lattice structure. By performing the step-down recursion, determine the exact values of the reflection coefficients K1 and K2:",
+      "options": [
+        "K1 = 1/4, K2 = 1/2",
+        "K1 = 3/8, K2 = 1/2",
+        "K1 = 1/2, K2 = 3/8",
+        "K1 = 1/4, K2 = 3/8"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-016",
+    "before": {
+      "question": "A non-causal IIR Wiener filter, which assumes access to infinite future and past data, can achieve an absolute minimum MSE E_min^nc. An optimal causal IIR Wiener filter, constrained to only present and past data, achieves an MSE E_min^c. According to the theory of Spectral Factorization in optimum filtering, what is the relationship between these errors?",
+      "options": [
+        "E_min^c < E_min^nc",
+        "E_min^c ≥ E_min^nc",
+        "E_min^c = 0",
+        "E_min^nc → ∞"
+      ]
+    },
+    "after": {
+      "question": "A non-causal IIR Wiener filter, which assumes access to infinite future and past data, can achieve an absolute minimum MSE E_min^nc. An optimal causal IIR Wiener filter, constrained to only present and past data, achieves an MSE E_min^c. According to the theory of Spectral Factorization in optimum filtering, what is the strict relationship between these errors?",
+      "options": [
+        "E_min^c < E_min^nc",
+        "E_min^c > E_min^nc",
+        "E_min^c = 0",
+        "E_min^nc → ∞"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-017",
+    "before": {
+      "question": "In Backward Linear Prediction, the algorithm attempts to predict a past sample x(n-p) using p future/recent samples. For a stationary random process, how are the optimum backward coefficients c_p(k) related to the forward coefficients a_p(k)? (Index each tap by its distance from the sample being predicted.)",
+      "options": [
+        "c_p(k) = 1/a_p(k)",
+        "c_p(k) = -a_p(k)",
+        "c_p(k) = a_p*(k)",
+        "c_p(k) = a_p(p-k)"
+      ]
+    },
+    "after": {
+      "question": "In Backward Linear Prediction, the algorithm attempts to predict a past sample x(n-p) using p future/recent samples. For a stationary random process, how are the optimum backward coefficients c_p(k) related to the forward coefficients a_p(k)?",
+      "options": [
+        "c_p(k) = 1/a_p(k)",
+        "c_p(k) = -a_p(k)",
+        "c_p(k) = a_p*(k)",
+        "c_p(k) = a_p(p-k)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-019",
+    "before": {
+      "question": "The Synthesis Equation (Inverse DFT) that reconstructs the time sequence x(n) from the frequency sequence X(k) includes which crucial scaling factor and exponent signo",
+      "options": [
+        "No scaling factor, negative exponent -j2πkn/N",
+        "1/N scaling factor, negative exponent -j2πkn/N",
+        "1/N scaling factor, positive exponent +j2πkn/N",
+        "N scaling factor, positive exponent +j2πkn/N"
+      ]
+    },
+    "after": {
+      "question": "The Synthesis Equation (Inverse DFT) that reconstructs the time sequence x(n) from the frequency sequence X(k) includes which crucial scaling factor and exponent sign?",
+      "options": [
+        "No scaling factor, negative exponent -j2πkn/N.",
+        "1/N scaling factor, negative exponent -j2πkn/N",
+        "1/N scaling factor, positive exponent +j2πkn/N",
+        "N scaling factor, positive exponent +j2πkn/N"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-026",
+    "before": {
+      "question": "To design an IIR lowpass filter with a digital cutoff frequency ωc = 0.2 rad/sample using the Bilinear Transformation method with an assumed sampling period T = 2, what is the exact value of the pre-warped analog cutoff frequency Ωc?",
+      "options": [
+        "Ωc = tan(0.2π)",
+        "Ωc = sin(0.2π)",
+        "Ωc = tan(0.1π)",
+        "Ωc = cos(0.1π)",
+        "Ωc = tan(0.1)"
+      ]
+    },
+    "after": {
+      "question": "To design an IIR lowpass filter with a digital cutoff frequency ω_c = 0.2 rad/sample using the Bilinear Transformation method with an assumed sampling period T = 2, what is the exact value of the pre-warped analog cutoff frequency Ω_c?",
+      "options": [
+        "Ω_c = tan(0.2π)",
+        "Ω_c = sin(0.2π)",
+        "Ω_c = tan(0.1π)",
+        "Ω_c = cos(0.1π)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-027",
+    "before": {
+      "question": "Determine the exact DTFT X(ω) of the two-sided exponentially decaying sequence x(n) = a^|n| for |a| < 1. (Hint: decompose it into a^n·u(n) + a^(-n)·u(-n-1) and simplify using Euler's formula.)",
+      "options": [
+        "(1+a²)/(1-2a·cos(ω)+a²)",
+        "(1-a²)/(1-2a·cos(ω)+a²)",
+        "(1-a²)/(1+2a·cos(ω)+a²)",
+        "2a·sin(ω)/(1-2a·cos(ω)+a²)"
+      ]
+    },
+    "after": {
+      "question": "Determine the exact DTFT X(ω) of the two-sided exponentially decaying sequence x(n) = a^|n| for |a| < 1\n(Hint: decompose it into aⁿu(n) + a⁻ⁿu(-n-1) and simplify using Euler's formula).",
+      "options": [
+        "X(ω) = (1+a²)/(1-2a cos(ω)+a²)",
+        "X(ω) = (1-a²)/(1-2a cos(ω)+a²)",
+        "X(ω) = (1-a²)/(1+2a cos(ω)+a²)",
+        "X(ω) = 2a sin(ω)/(1-2a cos(ω)+a²)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-029",
+    "before": {
+      "question": "In digital signal processing, which range is used for the principal discrete-time frequency interval centered at zero?",
+      "options": [
+        "-∞ < ω < ∞",
+        "0 ≤ ω ≤ 2π",
+        "-π ≤ ω ≤ π",
+        "-1 ≤ ω ≤ 1"
+      ]
+    },
+    "after": {
+      "question": "In digital signal processing, the discrete-time frequency variable ω is fundamentally bounded within which of the following ranges due to the aliasing phenomenon?",
+      "options": [
+        "-∞ < ω < ∞",
+        "0 ≤ ω ≤ 2π",
+        "-π ≤ ω ≤ π",
+        "-1 ≤ ω ≤ 1"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-030",
+    "before": {
+      "question": "As a direct consequence of conjugate symmetry for real signals, the magnitude spectrum |X(ω)| is always an:",
+      "options": [
+        "Even function: |X(-ω)| = |X(ω)|",
+        "Odd function: |X(-ω)| = -|X(ω)|",
+        "Exponential function",
+        "Constant function"
+      ]
+    },
+    "after": {
+      "question": "As a direct consequence of Conjugate Symmetry for real signals, the Magnitude spectrum |X(ω)| is always an:",
+      "options": [
+        "Even function |X(-ω)| = |X(ω)|",
+        "Odd function |X(-ω)| = -|X(ω)|",
+        "Exponential function",
+        "Constant function"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-035",
+    "before": {
+      "question": "Two systems have transfer functions H1(z) and H2(z) with equal magnitudes on the unit circle for all ω but different phase responses. Which statement describes how they can be related?",
+      "options": [
+        "Inverses of each other",
+        "Aliased systems",
+        "They can differ by an all-pass factor with reciprocal-conjugate pole-zero pairs",
+        "Linear phase FIR systems"
+      ]
+    },
+    "after": {
+      "question": "Two systems have transfer functions H1(z) and H2(z). If they are designed such that |H1(z)| = |H2(z)| for all ω, but they have different phase responses, they must be:",
+      "options": [
+        "Inverses of each other",
+        "Aliased systems",
+        "Systems whose poles and zeros are reciprocals reflected across the unit circle (differing by an all-pass filter)",
+        "Linear phase FIR systems"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-036",
+    "before": {
+      "question": "In a first-order all-pass filter with a pole at z=a, where must the corresponding zero be placed to maintain constant magnitude response 1?",
+      "options": [
+        "At z = -a",
+        "At z = a*",
+        "At the reciprocal conjugate location z = 1/a*",
+        "At the origin z = 0"
+      ]
+    },
+    "after": {
+      "question": "In the structure of a first-order All-Pass Filter, if there is a pole located at z = a, where must the corresponding zero be placed to mathematically maintain a constant magnitude response of 1?",
+      "options": [
+        "At z = -a",
+        "At z = a*",
+        "At the reciprocal conjugate location z = 1/a*",
+        "At the origin z = 0"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-038",
+    "before": {
+      "question": "For two's-complement arithmetic with truncation of fractional bits equivalent to rounding down, what is the consequence of truncation instead of rounding in FFT multipliers?",
+      "options": [
+        "Truncation creates a uniform zero-mean error.",
+        "Truncation creates a negative DC bias because discarded bits always force the value toward negative infinity.",
+        "Truncation eliminates all quantization noise.",
+        "Truncation increases the dynamic range exponentially."
+      ]
+    },
+    "after": {
+      "question": "What is the mathematical consequence of using Truncation instead of Rounding when handling finite word-length effects in FFT multipliers?",
+      "options": [
+        "Truncation creates a uniform zero-mean error.",
+        "Truncation creates a negative DC bias because discarded bits always force the value toward negative infinity.",
+        "Truncation eliminates all quantization noise.",
+        "Truncation increases the dynamic range exponentially."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-039",
+    "before": {
+      "question": "How can the DFT compute N equispaced samples of the z-transform of an N-point sequence x(n) on a concentric circle of radius r instead of the unit circle?",
+      "options": [
+        "Compute the N-point DFT of x(n)·r⁻ⁿ",
+        "Compute the N-point DFT of x(n)·r^n + x(n)·r⁻ⁿ",
+        "Multiply the final DFT output X(k) by r⁻ᵏ",
+        "It is mathematically impossible; DFT is strictly bound to the unit circle"
+      ]
+    },
+    "after": {
+      "question": "How can the DFT algorithm be cleverly utilized to compute N equispaced samples of the Z-transform of an N-point sequence x(n) exactly on a concentric circle of radius r (instead of the unit circle)?",
+      "options": [
+        "By computing the standard N-point DFT of the modified sequence x(n)·r⁻ⁿ.",
+        "By computing the standard N-point DFT of the sequence x(n)·rⁿ + x(n)·r⁻ⁿ.",
+        "By multiplying the final DFT output X(k) by r⁻ᵏ.",
+        "It is mathematically impossible; DFT is strictly bound to the unit circle."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-040",
+    "before": {
+      "question": "Which mathematical substitution of the twiddle factor is the fundamental key that allows an N-point DFT to be reduced into two N/2-point DFTs?",
+      "options": [
+        "W_N² = W_(N/2)",
+        "W_N⁻¹ = W_(N/2)",
+        "W_N^N = 0",
+        "W_N² = W_(2N)"
+      ]
+    },
+    "after": {
+      "question": "Which mathematical substitution of the twiddle factor is the fundamental key that allows an N-point DFT to be reduced into two N-2 point DFTs?",
+      "options": [
+        "W_N² = W_(N/2)",
+        "W_N⁻¹ = W_(N/2)",
+        "W_N^N = 0",
+        "W_N² = W_(2N)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-042",
+    "before": {
+      "question": "An input signal has Fs=10,000 Hz and useful bandwidth Fp=800 Hz. It must be decimated to Fs'=2,000 Hz. Using the new Nyquist frequency as the anti-alias stopband edge, what are the digital passband and stopband edges at the high sampling rate?",
+      "options": [
+        "ωp=0.16π, ωs=0.2",
+        "ωp=0.8π, ωs=1.0",
+        "ωp=0.16π, ωs=0.5",
+        "ωp=0.5π, ωs=0.2",
+        "ωp=0.16π, ωs=0.2π"
+      ]
+    },
+    "after": {
+      "question": "An input signal x(n) has a sampling rate Fs = 10,000 Hz. The highest frequency of interest containing useful information is Fp = 800 Hz. You are tasked to decimate it to F's = 2,000 Hz. What is the correct digital passband edge ωp and stopband edge ωs (in radians/sample) for the anti-aliasing filter operating at the high rate?",
+      "options": [
+        "ωp = 0.16pi, ωs = 0.2",
+        "ωp = 0.8pi, ωs = 1.0",
+        "ωp = 0.16pi, ωs = 0.5",
+        "ωp = 0.5pi, ωs = 0.2"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-043",
+    "before": {
+      "question": "In a standard two-channel QMF bank, if the given analysis lowpass filter is H0(z) = 1 + z⁻¹, what must be the transfer function of the analysis highpass filter H1(z) to establish the required quadrature mirror relationship H1(z) = H0(-z)?",
+      "options": [
+        "H1(z) = 1 + z⁻²",
+        "H1(z) = -1 - z⁻¹",
+        "H1(z) = 1 - z⁻¹",
+        "H1(z) = z⁻¹ - 1"
+      ]
+    },
+    "after": {
+      "question": "In a standard two-channel QMF bank, if the given analysis lowpass filter is H0(z) = 1 + z⁻¹, what must be the transfer function of the analysis highpass filter H1(z) to establish the required quadrature mirror relationship?",
+      "options": [
+        "H1(z) = 1 + z⁻²",
+        "H1(z) = -1 - z⁻¹",
+        "H1(z) = 1 - z⁻¹",
+        "H1(z) = z⁻¹ - 1"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-fa26-fe-044",
+    "before": {
+      "question": "You need to interpolate an audio signal from Fs=8 kHz to Fs'=24 kHz (I=3). The original signal bandwidth is B=3.5 kHz. If the anti-imaging stopband begins at the first spectral image, what is its digital edge normalized to the new Nyquist frequency?",
+      "options": [
+        "0.375",
+        "0.395",
+        "0.333",
+        "0.875"
+      ]
+    },
+    "after": {
+      "question": "You need to interpolate an audio signal from Fs = 8 kHz to F's = 24 kHz (I=3). The original signal bandwidth is B = 3.5 kHz. Assuming the anti-imaging filter begins its stopband at the first spectral image, what is the normalized digital stopband edge ωs (normalized to the Nyquist frequency of the new sampling rate)?",
+      "options": [
+        "ωs = 0.375",
+        "ωs = 0.395",
+        "ωs = 0.333",
+        "ωs = 0.875"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-002",
+    "before": {
+      "question": "What is the mathematically derived z-transform of the delayed sequence x(n)=10^n·u(n-2)?",
+      "options": [
+        "10z⁻¹/(1-10z⁻²)",
+        "100z⁻¹/(1-10z⁻¹)",
+        "100z⁻²/(1-10z⁻¹)",
+        "10z⁻²/(1-10z⁻²)"
+      ]
+    },
+    "after": {
+      "question": "What is the mathematically derived Z-transform of the delayed sequence x(n) = 10ⁿ·u(n - 2)?",
+      "options": [
+        "10z⁻¹/(1 - 10z⁻²), ROC:",
+        "100z⁻¹/(1 - 10z⁻¹), ROC:",
+        "100z⁻²/(1 - 10z⁻¹), ROC:",
+        "10z⁻²/(1 - 10z⁻²), ROC:"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-004",
+    "before": {
+      "question": "The System Function (Transfer Function) H(z) of a linear time-invariant system is mathematically defined as:",
+      "options": [
+        "Y(z)+X(z)",
+        "The derivative of Y(z) with respect to z.",
+        "H(z)=Y(z)/X(z), with zero initial conditions.",
+        "The convolution of X(z) and Y(z)."
+      ]
+    },
+    "after": {
+      "question": "The System Function (Transfer Function) H(z) of a linear time-invariant system is mathematically defined as:",
+      "options": [
+        "The sum of the input and output z-transforms Y(z) + X(z).",
+        "The derivative of the output z-transform with respect to z.",
+        "The ratio of the output z-transform to the input z-transform Y(z)/X(z)",
+        "The convolution of X(z) and Y(z)."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-005",
+    "before": {
+      "question": "A linear time-invariant system is characterized by the system function H(z) = (3 - 4z^-1) / [(1 - 0.5z^-1)(1 - 2z^-1)]. What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?",
+      "options": [
+        "|z| < 0.5",
+        "0.5 < |z| < 2",
+        "|z| > 0.5",
+        "|z| > 2"
+      ]
+    },
+    "after": {
+      "question": "A linear time-invariant system is characterized by the system function H(z). What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?\nH(z) = (3-4z⁻¹)/[(1-0.5z⁻¹)(1-2z⁻¹)]",
+      "options": [
+        "|z| &lt; 0.5",
+        "0.5 &lt; |z| &lt; 2",
+        "|z| &gt; 0.5",
+        "|z| &gt; 2"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-007",
+    "before": {
+      "question": "A bandpass signal occupies 10,677.5–10,702.5 kHz, with B=25 kHz. Using the bandpass-sampling lower bound Fs=2Fh/k with k=floor(Fh/B), what is the minimum allowed sampling frequency?",
+      "options": [
+        "10,702.5 kHz",
+        "21,405 kHz",
+        "25 kHz",
+        "50.0117 kHz"
+      ]
+    },
+    "after": {
+      "question": "A bandpass signal has energy bounded between Fl = 10,677.5 kHz and Fh = 10,702.5 kHz. Using the bandpass sampling wedge equation Fs ≥ 2Fh/k where k = floor(Fh/B), calculate the absolute minimum sampling frequency required.",
+      "options": [
+        "10,702.5 kHz",
+        "21,405 kHz",
+        "25 kHz",
+        "50.0117 kHz"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-008",
+    "before": {
+      "question": "In DSP theory, the mathematical model of Ideal Sampling is equivalent to multiplying the continuous-time Signal xa(t) by:",
+      "options": [
+        "A single impulse δ(t)",
+        "A rectangular window w(n)",
+        "A periodic impulse train Σ[k=-∞..∞] δ(t-kT)",
+        "A continuous sine wave"
+      ]
+    },
+    "after": {
+      "question": "In DSP theory, the mathematical model of Ideal Sampling is equivalent to multiplying the continuous-time signal xa(t) by:",
+      "options": [
+        "A single impulse function δ(t)",
+        "A rectangular window w(n)",
+        "A periodic impulse train Σδ(t - nT)",
+        "A continuous sine wave"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-009",
+    "before": {
+      "question": "In classic Delta Modulation, what condition avoids slope-overload distortion for a step size Δ and sampling period T?",
+      "options": [
+        "max |dx(t)/dt| ≤ Δ/T",
+        "max |dx(t)/dt| ≥ Δ/T",
+        "max |x(t)| ≤ Δ·T",
+        "max |d²x(t)/dt²| ≤ Δ/T"
+      ]
+    },
+    "after": {
+      "question": "In classic Delta Modulation (DM), \"slope-overload distortion\" occurs when the analog signal changes too rapidly for the staircase to keep up. The mathematical condition to avoid this overload is:",
+      "options": [
+        "max(dx(t)/dt) ≤ Δ/t",
+        "max(dx(t)/dt) ≥ Δ/t",
+        "max|x(t)| ≤ Δ·t",
+        "max(d²x(t)/dt²) ≤ Δ/t"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-011",
+    "before": {
+      "question": "Given a 3rd-order FIR filter with H(z) = 1 + (13/24)z⁻¹ + (5/8)z⁻² + (1/3)z⁻³, what is the exact value of the reflection coefficient k3 for its equivalent lattice structure?",
+      "options": [
+        "1/3",
+        "13/24",
+        "5/8",
+        "1"
+      ]
+    },
+    "after": {
+      "question": "Given a 3rd-order FIR filter with the system function H(z). What is the exact value of the reflection coefficient K3 for its equivalent Lattice structure?\nH(z) = 1 + (13/24)z⁻¹ + (5/8)z⁻² + (1/3)z⁻³",
+      "options": [
+        "1/3",
+        "13/24",
+        "5/8",
+        "1"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-012",
+    "before": {
+      "question": "In standard realizations without exact pole-zero cancellation, which structural characteristic distinguishes IIR from FIR systems?",
+      "options": [
+        "IIR systems contain feedback loops (recursive paths), while FIR systems strictly use feed-forward paths",
+        "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+        "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot",
+        "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+      ]
+    },
+    "after": {
+      "question": "Which characteristic distinctly separates Infinite Impulse Response (IIR) systems from Finite Impulse Response (FIR) systems in terms of structural implementation?",
+      "options": [
+        "IIR systems contain feedback loops (recursive paths), while FIR systems strictly use feed-forward paths.",
+        "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+        "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot.",
+        "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-013",
+    "before": {
+      "question": "To reduce sensitivity to coefficient quantization in a high-order IIR filter, which structural implementation is generally preferred?",
+      "options": [
+        "Cascade Form",
+        "Direct Form I as a single massive 8th-order block.",
+        "Tapped-Delay-Line Form.",
+        "Non-causal Time-Reversal Form."
+      ]
+    },
+    "after": {
+      "question": "To prevent catastrophic instability caused by coefficient quantization in high-order IIR filters (e.g., N = 8, what structural implementation is mandated by industry standards?",
+      "options": [
+        "Cascade Form",
+        "Direct Form I as a single massive 8th-order block.",
+        "Tapped-Delay-Line Form.",
+        "Non-causal Time-Reversal Form."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-014",
+    "before": {
+      "question": "When a two's-complement multiplier output is reduced from 2b bits to b bits by discarding fractional bits, with truncation equivalent to rounding down, what is the resulting quantization-error characteristic?",
+      "options": [
+        "The error is nonpositive, creating negative DC bias.",
+        "The error always has exactly zero mean.",
+        "The error is eliminated for all even numbers.",
+        "The error is symmetrically distributed around zero."
+      ]
+    },
+    "after": {
+      "question": "When a multiplier output is reduced from 2b-bits back to b-bits using the Truncation (Chop) method, what is the statistical characteristic of the resulting quantization error?",
+      "options": [
+        "The error is strictly negative or zero, creating a negative DC bias in the system.",
+        "The error has a perfectly zero mean and a uniform distribution.",
+        "The error is completely eliminated for all even numbers.",
+        "The error is symmetrically bounded between -b and b, creating a negative DC bias in the system."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-016",
+    "before": {
+      "question": "The Innovations Representation models a stationary random process x(n) with a suitable PSD as the output of a stable LTI filter driven by which specific input?",
+      "options": [
+        "White noise",
+        "A single unit impulse",
+        "A deterministic sine wave",
+        "A constant DC signal"
+      ]
+    },
+    "after": {
+      "question": "The Innovations Representation models any stationary random process x(n) with a specific PSD as the output of a stable LTI filter driven by which specific input?",
+      "options": [
+        "White noise",
+        "A single unit impulse",
+        "A deterministic sine wave",
+        "A constant DC signal"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-023",
+    "before": {
+      "question": "According to the Linearity property of the DTFT, the transform of a1·x1(n) + a2·x2(n) is:",
+      "options": [
+        "a1·X1(ω)·a2·X2(ω)",
+        "a1·X1(ω) + a2·X2(ω)",
+        "X1(a1ω) + X2(a2ω)",
+        "(a1+a2)·X1(ω)·X2(ω)"
+      ]
+    },
+    "after": {
+      "question": "According to the Linearity property of the DTFT:\nThe transform of a1x1(n) + a2x2(n) is:",
+      "options": [
+        "a1X1(ω)·a2X2(ω)",
+        "a1X1(ω) + a2X2(ω)",
+        "X1(a1ω) + X2(a2ω)",
+        "(a1+a2)X1(ω)X2(ω)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-025",
+    "before": {
+      "question": "For a real-valued signal, what symmetry does its phase spectrum have modulo 2π wherever the spectrum is nonzero?",
+      "options": [
+        "Even: ∠X(-ω)=∠X(ω)",
+        "Odd: ∠X(-ω)=-∠X(ω)",
+        "Periodic with period π",
+        "Purely positive"
+      ]
+    },
+    "after": {
+      "question": "As a direct consequence of Conjugate Symmetry for real signals, the Phase spectrum ∠X(ω) is always an:",
+      "options": [
+        "Even function ∠X(-ω) = ∠X(ω)",
+        "Odd function ∠X(-ω) = -∠X(ω)",
+        "Periodic function with period π",
+        "Purely positive function"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-026",
+    "before": {
+      "question": "The Frequency Shifting theorem states that multiplying x(n) by exp(jω0n) changes its spectrum to:",
+      "options": [
+        "X(ω-ω0)",
+        "X(ω+ω0)",
+        "A phase rotation only",
+        "No change in the magnitude spectrum"
+      ]
+    },
+    "after": {
+      "question": "The Frequency Shifting (Modulation) theorem states that multiplying a signal x(n) by a complex exponential exp(jω0n) results in:",
+      "options": [
+        "A shift in the frequency spectrum to X(ω - ω0)",
+        "A shift in the frequency spectrum to X(ω + ω0)",
+        "A phase rotation exp(jω0n)X(ω)",
+        "No change in the magnitude spectrum"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-027",
+    "before": {
+      "question": "If x(n) is real-valued and even, x(n)=x(-n), what conclusion follows for its DTFT X(ω)?",
+      "options": [
+        "X(ω) is purely imaginary and odd",
+        "X(ω) is purely real and even; phase is 0 or π where X(ω) is nonzero",
+        "X(ω) has a linear phase shift proportional to n",
+        "X(ω) is zero at Nyquist ω=π"
+      ]
+    },
+    "after": {
+      "question": "Consider a discrete-time signal that is entirely real-valued and possesses perfect even symmetry in the time domain x(n) = x(-n). By applying the DTFT symmetry properties, what strict conclusion can be drawn about its frequency spectrum X(ω)?",
+      "options": [
+        "X(ω) is purely imaginary and odd.",
+        "X(ω) is purely real and even, meaning its phase is strictly 0 or ±π.",
+        "X(ω) has a linear phase shift proportional to n.",
+        "X(ω) is zero at the Nyquist frequency ω = π."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-030",
+    "before": {
+      "question": "Based on Proakis 11.2, downsampling a discrete sequence x(n) by a factor of D = 2 produces the signal xd(n) = x(2n). In the frequency domain, what is the exact mathematical relationship between the new spectrum Xd(ω) and the original spectrum X(ω)?",
+      "options": [
+        "Xd(ω) = X(ω/2)",
+        "Xd(ω) = X(2ω)",
+        "Xd(ω) = (1/2)·[X(2ω)+X(2ω-2π)]",
+        "Xd(ω) = (1/2)·[X(ω/2)+X((ω-2π)/2)]"
+      ]
+    },
+    "after": {
+      "question": "Based on Proakis 11.2, downsampling a discrete sequence x(n) by a factor of D = 2 produces the signal xd(n) = x(2n). In the frequency domain, what is the exact mathematical relationship between the new spectrum Xd(ω) and the original spectrum X(ω)?",
+      "options": [
+        "Xd(ω) = X(ω/2)",
+        "Xd(ω) = X(2ω)",
+        "Xd(ω) = (1/2)·[X(2ω) + X(2ω-2π)]",
+        "Xd(ω) = (1/2)·[X(ω/2) + X((ω-2π)/2)]"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-034",
+    "before": {
+      "question": "Determine the exact mathematical relationship for the 3-dB cutoff bandwidth of the first-order lowpass filter H(z) = (1-a)/(1-az⁻¹), where 0 < a < 1. When the 3-dB point exists below Nyquist, which equation must its frequency satisfy?",
+      "options": [
+        "cos(ωc) = (4a-1-a²)/(2a)",
+        "cos(ωc) = (1+a²)/(2a)",
+        "cos(ωc) = (1-a)/(1+a)",
+        "cos(ωc) = a"
+      ]
+    },
+    "after": {
+      "question": "Determine the exact mathematical relationship for the 3-dB cutoff bandwidth of the first-order lowpass filter H(z) = (1-a)/(1-az⁻¹) (where 0 &lt; a &lt; 1). The 3-dB frequency must satisfy which of the following equations?",
+      "options": [
+        "cos(ωc) = (4a - 1 - a²)/(2a)",
+        "cos(ωc) = (1 + a²)/(2a)",
+        "cos(ωc) = (1 - a)/(1 + a)",
+        "cos(ωc) = a"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-035",
+    "before": {
+      "question": "When its ROC includes the unit circle, the frequency response H(ω) is obtained by evaluating H(z) on the:",
+      "options": [
+        "Imaginary axis of the s-plane",
+        "Real axis, where z=ω",
+        "Unit circle, where z=exp(jω)",
+        "Origin, where z=0"
+      ]
+    },
+    "after": {
+      "question": "The frequency response H(ω) can be directly obtained from the system's Z-transform transfer function H(ω) by evaluating it exactly on the:",
+      "options": [
+        "Imaginary axis of the s-plane",
+        "Real axis, where z = ω",
+        "Unit circle, where z = exp(jω)",
+        "Origin, where z = 0"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-036",
+    "before": {
+      "question": "For a causal first-order filter H(z)=b0/(1-az⁻¹) with real 0<a<1 and nonzero constant b0, the filter acts as a:",
+      "options": [
+        "Lowpass filter",
+        "Highpass filter",
+        "Bandpass filter",
+        "All-pass filter"
+      ]
+    },
+    "after": {
+      "question": "For a causal first-order digital filter with system function H(z), if the parameter “a” is real and satisfies 0 &lt; a &lt; 1, the filter fundamentally acts as a:\nH(z) = b0/(1-az⁻¹)",
+      "options": [
+        "Lowpass filter",
+        "Highpass filter",
+        "Bandpass filter",
+        "All-pass filter"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-040",
+    "before": {
+      "question": "Multiplying P(z)=1+3z+z² and Q(z)=1+2z+2z² is mathematically equivalent to which operation on their coefficient sequences?",
+      "options": [
+        "Addition",
+        "Cross-correlation",
+        "Convolution",
+        "Autocorrelation"
+      ]
+    },
+    "after": {
+      "question": "Multiplying two polynomials (e.g., P(z) = 1 + 3z + z² and Q(z) = 1 + 2z + 2z² is mathematically equivalent to performing which operation on their respective coefficient sequences?",
+      "options": [
+        "Addition",
+        "Cross-correlation",
+        "Convolution",
+        "Autocorrelation"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-re-044",
+    "before": {
+      "question": "To guarantee that an FIR filter has a perfectly linear phase response (i.e., a constant group delay), what strict mathematical condition must its impulse response h(n) satisfy?",
+      "options": [
+        "h(n) must be symmetric or antisymmetric about its center.",
+        "h(n) must be zero at every even index.",
+        "All poles must lie outside the unit circle.",
+        "h(n) must decay exponentially as n→∞."
+      ]
+    },
+    "after": {
+      "question": "To guarantee that an FIR filter has a perfectly linear phase response (i.e., a constant group delay), what strict mathematical condition must its impulse response h(n) satisfy?",
+      "options": [
+        "h(n) must be exactly symmetric or antisymmetric around its center point.",
+        "h(n) must be completely zero for all even time indices.",
+        "h(n) must have all its poles located strictly outside the unit circle.",
+        "h(n) must exponentially decay to zero as n → ∞"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-003",
+    "before": {
+      "question": "In the context of the z-transform, the complex variable z can be represented in polar form as z = r·e^(jω). What happens to the z-transform when it is evaluated exactly on the unit circle r = 1?",
+      "options": [
+        "It becomes the Continuous-Time Fourier Transform (CTFT).",
+        "It becomes the Discrete-Time Fourier Transform (DTFT).",
+        "It evaluates to identically zero.",
+        "It becomes the Laplace transform."
+      ]
+    },
+    "after": {
+      "question": "In the context of the z-transform, the complex variable z can be represented in polar form as z = r·exp(jω). What happens to the z-transform when it is evaluated exactly on the unit circle r = 1?",
+      "options": [
+        "It becomes the Continuous-Time Fourier Transform (CTFT).",
+        "It becomes the Discrete-Time Fourier Transform (DTFT).",
+        "It evaluates to identically zero.",
+        "It becomes the Laplace transform."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-005",
+    "before": {
+      "question": "According to the linearity property of the z-transform, what can be said about the ROC of a1·x1(n) + a2·x2(n)?",
+      "options": [
+        "It is the union of the individual ROCs.",
+        "It contains at least the intersection ROC1 ∩ ROC2.",
+        "It covers the entire z-plane regardless of the signals.",
+        "It is the mathematical difference between the two ROCs."
+      ]
+    },
+    "after": {
+      "question": "According to the Linearity property of the z-transform, what is the new Region of Convergence (ROC) when two signals are linearly combined a1x1(n) + a2x2(n)?",
+      "options": [
+        "It is the union of the individual ROCs.",
+        "It is at least the intersection of the individual ROCs (ROC ⊃ ROC1 ∩ ROC2)",
+        "It covers the entire z-plane regardless of the signals.",
+        "It is the mathematical difference between the two ROCs."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-011",
+    "before": {
+      "question": "In Sigma-Delta Modulation (SDM), where is the integrator Σ placed compared with standard Delta Modulation?",
+      "options": [
+        "After the lowpass filter.",
+        "Before the Delta modulator (Quantizer).",
+        "In the feedback loop of the DAC.",
+        "It replaces the holding circuit."
+      ]
+    },
+    "after": {
+      "question": "In Sigma-Delta Modulation (SDM), where is the Integrator Σ placed to achieve noise shaping compared to standard Delta Modulation?",
+      "options": [
+        "After the lowpass filter.",
+        "Before the Delta modulator (Quantizer).",
+        "In the feedback loop of the DAC.",
+        "It replaces the holding circuit."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-012",
+    "before": {
+      "question": "When an analog signal is sampled in the time domain, what happens to its spectrum X(F) in the frequency domain?",
+      "options": [
+        "The spectrum is compressed into a single point.",
+        "The spectrum becomes periodic repetitions of Xa(F) at integer multiples of Fs.",
+        "The spectrum is completely attenuated.",
+        "The spectrum shifts entirely to the negative frequency axis."
+      ]
+    },
+    "after": {
+      "question": "When an analog signal is sampled in the time domain, what happens to its spectrum X(F) in the frequency domain?",
+      "options": [
+        "The spectrum is compressed into a single point.",
+        "The spectrum becomes a periodic repetition of the analog spectrum Xa(F) at integer multiples of Fs.",
+        "The spectrum is completely attenuated.",
+        "The spectrum shifts entirely to the negative frequency axis."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-014",
+    "before": {
+      "question": "Which term applies to maintaining an analog signal voltage steady until the next sampling clock edge, allowing the ADC time to process it?",
+      "options": [
+        "Aliasing",
+        "Holding",
+        "Multiplexing",
+        "Stair-stepping"
+      ]
+    },
+    "after": {
+      "question": "Which term applies to maintaining a given analog signal voltage level perfectly steady until the next sampling clock edge, allowing the ADC time to process it?",
+      "options": [
+        "Aliasing",
+        "Holding",
+        "Multiplexing",
+        "Stair-stepping"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-018",
+    "before": {
+      "question": "When choosing a smoother window such as Hamming instead of Rectangular to improve FIR stopband attenuation, what trade-off is required for a fixed filter length M?",
+      "options": [
+        "A wider main-lobe, resulting in a wider transition band (lower frequency resolution).",
+        "A narrower transition band, causing steeper cutoffs.",
+        "The total loss of the linear phase characteristic.",
+        "The filter becoming inherently unstable."
+      ]
+    },
+    "after": {
+      "question": "When choosing a smoother window function (like Hamming instead of Rectangular) to improve the stopband attenuation of an FIR filter, what unavoidable trade-off must the engineer accept for a fixed filter length M?",
+      "options": [
+        "A wider main-lobe, resulting in a wider transition band (lower frequency resolution).",
+        "A narrower transition band, causing steeper cutoffs.",
+        "The total loss of the linear phase characteristic.",
+        "The filter becoming inherently unstable."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-020",
+    "before": {
+      "question": "When designing an FIR filter using a rectangular window, does increasing the filter length M to a very large number eliminate the ripple amplitude of the Gibbs phenomenon?",
+      "options": [
+        "No, increasing M narrows the transition band, but the maximum Gibbs overshoot remains approximately 9%.",
+        "Yes, the ripple amplitude decreases proportionally to 1/M, eventually reaching zero.",
+        "No, increasing M widens the transition band, making the ripple worse.",
+        "Yes, it perfectly flattens both passband and stopband."
+      ]
+    },
+    "after": {
+      "question": "When designing an FIR filter using a rectangular window, does increasing the filter length M to a very large number eliminate the ripple amplitude of the Gibbs phenomenon?",
+      "options": [
+        "No, increasing M only narrows the transition band, but the maximum overshoot amplitude remains fixed at approximately 9%.",
+        "Yes, the ripple amplitude decreases proportionally to 1/M, eventually reaching zero.",
+        "No, increasing M completely widens the transition band, making the ripple worse.",
+        "Yes, it perfectly flattens both the passband and the stopband."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-023",
+    "before": {
+      "question": "In Python's scipy.signal library, the function upfirdn is specifically designed to:",
+      "options": [
+        "Efficiently apply an FIR filter using a polyphase architecture while upsampling and downsampling.",
+        "Calculate the FFT of a decimated signal.",
+        "Automatically design an IIR filter using the bilinear transform.",
+        "Convert an FIR filter to an IIR lattice-ladder structure."
+      ]
+    },
+    "after": {
+      "question": "In Python's scipy.signal library, the function upfirdn is specifically designed to:",
+      "options": [
+        "Efficiently apply an FIR filter using a Polyphase architecture while simultaneously performing upsampling and downsampling.",
+        "Calculate the Fast Fourier Transform of a decimated signal.",
+        "Automatically design an IIR filter using the Bilinear Transform.",
+        "Convert an FIR filter to an IIR Lattice-Ladder structure."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-024",
+    "before": {
+      "question": "In a two-channel QMF bank with H1(z)=H0(-z), which conventional synthesis pair cancels the alias component?",
+      "options": [
+        "G0(z) = -H0(z) and G1(z) = -H0(-z)",
+        "G0(z) = H1(z) and G1(z) = H0(z)",
+        "G0(z) = 1/H0(z) and G1(z) = 1/H1(z)",
+        "G0(z) = H0(z) and G1(z) = -H0(-z)"
+      ]
+    },
+    "after": {
+      "question": "To completely cancel the aliasing term X(-z) generated by the downsamplers in a 2-Channel QMF bank, the classic mathematical solution dictates setting the synthesis filters G0(z) and G1(z) to:",
+      "options": [
+        "G0(z) = -H0(z) and G1(z) = H0(-z)",
+        "G0(z) = H1(z) and G1(z) = H0(z)",
+        "G0(z) = 1/H0(z) and G1(z) = 1/H1(z)",
+        "G0(z) = H0(z) and G1(z) = -H0(-z)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-025",
+    "before": {
+      "question": "When changing the sampling rate by a rational fractional factor I/D, what is the strictly required operational order to prevent irreversible information loss?",
+      "options": [
+        "Interpolate first, then filter and decimate.",
+        "Decimate first, then interpolate.",
+        "The order does not matter because both operations are linear.",
+        "Perform both simultaneously without intermediate filtering."
+      ]
+    },
+    "after": {
+      "question": "When changing the sampling rate by a rational fractional factor I/D, what is the strictly required operational order to prevent irreversible information loss?",
+      "options": [
+        "Always Interpolate",
+        "Always Decimate",
+        "The order does not matter because both are linear operations.",
+        "Both must be performed simultaneously without any intermediate filtering."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-031",
+    "before": {
+      "question": "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" W_N is introduced. How is it mathematically defined?",
+      "options": [
+        "W_N = exp(j2π/N)",
+        "W_N = exp(-j2π/N)",
+        "W_N = exp(-jπ/N)",
+        "W_N = exp(jπ/N)"
+      ]
+    },
+    "after": {
+      "question": "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" Wn is introduced. How is it mathematically defined?",
+      "options": [
+        "Wn = exp(j2π/n)",
+        "Wn = exp(-j2π/n)",
+        "Wn = exp(-jπ/n)",
+        "Wn = exp(jπ/n)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-033",
+    "before": {
+      "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = x(n)cos(2πk0n/N), its N-point DFT is:",
+      "options": [
+        "(1/2)·[X((k-k0) mod N)+X((k+k0) mod N)]",
+        "X(k)·exp(-j2πkk0/N)",
+        "(1/2)·X(k)cos(2πk0/N)",
+        "X((k-k0) mod N)"
+      ]
+    },
+    "after": {
+      "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = x(n)cos(2πk0n/N), its N-point DFT is:",
+      "options": [
+        "(1/2)·[X((k-k0) mod N) + X((k+k0) mod N)]",
+        "X(k)·exp(-j2πkk0/N)",
+        "(1/2)·X(k)cos(2πk0/N)",
+        "X((k-k0) mod N)"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-037",
+    "before": {
+      "question": "For the most efficient division in a standard Radix-2 FFT algorithm, the sequence length N must satisfy which specific condition?",
+      "options": [
+        "N = 2^v, where v is an integer.",
+        "N must be any even number.",
+        "N must be a prime number.",
+        "N = 4^k, where k is an integer."
+      ]
+    },
+    "after": {
+      "question": "For the most efficient division in a standard Radix-2 FFT algorithm, the sequence length N must satisfy which specific condition?",
+      "options": [
+        "N = 2, where v is an integer.",
+        "N must be any even number.",
+        "N must be a prime number.",
+        "N = 4, where k is an integer."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-038",
+    "before": {
+      "question": "Consider the 8-point DIT FFT of the step sequence x(n) = {0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0}. At the final computational stage (Stage 3), the calculation for the frequency bin X(1) involves a butterfly with inputs from Stage 2 and the twiddle factor W8^1 ≈ 0.707 - j0.707. Given that the top input to this specific butterfly is 0.5 and the bottom input (already multiplied by the twiddle) contributes to the phase, what is the exact complex value of X(1)?",
+      "options": [
+        "0.5 + j1.207",
+        "0.5 - j1.207",
+        "2.0 + j0",
+        "0 - j0.707"
+      ]
+    },
+    "after": {
+      "question": "Consider the 8-point DIT FFT of the step sequence x(n) = 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0. At the final computational stage (Stage 3), the calculation for the frequency bin X(1) involves a butterfly with inputs from Stage 2 and the twiddle factor W8^1 ≈ 0.707 - j0.707. Given that the top input to this specific butterfly is 0.5 and the bottom input (already multiplied by the twiddle) contributes to the phase, what is the exact complex value of X(1)?",
+      "options": [
+        "0.5 + j1.207",
+        "0.5 - j1.207",
+        "2.0 + j0",
+        "0 - j0.707"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-040",
+    "before": {
+      "question": "Using the standard radix-2 butterfly count, including trivial twiddle multiplications, how many complex multiplication steps are counted for a 1024-point DFT?",
+      "options": [
+        "1024",
+        "5120",
+        "10240",
+        "2048"
+      ]
+    },
+    "after": {
+      "question": "Calculate the total number of complex multiplications strictly required to compute a 1024-point DFT using the optimal Radix-2 FFT algorithm.",
+      "options": [
+        "1024",
+        "5120",
+        "10240",
+        "2048"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-041",
+    "before": {
+      "question": "In the fundamental DTFT frequency range [-π, π], frequencies near ω = 0 represent:",
+      "options": [
+        "The highest rate of oscillation.",
+        "The DC component (slowest variations).",
+        "The Nyquist frequency.",
+        "The phase distortion."
+      ]
+    },
+    "after": {
+      "question": "In the fundamental frequency range [-π, π] of the DTFT, the frequencies near ω = 0 represent:",
+      "options": [
+        "The highest rate of oscillation.",
+        "The DC component (slowest variations).",
+        "The Nyquist frequency.",
+        "The phase distortion."
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-042",
+    "before": {
+      "question": "Consider the causal decaying exponential sequence x(n) = a^n·u(n) with |a| < 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+      "options": [
+        "1/(1+a·exp(-jω))",
+        "1/(1-a·exp(-jω))",
+        "a/(1-exp(-jω))",
+        "1/(1-a·exp(jω))"
+      ]
+    },
+    "after": {
+      "question": "Consider the causal decaying exponential sequence x(n) = aⁿ·u(n) with |a| &lt; 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+      "options": [
+        "1/(1+a·exp(-jω))",
+        "1/(1-a·exp(-jω))",
+        "a/(1-exp(-jω))",
+        "1/(1-a·exp(jω))"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-043",
+    "before": {
+      "question": "Using the frequency differentiation property n·x(n) ↔ j·dX(ω)/dω, evaluate the DTFT of x(n) = n·a^n·u(n), for |a| < 1.",
+      "options": [
+        "a·exp(-jω)/(1-a·exp(-jω))²",
+        "a·exp(-jω)/(1+a·exp(-jω))²",
+        "exp(-jω)/(1-a·exp(-jω))²",
+        "-a·exp(-jω)/(1-a·exp(-jω))²"
+      ]
+    },
+    "after": {
+      "question": "Using the frequency differentiation property n·x(n) ↔ j·dX(ω)/dω, evaluate the DTFT of the sequence x(n) = n·aⁿu(n) for |a| < 1",
+      "options": [
+        "a·exp(-jω)/(1-a·exp(-jω))²",
+        "a·exp(-jω)/(1+a·exp(-jω))²",
+        "exp(-jω)/(1-a·exp(-jω))²",
+        "-a·exp(-jω)/(1-a·exp(-jω))²"
+      ]
+    }
+  },
+  {
+    "id": "dgt302-su26-fe-048",
+    "before": {
+      "question": "When x(n)=A·exp(jωn) passes through an LTI system, the output is y(n)=A·H(ω)·exp(jωn). Because the signal's shape does not change, complex exponentials are considered:",
+      "options": [
+        "Aliased signals of the system",
+        "Eigenfunctions of LTI systems",
+        "Transient responses",
+        "Notch frequencies"
+      ]
+    },
+    "after": {
+      "question": "When a complex exponential sequence x(n) = A·exp(jωn) passes through an LTI system, it emerges as y(n) = A·H(ω)·exp(jωn). Because the signal's shape does not change, complex exponentials are considered:",
+      "options": [
+        "Aliased signals of the system",
+        "Eigenfunctions of LTI systems",
+        "Transient responses",
+        "Notch frequencies"
+      ]
+    }
+  }
+]

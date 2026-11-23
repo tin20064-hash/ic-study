@@ -1,0 +1,224 @@
+/* The same palette tokens paint the live page and its theme preview. */
+:is(body[data-palette="crimson-ops"], [data-bold-preset="crimson-ops"]) {
+ --bg:#110e14;
+ --paper:#1c1720;
+ --surface:#1c1720;
+ --surface-strong:#2a1d27;
+ --ink:#f5edf1;
+ --muted:#c7b5c0;
+ --line:#4a3643;
+ --accent:#ff738a;
+ --accent-rgb:255,115,138;
+ --accent-light:#43212f;
+ --soft:#2d1e29;
+ --on-accent:#21131a;
+ --theme-radius:10px;
+ --theme-art:linear-gradient(132deg,transparent 51%,#ba334a70 51% 51.6%,#6a1a2e88 51.6% 66%,transparent 66%),
+  repeating-linear-gradient(132deg,transparent 0 21px,#f697aa17 21px 22px),
+  radial-gradient(ellipse at 93% 10%,#5a1d38,#18111c 61%,#100d13);
+}
+:is(body[data-palette="neon-circuit"], [data-bold-preset="neon-circuit"]) {
+ --bg:#0b141a;
+ --paper:#122127;
+ --surface:#122127;
+ --surface-strong:#152f35;
+ --ink:#e6faf5;
+ --muted:#b0c7c8;
+ --line:#315259;
+ --accent:#61ebc6;
+ --accent-rgb:97,235,198;
+ --accent-light:#1c423f;
+ --soft:#172e34;
+ --on-accent:#082621;
+ --theme-radius:8px;
+ --theme-art:repeating-linear-gradient(0deg,transparent 0 26px,#58f4c52f 26px 27px),
+  repeating-linear-gradient(90deg,transparent 0 26px,#58f4c52f 26px 27px),
+  radial-gradient(ellipse at 78% 20%,#19565e66,transparent 64%),
+  linear-gradient(132deg,#102230,#191433 72%,#271b46);
+}
+:is(body[data-palette="ironworks"], [data-bold-preset="ironworks"]) {
+ --bg:#171511;
+ --paper:#25211b;
+ --surface:#25211b;
+ --surface-strong:#332b20;
+ --ink:#f7efe1;
+ --muted:#d0c1aa;
+ --line:#564733;
+ --accent:#ffc16b;
+ --accent-rgb:255,193,107;
+ --accent-light:#49371e;
+ --soft:#32291f;
+ --on-accent:#2b1c0b;
+ --theme-radius:6px;
+ --theme-art:linear-gradient(90deg,#201b15 18%,#322315aa 58%,#3b281433),
+  repeating-linear-gradient(-45deg,#170f0c 0 15px,#97551b 15px 30px),
+  #2c2218;
+}
+:is(body[data-palette="steel-blueprint"], [data-bold-preset="steel-blueprint"]) {
+ --bg:#e7edf4;
+ --paper:#f8fbfe;
+ --surface:#f8fbfe;
+ --surface-strong:#e9f1fa;
+ --ink:#1a2d48;
+ --muted:#465d78;
+ --line:#aebfd2;
+ --accent:#214d9b;
+ --accent-rgb:33,77,155;
+ --accent-light:#d7e6f7;
+ --soft:#e0ecf9;
+ --on-accent:#fff;
+ --theme-radius:6px;
+ --theme-art:repeating-linear-gradient(0deg,transparent 0 23px,#294e8c25 23px 24px),
+  repeating-linear-gradient(90deg,transparent 0 23px,#294e8c25 23px 24px),
+  linear-gradient(120deg,#edf4fb,#a9c6e7);
+}
+
+.look-bold-heading{margin-top:14px}
+.look-grid.look-grid-bold{grid-template-columns:repeat(2,minmax(0,1fr))}
+.look-grid-bold .look-card{min-width:0}
+.look-sample[data-bold-preset],.theme-wall-preview{background:var(--theme-art)}
+.look-sample[data-bold-preset]{color:var(--accent);font-size:27px;min-height:52px}
+.theme-wall-preview{height:82px}
+
+body[data-look-style="bold"]{
+ --green:var(--accent);
+ --answer-bg:var(--surface);
+ --answer-letter:var(--soft);
+ --answer-selected:var(--accent-light);
+ --ok-bg:#e6f3ea;
+ --ok-line:#78aa88;
+ --ok-ink:#255838;
+ --error-bg:#f8e3e5;
+ --error-line:#cc7a86;
+ --error-ink:#873345;
+ --warning-bg:#f7ecd6;
+ --warning-line:#c4a064;
+ --warning-ink:#6c4b16;
+ --red:var(--error-ink);
+ background:var(--bg);
+ color:var(--ink);
+}
+body[data-look-tone="dark"]{
+ --ok-bg:#20382a;
+ --ok-line:#79b794;
+ --ok-ink:#b3ebc6;
+ --error-bg:#422630;
+ --error-line:#cd8695;
+ --error-ink:#ffb5bf;
+ --warning-bg:#3c301f;
+ --warning-line:#b99555;
+ --warning-ink:#f4d89e;
+ color-scheme:dark;
+}
+body[data-look-style="bold"]::after{
+ background:var(--theme-art);
+ opacity:clamp(.20,calc(.32 + var(--wall-opacity) * 2),.92);
+ z-index:-3;
+}
+body[data-look-style="bold"]:not([data-user-wallpaper="true"])::before{background:none}
+body[data-look-style="bold"][data-user-wallpaper="true"]::after{opacity:.28}
+body[data-look-style="bold"]:not([data-user-wallpaper="true"]) .hero{background:var(--theme-art)}
+body[data-look-style="bold"]:not([data-user-wallpaper="true"]) :is(.hero-background,.hero-backdrop,.hero-caption){display:none}
+body[data-look-style="bold"] .hero::before{
+ background:linear-gradient(95deg,var(--surface) 0%,color-mix(in srgb,var(--surface) 94%,transparent) 36%,transparent 86%)
+}
+body[data-look-style="bold"]:not([data-user-wallpaper="true"]) :is(.sidebar-buddy,.study-companion-avatar){
+ background:var(--theme-art);
+}
+body[data-look-style="bold"]:not([data-user-wallpaper="true"]) .study-companion-avatar{
+ display:grid;place-items:center;color:var(--accent);font-size:25px
+}
+body[data-look-style="bold"]:not([data-user-wallpaper="true"]) .study-companion-avatar::after{content:var(--choice-symbol)}
+body[data-look-style="bold"] .brandcaption{font-size:0}
+body[data-look-style="bold"] .brandcaption::after{content:"ÔN TẬP VÀ THI THỬ";color:var(--muted);font-size:8px}
+body[data-look-style="bold"] .question-card::before{display:none}
+body[data-palette="neon-circuit"] :is(.eyebrow,.course-code,.timer){
+ font-family:"Cascadia Code",Consolas,monospace
+}
+body[data-palette="ironworks"] :is(.question-card,.hero,.sidebar){border-top:2px solid var(--accent)}
+body[data-palette="steel-blueprint"] :is(.course,.question-card,.hero){box-shadow:3px 3px 0 #214d9b19}
+body[data-look-style="bold"] :is(.hero,.question-card,.panel,.course,.stat,.brief-card,.look-card,.look-control){
+ border-radius:var(--theme-radius);
+}
+body[data-look-style="bold"] :is(.topbar,.sidebar,.panel,.stat,.course,.list-item,.support-card,.study-exam:nth-child(n),dialog,.look-card,.look-control,.source-caption,.greeting-tag,.theme-trigger,.iconbtn,.sidebar-toggle,.hero-hd-btn,.btn,.bookmark,.chip,.hd-fit-select,.ic-sync-banner){
+ background:var(--surface);
+ border-color:var(--line);
+}
+body[data-look-style="bold"] :is(.panel,.course,dialog,.greeting h1,.stat strong,.list-item h3,.support-card strong,.study-exam h3,.study-task-main h3,.look-card strong,.look-heading,.hd-info-title,.score-card){
+ color:var(--ink);
+}
+body[data-look-style="bold"] :is(.quiet,.tiny,.muted,.setup-note,.field,.page-head p,.greeting p,.greeting .date,.section-head p,.progress-label,.stat span,.stat strong .total-count,.course p,.list-item p,.support-card p,.study-exam p,.study-exam small,.question-meta span span,.legend,.shortcuts,.crumb-home,.navtitle,.source-caption,.look-lead,.look-note,.look-control label,.look-card>span:last-child,.brief-card p,.brief-tip,.account-sync-state){
+ color:var(--muted);
+}
+body[data-look-style="bold"] dialog p{color:var(--muted)}
+body[data-look-style="bold"] :is(.eyebrow,.textbtn,.course-bottom .textbtn,.course-code,.greeting-tag,.theme-trigger,.hero-hd-btn,.iconbtn,.bookmark,.btn,.chip,.timer,.offline-pill,.look-palette-label,.look-control>strong){
+ color:var(--accent);
+}
+body[data-look-style="bold"] :is(.stat .stat-icon,.course-icon,.navbtn .count,.pill,.tip,kbd,.timer,.course-code,.study-deadline){
+ color:var(--accent);
+ background:var(--soft);
+ border-color:var(--line);
+}
+body[data-look-style="bold"] :is(.course:hover,.btn:hover,.look-card.active,.look-card:hover,.navbtn:hover,.chip:hover){
+ border-color:var(--accent);
+}
+body[data-look-style="bold"] :is(.look-card.active,.btn:not(.primary):not(:disabled):hover,.iconbtn:hover,.sidebar-toggle:hover,.navbtn:not(.active):hover){
+ background:var(--soft);
+}
+body[data-look-style="bold"] .btn.primary,
+body[data-look-style="bold"] .question-card .option.selected .letter {
+ background:var(--accent);
+ border-color:var(--accent);
+ color:var(--on-accent);
+}
+body[data-look-style="bold"] .btn.primary:hover{background:color-mix(in srgb,var(--accent) 85%,var(--ink))}
+body[data-look-style="bold"] :is(select,input:not([type="range"]):not([type="checkbox"]),textarea){
+ background:var(--paper);border-color:var(--line);color:var(--ink)
+}
+body[data-look-style="bold"] input::placeholder{color:var(--muted)}
+body[data-look-style="bold"] :is(.progress,.legend i.empty){background:var(--line)}
+body[data-look-style="bold"] :is(.progress i,.offline-pill i){background:var(--accent)}
+body[data-look-style="bold"] :is(.warning,.hd-advice.warn,.pill.amber,.study-exam-event,.bookmark.saved){
+ background:var(--warning-bg);border-color:var(--warning-line);color:var(--warning-ink)
+}
+body[data-look-style="bold"] :is(.warning p,.study-exam-event p){color:inherit}
+body[data-look-style="bold"] :is(.feedback,.hd-advice){
+ background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok-ink)
+}
+body[data-look-style="bold"] :is(.feedback.bad,.pill.red,.timer.urgent){
+ background:var(--error-bg);border-color:var(--error-line);color:var(--error-ink)
+}
+body[data-look-style="bold"] :is(.feedback h3,.feedback p,.feedback.bad h3){color:inherit}
+body[data-look-style="bold"] .question-card .option.correct{background:var(--ok-bg);border-color:var(--ok-line);box-shadow:inset 3px 0 var(--ok-line)}
+body[data-look-style="bold"] .question-card .option.incorrect{background:var(--error-bg);border-color:var(--error-line);box-shadow:inset 3px 0 var(--error-line)}
+body[data-look-style="bold"] .question-card .option.correct .letter{background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok-ink)}
+body[data-look-style="bold"] .question-card .option.incorrect .letter{background:var(--error-bg);border-color:var(--error-line);color:var(--error-ink)}
+body[data-look-style="bold"] .score-card{background:var(--surface-strong);border-color:var(--line)}
+body[data-look-style="bold"] .score-card p{color:var(--muted)}
+body[data-look-style="bold"] .question-card[data-mode="exam"] .bookmark.saved{
+ background:var(--soft);border-color:var(--accent);color:var(--accent)
+}
+body[data-look-tone="dark"] .navigator{
+ --question-done:var(--ok-bg);
+ --question-done-border:var(--ok-line);
+ --question-done-ink:var(--ok-ink)
+}
+body[data-look-tone="dark"] .navigator[data-mode="exam"]{
+ --question-done:#34404c;
+ --question-done-border:#8293a6;
+ --question-done-ink:#e1e7ee
+}
+body[data-look-tone="dark"] .navigator :is(.number-grid .qnumber.done.wrong,.legend i.wrong){
+ --question-done:var(--error-bg);
+ --question-done-border:var(--error-line);
+ --question-done-ink:var(--error-ink)
+}
+body[data-look-style="bold"] :is(a,button,input,select,textarea):focus-visible{
+ outline-color:var(--accent);
+}
+@media(max-width:520px){
+ body[data-look-style="bold"] .hero::before{background:linear-gradient(0deg,var(--surface) 24%,transparent 82%)}
+}
+@media print{
+ body[data-look-style="bold"] :is(.brief-intro h2,.brief-card h3,.brief-final h3,.brief-intro p,.brief-final p,.brief-tip){color:#222!important}
+}

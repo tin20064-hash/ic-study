@@ -1,0 +1,199 @@
+01 A frequency discriminator is used for:
+A. Modulation | B. Amplification | C. Demodulation of FM signals | D. Filtering
+KEY [2] MATCH COS201-835 1.0 REUSE COS201-835
+
+02 FM noise power grows proportional to:
+A. W | B. W² | C. W³ | D. 1/W
+KEY [2] MATCH COS201-924 0.4324 REUSE 
+
+03 Standard AM transmits:
+A. Only sidebands | B. Only carrier | C. Carrier and sidebands | D. Noise only
+KEY [2] MATCH COS201-822 1.0 REUSE COS201-822
+
+04 White noise has which property?
+A. Limited bandwidth | B. Flat power spectral density | C. Zero power | D. Time-varying amplitude only
+KEY [1] MATCH COS201-819 0.9836 REUSE COS201-819
+
+05 FM threshold effect typically occurs around:
+A. OdB | B. 5dB | C. IOdB | D. 20 dB
+KEY None MATCH COS201-836 1.0 REUSE 
+
+06 Maximum efficiency of AM (Figure of Merit) is:
+A. 1 | B. 1/2 | C. 1/3 | D. 2
+KEY [2] MATCH COS201-948 0.5 REUSE 
+
+07 Which of the following is NOT a benefit of using a carrier?
+A. Efficient radiation | B. Frequency separation of signals | C. Reduced bandwidth | D. Long-distance transmission
+KEY [2] MATCH COS201-813 1.0 REUSE COS201-813
+
+08 The main advantage of SSB is:
+A. Simplicity | B. Power loss | C. Bandwidth efficiency | D. Noise increase
+KEY [2] MATCH COS201-825 1.0 REUSE COS201-825
+
+09 A mixer produces which frequency components?
+A. Only original frequency | B. Sum and difference frequencies | C. Only harmonic frequencies | D. DC component
+KEY [1] MATCH COS201-808 1.0 REUSE COS201-808
+
+10 Multiplexing is defined as:
+A. Splitting signals | B. Amplifying signals | C. Combining multiple signals into one channel | D. Removing noise
+KEY [2] MATCH COS201-824 1.0 REUSE COS201-824
+
+11 In QAM, signals are separated using:
+A. High-pass filters | B. Low-pass filters after demodulation | C. Amplifiers 1.11 | D. Noise filters
+KEY [1] MATCH COS201-821 1.0 REUSE COS201-821
+
+12 The 3 dB penalty in BFSK is due to:
+A. Noise | B. Orthogonal signaling | C. Frequency shift | D. Bandwidth
+KEY None MATCH COS201-1007 0.5763 REUSE 
+
+13 Why is FSK robust to nonlinear amplifiers?
+A. Uses phase | B. Uses frequency | C. Constant amplitude | D. Uses I/Q
+KEY [2] MATCH COS201-814 0.988 REUSE COS201-814
+
+14 Why is OFDM effective in multipath channels?
+A. Uses amplitude | B. Uses phase | C. Splits Signal into narrow subcarriers | D. Uses noise
+KEY [2] MATCH COS201-817 0.9885 REUSE COS201-817
+
+15 If FFT is used at receiver, it performs:
+A. Modulation | B. Demultiplexing subcarriers | C. Noise removal | D. Amplification
+KEY [1] MATCH COS201-847 1.0 REUSE COS201-847
+
+16 If subcarriers in OFDM are not orthogonal, result is:
+A. Noise reduction | B. Interference | C. Bandwidth reduction | D. Perfect signal
+KEY [1] MATCH COS201-833 1.0 REUSE COS201-833
+
+17 What is a key advantage of the layered approach in communication system design?
+A. It increases signal strength | B. It simplifies system design and allows independent development of system components | C. It eliminates the need for modulation | D. It reduces transmission delay | E. It increases bandwidth efficiency
+KEY [1] MATCH COS201-828 0.9936 REUSE COS201-828
+
+18 What is the primary function of the transmitter?
+A. To generate the message Signal | B. To store transmitted information | C. To convert the message into a signal suitable for transmission | D. To detect noise in the channel | E. To deliver the message to the destination
+KEY [2] MATCH COS201-844 0.9895 REUSE COS201-844
+
+19 What is the primary effect of noise in a communication system?
+A. It increases transmission speed | B. It reduces power consumption | C. It limits system performance | D. It improves Signal quality | E. It increases bandwidth
+KEY [2] MATCH COS201-818 1.0 REUSE COS201-818
+
+20 Why is the receiver generally more complex than the transmitter?
+A. It consumes more energy | B. It includes more hardware components | C. It must process weak signals and compensate for channel impairments | D. It operates at higher frequencies | E. It does not use modulation
+KEY [2] MATCH COS201-809 1.0 REUSE COS201-809
+
+21 In angle-modulated signals, information is contained in:
+A. Amplitude variations | B. Frequency or phase variations | C. Power variations | D. DC components
+KEY [1] MATCH COS201-803 1.0 REUSE COS201-803
+
+22 A PLL is considered locked when:
+A. Frequency differs | B. Phase error is constant | C. Phase error is zero or constant | D. Signal amplitude is zero
+KEY [2] MATCH COS201-806 1.0 REUSE COS201-806
+
+23 In frequency modulation (FM), which quantity varies with the message signaP
+A. Phase only | B. Frequency | C. Amplitude | D. Power
+KEY [1] MATCH COS201-838 0.9861 REUSE COS201-838
+
+24 The bandwidth of NBFM is approximately:
+A. W | B. 2W | C. Infinite | D. W/2
+KEY [1] MATCH COS201-842 0.8172 REUSE 
+
+25 If a signal is sampled at exactly the Nyquist rate, what is the practical limitation?
+A. Perfect reconstruction is impossible | B. Spectral replicas overlap | C. No guard band for filter roll-off | D. Signal amplitude is reduced
+KEY [2] MATCH COS201-805 0.994 REUSE COS201-805
+
+26 PCM bandwidth requirement increases with:
+A. Sampling rate | B. Bit depth | C. Number of channels | D. All of the above
+KEY [3] MATCH COS201-810 1.0 REUSE COS201-810
+
+27 Increasing sampling rate in DM helps to:
+A. Increase noise | B. Reduce slope overload | C. Increase distortion | D. Reduce bandwidth
+KEY [1] MATCH COS201-849 1.0 REUSE COS201-849
+
+28 Delta Modulation transmits:
+A. Full amplitude | B. Only difference between samples | C. Frequency only | D. Phase only
+KEY None MATCH COS201-812 1.0 REUSE 
+
+29 What is the main advantage of digital communication over analog?
+A. Higher bandwidth | B. Noise accumulation immunity | C. Lower cost always | D. Simpler circuits
+KEY None MATCH COS201-804 0.9921 REUSE 
+
+30 The Nyquist rate is defined as:
+A. fs = W | B. fs = 2W | C. fs = 4W | D. fs = W/2
+KEY [1] MATCH COS201-811 1.0 REUSE COS201-811
+
+31 If prefix condition is violated, decoder will:
+A. Work normally | B. Become ambiguous | C. Increase speed | D. Reduce noise | E. Instantaneous decoding is not guaranteed; unique decoding with lookahead may still be possible
+KEY [4] MATCH COS201-990 0.5361 REUSE 
+
+32 Why is information defined using a logarithmic function?
+A. To simplify equations | B. To satisfy additivity property | C. To reduce noise | D. To increase entropy
+KEY [1] MATCH COS201-834 0.991 REUSE COS201-834
+
+33 Why do modern codes outperform simple codes?
+A. Use more bandwidth | B. Use structured redundancy | C. Use less power | D. Use fewer bits
+KEY [1] MATCH COS201-800 1.0 REUSE COS201-800
+
+34 If LZ dictionary grows larger, compression ratio will:
+A. Decrease | B. Increase | C. Stay same | D. Become zero | E. It depends on repeated patterns and the cost of larger dictionary indices
+KEY [4] MATCH COS201-990 0.4762 REUSE 
+
+35 What preparation can make static Huffman coding less suitable for real-time streaming of an unknown source?
+A. High noise | B. Requires full source statistics | C. Low efficiency | D. High bandwidth
+KEY None MATCH COS201-882 0.4684 REUSE 
+
+36 The condition for BIBO stability in an LTI system is:
+A. Finite frequency response | B. Finite impulse response energy | C. Absolutely integrable impulse response | D. Periodic impulse response | E. Linear phase response
+KEY [2] MATCH COS201-840 0.9714 REUSE COS201-840
+
+37 Time shifting in the time domain corresponds to what in the frequency domain?
+A. Amplitude scaling | B. Phase shift | C. Frequency scaling | D. Convolution | E. Noise addition
+KEY [1] MATCH COS201-846 1.0 REUSE COS201-846
+
+38 The Fourier transform of a signal exists if the signal is:
+A. Periodic | B. Absolutely integrable | C. Constant | D. Discrete | E. Linear
+KEY [1] MATCH COS201-839 0.6404 REUSE 
+
+39 A filter is defined as:
+A. A noise generator | B. A frequency-selective system | C. A signal amplifier | D. A digital encoder | E. A storage device
+KEY [1] MATCH COS201-820 1.0 REUSE COS201-820
+
+40 An ideal low-pass filter has which characteristic?
+A. Smooth transition | B. Exponential response | C. Rectangular frequency response | D. Random response | E. Linear response
+KEY [2] MATCH COS201-830 0.9899 REUSE COS201-830
+
+41 Conditional probability is used to:
+A. Compute total probability | B. Evaluate probability given prior information | C. Eliminate noise | D. Increase bandwidth
+KEY [1] MATCH COS201-841 1.0 REUSE COS201-841
+
+42 A Gaussian distribution is fully determined by:
+A. One parameter | B. Two parameters | C. Three parameters | D. Four parameters
+KEY [1] MATCH COS201-826 1.0 REUSE COS201-826
+
+43 What does the cumulative distribution function (CDF) represent?
+A. Instantaneous value | B. Accumulated probability up to a value | C. Signal power | D. Frequency content
+KEY [1] MATCH COS201-831 1.0 REUSE COS201-831
+
+44 Which property is true for a valid CDFQ
+A. It decreases | B. It is non-decreasing | C. Itis negative | D. It is constant
+KEY [1] MATCH COS201-843 0.987 REUSE COS201-843
+
+45 Standard deviation is:
+A. Variance squared | B. Square root of variance | C. Sum of vanance | D. Logofvanance
+KEY [1] MATCH COS201-848 1.0 REUSE COS201-848
+
+46 ISI mainly occurs due to:
+A. Infinite bandwidth | B. Band-limited channels | C. Sampling | D. Encoding
+KEY None MATCH COS201-849 0.4762 REUSE 
+
+47 Why is matched filter equivalent to a correlator
+A. It integrates noise | B. It compares Signal with template | C. It amplifies signal | D. It removes ISI
+KEY [1] MATCH COS201-807 1.0 REUSE COS201-807
+
+48 Why does BER decrease exponentially with Eb/N0?
+A. Linear relation | B. Q-function behavior | C. Noise decreases linearly | D. Signal increases linearly
+KEY None MATCH COS201-802 0.6241 REUSE 
+
+49 Why does matched filter maximize SNRQ
+A. It removes noise | B. It matches signal spectrum | C. It increases bandwidth | D. It reduces energy
+KEY None MATCH COS201-807 0.5882 REUSE 
+
+50 Why is ISI harder to handle than noise?
+A. It is random | B. It is deterministic | C. It is weaker | D. It is filtered
+KEY None MATCH COS201-934 0.481 REUSE 

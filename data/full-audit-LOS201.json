@@ -1,0 +1,3903 @@
+{
+  "subject": "LOS201",
+  "reviewedAt": "2026-11-09",
+  "method": "Read every stem, all options, current key and embedded explanation for all 200 rows; independently assessed semantic correctness. Consulted primary project/man-page documents for historical/version-sensitive/API details. Inspected original screenshots 39, 48, 96 to restore missing literal content. This is not a claim that every historical/lab assertion has separate documentary proof.",
+  "questionCount": 200,
+  "keywordCount": 12,
+  "changedKeyCount": 1,
+  "proposedChangeCount": 29,
+  "ledger": [
+    {
+      "id": "LOS201-13",
+      "status": "reviewed",
+      "rationale": "smemcap collects target memory data for analysis on a host.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-14",
+      "status": "change",
+      "rationale": "Exhausted allocation resources can trigger OOM recovery and process killing.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-15",
+      "status": "reviewed",
+      "rationale": "Mapped device memory avoids repeated read/write syscall overhead; synchronization is separate.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-16",
+      "status": "reviewed",
+      "rationale": "Distribution build automation scales dependency integration across many packages.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-17",
+      "status": "reviewed",
+      "rationale": "Automated dependencies and recipes support repeatable complete-system builds.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-18",
+      "status": "reviewed",
+      "rationale": "Dependency and version tracking are software build-system responsibilities.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-19",
+      "status": "reviewed",
+      "rationale": "Real-time correctness includes meeting deadlines, not maximum average speed.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-20",
+      "status": "reviewed",
+      "rationale": "Worst-case latency determines whether a deadline can be missed.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-21",
+      "status": "reviewed",
+      "rationale": "NAND density makes it the usual large-capacity flash choice.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-22",
+      "status": "reviewed",
+      "rationale": "Cross-development uses a host to produce software for another platform.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-23",
+      "status": "reviewed",
+      "rationale": "In the chapter boot model, boot code and a usable rootfs complement the kernel.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-24",
+      "status": "reviewed",
+      "rationale": "BusyBox includes the ash shell applet.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "BusyBox manual",
+          "url": "https://www.busybox.net/downloads/BusyBox.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-25",
+      "status": "change",
+      "rationale": "The invocation name selects the multicall applet; ls was OCRed as Is.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "BusyBox manual",
+          "url": "https://www.busybox.net/downloads/BusyBox.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-26",
+      "status": "reviewed",
+      "rationale": "VFS exposes common file operations and dispatches driver callbacks.",
+      "currentAnswer": [
+        0,
+        2
+      ],
+      "proposedAnswer": [
+        0,
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-27",
+      "status": "reviewed",
+      "rationale": "Module parameters permit load-time configuration; permission zero suppresses sysfs exposure.",
+      "currentAnswer": [
+        0,
+        2
+      ],
+      "proposedAnswer": [
+        0,
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-28",
+      "status": "reviewed",
+      "rationale": "modprobe consults module dependency metadata, unlike a direct insmod insertion.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-29",
+      "status": "reviewed",
+      "rationale": "Architecture head code prepares the CPU environment for kernel startup.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-30",
+      "status": "reviewed",
+      "rationale": "Linker sections collect registered boot handlers without a manually maintained list.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-31",
+      "status": "reviewed",
+      "rationale": "A remote stub mediates host GDB control of target execution.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-32",
+      "status": "reviewed",
+      "rationale": "Profiling identifies actual CPU bottlenecks before optimization.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-33",
+      "status": "reviewed",
+      "rationale": "Volatile RAM cannot retain configuration across power loss.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-34",
+      "status": "reviewed",
+      "rationale": "Compression exchanges storage savings for decompression work.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-35",
+      "status": "reviewed",
+      "rationale": "BitBake require includes mandatory metadata and fails if it cannot be found.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-36",
+      "status": "reviewed",
+      "rationale": "BBLAYERS is configured in bblayers.conf.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-37",
+      "status": "reviewed",
+      "rationale": "IMAGE_INSTALL determines packages requested for an image.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-38",
+      "status": "reviewed",
+      "rationale": "A minimal console device supports init and standard terminal interaction.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-39",
+      "status": "change",
+      "rationale": "Original screenshot restores both BusyBox inittab entries; sysinit precedes askfirst.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "BusyBox example inittab (project source)",
+          "url": "https://raw.githubusercontent.com/mirror/busybox/master/examples/inittab"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-40",
+      "status": "reviewed",
+      "rationale": "User-space initialization prepares mounts, devices and services after the kernel starts.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-41",
+      "status": "reviewed",
+      "rationale": "Threads share process resources; ordinary processes have separate address spaces.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-42",
+      "status": "reviewed",
+      "rationale": "The condition and its updates need mutex-protected shared-state access.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-43",
+      "status": "reviewed",
+      "rationale": "A daemon provides background service without requiring an interactive terminal.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-44",
+      "status": "reviewed",
+      "rationale": "Event-driven interrupts commonly avoid wasteful continuous polling at low event rates.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-45",
+      "status": "reviewed",
+      "rationale": "Virtual mappings enforce separation and access permissions.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-46",
+      "status": "reviewed",
+      "rationale": "U-Boot Falcon Mode lets SPL boot an OS without full U-Boot.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-47",
+      "status": "reviewed",
+      "rationale": "U-Boot is the common configurable bootloader among these embedded choices.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-48",
+      "status": "change",
+      "rationale": "QEMU vexpress-a9 maps RAM from 0x60000000; zero maps flash.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "QEMU vexpress implementation",
+          "url": "https://gitlab.com/qemu-project/qemu/-/raw/master/hw/arm/vexpress.c"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-49",
+      "status": "reviewed",
+      "rationale": "Kernel failures can affect the whole system; early boot limits tools.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-50",
+      "status": "reviewed",
+      "rationale": "KGDB provides remote GDB debugging of kernel execution.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-51",
+      "status": "reviewed",
+      "rationale": "dmesg reads the kernel message ring buffer.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-52",
+      "status": "reviewed",
+      "rationale": "A network root device requires a working NFS server/export.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-53",
+      "status": "reviewed",
+      "rationale": "Bootloaders commonly use TFTP to fetch images.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-54",
+      "status": "reviewed",
+      "rationale": "Serial output is usable before network services are configured.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-55",
+      "status": "reviewed",
+      "rationale": "Arbitrary flash overwrites may violate erase/program constraints; not every one-to-zero write requires a fresh erase.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-56",
+      "status": "reviewed",
+      "rationale": "UBIFS is layered over UBI volumes.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-57",
+      "status": "reviewed",
+      "rationale": "MTD abstracts raw memory technology devices and hardware operations.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-58",
+      "status": "reviewed",
+      "rationale": "System calls mediate services supplied by the kernel to applications.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-59",
+      "status": "reviewed",
+      "rationale": "Unsupported peripherals require new or adapted device support.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-60",
+      "status": "change",
+      "rationale": "vmlinux is the uncompressed ELF kernel artifact; restore zImage/uImage spelling.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-61",
+      "status": "change",
+      "rationale": "built-in.o is a legacy aggregation artifact; modern kernels use built-in.a.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Legacy Linux Kbuild documentation (kernel source)",
+          "url": "https://android.googlesource.com/kernel/common/+/d8f48457d5af6601abdecaad7a95c45bfeef90d5/Documentation/kbuild/makefiles.txt"
+        },
+        {
+          "title": "Linux Kbuild Makefiles",
+          "url": "https://www.kernel.org/doc/html/v5.5/kbuild/makefiles.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-62",
+      "status": "reviewed",
+      "rationale": "Generated autoconf.h exposes CONFIG symbols to C compilation.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-63",
+      "status": "reviewed",
+      "rationale": "Pages are fixed-size mapping and memory-management units.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-64",
+      "status": "reviewed",
+      "rationale": "Shared mappings support IPC without an additional transfer copy per update.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-65",
+      "status": "reviewed",
+      "rationale": "proc PID maps describes mapped virtual-address ranges.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-66",
+      "status": "reviewed",
+      "rationale": "Yocto layers separate reusable board, distribution and application metadata.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-67",
+      "status": "reviewed",
+      "rationale": "Image package and feature selection control filesystem size.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-68",
+      "status": "reviewed",
+      "rationale": "Shared recipes plus platform-specific BSP configuration reduce duplication.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-69",
+      "status": "reviewed",
+      "rationale": "Preemption and real-time scheduling can reduce critical-task latency.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-70",
+      "status": "reviewed",
+      "rationale": "Worst-case interrupt/scheduling delay governs periodic deadline guarantees.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-71",
+      "status": "reviewed",
+      "rationale": "Defined interfaces separate responsibilities among boot and runtime layers.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-72",
+      "status": "reviewed",
+      "rationale": "Boot code initializes enough hardware to load and enter the kernel.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-73",
+      "status": "reviewed",
+      "rationale": "Linux supplies mature OS services and isolation that bare-metal code must otherwise provide.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-74",
+      "status": "reviewed",
+      "rationale": "The multicall executable shares implementation between utilities.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "BusyBox manual",
+          "url": "https://www.busybox.net/downloads/BusyBox.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-75",
+      "status": "reviewed",
+      "rationale": "Utilities share one executable rather than separate duplicated binaries.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "BusyBox manual",
+          "url": "https://www.busybox.net/downloads/BusyBox.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-76",
+      "status": "reviewed",
+      "rationale": "The vexpress PL011 UART and ttyAMA0 console match the documented hardware.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "QEMU Versatile Express board documentation",
+          "url": "https://www.qemu.org/docs/master/system/arm/vexpress.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-77",
+      "status": "reviewed",
+      "rationale": "Init-only code/data may be reclaimed once startup completes.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-78",
+      "status": "reviewed",
+      "rationale": "Release support affects the availability and cost of maintenance fixes.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-79",
+      "status": "reviewed",
+      "rationale": "populate_sdk builds an image-specific SDK and sysroot.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-80",
+      "status": "reviewed",
+      "rationale": "A BSP packages board-specific metadata and software support.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-81",
+      "status": "change",
+      "rationale": "A usable no-MMU Linux build has different mapping/protection limits; an MMU-only build is not a working fallback.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux no-MMU mapping support",
+          "url": "https://www.kernel.org/doc/html/latest/admin-guide/mm/nommu-mmap.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-82",
+      "status": "reviewed",
+      "rationale": "Interrupt delivery transfers execution to a handler for an event.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-83",
+      "status": "reviewed",
+      "rationale": "Device node numbers and registered operations are both required for conventional character-device access.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-84",
+      "status": "reviewed",
+      "rationale": "Invalid callback execution can crash; a NULL optional open callback alone is not sufficient.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-85",
+      "status": "reviewed",
+      "rationale": "Major selects the driver path and minor identifies a managed instance.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-86",
+      "status": "reviewed",
+      "rationale": "An x86-hosted compiler producing ARM code is cross-compilation.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-87",
+      "status": "reviewed",
+      "rationale": "Network images/rootfs shorten development iterations without repeated flashing.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-88",
+      "status": "reviewed",
+      "rationale": "An NFS-mounted rootfs reads the host-exported files rather than a baked kernel copy.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-89",
+      "status": "reviewed",
+      "rationale": "nm reports object-file symbol information.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-90",
+      "status": "reviewed",
+      "rationale": "Without debug information GDB lacks source-level variable/line mappings.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-91",
+      "status": "reviewed",
+      "rationale": "SquashFS supplies compressed read-only filesystem images.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-92",
+      "status": "reviewed",
+      "rationale": "tmpfs uses volatile memory and may be backed by swap.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-93",
+      "status": "reviewed",
+      "rationale": "arch directories contain CPU and machine-dependent implementations.",
+      "currentAnswer": [
+        0,
+        2
+      ],
+      "proposedAnswer": [
+        0,
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-94",
+      "status": "reviewed",
+      "rationale": "Legacy ARM mach directories hold platform-specific support.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-95",
+      "status": "change",
+      "rationale": "Legacy built-in.o intermediates and final vmlinux expose the linked code path.",
+      "currentAnswer": [
+        0,
+        2
+      ],
+      "proposedAnswer": [
+        0,
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Legacy Linux Kbuild documentation (kernel source)",
+          "url": "https://android.googlesource.com/kernel/common/+/d8f48457d5af6601abdecaad7a95c45bfeef90d5/Documentation/kbuild/makefiles.txt"
+        },
+        {
+          "title": "Linux Kbuild Makefiles",
+          "url": "https://www.kernel.org/doc/html/v5.5/kbuild/makefiles.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-96",
+      "status": "change",
+      "rationale": "Original image restores kernel/DTB arguments; absence of a usable rootfs explains the VFS panic.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "QEMU Versatile Express board documentation",
+          "url": "https://www.qemu.org/docs/master/system/arm/vexpress.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-97",
+      "status": "reviewed",
+      "rationale": "Buildroot and OpenEmbedded/BitBake automate embedded distribution generation.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-98",
+      "status": "reviewed",
+      "rationale": "A usable minimal rootfs needs required runtime components, not all desktop utilities.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-99",
+      "status": "reviewed",
+      "rationale": "fork creates the child and exec replaces the child's program image.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-100",
+      "status": "reviewed",
+      "rationale": "Real-time scheduling targets response constraints rather than general fairness.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-101",
+      "status": "reviewed",
+      "rationale": "Mutual exclusion makes the shared read-modify-write sequence atomic relative to peers.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-102",
+      "status": "change",
+      "rationale": "The U-Boot device:partition argument selects storage location, not memory addresses.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "U-Boot partition syntax",
+          "url": "https://docs.u-boot.org/en/latest/usage/partitions.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-103",
+      "status": "reviewed",
+      "rationale": "setenv changes an environment variable; saveenv persists it.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-104",
+      "status": "reviewed",
+      "rationale": "Embedded bootloaders are usually configurable for the target board's boot requirements.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-105",
+      "status": "reviewed",
+      "rationale": "Kernel oops reports commonly include a call trace and fault context.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-106",
+      "status": "reviewed",
+      "rationale": "Instrumentation exposes control flow and subsystem interactions.",
+      "currentAnswer": [
+        0,
+        1
+      ],
+      "proposedAnswer": [
+        0,
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-107",
+      "status": "reviewed",
+      "rationale": "ftrace records kernel functions/events at runtime.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-108",
+      "status": "reviewed",
+      "rationale": "Dense NAND requires correction to tolerate bit errors.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-109",
+      "status": "reviewed",
+      "rationale": "JFFS2 scan cost and in-memory metadata grow poorly for large flash.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-110",
+      "status": "reviewed",
+      "rationale": "ECC detects and corrects bounded bit-error patterns.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-111",
+      "status": "reviewed",
+      "rationale": "Extensive OS software increases the certification evidence effort; the other claims are false.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-112",
+      "status": "reviewed",
+      "rationale": "Rich networking and interfaces fit Linux better than the tiny-MCU alternatives.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-114",
+      "status": "change",
+      "rationale": "LSB targets binary application compatibility across conforming distributions.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-115",
+      "status": "reviewed",
+      "rationale": "System calls are controlled kernel service entry points.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-116",
+      "status": "change",
+      "rationale": "ANSI C89 became ISO C90; POSIX is not the C syntax standard.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-117",
+      "status": "reviewed",
+      "rationale": "1003.1c standardized POSIX threads.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-118",
+      "status": "change",
+      "rationale": "Nonzero initialized writable globals use data; zero-initialized storage commonly uses BSS.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-119",
+      "status": "change",
+      "rationale": "SUSv3 includes an additional X/Open Curses volume; the unqualified question is ambiguous with SVID.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-120",
+      "status": "reviewed",
+      "rationale": "munmap removes a process mapping.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-121",
+      "status": "reviewed",
+      "rationale": "UNIX 98 certification corresponds to SUSv2.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-122",
+      "status": "reviewed",
+      "rationale": "lseek changes a seekable descriptor's current offset.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-123",
+      "status": "reviewed",
+      "rationale": "An illegal user access to privileged memory causes a protection exception.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-124",
+      "status": "reviewed",
+      "rationale": "Stack frames represent calls and return lifetimes.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-125",
+      "status": "change",
+      "rationale": "Low-level operations and efficient compilation explain C's systems use better than the original authorship slogan.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Dennis Ritchie: The Development of the C Language",
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-126",
+      "status": "reviewed",
+      "rationale": "4.2BSD introduced the Berkeley TCP/IP stack and socket API release.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-127",
+      "status": "change",
+      "rationale": "XBD includes header definitions; XCU spelling in a distractor needs repair.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-128",
+      "status": "reviewed",
+      "rationale": "read is the file-descriptor read syscall interface, normally reached through libc.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-129",
+      "status": "reviewed",
+      "rationale": "Bill Joy wrote csh and co-founded Sun.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-130",
+      "status": "change",
+      "rationale": "SIGKILL cannot be handled or ignored; fix SIGUSR1 spelling.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-131",
+      "status": "reviewed",
+      "rationale": "The kernel networking subsystem handles packet routing.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-132",
+      "status": "reviewed",
+      "rationale": "kill is the syscall interface for sending a signal to a selected process/group.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-133",
+      "status": "change",
+      "rationale": "The common filename-component limit is 255 bytes, not pathname length or Unicode character count.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-134",
+      "status": "reviewed",
+      "rationale": "The z distinguishes a compressed kernel boot image.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-135",
+      "status": "reviewed",
+      "rationale": "A leading slash identifies the filesystem root.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-136",
+      "status": "reviewed",
+      "rationale": "A normally configured terminal sends SIGINT to the foreground process group on Ctrl-C.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: credentials",
+          "url": "https://man7.org/linux/man-pages/man7/credentials.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-137",
+      "status": "reviewed",
+      "rationale": "David Korn created ksh.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-138",
+      "status": "change",
+      "rationale": "1003.1b covers real-time extensions, including asynchronous I/O.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-139",
+      "status": "reviewed",
+      "rationale": "The protocol stack implements layered network protocols.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-140",
+      "status": "reviewed",
+      "rationale": "bash expands to Bourne Again SHell.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-141",
+      "status": "reviewed",
+      "rationale": "The settlement enabled removal/reworking of restricted source for the Lite release.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-142",
+      "status": "reviewed",
+      "rationale": "Ken Thompson initiated Unix at Bell Labs.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Dennis Ritchie: The Development of the C Language",
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-143",
+      "status": "reviewed",
+      "rationale": "MINIX was the teaching Unix-like system involved in Linux's origins.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-144",
+      "status": "reviewed",
+      "rationale": "A symlink stores a target pathname, unlike a second hard link to the inode.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-145",
+      "status": "reviewed",
+      "rationale": "Successful execve replaces the program image including its text mappings.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-146",
+      "status": "reviewed",
+      "rationale": "The group database records group names and numeric IDs.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-147",
+      "status": "change",
+      "rationale": "The _exit interface terminates its caller without running atexit handlers.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: _exit",
+          "url": "https://man7.org/linux/man-pages/man2/_exit.2.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-148",
+      "status": "reviewed",
+      "rationale": "Ordinary anonymous mappings are zero-initialized rather than populated from a file.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-149",
+      "status": "reviewed",
+      "rationale": "execve changes the program image while preserving process identity.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-150",
+      "status": "reviewed",
+      "rationale": "Directory execute is search/traversal permission, subject to other required permissions.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-151",
+      "status": "change",
+      "rationale": "A filesystem-named byte stream is a FIFO; generic IPC alone would not uniquely select it.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-152",
+      "status": "change",
+      "rationale": "Unix's common descriptor I/O interface applies to many file types; 1/0 is OCR noise.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-153",
+      "status": "reviewed",
+      "rationale": "Traditional root identity uses numeric UID zero.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-154",
+      "status": "reviewed",
+      "rationale": "Libraries collect reusable object modules.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-155",
+      "status": "change",
+      "rationale": "ipcs reports System V IPC objects; ls distractor was OCRed as Is.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-156",
+      "status": "reviewed",
+      "rationale": "Torvalds began Linux while studying at Helsinki.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-157",
+      "status": "reviewed",
+      "rationale": "GPL version 1 is dated February 1989.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "GNU General Public License version 1",
+          "url": "https://www.gnu.org/licenses/old-licenses/gpl-1.0.html.en"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-158",
+      "status": "reviewed",
+      "rationale": "The runtime dynamic linker resolves and loads shared libraries.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-159",
+      "status": "reviewed",
+      "rationale": "GNU/Linux is Stallman's preferred whole-system name.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-160",
+      "status": "reviewed",
+      "rationale": "MAP_SHARED exposes updates to processes sharing a mapping.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-161",
+      "status": "reviewed",
+      "rationale": "Shared memory directly gives processes a common memory region.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-162",
+      "status": "reviewed",
+      "rationale": "Device access management mediates hardware use.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-163",
+      "status": "reviewed",
+      "rationale": "Version 7's standard shell was the Bourne shell.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-164",
+      "status": "reviewed",
+      "rationale": "A named pipe is a FIFO.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-165",
+      "status": "reviewed",
+      "rationale": "XCU is the Shell and Utilities volume.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-166",
+      "status": "reviewed",
+      "rationale": "Swap stores evicted memory pages outside RAM.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-167",
+      "status": "change",
+      "rationale": "Packet is the network-layer PDU; the unqualified network question also admitted other layers' units.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-168",
+      "status": "reviewed",
+      "rationale": "Read permission allows enumerating directory names; traversal is separate.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-169",
+      "status": "reviewed",
+      "rationale": "Signals deliver asynchronous process-event notifications.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-170",
+      "status": "reviewed",
+      "rationale": "The socket API is BSD-origin IPC.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-171",
+      "status": "reviewed",
+      "rationale": "Kernel virtualization and resource management supply the private-machine abstraction.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-172",
+      "status": "change",
+      "rationale": "The actual final CSRG release was 4.4BSD-Lite Release 2 in 1995, absent from the original options.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        4
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "FreeBSD source: BSD family tree",
+          "url": "https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-173",
+      "status": "reviewed",
+      "rationale": "Dennis Ritchie designed C for Unix implementation.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Dennis Ritchie: The Development of the C Language",
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-174",
+      "status": "reviewed",
+      "rationale": "ld.so implements runtime library location and loading.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-175",
+      "status": "reviewed",
+      "rationale": "Executable text is normally read-only and shareable between processes.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-176",
+      "status": "reviewed",
+      "rationale": "mmap creates a virtual mapping of a file.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-177",
+      "status": "change",
+      "rationale": "Effective UID governs System V IPC access; Linux file access separately uses FSUID.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: credentials",
+          "url": "https://man7.org/linux/man-pages/man7/credentials.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-178",
+      "status": "change",
+      "rationale": "UNIX/32V targeted the VAX-11/780; repair PDP-11 in a distractor.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-179",
+      "status": "reviewed",
+      "rationale": "Absolute paths begin at slash-root rather than the working directory.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-180",
+      "status": "reviewed",
+      "rationale": "The FSF was incorporated in 1985.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Free Software Foundation press information",
+          "url": "https://www.fsf.org/press"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-181",
+      "status": "reviewed",
+      "rationale": "Text stores executable machine instructions.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-182",
+      "status": "reviewed",
+      "rationale": "Effective UID zero denotes traditional superuser privilege; capabilities/namespaces refine Linux privileges.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: credentials",
+          "url": "https://man7.org/linux/man-pages/man7/credentials.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-183",
+      "status": "reviewed",
+      "rationale": "Network sockets can communicate across machines.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-184",
+      "status": "change",
+      "rationale": "A controlled syscall/trap instruction enters the kernel; an arbitrary user instruction cannot raise privilege.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": []
+    },
+    {
+      "id": "LOS201-185",
+      "status": "reviewed",
+      "rationale": "Memory management allocates and protects RAM.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-186",
+      "status": "reviewed",
+      "rationale": "A process is a running program instance with execution state.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-187",
+      "status": "reviewed",
+      "rationale": "Semaphores are synchronization counters/objects.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-188",
+      "status": "reviewed",
+      "rationale": "IEEE developed the POSIX standard family.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-189",
+      "status": "reviewed",
+      "rationale": "The first Unix system dates to 1969.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Dennis Ritchie: The Development of the C Language",
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-190",
+      "status": "reviewed",
+      "rationale": "V6 was widely distributed outside Bell Labs before V7.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-191",
+      "status": "reviewed",
+      "rationale": "fork provides logically duplicated private data, typically implemented copy-on-write.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-192",
+      "status": "reviewed",
+      "rationale": "GNU Hurd runs its servers over Mach.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-193",
+      "status": "reviewed",
+      "rationale": "NetBSD's project focus includes portability across architectures.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-194",
+      "status": "reviewed",
+      "rationale": "GCC is GNU's compiler collection.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-195",
+      "status": "reviewed",
+      "rationale": "GNU Emacs is the extensible editor associated with Stallman.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-196",
+      "status": "reviewed",
+      "rationale": "Two dots name the parent directory.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-197",
+      "status": "reviewed",
+      "rationale": "Slackware's own documentation calls it the oldest surviving commercial Linux distribution.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Slackware documentation: introduction",
+          "url": "https://docs.slackware.com/slackbook%3Aintro_to_slackware"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-198",
+      "status": "reviewed",
+      "rationale": "clone is the Linux-specific task creation/sharing interface.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-199",
+      "status": "reviewed",
+      "rationale": "System V Release 4 consolidated major Unix lineages in 1989.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-200",
+      "status": "reviewed",
+      "rationale": "Shared mappings avoid an IPC transfer copy on every data exchange.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-201",
+      "status": "reviewed",
+      "rationale": "The original PDP-7 Unix was reimplemented for the PDP-11; current answer is correctly spelled.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Dennis Ritchie: The Development of the C Language",
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-202",
+      "status": "reviewed",
+      "rationale": "An ordinary pipe supplies a one-way byte channel, usually inherited across fork.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-203",
+      "status": "reviewed",
+      "rationale": "One dot refers to the current directory entry.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-204",
+      "status": "reviewed",
+      "rationale": "passwd records user names and numeric UIDs.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-205",
+      "status": "reviewed",
+      "rationale": "A shell interprets commands and arranges their execution.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-206",
+      "status": "reviewed",
+      "rationale": "The /usr/group 1984 document was an early unofficial Unix standardization effort.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-207",
+      "status": "reviewed",
+      "rationale": "Address-space protection separates processes and kernel memory.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-208",
+      "status": "reviewed",
+      "rationale": "GPLv3 was released in 2007.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-209",
+      "status": "reviewed",
+      "rationale": "The Austin collaboration includes ISO/IEC with IEEE and The Open Group.",
+      "currentAnswer": [
+        0
+      ],
+      "proposedAnswer": [
+        0
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-210",
+      "status": "reviewed",
+      "rationale": "OpenBSD emphasizes proactive security and auditing.",
+      "currentAnswer": [
+        2
+      ],
+      "proposedAnswer": [
+        2
+      ],
+      "verification": "independent semantic/theory review",
+      "references": []
+    },
+    {
+      "id": "LOS201-211",
+      "status": "change",
+      "rationale": "Later 2.6 mainline feature releases took roughly two to three months; stable point releases are different.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux development process, historical 2.6 release series",
+          "url": "https://www.kernel.org/doc/html/v4.14/process/2.Process.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-212",
+      "status": "reviewed",
+      "rationale": "The 2.6 development era adopted continuous mainline evolution rather than a separate odd-number feature branch.",
+      "currentAnswer": [
+        3
+      ],
+      "proposedAnswer": [
+        3
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Linux development process, historical 2.6 release series",
+          "url": "https://www.kernel.org/doc/html/v4.14/process/2.Process.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-213",
+      "status": "reviewed",
+      "rationale": "The FSF initially raised support for development of GNU.",
+      "currentAnswer": [
+        1
+      ],
+      "proposedAnswer": [
+        1
+      ],
+      "verification": "semantic options review; targeted primary-source check",
+      "references": [
+        {
+          "title": "Free Software Foundation press information",
+          "url": "https://www.fsf.org/press"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "id": "LOS201-39",
+      "kind": "ocr",
+      "original": {
+        "question": "A student creates 7etc/inittaEj with and What practical behavior should this produce after BusyBox init starts?",
+        "options": [
+          "It runs the system initialization script and then offers an interactive shell.",
+          "It rebuilds the kernel modules and recompiles the DTB.",
+          "It disables the PLOII serial console and redirects output to the host GUI.",
+          "It changes the U-Boot memory map to start at"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "A student creates /etc/inittab with '::sysinit:/etc/init.d/rcS' and '::askfirst:-/bin/sh'. What practical behavior should this produce after BusyBox init starts?",
+        "options": [
+          "It runs the system initialization script and then offers an interactive shell.",
+          "It rebuilds the kernel modules and recompiles the DTB.",
+          "It disables the PL011 serial console and redirects output to the host GUI.",
+          "It changes the U-Boot memory map to start at 0x00000000."
+        ]
+      },
+      "reason": "BusyBox init chạy sysinit trước và chờ xong; askfirst chờ nhấn Enter rồi mở shell. Dấu - chạy shell theo kiểu login.",
+      "tip": "sysinit → rcS; askfirst → nhấn Enter rồi mở shell.",
+      "note": "Khôi phục hai dòng inittab và lựa chọn bị mất khi OCR; khóa A đúng.",
+      "references": [
+        {
+          "title": "BusyBox example inittab (project source)",
+          "url": "https://raw.githubusercontent.com/mirror/busybox/master/examples/inittab"
+        }
+      ],
+      "imageEvidence": "LOS201/Screenshot (39).png"
+    },
+    {
+      "id": "LOS201-48",
+      "kind": "ocr",
+      "original": {
+        "question": "Why does the lab emphasize that vexpress-a9 RAM starts at SOx6000000ff rather than",
+        "options": [
+          "Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot.",
+          "Because all ARM systems reserve exclusively for the Linux root filesystem.",
+          "Because QEMU requires the initramfs to be larger than 512 MB.",
+          "Because Sboottl€ only works when RAM begins at sox0000000ff."
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "Why does the lab emphasize that vexpress-a9 RAM starts at 0x60000000 rather than 0x00000000?",
+        "options": [
+          "Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot.",
+          "Because all ARM systems reserve 0x00000000 exclusively for the Linux root filesystem.",
+          "Because QEMU requires the initramfs to be larger than 512 MB.",
+          "Because bootm only works when RAM begins at 0x00000000."
+        ]
+      },
+      "reason": "QEMU vexpress-a9 ánh xạ RAM từ 0x60000000; vùng địa chỉ 0 là alias flash. Image phải được nạp vào vùng RAM hợp lệ, không chồng nhau.",
+      "tip": "vexpress-a9 → RAM 0x60000000, không phải 0.",
+      "note": "Khôi phục địa chỉ và bootm từ ảnh; giữ khóa A.",
+      "references": [
+        {
+          "title": "QEMU vexpress implementation",
+          "url": "https://gitlab.com/qemu-project/qemu/-/raw/master/hw/arm/vexpress.c"
+        }
+      ],
+      "imageEvidence": "LOS201/Screenshot (48).png"
+    },
+    {
+      "id": "LOS201-96",
+      "kind": "ocr",
+      "original": {
+        "question": "A student boots QEMU with and vexpress-v2p-ca9.dtb) but no initramfs is supplied. The kernel stops with a VFS root mount panic. What is the most likely reason?",
+        "options": [
+          "The kernel cannot find a root filesystem because no initramfs image or root device was provided.",
+          "The CPU is not Cortex-A9 because s-cpu cortex-a$ is ignored by QEMU.",
+          "The PLOII driver is always disabled in hæxpress_defconfig .",
+          "The file must always be replaced by for ARMv7."
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "A student boots QEMU with -kernel zImage and -dtb vexpress-v2p-ca9.dtb, but supplies neither an initramfs nor a usable root device/root= setting. The kernel stops with a VFS root mount panic. What is the most likely reason?",
+        "options": [
+          "The kernel cannot find a root filesystem because no initramfs image or root device was provided.",
+          "The CPU is not Cortex-A9 because -cpu cortex-a9 is ignored by QEMU.",
+          "The PL011 driver is always disabled in vexpress_defconfig.",
+          "The zImage file must always be replaced by uImage for ARMv7."
+        ]
+      },
+      "reason": "Kernel và DTB không thay thế rootfs có init. Không có initramfs hay root device dùng được sẽ dẫn đến lỗi mount root; QEMU có thể nạp trực tiếp zImage.",
+      "tip": "VFS root mount panic → kiểm tra initramfs / root= / rootfs.",
+      "note": "Khôi phục tham số QEMU và zImage/uImage; làm rõ không có root device để tránh kết luận sai chỉ vì thiếu initramfs.",
+      "references": [
+        {
+          "title": "QEMU Versatile Express board documentation",
+          "url": "https://www.qemu.org/docs/master/system/arm/vexpress.html"
+        }
+      ],
+      "imageEvidence": "LOS201/Screenshot (96).png"
+    },
+    {
+      "id": "LOS201-61",
+      "kind": "wording",
+      "original": {
+        "question": "A board-specific driver has been configured as built-in rather than as a module. Into which component of the kernel image is it most likely linked?",
+        "options": [
+          "drivers/built-in.o",
+          "lib/lib.a",
+          "usr/built-in.o",
+          "arch/arm/kernel/head.o"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "In a legacy Linux kernel build that aggregates built-in objects using relocatable built-in.o files, a driver under drivers/ is configured built-in rather than as a module. Which listed aggregation artifact contains that driver code?"
+      },
+      "reason": "Ở mô hình Kbuild cũ, object driver được gom vào drivers/built-in.o trước khi liên kết kernel. Kernel mới dùng built-in.a thay cho tên này.",
+      "tip": "legacy Kbuild → built-in.o; modern Kbuild → built-in.a.",
+      "note": "Bổ sung phạm vi phiên bản cũ; không dạy built-in.o như tên hiện hành cho mọi kernel.",
+      "references": [
+        {
+          "title": "Legacy Linux Kbuild documentation (kernel source)",
+          "url": "https://android.googlesource.com/kernel/common/+/d8f48457d5af6601abdecaad7a95c45bfeef90d5/Documentation/kbuild/makefiles.txt"
+        },
+        {
+          "title": "Linux Kbuild Makefiles",
+          "url": "https://www.kernel.org/doc/html/v5.5/kbuild/makefiles.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-95",
+      "kind": "wording",
+      "original": {
+        "question": "A developer modifies kernel source code and expects the changes to appear in the final bootable image. Which TWO kernel build artifacts should be examined first to verify that the modified object files were linked into the final kernel image?",
+        "options": [
+          "vmlinux",
+          "System.map",
+          "built-in.o files",
+          "modules.dep"
+        ],
+        "answer": [
+          0,
+          2
+        ]
+      },
+      "changes": {
+        "question": "In the legacy Linux Kbuild model using built-in.o aggregation, which TWO artifacts help verify that modified built-in objects reach the linked kernel image?"
+      },
+      "reason": "built-in.o là bước gom object của mô hình Kbuild cũ; vmlinux là ELF cuối để kiểm tra mã đã liên kết. Kernel mới dùng archive built-in.a.",
+      "tip": "legacy intermediates + final ELF → built-in.o và vmlinux.",
+      "note": "Nêu rõ mô hình Kbuild cũ, giữ khóa A+C.",
+      "references": [
+        {
+          "title": "Legacy Linux Kbuild documentation (kernel source)",
+          "url": "https://android.googlesource.com/kernel/common/+/d8f48457d5af6601abdecaad7a95c45bfeef90d5/Documentation/kbuild/makefiles.txt"
+        },
+        {
+          "title": "Linux Kbuild Makefiles",
+          "url": "https://www.kernel.org/doc/html/v5.5/kbuild/makefiles.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-81",
+      "kind": "wording",
+      "original": {
+        "question": "Which TWO consequences are likely if an embedded processor lacks MMU support but attempts to run a Linux configuration designed for MMU-based systems?",
+        "options": [
+          "Virtual memory features may be unavailable",
+          "Memory isolation between processes may be limited",
+          "The processor automatically becomes multicore",
+          "Interrupt handling is disabled"
+        ],
+        "answer": [
+          0,
+          1
+        ]
+      },
+      "changes": {
+        "question": "Which TWO limitations are expected when Linux is appropriately configured to run on an embedded processor without an MMU?"
+      },
+      "reason": "Linux no-MMU có hỗ trợ ánh xạ hạn chế và không có cơ chế cách ly bằng MMU như hệ MMU. Kernel biên dịch đòi MMU không tự chạy được trên CPU thiếu MMU.",
+      "tip": "no MMU → hạn chế VM và bảo vệ/cách ly bộ nhớ.",
+      "note": "Sửa tiền đề: phải dùng cấu hình no-MMU phù hợp, thay vì giả sử cấu hình MMU vẫn chạy bình thường.",
+      "references": [
+        {
+          "title": "Linux no-MMU mapping support",
+          "url": "https://www.kernel.org/doc/html/latest/admin-guide/mm/nommu-mmap.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-118",
+      "kind": "wording",
+      "original": {
+        "question": "Which segment stores initialized global variables?",
+        "options": [
+          "Text",
+          "Data",
+          "Heap",
+          "Stack"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "In a conventional executable memory layout, which writable segment normally stores global variables explicitly initialized to a nonzero value?"
+      },
+      "reason": "Global/static khởi tạo khác 0 thường nằm ở .data; phần khởi tạo bằng 0 thường được đặt trong .bss.",
+      "tip": "nonzero initialized global → .data; zero → .bss.",
+      "note": "Thêm khác zero để phân biệt .data với .bss, giữ B.",
+      "references": []
+    },
+    {
+      "id": "LOS201-119",
+      "kind": "wording",
+      "original": {
+        "question": "Which standard includes the curses screen-handling API?",
+        "options": [
+          "C89",
+          "POSIX.I",
+          "SUSv3",
+          "SVID"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "Which 2001 UNIX specification collection includes the POSIX base specifications plus X/Open Curses Issue 4 Version 2 as an additional volume?",
+        "options": [
+          "C89",
+          "POSIX.1",
+          "SUSv3",
+          "SVID"
+        ]
+      },
+      "reason": "SUSv3 bổ sung tập X/Open Curses vào các đặc tả cơ sở POSIX.1-2001. Hỏi chung về curses dễ lẫn với các đặc tả System V/SVID trước đó.",
+      "tip": "POSIX base + extra X/Open Curses volume (2001) → SUSv3.",
+      "note": "Làm rõ câu hỏi để C là lựa chọn duy nhất; câu cũ quá rộng và SVID cũng liên quan curses. Không nên xem mọi lựa chọn D cũ là sai kiến thức.",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-125",
+      "kind": "wording",
+      "original": {
+        "question": "Why is C considered a highly effective \"system programming language\"?",
+        "options": [
+          "It was designed by a large committee",
+          "It was designed by programmers for their own use",
+          "It is a complex, high-level language",
+          "It was designed for mathematical logic"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "It was designed by a large committee",
+          "It combines efficient compiled code with low-level memory and data operations.",
+          "It is a complex, high-level language",
+          "It was designed for mathematical logic"
+        ]
+      },
+      "reason": "C diễn đạt thao tác gần máy nhưng vẫn cho cấu trúc chương trình bậc cao và biên dịch hiệu quả, phù hợp viết OS. Việc tác giả viết cho nhu cầu riêng không tự chứng minh hiệu quả kỹ thuật.",
+      "tip": "systems C → low-level control + efficient compilation.",
+      "note": "Thay khẩu hiệu về tác giả bằng lý do kỹ thuật có thể kiểm chứng; giữ vị trí B.",
+      "references": [
+        {
+          "title": "Dennis Ritchie: The Development of the C Language",
+          "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-127",
+      "kind": "ocr",
+      "original": {
+        "question": "In SUSv3, which part contains the specifications for header files?",
+        "options": [
+          "XBD",
+          "XSH",
+          "XCIJ",
+          "XRAT"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "options": [
+          "XBD",
+          "XSH",
+          "XCU",
+          "XRAT"
+        ]
+      },
+      "reason": "XBD là Base Definitions, chứa các đặc tả header. XCU là tên đúng của phần Shell and Utilities.",
+      "tip": "header definitions → XBD.",
+      "note": "Sửa distractor XCIJ thành XCU; khóa A không đổi.",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-133",
+      "kind": "wording",
+      "original": {
+        "question": "What is the maximum filename length on most Linux file systems?",
+        "options": [
+          "64",
+          "128",
+          "255",
+          "1024"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "What is the common maximum length, in bytes, of one filename component on Linux filesystems such as ext4?"
+      },
+      "reason": "Giới hạn thông dụng của một thành phần tên file là 255 byte; không phải 255 ký tự Unicode hay giới hạn toàn pathname.",
+      "tip": "filename component → 255 bytes.",
+      "note": "Nêu đơn vị byte và phạm vi filename component để tránh hiểu nhầm.",
+      "references": []
+    },
+    {
+      "id": "LOS201-147",
+      "kind": "wording",
+      "original": {
+        "question": "Which system call is used by a process to request its own termination?",
+        "options": [
+          "kill()",
+          "wait()",
+          "_exit()",
+          "stop()"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "Which listed interface terminates the calling process without invoking functions registered with atexit()?"
+      },
+      "reason": "_exit kết thúc tiến trình gọi mà không chạy atexit hoặc flush các stream stdio. kill gửi signal, không phải giao diện kết thúc trực tiếp như vậy.",
+      "tip": "terminate caller without atexit → _exit().",
+      "note": "Làm rõ hành vi thay vì câu rộng mà kill tự gửi signal cũng có thể đáp ứng.",
+      "references": [
+        {
+          "title": "Linux man-pages: _exit",
+          "url": "https://man7.org/linux/man-pages/man2/_exit.2.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-151",
+      "kind": "wording",
+      "original": {
+        "question": "Which IPC mechanism is best suited for unrelated processes on one host?",
+        "options": [
+          "Pipe",
+          "FIFO",
+          "Signal",
+          "Stack"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "Which IPC mechanism provides a byte-stream channel addressed by a filesystem pathname, allowing unrelated local processes to open it?"
+      },
+      "reason": "FIFO là pipe có tên trong filesystem, cho các process không cùng quan hệ cha–con mở cùng một kênh byte-stream.",
+      "tip": "named byte stream + unrelated processes → FIFO.",
+      "note": "Nêu yêu cầu cụ thể; hỏi IPC chung cho unrelated processes không đủ loại signal và các cơ chế khác.",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-152",
+      "kind": "ocr",
+      "original": {
+        "question": "What is the \"universality of 1/0\" concept?",
+        "options": [
+          "All 1/0 uses networking",
+          "Same system calls work on all file types",
+          "No system calls are required",
+          "Files are read-only by default"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "What is the Unix universality of I/O concept?",
+        "options": [
+          "All I/O uses networking",
+          "Same system calls work on all file types",
+          "No system calls are required",
+          "Files are read-only by default"
+        ]
+      },
+      "reason": "Nhiều loại file và thiết bị dùng giao diện descriptor chung như open/read/write/close; không có nghĩa mọi thao tác đều được hỗ trợ trên mọi loại file.",
+      "tip": "universality of I/O → common descriptor interface.",
+      "note": "Sửa OCR 1/0 thành I/O và bổ sung điều kiện hỗ trợ thao tác.",
+      "references": [
+        {
+          "title": "Linux man-pages: pipes and FIFOs",
+          "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-167",
+      "kind": "wording",
+      "original": {
+        "question": "What is the name of the unit of information sent over a network?",
+        "options": [
+          "Frame",
+          "Segment",
+          "Packet",
+          "Block"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "At the network layer (for example, IP), what is the usual name of the protocol data unit?"
+      },
+      "reason": "IP dùng đơn vị packet/datagram ở tầng network. Frame thuộc tầng liên kết; TCP segment thuộc tầng transport, nên phải chỉ rõ tầng đang hỏi.",
+      "tip": "network/IP → packet; link → frame; TCP → segment.",
+      "note": "Câu cũ nói đơn vị gửi qua mạng quá rộng; bổ sung tầng network, giữ C.",
+      "references": []
+    },
+    {
+      "id": "LOS201-172",
+      "kind": "key",
+      "original": {
+        "question": "What is the name of the final BSD release from the University of California?",
+        "options": [
+          "Net/ 2",
+          "3BSD",
+          "4.4BSD-Lite",
+          "2BSD"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "question": "What was the final BSD distribution released by the University of California, Berkeley CSRG?",
+        "options": [
+          "Net/ 2",
+          "3BSD",
+          "4.4BSD-Lite",
+          "2BSD",
+          "4.4BSD-Lite Release 2 (1995)"
+        ],
+        "answer": [
+          4
+        ]
+      },
+      "reason": "Bản cuối của CSRG là 4.4BSD-Lite Release 2 vào tháng 6/1995. 4.4BSD-Lite năm 1994 là bản trước đó.",
+      "tip": "final CSRG distribution → 4.4BSD-Lite Release 2 (1995).",
+      "note": "Đổi khóa C → E; giữ nguyên A–D và thêm tên phiên bản đúng còn thiếu.",
+      "references": [
+        {
+          "title": "FreeBSD source: BSD family tree",
+          "url": "https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-177",
+      "kind": "wording",
+      "original": {
+        "question": "Which UID is used to determine permissions for accessing resources?",
+        "options": [
+          "Real UID",
+          "Effective UID",
+          "Saved UID",
+          "Login UID"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "Which UID is used by Unix permission checks for access to System V IPC resources such as message queues, shared memory, and semaphores?"
+      },
+      "reason": "Effective UID tham gia kiểm tra quyền System V IPC. Với file trên Linux, kernel dùng filesystem UID (FSUID), thường bằng EUID nhưng có thể khác.",
+      "tip": "System V IPC permissions → effective UID; Linux files → FSUID.",
+      "note": "Thu hẹp đúng phạm vi tài nguyên để tránh khẳng định Linux luôn dùng EUID cho file.",
+      "references": [
+        {
+          "title": "Linux man-pages: credentials",
+          "url": "https://man7.org/linux/man-pages/man7/credentials.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-184",
+      "kind": "wording",
+      "original": {
+        "question": "Which hardware feature allows switching from user mode to kernel mode?",
+        "options": [
+          "RAM bus",
+          "CPU mode instructions",
+          "Disk controller",
+          "Network card"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "RAM bus",
+          "A controlled system-call or trap instruction that enters the kernel",
+          "Disk controller",
+          "Network card"
+        ]
+      },
+      "reason": "Lệnh syscall/trap chuyển vào entry point kernel do hệ thống thiết lập. Chương trình user không được tùy ý đổi CPU sang đặc quyền kernel.",
+      "tip": "user → kernel service entry → controlled syscall/trap.",
+      "note": "Lựa chọn CPU mode instructions quá mơ hồ; thay bằng đường chuyển đặc quyền có kiểm soát.",
+      "references": []
+    },
+    {
+      "id": "LOS201-211",
+      "kind": "wording",
+      "original": {
+        "question": "What is the approximate length of a modern Linux (2.6.z) release cycle?",
+        "options": [
+          "1 month",
+          "3 months",
+          "6 months",
+          "1 year"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "During the later Linux 2.6.x mainline development era (for example, 2.6.33–2.6.38), approximately how long was a new feature-release cycle?"
+      },
+      "reason": "Các bản mainline 2.6.x giai đoạn này cách nhau khoảng 2–3 tháng. Đây không phải chu kỳ bản vá stable 2.6.x.y, và không nên gọi 2.6 là kernel hiện đại ngày nay.",
+      "tip": "historical 2.6 mainline feature release → about 3 months.",
+      "note": "Làm rõ thời kỳ và loại release; giữ B.",
+      "references": [
+        {
+          "title": "Linux development process, historical 2.6 release series",
+          "url": "https://www.kernel.org/doc/html/v4.14/process/2.Process.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-14",
+      "kind": "ocr",
+      "original": {
+        "question": "Which TWO conditions are commonly associated with an out-of-memory (00M) event?",
+        "options": [
+          "Allocated memory demand exceeds available resources",
+          "The 00M killer may terminate processes",
+          "All allocations are automatically compressed",
+          "The kernel disables virtual memory"
+        ],
+        "answer": [
+          0,
+          1
+        ]
+      },
+      "changes": {
+        "question": "Which TWO conditions are commonly associated with an out-of-memory (OOM) event?",
+        "options": [
+          "Allocated memory demand exceeds available resources",
+          "The OOM killer may terminate processes",
+          "All allocations are automatically compressed",
+          "The kernel disables virtual memory"
+        ]
+      },
+      "reason": "Exhausted allocation resources can trigger OOM recovery and process killing.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": []
+    },
+    {
+      "id": "LOS201-25",
+      "kind": "ocr",
+      "original": {
+        "question": "A developer creates symbolic links such as 'Is', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?",
+        "options": [
+          "By inspecting the name used to invoke the executable",
+          "By parsing kernel boot parameters",
+          "By reading the current process ID",
+          "By loading separate shared libraries for each command"
+        ],
+        "answer": [
+          0
+        ]
+      },
+      "changes": {
+        "question": "A developer creates symbolic links such as 'ls', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?"
+      },
+      "reason": "The invocation name selects the multicall applet; ls was OCRed as Is.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": [
+        {
+          "title": "BusyBox manual",
+          "url": "https://www.busybox.net/downloads/BusyBox.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-60",
+      "kind": "ocr",
+      "original": {
+        "question": "Which kernel image is the uncompressed ELF binary used for debugging?",
+        "options": [
+          "initrd",
+          "zlmage",
+          "ulmage",
+          "vmlinux"
+        ],
+        "answer": [
+          3
+        ]
+      },
+      "changes": {
+        "options": [
+          "initrd",
+          "zImage",
+          "uImage",
+          "vmlinux"
+        ]
+      },
+      "reason": "vmlinux is the uncompressed ELF kernel artifact; restore zImage/uImage spelling.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": []
+    },
+    {
+      "id": "LOS201-102",
+      "kind": "ocr",
+      "original": {
+        "question": "A U-Boot command loads a kernel image using 'diskboot 0x400000 0:01. What does the value '0:01 represent?",
+        "options": [
+          "Kernel load address and DTB address",
+          "Device number and partition number",
+          "CPU number and core number",
+          "Flash bank and erase block"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "A U-Boot command loads a kernel image using 'diskboot 0x400000 0:0'. What does '0:0' represent?"
+      },
+      "reason": "The U-Boot device:partition argument selects storage location, not memory addresses.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": [
+        {
+          "title": "U-Boot partition syntax",
+          "url": "https://docs.u-boot.org/en/latest/usage/partitions.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-114",
+      "kind": "ocr",
+      "original": {
+        "question": "What is the primary goal of the Linux Standard Base (LSB)?",
+        "options": [
+          "Source code portability",
+          "Binary application compatibility",
+          "Kernel debugging",
+          "Ul standardization"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "Source code portability",
+          "Binary application compatibility",
+          "Kernel debugging",
+          "UI standardization"
+        ]
+      },
+      "reason": "LSB targets binary application compatibility across conforming distributions.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-116",
+      "kind": "ocr",
+      "original": {
+        "question": "Which 1989/1990 standard defined the syntax of C and its standard library?",
+        "options": [
+          "C99",
+          "POSIX.I",
+          "C89 (ISO C90)",
+          "SVID"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "options": [
+          "C99",
+          "POSIX.1",
+          "C89 (ISO C90)",
+          "SVID"
+        ]
+      },
+      "reason": "ANSI C89 became ISO C90; POSIX is not the C syntax standard.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-130",
+      "kind": "ocr",
+      "original": {
+        "question": "Which signal cannot be caught or ignored by a process?",
+        "options": [
+          "SIGINT",
+          "SIGTERM",
+          "SIGKILL",
+          "SIGUSRI"
+        ],
+        "answer": [
+          2
+        ]
+      },
+      "changes": {
+        "options": [
+          "SIGINT",
+          "SIGTERM",
+          "SIGKILL",
+          "SIGUSR1"
+        ]
+      },
+      "reason": "SIGKILL cannot be handled or ignored; fix SIGUSR1 spelling.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": []
+    },
+    {
+      "id": "LOS201-138",
+      "kind": "ocr",
+      "original": {
+        "question": "Which POSIX sub-standard (1003.1b) defined realtime extensions like async 1/0?",
+        "options": [
+          "POSIX.1a",
+          "POSIX.1b",
+          "POSIX.1c",
+          "POSIX.1g"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "question": "Which POSIX sub-standard (1003.1b) defined realtime extensions like async I/O?"
+      },
+      "reason": "1003.1b covers real-time extensions, including asynchronous I/O.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": [
+        {
+          "title": "Linux man-pages: C and Unix standards",
+          "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+        }
+      ]
+    },
+    {
+      "id": "LOS201-155",
+      "kind": "ocr",
+      "original": {
+        "question": "Which command-line tool is used to display System V IPC objects?",
+        "options": [
+          "Is",
+          "ipcs",
+          "ps",
+          "netstat"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "ls",
+          "ipcs",
+          "ps",
+          "netstat"
+        ]
+      },
+      "reason": "ipcs reports System V IPC objects; ls distractor was OCRed as Is.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": []
+    },
+    {
+      "id": "LOS201-178",
+      "kind": "ocr",
+      "original": {
+        "question": "On which hardware was the port known as \"32V\" (Seventh Edition) based?",
+        "options": [
+          "PDP-II",
+          "VAX-11/780",
+          "Intel 80386",
+          "Motorola 68000"
+        ],
+        "answer": [
+          1
+        ]
+      },
+      "changes": {
+        "options": [
+          "PDP-11",
+          "VAX-11/780",
+          "Intel 80386",
+          "Motorola 68000"
+        ]
+      },
+      "reason": "UNIX/32V targeted the VAX-11/780; repair PDP-11 in a distractor.",
+      "tip": "Giữ khóa hiện tại; đọc đúng tên API/lệnh.",
+      "note": "Sửa ký tự OCR/tên riêng, không đổi nghĩa đáp án đúng.",
+      "references": []
+    }
+  ],
+  "keywordLedger": [
+    {
+      "id": "LOS201-KW01",
+      "status": "reviewed",
+      "rationale": "fork creates a child; it does not replace the image."
+    },
+    {
+      "id": "LOS201-KW02",
+      "status": "reviewed",
+      "rationale": "Successful exec replaces the image and does not return."
+    },
+    {
+      "id": "LOS201-KW03",
+      "status": "reviewed",
+      "rationale": "wait collects child state, avoiding unreaped zombies."
+    },
+    {
+      "id": "LOS201-KW04",
+      "status": "reviewed",
+      "rationale": "Shared memory still needs synchronization."
+    },
+    {
+      "id": "LOS201-KW05",
+      "status": "reviewed",
+      "rationale": "An ordinary Linux pipe has one read end and one write end."
+    },
+    {
+      "id": "LOS201-KW06",
+      "status": "reviewed",
+      "rationale": "chmod changes mode bits."
+    },
+    {
+      "id": "LOS201-KW07",
+      "status": "reviewed",
+      "rationale": "chown changes file ownership."
+    },
+    {
+      "id": "LOS201-KW08",
+      "status": "reviewed",
+      "rationale": "pwd prints the working directory."
+    },
+    {
+      "id": "LOS201-KW09",
+      "status": "reviewed",
+      "rationale": "BusyBox is a multicall executable."
+    },
+    {
+      "id": "LOS201-KW10",
+      "status": "reviewed",
+      "rationale": "VFS supplies the common filesystem interface."
+    },
+    {
+      "id": "LOS201-KW11",
+      "status": "reviewed",
+      "rationale": "lseek requires a seekable descriptor."
+    },
+    {
+      "id": "LOS201-KW12",
+      "status": "reviewed",
+      "rationale": "IMAGE_INSTALL requests image packages."
+    }
+  ],
+  "unresolved": [],
+  "cautions": [
+    {
+      "id": "LOS201-119",
+      "detail": "Original wording is ambiguous: SVID also specifies curses-related interfaces. Proposed stem explicitly asks about the 2001 SUSv3 collection; do not use this clarification to claim every historical D response was wrong."
+    },
+    {
+      "id": "LOS201-55",
+      "detail": "Existing may-fail choice is acceptable for arbitrary overwrites, but not every program operation requires a fresh erase. If editing, clarify a requested zero-to-one bit transition."
+    },
+    {
+      "id": "LOS201-44",
+      "detail": "Interrupts are commonly lower overhead for infrequent events; high-rate networking may prefer polling/NAPI. Do not present a universal performance law."
+    },
+    {
+      "id": "LOS201-83",
+      "detail": "Correct among listed choices, but the question describes typical character-device registration rather than diagnosing a unique real-world failure."
+    }
+  ],
+  "primaryReferences": [
+    {
+      "title": "BusyBox example inittab (project source)",
+      "url": "https://raw.githubusercontent.com/mirror/busybox/master/examples/inittab"
+    },
+    {
+      "title": "BusyBox manual",
+      "url": "https://www.busybox.net/downloads/BusyBox.html"
+    },
+    {
+      "title": "QEMU vexpress implementation",
+      "url": "https://gitlab.com/qemu-project/qemu/-/raw/master/hw/arm/vexpress.c"
+    },
+    {
+      "title": "QEMU Versatile Express board documentation",
+      "url": "https://www.qemu.org/docs/master/system/arm/vexpress.html"
+    },
+    {
+      "title": "Linux Kbuild Makefiles",
+      "url": "https://www.kernel.org/doc/html/v5.5/kbuild/makefiles.html"
+    },
+    {
+      "title": "Legacy Linux Kbuild documentation (kernel source)",
+      "url": "https://android.googlesource.com/kernel/common/+/d8f48457d5af6601abdecaad7a95c45bfeef90d5/Documentation/kbuild/makefiles.txt"
+    },
+    {
+      "title": "Linux no-MMU mapping support",
+      "url": "https://www.kernel.org/doc/html/latest/admin-guide/mm/nommu-mmap.html"
+    },
+    {
+      "title": "Linux man-pages: C and Unix standards",
+      "url": "https://man7.org/linux/man-pages/man7/standards.7.html"
+    },
+    {
+      "title": "Dennis Ritchie: The Development of the C Language",
+      "url": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html"
+    },
+    {
+      "title": "Linux man-pages: pipes and FIFOs",
+      "url": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+    },
+    {
+      "title": "Linux man-pages: credentials",
+      "url": "https://man7.org/linux/man-pages/man7/credentials.7.html"
+    },
+    {
+      "title": "Linux man-pages: _exit",
+      "url": "https://man7.org/linux/man-pages/man2/_exit.2.html"
+    },
+    {
+      "title": "FreeBSD source: BSD family tree",
+      "url": "https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree"
+    },
+    {
+      "title": "Linux development process, historical 2.6 release series",
+      "url": "https://www.kernel.org/doc/html/v4.14/process/2.Process.html"
+    },
+    {
+      "title": "U-Boot partition syntax",
+      "url": "https://docs.u-boot.org/en/latest/usage/partitions.html"
+    },
+    {
+      "title": "Slackware documentation: introduction",
+      "url": "https://docs.slackware.com/slackbook%3Aintro_to_slackware"
+    },
+    {
+      "title": "GNU General Public License version 1",
+      "url": "https://www.gnu.org/licenses/old-licenses/gpl-1.0.html.en"
+    },
+    {
+      "title": "Free Software Foundation press information",
+      "url": "https://www.fsf.org/press"
+    }
+  ]
+}

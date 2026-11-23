@@ -1,0 +1,38 @@
+{
+  "dgt302-fa26-fe-005": {
+    "paragraphs": ["ROC là miền mà tổng biến đổi z hội tụ. Tại một cực (pole), biến đổi z không có giá trị hữu hạn, nên điểm đó không thể nằm trong ROC. Zero vẫn có thể nằm trong ROC; ROC cũng không bắt buộc phải chứa gốc z = 0."],
+    "understand": "Hỏi ràng buộc của ROC → không chứa poles (cực). Đừng nhầm poles với zeros."
+  },
+  "DGT302-501": {
+    "paragraphs": ["Hệ LTI rời rạc ổn định BIBO khi tổng |h[n]| hữu hạn. Trên vòng đơn vị, |z⁻ⁿ| = 1, nên điều kiện hội tụ tuyệt đối của biến đổi z trở thành chính tổng |h[n]|. Vì vậy ROC của hệ ổn định phải chứa toàn bộ vòng |z| = 1."],
+    "understand": "Đề hỏi ổn định BIBO theo ROC → tìm miền chứa vòng đơn vị |z| = 1."
+  },
+  "dgt302-su26-fe-001": {
+    "paragraphs": ["Hệ LTI rời rạc ổn định BIBO khi tổng |h[n]| hữu hạn. Trên vòng đơn vị, |z⁻ⁿ| = 1, nên điều kiện hội tụ tuyệt đối của biến đổi z trở thành chính tổng |h[n]|. Vì vậy ROC của hệ ổn định phải chứa toàn bộ vòng |z| = 1."],
+    "understand": "Đề hỏi ổn định BIBO theo ROC → tìm miền chứa vòng đơn vị |z| = 1."
+  },
+  "DGT302-533": {
+    "paragraphs": ["Ở phần giao của hai ROC, cả hai tổng biến đổi z đều hội tụ, nên tổ hợp tuyến tính của chúng cũng hội tụ. Nếu các hạng làm triệt tiêu một cực khi cộng, miền hội tụ có thể mở rộng thêm. Vì vậy đáp án phải là ít nhất phần giao, không phải luôn đúng bằng phần giao."],
+    "understand": "Cộng hai dãy → ROC ít nhất chứa giao của hai ROC; triệt cực có thể làm miền rộng hơn."
+  },
+  "dgt302-su26-fe-005": {
+    "paragraphs": ["Ở phần giao của hai ROC, cả hai tổng biến đổi z đều hội tụ, nên tổ hợp tuyến tính của chúng cũng hội tụ. Nếu các hạng làm triệt tiêu một cực khi cộng, miền hội tụ có thể mở rộng thêm. Vì vậy đáp án phải là ít nhất phần giao, không phải luôn đúng bằng phần giao."],
+    "understand": "Cộng hai dãy → ROC ít nhất chứa giao của hai ROC; triệt cực có thể làm miền rộng hơn."
+  },
+  "DGT302-555": {
+    "paragraphs": ["Hai cực của H(z) là 0,5 và 2. Muốn ổn định BIBO, ROC phải chứa vòng |z| = 1 nhưng không chứa hai cực. Trong các miền được cho, chỉ vành 0,5 < |z| < 2 thỏa điều kiện này."],
+    "understand": "Đánh dấu hai cực 0,5 và 2 trên trục bán kính; chọn khoảng chứa 1 và bỏ hai đầu mút."
+  },
+  "dgt302-su26-fe-re-005": {
+    "paragraphs": ["Hai cực của H(z) là 0,5 và 2. Muốn ổn định BIBO, ROC phải chứa vòng |z| = 1 nhưng không chứa hai cực. Trong các miền được cho, chỉ vành 0,5 < |z| < 2 thỏa điều kiện này."],
+    "understand": "Đánh dấu hai cực 0,5 và 2 trên trục bán kính; chọn khoảng chứa 1 và bỏ hai đầu mút."
+  },
+  "DGT302-585": {
+    "paragraphs": ["Thay z = e^(jω) vào định nghĩa biến đổi z sẽ được tổng DTFT của đáp ứng xung. Các điểm e^(jω) có độ lớn bằng 1 nên nằm trên vòng đơn vị. Phép thay này cho đáp ứng tần số khi vòng đơn vị nằm trong ROC, đúng như điều kiện đề đã nêu."],
+    "understand": "H(e^(jω)) → thay z bằng e^(jω), tức xét H(z) trên vòng |z| = 1."
+  },
+  "dgt302-fa26-fe-001": {
+    "paragraphs": ["u(n) bằng 1 từ n = 0 trở đi, nên biến đổi z là tổng hình học 1 + z⁻¹ + z⁻² + … Tổng bằng 1/(1 − z⁻¹) khi |z⁻¹| < 1, tương đương |z| > 1. Đáp án cần đúng cả công thức lẫn ROC."],
+    "understand": "u(n) → tổng bắt đầu ở n = 0, công bội z⁻¹; điều kiện |z⁻¹| < 1 đổi thành |z| > 1."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "reviewedAt": "2026-11-23",
+  "coverage": {
+    "questionIds": 1559,
+    "legacyQuestionIds": 959,
+    "pastQuestionIds": 600,
+    "lessons": 130
+  },
+  "reference": {
+    "filename": "IC_Design_Ly_Thuyet_Tu_Luyen_Dap_An_Sau_Lua_Chon.docx",
+    "sha256": "8086f5480a5bec653290a2b9e139d759f2c049869036c1959495b320336c174e",
+    "use": "Explanatory style and concept comparisons; current reviewed scientific keys remain authoritative. The reference conflates SDFF with SAFF in one added section, so that section was not copied."
+  },
+  "bindingPolicy": "Explicit question IDs plus SHA256 of the exact stem, choices and canonical keys; changed questions must be reviewed again, never reassigned by runtime keyword matching.",
+  "progressChanges": false,
+  "questionOrKeyChanges": false,
+  "references": [
+    "https://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Fall07/PROJECT/SHUKOOR/semi-dyn-FF.pdf",
+    "https://www.ece.ucdavis.edu/~ramirtha/EEC118/S10/lecture14.pdf",
+    "https://brianmcfee.net/dstbook-site/content/ch08-fft/FFT.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.freqz.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.lfilter.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.upfirdn.html",
+    "https://docs.kernel.org/filesystems/vfs.html",
+    "https://ocw.mit.edu/courses/6-441-information-theory-spring-2010/pages/lecture-notes/"
+  ]
+}

@@ -1,0 +1,199 @@
+01 Determine the z-transform of the unit step sequence x(n) = u(n) and its corresponding Region of Convergence (ROC).
+A. X(z) = 1+z⁻¹, ROC: |z|>0 | B. X(z) = 1/(1+z⁻¹), ROC: |z|>1 | C. X(z) = 1/(1-z⁻¹), ROC: |z|>1 | D. X(z) = 1-z⁻¹, ROC: |z|>0
+KEY None MATCH DGT302-552 0.4688 REUSE 
+
+02 What is the main limitation of the Discrete-Time Fourier Transform (DTFT) that necessitates the introduction of the z-Transform?
+A. It does not converge for signals that grow exponentially (diverging signals). | B. It only applies to strictly periodic continuous-time signals. | C. It cannot be computed for finite-duration signals- | D. It outputs a discrete frequency grid rather than a continuous spectrum.
+KEY None MATCH DGT302-523 0.5703 REUSE 
+
+03 Which of the following defines the correct property for the Z-transform of the complex conjugated sequence x*(n)?
+A. X*(z*) | B. X*(z) | C. X(z*) | D. -X*(z*)
+KEY [0] MATCH DGT302-573 0.5291 REUSE 
+
+04 The Time Reversal property states that folding a signal in the time domain x(-n) corresponds to replacing z with what value in the z-domain?
+A. -z | B. z* | C. z⁻¹ | D. 1/z*
+KEY [2] MATCH DGT302-538 0.6075 REUSE 
+
+05 Which of the following is a strict mathematical constraint regarding the Region of Convergence (ROC) in the -plane?
+A. The ROC must be a square region. | B. The ROC must always include the origin z = 0. | C. The ROC cannot contain any zeros. | D. The ROC cannot contain any poles
+KEY None MATCH DGT302-643 0.5116 REUSE 
+
+06 For a 2nd-order Sigma-Delta Modulator (SDM) with a noise transfer function Hn(z) = (1 - z⁻¹)², integrating the shaped noise PSD over the baseband [-B, B] utilizing the small-angle approximation reveals that the in-band noise power σn² is proportional to:
+A. (π²σe²)/(3l³) | B. (π⁴σe²)/(5l⁵) | C. (π⁴σe²)/(l⁵) | D. σe²/12
+KEY [1] MATCH DGT302-541 0.385 REUSE 
+
+07 The Noise Transfer Function (NTF) of a 1st-order Sigma-Delta Modulator in the z-domain is Hn(z) = 1-z⁻¹. This acts as a:
+A. Lowpass filter, suppressing noise at high frequencies | B. Highpass filter, suppressing quantization noise in the baseband and pushing it to high frequencies | C. Bandpass filter | D. All-pass filter
+KEY None MATCH DGT302-554 0.5047 REUSE 
+
+08 Quantization is the process that directly causes a signal to become discrete in:
+A. Time | B. Phase | C. Amplitude | D. Frequency
+KEY None MATCH DGT302-576 0.495 REUSE 
+
+09 The electrical Signal originating directly from a microphone is best described as:
+A. A quantized signal | B. A discrete-time signal | C. An aliased Signal | D. An analog or continuous Signal
+KEY None MATCH DGT302-722 0.4462 REUSE 
+
+10 In the physical D/A reconstruction process, a Zero-Order Hold (ZOH) circuit is modeled as a rectangular pulse h(t) of duration T. What is the magnitude of its corresponding frequency response |H(F)| that causes high-frequency attenuation (the Sinc envelope)?
+A. |H(F)| = sin(2πFT)/(2πFT) | B. |H(F)| = 1 for all F | C. |H(F)| = T·|sin(πFT)/(πFT)| | D. |H(F)| = T·|sin(πF)/(πF)|
+KEY [2] MATCH DGT302-582 0.3672 REUSE 
+
+11 In a general Pole-Zero IIR Lattice-Ladder structure, what is the specific role of the "Ladder" portion of the network?
+A. It implements the zeros (numerator) of the system by tapping the backward error signals and weighting them with coefficients. | B. It implements the poles (denominator) of the system bf creating nested feedback loops and weighting them with coefficients. | C. It calculates the reflection coefficients directly from the time-domain signal- | D. It delays the incoming signal to perfectly align its phase with the anti-aliasing filter.
+KEY None MATCH DGT302-553 0.4215 REUSE 
+
+12 How does the Direct Form II (Canonic Form) structure mathematically improve upon the Direct Form I structure for IIR filters?
+A. By swapping the order of the Pole and Zero sections, it merges the delay lines into a single shared memory line requiring only max (M, N) delays. | B. It removes all multipliers from the system by using on adders and bit-shifts. | C. It replaces the discrete unit delays with continuous-time integrators. | D. It doubles the number of coefficients to artificially increase the transition bandwidth.
+KEY None MATCH DGT302-528 0.4688 REUSE 
+
+13 Convert the FIR filter with Direct Form coefficients A2(z) = 1+(3/8)z⁻¹+(1/2)z⁻² into a lattice structure. By performing step-down recursion, determine the reflection coefficients K1 and K2.
+A. K1 = 1/4, K2 = 1/2 | B. K1 = 3/8, K2 = 1/2 | C. K1 = 1/2, K2 = 3/8 | D. K1 = 1/4, K2 = 3/8
+KEY None MATCH DGT302-561 0.4872 REUSE 
+
+14 To mathematically analyze the complex nonlinear effects of finite word-length quantization, engineers typically use the Linear Noise Model. This model assumes the quantization error e(n) is:
+A. An additive white noise source that is uniformly distributed and statistically uncorrelated with the input signal. | B. An exact mathematical derivative of the original input iOåal | C. A deterministic, low-frequency sinusoidal interference. | D. A multiplicative scaling factor applied directly to the filter's output
+KEY None MATCH DGT302-547 0.3987 REUSE 
+
+15 In digital signal processing, random (stochastic) signals differ from deterministic signals because their future values cannot be precisely predicted. Instead, they must be characterized by:
+A. Statistical averages such as Mean, Variance, and Power Spectral Density. | B. Exact mathematical piecewise formulas | C. Continuous-Time Fourier Series (CTFS). | D. Step and Ramp functions exclusively.
+KEY None MATCH DGT302-789 0.4073 REUSE 
+
+16 A non-causal IIR Wiener filter, which assumes access to infinite future and past data, can achieve an absolute minimum MSE E_min^nc. An optimal causal IIR Wiener filter, constrained to only present and past data, achieves an MSE E_min^c. According to the theory of Spectral Factorization in optimum filtering, what is the relationship between these errors?
+A. E_min^c < E_min^nc | B. E_min^c ≥ E_min^nc | C. E_min^c = 0 | D. E_min^nc → ∞
+KEY [1] MATCH DGT302-639 0.3784 REUSE 
+
+17 In Backward Linear Prediction, the algorithm attempts to predict a past sample x(n-p) using p future/recent samples. For a stationary random process, how are the optimum backward coefficients c_p(k) related to the forward coefficients a_p(k)? (Index each tap by its distance from the sample being predicted.)
+A. c_p(k) = 1/a_p(k) | B. c_p(k) = -a_p(k) | C. c_p(k) = a_p*(k) | D. c_p(k) = a_p(p-k)
+KEY [2] MATCH DGT302-560 0.3471 REUSE 
+
+18 In FFT computation, zero padding does NOT provide any additional information about the true spectrum of the sequence (it does not improve physical frequency resolution)-
+A. True | B. False | C. Only true for IIR filters- | D. Only true for random signals.
+KEY None MATCH DGT302-570 0.4214 REUSE 
+
+19 The Synthesis Equation (Inverse DFT) that reconstructs the time sequence x(n) from the frequency sequence X(k) includes which crucial scaling factor and exponent signo
+A. No scaling factor, negative exponent -j2πkn/N | B. 1/N scaling factor, negative exponent -j2πkn/N | C. 1/N scaling factor, positive exponent +j2πkn/N | D. N scaling factor, positive exponent +j2πkn/N
+KEY None MATCH DGT302-570 0.6013 REUSE 
+
+20 Which of the following windows is best suited for separating two frequencies that are close to each other and have almost the same amplitudes (i.e., requires the narrowest main lobe)Q
+A. Hamming | B. Hanning | C. Rectangular | D. Blackman
+KEY None MATCH DGT302-536 0.426 REUSE 
+
+21 Consider a discrete-time signal x(n) with its continuous spectrum X(ω). If X(ω) is sampled strictly at N equally spaced frequencies ωk = 2πk/N to form X(k), the corresponding time-domain sequence retrieved by the N-point IDFT represents a time-aliased version of x(n). What is the mathematical expression for this reconstructed time sequence x_p(n)?
+A. x_p(n) = Σ[r=-∞..∞] x(n-rN) | B. x_p(n) = x(n)·w_R(n) | C. x_p(n) = x(n)/N | D. x_p(n) = Σ[r=-∞..∞] x(n)·exp(-j2πr/N)
+KEY [0] MATCH DGT302-580 0.3575 REUSE 
+
+22 What is the primary method to mitigate the abrupt truncation at the boundaries of a finite obsetvation interval, which causes spectral leakage?
+A. Multiplying the data sequence by a non-rectangular window that tapers to zero at both ends. | B. Increasing the sampling rate Fs | C. Using circular convolution instead of linear convolution- | D. Applying a digital bandpass filter.
+KEY None MATCH DGT302-581 0.4132 REUSE 
+
+23 Which classic analog filter prototype is designed to have an equiripple behavior in the passband and a monotonic roll-off in the stopband, achieving a steeper cutoff than Butterworth for the same order?
+A. Chebyshev Type I filter | B. Butterworth filter | C. Bessel filter | D. Moving Average filter
+KEY None MATCH DGT302-577 0.3712 REUSE 
+
+24 What is the peak side-lobe level of a standard Rectangular window in the frequency domain, which characterizes its poor leakage suppression?
+A. -13 dB | B. -31 dB | C. -41 dB | D. -57 dB
+KEY [0] MATCH DGT302-572 0.4388 REUSE 
+
+25 Which classic analog filter prototype is characterized by a "Maximally Flat" magnitude response in the passband with absolutely no ripples?
+A. Butterworth filter | B. Chebyshev Type I filter | C. Chebyshev Type II filter | D. Elliptic filter
+KEY None MATCH DGT302-586 0.4427 REUSE 
+
+26 To design an IIR lowpass filter with a digital cutoff frequency ωc = 0.2 rad/sample using the Bilinear Transformation method with an assumed sampling period T = 2, what is the exact value of the pre-warped analog cutoff frequency Ωc?
+A. Ωc = tan(0.2π) | B. Ωc = sin(0.2π) | C. Ωc = tan(0.1π) | D. Ωc = cos(0.1π) | E. Ωc = tan(0.1)
+KEY [4] MATCH DGT302-561 0.4314 REUSE 
+
+27 Determine the exact DTFT X(ω) of the two-sided exponentially decaying sequence x(n) = a^|n| for |a| < 1. (Hint: decompose it into a^n·u(n) + a^(-n)·u(-n-1) and simplify using Euler's formula.)
+A. (1+a²)/(1-2a·cos(ω)+a²) | B. (1-a²)/(1-2a·cos(ω)+a²) | C. (1-a²)/(1+2a·cos(ω)+a²) | D. 2a·sin(ω)/(1-2a·cos(ω)+a²)
+KEY [1] MATCH DGT302-522 0.4485 REUSE 
+
+28 Which mathematical tool is strictly used to analyze discrete-time, aperiodic signals?
+A. Discrete-Time Fourier Transform (DTFT) | B. Continuous-Time Fourier Transform (CTFT) | C. Discrete-Time Fourier Series (DTFS) | D. Continuous-Time Fourier Series (CTFS)
+KEY None MATCH DGT302-542 0.5532 REUSE 
+
+29 In digital signal processing, which range is used for the principal discrete-time frequency interval centered at zero?
+A. -∞ < ω < ∞ | B. 0 ≤ ω ≤ 2π | C. -π ≤ ω ≤ π | D. -1 ≤ ω ≤ 1
+KEY [2] MATCH DGT302-759 0.4182 REUSE 
+
+30 As a direct consequence of conjugate symmetry for real signals, the magnitude spectrum |X(ω)| is always an:
+A. Even function: |X(-ω)| = |X(ω)| | B. Odd function: |X(-ω)| = -|X(ω)| | C. Exponential function | D. Constant function
+KEY None MATCH DGT302-575 0.5182 REUSE 
+
+31 The Energy Density Spectrum Sxx(ω), which describes how the total energy of an aperiodic discrete signal is distributed across frequency, is defined as:
+A. Sxx(ω) = |X(ω)|² | B. Sxx(ω) = X(ω) + X*(ω) | C. Sxx(ω) = (1/2π)·∫[-π..π] |X(ω)|² dω | D. Sxx(ω) = ∠X(ω)
+KEY [0] MATCH DGT302-572 0.3658 REUSE 
+
+32 Consider an LTI system with zeros at z = exp(±jπ/2) and poles at z = 0.9exp(±jπ/2). What specific type of filter does this pole-zero configuration describe?
+A. A lowpass filter | B. A highpass filter | C. A notch filter rejecting ω = π/2 | D. A resonator peaking at ω = π
+KEY None MATCH DGT302-587 0.4 REUSE 
+
+33 A simple digital oscillator that continually generates a pure sinusoidal signal y(n) = cos(ω0n)u(n) without decaying must have its poles located exactly at:
+A. z = ±1 | B. z = exp(±jω0) | C. z = 0 | D. z = 0.5·exp(±jω0)
+KEY [1] MATCH DGT302-537 0.3863 REUSE 
+
+34 Group delay T(w) is a measure of the actual time delay of a frequency group passing through a system. For a linear-phase system, the group delay is:
+A. Exponentially increasing | B. Zero for all frequencies | C. A constant for all frequencies | D. Proportional to 02
+KEY None MATCH DGT302-536 0.4232 REUSE 
+
+35 Two systems have transfer functions H1(z) and H2(z) with equal magnitudes on the unit circle for all ω but different phase responses. Which statement describes how they can be related?
+A. Inverses of each other | B. Aliased systems | C. They can differ by an all-pass factor with reciprocal-conjugate pole-zero pairs | D. Linear phase FIR systems
+KEY None MATCH DGT302-652 0.4919 REUSE 
+
+36 In a first-order all-pass filter with a pole at z=a, where must the corresponding zero be placed to maintain constant magnitude response 1?
+A. At z = -a | B. At z = a* | C. At the reciprocal conjugate location z = 1/a* | D. At the origin z = 0
+KEY None MATCH DGT302-586 0.4641 REUSE 
+
+37 In the mathematical derivation of the Decimation-In-Frequency (DIF) algorithm, the odd-indexed frequency components X(2r+1) are derived by computing the (N/2)-point DFT of which specific intermediate sequence?
+A. (x(n)-x(n+N/2))·W_N^n | B. (x(n)+x(n+N/2))·W_N^n | C. x(n)-x(n+N/2) | D. x(2n+1)·W_N^n
+KEY [0] MATCH DGT302-544 0.4745 REUSE 
+
+38 For two's-complement arithmetic with truncation of fractional bits equivalent to rounding down, what is the consequence of truncation instead of rounding in FFT multipliers?
+A. Truncation creates a uniform zero-mean error. | B. Truncation creates a negative DC bias because discarded bits always force the value toward negative infinity. | C. Truncation eliminates all quantization noise. | D. Truncation increases the dynamic range exponentially.
+KEY None MATCH DGT302-502 0.4589 REUSE 
+
+39 How can the DFT compute N equispaced samples of the z-transform of an N-point sequence x(n) on a concentric circle of radius r instead of the unit circle?
+A. Compute the N-point DFT of x(n)·r⁻ⁿ | B. Compute the N-point DFT of x(n)·r^n + x(n)·r⁻ⁿ | C. Multiply the final DFT output X(k) by r⁻ᵏ | D. It is mathematically impossible; DFT is strictly bound to the unit circle
+KEY None MATCH DGT302-500 0.3856 REUSE 
+
+40 Which mathematical substitution of the twiddle factor is the fundamental key that allows an N-point DFT to be reduced into two N/2-point DFTs?
+A. W_N² = W_(N/2) | B. W_N⁻¹ = W_(N/2) | C. W_N^N = 0 | D. W_N² = W_(2N)
+KEY [0] MATCH DGT302-508 0.3871 REUSE 
+
+41 In fixed-point DSP hardware, why is a scaling factor (shift right by 1 bit, i.e., dividing by 2) typically applied at each stage of the FFT butterfly?
+A. To speed up the calculation process. | B. To filter out high-frequency noise. | C. To prevent register overflow, as additions can double the magnitude of the signal. | D. To eliminate the need for bit-reversing.
+KEY None MATCH DGT302-574 0.3731 REUSE 
+
+42 An input signal has Fs=10,000 Hz and useful bandwidth Fp=800 Hz. It must be decimated to Fs'=2,000 Hz. Using the new Nyquist frequency as the anti-alias stopband edge, what are the digital passband and stopband edges at the high sampling rate?
+A. ωp=0.16π, ωs=0.2 | B. ωp=0.8π, ωs=1.0 | C. ωp=0.16π, ωs=0.5 | D. ωp=0.5π, ωs=0.2 | E. ωp=0.16π, ωs=0.2π
+KEY [4] MATCH DGT302-759 0.3636 REUSE 
+
+43 In a standard two-channel QMF bank, if the given analysis lowpass filter is H0(z) = 1 + z⁻¹, what must be the transfer function of the analysis highpass filter H1(z) to establish the required quadrature mirror relationship H1(z) = H0(-z)?
+A. H1(z) = 1 + z⁻² | B. H1(z) = -1 - z⁻¹ | C. H1(z) = 1 - z⁻¹ | D. H1(z) = z⁻¹ - 1
+KEY [2] MATCH DGT302-579 0.3673 REUSE 
+
+44 You need to interpolate an audio signal from Fs=8 kHz to Fs'=24 kHz (I=3). The original signal bandwidth is B=3.5 kHz. If the anti-imaging stopband begins at the first spectral image, what is its digital edge normalized to the new Nyquist frequency?
+A. 0.375 | B. 0.395 | C. 0.333 | D. 0.875
+KEY None MATCH DGT302-516 0.4405 REUSE 
+
+45 What is the primary destructive spectral phenomenon caused by Downsampling a signal without prior filtering?
+A. Spectral expansion, which leads to the danger of Aliasing (spectral overlap). | B. Spectral compression, which leads to the danger of Imaging (high-frequency replicas). | C. Spectral leakage due to the abrupt truncation of the time sequence- | D. The Gibbs phenomenon, causing ringing in the time domain.
+KEY None MATCH DGT302-770 0.4935 REUSE 
+
+46 The mechanics of computing the convolution sum involves four distinct mathematical steps. Which of the following is the correct sequence of operations?
+A. Shift, Multiply, Fold, Add | B. Fold, Shift, Multiply, Add | C. Multiply, Fold, Add, Shift | D. Add, Fold, Shift, Multiply
+KEY None MATCH DGT302-556 0.4398 REUSE 
+
+47 According to the Associative Property, two LTI systems connected in series (cascade) with impulse responses h1(n) and h2(n) can be replaced by a single equivalent system with impulse response:
+A. h_eq(n) = h1(n) + h2(n) | B. h_eq(n) = h1(n) * h2(n) | C. h_eq(n) = h1(n)·h2(n) | D. h_eq(n) = h1(n)/h2(n)
+KEY [1] MATCH DGT302-529 0.6074 REUSE 
+
+48 A system is said to be Causal if the output of the system at any time N depends ONLY on:
+A. future inputs | B. present and future inputs | C. present and past inputs | D. past outputs only.
+KEY None MATCH DGT302-606 0.6615 REUSE 
+
+49 The output y(n) of an LTI system to an arbitrary input x(n) is determined by the Convolution Sum formula, which is mathematically expressed as:
+A. y(n) = Σ[k=-∞..∞] x(k)h(n+k) | B. y(n) = Σ[k=-∞..∞] x(n)h(k-n) | C. y(n) = Σ[k=-∞..∞] x(k)h(n-k) | D. y(n) = Σ[k=-∞..∞] x(k)x(n-k)
+KEY [2] MATCH DGT302-583 0.3831 REUSE 
+
+50 Systems that have NO feedback loops, meaning the output depends only on present and past inputs, are called Nonrecursive systems. They are typically associated with which type of impulse response?
+A. Infinite Impulse Response (IIR) | B. Finite Impulse Response (FIR) | C. Analog Active Filter | D. Non-causal response
+KEY None MATCH DGT302-583 0.4126 REUSE 

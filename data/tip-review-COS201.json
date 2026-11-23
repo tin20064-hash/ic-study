@@ -1,0 +1,1361 @@
+{
+  "subject": "COS201",
+  "reviewedCount": 214,
+  "ledger": [
+    {
+      "id": "COS201-800",
+      "status": "keep",
+      "whyVi": "Mẹo gắn đúng modern codes với cách tổ chức bit dư có cấu trúc; không suy sang tăng công suất hoặc băng thông."
+    },
+    {
+      "id": "COS201-801",
+      "status": "keep",
+      "whyVi": "Nêu đúng giới hạn của việc không prefix-free: có thể cần nhìn trước, chưa đủ kết luận giải mã mơ hồ."
+    },
+    {
+      "id": "COS201-802",
+      "status": "keep",
+      "whyVi": "Giữ đúng mô hình coherent BPSK/AWGN và miền SNR cao; đuôi Q là nguyên nhân BER suy giảm nhanh."
+    },
+    {
+      "id": "COS201-803",
+      "status": "keep",
+      "whyVi": "Từ angle modulation dẫn đúng tới tần số/pha là nơi mang thông tin."
+    },
+    {
+      "id": "COS201-804",
+      "status": "keep",
+      "whyVi": "Tái tạo mức số hạn chế nhiễu tích lũy; mẹo không hứa miễn nhiễm nhiễu tuyệt đối."
+    },
+    {
+      "id": "COS201-805",
+      "status": "keep",
+      "whyVi": "Lấy mẫu đúng Nyquist không chừa dải bảo vệ, khớp hạn chế thực tế đề hỏi."
+    },
+    {
+      "id": "COS201-806",
+      "status": "keep",
+      "whyVi": "PLL khóa có sai số pha hằng, không bắt buộc bằng không; mẹo phân biệt đúng bẫy trong lựa chọn."
+    },
+    {
+      "id": "COS201-807",
+      "status": "keep",
+      "whyVi": "Template comparison mô tả đúng tương quan tín hiệu nhận với mẫu đã biết, phù hợp lý do matched filter tương đương correlator."
+    },
+    {
+      "id": "COS201-808",
+      "status": "keep",
+      "whyVi": "Hai tần số tổng và hiệu là đúng sản phẩm của phép trộn hai sóng hình sin."
+    },
+    {
+      "id": "COS201-809",
+      "status": "keep",
+      "whyVi": "Tín hiệu yếu, đồng bộ và cân bằng là các nhiệm vụ bổ sung giải thích độ phức tạp phía thu."
+    },
+    {
+      "id": "COS201-810",
+      "status": "fix",
+      "whyVi": "Cả mẹo và lý do cũ bỏ số kênh, chưa giải thích đủ lựa chọn tổng hợp tất cả yếu tố."
+    },
+    {
+      "id": "COS201-811",
+      "status": "keep",
+      "whyVi": "Nyquist rate bằng hai lần tần số cao nhất W, khớp định nghĩa trong đề."
+    },
+    {
+      "id": "COS201-812",
+      "status": "keep",
+      "whyVi": "DM gửi một bit chỉ dấu sai số dự đoán; mẹo phân biệt với việc gửi toàn bộ mức PCM."
+    },
+    {
+      "id": "COS201-813",
+      "status": "keep",
+      "whyVi": "Đề hỏi NOT; mẹo xác định giảm băng thông không phải lợi ích mặc định của đưa tín hiệu lên sóng mang."
+    },
+    {
+      "id": "COS201-814",
+      "status": "keep",
+      "whyVi": "Đường bao hằng giải thích FSK chịu bộ khuếch đại phi tuyến tốt hơn điều chế mang tin bằng biên độ."
+    },
+    {
+      "id": "COS201-815",
+      "status": "keep",
+      "whyVi": "Mẹo nêu đúng yêu cầu biết thống kê để lập codebook của Huffman tĩnh, không cấm sử dụng thời gian thực."
+    },
+    {
+      "id": "COS201-816",
+      "status": "keep",
+      "whyVi": "Tích phân phổ nhiễu tỷ lệ f² cho W³ và giữ điều kiện FM trên ngưỡng của đề."
+    },
+    {
+      "id": "COS201-817",
+      "status": "keep",
+      "whyVi": "Chia thành sóng mang con hẹp là cơ chế liên quan trực tiếp tới xử lý kênh đa đường của OFDM."
+    },
+    {
+      "id": "COS201-818",
+      "status": "keep",
+      "whyVi": "Nhiễu giới hạn SNR và chất lượng thu, đúng tác động chính mà đề yêu cầu."
+    },
+    {
+      "id": "COS201-819",
+      "status": "keep",
+      "whyVi": "White noise được nhận diện bởi mật độ phổ công suất phẳng, không phải dạng phân bố biên độ."
+    },
+    {
+      "id": "COS201-820",
+      "status": "keep",
+      "whyVi": "Tính chọn lọc tần số là định nghĩa bộ lọc đang được hỏi."
+    },
+    {
+      "id": "COS201-821",
+      "status": "keep",
+      "whyVi": "Nhân tham chiếu rồi lọc thông thấp là thao tác tách hai nhánh QAM trong đáp án đúng."
+    },
+    {
+      "id": "COS201-822",
+      "status": "keep",
+      "whyVi": "Standard AM có sóng mang cùng hai dải biên; ba thành phần nêu đúng đáp án."
+    },
+    {
+      "id": "COS201-823",
+      "status": "keep",
+      "whyVi": "Mẹo nêu bộ nhớ kênh và symbol lân cận, giải thích vì sao ISI cần equalization."
+    },
+    {
+      "id": "COS201-824",
+      "status": "keep",
+      "whyVi": "Combine into one channel khớp chính xác định nghĩa ghép nhiều tín hiệu dùng chung kênh."
+    },
+    {
+      "id": "COS201-825",
+      "status": "keep",
+      "whyVi": "Một dải biên của SSB dẫn trực tiếp tới ưu thế tiết kiệm băng thông."
+    },
+    {
+      "id": "COS201-826",
+      "status": "keep",
+      "whyVi": "Trung bình và phương sai xác định đầy đủ phân bố Gaussian; không thiếu tham số trong ngữ cảnh đề."
+    },
+    {
+      "id": "COS201-827",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc lại chênh lệch 3 dB có sẵn trong đề; thêm khoảng cách để giải thích nguyên nhân."
+    },
+    {
+      "id": "COS201-828",
+      "status": "keep",
+      "whyVi": "Modular design đúng lợi ích của chia hệ thống thành lớp độc lập tương đối."
+    },
+    {
+      "id": "COS201-829",
+      "status": "keep",
+      "whyVi": "Nêu đúng đánh đổi tài nguyên khi từ điển LZ lớn hơn; tránh khẳng định sai tỷ lệ nén luôn tăng."
+    },
+    {
+      "id": "COS201-830",
+      "status": "fix",
+      "whyVi": "Brick-wall chỉ là tên gọi khác; đặc điểm trong/ngoài dải giúp nhận đúng lựa chọn hình chữ nhật."
+    },
+    {
+      "id": "COS201-831",
+      "status": "fix",
+      "whyVi": "Accumulated probability còn chung chung; công thức xác định rõ tích lũy đến ngưỡng nào."
+    },
+    {
+      "id": "COS201-832",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp lại tối ưu SNR trong đề, chưa dẫn tới lựa chọn khớp phổ tín hiệu."
+    },
+    {
+      "id": "COS201-833",
+      "status": "fix",
+      "whyVi": "Giải nghĩa ICI bằng cơ chế mất trực giao để người học nhận đúng nội dung dù đáp án đảo vị trí."
+    },
+    {
+      "id": "COS201-834",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nối additivity với logarithm; đẳng thức cho thấy vì sao cần log."
+    },
+    {
+      "id": "COS201-835",
+      "status": "keep",
+      "whyVi": "Frequency discriminator được dùng để giải điều chế FM, khớp chức năng được hỏi."
+    },
+    {
+      "id": "COS201-836",
+      "status": "keep",
+      "whyVi": "Mẹo giữ dấu khoảng trước 10 dB, phù hợp câu hỏi ngưỡng điển hình, không coi là hằng số tuyệt đối."
+    },
+    {
+      "id": "COS201-837",
+      "status": "keep",
+      "whyVi": "Giữ điều kiện chưa bù và chưa thiết kế zero-ISI, nên chỉ nói band limit có thể gây ISI."
+    },
+    {
+      "id": "COS201-838",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ khai triển chữ viết tắt, chưa nói rõ đại lượng thay đổi mà đề hỏi."
+    },
+    {
+      "id": "COS201-839",
+      "status": "keep",
+      "whyVi": "Tích phân trị tuyệt đối hữu hạn được nêu đúng là điều kiện đủ cho Fourier thông thường."
+    },
+    {
+      "id": "COS201-840",
+      "status": "keep",
+      "whyVi": "Tích phân |h| hữu hạn là điều kiện BIBO của hệ LTI, đúng ngữ cảnh đề."
+    },
+    {
+      "id": "COS201-841",
+      "status": "keep",
+      "whyVi": "P(A|B) được đọc là xác suất A khi đã biết B; A/B ở đây là biến sự kiện, không phải vị trí đáp án."
+    },
+    {
+      "id": "COS201-842",
+      "status": "keep",
+      "whyVi": "NBFM xấp xỉ hai lần băng thông tín hiệu tin; ký hiệu W được dùng đúng."
+    },
+    {
+      "id": "COS201-843",
+      "status": "keep",
+      "whyVi": "Tính không giảm là tính chất CDF cần nhận diện trực tiếp trong lựa chọn."
+    },
+    {
+      "id": "COS201-844",
+      "status": "keep",
+      "whyVi": "Chuỗi message thành channel-ready signal chỉ đúng chức năng transmitter."
+    },
+    {
+      "id": "COS201-845",
+      "status": "keep",
+      "whyVi": "Giữ điều kiện single-tone AM và μ=1, cho hiệu suất cực đại 1/3 đúng phạm vi đề."
+    },
+    {
+      "id": "COS201-846",
+      "status": "keep",
+      "whyVi": "Dịch thời gian tương ứng pha tuyến tính theo tần số, đúng tính chất Fourier."
+    },
+    {
+      "id": "COS201-847",
+      "status": "keep",
+      "whyVi": "FFT tại đầu thu OFDM tách các sóng mang con, phù hợp chức năng demultiplexing."
+    },
+    {
+      "id": "COS201-848",
+      "status": "keep",
+      "whyVi": "Độ lệch chuẩn là căn phương sai, là định nghĩa cụ thể đủ chọn đáp án."
+    },
+    {
+      "id": "COS201-849",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đảo từ hiện tượng sang biện pháp; thêm độ dốc bám giải thích đúng tác động tăng lấy mẫu."
+    },
+    {
+      "id": "COS201-851",
+      "status": "keep",
+      "whyVi": "Cos90°=0 giải thích mất thành phần tin ở bộ tách DSB-SC một nhánh, giữ đúng giới hạn câu hỏi."
+    },
+    {
+      "id": "COS201-852",
+      "status": "keep",
+      "whyVi": "Ba mảng tín hiệu, điều chế và nhiễu đúng nhóm nền tảng ở mức tín hiệu được hỏi."
+    },
+    {
+      "id": "COS201-853",
+      "status": "keep",
+      "whyVi": "Bộ lọc FIR cần nhiều hệ số để có sườn sắc, đúng nhược điểm trong lựa chọn."
+    },
+    {
+      "id": "COS201-854",
+      "status": "keep",
+      "whyVi": "Propagation loss là suy hao kênh cụ thể, khớp ví dụ channel impairment trong đề."
+    },
+    {
+      "id": "COS201-855",
+      "status": "keep",
+      "whyVi": "I+jQ đúng định nghĩa complex envelope của câu này."
+    },
+    {
+      "id": "COS201-856",
+      "status": "keep",
+      "whyVi": "Mô hình OSI có bảy lớp; mẹo ngắn nhưng đủ là số liệu định nghĩa."
+    },
+    {
+      "id": "COS201-857",
+      "status": "keep",
+      "whyVi": "VSB là phương án dung hòa SSB và AM hai dải biên, khớp hai đầu so sánh trong đáp án."
+    },
+    {
+      "id": "COS201-858",
+      "status": "keep",
+      "whyVi": "Quadrature và lệch 90° giải thích trực tiếp chữ Q."
+    },
+    {
+      "id": "COS201-859",
+      "status": "keep",
+      "whyVi": "Cos tạo hai xung tại ±fc, đúng dạng phổ thay vì một tần số dương đơn lẻ."
+    },
+    {
+      "id": "COS201-860",
+      "status": "keep",
+      "whyVi": "AM thông thường có hai dải biên nên cần 2W, đúng câu hỏi băng thông."
+    },
+    {
+      "id": "COS201-861",
+      "status": "keep",
+      "whyVi": "Khai triển DSB và SC chỉ ra đủ hai dải biên cùng sóng mang bị triệt."
+    },
+    {
+      "id": "COS201-862",
+      "status": "keep",
+      "whyVi": "Tín hiệu tuần hoàn có phổ vạch, đúng loại phổ được hỏi."
+    },
+    {
+      "id": "COS201-863",
+      "status": "keep",
+      "whyVi": "Optical fiber là môi trường vật lý cụ thể, đúng loại kênh cần chọn."
+    },
+    {
+      "id": "COS201-864",
+      "status": "keep",
+      "whyVi": "Khôi phục sóng mang/thời gian từ dạng sóng nhận đúng khối phía thu mà câu hỏi phân biệt."
+    },
+    {
+      "id": "COS201-865",
+      "status": "keep",
+      "whyVi": "Tên Amplitude Modulation chỉ trực tiếp đại lượng biên độ được biến đổi."
+    },
+    {
+      "id": "COS201-866",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc μ>1 đã cho sẵn; thêm hệ quả quá điều chế và méo đường bao."
+    },
+    {
+      "id": "COS201-867",
+      "status": "keep",
+      "whyVi": "Gain response là tên khác của amplitude response, đúng câu hỏi thuật ngữ."
+    },
+    {
+      "id": "COS201-868",
+      "status": "keep",
+      "whyVi": "Costas loop liên hệ trực tiếp với phục hồi pha DSB-SC."
+    },
+    {
+      "id": "COS201-869",
+      "status": "keep",
+      "whyVi": "Radio thực hiện bằng phần mềm chính là SDR, mẹo nối đúng mô tả và thuật ngữ."
+    },
+    {
+      "id": "COS201-870",
+      "status": "keep",
+      "whyVi": "W nhỏ hơn nhiều fc là điều kiện narrowband đang được hỏi."
+    },
+    {
+      "id": "COS201-871",
+      "status": "keep",
+      "whyVi": "Bộ lọc thông dải chọn dải tần mong muốn sau switching modulator, đúng chức năng đề."
+    },
+    {
+      "id": "COS201-872",
+      "status": "keep",
+      "whyVi": "Đẳng thức năng lượng miền thời gian và tần số nhận diện đúng Parseval."
+    },
+    {
+      "id": "COS201-873",
+      "status": "keep",
+      "whyVi": "Impulse response đặc trưng hoàn toàn hệ LTI ban đầu nghỉ, đúng điều kiện đề."
+    },
+    {
+      "id": "COS201-874",
+      "status": "keep",
+      "whyVi": "Mẹo giữ single-tone và 100% modulation, cho phần công suất sóng mang 2/3 chính xác."
+    },
+    {
+      "id": "COS201-875",
+      "status": "keep",
+      "whyVi": "Lược Dirac biến đổi thành lược Dirac, đủ nhận dạng loại phổ cần chọn."
+    },
+    {
+      "id": "COS201-876",
+      "status": "keep",
+      "whyVi": "Frequency-Division chỉ trực tiếp chiều tần số để tách kênh FDM."
+    },
+    {
+      "id": "COS201-877",
+      "status": "keep",
+      "whyVi": "Giới hạn 0<μ≤1 thể hiện điều kiện tránh overmodulation của tách đường bao."
+    },
+    {
+      "id": "COS201-878",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp nguyên quan hệ đã nêu; bổ sung tên tính chất mà đáp án yêu cầu."
+    },
+    {
+      "id": "COS201-879",
+      "status": "keep",
+      "whyVi": "Tích phân trị tuyệt đối hữu hạn được nêu đúng là điều kiện đủ cho Fourier thông thường."
+    },
+    {
+      "id": "COS201-880",
+      "status": "keep",
+      "whyVi": "Nhân quả của LTI ban đầu nghỉ đòi h(t)=0 trước t=0, đúng miền cần xác định."
+    },
+    {
+      "id": "COS201-881",
+      "status": "keep",
+      "whyVi": "Paley–Wiener là tiêu chuẩn realizability nhân quả mà câu hỏi gọi tên; mẹo bám đúng thuật ngữ."
+    },
+    {
+      "id": "COS201-882",
+      "status": "keep",
+      "whyVi": "Chuyển message phù hợp môi trường truyền xác định đúng transmitter."
+    },
+    {
+      "id": "COS201-883",
+      "status": "keep",
+      "whyVi": "Yk/Hk là phép zero forcing và đã giữ điều kiện Hk khác không để tránh chia sai."
+    },
+    {
+      "id": "COS201-884",
+      "status": "keep",
+      "whyVi": "Phần cứng và kênh vẫn chịu suy hao/méo tương tự, đúng lý do cần kiến thức analog trong hệ số."
+    },
+    {
+      "id": "COS201-885",
+      "status": "keep",
+      "whyVi": "Frequency translation là công dụng mixer trong đáp án, không lẫn với khuếch đại."
+    },
+    {
+      "id": "COS201-886",
+      "status": "keep",
+      "whyVi": "Điều chế, dạng sóng và môi trường vật lý cùng trỏ tới Physical layer OSI."
+    },
+    {
+      "id": "COS201-887",
+      "status": "keep",
+      "whyVi": "Cùng tần số và lệch pha 90° là cặp điều kiện đúng của hai sóng mang QAM."
+    },
+    {
+      "id": "COS201-888",
+      "status": "keep",
+      "whyVi": "Fully specified waveform đúng định nghĩa tín hiệu xác định, đủ phân biệt với ngẫu nhiên."
+    },
+    {
+      "id": "COS201-889",
+      "status": "keep",
+      "whyVi": "Maximally flat là dấu hiệu nhận dạng đặc trưng Butterworth trong các họ lọc."
+    },
+    {
+      "id": "COS201-890",
+      "status": "keep",
+      "whyVi": "Paley–Wiener là tiêu chuẩn realizability nhân quả mà câu hỏi gọi tên; mẹo bám đúng thuật ngữ."
+    },
+    {
+      "id": "COS201-891",
+      "status": "keep",
+      "whyVi": "Mẹo có giới hạn analog option, chọn SSB theo các lựa chọn thay vì khẳng định trên mọi hệ điều chế."
+    },
+    {
+      "id": "COS201-892",
+      "status": "keep",
+      "whyVi": "Phân biệt rõ ATSC 1.0 dùng 8-VSB với ATSC 3.0 dùng OFDM, tránh gộp phiên bản."
+    },
+    {
+      "id": "COS201-893",
+      "status": "fix",
+      "whyVi": "Sign of input còn quá chung; các giá trị cụ thể cho biết signum biểu diễn dấu như thế nào."
+    },
+    {
+      "id": "COS201-894",
+      "status": "keep",
+      "whyVi": "Carrier angle thay đổi là định nghĩa angle modulation, đúng nội dung cần chọn."
+    },
+    {
+      "id": "COS201-895",
+      "status": "keep",
+      "whyVi": "β rất nhỏ so với một là điều kiện hẹp băng NBFM đang được hỏi."
+    },
+    {
+      "id": "COS201-896",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nói nhạy biên độ; thêm nơi mang tin để giải thích tính nhạy của analog PAM."
+    },
+    {
+      "id": "COS201-897",
+      "status": "keep",
+      "whyVi": "Received=signal+noise đúng mô hình additive được ghi ngay trong đề."
+    },
+    {
+      "id": "COS201-898",
+      "status": "fix",
+      "whyVi": "Danh sách cơ chế cũ chưa dẫn tới lợi ích đúng là giảm nhiễu lượng tử trong dải."
+    },
+    {
+      "id": "COS201-899",
+      "status": "keep",
+      "whyVi": "Amplitude hằng đúng đại lượng không đổi của điều chế góc lý tưởng."
+    },
+    {
+      "id": "COS201-900",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ đưa biện pháp companding; đề hỏi nguyên nhân uniform quantization kém với tiếng nói."
+    },
+    {
+      "id": "COS201-901",
+      "status": "keep",
+      "whyVi": "Độ lệch chuẩn là căn phương sai, là định nghĩa cụ thể đủ chọn đáp án."
+    },
+    {
+      "id": "COS201-902",
+      "status": "keep",
+      "whyVi": "Giữ điều kiện single-tone AM và μ=1, cho hiệu suất cực đại 1/3 đúng phạm vi đề."
+    },
+    {
+      "id": "COS201-903",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt toàn khoảng fs<2W với trường hợp riêng fs=W, đúng phạm vi inequality trong đề."
+    },
+    {
+      "id": "COS201-904",
+      "status": "keep",
+      "whyVi": "Lấy tích phân các biến còn lại là thao tác suy marginal PDF từ joint PDF."
+    },
+    {
+      "id": "COS201-905",
+      "status": "keep",
+      "whyVi": "De-emphasis giảm nhiễu cao tần, đúng mục đích chính trong bộ thu FM."
+    },
+    {
+      "id": "COS201-906",
+      "status": "keep",
+      "whyVi": "Khai triển I và Q chính xác thành In-phase và Quadrature, đủ trả lời thuật ngữ."
+    },
+    {
+      "id": "COS201-907",
+      "status": "fix",
+      "whyVi": "Accumulated probability còn chung chung; công thức xác định rõ tích lũy đến ngưỡng nào."
+    },
+    {
+      "id": "COS201-908",
+      "status": "keep",
+      "whyVi": "BPF đầu thu giới hạn băng nhiễu đưa vào máy thu, đúng nguyên nhân sử dụng bộ lọc."
+    },
+    {
+      "id": "COS201-909",
+      "status": "keep",
+      "whyVi": "Self-similarity versus lag mô tả chính xác autocorrelation."
+    },
+    {
+      "id": "COS201-910",
+      "status": "keep",
+      "whyVi": "Chồng lấn thành phần phổ là hậu quả aliasing đang được hỏi."
+    },
+    {
+      "id": "COS201-911",
+      "status": "keep",
+      "whyVi": "Tự tương quan giảm nhanh chỉ quan hệ tương tự mất nhanh theo độ trễ, phù hợp tín hiệu biến đổi nhanh."
+    },
+    {
+      "id": "COS201-912",
+      "status": "keep",
+      "whyVi": "Limiter loại dao động biên độ là đúng chức năng tại máy thu FM."
+    },
+    {
+      "id": "COS201-913",
+      "status": "fix",
+      "whyVi": "Cả mẹo và lý do cũ bỏ số kênh, chưa giải thích đủ lựa chọn tổng hợp tất cả yếu tố."
+    },
+    {
+      "id": "COS201-914",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ cho độ tăng mỗi bit, chưa gọi tên dạng tăng hàm mũ được hỏi."
+    },
+    {
+      "id": "COS201-915",
+      "status": "keep",
+      "whyVi": "Angle modulation là nonlinear, đúng phân loại hệ điều chế trong câu hỏi."
+    },
+    {
+      "id": "COS201-916",
+      "status": "keep",
+      "whyVi": "Khoảng −1 đến 1 đúng Pearson với phương sai hữu hạn khác không đã có trong đề."
+    },
+    {
+      "id": "COS201-917",
+      "status": "keep",
+      "whyVi": "Bộ tách đồng bộ DSB-SC chọn nhánh cùng pha, loại thành phần nhiễu quadrature như đáp án."
+    },
+    {
+      "id": "COS201-918",
+      "status": "keep",
+      "whyVi": "Pulse Position liên hệ đúng với Phase Modulation qua việc thay vị trí/thời điểm xung."
+    },
+    {
+      "id": "COS201-919",
+      "status": "keep",
+      "whyVi": "PLL theo dõi pha/sóng mang, đúng công dụng chính chứ không nhầm sang lọc biên độ."
+    },
+    {
+      "id": "COS201-920",
+      "status": "keep",
+      "whyVi": "Giữ điều kiện tần số tức thời biến thiên; vì vậy khoảng cách zero crossing nói chung không đều."
+    },
+    {
+      "id": "COS201-921",
+      "status": "keep",
+      "whyVi": "PDF hằng trên miền hỗ trợ là đặc trưng đúng của uniform liên tục trong đoạn hữu hạn."
+    },
+    {
+      "id": "COS201-922",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ khai triển chữ viết tắt, chưa nói rõ đại lượng thay đổi mà đề hỏi."
+    },
+    {
+      "id": "COS201-923",
+      "status": "keep",
+      "whyVi": "Covariance đo đồng biến thiên tuyến tính, đúng đại lượng quan hệ được hỏi."
+    },
+    {
+      "id": "COS201-924",
+      "status": "keep",
+      "whyVi": "Stereo hai kênh là thông tin cụ thể đủ phân biệt với phát đơn kênh."
+    },
+    {
+      "id": "COS201-925",
+      "status": "keep",
+      "whyVi": "Gắn I với cosine và Q với sine khớp quy ước quadrature ở câu này."
+    },
+    {
+      "id": "COS201-926",
+      "status": "keep",
+      "whyVi": "PDF là đạo hàm CDF, với điều kiện biến liên tục tuyệt đối và nơi đạo hàm tồn tại đã nêu trong đề."
+    },
+    {
+      "id": "COS201-927",
+      "status": "keep",
+      "whyVi": "Flat-top là xung được giữ phẳng hình chữ nhật, đúng hình dạng/cách lấy mẫu trong lựa chọn."
+    },
+    {
+      "id": "COS201-928",
+      "status": "keep",
+      "whyVi": "White noise được nhận diện bởi mật độ phổ công suất phẳng, không phải dạng phân bố biên độ."
+    },
+    {
+      "id": "COS201-929",
+      "status": "keep",
+      "whyVi": "Các chữ Additive, White, Gaussian khai triển đúng AWGN; đây là chữ viết tắt, không phải nhãn lựa chọn."
+    },
+    {
+      "id": "COS201-930",
+      "status": "keep",
+      "whyVi": "Độc lập cho joint PDF bằng tích các marginal PDF, đúng công thức cần chọn."
+    },
+    {
+      "id": "COS201-931",
+      "status": "keep",
+      "whyVi": "Self-similarity versus lag mô tả chính xác autocorrelation."
+    },
+    {
+      "id": "COS201-932",
+      "status": "keep",
+      "whyVi": "Tỷ số SNRout/SNRreference đúng định nghĩa noise figure of merit trong câu này."
+    },
+    {
+      "id": "COS201-933",
+      "status": "keep",
+      "whyVi": "Gắn I với cosine và Q với sine khớp quy ước quadrature ở câu này."
+    },
+    {
+      "id": "COS201-934",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ xác định PPM dùng thời điểm; bổ sung so sánh với PAM để giải thích ưu thế nhiễu."
+    },
+    {
+      "id": "COS201-935",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ điều kiện và cơ chế; quan hệ f² giải thích đúng vùng cao tần."
+    },
+    {
+      "id": "COS201-936",
+      "status": "keep",
+      "whyVi": "Flat-top là xung được giữ phẳng hình chữ nhật, đúng hình dạng/cách lấy mẫu trong lựa chọn."
+    },
+    {
+      "id": "COS201-937",
+      "status": "fix",
+      "whyVi": "Filter white noise quá rộng; phải chỉ loại bộ lọc hẹp thông dải để tạo narrowband noise."
+    },
+    {
+      "id": "COS201-938",
+      "status": "keep",
+      "whyVi": "Biểu diễn in-phase và quadrature là hai thành phần đúng của band-pass noise."
+    },
+    {
+      "id": "COS201-939",
+      "status": "fix",
+      "whyVi": "Đề hỏi họ hàm; mẹo cũ chỉ ghi ký hiệu Jn mà chưa gọi tên Bessel."
+    },
+    {
+      "id": "COS201-940",
+      "status": "fix",
+      "whyVi": "Better noise immunity quá rộng; nêu cơ chế limiter và tránh bỏ điều kiện ngưỡng của FM."
+    },
+    {
+      "id": "COS201-941",
+      "status": "keep",
+      "whyVi": "Δ lớn khi tín hiệu chậm gây granular, còn thiếu Δ/T gây slope overload; mẹo phân biệt đúng hai lỗi DM."
+    },
+    {
+      "id": "COS201-942",
+      "status": "keep",
+      "whyVi": "Bộ tách đồng bộ DSB-SC chọn nhánh cùng pha, loại thành phần nhiễu quadrature như đáp án."
+    },
+    {
+      "id": "COS201-943",
+      "status": "keep",
+      "whyVi": "Joint PDF mô tả đồng thời hai biến ở câu này, đúng sự khác biệt với marginal PDF."
+    },
+    {
+      "id": "COS201-944",
+      "status": "fix",
+      "whyVi": "Mean→DC quá ngắn và quá rộng; thêm tính dừng và trung bình không đổi đúng điều kiện đề."
+    },
+    {
+      "id": "COS201-945",
+      "status": "keep",
+      "whyVi": "Lấy tích phân các biến còn lại là thao tác suy marginal PDF từ joint PDF."
+    },
+    {
+      "id": "COS201-946",
+      "status": "keep",
+      "whyVi": "Độ trải quanh trung bình là ý nghĩa phương sai, phù hợp câu hỏi định nghĩa."
+    },
+    {
+      "id": "COS201-947",
+      "status": "keep",
+      "whyVi": "β=Δf/fm đúng chỉ số FM một tone, giữ đúng điều kiện thay vì dùng cho mọi tín hiệu bất kỳ."
+    },
+    {
+      "id": "COS201-948",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ liệt kê deviation/modulation index; bổ sung quan hệ với hệ số cải thiện SNR."
+    },
+    {
+      "id": "COS201-949",
+      "status": "fix",
+      "whyVi": "Mẹo cũ nói constant power dễ hiểu thành công suất tức thời; giữ đúng average power và tải cố định."
+    },
+    {
+      "id": "COS201-950",
+      "status": "keep",
+      "whyVi": "Carrier angle thay đổi là định nghĩa angle modulation, đúng nội dung cần chọn."
+    },
+    {
+      "id": "COS201-951",
+      "status": "keep",
+      "whyVi": "Thời gian cùng tính ngẫu nhiên phân biệt random process với một biến ngẫu nhiên đơn lẻ."
+    },
+    {
+      "id": "COS201-952",
+      "status": "keep",
+      "whyVi": "Từ angle modulation dẫn đúng tới tần số/pha là nơi mang thông tin."
+    },
+    {
+      "id": "COS201-953",
+      "status": "keep",
+      "whyVi": "Equalizer là biện pháp bù aperture effect được hỏi, bám đúng chức năng hiệu chỉnh."
+    },
+    {
+      "id": "COS201-954",
+      "status": "keep",
+      "whyVi": "P(A|B) được đọc là xác suất A khi đã biết B; A/B ở đây là biến sự kiện, không phải vị trí đáp án."
+    },
+    {
+      "id": "COS201-955",
+      "status": "keep",
+      "whyVi": "Sinc magnitude droop mô tả đúng suy giảm phụ thuộc tần số của flat-top sample-and-hold."
+    },
+    {
+      "id": "COS201-956",
+      "status": "fix",
+      "whyVi": "Mẹo cũ khái quát mọi điều chế góc; thêm chế độ wideband và từ thường để tránh sai với NBFM."
+    },
+    {
+      "id": "COS201-957",
+      "status": "fix",
+      "whyVi": "Mẹo cũ thiếu tải đơn vị và loại trung bình; công thức chỉ rõ vì sao phương sai bằng công suất phần AC."
+    },
+    {
+      "id": "COS201-958",
+      "status": "keep",
+      "whyVi": "BPF đầu thu giới hạn băng nhiễu đưa vào máy thu, đúng nguyên nhân sử dụng bộ lọc."
+    },
+    {
+      "id": "COS201-959",
+      "status": "keep",
+      "whyVi": "Chuyển mức giữa mỗi bit của Manchester tạo dấu mốc khôi phục clock, đúng ưu thế đang hỏi."
+    },
+    {
+      "id": "COS201-960",
+      "status": "fix",
+      "whyVi": "Quiet channel chung chung; bất đẳng thức so sánh hai công suất đúng trực tiếp điều kiện đề."
+    },
+    {
+      "id": "COS201-961",
+      "status": "fix",
+      "whyVi": "Cả mẹo và lý do cũ bỏ số kênh, chưa giải thích đủ lựa chọn tổng hợp tất cả yếu tố."
+    },
+    {
+      "id": "COS201-962",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chưa áp dụng chênh lệch hai bit; thêm phép tính ngắn đủ chọn đúng giá trị."
+    },
+    {
+      "id": "COS201-963",
+      "status": "keep",
+      "whyVi": "CPFSK có đường bao hằng phù hợp PA bão hòa; không đánh đồng mọi tín hiệu số với đường bao hằng."
+    },
+    {
+      "id": "COS201-964",
+      "status": "keep",
+      "whyVi": "Đúng 2^k symbol đồng xác suất cho độ dài cố định k, giữ giả thiết quan trọng của câu Huffman."
+    },
+    {
+      "id": "COS201-965",
+      "status": "keep",
+      "whyVi": "So sánh độ dốc đầu vào với Δ/T là tiêu chí chính xác của slope overload."
+    },
+    {
+      "id": "COS201-966",
+      "status": "keep",
+      "whyVi": "Syndrome bằng không chỉ nói không phát hiện lỗi, không khẳng định chắc chắn không lỗi."
+    },
+    {
+      "id": "COS201-967",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ có tỷ lệ tổng quát và thiếu điều kiện cố định dạng xung/roll-off đã nêu trong đề."
+    },
+    {
+      "id": "COS201-968",
+      "status": "keep",
+      "whyVi": "Giữ đúng mô hình coherent BPSK/AWGN và miền SNR cao; đuôi Q là nguyên nhân BER suy giảm nhanh."
+    },
+    {
+      "id": "COS201-969",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ đưa biện pháp companding; đề hỏi nguyên nhân uniform quantization kém với tiếng nói."
+    },
+    {
+      "id": "COS201-970",
+      "status": "fix",
+      "whyVi": "Mẹo cũ nhắc kết quả xung trải rộng; thêm nguyên nhân mất thành phần cao tần và giữ ngoại lệ zero-ISI."
+    },
+    {
+      "id": "COS201-971",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt toàn khoảng fs<2W với trường hợp riêng fs=W, đúng phạm vi inequality trong đề."
+    },
+    {
+      "id": "COS201-972",
+      "status": "keep",
+      "whyVi": "Average length≥entropy đúng giới hạn mã lossless uniquely-decodable dưới mô hình mã từng symbol của đề."
+    },
+    {
+      "id": "COS201-973",
+      "status": "fix",
+      "whyVi": "Mẹo cũ nêu đặc điểm nhưng chưa giải thích lợi ích giảm bit lỗi khi chọn nhầm điểm lân cận."
+    },
+    {
+      "id": "COS201-974",
+      "status": "keep",
+      "whyVi": "Signal quality và timing margin là mục tiêu xem eye diagram, trực tiếp với lựa chọn đúng."
+    },
+    {
+      "id": "COS201-975",
+      "status": "fix",
+      "whyVi": "Better BER chưa nói hướng biến đổi; thêm +3 dB thành nhân đôi tỷ số và BER giảm."
+    },
+    {
+      "id": "COS201-976",
+      "status": "keep",
+      "whyVi": "Symbol trước là tham chiếu pha của detector vi sai, giải thích không cần pha sóng mang tuyệt đối."
+    },
+    {
+      "id": "COS201-977",
+      "status": "keep",
+      "whyVi": "Méo kênh tăng làm mắt khép, đúng hướng biến đổi và dấu hiệu thực hành của eye diagram."
+    },
+    {
+      "id": "COS201-978",
+      "status": "keep",
+      "whyVi": "Mẹo nêu bộ nhớ kênh và symbol lân cận, giải thích vì sao ISI cần equalization."
+    },
+    {
+      "id": "COS201-979",
+      "status": "keep",
+      "whyVi": "Khoảng cách/timing phù hợp giữ trực giao OFDM; mất điều kiện dẫn ICI như nội dung đáp án."
+    },
+    {
+      "id": "COS201-980",
+      "status": "keep",
+      "whyVi": "Chồng lấn thành phần phổ là hậu quả aliasing đang được hỏi."
+    },
+    {
+      "id": "COS201-981",
+      "status": "keep",
+      "whyVi": "Lấy mẫu thời gian tạo các bản sao phổ, đúng tính chất Fourier cần nhận diện."
+    },
+    {
+      "id": "COS201-982",
+      "status": "keep",
+      "whyVi": "Sai pha tham chiếu làm quay và trộn I/Q, phù hợp điều kiện không phải bội số 90° trong đề."
+    },
+    {
+      "id": "COS201-983",
+      "status": "keep",
+      "whyVi": "Flat-top là xung được giữ phẳng hình chữ nhật, đúng hình dạng/cách lấy mẫu trong lựa chọn."
+    },
+    {
+      "id": "COS201-984",
+      "status": "fix",
+      "whyVi": "Công thức cũ chưa gắn nhiễu với bất định có điều kiện; thêm chuỗi nguyên nhân khớp đáp án."
+    },
+    {
+      "id": "COS201-985",
+      "status": "keep",
+      "whyVi": "Nêu đúng giới hạn của việc không prefix-free: có thể cần nhìn trước, chưa đủ kết luận giải mã mơ hồ."
+    },
+    {
+      "id": "COS201-986",
+      "status": "keep",
+      "whyVi": "Sai pha tham chiếu làm quay và trộn I/Q, phù hợp điều kiện không phải bội số 90° trong đề."
+    },
+    {
+      "id": "COS201-987",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ ghi max I; nói rõ tối ưu theo phân bố đầu vào là đối tượng được hỏi."
+    },
+    {
+      "id": "COS201-988",
+      "status": "keep",
+      "whyVi": "Chuyển mức giữa mỗi bit của Manchester tạo dấu mốc khôi phục clock, đúng ưu thế đang hỏi."
+    },
+    {
+      "id": "COS201-989",
+      "status": "keep",
+      "whyVi": "Nhiễu Gaussian cộng tạo dịch chuyển ngẫu nhiên các mẫu nhận, đúng điều được cộng vào dạng sóng."
+    },
+    {
+      "id": "COS201-990",
+      "status": "keep",
+      "whyVi": "Điểm chòm sao gần nhau dễ quyết định nhầm hơn nên BER tăng, đúng hướng quan hệ."
+    },
+    {
+      "id": "COS201-991",
+      "status": "keep",
+      "whyVi": "Hai mức ±A đồng xác suất và AWGN đối xứng cho ngưỡng số 0; mẹo giữ đủ giả thiết."
+    },
+    {
+      "id": "COS201-992",
+      "status": "keep",
+      "whyVi": "FEC có thể khôi phục sóng mang mất nếu đủ dư thừa/khả năng mã, không hứa khôi phục vô điều kiện."
+    },
+    {
+      "id": "COS201-993",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nối additivity với logarithm; đẳng thức cho thấy vì sao cần log."
+    },
+    {
+      "id": "COS201-994",
+      "status": "fix",
+      "whyVi": "Average bits/symbol dễ lẫn chiều dài mã; gọi rõ lượng tin trung bình và công thức entropy."
+    },
+    {
+      "id": "COS201-995",
+      "status": "keep",
+      "whyVi": "N0 cố định, Eb gấp đôi làm tỷ số tuyến tính gấp đôi tương ứng khoảng +3 dB, đúng đại lượng đề hỏi."
+    },
+    {
+      "id": "COS201-996",
+      "status": "keep",
+      "whyVi": "DM gửi một bit chỉ dấu sai số dự đoán; mẹo phân biệt với việc gửi toàn bộ mức PCM."
+    },
+    {
+      "id": "COS201-997",
+      "status": "keep",
+      "whyVi": "Jitter tăng sai số thời điểm lấy mẫu và làm hiệu năng xấu hơn, chuỗi liên hệ trực tiếp với đề."
+    },
+    {
+      "id": "COS201-998",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc lớp mã trong đề; thêm tiêu chí tối ưu độ dài trung bình."
+    },
+    {
+      "id": "COS201-999",
+      "status": "fix",
+      "whyVi": "Giải nghĩa ICI bằng cơ chế mất trực giao để người học nhận đúng nội dung dù đáp án đảo vị trí."
+    },
+    {
+      "id": "COS201-1000",
+      "status": "keep",
+      "whyVi": "IFFT đầu phát OFDM tổng hợp các sóng mang con, đúng công dụng combine trong lựa chọn."
+    },
+    {
+      "id": "COS201-1001",
+      "status": "fix",
+      "whyVi": "Wrong sampling→increased errors chỉ nhắc đáp án; thêm dấu hiệu tâm mắt và cơ chế quyết định sai."
+    },
+    {
+      "id": "COS201-1002",
+      "status": "keep",
+      "whyVi": "FFT tại đầu thu OFDM tách các sóng mang con, phù hợp chức năng demultiplexing."
+    },
+    {
+      "id": "COS201-1003",
+      "status": "keep",
+      "whyVi": "Đường bao sinc làm suy giảm cao tần, đúng ảnh hưởng phổ PAM được hỏi."
+    },
+    {
+      "id": "COS201-1004",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp lại tối ưu SNR trong đề, chưa dẫn tới lựa chọn khớp phổ tín hiệu."
+    },
+    {
+      "id": "COS201-1005",
+      "status": "keep",
+      "whyVi": "Hai mức ±A đồng xác suất và AWGN đối xứng cho ngưỡng số 0; mẹo giữ đủ giả thiết."
+    },
+    {
+      "id": "COS201-1006",
+      "status": "fix",
+      "whyVi": "Mẹo cần giữ Es cố định; lý do cũ đổi giả thiết sang công suất trung bình cố định."
+    },
+    {
+      "id": "COS201-1007",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đi từ Gaussian tail sang tên hàm; công thức cho biết Q tính xác suất nào khi giải bài."
+    },
+    {
+      "id": "COS201-1008",
+      "status": "keep",
+      "whyVi": "Lặp n lần chỉ truyền một bit hữu ích nên rate=1/n, giải thích đúng tính kém hiệu quả."
+    },
+    {
+      "id": "COS201-1009",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đúng nhưng có thể thao tác nhanh hơn bằng floor và ví dụ cho tính tăng theo bậc thang."
+    },
+    {
+      "id": "COS201-1010",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc lại chênh lệch 3 dB có sẵn trong đề; thêm khoảng cách để giải thích nguyên nhân."
+    },
+    {
+      "id": "COS201-1011",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nêu cận Nyquist; áp cận vào tình huống dưới Rs/2 để chỉ rõ kết luận cần chọn."
+    },
+    {
+      "id": "COS201-1012",
+      "status": "fix",
+      "whyVi": "Mẹo cũ lặp kết luận equiprobable của đề; bổ sung nguyên nhân bất định cực đại và giá trị Hmax."
+    },
+    {
+      "id": "COS201-1013",
+      "status": "keep",
+      "whyVi": "Anten thực tế và phân bổ dải RF giải thích đúng mục đích chuyển baseband lên sóng mang radio."
+    },
+    {
+      "id": "COS201-1014",
+      "status": "keep",
+      "whyVi": "Tái tạo mức số hạn chế nhiễu tích lũy; mẹo không hứa miễn nhiễm nhiễu tuyệt đối."
+    }
+  ],
+  "changes": [
+    {
+      "id": "COS201-810",
+      "tip": "PCM nhiều kênh: Rb=Nch·fs·n → tăng fs, bit/mẫu hoặc số kênh đều cần thêm băng thông.",
+      "whyVi": "Cả mẹo và lý do cũ bỏ số kênh, chưa giải thích đủ lựa chọn tổng hợp tất cả yếu tố.",
+      "reason": "Với các kênh cùng fs và n bit/mẫu, Rb=Nch·fs·n. Tăng số kênh, tốc độ lấy mẫu hoặc số bit đều tăng bitrate và băng thông khi giữ nguyên cách tạo xung."
+    },
+    {
+      "id": "COS201-827",
+      "tip": "BFSK trực giao: d²=2Eb; BPSK đối cực: d²=4Eb → cùng BER/AWGN, BFSK cần gấp đôi Eb ≈ 3 dB.",
+      "whyVi": "Mẹo cũ chỉ nhắc lại chênh lệch 3 dB có sẵn trong đề; thêm khoảng cách để giải thích nguyên nhân.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-830",
+      "tip": "Ideal low-pass: biên độ gain hằng trong dải, bằng 0 ngoài dải → đặc tính biên độ hình chữ nhật.",
+      "whyVi": "Brick-wall chỉ là tên gọi khác; đặc điểm trong/ngoài dải giúp nhận đúng lựa chọn hình chữ nhật."
+    },
+    {
+      "id": "COS201-831",
+      "tip": "CDF tại x: F(x)=P(X≤x) → xác suất tích lũy đến x.",
+      "whyVi": "Accumulated probability còn chung chung; công thức xác định rõ tích lũy đến ngưỡng nào."
+    },
+    {
+      "id": "COS201-832",
+      "tip": "White noise + tín hiệu đã biết → H(f)∝S*(f)e^(−j2πfT): khớp phổ và pha tại thời điểm quyết định.",
+      "whyVi": "Mẹo cũ lặp lại tối ưu SNR trong đề, chưa dẫn tới lựa chọn khớp phổ tín hiệu.",
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ]
+    },
+    {
+      "id": "COS201-833",
+      "tip": "Subcarrier mất trực giao → tín hiệu nhánh này lọt sang nhánh khác → nhiễu giữa sóng mang (ICI).",
+      "whyVi": "Giải nghĩa ICI bằng cơ chế mất trực giao để người học nhận đúng nội dung dù đáp án đảo vị trí."
+    },
+    {
+      "id": "COS201-834",
+      "tip": "Xác suất độc lập nhân nhau; −log(pq)=−log p−log q → lượng tin cộng được.",
+      "whyVi": "Mẹo cũ chỉ nối additivity với logarithm; đẳng thức cho thấy vì sao cần log."
+    },
+    {
+      "id": "COS201-838",
+      "tip": "FM = điều chế tần số → tần số tức thời thay đổi theo tín hiệu tin.",
+      "whyVi": "Mẹo cũ chỉ khai triển chữ viết tắt, chưa nói rõ đại lượng thay đổi mà đề hỏi."
+    },
+    {
+      "id": "COS201-849",
+      "tip": "DM tăng fs, giữ Δ → độ dốc bám tối đa Δ·fs tăng → giảm slope overload.",
+      "whyVi": "Mẹo cũ đảo từ hiện tượng sang biện pháp; thêm độ dốc bám giải thích đúng tác động tăng lấy mẫu."
+    },
+    {
+      "id": "COS201-866",
+      "tip": "AM có μ>1 → đường bao có thể đổi dấu/đảo pha → bộ tách đường bao bị méo.",
+      "whyVi": "Mẹo cũ chỉ nhắc μ>1 đã cho sẵn; thêm hệ quả quá điều chế và méo đường bao.",
+      "references": [
+        "https://live.ocw.mit.edu/courses/6-661-receivers-antennas-and-signals-spring-2003/bcfc709f4d26465b45c0b42615b82b2b_ch4new.pdf"
+      ]
+    },
+    {
+      "id": "COS201-878",
+      "tip": "x(at) ↔ X(f/a)/|a|; |a|>1 nén thời gian và giãn phổ → tính chất time scaling.",
+      "whyVi": "Mẹo cũ lặp nguyên quan hệ đã nêu; bổ sung tên tính chất mà đáp án yêu cầu."
+    },
+    {
+      "id": "COS201-893",
+      "tip": "sgn(t) nhìn dấu của t: t>0 → +1; t<0 → −1 (thường quy ước sgn(0)=0).",
+      "whyVi": "Sign of input còn quá chung; các giá trị cụ thể cho biết signum biểu diễn dấu như thế nào."
+    },
+    {
+      "id": "COS201-896",
+      "tip": "PAM mang tin ở độ cao xung → nhiễu/méo biên độ làm đổi trực tiếp thông tin.",
+      "whyVi": "Mẹo cũ chỉ nói nhạy biên độ; thêm nơi mang tin để giải thích tính nhạy của analog PAM."
+    },
+    {
+      "id": "COS201-898",
+      "tip": "Delta-sigma đẩy nhiễu lượng tử ra ngoài dải; LPF/decimation loại bớt nhiễu → giảm nhiễu trong dải.",
+      "whyVi": "Danh sách cơ chế cũ chưa dẫn tới lợi ích đúng là giảm nhiễu lượng tử trong dải.",
+      "references": [
+        "https://www.ti.com/video/6309772987112"
+      ]
+    },
+    {
+      "id": "COS201-900",
+      "tip": "Bước lượng tử Δ cố định + tiếng nói yếu → sai số lượng tử lớn tương đối so với tín hiệu.",
+      "whyVi": "Mẹo cũ chỉ đưa biện pháp companding; đề hỏi nguyên nhân uniform quantization kém với tiếng nói."
+    },
+    {
+      "id": "COS201-907",
+      "tip": "CDF tại x: F(x)=P(X≤x) → xác suất tích lũy đến x.",
+      "whyVi": "Accumulated probability còn chung chung; công thức xác định rõ tích lũy đến ngưỡng nào."
+    },
+    {
+      "id": "COS201-913",
+      "tip": "PCM nhiều kênh: Rb=Nch·fs·n → tăng fs, bit/mẫu hoặc số kênh đều cần thêm băng thông.",
+      "whyVi": "Cả mẹo và lý do cũ bỏ số kênh, chưa giải thích đủ lựa chọn tổng hợp tất cả yếu tố.",
+      "reason": "Với các kênh cùng fs và n bit/mẫu, Rb=Nch·fs·n. Tăng số kênh, tốc độ lấy mẫu hoặc số bit đều tăng bitrate và băng thông khi giữ nguyên cách tạo xung."
+    },
+    {
+      "id": "COS201-914",
+      "tip": "2^(2R)=4^R → tăng theo hàm mũ; thêm 1 bit làm SNR tuyến tính nhân 4.",
+      "whyVi": "Mẹo cũ chỉ cho độ tăng mỗi bit, chưa gọi tên dạng tăng hàm mũ được hỏi."
+    },
+    {
+      "id": "COS201-922",
+      "tip": "FM = điều chế tần số → tần số tức thời thay đổi theo tín hiệu tin.",
+      "whyVi": "Mẹo cũ chỉ khai triển chữ viết tắt, chưa nói rõ đại lượng thay đổi mà đề hỏi."
+    },
+    {
+      "id": "COS201-934",
+      "tip": "PPM mang tin ở thời điểm xung, PAM ở độ cao xung → PPM ít nhạy nhiễu biên độ hơn.",
+      "whyVi": "Mẹo cũ chỉ xác định PPM dùng thời điểm; bổ sung so sánh với PAM để giải thích ưu thế nhiễu."
+    },
+    {
+      "id": "COS201-935",
+      "tip": "FM trên ngưỡng, nhiễu trắng: PSD nhiễu sau discriminator ∝f² → cao tần nhiễu mạnh hơn.",
+      "whyVi": "Mẹo cũ bỏ điều kiện và cơ chế; quan hệ f² giải thích đúng vùng cao tần.",
+      "references": [
+        "https://archive.nptel.ac.in/content/storage2/courses/117106090/Pdfs/1_10.pdf"
+      ]
+    },
+    {
+      "id": "COS201-937",
+      "tip": "Narrowband noise → cho nhiễu trắng qua bộ lọc thông dải hẹp quanh tần số sóng mang.",
+      "whyVi": "Filter white noise quá rộng; phải chỉ loại bộ lọc hẹp thông dải để tạo narrowband noise."
+    },
+    {
+      "id": "COS201-939",
+      "tip": "FM một tone: hệ số sóng mang/dải biên là Jn(β) → hàm Bessel.",
+      "whyVi": "Đề hỏi họ hàm; mẹo cũ chỉ ghi ký hiệu Jn mà chưa gọi tên Bessel."
+    },
+    {
+      "id": "COS201-940",
+      "tip": "Đường bao FM/PM hằng cho phép limiter giảm nhiễu biên độ; lợi thế FM cần hoạt động trên ngưỡng.",
+      "whyVi": "Better noise immunity quá rộng; nêu cơ chế limiter và tránh bỏ điều kiện ngưỡng của FM."
+    },
+    {
+      "id": "COS201-944",
+      "tip": "Stationary + trung bình không đổi theo thời gian → thành phần DC.",
+      "whyVi": "Mean→DC quá ngắn và quá rộng; thêm tính dừng và trung bình không đổi đúng điều kiện đề."
+    },
+    {
+      "id": "COS201-948",
+      "tip": "FM trên ngưỡng: tăng độ lệch tần số Δf (β) làm tăng hệ số cải thiện SNR.",
+      "whyVi": "Mẹo cũ chỉ liệt kê deviation/modulation index; bổ sung quan hệ với hệ số cải thiện SNR."
+    },
+    {
+      "id": "COS201-949",
+      "tip": "Biên độ sóng mang và tải không đổi → công suất trung bình hằng, P∝Ac².",
+      "whyVi": "Mẹo cũ nói constant power dễ hiểu thành công suất tức thời; giữ đúng average power và tải cố định."
+    },
+    {
+      "id": "COS201-956",
+      "tip": "FM/PM ở chế độ wideband tạo nhiều dải biên → thường cần băng thông lớn hơn AM.",
+      "whyVi": "Mẹo cũ khái quát mọi điều chế góc; thêm chế độ wideband và từ thường để tránh sai với NBFM."
+    },
+    {
+      "id": "COS201-957",
+      "tip": "Bỏ trung bình DC: σ²=E[(n−E[n])²] → công suất phần AC khi tải chuẩn hóa 1 Ω.",
+      "whyVi": "Mẹo cũ thiếu tải đơn vị và loại trung bình; công thức chỉ rõ vì sao phương sai bằng công suất phần AC."
+    },
+    {
+      "id": "COS201-960",
+      "tip": "Giữ bộ lượng tử: Pn,kênh ≪ Pn,lượngtử → nhiễu lượng tử chi phối.",
+      "whyVi": "Quiet channel chung chung; bất đẳng thức so sánh hai công suất đúng trực tiếp điều kiện đề."
+    },
+    {
+      "id": "COS201-961",
+      "tip": "PCM nhiều kênh: Rb=Nch·fs·n → tăng fs, bit/mẫu hoặc số kênh đều cần thêm băng thông.",
+      "whyVi": "Cả mẹo và lý do cũ bỏ số kênh, chưa giải thích đủ lựa chọn tổng hợp tất cả yếu tố.",
+      "reason": "Với các kênh cùng fs và n bit/mẫu, Rb=Nch·fs·n. Tăng số kênh, tốc độ lấy mẫu hoặc số bit đều tăng bitrate và băng thông khi giữ nguyên cách tạo xung."
+    },
+    {
+      "id": "COS201-962",
+      "tip": "ADC lý tưởng, sine full-scale: ΔSNR≈6,02·(10−8)=12,04 dB → khoảng 12 dB.",
+      "whyVi": "Mẹo cũ chưa áp dụng chênh lệch hai bit; thêm phép tính ngắn đủ chọn đúng giá trị."
+    },
+    {
+      "id": "COS201-967",
+      "tip": "Giữ dạng xung và roll-off: BW∝Rs → giảm tốc độ symbol thì băng thông giảm.",
+      "whyVi": "Mẹo cũ chỉ có tỷ lệ tổng quát và thiếu điều kiện cố định dạng xung/roll-off đã nêu trong đề."
+    },
+    {
+      "id": "COS201-969",
+      "tip": "Bước lượng tử Δ cố định + tiếng nói yếu → sai số lượng tử lớn tương đối so với tín hiệu.",
+      "whyVi": "Mẹo cũ chỉ đưa biện pháp companding; đề hỏi nguyên nhân uniform quantization kém với tiếng nói."
+    },
+    {
+      "id": "COS201-970",
+      "tip": "Giới hạn băng loại thành phần cao tần → xung trải dài, có thể chồng symbol nếu không bù/tạo xung đúng.",
+      "whyVi": "Mẹo cũ nhắc kết quả xung trải rộng; thêm nguyên nhân mất thành phần cao tần và giữ ngoại lệ zero-ISI."
+    },
+    {
+      "id": "COS201-973",
+      "tip": "Gray: hai điểm kề khác 1 bit → nhầm sang điểm gần nhất thường chỉ gây 1 bit sai.",
+      "whyVi": "Mẹo cũ nêu đặc điểm nhưng chưa giải thích lợi ích giảm bit lỗi khi chọn nhầm điểm lân cận."
+    },
+    {
+      "id": "COS201-975",
+      "tip": "BPSK/AWGN: +3 dB ≈ nhân đôi Eb/N0 → Q(√(2Eb/N0)) nhỏ hơn → BER giảm.",
+      "whyVi": "Better BER chưa nói hướng biến đổi; thêm +3 dB thành nhân đôi tỷ số và BER giảm."
+    },
+    {
+      "id": "COS201-984",
+      "tip": "Nhiễu làm từ Y khó đoán X hơn → chọn tăng bất định về đầu vào; I(X;Y)=H(X)−H(X|Y).",
+      "whyVi": "Công thức cũ chưa gắn nhiễu với bất định có điều kiện; thêm chuỗi nguyên nhân khớp đáp án."
+    },
+    {
+      "id": "COS201-987",
+      "tip": "C=max trên p(X) của I(X;Y) → chọn phân bố đầu vào tối ưu để đạt mức thông tin chung lớn nhất.",
+      "whyVi": "Mẹo cũ chỉ ghi max I; nói rõ tối ưu theo phân bố đầu vào là đối tượng được hỏi."
+    },
+    {
+      "id": "COS201-993",
+      "tip": "Xác suất độc lập nhân nhau; −log(pq)=−log p−log q → lượng tin cộng được.",
+      "whyVi": "Mẹo cũ chỉ nối additivity với logarithm; đẳng thức cho thấy vì sao cần log."
+    },
+    {
+      "id": "COS201-994",
+      "tip": "Entropy H=−Σp log₂p → lượng tin trung bình của mỗi ký hiệu.",
+      "whyVi": "Average bits/symbol dễ lẫn chiều dài mã; gọi rõ lượng tin trung bình và công thức entropy."
+    },
+    {
+      "id": "COS201-998",
+      "tip": "Huffman trong lớp mã prefix từng ký hiệu → tối thiểu độ dài trung bình L̄=Σpᵢℓᵢ.",
+      "whyVi": "Mẹo cũ chỉ nhắc lớp mã trong đề; thêm tiêu chí tối ưu độ dài trung bình.",
+      "references": [
+        "https://web.mit.edu/6.02/www/f2011/handouts/3.pdf"
+      ]
+    },
+    {
+      "id": "COS201-999",
+      "tip": "Subcarrier mất trực giao → tín hiệu nhánh này lọt sang nhánh khác → nhiễu giữa sóng mang (ICI).",
+      "whyVi": "Giải nghĩa ICI bằng cơ chế mất trực giao để người học nhận đúng nội dung dù đáp án đảo vị trí."
+    },
+    {
+      "id": "COS201-1001",
+      "tip": "Lấy mẫu lệch tâm mắt → biên phân biệt giảm, ảnh hưởng ISI tăng → dễ quyết định sai hơn.",
+      "whyVi": "Wrong sampling→increased errors chỉ nhắc đáp án; thêm dấu hiệu tâm mắt và cơ chế quyết định sai."
+    },
+    {
+      "id": "COS201-1004",
+      "tip": "White noise + tín hiệu đã biết → H(f)∝S*(f)e^(−j2πfT): khớp phổ và pha tại thời điểm quyết định.",
+      "whyVi": "Mẹo cũ lặp lại tối ưu SNR trong đề, chưa dẫn tới lựa chọn khớp phổ tín hiệu.",
+      "references": [
+        "https://www.mathworks.com/help/phased/ug/matched-filtering.html"
+      ]
+    },
+    {
+      "id": "COS201-1006",
+      "tip": "Giữ Es và mức AWGN: tăng M → điểm QAM xếp sít hơn, dmin giảm → dễ nhầm điểm.",
+      "whyVi": "Mẹo cần giữ Es cố định; lý do cũ đổi giả thiết sang công suất trung bình cố định.",
+      "reason": "Giữ năng lượng trung bình mỗi symbol Es và mức nhiễu mà tăng M làm các điểm QAM xếp sát hơn, nên khoảng cách quyết định giảm và xác suất nhầm tăng."
+    },
+    {
+      "id": "COS201-1007",
+      "tip": "Q(x)=P(Z>x), Z~N(0,1) → tính xác suất nhiễu Gaussian vượt ngưỡng gây lỗi.",
+      "whyVi": "Mẹo cũ đi từ Gaussian tail sang tên hàm; công thức cho biết Q tính xác suất nào khi giải bài."
+    },
+    {
+      "id": "COS201-1009",
+      "tip": "Tính t=⌊(dmin−1)/2⌋; dmin tăng 3→4 vẫn t=1 → khả năng sửa chỉ bảo đảm không giảm.",
+      "whyVi": "Mẹo cũ đúng nhưng có thể thao tác nhanh hơn bằng floor và ví dụ cho tính tăng theo bậc thang."
+    },
+    {
+      "id": "COS201-1010",
+      "tip": "BFSK trực giao: d²=2Eb; BPSK đối cực: d²=4Eb → cùng BER/AWGN, BFSK cần gấp đôi Eb ≈ 3 dB.",
+      "whyVi": "Mẹo cũ chỉ nhắc lại chênh lệch 3 dB có sẵn trong đề; thêm khoảng cách để giải thích nguyên nhân.",
+      "references": [
+        "https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html"
+      ]
+    },
+    {
+      "id": "COS201-1011",
+      "tip": "B<Rs/2 ở cùng Rs → không thể tạo xung truyền không ISI lý tưởng tại tốc độ đó.",
+      "whyVi": "Mẹo cũ chỉ nêu cận Nyquist; áp cận vào tình huống dưới Rs/2 để chỉ rõ kết luận cần chọn."
+    },
+    {
+      "id": "COS201-1012",
+      "tip": "M ký hiệu đồng xác suất → khó đoán nhất, bất định lớn nhất → Hmax=log₂M.",
+      "whyVi": "Mẹo cũ lặp kết luận equiprobable của đề; bổ sung nguyên nhân bất định cực đại và giá trị Hmax."
+    }
+  ]
+}

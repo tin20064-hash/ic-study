@@ -1,0 +1,74 @@
+[
+  {
+    "id": "delta-modulation",
+    "title": "Delta Modulation và bộ ADC sigma-delta",
+    "formula": "DM bước cố định: Tₛ = 1/fₛ, độ dốc bám tối đa = Δ/Tₛ = Δfₛ. Với sin biên độ A và tần số fₘ, độ dốc lớn nhất là 2πfₘA.",
+    "note": "DM gửi 1 bit biểu thị dấu sai lệch so với mẫu dự đoán để tăng hoặc giảm bậc thang. Tín hiệu dốc hơn mức bám gây slope overload. Bước Δ lớn trên đoạn biến thiên chậm làm bậc thang dao động và sinh granular noise. ADC sigma-delta lấy mẫu nhanh, đẩy nhiễu lượng tử ra ngoài dải quan tâm rồi lọc trước khi giảm tốc độ mẫu.",
+    "tip": "Gặp độ dốc, so |dx/dt| với Δfₛ. Gặp dao động quanh đoạn gần phẳng, xét bước Δ có quá lớn. Gặp noise shaping, tìm bộ lọc số và decimation.",
+    "example": "Δ = 0,1 V và fₛ = 10 kHz cho mức bám 1000 V/s. Đoạn có độ dốc 1500 V/s gây slope overload. Tăng fₛ lên 20 kHz với cùng Δ cho mức bám 2000 V/s.",
+    "ids": ["COS201-812", "COS201-849", "COS201-898", "COS201-941", "COS201-965"]
+  },
+  {
+    "id": "fm-receiver-noise",
+    "title": "Nhiễu ở bộ thu FM và de-emphasis",
+    "formula": "FM trên ngưỡng, nhiễu trắng ở đầu vào: PSD nhiễu sau bộ phân biệt tần số tỉ lệ f². Công suất nhiễu trong dải |f| ≤ W trước de-emphasis tỉ lệ W³.",
+    "note": "Bộ limiter giảm dao động biên độ trước khi discriminator đổi độ lệch tần số thành điện áp. Để giảm nhiễu cao tần sau giải điều chế, máy phát nâng trước các thành phần cao tần và máy thu hạ lại bằng de-emphasis.",
+    "tip": "Đề hỏi nhiễu tại một tần số thì dùng f². Đề hỏi tổng công suất nhiễu trong dải âm tần thì tích phân f² theo tần số, cho W³.",
+    "example": "Tăng W từ 5 lên 10 kHz, giữ nguyên các hệ số của mô hình. Công suất nhiễu trước de-emphasis tăng (10/5)³ = 8 lần.",
+    "ids": ["COS201-816", "COS201-835", "COS201-905", "COS201-912", "COS201-935"]
+  },
+  {
+    "id": "carrier-phase-recovery",
+    "title": "Mixer, lệch pha sóng mang và PLL",
+    "formula": "Mixer lý tưởng nhân hai sóng sin tạo f₁ + f₂ và |f₁ − f₂|. Với DSB-SC một nhánh, bộ nhân thu chuẩn hóa rồi lọc thông thấp cho m(t)cos φ, trong đó φ là lệch pha sóng mang.",
+    "note": "Trong bộ thu I/Q, lệch pha làm xoay cặp I và Q. PLL khóa khi sai lệch pha duy trì ổn định, có thể khác 0. Costas loop giúp khôi phục tham chiếu sóng mang cho DSB-SC.",
+    "tip": "Gặp lệch pha trong DSB-SC một nhánh, lấy cos φ. Gặp lệch pha trong bộ thu hai nhánh I/Q, xét phép xoay làm trộn I và Q.",
+    "example": "Mixer nhân hai sóng 105 MHz và 100 MHz cho 205 MHz và 5 MHz. Với DSB-SC, lệch pha 60° làm phần tín hiệu sau lọc còn 0,5m(t), còn lệch 90° làm phần này bằng 0.",
+    "ids": ["COS201-806", "COS201-808", "COS201-851", "COS201-868", "COS201-982"]
+  },
+  {
+    "id": "ofdm-equalization",
+    "title": "OFDM, khoảng cách sóng mang và cân bằng",
+    "formula": "Δf = 1/Tᵤ, với Tᵤ là thời gian hữu ích của ký hiệu OFDM. Sau FFT, Yₖ = HₖXₖ + Nₖ. Zero-forcing cho X̂ₖ = Yₖ/Hₖ khi Hₖ ≠ 0.",
+    "note": "IFFT ở máy phát ghép các sóng mang con và FFT ở máy thu tách chúng. Khi đồng bộ phù hợp và cyclic prefix đủ dài so với độ trải trễ, mỗi sóng mang con có thể được cân bằng riêng. Lệch tần số phá trực giao và gây nhiễu giữa các sóng mang (ICI).",
+    "tip": "Khi tính Δf, lấy Tᵤ sau khi bỏ thời gian cyclic prefix. Khi chia cho Hₖ nhỏ, cả nhiễu trên sóng mang đó cũng bị khuếch đại.",
+    "example": "Tᵤ = 64 μs cho Δf = 15,625 kHz. Với Yₖ = 1 và Hₖ = 0,5 trong ví dụ không nhiễu, chia Yₖ/Hₖ được X̂ₖ = 2.",
+    "ids": ["COS201-817", "COS201-833", "COS201-847", "COS201-883", "COS201-979", "COS201-1000"]
+  },
+  {
+    "id": "nyquist-eye",
+    "title": "Giới hạn zero-ISI và cách đọc biểu đồ mắt",
+    "formula": "Với kênh baseband lý tưởng và tốc độ ký hiệu Rₛ, điều kiện băng thông một phía để có thể truyền zero-ISI là B ≥ Rₛ/2.",
+    "note": "ISI là ảnh hưởng của ký hiệu lân cận tại thời điểm lấy mẫu. Bộ cân bằng có thể giảm ISI do méo kênh. Chiều cao phần mở của mắt cho biết biên độ dự trữ, còn chiều rộng cho biết dung sai thời điểm lấy mẫu.",
+    "tip": "Đề cho tốc độ bit, đổi sang tốc độ ký hiệu trước khi tính Rₛ/2. Nếu hình mắt khép lại hoặc điểm lấy mẫu lệch tâm, biên quyết định giảm.",
+    "example": "Bộ điều chế 16-QAM nhận 400 kbit/s. Mỗi ký hiệu mang 4 bit nên Rₛ = 100 kbaud. Giới hạn baseband một phía là 50 kHz, vì vậy băng thông 40 kHz không đủ để đạt zero-ISI ở tốc độ đó.",
+    "ids": ["COS201-823", "COS201-974", "COS201-977", "COS201-1001", "COS201-1011"]
+  },
+  {
+    "id": "ber-comparison",
+    "title": "So BER của BPSK và BFSK",
+    "formula": "Trong AWGN, thu đồng bộ và hai bit đồng xác suất: BPSK đối cực có Pᵦ = Q(√(2Eᵦ/N₀)), BFSK trực giao có Pᵦ = Q(√(Eᵦ/N₀)).",
+    "note": "Hàm Q giảm khi đối số tăng. Cùng Eᵦ/N₀, hai tín hiệu đối cực của BPSK có khoảng cách lớn hơn hai tín hiệu trực giao của BFSK. Với hai mức ±A đồng xác suất và nhiễu Gaussian đối xứng, ngưỡng quyết định tối ưu là 0.",
+    "tip": "Đề hỏi cùng BER, đặt hai đối số của Q bằng nhau. Nhân đôi Eᵦ/N₀ tương ứng tăng khoảng 3 dB.",
+    "example": "BPSK ở Eᵦ/N₀ = 4 cho Pᵦ = Q(√8). BFSK trực giao cần Eᵦ/N₀ = 8 để cho cùng Pᵦ. Chênh lệch là 10log₁₀(8/4) ≈ 3 dB.",
+    "ids": ["COS201-802", "COS201-827", "COS201-975", "COS201-991", "COS201-995", "COS201-1007"]
+  },
+  {
+    "id": "block-code-distance",
+    "title": "Mã khối, syndrome và khoảng cách Hamming",
+    "formula": "Mã (n,k): R = k/n. Với khoảng cách tối thiểu dₘᵢₙ, bảo đảm phát hiện đến dₘᵢₙ−1 lỗi hoặc sửa đến ⌊(dₘᵢₙ−1)/2⌋ lỗi.",
+    "note": "Với mã tuyến tính nhị phân, syndrome s = Hrᵀ được tính modulo 2 từ ma trận kiểm tra H và từ nhận r. Syndrome bằng 0 nghĩa là r thỏa các kiểm tra của mã. Nếu lỗi biến từ đã gửi thành một từ mã khác, kiểm tra này sẽ bỏ sót lỗi.",
+    "tip": "Phân biệt số lỗi phát hiện và số lỗi sửa. Khi dₘᵢₙ tăng từ 3 lên 4, số lỗi sửa bảo đảm vẫn là 1 vì có phép lấy phần nguyên.",
+    "example": "Mã lặp 3 có hai từ mã 000 và 111, tốc độ 1/3 và dₘᵢₙ = 3. Nhận 010 thì sửa về 000 theo đa số. Nếu 000 bị lật cả ba bit thành 111, syndrome vẫn bằng 0.",
+    "ids": ["COS201-800", "COS201-966", "COS201-992", "COS201-1008", "COS201-1009"]
+  },
+  {
+    "id": "mutual-information",
+    "title": "Thông tin tương hỗ và dung lượng kênh",
+    "formula": "I(X;Y) = H(X) − H(X|Y). Dung lượng kênh rời rạc không nhớ C = max I(X;Y) trên các phân bố đầu vào, tính theo bit/lần dùng kênh.",
+    "note": "H(X) đo độ bất định của nguồn và H(X|Y) đo phần bất định còn lại sau khi quan sát đầu ra. Phân bố đầu vào tối ưu phụ thuộc kênh. Với kênh nhị phân đối xứng, hai bit đầu vào đồng xác suất đạt dung lượng.",
+    "tip": "Gặp câu hỏi nhiễu làm giảm thông tin qua kênh, xét phần bất định H(X|Y) tăng. Gặp dung lượng, tìm phép tối đa hóa theo phân bố đầu vào.",
+    "example": "Kênh nhị phân đối xứng có xác suất lật p = 0,1. Với đầu vào đồng xác suất, H(X) = 1 và H(X|Y) = −0,1log₂0,1 − 0,9log₂0,9 ≈ 0,469. Dung lượng là khoảng 0,531 bit/lần dùng kênh.",
+    "ids": ["COS201-984", "COS201-987", "COS201-994", "COS201-1012"]
+  }
+]

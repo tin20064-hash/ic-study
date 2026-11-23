@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mos-regions",
+    "title": "Xác định vùng hoạt động của NMOS",
+    "formula": "Vov = VGS − VT\nVGS ≤ VT → ngắt lý tưởng\nVGS > VT: VDS < Vov → triode, VDS ≥ Vov → bão hòa",
+    "note": "Các mốc dùng cho mô hình NMOS kênh dài, với VDS ≥ 0 và bỏ qua dòng dưới ngưỡng. Phân cực ngược thân tăng VSB và thường làm VT tăng.",
+    "tip": "Kiểm tra VGS so với VT trước. Khi transistor dẫn, so VDS với phần điện áp vượt ngưỡng Vov.",
+    "example": "VGS = 1,2 V, VT = 0,4 V, VDS = 0,3 V. Vov = 0,8 V và 0,3 < 0,8 nên NMOS ở vùng triode.",
+    "ids": ["ICI211-293", "ICI211-328", "ICI211-354", "ICI211-411"]
+  },
+  {
+    "id": "short-channel",
+    "title": "DIBL, điều biến chiều dài kênh và bão hòa vận tốc",
+    "formula": "DIBL → VDS tăng làm VT giảm\nĐiều biến chiều dài kênh → VDS tăng làm Leff giảm, ID bão hòa tăng",
+    "note": "DIBL xuất hiện khi điện trường từ drain hạ rào thế phía source. Bão hòa vận tốc xảy ra khi vận tốc hạt tải tăng chậm dần ở điện trường lớn, làm mô hình dòng bình phương kênh dài kém chính xác.",
+    "tip": "Đề hỏi đại lượng nào thay đổi. VT giảm gợi DIBL, chiều dài hiệu dụng giảm gợi điều biến chiều dài kênh, vận tốc đạt giới hạn gợi velocity saturation.",
+    "example": "Giữ VGS, tăng VDS và thấy dòng bão hòa có độ dốc dương do điểm pinch-off dịch về source. Đây là dấu hiệu của điều biến chiều dài kênh.",
+    "ids": ["ICI211-271", "ICI211-427", "ICI211-442", "ICI211-460", "ICI211-473"]
+  },
+  {
+    "id": "pass-gate",
+    "title": "Pass transistor, transmission gate và MUX",
+    "formula": "nMOS pass truyền 0 mạnh, 1 yếu\nTG = nMOS ∥ pMOS, hai cổng điều khiển bù nhau\nMUX 2:1: Y = S̄D0 + SD1",
+    "note": "Khi truyền mức cao bằng nMOS đơn, VGS giảm dần và transistor gần ngắt ở Vout ≈ VDD − VTn trong mô hình đơn giản. TG phối hợp hai loại transistor để truyền cả hai mức logic đầy đủ.",
+    "tip": "Gặp câu chọn biểu thức MUX, thế S = 0 rồi S = 1 để kiểm tra từng ngõ vào được chọn.",
+    "example": "VDD = 1,2 V, VTn giả sử không đổi ở 0,3 V. nMOS đơn truyền mức cao đến khoảng 0,9 V. Với TG bật, pMOS hỗ trợ kéo lên gần 1,2 V.",
+    "ids": ["ICI211-259", "ICI211-269", "ICI211-312", "ICI211-425", "ICI211-469"]
+  },
+  {
+    "id": "charge-sharing",
+    "title": "Tính sụt áp và chia sẻ điện tích",
+    "formula": "Sụt áp do mất điện tích: ΔV = ΔQ/C\nHai tụ nối chung: Vf = (C1V1 + C2V2)/(C1 + C2)",
+    "note": "Dùng bảo toàn điện tích khi hai nút được nối và cách ly nguồn trong mô hình lý tưởng. Keeper yếu giúp bù rò tại nút động. Tăng sức kéo của keeper có thể kéo dài pha đánh giá.",
+    "tip": "Đề cho lượng điện tích mất thì chia cho điện dung. Đề cho hai nút nối nhau thì cộng điện tích ban đầu và chia tổng điện dung.",
+    "example": "Nút 30 fF ở 1,2 V nối với nút 10 fF ở 0 V. Vf = (30 × 1,2 + 10 × 0)/40 = 0,9 V.",
+    "ids": ["ICI211-350", "ICI211-378", "ICI211-397", "ICI211-456"]
+  },
+  {
+    "id": "elmore",
+    "title": "Trễ dây dẫn và điện trở chung trong cây RC",
+    "formula": "Elmore tại ngõ ra k: τk = Σ Ci·Rchung(i,k)\nMột cực RC tại ngưỡng 50%: t50 ≈ 0,69RC",
+    "note": "Rchung là điện trở trên đoạn đường chung từ nguồn đến tụ i và ngõ ra k. Dây dài cần xét điện trở và điện dung phân bố. Bộ đệm có kích thước phù hợp có thể giảm trễ trên dây rất dài.",
+    "tip": "Với các tụ bằng nhau, tìm tụ có Rchung lớn nhất với đúng ngõ ra được hỏi. kΩ × fF cho kết quả bằng ps.",
+    "example": "R = 4 kΩ, C = 50 fF cho RC = 200 ps. Trễ qua ngưỡng 50% của mạch một cực xấp xỉ 0,69 × 200 = 138 ps.",
+    "ids": ["ICI211-304", "ICI211-306", "ICI211-327", "ICI211-420", "ICI211-450", "ICI211-468"]
+  },
+  {
+    "id": "scaling",
+    "title": "Thu nhỏ theo mô hình điện trường không đổi",
+    "formula": "Hệ số thu nhỏ S > 1: kích thước, VDD và C → 1/S\nf → S, diện tích cổng → 1/S², Pđộng/cổng → 1/S²",
+    "note": "Giữ hệ số hoạt động và dùng mô hình lý tưởng. Điện trường V/L gần giữ nguyên vì V và L cùng chia S. Mật độ cổng tăng S² nên mật độ công suất động xấp xỉ giữ nguyên.",
+    "tip": "Đề hỏi công suất trên mỗi cổng hay trên mỗi diện tích. Viết riêng hệ số công suất và hệ số mật độ cổng trước khi nhân.",
+    "example": "S = 2 cho Pđộng/cổng còn 1/4 và số cổng trên một đơn vị diện tích tăng 4 lần. Mật độ công suất động có hệ số 1/4 × 4 = 1.",
+    "ids": ["ICI211-300", "ICI211-368", "ICI211-374"]
+  },
+  {
+    "id": "sram-sizing",
+    "title": "SRAM 6T, đường đọc 8T và khả năng ghi",
+    "formula": "Đọc 6T: pull-down giữ nút 0 trước access transistor\nGhi 0: access transistor kéo thắng pull-up\n8T: đường đọc tách khỏi nút lưu",
+    "note": "Khi đọc 6T, bitline được nạp trước có thể nâng điện áp của nút đang lưu 0. Pull-down đủ mạnh giúp giữ trạng thái. Sense amplifier phát hiện chênh lệch nhỏ giữa hai bitline trong mạch đọc vi sai.",
+    "tip": "Tách hai thao tác. Đọc phải giữ bit cũ. Ghi phải thắng phản hồi của ô để đổi bit.",
+    "example": "Một ô 6T dễ bị lật khi đọc. Tách đường đọc bằng cấu trúc 8T giúp giảm nhiễu lên nút lưu và tăng diện tích ô.",
+    "ids": ["ICI211-299", "ICI211-323", "ICI211-347", "ICI211-404", "ICI211-497"]
+  },
+  {
+    "id": "vlsi-design",
+    "title": "Luồng thiết kế, FPGA và hiệu suất chế tạo",
+    "formula": "Đặc tả → kiến trúc → RTL → logic và bố trí vật lý\nYield = die đạt / die chế tạo × 100%\nChi phí mỗi die đạt = tổng chi phí / số die đạt",
+    "note": "FPGA cấu hình được sau sản xuất. Standard cell dùng thư viện cell có sẵn. Full-custom cho phép chỉnh tới transistor và layout để tối ưu các ràng buộc khắt khe.",
+    "tip": "Sản lượng thấp và còn cần sửa thiết kế gợi FPGA. Khi tính chi phí trên die sử dụng được, lấy số die đạt làm mẫu số.",
+    "example": "1,5 triệu die đạt trên 2 triệu die chế tạo cho yield 75%. Một lô giá 600.000 USD có 10.000 die đạt thì chi phí là 60 USD mỗi die đạt.",
+    "ids": ["ICI211-307", "ICI211-362", "ICI211-405", "ICI211-431", "ICI211-475", "ICI211-492"]
+  }
+]

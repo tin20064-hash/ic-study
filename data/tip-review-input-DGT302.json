@@ -1,0 +1,4771 @@
+[
+  {
+    "id": "DGT302-500",
+    "question": "In the context of the z-transform, the complex variable z can be represented in polar form as z = r·e^(jω). What happens to the z-transform when it is evaluated exactly on the unit circle r = 1?",
+    "options": [
+      "It becomes the Continuous-Time Fourier Transform (CTFT).",
+      "It becomes the Discrete-Time Fourier Transform (DTFT).",
+      "It evaluates to identically zero.",
+      "It becomes the Laplace transform."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Thay z = e^(jω) vào tổng z-transform sẽ được đúng định nghĩa DTFT, nếu ROC chứa vòng đơn vị.",
+    "tip": "unit circle / r = 1 → DTFT.",
+    "active": false
+  },
+  {
+    "id": "DGT302-501",
+    "question": "For an LTI system to be Bounded-input Bounded-Output (BIBO) stable, what specific condition must its Region of Convergence (ROC) in the z-domain satisfy?",
+    "options": [
+      "The ROC must be strictly bounded inside the unit circle.",
+      "The ROC must not include the origin z = O.",
+      "The ROC must include the Unit Circle Izl = 1",
+      "The ROC must encompass the entire z-plane."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Ổn định đòi hỏi DTFT của đáp ứng xung tồn tại, tức ROC chứa |z| = 1.",
+    "tip": "BIBO + ROC → chứa vòng đơn vị.",
+    "active": true
+  },
+  {
+    "id": "DGT302-502",
+    "question": "What is the primary hardware consequence of quantizing the ideal, infinite-precision coefficients ak, bk of an IIR filter to fit into a b-bit memory register?",
+    "options": [
+      "The roots of the polynomial (poles and zeros) migrate to new grid-snapped locations, which can potentially push poles outside the unit circle and cause instability.",
+      "The poles are immediately forced to the origin z = 0 transforming the filter into an FIR type.",
+      "The filter's response becomes perfectly stable regardless of the original pole locations, which can potentially push poles outside the unit circle and cause instability",
+      "The poles remain entirely unaffected; only the zeros migrate."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Làm tròn hệ số làm dịch các cực; cực vượt vòng đơn vị có thể gây mất ổn định.",
+    "tip": "quantize coefficients → pole migration.",
+    "active": true
+  },
+  {
+    "id": "DGT302-503",
+    "question": "When an FIR Lattice structure is inverted to create an IIR All-Pole Lattice filter, what is the strict mathematical condition to guarantee that the resulting IIR system is BIBO stable?",
+    "options": [
+      "The absolute magnitude of all reflection coefficients must be strictly less than 1",
+      "The magnitude of all reflection coefficients must be exactly equal to 0.",
+      "The absolute magnitude of all reflection coefficients must be strictly greater than 1.",
+      "The sum of all reflection coefficients must equal exactly 1."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Lattice all-pole ổn định khi mọi hệ số phản xạ có độ lớn nhỏ hơn 1.",
+    "tip": "reflection coefficient → kiểm tra |Ki| < 1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-504",
+    "question": "The fundamental limitation in STFT, akin to the Gabor Limit (Uncertainty Principle), states that:",
+    "options": [
+      "High frequency signals cannot be down sampled.",
+      "You cannot have perfect time resolution and perfect frequency resolution simultaneously.",
+      "The rectangular window has the lowest sidelobes.",
+      "Zero-padding destroys spectral leakage."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Cửa sổ ngắn định vị thời gian tốt nhưng phân giải tần số kém, và ngược lại.",
+    "tip": "STFT → đánh đổi thời gian–tần số.",
+    "active": true
+  },
+  {
+    "id": "DGT302-505",
+    "question": "In a two-channel QMF bank with H1(z)=H0(-z), which conventional synthesis pair cancels the alias component?",
+    "options": [
+      "G0(z) = -H0(z) and G1(z) = -H0(-z)",
+      "G0(z) = H1(z) and G1(z) = H0(z)",
+      "G0(z) = 1/H0(z) and G1(z) = 1/H1(z)",
+      "G0(z) = H0(z) and G1(z) = -H0(-z)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Với H1(z)=H0(−z), cặp G0=H0 và G1=−H0(−z) làm H0(−z)G0+H1(−z)G1=0. Bản cũ có cả A và D cùng triệt alias do chỉ khác dấu toàn cục.",
+    "tip": "QMF chuẩn → G0=H0; G1=−H0(−z).",
+    "active": true
+  },
+  {
+    "id": "DGT302-506",
+    "question": "What is the primary difference in operational objectives between Linear Prediction and Optimum Linear Filtering (Wiener Filtering)?",
+    "options": [
+      "Prediction estimates the signal from its own past.",
+      "Prediction uses IIR filters, while Wiener filtering strictly uses continuous-time analog filters.",
+      "Prediction minimizes the Absolute Error, while Wiener filtering minimizes the Mean Square Error.",
+      "Prediction requires non-causal data, while Wiener filtering is purely causal."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Dự đoán dùng quá khứ của chính tín hiệu; Wiener ước lượng tín hiệu mong muốn bằng tối thiểu hóa MSE.",
+    "tip": "prediction → own past.",
+    "active": true
+  },
+  {
+    "id": "DGT302-507",
+    "question": "Why is a Minimum-Phase system highly desirable in telecommunications and data storage?",
+    "options": [
+      "It delays the signal by the maximum possible amount.",
+      "It perfectly rejects all ambient noise.",
+      "It has a stable, causal inverse filter (which may be FIR or IIR).",
+      "It requires absolutely no multipliers to implement."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ minimum-phase có bộ nghịch đảo nhân quả và ổn định; bộ nghịch đảo có thể là FIR hoặc IIR, tùy cấu trúc H(z).",
+    "tip": "minimum phase → inverse causal + stable; không bắt buộc IIR.",
+    "active": true
+  },
+  {
+    "id": "DGT302-508",
+    "question": "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" WN is introduced. How is it mathematically defined?",
+    "options": [
+      "WN = exp(j2π/N)",
+      "WN = exp(-j2π/N)",
+      "WN = exp(-jπ/N)",
+      "WN = exp(jπ/N)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DFT thuận dùng số mũ âm; WN là căn bậc N cơ bản của đơn vị.",
+    "tip": "twiddle → e^(−j2π/N).",
+    "active": true
+  },
+  {
+    "id": "DGT302-509",
+    "question": "Which term applies to maintaining a given analog signal voltage level perfectly steady until the next sampling clock edge, allowing the ADC time to process it?",
+    "options": [
+      "Aliasing",
+      "Holding",
+      "Multiplexing",
+      "Stair-stepping"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Giữ điện áp không đổi giúp ADC có thời gian hoàn tất chuyển đổi.",
+    "tip": "giữ mức đến clock sau → holding.",
+    "active": true
+  },
+  {
+    "id": "DGT302-510",
+    "question": "Using the frequency differentiation property n·x(n) ↔ j·dX(ω)/dω, evaluate the DTFT of the sequence x(n) = n·a^n·u(n) for |a| < 1",
+    "options": [
+      "a·e^(-jω) / (1 - a·e^(-jω))²",
+      "a·e^(-jω) / (1 + a·e^(-jω))²",
+      "e^(-jω) / (1 - a·e^(-jω))²",
+      "-a·e^(-jω) / (1 - a·e^(-jω))²"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tổng Σ n·aⁿ·e^(−jωn) = a·e^(−jω)/(1−a·e^(−jω))². Nhân j với đạo hàm DTFT cho dấu dương.",
+    "tip": "n·aⁿu[n] → tử +a·e^(−jω), không có dấu trừ.",
+    "active": true
+  },
+  {
+    "id": "DGT302-511",
+    "question": "When choosing a smoother window function (like Hamming instead of Rectangular) to improve the stopband attenuation of an FIR filter, what unavoidable trade-off must the engineer accept for a fixed filter length M?",
+    "options": [
+      "A wider main-lobe, resulting in a wider transition band (lower frequency resolution).",
+      "A narrower transition band, causing steeper cutoffs.",
+      "The total loss of the linear phase characteristic.",
+      "The filter becoming inherently unstable."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Giảm sidelobe làm main-lobe rộng hơn khi giữ nguyên chiều dài bộ lọc.",
+    "tip": "smoother window → ít ripple, transition rộng.",
+    "active": true
+  },
+  {
+    "id": "DGT302-512",
+    "question": "For finite sequences of lengths L and M, what is the minimum general requirement on N that guarantees their N-point circular convolution equals their zero-padded linear convolution?",
+    "options": [
+      "N ≤ L + M - 1",
+      "N ≥ L·M",
+      "N ≥ L + M - 1",
+      "N = L = M"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Cần đủ L + M − 1 mẫu để kết quả không bị cuộn chồng theo chu kỳ.",
+    "tip": "circular = linear → zero-pad đến L+M−1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-513",
+    "question": "For a standard Radix-2 DIF FFT algorithm, what are the ordering requirements for the arrays?",
+    "options": [
+      "Input is in Natural order, Output is in Bit-reversed order.",
+      "Input is in Bit-reversed order, Output is in Natural order.",
+      "Both are in Natural order.",
+      "Both are in Bit-reversed order."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Radix-2 DIF tách theo tần số nên đầu ra nằm ở thứ tự đảo bit.",
+    "tip": "DIF → natural in, bit-reversed out.",
+    "active": true
+  },
+  {
+    "id": "DGT302-514",
+    "question": "When an analog signal is sampled in the time domain, what happens to its spectrum X(F) in the frequency domain?",
+    "options": [
+      "The spectrum is compressed into a single point.",
+      "The spectrum becomes a periodic repetition of the analog spectrum Xa(F) at integer multiples of Fs.",
+      "The spectrum is completely attenuated.",
+      "The spectrum shifts entirely to the negative frequency axis."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhân tín hiệu với chuỗi xung lấy mẫu tạo các bản sao phổ cách nhau Fs.",
+    "tip": "sampling → lặp phổ mỗi Fs.",
+    "active": true
+  },
+  {
+    "id": "DGT302-515",
+    "question": "Consider the 8-point DIT FFT of the step sequence x(n) = {0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0}. At the final computational stage (Stage 3), the calculation for the frequency bin X(1) involves a butterfly with inputs from Stage 2 and the twiddle factor W8^1 ≈ 0.707 - j0.707. Given that the top input to this specific butterfly is 0.5 and the bottom input (already multiplied by the twiddle) contributes to the phase, what is the exact complex value of X(1)?",
+    "options": [
+      "0.5 + j1.207",
+      "0.5 - j1.207",
+      "2.0 + j0",
+      "0 - j0.707"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Cộng bốn số hạng 0,5·e^(−j2πn/8), n = 0…3, được 0,5 − j1,207.",
+    "tip": "X(1) → cộng phasor, phần ảo âm.",
+    "active": true
+  },
+  {
+    "id": "DGT302-516",
+    "question": "To convert sample rate by 3/4 using upsample-by-3, FIR filtering and downsample-by-4, what ideal low-pass cutoff (normalized to the Nyquist frequency of the upsampled grid) and DC gain should the FIR have?",
+    "options": [
+      "Normalized Cutoff = 1/4, Gain = 3",
+      "Normalized Cutoff = 1/3, Gain = 4",
+      "Normalized Cutoff = 3/4, Gain = 3",
+      "Normalized Cutoff = 1/4, Gain = 1"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Cutoff chuẩn hóa là 1/max(3,4); gain bằng hệ số nội suy 3 để bù chèn zero.",
+    "tip": "up=3, down=4 → cutoff 1/4, gain 3.",
+    "active": true
+  },
+  {
+    "id": "DGT302-517",
+    "question": "When a complex exponential sequence x(n) = A·exp(jωn) passes through an LTI system, it emerges as y(n) = A·H(ω)·exp(jωn). Because the signal's shape does not change, complex exponentials are considered:",
+    "options": [
+      "Aliased signals of the system",
+      "Eigenfunctions of LTI systems",
+      "Transient responses",
+      "Notch frequencies"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Qua LTI, hàm mũ phức chỉ đổi biên độ và pha bởi H(ω), không đổi dạng.",
+    "tip": "giữ dạng qua hệ → eigenfunction.",
+    "active": true
+  },
+  {
+    "id": "DGT302-518",
+    "question": "Using the standard radix-2 butterfly count (N/2)·log₂N, including trivial twiddle-factor multiplications, how many complex multiplications are counted for N = 1024?",
+    "options": [
+      "1024",
+      "5120",
+      "10240",
+      "2048"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Số phép nhân radix-2 theo công thức đếm chuẩn là (N/2)·log₂N = 512·10.",
+    "tip": "1024 → 10 tầng → 5120.",
+    "active": true
+  },
+  {
+    "id": "DGT302-519",
+    "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = x(n)·cos(2πk0n/N), its N-point DFT is:",
+    "options": [
+      "(1/2)·[X((k - k0))N + X((k + k0))N]",
+      "X(k)·e^(-j2πkk0/N)",
+      "(1/2)·X(k)·cos(2πk0/N)",
+      "X((k - k0))N"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Viết cos thành hai hàm mũ rồi dùng tính chất dịch phổ: Xs[k] = ½{X[(k−k0) mod N] + X[(k+k0) mod N]}.",
+    "tip": "Nhân cos → hai phổ dịch, mỗi phổ có hệ số ½.",
+    "active": true
+  },
+  {
+    "id": "DGT302-520",
+    "question": "An ADC that compares each bit, one at a time, with the input analog signal is known as",
+    "options": [
+      "Flash converter",
+      "Dual-slope ramp converter",
+      "Successive-approximation converter",
+      "Tracking converter"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "SAR ADC thử từng bit từ MSB xuống LSB bằng DAC và bộ so sánh.",
+    "tip": "one bit at a time → successive approximation.",
+    "active": true
+  },
+  {
+    "id": "DGT302-521",
+    "question": "According to Parseval's Theorem for the DFT, which equation correctly represents the conservation of energy between the time domain and frequency domain?",
+    "options": [
+      "Sum from n = 0 to N-1 of |x(n)|² = Sum from k = 0 to N-1 of |X(k)|²",
+      "Sum from n = 0 to N-1 of |x(n)|² = (1/N) · Sum from k = 0 to N-1 of |X(k)|²",
+      "Sum from n = 0 to N-1 of |x(n)| = (1/N) · Sum from k = 0 to N-1 of |X(k)|",
+      "Sum from n = 0 to N-1 of |x(n)|² = N · Sum from k = 0 to N-1 of |X(k)|²"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Với DFT thuận X[k] = Σ x[n]e^(−j2πkn/N), tổng năng lượng là Σ|x[n]|² = (1/N)Σ|X[k]|².",
+    "tip": "DFT thuận không chuẩn hóa → Parseval có 1/N.",
+    "active": true
+  },
+  {
+    "id": "DGT302-522",
+    "question": "Determine the exact z-transform of the finite-duration signal x(n) = {2, 4, 5, 7, 0, 1} (where the arrow indicates the origin n = 0 at the first sample value 2).",
+    "options": [
+      "X(z) = 2 + 4z^-1 + 5z^-2 + 7z^-3 + z^-5",
+      "X(z) = 2z² + 4z + 5 + 7z^-1 + z^-3",
+      "X(z) = 2 + 4z + 5z² + 7z³ + z^5",
+      "X(z) = 2z^-1 + 4z^-2 + 5z^-3 + 7z^-4 + z^-6"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Mẫu tại chỉ số n đóng góp x[n]z^(−n); mẫu zero tại n=4 không có số hạng.",
+    "tip": "đếm từ n=0 → mũ 0, −1, −2…",
+    "active": true
+  },
+  {
+    "id": "DGT302-523",
+    "question": "The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform (DTFT) of a sequence x(n) is mathematically defined as:",
+    "options": [
+      "X(ω) = Sum from n = -∞ to ∞ of x(n)·e^(jωn)",
+      "X(ω) = Sum from n = -∞ to ∞ of x(n)·e^(-jωn)",
+      "X(ω) = Integral from -∞ to ∞ of x(t)·e^(-jωt) dt",
+      "X(ω) = Sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DTFT thuận cộng trên mọi chỉ số nguyên với nhân tử e^(−jωn).",
+    "tip": "forward → dấu âm, tổng −∞…∞.",
+    "active": true
+  },
+  {
+    "id": "DGT302-524",
+    "question": "A finite-order linear constant-coefficient difference equation can be implemented using which three basic DSP building blocks?",
+    "options": [
+      "Integrator, Differentiator, and Adder.",
+      "Sampler, Quantizer, and Unit Delay.",
+      "Adder, Multiplier, and Unit Delay.",
+      "Multiplier, Quantizer, and Encoder."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Phương trình sai phân chỉ cần phép cộng, nhân hệ số và lưu trễ một mẫu.",
+    "tip": "LTI blocks → adder, multiplier, delay.",
+    "active": true
+  },
+  {
+    "id": "DGT302-525",
+    "question": "What is the prerequisite for the radix-4 approach to compute DFT applicable?",
+    "options": [
+      "The number N of data points is a prime number.",
+      "The number N of data points is a composite number.",
+      "The number N of data points is a Fibonacci number.",
+      "The number N of data points is a power of 4."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chia thành bốn nhánh ở mỗi tầng đòi hỏi N = 4^v cho radix-4 thuần.",
+    "tip": "radix-4 → lũy thừa 4.",
+    "active": true
+  },
+  {
+    "id": "DGT302-526",
+    "question": "In Python's scipy.signal library, the function upfirdn is specifically designed to:",
+    "options": [
+      "Efficiently apply an FIR filter using a Polyphase architecture while simultaneously performing upsampling and downsampling.",
+      "Calculate the Fast Fourier Transform of a decimated signal.",
+      "Automatically design an IIR filter using the Bilinear Transform.",
+      "Convert an FIR filter to an IIR Lattice-Ladder structure."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "upfirdn kết hợp upsample, FIR và downsample bằng cấu trúc polyphase để tránh tính thừa.",
+    "tip": "up–FIR–down → upfirdn.",
+    "active": true
+  },
+  {
+    "id": "DGT302-527",
+    "question": "When designing an FIR filter using a rectangular window, does increasing the filter length M to a very large number eliminate the ripple amplitude of the Gibbs phenomenon?",
+    "options": [
+      "No, increasing M only narrows the transition band, but the maximum overshoot amplitude remains fixed at approximately 9%.",
+      "Yes, the ripple amplitude decreases proportionally to I/M, eventually reaching zero.",
+      "No, increasing M completely widens the transition band, making the ripple worse.",
+      "Yes, it perfectly flattens both the passband and the stopband."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tăng chiều dài chỉ thu hẹp vùng dao động; biên overshoot Gibbs không tiến về zero.",
+    "tip": "Gibbs → khoảng 9% vẫn còn.",
+    "active": true
+  },
+  {
+    "id": "DGT302-528",
+    "question": "The Direct Form II (Canonic Form) implementation improves upon Direct Form I by merging the delay elements. What is the total number of memory delays required for this highly memory-efficient structure?",
+    "options": [
+      "M + N",
+      "M×N",
+      "max(M,N)",
+      "M/N"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Direct Form II dùng chung dãy trễ cho phần tử số và mẫu số.",
+    "tip": "canonic → max(M,N) bộ trễ.",
+    "active": true
+  },
+  {
+    "id": "DGT302-529",
+    "question": "Two LTI systems connected in parallel can be mathematically replaced by a single equivalent system with the impulse response:",
+    "options": [
+      "heq(n) = h1(n) * h2(n)",
+      "heq(n) = h1(n) - h2(n)",
+      "heq(n) = h1(n) + h2(n)",
+      "heq(n) = h1(n) · h2(n)"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hai nhánh cùng nhận x[n], rồi cộng đầu ra: y = x*h₁ + x*h₂ = x*(h₁+h₂). Vì vậy h_eq[n] = h₁[n] + h₂[n].",
+    "tip": "parallel / song song → cộng; cascade / nối tiếp → chập.",
+    "active": true
+  },
+  {
+    "id": "DGT302-530",
+    "question": "In the design of optimal linear predictors, what is the standard mathematical objective function that engineers seek to minimize?",
+    "options": [
+      "The Mean Square Error (MSE)",
+      "The Absolute Error",
+      "The Signal-to-Noise Ratio (SNR)",
+      "The Maximum Amplitude Error"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "MSE đo trung bình bình phương sai lệch giữa giá trị thật và giá trị dự đoán.",
+    "tip": "optimal linear predictor → minimize MSE.",
+    "active": true
+  },
+  {
+    "id": "DGT302-531",
+    "question": "In the Parallel-Form structure for IIR filters, what mathematical technique is used to decompose the overall system function H(z) into independent parallel branches?",
+    "options": [
+      "Partial Fraction Expansion",
+      "Polynomial Long Division",
+      "The Bilinear Transformation",
+      "Fast Fourier Transform (FFT)"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Khai triển phân thức tách H(z) thành tổng các nhánh bậc thấp độc lập.",
+    "tip": "parallel IIR → partial fractions.",
+    "active": true
+  },
+  {
+    "id": "DGT302-532",
+    "question": "A Moving Average (MA) model estimates the current value x(n) as a linear combination of current and past white noise inputs w(n). Structurally, this corresponds to:",
+    "options": [
+      "An All-Zero (FIR) filter",
+      "An All-Pole filter",
+      "An Infinite Impulse Response (IIR) filter",
+      "An All-Pass phase equalizer"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "MA chỉ cộng các mẫu nhiễu hiện tại và quá khứ, không có hồi tiếp đầu ra.",
+    "tip": "MA → all-zero / FIR.",
+    "active": true
+  },
+  {
+    "id": "DGT302-533",
+    "question": "According to the Linearity property of the z-transform, what is the new Region of Convergence (ROC) when two signals are linearly combined al•xl(n) + a2•x2(n)?",
+    "options": [
+      "It is the union of the individual ROCs.",
+      "It is at least the intersection of the individual ROCS (ROC 2 ROCI n ROC2)",
+      "It covers the entire z-plane regardless of the signals.",
+      "It is the mathematical difference between the two ROCs."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tổng hội tụ ở mọi điểm cả hai biến đổi cùng hội tụ; triệt cực có thể làm ROC rộng thêm.",
+    "tip": "linearity ROC → ít nhất phần giao.",
+    "active": true
+  },
+  {
+    "id": "DGT302-534",
+    "question": "Lattice structures for FIR filters characterize the system using a specific set of parameters that offer high robustness against quantization. These parameters are called:",
+    "options": [
+      "Reflection coefficients",
+      "Twiddle factors",
+      "Quality factors",
+      "Transition bandwidths"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Lattice mô tả từng tầng bằng hệ số phản xạ, thuận tiện kiểm soát ổn định và lượng tử hóa.",
+    "tip": "lattice → reflection coefficients.",
+    "active": true
+  },
+  {
+    "id": "DGT302-535",
+    "question": "Consider the causal decaying exponential sequence x(n) = a^n·u(n) with |a| < 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+    "options": [
+      "1 / (1 + a·e^(-jω))",
+      "1 / (1 - a·e^(-jω))",
+      "a / (1 - e^(-jω))",
+      "1 / (1 - a·e^(jω))"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Đây là tổng cấp số nhân với công bội a·e^(−jω), có độ lớn nhỏ hơn 1.",
+    "tip": "a^n·u(n) → 1/(1−a·e^(−jω)).",
+    "active": true
+  },
+  {
+    "id": "DGT302-536",
+    "question": "What is the name given to the frequency limit that is exactly half of the sampling frequency Fs/2?",
+    "options": [
+      "Nyquist frequency (or Folding frequency)",
+      "Shannon frequency",
+      "Baseband frequency",
+      "Intermediate frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Fs/2 là giới hạn nửa tần số lấy mẫu, nơi phổ bị gập lại.",
+    "tip": "Fs/2 → Nyquist / folding frequency.",
+    "active": true
+  },
+  {
+    "id": "DGT302-537",
+    "question": "To design a simple Notch filter that completely rejects and zeroes out a specific interference frequency (e.g., 60 Hz hum), where MUST the zeros be placed on the z-plane?",
+    "options": [
+      "Exactly on the unit circle at angles ±ω0",
+      "At the origin z = 0",
+      "Outside the unit circle at z = 2",
+      "Exactly at z = -1 only"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Zero trên vòng đơn vị tại ±ω0 khiến đáp ứng đúng tần số cần loại bằng zero.",
+    "tip": "notch → zeros tại e^(±jω0).",
+    "active": true
+  },
+  {
+    "id": "DGT302-538",
+    "question": "The Multiplication Theorem states that multiplying two signals in the time domain x1(n)•x2(n) (e.g., applying a window function) causes what in the frequency domain?",
+    "options": [
+      "Periodic convolution of their spectra.",
+      "Multiplication of their spectra.",
+      "Phase distortion only.",
+      "Amplitude attenuation only."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân trong miền thời gian tương ứng chập tuần hoàn các phổ trong miền DTFT.",
+    "tip": "time multiply → frequency convolution.",
+    "active": true
+  },
+  {
+    "id": "DGT302-539",
+    "question": "To avoid phase distortion caused by different frequencies having different group delays, a filter should have a:",
+    "options": [
+      "Linear phase response",
+      "Nonlinear phase response",
+      "Zero magnitude response",
+      "Maximum-phase response"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Pha tuyến tính cho độ trễ nhóm không đổi, tránh méo do lệch trễ. Muốn giữ nguyên dạng mọi tín hiệu còn cần đáp ứng biên độ phẳng trong dải xét.",
+    "tip": "no phase distortion → linear phase; xét cả magnitude nếu cần giữ dạng.",
+    "active": true
+  },
+  {
+    "id": "DGT302-540",
+    "question": "When designing an inverse system Hi(z) = 1/H(z) for the purpose of deconvolution (e.g., channel equalization), what happens to the zeros of the original channel H(z)?",
+    "options": [
+      "They become the zeros of the inverse system.",
+      "They disappear completely.",
+      "They become the poles of the inverse system.",
+      "They are shifted to the origin."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Lấy 1/H(z) đảo tử và mẫu, nên zero của H trở thành cực của bộ nghịch đảo.",
+    "tip": "inverse → zeros đổi thành poles.",
+    "active": true
+  },
+  {
+    "id": "DGT302-541",
+    "question": "In Sigma-Delta Modulation (SDM), where is the Integrator i placed to achieve noise shaping compared to standard Delta Modulation?",
+    "options": [
+      "After the lowpass filter.",
+      "Before the Delta modulator (Quantizer).",
+      "In the feedback loop of the DAC.",
+      "It replaces the holding circuit."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Sigma-delta tích phân sai số trước lượng tử hóa để đẩy nhiễu về tần số cao.",
+    "tip": "sigma = tích phân → trước quantizer.",
+    "active": true
+  },
+  {
+    "id": "DGT302-542",
+    "question": "What is the mathematical definition of the direct (two-sided) z-transform for a discrete-time sequence x(n)?",
+    "options": [
+      "X(z) = Sum from n = 0 to ∞ of x(n)·z^(-n)",
+      "X(z) = Sum from n = -∞ to ∞ of x(n)·z^(-n)",
+      "X(z) = Sum from n = -∞ to ∞ of x(n)·e^(-jωn)",
+      "X(z) = Integral from -∞ to ∞ of x(t)·z^(-t) dt"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Z-transform hai phía cộng x[n]z^(−n) trên mọi số nguyên n.",
+    "tip": "z-transform → z^(−n), tổng hai phía.",
+    "active": true
+  },
+  {
+    "id": "DGT302-543",
+    "question": "In the Window Method for FIR filter design, what is the correct mathematical relationship used to obtain the practical impulse response h(n) from the ideal infinite response h_d(n) and the window w(n)?",
+    "options": [
+      "h(n) = h_d(n) / w(n)",
+      "h(n) = h_d(n) * w(n)",
+      "h(n) = h_d(n) + w(n)",
+      "h(n) = h_d(n) · w(n)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Cửa sổ cắt ngắn đáp ứng xung lý tưởng bằng phép nhân từng mẫu.",
+    "tip": "window method → h = hd·w.",
+    "active": true
+  },
+  {
+    "id": "DGT302-544",
+    "question": "For the most efficient division in a standard Radix-2 FFT algorithm, the sequence length N must satisfy which specific condition?",
+    "options": [
+      "N = 2^v, where v is an integer.",
+      "N must be any even number.",
+      "N must be a prime number.",
+      "N = 4^k, where k is an integer."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Radix-2 chia đôi liên tiếp đến các DFT 2 điểm nên N phải là lũy thừa 2.",
+    "tip": "radix-2 → N = 2^v.",
+    "active": true
+  },
+  {
+    "id": "DGT302-545",
+    "question": "What is the conventional general-purpose processing order for rational sample-rate conversion by I/D?",
+    "options": [
+      "Upsample by I, apply an anti-imaging/anti-aliasing low-pass filter, then downsample by D.",
+      "Downsample by D before any needed anti-aliasing filtering, then upsample by I.",
+      "The order does not matter because both are linear operations.",
+      "Both must be performed simultaneously without any intermediate filtering."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nội suy trước rồi giảm mẫu giúp tránh mất thông tin do giảm mẫu quá sớm.",
+    "tip": "rational I/D → upsample → filter → downsample.",
+    "active": true
+  },
+  {
+    "id": "DGT302-546",
+    "question": "If a system's characteristics do not change over time, meaning a delayed input x(n-k) produces an identically delayed output y(n-k), the system is classified as:",
+    "options": [
+      "Time-Variant",
+      "Linear",
+      "Time-Invariant",
+      "Dynamic"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Dịch đầu vào bao nhiêu thì đầu ra dịch đúng bấy nhiêu là định nghĩa bất biến theo thời gian.",
+    "tip": "delay in = delay out → time-invariant.",
+    "active": true
+  },
+  {
+    "id": "DGT302-547",
+    "question": "Among the listed equal-length window functions, which has the lowest peak sidelobe (about −58 dB) and the broadest main lobe?",
+    "options": [
+      "Blackman window",
+      "Rectangular window",
+      "Bartlett (Triangular) window",
+      "Hanning window"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Blackman giảm sidelobe mạnh hơn các cửa sổ cơ bản đổi lại main-lobe rộng hơn.",
+    "tip": "stopband sâu, transition rộng → Blackman.",
+    "active": true
+  },
+  {
+    "id": "DGT302-548",
+    "question": "In the fundamental frequency range [-π, π] of the DTFT, the frequencies near ω = 0 represent:",
+    "options": [
+      "The highest rate of oscillation.",
+      "The DC component (slowest variations).",
+      "The Nyquist frequency.",
+      "The phase distortion."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "ω gần zero biểu diễn thành phần không đổi hoặc biến thiên chậm.",
+    "tip": "ω = 0 → DC.",
+    "active": true
+  },
+  {
+    "id": "DGT302-549",
+    "question": "If two finite-duration signals x(n) and h(n) have lengths Lx and Lh respectively, what is the exact number of samples in their linear convolution sequence?",
+    "options": [
+      "Lx + Lh",
+      "Max(Lx, Lh)",
+      "Lx x Lh",
+      "LX+ Lh -1"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chập tuyến tính của hai dãy dài Lx và Lh có chiều dài tối đa Lx + Lh − 1.",
+    "tip": "convolution length → cộng rồi trừ 1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-551",
+    "question": "According to the Time Delay property of the One-Sided z-transform, what is the correct algebraic expression for a delay by 1 sample, Z+{y(n - 1)}?",
+    "options": [
+      "z^-1 Y+(z)",
+      "z^-1 Y+(z) + y(-1)",
+      "z·Y+(z) - z·y(0)",
+      "Y+(z) - Y(-1)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Z một phía vẫn chứa mẫu ban đầu y(−1) khi dịch trễ một bước.",
+    "tip": "one-sided delay → z⁻¹Y⁺ + y(−1).",
+    "active": true
+  },
+  {
+    "id": "DGT302-552",
+    "question": "What is the mathematically derived Z-transform of the delayed sequence x(n) = 10^n·u(n - 2)?",
+    "options": [
+      "10z^(-1)/(1−10z^(-2)), ROC: |z| > √10",
+      "100z^(-1)/(1−10z^(-1)), ROC: |z| > 10",
+      "100z^(-2)/(1−10z^(-1)), ROC: |z| > 10",
+      "10z^(-2)/(1−10z^(-2)), ROC: |z| > √10"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Dãy bắt đầu tại n=2 nên tổng cấp số nhân có số đầu 10²z⁻²; ROC là |z|>10.",
+    "tip": "u(n−2) → bắt đầu từ 100z⁻².",
+    "active": true
+  },
+  {
+    "id": "DGT302-553",
+    "question": "For an LTI system to be BOTH causal and stable, what is the absolute requirement for the locations of its poles?",
+    "options": [
+      "ALL its poles must lie strictly INSIDE the unit circle Izl < 1",
+      "ALL its poles must lie strictly OUTSIDE the unit circle.",
+      "At least one pole must lie exactly ON the unit circle.",
+      "The poles must be located exactly at the origin z = 0."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân quả có ROC ngoài cực ngoài cùng; để chứa vòng đơn vị, mọi cực phải nằm bên trong.",
+    "tip": "causal + stable → |pole| < 1.",
+    "active": false
+  },
+  {
+    "id": "DGT302-554",
+    "question": "The System Function (Transfer Function) H(z) of a linear time-invariant system is mathematically defined as:",
+    "options": [
+      "The sum of the input and output z-transforms Y(z) + X(z).",
+      "The derivative of the output z-transform with respect to z.",
+      "The ratio of the output z-transform to the input z-transform Y(z)/X(z)",
+      "The convolution of X(z) and Y(z)."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Ở trạng thái nghỉ ban đầu, y = x*h nên Y = XH và H = Y/X.",
+    "tip": "transfer function → output/input.",
+    "active": true
+  },
+  {
+    "id": "DGT302-555",
+    "question": "A linear time-invariant system is characterized by the system function H(z) = (3 - 4z^-1) / [(1 - 0.5z^-1)(1 - 2z^-1)]. What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?",
+    "options": [
+      "|z| < 0.5",
+      "0.5 < |z| < 2",
+      "|z| > 0.5",
+      "|z| > 2"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "ROC ổn định phải chứa |z|=1 và không chứa cực 0,5 hoặc 2.",
+    "tip": "chọn vành 0,5 < |z| < 2.",
+    "active": true
+  },
+  {
+    "id": "DGT302-556",
+    "question": "Discrete-time signals are mathematically characterized by which of the following statements?",
+    "options": [
+      "They are defined only at certain specific integer values of time.",
+      "They have continuous values in both time and amplitude.",
+      "They are always periodic.",
+      "Their frequencies can extend to infinity without limits."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Thời gian rời rạc chỉ nhận các chỉ số nguyên; biên độ vẫn có thể liên tục.",
+    "tip": "discrete-time → integer time indices.",
+    "active": true
+  },
+  {
+    "id": "DGT302-557",
+    "question": "A bandpass signal occupies Fl=10,677.5 kHz to Fh=10,702.5 kHz. Let B=Fh−Fl and k=floor(Fh/B). Using the valid bandpass-sampling interval 2Fh/k ≤ Fs ≤ 2Fl/(k−1), what is the minimum Fs?",
+    "options": [
+      "10,702.5 kHz",
+      "21,405 kHz",
+      "25 kHz",
+      "50.0117 kHz"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "B=25 kHz, k=floor(10702,5/25)=428; Fs tối thiểu theo nhánh này là 2Fh/k≈50,0117 kHz.",
+    "tip": "bandpass → tính B rồi floor(Fh/B).",
+    "active": true
+  },
+  {
+    "id": "DGT302-558",
+    "question": "In DSP theory, the mathematical model of Ideal Sampling is equivalent to multiplying the continuous-time signal xa(t) by:",
+    "options": [
+      "A single impulse function δ(t)",
+      "A rectangular window w(n)",
+      "A periodic impulse train Σδ(t - nT)",
+      "A continuous sine wave"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Lấy mẫu lý tưởng giữ giá trị tín hiệu tại các thời điểm cách nhau T bằng chuỗi delta.",
+    "tip": "ideal sampling → nhân impulse train.",
+    "active": true
+  },
+  {
+    "id": "DGT302-559",
+    "question": "For delta modulation with step size Δ and sampling period T, which condition avoids slope-overload distortion?",
+    "options": [
+      "max_t |dx(t)/dt| ≤ Δ/T",
+      "max_t |dx(t)/dt| ≤ 2Δ/T",
+      "max_t |x(t)| ≤ Δ",
+      "max_t |d²x(t)/dt²| ≤ Δ/T"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Độ dốc bậc thang Δ/T phải theo kịp độ dốc lớn nhất của tín hiệu.",
+    "tip": "avoid slope overload → Δ/T ≥ max|dx/dt|.",
+    "active": true
+  },
+  {
+    "id": "DGT302-560",
+    "question": "The Ideal Reconstruction Filter used in the D/A conversion process to extract the original baseband spectrum is an:",
+    "options": [
+      "Ideal high-pass filter",
+      "Ideal band-stop filter",
+      "Ideal band-pass filter",
+      "Ideal low-pass filter"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bộ lọc tái tạo giữ bản phổ gốc ở baseband và loại các ảnh phổ cao tần.",
+    "tip": "D/A reconstruction → low-pass.",
+    "active": true
+  },
+  {
+    "id": "DGT302-561",
+    "question": "Given a 3rd-order FIR filter with the system function H(z) = 1 + (13/24)z^-1 + (5/8)z^-2 + (1/3)z^-3. What is the exact value of the reflection coefficient K3 for its equivalent Lattice structure?",
+    "options": [
+      "1/3",
+      "13/24",
+      "5/8",
+      "1"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Với đa thức FIR chuẩn hóa đầu bằng 1, hệ số phản xạ tầng cuối bằng hệ số cuối.",
+    "tip": "K3 → hệ số z⁻³ = 1/3.",
+    "active": true
+  },
+  {
+    "id": "DGT302-562",
+    "question": "Which statement correctly distinguishes IIR and FIR responses and their usual realizations?",
+    "options": [
+      "IIR responses require effective recursion; FIR responses have finite duration and can be realized using feed-forward paths.",
+      "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+      "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot.",
+      "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Hồi tiếp làm đáp ứng IIR kéo dài; FIR thông thường chỉ dùng các nhánh tiến.",
+    "tip": "IIR → recursive / feedback.",
+    "active": true
+  },
+  {
+    "id": "DGT302-563",
+    "question": "Which realization usually improves numerical robustness for a high-order IIR filter by splitting it into lower-order sections?",
+    "options": [
+      "Cascade Form",
+      "Direct Form I as a single massive 8th-order block.",
+      "Tapped-Delay-Line Form.",
+      "Non-causal Time-Reversal Form."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chia bộ lọc bậc cao thành các tầng bậc hai giúp giảm độ nhạy với lượng tử hóa hệ số.",
+    "tip": "high-order IIR → cascade biquads.",
+    "active": false
+  },
+  {
+    "id": "DGT302-564",
+    "question": "In two’s-complement fixed-point arithmetic, assume truncation drops low-order bits (rounds toward −∞), with no overflow. For error e=quantized value−exact value, what is its sign/bias?",
+    "options": [
+      "The error is nonpositive; for values spread within quantization cells it generally has a negative mean (DC bias).",
+      "The error has a perfectly zero mean and a uniform distribution.",
+      "The error is completely eliminated for all even numbers.",
+      "The error is symmetrically bounded between -b and b, creating a negative DC bias in the system."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Khi bỏ LSB của số bù hai tương đương làm tròn xuống, giá trị sau lượng tử không lớn hơn giá trị thật. Với e=sau−trước, sai số không dương và thường có bias âm.",
+    "tip": "drop LSB / floor + e=quantized−exact → e≤0.",
+    "active": true
+  },
+  {
+    "id": "DGT302-565",
+    "question": "The Levinson-Durbin algorithm is revolutionary for solving the Yule-Walker equations because it exploits the Toeplitz structure to reduce computational complexity from O(p³) down to:",
+    "options": [
+      "O(p²)",
+      "O(p⁴)",
+      "O(N²)",
+      "O(p)"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Levinson–Durbin tận dụng ma trận Toeplitz để giải đệ quy với độ phức tạp bậc hai.",
+    "tip": "Toeplitz → O(p²).",
+    "active": false
+  },
+  {
+    "id": "DGT302-566",
+    "question": "In the innovations representation of a purely nondeterministic WSS process with an admissible stable spectral factor, the process is modeled by an LTI filter driven by which input?",
+    "options": [
+      "White noise",
+      "A single unit impulse",
+      "A deterministic sine wave",
+      "A constant DC signal"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Phần không tất định của quá trình WSS có nhân tử phổ phù hợp có thể được tạo bằng cách đưa nhiễu trắng qua bộ lọc ổn định.",
+    "tip": "purely nondeterministic innovations → white noise.",
+    "active": true
+  },
+  {
+    "id": "DGT302-567",
+    "question": "The optimal FIR Wiener filter coefficients are determined by solving the Wiener-Hopf Equation. The right-hand side of this equation strictly requires which statistical information to isolate the target?",
+    "options": [
+      "The cross-correlation between the desired signal and the noisy input.",
+      "The autocorrelation of the environmental white noise.",
+      "The Discrete Fourier Transform of the input sequence.",
+      "The reflection coefficients of the acoustic channel."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tương quan chéo giữa đầu vào và tín hiệu đích cho biết phần nào cần được ước lượng.",
+    "tip": "Wiener-Hopf vế phải → cross-correlation.",
+    "active": true
+  },
+  {
+    "id": "DGT302-568",
+    "question": "Directly computing an N-point DFT using the standard summation formula demands computational complexity proportional to:",
+    "options": [
+      "O(N log₂ N)",
+      "O(N²)",
+      "O(N)",
+      "O(2^N)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Có N đầu ra, mỗi đầu ra cộng N tích nên DFT trực tiếp tốn bậc N².",
+    "tip": "direct DFT → O(N²).",
+    "active": true
+  },
+  {
+    "id": "DGT302-569",
+    "question": "For an N-sample record extended by zero outside 0≤n<N, its N-point DFT can be viewed as:",
+    "options": [
+      "the sampling of the Fourier transform of a periodic discrete-time sequence.",
+      "the sampling of the Fourier transform of an aperiodic discrete-time sequence.",
+      "the Fourier transform in a continuous frequency domain.",
+      "a transform for determining the frequency content of continuous-time aperiodic signals."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DFT lấy N mẫu cách đều trên một chu kỳ phổ DTFT của dãy hữu hạn.",
+    "tip": "DFT → sampled DTFT.",
+    "active": true
+  },
+  {
+    "id": "DGT302-570",
+    "question": "The Analysis Equation (Forward DFT) that transforms an N-point time-domain sequence x(n) into an N-point frequency sequence X(k) is mathematically defined as:",
+    "options": [
+      "X(k) = sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)",
+      "X(k) = sum from n = 0 to N-1 of x(n)·e^(j2πkn/N)",
+      "X(k) = (1/N) · sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)",
+      "X(k) = sum from n = -∞ to ∞ of x(n)·e^(-j2πkn/N)"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "DFT thuận cộng N mẫu với trọng số e^(−j2πkn/N).",
+    "tip": "forward DFT → dấu âm, n=0…N−1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-571",
+    "question": "The Discrete Cosine Transform (DCT) dominates image compression standards (like JPEG) because of its Even Extension property and its ability to:",
+    "options": [
+      "Pack most of the signal energy into a very small number of low-frequency coefficients (Energy Compaction).",
+      "Use only complex exponentials to save memory.",
+      "Avoid multiplying by zero.",
+      "Maintain exact linear phase."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "DCT gom năng lượng ảnh vào ít hệ số tần số thấp, giúp bỏ nhiều hệ số nhỏ khi nén.",
+    "tip": "JPEG / DCT → energy compaction.",
+    "active": true
+  },
+  {
+    "id": "DGT302-572",
+    "question": "What is/are the effect(s) of limiting the duration of a discrete-time sequence of signal (windowing with a rectangular window) to its spectrum?",
+    "options": [
+      "Distort the spectral estimate due to the leakage effects.",
+      "Reduce spectral resolution.",
+      "Both leakage and spectral resolution reduction effects.",
+      "None of the above."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Cắt ngắn tín hiệu làm phổ chập với phổ cửa sổ, gây leakage và giảm độ phân giải.",
+    "tip": "rectangular window → leakage + resolution loss.",
+    "active": true
+  },
+  {
+    "id": "DGT302-573",
+    "question": "According to the Linearity property of the DTFT, the transform of a1·x1(n) + a2·x2(n) is:",
+    "options": [
+      "a1·X1(ω) · a2·X2(ω)",
+      "a1·X1(ω) + a2·X2(ω)",
+      "X1(a1·ω) + X2(a2·ω)",
+      "(a1 + a2)·X1(ω)·X2(ω)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Biến đổi tuyến tính giữ nguyên các hệ số của tổ hợp tuyến tính.",
+    "tip": "a1x1+a2x2 → a1X1+a2X2.",
+    "active": true
+  },
+  {
+    "id": "DGT302-574",
+    "question": "Multiplying a time sequence by the index n i.e., n.x(n) is mathematically equivalent to which operation on its DTFT spectrum X(w)?",
+    "options": [
+      "Integrating X(w) over w",
+      "Multiplying X(w) over jw",
+      "jdX(w)/dw",
+      "-jdX(w)/dw"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Đạo hàm e^(−jωn) sinh −jn; nhân thêm j trả lại n.",
+    "tip": "n·x(n) → j·dX/dω.",
+    "active": true
+  },
+  {
+    "id": "DGT302-575",
+    "question": "For a real sequence, wherever X(ω)≠0 and phase is interpreted modulo 2π, conjugate symmetry implies that the phase spectrum is:",
+    "options": [
+      "Even function ∠X(-ω) = ∠X(ω)",
+      "Odd function ∠X(-ω) = -∠X(ω)",
+      "Periodic function with period π",
+      "Purely positive function"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "X(−ω)=X*(ω) nên pha đổi dấu modulo 2π ở những điểm X khác zero; tại zero phổ không có pha xác định.",
+    "tip": "real signal → magnitude chẵn, phase lẻ modulo 2π khi X≠0.",
+    "active": true
+  },
+  {
+    "id": "DGT302-576",
+    "question": "The Frequency Shifting (Modulation) theorem states that multiplying a signal x(n) by a complex exponential exp(jw0n) results in:",
+    "options": [
+      "A shift of the spectrum to X(ω−ω₀)",
+      "A shift of the spectrum to X(ω+ω₀)",
+      "A phase rotation exp(jw0n)X(w)",
+      "No change in the magnitude spectrum"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân e^(jω0n) thay ω bằng ω−ω0 trong biểu thức DTFT.",
+    "tip": "modulation → X(ω−ω0).",
+    "active": true
+  },
+  {
+    "id": "DGT302-577",
+    "question": "Consider a discrete-time signal that is entirely real-valued and possesses perfect even symmetry in the time domain x(n) = x(-n). By applying the DTFT symmetry properties, what strict conclusion can be drawn about its frequency spectrum X(ω)?",
+    "options": [
+      "X(ω) is purely imaginary and odd.",
+      "X(ω) is real and even; wherever X(ω) is nonzero, its phase is 0 or π modulo 2π.",
+      "X(ω) has a linear phase shift proportional to n.",
+      "X(ω) is zero at the Nyquist frequency ω = π."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tín hiệu thực chẵn có phần sin triệt nhau nên phổ thực chẵn. Pha là 0 hoặc π modulo 2π ở những điểm phổ khác zero.",
+    "tip": "real + even → real + even spectrum; phase undefined tại zero.",
+    "active": true
+  },
+  {
+    "id": "DGT302-578",
+    "question": "In Multirate Digital Signal Processing, the mathematical operation of Decimation (Downsampling) by an integer factor D is defined as generating a new sequence y(m) such that:",
+    "options": [
+      "y(m) = x(m)·D",
+      "y(m) = x(m/D)",
+      "y(m) = x(mD)",
+      "y(m) = x(m - D)"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Giảm mẫu D lần giữ lại một mẫu sau mỗi D mẫu đầu vào.",
+    "tip": "downsample D → y[m]=x[mD].",
+    "active": true
+  },
+  {
+    "id": "DGT302-579",
+    "question": "For a fractional sample rate converter by factor I/D, the cascaded anti-imaging and anti-aliasing filters can be combined into a single lowpass filter. What is the required cutoff frequency ω_c of this combined filter?",
+    "options": [
+      "min(π/I, π/D)",
+      "max(π/I, π/D)",
+      "π/(I·D)",
+      "π·(I/D)"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Bộ lọc chung phải thỏa cả chống ảnh phổ và chống alias nên lấy cutoff nhỏ hơn.",
+    "tip": "I/D → ωc = π/max(I,D).",
+    "active": true
+  },
+  {
+    "id": "DGT302-580",
+    "question": "Based on Proakis 11.2, downsampling a discrete sequence x(n) by a factor of D = 2 produces the signal xd(n) = x(2n). In the frequency domain, what is the exact mathematical relationship between the new spectrum Xd(ω) and the original spectrum X(ω)?",
+    "options": [
+      "Xd(ω) = X(ω/2)",
+      "Xd(ω) = X(2ω)",
+      "Xd(ω) = (1/2)·[X(2ω) + X(2ω - 2π)]",
+      "Xd(ω) = (1/2)·[X(ω/2) + X((ω - 2π)/2)]"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Dùng chỉ báo chỉ số chẵn [1+(−1)^n]/2, suy ra Xd(ω)=½[X(ω/2)+X(ω/2−π)]. Đối số phải là ω/2, không phải 2ω.",
+    "tip": "D=2 → ½[X(ω/2)+X(ω/2−π)]; phổ giãn, có thể alias.",
+    "active": true
+  },
+  {
+    "id": "DGT302-581",
+    "question": "What is the primary engineering goal of utilizing Polyphase Decomposition in multirate DSP structures?",
+    "options": [
+      "To push the filter calculations to the lowest possible sampling rate, strictly avoiding wasted CPU cycles computing multiplications by zero.",
+      "To completely eliminate the need for analog anti-aliasing filters at the ADC.",
+      "To convert an unstable IIR filter into an unconditionally stable FIR filter.",
+      "To artificially increase the transition bandwidth of the filter for faster execution."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Polyphase bỏ các phép tính trên mẫu zero hoặc mẫu sẽ bị loại, giảm tốc độ tính cần thiết.",
+    "tip": "polyphase → tính ở rate thấp.",
+    "active": true
+  },
+  {
+    "id": "DGT302-582",
+    "question": "In Python, which scipy.signal function is typically used by engineers to rapidly compute and evaluate the continuous frequency response H(exp(jw)) of an LTI system given its difference equation coefficients b and a?",
+    "options": [
+      "scipy.signal.lfilter",
+      "scipy.signal.freqz",
+      "scipy.signal.convolve",
+      "numpy.fft.fft"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "freqz nhận hệ số b,a và trả đáp ứng tần số của bộ lọc số.",
+    "tip": "H(e^jω), b/a → freqz.",
+    "active": true
+  },
+  {
+    "id": "DGT302-583",
+    "question": "In the frequency domain, the output spectrum Y(ω) of an LTI system is related to the input spectrum X(ω) and the frequency response H(ω) by which fundamental equation?",
+    "options": [
+      "Y(ω) = X(ω) * H(ω)",
+      "Y(ω) = X(ω) · H(ω)",
+      "Y(ω) = X(ω) + H(ω)",
+      "Y(ω) = X(ω) / H(ω)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Phép chập đầu vào với đáp ứng xung trở thành phép nhân các phổ.",
+    "tip": "LTI frequency → Y=X·H.",
+    "active": true
+  },
+  {
+    "id": "DGT302-584",
+    "question": "For H(z)=(1−a)/(1−az^(-1)), 0<a<1, suppose a −3 dB cutoff ωc∈[0,π] exists. Which equation must ωc satisfy?",
+    "options": [
+      "cos(ωc) = (4a - 1 - a²) / (2a)",
+      "cos(ωc) = (1 + a²) / (2a)",
+      "cos(ωc) = (1 - a) / (1 + a)",
+      "cos(ωc) = a"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Đặt |H|²=1/2 và giải được cos(ωc)=(4a−1−a²)/(2a). Trong [0,π], cutoff này chỉ tồn tại khi a≥3−2√2.",
+    "tip": "−3 dB → nửa công suất; kiểm tra cutoff có tồn tại.",
+    "active": true
+  },
+  {
+    "id": "DGT302-585",
+    "question": "Provided the ROC contains the unit circle, the frequency response H(e^(jω)) is obtained from H(z) by evaluating it on the:",
+    "options": [
+      "Imaginary axis of the s-plane",
+      "Real axis, where z = w",
+      "Unit circle, where z = exp(jw)",
+      "Origin, where z = 0"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tần số thực tương ứng các điểm z=e^(jω) trên vòng đơn vị.",
+    "tip": "frequency response → evaluate unit circle.",
+    "active": true
+  },
+  {
+    "id": "DGT302-586",
+    "question": "For a causal first-order filter H(z)=b0/(1−az^(-1)), with nonzero b0 and real 0<a<1, the magnitude response is fundamentally:",
+    "options": [
+      "Lowpass filter",
+      "Highpass filter",
+      "Bandpass filter",
+      "All-pass filter"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Với a dương gần vòng đơn vị, gain lớn nhất ở DC và giảm về ω=π.",
+    "tip": "0<a<1, pole dương → low-pass.",
+    "active": true
+  },
+  {
+    "id": "DGT302-587",
+    "question": "A relaxed LTI system is Causal if and only if its impulse response h(n) satisfies the condition:",
+    "options": [
+      "Sum of h(k) from k = -∞ to ∞ equals 0",
+      "h(n) = 0 for n < 0",
+      "h(n) = 0 for n > 0",
+      "Sum of h(k) from k = -∞ to ∞ is finite (< ∞)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hệ nhân quả không phản ứng trước khi xung đầu vào xuất hiện.",
+    "tip": "causal → h[n]=0 với n<0.",
+    "active": true
+  },
+  {
+    "id": "DGT302-588",
+    "question": "The fundamental mathematical difference between Cross-Correlation and Convolution is that in Correlation:",
+    "options": [
+      "The output is always a continuous-time signal.",
+      "The shifted second sequence is not time-reversed as in convolution; complex correlation also uses conjugation.",
+      "The multiplication operation is replaced by division.",
+      "The shifting operation over time is completely omitted."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tương quan so sánh các dãy khi trượt, không dùng phép gập của chập. Với dãy phức còn phải lấy liên hợp một dãy.",
+    "tip": "correlation → slide + conjugate; convolution → fold.",
+    "active": true
+  },
+  {
+    "id": "DGT302-589",
+    "question": "The Commutative Property of convolution states that the order of convolution does not matter. This is mathematically written as:",
+    "options": [
+      "[x(n) * h1(n)] * h2(n) = x(n) * [h1(n) * h2(n)]",
+      "x(n) * [h1(n) + h2(n)] = x(n) * h1(n) + x(n) * h2(n)",
+      "x(n) * δ(n) = 1",
+      "x(n) * h(n) = h(n) * x(n)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Đổi vai trò hai dãy không đổi tổng tích trong phép chập.",
+    "tip": "commutative → x*h=h*x.",
+    "active": true
+  },
+  {
+    "id": "DGT302-590",
+    "question": "Multiplying two polynomials (e.g., P(z) = 1 + 3z + z2 and Q(z) = 1 + 2z + 2z2) is mathematically equivalent to performing which operation on their respective coefficient sequences?",
+    "options": [
+      "Addition",
+      "Cross-correlation",
+      "Convolution",
+      "Autocorrelation"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ số của mỗi lũy thừa tích đa thức là tổng các tích có chỉ số cộng bằng nhau.",
+    "tip": "polynomial multiplication → convolution.",
+    "active": true
+  },
+  {
+    "id": "DGT302-591",
+    "question": "Compute the convolution y(n) of the signals x(n) = {1, 3, 1} and h(n) = {1, 2, 2}. What is the total length (number of non-zero samples) of the resulting sequence y(n)?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hai dãy đều dài 3 nên độ dài chập là 3+3−1=5.",
+    "tip": "length → 3+3−1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-592",
+    "question": "Type Ill and Type IV linear-phase FIR filters possess an antisymmetric impulse response. Consequently, their frequency response is always zero at DC H(O) = 0. This constraint prevents them from being used as:",
+    "options": [
+      "Lowpass filters",
+      "Highpass filters",
+      "Differentiators",
+      "Bandpass filters"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Phản đối xứng làm tổng các hệ số bằng zero, nên không truyền được DC cho low-pass.",
+    "tip": "Type III/IV → H(0)=0 → không low-pass.",
+    "active": true
+  },
+  {
+    "id": "DGT302-593",
+    "question": "When comparing FIR and IIR designs for the exact same magnitude specifications (e.g., sharp cutoff and deep stopband), which filter type generally requires a significantly lower order (fewer coefficients)?",
+    "options": [
+      "IIR Filter.",
+      "FIR Filter with a Rectangular window.",
+      "FIR Filter with a Blackman window.",
+      "Non-causal Moving Average Filter."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhờ các cực và hồi tiếp, IIR đạt đáp ứng biên độ sắc hơn với ít hệ số hơn FIR.",
+    "tip": "same magnitude specs → IIR lower order.",
+    "active": true
+  },
+  {
+    "id": "DGT302-594",
+    "question": "For a real-coefficient FIR filter to have generalized linear phase, what condition must its impulse response h[n] satisfy?",
+    "options": [
+      "h(n) must be exactly symmetric or antisymmetric around its center point.",
+      "h(n) must be completely zero for all even time indices.",
+      "h(n) must have all its poles located strictly outside the unit circle.",
+      "h(n) must exponentially decay to zero as n 00"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Đối xứng hoặc phản đối xứng quanh tâm làm phần pha biến thiên tuyến tính theo ω.",
+    "tip": "linear-phase FIR → symmetry / antisymmetry.",
+    "active": true
+  },
+  {
+    "id": "DGT302-595",
+    "question": "How do DSP engineers counteract the Frequency Warping distortion caused by the Bilinear Transformation during the filter design process?",
+    "options": [
+      "By \"Pre-warping\" the target digital cutoff frequencies into virtual analog cutoff frequencies before designing the analog prototype H(s)",
+      "By multiplying the final digital impulse response by a Hamming window.",
+      "By cascading a phase equalizer network at the output of the IIR filter.",
+      "By doubling the sampling frequency Fs of the entire system."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Ánh xạ bilinear làm méo trục tần số; pre-warp bù trước các tần số thiết kế quan trọng.",
+    "tip": "bilinear warping → pre-warping.",
+    "active": true
+  },
+  {
+    "id": "DGT302-596",
+    "question": "In the standard Decimation-ln-Frequency (DIF) butterfly structure, the complex multiplication by the twiddle factor WNAk occurs:",
+    "options": [
+      "BEFORE the addition and subtraction.",
+      "AFTER the addition and subtraction operations, strictly on the bottom branch.",
+      "AFTER the addition and subtraction operations, strictly on the top branch.",
+      "Inside the accumulator."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Bướm DIF tính tổng và hiệu trước, rồi nhân nhánh hiệu với twiddle.",
+    "tip": "DIF → twiddle sau phép cộng/trừ.",
+    "active": true
+  },
+  {
+    "id": "DGT302-597",
+    "question": "Let X(k) be the N-point DFT of the sequence x(n), where 0 ≤ n ≤ N-1. Based on the Duality property of the DFT, what is the exact N-point DFT of the sequence s(n) = X(n)?",
+    "options": [
+      "N·x((-k))N or N·x(N - k)",
+      "(1/N)·x(k)",
+      "x(-k)",
+      "N·X(k)"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Áp dụng DFT hai lần tạo dãy đảo vòng và nhân thêm N.",
+    "tip": "DFT of X[n] → N·x[−k mod N].",
+    "active": true
+  },
+  {
+    "id": "DGT302-598",
+    "question": "For an 8-point FFT (N = 8, requiring 3 bits), what is the correctly calculated Bit-Reversed index corresponding to the natural decimal index 3?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "3 viết bằng 3 bit là 011; đảo thành 110, tương ứng 6.",
+    "tip": "N=8 → dùng đủ 3 bit.",
+    "active": true
+  },
+  {
+    "id": "DGT302-599",
+    "question": "What is the total number of complex additions required to compute an N-point DFT using the Radix-2 FFT algorithm?",
+    "options": [
+      "N²",
+      "N·log₂(N)",
+      "(N/2)·log₂(N)",
+      "2N·log₂(N)"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Mỗi tầng có N/2 bướm, mỗi bướm hai phép cộng, tổng cộng log₂N tầng.",
+    "tip": "FFT additions → N·log₂N.",
+    "active": true
+  },
+  {
+    "id": "DGT302-600",
+    "question": "Evaluate the exact complex value of the twiddle factor W8^2",
+    "options": [
+      "1",
+      "-1",
+      "-j",
+      "j"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "W8²=e^(−jπ/2), nằm trên trục ảo âm.",
+    "tip": "twiddle góc −90° → −j.",
+    "active": true
+  },
+  {
+    "id": "DGT302-602",
+    "question": "Which window offers the best leakage suppression among common windows?",
+    "options": [
+      "Hann",
+      "Rectangular",
+      "Hamming",
+      "Blackman"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Blackman có sidelobe thấp nên giảm rò phổ tốt, đổi lại main-lobe rộng.",
+    "tip": "leakage suppression → Blackman.",
+    "active": false
+  },
+  {
+    "id": "DGT302-603",
+    "question": "Why do the Yule-Walker equations use only autocorrelation values?",
+    "options": [
+      "FFT is applied",
+      "PSD is constant",
+      "Prediction uses samples of the same WSS process, so the required second-order moments are shifted autocorrelation values.",
+      "Noise is removed"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Lấy kỳ vọng tích các mẫu trong điều kiện sai số trực giao biến chúng thành các giá trị tự tương quan.",
+    "tip": "Yule–Walker → autocorrelation.",
+    "active": true
+  },
+  {
+    "id": "DGT302-604",
+    "question": "Which of the following defines a linear system?",
+    "options": [
+      "f(ax1+bx2) = af(x1)+bf(x2)",
+      "f(x²) = (f(x))²",
+      "f(x+c) = f(x)+c",
+      "f(x) = mx+c"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Hệ tuyến tính phải thỏa đồng thời tính cộng và nhân hệ số.",
+    "tip": "linearity → superposition.",
+    "active": true
+  },
+  {
+    "id": "DGT302-605",
+    "question": "Which property allows the DFT to be computed using the FFT?",
+    "options": [
+      "Linearity",
+      "Periodicity and Symmetry",
+      "Causality",
+      "Stability"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FFT tái sử dụng các twiddle nhờ tính tuần hoàn và đối xứng, tránh tính lại các tổng giống nhau.",
+    "tip": "FFT reuse → periodicity + symmetry.",
+    "active": true
+  },
+  {
+    "id": "DGT302-606",
+    "question": "A system is causal if the output depends on:",
+    "options": [
+      "Random inputs",
+      "Past outputs only",
+      "Future inputs",
+      "Present and past inputs"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Hệ nhân quả không cần biết các mẫu đầu vào trong tương lai.",
+    "tip": "causal → present + past.",
+    "active": true
+  },
+  {
+    "id": "DGT302-607",
+    "question": "Why are AR models preferred in speech coding?",
+    "options": [
+      "They are always linear phase",
+      "They model the vocal tract efficiently with few parameters",
+      "They eliminate quantization",
+      "They require no optimization"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "AR dùng ít hệ số all-pole để mô hình hóa các cộng hưởng của ống thanh quản.",
+    "tip": "speech / vocal tract → AR model.",
+    "active": true
+  },
+  {
+    "id": "DGT302-608",
+    "question": "Why are AR models preferred in speech coding?",
+    "options": [
+      "They are always linear phase",
+      "They model the vocal tract efficiently with few parameters",
+      "They eliminate quantization",
+      "They require no optimization"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "AR dùng ít hệ số all-pole để mô hình hóa các cộng hưởng của ống thanh quản.",
+    "tip": "speech / vocal tract → AR model.",
+    "active": false
+  },
+  {
+    "id": "DGT302-609",
+    "question": "If signal and noise statistics change rapidly over time, the preferred solution is",
+    "options": [
+      "Direct inversion",
+      "Blackman window",
+      "Increase predictor order",
+      "Adaptive filtering such as LMS"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bộ lọc thích nghi cập nhật hệ số liên tục để bám theo thống kê tín hiệu thay đổi.",
+    "tip": "time-varying statistics → LMS / adaptive.",
+    "active": true
+  },
+  {
+    "id": "DGT302-610",
+    "question": "Applying a Hamming window before Overlap-Save filtering would most likely",
+    "options": [
+      "Amplitude-modulate the reconstructed signal",
+      "Remove aliasing",
+      "Improve filtering accuracy",
+      "Reduce FFT size"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân cửa sổ Hamming làm thay đổi biên độ các khối; Overlap-Save chuẩn không cần cửa sổ này.",
+    "tip": "Overlap-Save → giữ mẫu, không thêm Hamming tùy ý.",
+    "active": true
+  },
+  {
+    "id": "DGT302-611",
+    "question": "Why must an anti-aliasing filter be placed before the sampler instead of after it?",
+    "options": [
+      "It performs interpolation",
+      "Aliasing cannot be removed once spectral overlap has occurred",
+      "It reduces quantization noise",
+      "It increases ADC resolution"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Sau khi các bản phổ chồng lên nhau, không thể tách lại chúng bằng lọc thông thường.",
+    "tip": "anti-alias → lọc trước lấy mẫu.",
+    "active": true
+  },
+  {
+    "id": "DGT302-612",
+    "question": "For a causal rational LTI system, which pole condition guarantees BIBO stability?",
+    "options": [
+      "Every zero lies strictly outside the unit circle",
+      "Every pole lies exactly on the unit circle",
+      "Every pole lies strictly inside the unit circle",
+      "Every zero lies exactly at the origin"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với hệ hữu tỉ nhân quả, cực trong vòng đơn vị làm đáp ứng xung suy giảm và tổng tuyệt đối hữu hạn.",
+    "tip": "causal stability → mọi |pole|<1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-613",
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Differentiating z",
+      "Setting z = 0",
+      "Evaluating z-transform on the unit circle",
+      "Using convolution"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.",
+    "tip": "z → DTFT: unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-614",
+    "question": "An FIR system generally has:",
+    "options": [
+      "Infinite impulse response",
+      "Finite impulse response",
+      "Unstable poles",
+      "Feedback loop"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FIR có đáp ứng xung chỉ khác zero trong hữu hạn mẫu.",
+    "tip": "FIR → Finite Impulse Response.",
+    "active": true
+  },
+  {
+    "id": "DGT302-615",
+    "question": "Increasing the predictor order p generally",
+    "options": [
+      "Makes the signal deterministic",
+      "Removes white noise",
+      "Increases prediction error",
+      "Cannot increase theoretical MMSE; it may decrease when the added past samples provide useful correlation."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Thêm mẫu quá khứ cung cấp thêm thông tin; nghiệm tối ưu có thể giữ hệ số mới bằng zero nên MMSE không tăng.",
+    "tip": "higher predictor order → MMSE không tăng.",
+    "active": true
+  },
+  {
+    "id": "DGT302-616",
+    "question": "A lattice predictor is numerically attractive mainly due to",
+    "options": [
+      "Better robustness to fixed-point errors",
+      "No multipliers",
+      "Lower filter order",
+      "Linear phase"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Cấu trúc lattice dùng hệ số phản xạ nên thường ít nhạy với sai số số học fixed-point.",
+    "tip": "lattice → robust quantization.",
+    "active": true
+  },
+  {
+    "id": "DGT302-617",
+    "question": "A DSP engineer wants minimum RAM usage with identical numerical results. Which FFT feature is most valuable?",
+    "options": [
+      "Zero padding",
+      "In-place butterfly computation",
+      "Bit reversal",
+      "Windowing"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tính in-place ghi kết quả bướm đè lên vùng nhớ đầu vào, tránh cần mảng thứ hai.",
+    "tip": "minimum RAM → in-place.",
+    "active": true
+  },
+  {
+    "id": "DGT302-618",
+    "question": "For resolving two closely spaced tones, the best choice is",
+    "options": [
+      "More zero-padding",
+      "Longer observation window",
+      "More overlap",
+      "Lower FFT size"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Quan sát dài hơn làm main-lobe hẹp, giúp tách hai tone có tần số gần nhau.",
+    "tip": "close tones → longer window.",
+    "active": true
+  },
+  {
+    "id": "DGT302-619",
+    "question": "BIBO stability means:",
+    "options": [
+      "Unstable poles",
+      "Bounded output gives infinite input",
+      "Bounded input gives bounded output",
+      "Nonlinear response"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "BIBO yêu cầu mọi đầu vào bị chặn đều tạo ra đầu ra bị chặn.",
+    "tip": "Bounded Input → Bounded Output.",
+    "active": true
+  },
+  {
+    "id": "DGT302-620",
+    "question": "Zero-padding improves",
+    "options": [
+      "Observation time",
+      "Information content",
+      "Display density of the spectrum",
+      "True frequency resolution"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Thêm zero lấy nhiều điểm hơn trên cùng DTFT, không bổ sung thông tin quan sát.",
+    "tip": "zero-padding → phổ mịn, không tăng phân giải thật.",
+    "active": true
+  },
+  {
+    "id": "DGT302-621",
+    "question": "Bilinear transformation maps the s-plane left-half to",
+    "options": [
+      "Outside unit circle",
+      "Origin only",
+      "Inside unit circle",
+      "Infinity"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Ánh xạ bilinear đưa nửa trái mặt phẳng s vào bên trong vòng đơn vị, giữ tính ổn định.",
+    "tip": "left-half s-plane → inside unit circle.",
+    "active": true
+  },
+  {
+    "id": "DGT302-622",
+    "question": "The orthogonality principle states that the optimal prediction error is",
+    "options": [
+      "Equal to zero",
+      "Orthogonal to the past samples used in prediction",
+      "Independent of autocorrelation",
+      "White only for FIR"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nếu sai số còn tương quan với mẫu dự đoán, ta vẫn có thể điều chỉnh hệ số để giảm MSE.",
+    "tip": "optimum error → orthogonal to predictors.",
+    "active": true
+  },
+  {
+    "id": "DGT302-623",
+    "question": "Compared with Direct Form l, Direct Form II mainly reduces",
+    "options": [
+      "Memory usage",
+      "Filter order",
+      "Quantization noise to zero",
+      "Arithmetic operations"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Direct Form II chia sẻ các phần tử trễ giữa phần tiến và hồi tiếp.",
+    "tip": "DF II → tiết kiệm memory.",
+    "active": true
+  },
+  {
+    "id": "DGT302-624",
+    "question": "What is the primary purpose of an Anti-Aliasing Filter in a DSP system?",
+    "options": [
+      "Store digital data",
+      "Amplify the signal",
+      "Remove frequencies above Nyquist limit",
+      "Convert analog to digital"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Loại thành phần trên Fs/2 trước lấy mẫu giúp tránh các bản phổ chồng nhau.",
+    "tip": "anti-aliasing → remove above Nyquist.",
+    "active": true
+  },
+  {
+    "id": "DGT302-625",
+    "question": "Which difference-equation realization is used internally by scipy.signal.lfilter?",
+    "options": [
+      "Parallel Form",
+      "Lattice-Ladder",
+      "Transposed Direct Form II",
+      "Direct Form I"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "lfilter dùng Direct Form II chuyển vị để thực hiện phương trình sai phân.",
+    "tip": "lfilter → transposed DF II.",
+    "active": true
+  },
+  {
+    "id": "DGT302-626",
+    "question": "The computational complexity of Radix-2 FFT is",
+    "options": [
+      "O(1)",
+      "O(N²)",
+      "O(log₂N)",
+      "O(N·log₂N)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Radix-2 có log₂N tầng, mỗi tầng xử lý bậc N phép toán.",
+    "tip": "FFT → O(N·log₂N).",
+    "active": true
+  },
+  {
+    "id": "DGT302-627",
+    "question": "Lowpass-to-highpass FIR transformation is achieved by",
+    "options": [
+      "Doubling filter order",
+      "Zero-padding",
+      "Applying BLT",
+      "Alternating the sign of coefficients"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.",
+    "tip": "LP → HP: đổi dấu xen kẽ.",
+    "active": true
+  },
+  {
+    "id": "DGT302-628",
+    "question": "Lowpass-to-highpass FIR transformation is achieved by",
+    "options": [
+      "Alternating the sign of coefficients",
+      "Zero-padding",
+      "Doubling filter order",
+      "Applying BLT"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.",
+    "tip": "LP → HP: đổi dấu xen kẽ.",
+    "active": false
+  },
+  {
+    "id": "DGT302-629",
+    "question": "Levinson-Durbin is preferred over direct inversion because",
+    "options": [
+      "It reduces the standard dense solve cost from O(p³) to O(p²) by exploiting Toeplitz structure.",
+      "It guarantees MMSE = 0",
+      "It computes FFTs",
+      "It removes quantization"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Cấu trúc Toeplitz cho phép giải đệ quy thay vì nghịch đảo ma trận tổng quát.",
+    "tip": "Levinson–Durbin → O(p³) xuống O(p²).",
+    "active": true
+  },
+  {
+    "id": "DGT302-630",
+    "question": "A butterfly computes",
+    "options": [
+      "One DFT stage",
+      "One output using one multiplication",
+      "Four outputs simultaneously",
+      "Two outputs using one complex multiplication and two additions"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bướm radix-2 tạo a+Wb và a−Wb, dùng chung tích Wb.",
+    "tip": "butterfly → 1 nhân + 2 cộng phức.",
+    "active": true
+  },
+  {
+    "id": "DGT302-631",
+    "question": "When using an FFT implementation restricted to radix 2, and zero extension is acceptable, how can a record whose length is not a power of two be prepared?",
+    "options": [
+      "Discard samples",
+      "Use IDFT",
+      "Zero-padding to the next power of two",
+      "Reduce sampling rate"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Đệm lên lũy thừa 2 kế tiếp là cách dùng radix-2-only. Các thư viện FFT tổng quát có thể xử lý độ dài không phải lũy thừa 2.",
+    "tip": "radix-2-only → pad; FFT tổng quát không bắt buộc power of two.",
+    "active": true
+  },
+  {
+    "id": "DGT302-632",
+    "question": "A memoryless system depends only on:",
+    "options": [
+      "Random values",
+      "Future input",
+      "Current input",
+      "Past outputs"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ không nhớ không dùng mẫu trước hoặc sau thời điểm đang xét.",
+    "tip": "memoryless → current input only.",
+    "active": true
+  },
+  {
+    "id": "DGT302-633",
+    "question": "According to Nyquist theorem, the sampling frequency must be:",
+    "options": [
+      "Fs < 2Fmax",
+      "Fs > 2Fmax",
+      "Fs = Fmax",
+      "Fs = 0"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Các bản phổ không chồng nhau khi Fs lớn hơn hai lần tần số cao nhất của tín hiệu baseband.",
+    "tip": "Nyquist → Fs > 2Fmax.",
+    "active": true
+  },
+  {
+    "id": "DGT302-634",
+    "question": "Polyphase interpolation improves efficiency by",
+    "options": [
+      "Avoiding multiplications with inserted zeros",
+      "Eliminating delay elements",
+      "Using IIR only",
+      "Increasing cutoff frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Polyphase chỉ tính các nhánh cần thiết, bỏ các tích với zero do nội suy chèn vào.",
+    "tip": "interpolation efficiency → skip inserted zeros.",
+    "active": true
+  },
+  {
+    "id": "DGT302-635",
+    "question": "JPEG compression mainly discards",
+    "options": [
+      "DC coefficient",
+      "Low-frequency coefficients",
+      "High-frequency coefficients after quantization",
+      "Image pixels"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ số tần số cao thường nhỏ nên lượng tử hóa mạnh làm nhiều hệ số thành zero.",
+    "tip": "JPEG discard → high-frequency coefficients.",
+    "active": true
+  },
+  {
+    "id": "DGT302-636",
+    "question": "Overlap-Save discards the first M-1 samples because they are",
+    "options": [
+      "Circular-convolution artifacts",
+      "Quantization noise",
+      "DC components",
+      "Window coefficients"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "M−1 mẫu đầu mỗi khối bị cuộn chồng trong chập vòng nên phải bỏ đi.",
+    "tip": "Overlap-Save → discard first M−1.",
+    "active": true
+  },
+  {
+    "id": "DGT302-637",
+    "question": "ROC stands for:",
+    "options": [
+      "Range of Correlation",
+      "Response of Causality",
+      "Rate of Conversion",
+      "Region of Convergence"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "ROC là tập các giá trị z làm tổng biến đổi z hội tụ.",
+    "tip": "ROC → Region of Convergence.",
+    "active": true
+  },
+  {
+    "id": "DGT302-638",
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Using convolution",
+      "Evaluating z-transform on the unit circle",
+      "Setting z=0",
+      "Differentiating z"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.",
+    "tip": "z → DTFT: unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-639",
+    "question": "The Wiener filter minimizes",
+    "options": [
+      "Phase distortion",
+      "Maximum absolute error",
+      "Peak error",
+      "Mean square estimation error"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Wiener chọn các hệ số làm bình phương sai số ước lượng trung bình nhỏ nhất.",
+    "tip": "Wiener → minimum MSE.",
+    "active": true
+  },
+  {
+    "id": "DGT302-640",
+    "question": "A peak in the cross-correlation rxy[m] most directly indicates which property?",
+    "options": [
+      "The delay producing the best alignment between two signals",
+      "The number of poles located outside the unit circle",
+      "The cutoff frequency of the system transfer function",
+      "The total bandwidth occupied by the input spectrum"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Đỉnh tương quan xuất hiện ở độ trễ làm hai tín hiệu khớp nhau tốt nhất.",
+    "tip": "correlation peak → best delay/alignment.",
+    "active": true
+  },
+  {
+    "id": "DGT302-641",
+    "question": "The DFT of a real-valued signal has:",
+    "options": [
+      "Random phase",
+      "Constant magnitude",
+      "Hermitian symmetry",
+      "No DC component"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với dãy thực, hai bin đối xứng thỏa X[N−k]=X*[k].",
+    "tip": "real DFT → Hermitian / conjugate symmetry.",
+    "active": true
+  },
+  {
+    "id": "DGT302-642",
+    "question": "The DCT compresses images efficiently because",
+    "options": [
+      "It removes quantization",
+      "It uses complex exponentials",
+      "It has strong energy compaction",
+      "It increases entropy"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "DCT dồn phần lớn năng lượng vào ít hệ số, phù hợp biểu diễn ảnh gọn.",
+    "tip": "DCT → energy compaction.",
+    "active": false
+  },
+  {
+    "id": "DGT302-643",
+    "question": "Which of the following is an advantage of digital processing?",
+    "options": [
+      "Component aging",
+      "Software flexibility",
+      "Noise accumulation",
+      "Thermal drift"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Thuật toán số có thể đổi bằng chương trình mà không phải thay toàn bộ mạch.",
+    "tip": "digital advantage → software flexibility.",
+    "active": true
+  },
+  {
+    "id": "DGT302-644",
+    "question": "Fourier Series is mainly used for:",
+    "options": [
+      "Binary signals",
+      "Impulse signals",
+      "Random signals",
+      "Periodic signals"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chuỗi Fourier biểu diễn tín hiệu tuần hoàn bằng tổng các hài rời rạc.",
+    "tip": "periodic → Fourier Series.",
+    "active": true
+  },
+  {
+    "id": "DGT302-645",
+    "question": "Quantization error in an ADC is generally modeled as:",
+    "options": [
+      "Deterministic sine wave",
+      "White noise",
+      "DC offset",
+      "Impulse train"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Trong mô hình lượng tử hóa lý tưởng với tín hiệu đủ biến thiên, sai số được xấp xỉ nhiễu trắng.",
+    "tip": "ADC quantization model → white noise.",
+    "active": true
+  },
+  {
+    "id": "DGT302-646",
+    "question": "If N doubles, the number of FFT stages",
+    "options": [
+      "Remains constant",
+      "Increases by one",
+      "Doubles",
+      "Quadruples"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Số tầng là log₂N; thay N bằng 2N làm giá trị này tăng đúng 1.",
+    "tip": "double N → thêm 1 tầng.",
+    "active": true
+  },
+  {
+    "id": "DGT302-647",
+    "question": "A typical DSP processor is optimized for:",
+    "options": [
+      "Large database queries",
+      "Multiply-accumulate (MAC) operations",
+      "GUI rendering",
+      "Web browsing"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Các phép lọc và biến đổi lặp nhiều lần phép nhân rồi cộng tích lũy.",
+    "tip": "DSP processor → MAC.",
+    "active": true
+  },
+  {
+    "id": "DGT302-648",
+    "question": "Which block delays a discrete-time signal by one sample?",
+    "options": [
+      "Adder",
+      "Integrator",
+      "Unit Delay",
+      "Multiplier"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Khối trễ một mẫu tạo y[n]=x[n−1], tương ứng z⁻¹.",
+    "tip": "one sample → unit delay.",
+    "active": true
+  },
+  {
+    "id": "DGT302-649",
+    "question": "Which window has the narrowest main lobe for a fixed length M?",
+    "options": [
+      "Hamming",
+      "Rectangular",
+      "Blackman",
+      "Hann"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Rectangular có main-lobe hẹp nhất trong các cửa sổ cơ bản cùng chiều dài, nhưng sidelobe cao.",
+    "tip": "narrowest main-lobe → rectangular.",
+    "active": true
+  },
+  {
+    "id": "DGT302-650",
+    "question": "An IIR system usually contains:",
+    "options": [
+      "No memory",
+      "Feedback",
+      "No poles",
+      "Only finite delays"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "IIR thường dùng đầu ra quá khứ quay lại đầu vào nên có hồi tiếp.",
+    "tip": "IIR → feedback.",
+    "active": true
+  },
+  {
+    "id": "DGT302-651",
+    "question": "The major inefficiency of direct interpolation is",
+    "options": [
+      "Multiplications by inserted zeros",
+      "Pole migration",
+      "Overflow",
+      "FFT leakage"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chèn zero rồi lọc trực tiếp lãng phí nhiều phép nhân có kết quả bằng zero.",
+    "tip": "direct interpolation waste → zero multiplications.",
+    "active": false
+  },
+  {
+    "id": "DGT302-652",
+    "question": "Two stable systems have identical magnitude responses but different phase responses. What can be concluded?",
+    "options": [
+      "Their impulse responses must be identical for every time index",
+      "Their pole-zero diagrams must contain the same zero locations",
+      "Their output waveforms may differ even when output magnitudes match",
+      "Their output spectra must have different magnitude values"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Pha khác nhau làm các thành phần tần số lệch thời gian khác nhau, nên dạng sóng vẫn có thể khác.",
+    "tip": "same magnitude ≠ same waveform; xét phase.",
+    "active": true
+  },
+  {
+    "id": "DGT302-653",
+    "question": "Increasing the filter length M of a rectangular-window FIR mainly",
+    "options": [
+      "Reduces cutoff frequency",
+      "Narrows the transition band without eliminating Gibbs overshoot",
+      "Eliminates ripple completely",
+      "Makes the filter nonlinear"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dãy dài hơn làm main-lobe hẹp, nhưng không xóa biên overshoot Gibbs của cửa sổ chữ nhật.",
+    "tip": "longer rectangular → narrower transition only.",
+    "active": false
+  },
+  {
+    "id": "DGT302-654",
+    "question": "Downsampling by D changes the sampling rate to",
+    "options": [
+      "fs D",
+      "D fs",
+      "fs/D",
+      "fS+D"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Giữ một trong D mẫu làm số mẫu mỗi giây giảm D lần.",
+    "tip": "downsample D → fs/D.",
+    "active": true
+  },
+  {
+    "id": "DGT302-655",
+    "question": "Which of the following defines a linear system?",
+    "options": [
+      "f(ax1+bx2) = af(x1)+bf(x2)",
+      "f(x²) = (f(x))²",
+      "f(x+c) = f(x)+c",
+      "f(x) = mx+c"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Hệ tuyến tính phải thỏa đồng thời tính cộng và nhân hệ số.",
+    "tip": "linearity → superposition.",
+    "active": false
+  },
+  {
+    "id": "DGT302-656",
+    "question": "Which property allows the DFT to be computed using the FFT?",
+    "options": [
+      "Linearity",
+      "Periodicity and Symmetry",
+      "Causality",
+      "Stability"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FFT tái sử dụng các twiddle nhờ tính tuần hoàn và đối xứng, tránh tính lại các tổng giống nhau.",
+    "tip": "FFT reuse → periodicity + symmetry.",
+    "active": false
+  },
+  {
+    "id": "DGT302-657",
+    "question": "A system is causal if the output depends on:",
+    "options": [
+      "Random inputs",
+      "Past outputs only",
+      "Future inputs",
+      "Present and past inputs"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Hệ nhân quả không cần biết các mẫu đầu vào trong tương lai.",
+    "tip": "causal → present + past.",
+    "active": false
+  },
+  {
+    "id": "DGT302-658",
+    "question": "Why are AR models preferred in speech coding?",
+    "options": [
+      "They are always linear phase",
+      "They model the vocal tract efficiently with few parameters",
+      "They eliminate quantization",
+      "They require no optimization"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "AR dùng ít hệ số all-pole để mô hình hóa các cộng hưởng của ống thanh quản.",
+    "tip": "speech / vocal tract → AR model.",
+    "active": false
+  },
+  {
+    "id": "DGT302-659",
+    "question": "If signal and noise statistics change rapidly over time, the preferred solution is",
+    "options": [
+      "Direct inversion",
+      "Blackman window",
+      "Increase predictor order",
+      "Adaptive filtering such as LMS"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bộ lọc thích nghi cập nhật hệ số liên tục để bám theo thống kê tín hiệu thay đổi.",
+    "tip": "time-varying statistics → LMS / adaptive.",
+    "active": false
+  },
+  {
+    "id": "DGT302-660",
+    "question": "Applying a Hamming window before Overlap-Save filtering would most likely",
+    "options": [
+      "Amplitude-modulate the reconstructed signal",
+      "Remove aliasing",
+      "Improve filtering accuracy",
+      "Reduce FFT size"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân cửa sổ Hamming làm thay đổi biên độ các khối; Overlap-Save chuẩn không cần cửa sổ này.",
+    "tip": "Overlap-Save → giữ mẫu, không thêm Hamming tùy ý.",
+    "active": false
+  },
+  {
+    "id": "DGT302-661",
+    "question": "Why must an anti-aliasing filter be placed before the sampler instead of after it?",
+    "options": [
+      "It performs interpolation",
+      "Aliasing cannot be removed once spectral overlap has occurred",
+      "It reduces quantization noise",
+      "It increases ADC resolution"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Sau khi các bản phổ chồng lên nhau, không thể tách lại chúng bằng lọc thông thường.",
+    "tip": "anti-alias → lọc trước lấy mẫu.",
+    "active": false
+  },
+  {
+    "id": "DGT302-662",
+    "question": "For a causal rational LTI system, which pole condition guarantees BIBO stability?",
+    "options": [
+      "Every zero lies strictly outside the unit circle",
+      "Every pole lies exactly on the unit circle",
+      "Every pole lies strictly inside the unit circle",
+      "Every zero lies exactly at the origin"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với hệ hữu tỉ nhân quả, cực trong vòng đơn vị làm đáp ứng xung suy giảm và tổng tuyệt đối hữu hạn.",
+    "tip": "causal stability → mọi |pole|<1.",
+    "active": false
+  },
+  {
+    "id": "DGT302-663",
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Using convolution",
+      "Evaluating z-transform on the unit circle",
+      "Setting z=0",
+      "Differentiating z"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.",
+    "tip": "z → DTFT: unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-664",
+    "question": "Why must an anti-aliasing filter be placed before the sampler instead of after it?",
+    "options": [
+      "It performs interpolation",
+      "Aliasing cannot be removed once spectral overlap has occurred",
+      "It reduces quantization noise",
+      "It increases ADC resolution"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Sau khi các bản phổ chồng lên nhau, không thể tách lại chúng bằng lọc thông thường.",
+    "tip": "anti-alias → lọc trước lấy mẫu.",
+    "active": false
+  },
+  {
+    "id": "DGT302-665",
+    "question": "For a causal rational LTI system, which pole condition guarantees BIBO stability?",
+    "options": [
+      "Every zero lies strictly outside the unit circle",
+      "Every pole lies exactly on the unit circle",
+      "Every pole lies strictly inside the unit circle",
+      "Every zero lies exactly at the origin"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với hệ hữu tỉ nhân quả, cực trong vòng đơn vị làm đáp ứng xung suy giảm và tổng tuyệt đối hữu hạn.",
+    "tip": "causal stability → mọi |pole|<1.",
+    "active": false
+  },
+  {
+    "id": "DGT302-666",
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Differentiating z",
+      "Setting z = 0",
+      "Evaluating z-transform on the unit circle",
+      "Using convolution"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.",
+    "tip": "z → DTFT: unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-667",
+    "question": "An FIR system generally has:",
+    "options": [
+      "Infinite impulse response",
+      "Finite impulse response",
+      "Unstable poles",
+      "Feedback loop"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FIR có đáp ứng xung chỉ khác zero trong hữu hạn mẫu.",
+    "tip": "FIR → Finite Impulse Response.",
+    "active": false
+  },
+  {
+    "id": "DGT302-668",
+    "question": "Increasing the predictor order p generally",
+    "options": [
+      "Makes the signal deterministic",
+      "Removes white noise",
+      "Increases prediction error",
+      "Cannot increase theoretical MMSE; it may decrease when the added past samples provide useful correlation."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Thêm mẫu quá khứ cung cấp thêm thông tin; nghiệm tối ưu có thể giữ hệ số mới bằng zero nên MMSE không tăng.",
+    "tip": "higher predictor order → MMSE không tăng.",
+    "active": false
+  },
+  {
+    "id": "DGT302-669",
+    "question": "A lattice predictor is numerically attractive mainly due to",
+    "options": [
+      "Better robustness to fixed-point errors",
+      "No multipliers",
+      "Lower filter order",
+      "Linear phase"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Cấu trúc lattice dùng hệ số phản xạ nên thường ít nhạy với sai số số học fixed-point.",
+    "tip": "lattice → robust quantization.",
+    "active": false
+  },
+  {
+    "id": "DGT302-670",
+    "question": "A DSP engineer wants minimum RAM usage with identical numerical results. Which FFT feature is most valuable?",
+    "options": [
+      "Zero padding",
+      "In-place butterfly computation",
+      "Bit reversal",
+      "Windowing"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tính in-place ghi kết quả bướm đè lên vùng nhớ đầu vào, tránh cần mảng thứ hai.",
+    "tip": "minimum RAM → in-place.",
+    "active": false
+  },
+  {
+    "id": "DGT302-671",
+    "question": "For resolving two closely spaced tones, the best choice is",
+    "options": [
+      "More zero-padding",
+      "Longer observation window",
+      "More overlap",
+      "Lower FFT size"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Quan sát dài hơn làm main-lobe hẹp, giúp tách hai tone có tần số gần nhau.",
+    "tip": "close tones → longer window.",
+    "active": false
+  },
+  {
+    "id": "DGT302-672",
+    "question": "BIBO stability means:",
+    "options": [
+      "Unstable poles",
+      "Bounded output gives infinite input",
+      "Bounded input gives bounded output",
+      "Nonlinear response"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "BIBO yêu cầu mọi đầu vào bị chặn đều tạo ra đầu ra bị chặn.",
+    "tip": "Bounded Input → Bounded Output.",
+    "active": false
+  },
+  {
+    "id": "DGT302-673",
+    "question": "Zero-padding improves",
+    "options": [
+      "Observation time",
+      "Information content",
+      "Display density of the spectrum",
+      "True frequency resolution"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Thêm zero lấy nhiều điểm hơn trên cùng DTFT, không bổ sung thông tin quan sát.",
+    "tip": "zero-padding → phổ mịn, không tăng phân giải thật.",
+    "active": false
+  },
+  {
+    "id": "DGT302-674",
+    "question": "Bilinear transformation maps the s-plane left-half to",
+    "options": [
+      "Outside unit circle",
+      "Origin only",
+      "Inside unit circle",
+      "Infinity"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Ánh xạ bilinear đưa nửa trái mặt phẳng s vào bên trong vòng đơn vị, giữ tính ổn định.",
+    "tip": "left-half s-plane → inside unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-675",
+    "question": "The orthogonality principle states that the optimal prediction error is",
+    "options": [
+      "Equal to zero",
+      "Orthogonal to the past samples used in prediction",
+      "Independent of autocorrelation",
+      "White only for FIR"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nếu sai số còn tương quan với mẫu dự đoán, ta vẫn có thể điều chỉnh hệ số để giảm MSE.",
+    "tip": "optimum error → orthogonal to predictors.",
+    "active": false
+  },
+  {
+    "id": "DGT302-676",
+    "question": "Compared with Direct Form l, Direct Form II mainly reduces",
+    "options": [
+      "Memory usage",
+      "Filter order",
+      "Quantization noise to zero",
+      "Arithmetic operations"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Direct Form II chia sẻ các phần tử trễ giữa phần tiến và hồi tiếp.",
+    "tip": "DF II → tiết kiệm memory.",
+    "active": false
+  },
+  {
+    "id": "DGT302-677",
+    "question": "What is the primary purpose of an Anti-Aliasing Filter in a DSP system?",
+    "options": [
+      "Store digital data",
+      "Amplify the signal",
+      "Remove frequencies above Nyquist limit",
+      "Convert analog to digital"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Loại thành phần trên Fs/2 trước lấy mẫu giúp tránh các bản phổ chồng nhau.",
+    "tip": "anti-aliasing → remove above Nyquist.",
+    "active": false
+  },
+  {
+    "id": "DGT302-678",
+    "question": "Which difference-equation realization is used internally by scipy.signal.lfilter?",
+    "options": [
+      "Parallel Form",
+      "Lattice-Ladder",
+      "Transposed Direct Form II",
+      "Direct Form I"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "lfilter dùng Direct Form II chuyển vị để thực hiện phương trình sai phân.",
+    "tip": "lfilter → transposed DF II.",
+    "active": false
+  },
+  {
+    "id": "DGT302-679",
+    "question": "The computational complexity of Radix-2 FFT is",
+    "options": [
+      "O(1)",
+      "O(N²)",
+      "O(log₂N)",
+      "O(N·log₂N)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Radix-2 có log₂N tầng, mỗi tầng xử lý bậc N phép toán.",
+    "tip": "FFT → O(N·log₂N).",
+    "active": false
+  },
+  {
+    "id": "DGT302-680",
+    "question": "Lowpass-to-highpass FIR transformation is achieved by",
+    "options": [
+      "Doubling filter order",
+      "Zero-padding",
+      "Applying BLT",
+      "Alternating the sign of coefficients"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.",
+    "tip": "LP → HP: đổi dấu xen kẽ.",
+    "active": false
+  },
+  {
+    "id": "DGT302-681",
+    "question": "Lowpass-to-highpass FIR transformation is achieved by",
+    "options": [
+      "Alternating the sign of coefficients",
+      "Zero-padding",
+      "Doubling filter order",
+      "Applying BLT"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.",
+    "tip": "LP → HP: đổi dấu xen kẽ.",
+    "active": false
+  },
+  {
+    "id": "DGT302-682",
+    "question": "Levinson-Durbin is preferred over direct inversion because",
+    "options": [
+      "It reduces the standard dense solve cost from O(p³) to O(p²) by exploiting Toeplitz structure.",
+      "It guarantees MMSE = 0",
+      "It computes FFTs",
+      "It removes quantization"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Cấu trúc Toeplitz cho phép giải đệ quy thay vì nghịch đảo ma trận tổng quát.",
+    "tip": "Levinson–Durbin → O(p³) xuống O(p²).",
+    "active": false
+  },
+  {
+    "id": "DGT302-683",
+    "question": "A butterfly computes",
+    "options": [
+      "One DFT stage",
+      "One output using one multiplication",
+      "Four outputs simultaneously",
+      "Two outputs using one complex multiplication and two additions"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bướm radix-2 tạo a+Wb và a−Wb, dùng chung tích Wb.",
+    "tip": "butterfly → 1 nhân + 2 cộng phức.",
+    "active": false
+  },
+  {
+    "id": "DGT302-684",
+    "question": "When using an FFT implementation restricted to radix 2, and zero extension is acceptable, how can a record whose length is not a power of two be prepared?",
+    "options": [
+      "Discard samples",
+      "Use IDFT",
+      "Zero-padding to the next power of two",
+      "Reduce sampling rate"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Đệm lên lũy thừa 2 kế tiếp là cách dùng radix-2-only. Các thư viện FFT tổng quát có thể xử lý độ dài không phải lũy thừa 2.",
+    "tip": "radix-2-only → pad; FFT tổng quát không bắt buộc power of two.",
+    "active": false
+  },
+  {
+    "id": "DGT302-685",
+    "question": "A memoryless system depends only on:",
+    "options": [
+      "Random values",
+      "Future input",
+      "Current input",
+      "Past outputs"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ không nhớ không dùng mẫu trước hoặc sau thời điểm đang xét.",
+    "tip": "memoryless → current input only.",
+    "active": false
+  },
+  {
+    "id": "DGT302-686",
+    "question": "According to Nyquist theorem, the sampling frequency must be:",
+    "options": [
+      "Fs < 2Fmax",
+      "Fs > 2Fmax",
+      "Fs = Fmax",
+      "Fs = 0"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Các bản phổ không chồng nhau khi Fs lớn hơn hai lần tần số cao nhất của tín hiệu baseband.",
+    "tip": "Nyquist → Fs > 2Fmax.",
+    "active": false
+  },
+  {
+    "id": "DGT302-687",
+    "question": "Polyphase interpolation improves efficiency by",
+    "options": [
+      "Avoiding multiplications with inserted zeros",
+      "Eliminating delay elements",
+      "Using IIR only",
+      "Increasing cutoff frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Polyphase chỉ tính các nhánh cần thiết, bỏ các tích với zero do nội suy chèn vào.",
+    "tip": "interpolation efficiency → skip inserted zeros.",
+    "active": false
+  },
+  {
+    "id": "DGT302-688",
+    "question": "JPEG compression mainly discards",
+    "options": [
+      "DC coefficient",
+      "Low-frequency coefficients",
+      "High-frequency coefficients after quantization",
+      "Image pixels"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ số tần số cao thường nhỏ nên lượng tử hóa mạnh làm nhiều hệ số thành zero.",
+    "tip": "JPEG discard → high-frequency coefficients.",
+    "active": false
+  },
+  {
+    "id": "DGT302-689",
+    "question": "Overlap-Save discards the first M-1 samples because they are",
+    "options": [
+      "Circular-convolution artifacts",
+      "Quantization noise",
+      "DC components",
+      "Window coefficients"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "M−1 mẫu đầu mỗi khối bị cuộn chồng trong chập vòng nên phải bỏ đi.",
+    "tip": "Overlap-Save → discard first M−1.",
+    "active": false
+  },
+  {
+    "id": "DGT302-690",
+    "question": "ROC stands for:",
+    "options": [
+      "Range of Correlation",
+      "Response of Causality",
+      "Rate of Conversion",
+      "Region of Convergence"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "ROC là tập các giá trị z làm tổng biến đổi z hội tụ.",
+    "tip": "ROC → Region of Convergence.",
+    "active": false
+  },
+  {
+    "id": "DGT302-691",
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Using convolution",
+      "Evaluating z-transform on the unit circle",
+      "Setting z=0",
+      "Differentiating z"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.",
+    "tip": "z → DTFT: unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-692",
+    "question": "The Wiener filter minimizes",
+    "options": [
+      "Phase distortion",
+      "Maximum absolute error",
+      "Peak error",
+      "Mean square estimation error"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Wiener chọn các hệ số làm bình phương sai số ước lượng trung bình nhỏ nhất.",
+    "tip": "Wiener → minimum MSE.",
+    "active": false
+  },
+  {
+    "id": "DGT302-693",
+    "question": "A peak in the cross-correlation rxy[m] most directly indicates which property?",
+    "options": [
+      "The delay producing the best alignment between two signals",
+      "The number of poles located outside the unit circle",
+      "The cutoff frequency of the system transfer function",
+      "The total bandwidth occupied by the input spectrum"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Đỉnh tương quan xuất hiện ở độ trễ làm hai tín hiệu khớp nhau tốt nhất.",
+    "tip": "correlation peak → best delay/alignment.",
+    "active": false
+  },
+  {
+    "id": "DGT302-694",
+    "question": "The DFT of a real-valued signal has:",
+    "options": [
+      "Random phase",
+      "Constant magnitude",
+      "Hermitian symmetry",
+      "No DC component"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với dãy thực, hai bin đối xứng thỏa X[N−k]=X*[k].",
+    "tip": "real DFT → Hermitian / conjugate symmetry.",
+    "active": false
+  },
+  {
+    "id": "DGT302-695",
+    "question": "The DCT compresses images efficiently because",
+    "options": [
+      "It removes quantization",
+      "It uses complex exponentials",
+      "It has strong energy compaction",
+      "It increases entropy"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "DCT dồn phần lớn năng lượng vào ít hệ số, phù hợp biểu diễn ảnh gọn.",
+    "tip": "DCT → energy compaction.",
+    "active": false
+  },
+  {
+    "id": "DGT302-696",
+    "question": "Which of the following is an advantage of digital processing?",
+    "options": [
+      "Component aging",
+      "Software flexibility",
+      "Noise accumulation",
+      "Thermal drift"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Thuật toán số có thể đổi bằng chương trình mà không phải thay toàn bộ mạch.",
+    "tip": "digital advantage → software flexibility.",
+    "active": false
+  },
+  {
+    "id": "DGT302-697",
+    "question": "Fourier Series is mainly used for:",
+    "options": [
+      "Binary signals",
+      "Impulse signals",
+      "Random signals",
+      "Periodic signals"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chuỗi Fourier biểu diễn tín hiệu tuần hoàn bằng tổng các hài rời rạc.",
+    "tip": "periodic → Fourier Series.",
+    "active": false
+  },
+  {
+    "id": "DGT302-698",
+    "question": "Quantization error in an ADC is generally modeled as:",
+    "options": [
+      "Deterministic sine wave",
+      "White noise",
+      "DC offset",
+      "Impulse train"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Trong mô hình lượng tử hóa lý tưởng với tín hiệu đủ biến thiên, sai số được xấp xỉ nhiễu trắng.",
+    "tip": "ADC quantization model → white noise.",
+    "active": false
+  },
+  {
+    "id": "DGT302-699",
+    "question": "If N doubles, the number of FFT stages",
+    "options": [
+      "Remains constant",
+      "Increases by one",
+      "Doubles",
+      "Quadruples"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Số tầng là log₂N; thay N bằng 2N làm giá trị này tăng đúng 1.",
+    "tip": "double N → thêm 1 tầng.",
+    "active": false
+  },
+  {
+    "id": "DGT302-700",
+    "question": "A typical DSP processor is optimized for:",
+    "options": [
+      "Large database queries",
+      "Multiply-accumulate (MAC) operations",
+      "GUI rendering",
+      "Web browsing"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Các phép lọc và biến đổi lặp nhiều lần phép nhân rồi cộng tích lũy.",
+    "tip": "DSP processor → MAC.",
+    "active": false
+  },
+  {
+    "id": "DGT302-701",
+    "question": "Which block delays a discrete-time signal by one sample?",
+    "options": [
+      "Adder",
+      "Integrator",
+      "Unit Delay",
+      "Multiplier"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Khối trễ một mẫu tạo y[n]=x[n−1], tương ứng z⁻¹.",
+    "tip": "one sample → unit delay.",
+    "active": false
+  },
+  {
+    "id": "DGT302-702",
+    "question": "Which window has the narrowest main lobe for a fixed length M?",
+    "options": [
+      "Hamming",
+      "Rectangular",
+      "Blackman",
+      "Hann"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Rectangular có main-lobe hẹp nhất trong các cửa sổ cơ bản cùng chiều dài, nhưng sidelobe cao.",
+    "tip": "narrowest main-lobe → rectangular.",
+    "active": false
+  },
+  {
+    "id": "DGT302-703",
+    "question": "An IIR system usually contains:",
+    "options": [
+      "No memory",
+      "Feedback",
+      "No poles",
+      "Only finite delays"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "IIR thường dùng đầu ra quá khứ quay lại đầu vào nên có hồi tiếp.",
+    "tip": "IIR → feedback.",
+    "active": false
+  },
+  {
+    "id": "DGT302-704",
+    "question": "The major inefficiency of direct interpolation is",
+    "options": [
+      "Multiplications by inserted zeros",
+      "Pole migration",
+      "Overflow",
+      "FFT leakage"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chèn zero rồi lọc trực tiếp lãng phí nhiều phép nhân có kết quả bằng zero.",
+    "tip": "direct interpolation waste → zero multiplications.",
+    "active": false
+  },
+  {
+    "id": "DGT302-705",
+    "question": "Two stable systems have identical magnitude responses but different phase responses. What can be concluded?",
+    "options": [
+      "Their impulse responses must be identical for every time index",
+      "Their pole-zero diagrams must contain the same zero locations",
+      "Their output waveforms may differ even when output magnitudes match",
+      "Their output spectra must have different magnitude values"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Pha khác nhau làm các thành phần tần số lệch thời gian khác nhau, nên dạng sóng vẫn có thể khác.",
+    "tip": "same magnitude ≠ same waveform; xét phase.",
+    "active": false
+  },
+  {
+    "id": "DGT302-706",
+    "question": "Increasing the filter length M of a rectangular-window FIR mainly",
+    "options": [
+      "Reduces cutoff frequency",
+      "Narrows the transition band without eliminating Gibbs overshoot",
+      "Eliminates ripple completely",
+      "Makes the filter nonlinear"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dãy dài hơn làm main-lobe hẹp, nhưng không xóa biên overshoot Gibbs của cửa sổ chữ nhật.",
+    "tip": "longer rectangular → narrower transition only.",
+    "active": false
+  },
+  {
+    "id": "DGT302-707",
+    "question": "Downsampling by D changes the sampling rate to",
+    "options": [
+      "fs D",
+      "D fs",
+      "fs/D",
+      "fS+D"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Giữ một trong D mẫu làm số mẫu mỗi giây giảm D lần.",
+    "tip": "downsample D → fs/D.",
+    "active": false
+  },
+  {
+    "id": "DGT302-708",
+    "question": "Noble identities are valuable because they:",
+    "options": [
+      "Double sampling rate",
+      "Increase stopband attenuation",
+      "Move filters to the lower-rate side for efficiency",
+      "Remove aliasing mathematically"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Noble identities đổi thứ tự lọc và đổi rate để thực hiện lọc ở phía tốc độ thấp hơn.",
+    "tip": "Noble → lower-rate filtering.",
+    "active": true
+  },
+  {
+    "id": "DGT302-709",
+    "question": "Convolution in time domain corresponds to what operation in frequency domain?",
+    "options": [
+      "Division",
+      "Addition",
+      "Multiplication",
+      "Differentiation"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Biến đổi Fourier chuyển phép chập thành phép nhân, giúp phân tích LTI dễ hơn.",
+    "tip": "time convolution → frequency multiplication.",
+    "active": false
+  },
+  {
+    "id": "DGT302-710",
+    "question": "Fourier Transform is mainly used for:",
+    "options": [
+      "Quantized signals",
+      "Periodic signals only",
+      "Binary signals",
+      "Aperiodic signals"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Fourier Transform dùng phổ tần số liên tục để biểu diễn tín hiệu không tuần hoàn.",
+    "tip": "aperiodic → Fourier Transform.",
+    "active": true
+  },
+  {
+    "id": "DGT302-711",
+    "question": "Which modification alone cannot eliminate aliasing once samples have been taken?",
+    "options": [
+      "Ideal LPF after sampling",
+      "All of the above",
+      "Oversampling later",
+      "Increase ADC bits"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Đổi xử lý sau lấy mẫu không khôi phục được thông tin đã nhập nhằng do aliasing.",
+    "tip": "alias đã xảy ra → không sửa chỉ bằng hậu xử lý.",
+    "active": true
+  },
+  {
+    "id": "DGT302-712",
+    "question": "Compared with Butterworth, Chebyshev Type I filters generally:",
+    "options": [
+      "Need higher order for the same specification",
+      "Have flatter passbands",
+      "Are always linear phase",
+      "Achieve sharper transitions with passband ripple"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chebyshev I chấp nhận ripple ở passband để chuyển dải sắc hơn Butterworth cùng bậc.",
+    "tip": "Type I → passband ripple.",
+    "active": true
+  },
+  {
+    "id": "DGT302-713",
+    "question": "Which condition is necessary for perfect frequency-domain inversion over a desired band?",
+    "options": [
+      "H(e^(jω)) must have unit magnitude over all frequencies",
+      "H(e^(jω)) must contain at least one zero on the unit circle",
+      "H(e^(jω)) must be nonzero throughout the desired band",
+      "H(e^(jω)) must have constant phase over all frequencies"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Nếu H bằng zero ở tần số cần khôi phục, 1/H không tồn tại tại đó.",
+    "tip": "inverse filter → H ≠ 0 trong dải cần dùng.",
+    "active": true
+  },
+  {
+    "id": "DGT302-714",
+    "question": "In the DIT butterfly, the twiddle multiplication occurs:",
+    "options": [
+      "After subtraction only",
+      "Never",
+      "Before the add/subtract operations",
+      "At the final stage only"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Bướm DIT nhân nhánh b với twiddle trước khi tạo a±Wb.",
+    "tip": "DIT → twiddle trước cộng/trừ.",
+    "active": true
+  },
+  {
+    "id": "DGT302-715",
+    "question": "The twiddle factor primarily represents:",
+    "options": [
+      "Circular convolution",
+      "Window coefficient",
+      "Complex rotation on the unit circle",
+      "Quantization step"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Twiddle có độ lớn 1 và góc xác định nên chỉ quay số phức trên vòng đơn vị.",
+    "tip": "twiddle → complex rotation.",
+    "active": true
+  },
+  {
+    "id": "DGT302-716",
+    "question": "Oversampling improves effective SNR mainly because:",
+    "options": [
+      "it spreads quantization noise over a wider spectrum before filtering",
+      "it removes aliasing automatically",
+      "it doubles the ADC resolution",
+      "it increases signal amplitude"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Oversampling trải nhiễu lượng tử ra dải rộng; lọc bỏ ngoài dải giảm nhiễu còn lại.",
+    "tip": "oversampling SNR → spread noise then LPF.",
+    "active": true
+  },
+  {
+    "id": "DGT302-717",
+    "question": "The unilateral z-transform is especially useful for:",
+    "options": [
+      "Continuous signals",
+      "Analog filters",
+      "Image compression",
+      "Difference equations with initial conditions"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Biến đổi một phía bắt đầu từ n=0 nên dễ giữ các số hạng điều kiện ban đầu.",
+    "tip": "unilateral Z → initial conditions.",
+    "active": true
+  },
+  {
+    "id": "DGT302-718",
+    "question": "A complex exponential e^(jω0n) is applied to a relaxed LTI system whose frequency response exists at ω0. Which statement describes its steady-state output?",
+    "options": [
+      "Its phase remains unchanged while frequency and amplitude change",
+      "Its frequency remains unchanged while amplitude and phase change",
+      "Its amplitude becomes zero for every stable LTI system",
+      "Its frequency changes while amplitude remains fixed"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hàm mũ phức là hàm riêng của LTI, đầu ra chỉ nhân thêm H(ω0).",
+    "tip": "LTI sinusoid → same frequency.",
+    "active": true
+  },
+  {
+    "id": "DGT302-719",
+    "question": "For a causal sequence, the ROC is typically:",
+    "options": [
+      "Outside the outermost pole",
+      "Inside the innermost pole",
+      "At the origin",
+      "Nowhere"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Dãy nhân quả hữu tỉ có ROC kéo ra vô cực từ cực ngoài cùng.",
+    "tip": "causal ROC → outside outermost pole.",
+    "active": true
+  },
+  {
+    "id": "DGT302-720",
+    "question": "The primary purpose of bit-reversal in DIT is:",
+    "options": [
+      "Reduce FFT stages",
+      "Increase frequency resolution",
+      "Remove quantization noise",
+      "Match recursive butterfly data flow"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Đảo bit sắp dữ liệu khớp các bước chia chẵn–lẻ trong thuật toán DIT.",
+    "tip": "bit reversal → recursive data flow.",
+    "active": true
+  },
+  {
+    "id": "DGT302-721",
+    "question": "Which block delays a discrete-time signal by one sample?",
+    "options": [
+      "Unit Delay",
+      "Adder",
+      "Integrator",
+      "Multiplier"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Khối trễ một mẫu tạo y[n]=x[n−1], tương ứng z⁻¹.",
+    "tip": "one sample → unit delay.",
+    "active": false
+  },
+  {
+    "id": "DGT302-722",
+    "question": "Which signal classification describes uncertainty?",
+    "options": [
+      "Random",
+      "periodic",
+      "Deterministic",
+      "Continuous"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tín hiệu ngẫu nhiên có các mẫu tương lai không biết chính xác, cần mô tả bằng xác suất.",
+    "tip": "uncertainty → random.",
+    "active": true
+  },
+  {
+    "id": "DGT302-723",
+    "question": "A system is causal if the output depends on:",
+    "options": [
+      "Present and past inputs",
+      "Past outputs only",
+      "Future inputs",
+      "Random inputs"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Hệ nhân quả không cần biết các mẫu đầu vào trong tương lai.",
+    "tip": "causal → present + past.",
+    "active": false
+  },
+  {
+    "id": "DGT302-724",
+    "question": "Quantization in ADC refers to:",
+    "options": [
+      "Noise filtering",
+      "Time discretization",
+      "Signal amplification",
+      "Amplitude discretization"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Lượng tử hóa ánh xạ biên độ vào một tập mức hữu hạn.",
+    "tip": "quantization → amplitude; sampling → time.",
+    "active": true
+  },
+  {
+    "id": "DGT302-725",
+    "question": "BIBO stability means:",
+    "options": [
+      "Bounded input gives bounded output",
+      "Nonlinear response",
+      "Bounded output gives infinite input",
+      "Unstable poles"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "BIBO yêu cầu mọi đầu vào bị chặn đều tạo ra đầu ra bị chặn.",
+    "tip": "Bounded Input → Bounded Output.",
+    "active": false
+  },
+  {
+    "id": "DGT302-726",
+    "question": "Why are lattice filters attractive in adaptive filtering?",
+    "options": [
+      "Lowest memory",
+      "Robust against coefficient quantization",
+      "No delays",
+      "Require no multipliers"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hệ số phản xạ giúp lattice chịu sai số lượng tử hóa tốt, hữu ích khi cập nhật thích nghi.",
+    "tip": "lattice adaptive → robust coefficients.",
+    "active": false
+  },
+  {
+    "id": "DGT302-727",
+    "question": "The group delay of a linear-phase FIR filter is:",
+    "options": [
+      "Infinite",
+      "Frequency dependent",
+      "Constant for all frequencies",
+      "Zero for all frequencies"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Pha tuyến tính có đạo hàm theo ω không đổi, nên độ trễ nhóm không đổi.",
+    "tip": "linear phase → constant group delay.",
+    "active": false
+  },
+  {
+    "id": "DGT302-728",
+    "question": "Which statement correctly describes the relationship between convolution in time domain and frequency-domain analysis for discrete-time signals?",
+    "options": [
+      "Convolution in time domain corresponds to differentiation in frequency domain",
+      "Convolution in time domain corresponds to multiplication in frequency domain, simplifying LTI system analysis",
+      "Convolution in time domain has no equivalent operation in frequency domain",
+      "Multiplication in time domain corresponds to convolution in frequency domain only for continuous signals"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Đầu ra LTI là chập với h[n]; trong miền tần số chỉ cần nhân X và H.",
+    "tip": "convolution ↔ multiplication.",
+    "active": false
+  },
+  {
+    "id": "DGT302-729",
+    "question": "An AR model is best described as:",
+    "options": [
+      "A pole-zero model",
+      "An all-pole model driven by white noise",
+      "An all-zero FIR model",
+      "A noncausal predictor"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "AR dùng hồi tiếp các mẫu quá khứ nên có mẫu số đa thức và tử số hằng.",
+    "tip": "AR → all-pole + white noise.",
+    "active": true
+  },
+  {
+    "id": "DGT302-730",
+    "question": "Which application fundamentally relies on FFT/IFFT pairs?",
+    "options": [
+      "OFDM wireless communication",
+      "ADC calibration",
+      "Thermocouple measurement",
+      "PWM generation"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "OFDM dùng IFFT ghép các sóng mang và FFT tách chúng ở phía thu.",
+    "tip": "OFDM → IFFT transmit, FFT receive.",
+    "active": true
+  },
+  {
+    "id": "DGT302-731",
+    "question": "Increasing STFT window length generally:",
+    "options": [
+      "Improves both",
+      "Improves time resolution",
+      "Improves frequency resolution but worsens time resolution",
+      "Improves neither"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Cửa sổ dài quan sát nhiều chu kỳ hơn nhưng định vị biến đổi theo thời gian kém hơn.",
+    "tip": "long STFT → frequency tốt, time kém.",
+    "active": true
+  },
+  {
+    "id": "DGT302-732",
+    "question": "A memoryless system depends only on:",
+    "options": [
+      "Past outputs",
+      "Future input",
+      "Current input",
+      "Random values"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Hệ không nhớ không dùng mẫu trước hoặc sau thời điểm đang xét.",
+    "tip": "memoryless → current input only.",
+    "active": false
+  },
+  {
+    "id": "DGT302-733",
+    "question": "Perfect Reconstruction (PR) means:",
+    "options": [
+      "Infinite attenuation",
+      "Output equals delayed/scaled input after analysis-synthesis",
+      "No quantization",
+      "Zero delay"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Perfect Reconstruction cho phép khác đầu vào chỉ bởi một hệ số gain và một độ trễ.",
+    "tip": "PR → scaled/delayed original.",
+    "active": true
+  },
+  {
+    "id": "DGT302-734",
+    "question": "Why is sinc interpolation considered ideal?",
+    "options": [
+      "It compresses data",
+      "It avoids quantization",
+      "It exactly reconstructs band-limited signals sampled above Nyquist",
+      "It requires no filter"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Sinc tương ứng bộ lọc thông thấp lý tưởng để khôi phục tín hiệu band-limited đủ điều kiện Nyquist.",
+    "tip": "ideal interpolation → sinc.",
+    "active": true
+  },
+  {
+    "id": "DGT302-735",
+    "question": "Circular convolution differs from linear convolution because:",
+    "options": [
+      "Samples wrap around modulo N",
+      "It ignores periodicity",
+      "FFT cannot compute it",
+      "Output is always longer"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chập vòng dùng chỉ số modulo N nên phần vượt biên quay lại đầu dãy.",
+    "tip": "circular → wrap around.",
+    "active": true
+  },
+  {
+    "id": "DGT302-736",
+    "question": "A noncausal Wiener filter can achieve MMSE no larger than a comparable causal filter because:",
+    "options": [
+      "It has infinite order",
+      "It removes aliasing",
+      "It can use future observations",
+      "It ignores noise"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Dùng thêm quan sát tương lai mở rộng tập nghiệm; bộ tối ưu có thể bỏ qua chúng nên MMSE không tăng, và có thể giảm khi thông tin mới hữu ích.",
+    "tip": "noncausal Wiener → MMSE không lớn hơn; có thể bằng nhau.",
+    "active": true
+  },
+  {
+    "id": "DGT302-737",
+    "question": "Spectral leakage mainly occurs when:",
+    "options": [
+      "Zero-padding is used",
+      "Signal frequency is not aligned with a DFT bin",
+      "FFT size is power of two",
+      "Hann window is used"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tone không rơi đúng bin khiến đoạn quan sát không trọn chu kỳ, năng lượng rò sang bin khác.",
+    "tip": "between DFT bins → leakage.",
+    "active": true
+  },
+  {
+    "id": "DGT302-738",
+    "question": "If fs is gradually reduced below the Nyquist rate, what appears first?",
+    "options": [
+      "Higher dynamic range",
+      "Spectral overlap",
+      "Reduced SNR",
+      "Lower quantization error"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Khi Fs xuống dưới Nyquist, các bản phổ dịch tiến sát rồi chồng lên nhau.",
+    "tip": "under-sampling → spectral overlap.",
+    "active": true
+  },
+  {
+    "id": "DGT302-739",
+    "question": "Parseval's theorem states that:",
+    "options": [
+      "Signals are periodic",
+      "All poles are stable",
+      "Sampling removes noise",
+      "Energy in time domain equals energy in frequency domain"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Parseval bảo toàn năng lượng khi chuyển miền, với hệ số chuẩn hóa phù hợp định nghĩa biến đổi.",
+    "tip": "Parseval → energy conservation.",
+    "active": true
+  },
+  {
+    "id": "DGT302-740",
+    "question": "Which frequency-domain relation is equivalent to y[n] = x[n] * h[n]?",
+    "options": [
+      "Y(e^jω) = X(e^jω) - H(e^jω)",
+      "Y(e^jω) = X(e^jω) + H(e^jω)",
+      "Y(e^jω) = X(e^jω) / H(e^jω)",
+      "Y(e^jω) = X(e^jω)·H(e^jω)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Phép chập x*h trong thời gian trở thành tích XH trong miền tần số.",
+    "tip": "y=x*h → Y=XH.",
+    "active": false
+  },
+  {
+    "id": "DGT302-741",
+    "question": "For sequences of lengths L and M, what is the minimum common FFT length N after zero-padding so FFT multiplication yields their exact linear convolution?",
+    "options": [
+      "max(L,M)",
+      "L+M-1",
+      "2L",
+      "L+M"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Chập tuyến tính dài L+M−1, nên tổng chiều dài FFT N sau đệm phải ít nhất bằng số này; đây không phải số zero cần thêm.",
+    "tip": "FFT length N≥L+M−1; không phải thêm L+M−1 zero.",
+    "active": false
+  },
+  {
+    "id": "DGT302-742",
+    "question": "The unilateral z-transform is especially useful for:",
+    "options": [
+      "Continuous signals",
+      "Difference equations with initial conditions",
+      "Image compression",
+      "Analog filters"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Biến đổi một phía bắt đầu từ n=0 nên dễ giữ các số hạng điều kiện ban đầu.",
+    "tip": "unilateral Z → initial conditions.",
+    "active": false
+  },
+  {
+    "id": "DGT302-743",
+    "question": "For H(z) = 1 - z^(-M), at which frequencies do magnitude zeros occur?",
+    "options": [
+      "ω = π(2k + 1)/M for integer k",
+      "ω = πkM for integer k",
+      "ω = 2πk/M for integer k",
+      "ω = 2πM/k for integer k"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "H=0 khi e^(−jMω)=1, tức Mω là bội của 2π.",
+    "tip": "1−z⁻ᴹ → zeros tại 2πk/M.",
+    "active": true
+  },
+  {
+    "id": "DGT302-744",
+    "question": "Aliasing occurs when:",
+    "options": [
+      "Sampling rate is too high",
+      "Sampling rate is below Nyquist rate",
+      "Signal is filtered",
+      "Signal is amplified"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Với tín hiệu baseband, lấy mẫu dưới Nyquist làm các tần số khác nhau nhập vào cùng một dãy mẫu.",
+    "tip": "Fs < 2Fmax → aliasing.",
+    "active": false
+  },
+  {
+    "id": "DGT302-745",
+    "question": "A minimum-phase system has zeros:",
+    "options": [
+      "Outside the unit circle",
+      "At infinity",
+      "On the unit circle",
+      "Inside the unit circle"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Zero bên trong vòng đơn vị giúp hệ nghịch đảo nhân quả có cực ổn định.",
+    "tip": "minimum phase → zeros inside.",
+    "active": true
+  },
+  {
+    "id": "DGT302-746",
+    "question": "What is the primary purpose of an Anti-Aliasing Filter in a DSP system?",
+    "options": [
+      "Store digital data",
+      "Remove frequencies above Nyquist limit",
+      "Amplify the signal",
+      "Convert analog to digital"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Loại thành phần trên Fs/2 trước lấy mẫu giúp tránh các bản phổ chồng nhau.",
+    "tip": "anti-aliasing → remove above Nyquist.",
+    "active": false
+  },
+  {
+    "id": "DGT302-747",
+    "question": "For a causal sequence, the ROC is typically:",
+    "options": [
+      "Nowhere",
+      "Outside the outermost pole",
+      "At the origin",
+      "Inside the innermost pole"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dãy nhân quả hữu tỉ có ROC kéo ra vô cực từ cực ngoài cùng.",
+    "tip": "causal ROC → outside outermost pole.",
+    "active": false
+  },
+  {
+    "id": "DGT302-748",
+    "question": "What is the smallest positive period guaranteed for the DTFT of every discrete-time sequence?",
+    "options": [
+      "2π",
+      "π",
+      "∞",
+      "4π"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "e^(−j(ω+2π)n)=e^(−jωn) vì n nguyên. 2π là chu kỳ dương nhỏ nhất bảo đảm cho mọi DTFT; tín hiệu riêng có thể có chu kỳ nhỏ hơn.",
+    "tip": "chu kỳ bảo đảm chung DTFT → 2π.",
+    "active": true
+  },
+  {
+    "id": "DGT302-749",
+    "question": "Without scaling, the greatest practical risk in fixed-point FFT is",
+    "options": [
+      "Aliasing",
+      "Spectral leakage",
+      "Overflow during butterfly computations",
+      "Time reversal"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tổng hai số trong bướm có thể cần thêm bit; không scale dễ vượt dải fixed-point.",
+    "tip": "fixed-point FFT → overflow.",
+    "active": true
+  },
+  {
+    "id": "DGT302-750",
+    "question": "The major drawback of the bilinear transform is",
+    "options": [
+      "Aliasing",
+      "Infinite impulse response",
+      "Frequency warping",
+      "Instability"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Bilinear ánh xạ tần số theo hàm tan phi tuyến, tạo frequency warping.",
+    "tip": "bilinear drawback → warping.",
+    "active": true
+  },
+  {
+    "id": "DGT302-751",
+    "question": "A designer must choose between Fixed-point and Floating-point DSP. Which factor most strongly favors Fixed-point?",
+    "options": [
+      "No quantization",
+      "Lower power and silicon cost",
+      "No overflow",
+      "Infinite precision"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Fixed-point dùng phần cứng đơn giản hơn nên thường giảm điện năng và diện tích silicon.",
+    "tip": "low power / cost → fixed-point.",
+    "active": true
+  },
+  {
+    "id": "DGT302-752",
+    "question": "Why is output='sos' recommended for high-order IIR filters in SciPy?",
+    "options": [
+      "Removes poles",
+      "Reduces sampling frequency",
+      "Improves numerical stability using second-order sections",
+      "Produces FIR coefficients"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "SOS tách IIR bậc cao thành các tầng bậc hai, giảm độ nhạy số học so với đa thức bậc cao trực tiếp.",
+    "tip": "high-order IIR → output='sos'.",
+    "active": true
+  },
+  {
+    "id": "DGT302-753",
+    "question": "Which statement best distinguishes Yule-Walker and Wiener-Hopf?",
+    "options": [
+      "Yule-Walker never uses autocorrelation",
+      "Wiener-Hopf applies only to FIR",
+      "Yule-Walker estimates AR predictors, whereas Wiener-Hopf estimates optimal filters using cross-correlation",
+      "Both solve identical problems"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Yule–Walker dùng tự tương quan cho AR; Wiener–Hopf thêm tương quan chéo với tín hiệu đích.",
+    "tip": "AR → Yule–Walker; target → Wiener–Hopf.",
+    "active": true
+  },
+  {
+    "id": "DGT302-754",
+    "question": "For a causal rational LTI system, poles strictly inside the unit circle imply:",
+    "options": [
+      "Instability",
+      "Causality only",
+      "Infinite response",
+      "BIBO stability"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Với giả thiết hệ nhân quả của dạng bài này, cực trong vòng đơn vị cho đáp ứng xung suy giảm.",
+    "tip": "poles inside → stable nếu ROC chứa vòng đơn vị.",
+    "active": false
+  },
+  {
+    "id": "DGT302-755",
+    "question": "Which statement correctly describes the relationship between convolution in time domain and frequency-domain analysis for discrete-time signals?",
+    "options": [
+      "Multiplication in time domain corresponds to convolution in frequency domain only for continuous signals",
+      "Convolution in time domain corresponds to multiplication in frequency domain, simplifying LTI system analysis",
+      "Convolution in time domain has no equivalent operation in frequency domain",
+      "Convolution in time domain corresponds to differentiation in frequency domain"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Đầu ra LTI là chập với h[n]; trong miền tần số chỉ cần nhân X và H.",
+    "tip": "convolution ↔ multiplication.",
+    "active": false
+  },
+  {
+    "id": "DGT302-756",
+    "question": "Why must the anti-imaging filter have gain l?",
+    "options": [
+      "To restore amplitude lost by zero insertion",
+      "To widen bandwidth",
+      "To reduce ripple",
+      "To cancel aliasing"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chèn I−1 zero làm mức DC trung bình giảm I lần, nên bộ lọc cần gain I để bù.",
+    "tip": "anti-imaging gain → interpolation factor I.",
+    "active": true
+  },
+  {
+    "id": "DGT302-757",
+    "question": "Which of the following is an advantage of digital processing?",
+    "options": [
+      "Thermal drift",
+      "Software flexibility",
+      "Component aging",
+      "Noise accumulation"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Thuật toán số có thể đổi bằng chương trình mà không phải thay toàn bộ mạch.",
+    "tip": "digital advantage → software flexibility.",
+    "active": false
+  },
+  {
+    "id": "DGT302-758",
+    "question": "Which hardware format generally offers the largest dynamic range?",
+    "options": [
+      "Integer Q7",
+      "Floating-point IEEE754",
+      "Unsigned binary",
+      "Fixed-point Q15"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Số mũ của floating-point cho phép biểu diễn giá trị rất lớn lẫn rất nhỏ.",
+    "tip": "largest dynamic range → floating-point.",
+    "active": true
+  },
+  {
+    "id": "DGT302-759",
+    "question": "A continuous-time signal contains frequency components up to 8 kHz. Which sampling frequency below will avoid aliasing according to the Nyquist theorem?",
+    "options": [
+      "15 kHz",
+      "12 kHz",
+      "20 kHz",
+      "10 kHz"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tần số lấy mẫu phải lớn hơn 16 kHz; 20 kHz thỏa điều kiện này.",
+    "tip": "Fmax=8 → Fs>16 kHz.",
+    "active": true
+  },
+  {
+    "id": "DGT302-760",
+    "question": "A low-pass filter is designed mainly to perform which operation?",
+    "options": [
+      "Preserve rapid variations and remove slow variations",
+      "Preserve low frequencies and attenuate high frequencies",
+      "Remove every component including the DC component",
+      "Pass only one narrow frequency around resonance"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Low-pass truyền thành phần tần số thấp và làm suy giảm thành phần cao.",
+    "tip": "low-pass → giữ thấp, chặn cao.",
+    "active": true
+  },
+  {
+    "id": "DGT302-761",
+    "question": "Why is a right shift often applied after every FFT stage in fixed-point hardware?",
+    "options": [
+      "To change frequency bins",
+      "To prevent overflow accumulation",
+      "To improve resolution",
+      "To reduce FFT stages"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dịch phải chia biên độ cho 2, tạo headroom cho phép cộng ở tầng FFT tiếp theo.",
+    "tip": "right shift → scale down, tránh overflow.",
+    "active": true
+  },
+  {
+    "id": "DGT302-762",
+    "question": "For a causal LTI system with system function H(z), which condition guarantees both causality and BIBO stability?",
+    "options": [
+      "All zeros are inside unit circle regardless of pole locations",
+      "ROC is outside outermost pole and all poles are strictly inside unit circle",
+      "ROC is between poles",
+      "ROC contains origin only"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhân quả cần ROC ngoài cực ngoài cùng; ổn định cần ROC chứa |z|=1.",
+    "tip": "causal + stable → poles inside, ROC outside.",
+    "active": true
+  },
+  {
+    "id": "DGT302-763",
+    "question": "For a causal LTI system with system function H(z), which condition guarantees both causality and BIBO stability?",
+    "options": [
+      "All zeros are inside unit circle regardless of pole locations",
+      "ROC is outside outermost pole and all poles are strictly inside unit circle",
+      "ROC is between poles",
+      "ROC contains origin only"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhân quả cần ROC ngoài cực ngoài cùng; ổn định cần ROC chứa |z|=1.",
+    "tip": "causal + stable → poles inside, ROC outside.",
+    "active": false
+  },
+  {
+    "id": "DGT302-764",
+    "question": "For a causal LTI system with system function H(z), which condition guarantees both causality and BIBO stability?",
+    "options": [
+      "All zeros are inside unit circle regardless of pole locations",
+      "ROC is outside outermost pole and all poles are strictly inside unit circle",
+      "ROC is between poles",
+      "ROC contains origin only"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhân quả cần ROC ngoài cực ngoài cùng; ổn định cần ROC chứa |z|=1.",
+    "tip": "causal + stable → poles inside, ROC outside.",
+    "active": false
+  },
+  {
+    "id": "DGT302-765",
+    "question": "Reflection coefficients are primarily associated with",
+    "options": [
+      "Lattice structures",
+      "Parallel Form",
+      "Cascade SOS",
+      "Direct Form II"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Mỗi tầng lattice được đặc trưng bởi một hệ số phản xạ.",
+    "tip": "reflection coefficients → lattice.",
+    "active": false
+  },
+  {
+    "id": "DGT302-766",
+    "question": "Bandpass sampling below 2fmax is possible only when",
+    "options": [
+      "oversampling is used",
+      "sinc interpolation is unavailable",
+      "quantization is nonlinear",
+      "spectral replicas remain non-overlapping"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Lấy mẫu dải thông dưới 2fmax chỉ hợp lệ khi chọn Fs để các bản phổ không chồng nhau.",
+    "tip": "bandpass sampling → non-overlapping replicas.",
+    "active": true
+  },
+  {
+    "id": "DGT302-767",
+    "question": "Interpolation in multirate DSP is always followed by a low-pass filter because",
+    "options": [
+      "it removes inserted spectral images",
+      "it avoids clipping",
+      "it reduces quantization levels",
+      "it performs encoding"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chèn zero tạo các ảnh phổ lặp; low-pass loại chúng và giữ dải gốc.",
+    "tip": "after upsampling → anti-imaging LPF.",
+    "active": false
+  },
+  {
+    "id": "DGT302-768",
+    "question": "Why is the FFT dramatically faster than the direct DFT?",
+    "options": [
+      "It reduces the number of frequency bins",
+      "It avoids complex arithmetic",
+      "It approximates the DFT",
+      "It recursively decomposes the DFT into smaller transforms"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "FFT chia DFT lớn thành các DFT nhỏ và tái sử dụng kết quả trung gian.",
+    "tip": "FFT speed → divide and conquer.",
+    "active": true
+  },
+  {
+    "id": "DGT302-769",
+    "question": "A smoother-looking spectrum after zero-padding indicates",
+    "options": [
+      "More information collected",
+      "Better frequency resolution",
+      "Less leakage",
+      "Better interpolation of existing DTFT samples"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Zero-padding chỉ nội suy thêm điểm trên DTFT đang có, không làm tăng thời lượng quan sát.",
+    "tip": "smoother spectrum → interpolation, không resolution mới.",
+    "active": false
+  },
+  {
+    "id": "DGT302-770",
+    "question": "The primary spectral effect of downsampling is",
+    "options": [
+      "Frequency translation",
+      "Spectral compression",
+      "Spectral expansion with possible aliasing",
+      "Gibbs phenomenon"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Giảm mẫu giãn phổ theo trục tần số chuẩn hóa, có thể làm các bản phổ chồng nhau.",
+    "tip": "downsampling → spectral expansion / aliasing.",
+    "active": true
+  },
+  {
+    "id": "DGT302-771",
+    "question": "A designer doubles the ADC resolution from 8 bits to 16 bits but keeps the sampling frequency unchanged. Which improvement is expected?",
+    "options": [
+      "Less aliasing",
+      "Lower bandwidth",
+      "Higher SNR from reduced quantization error",
+      "Elimination of reconstruction filter"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Nhiều bit hơn làm bước lượng tử nhỏ hơn nên nhiễu lượng tử giảm và SNR tăng.",
+    "tip": "more ADC bits → better quantization SNR.",
+    "active": true
+  },
+  {
+    "id": "DGT302-772",
+    "question": "Why is multiplication by -j often considered hardware-free?",
+    "options": [
+      "It is ignored",
+      "It removes twiddle factors",
+      "It equals zero",
+      "It only swaps real/imaginary parts with a sign change"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "(a+jb)(−j)=b−ja, chỉ cần hoán đổi hai phần và đổi một dấu.",
+    "tip": "×(−j) → swap + sign.",
+    "active": true
+  },
+  {
+    "id": "DGT302-773",
+    "question": "How is the frequency response obtained from a rational system function H(z)?",
+    "options": [
+      "Replace every pole of H(z) by a zero",
+      "Evaluate H(z) only at the origin z = 0",
+      "Differentiate H(z) with respect to z",
+      "Evaluate H(z) on the unit circle z = e^(jω)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Đáp ứng tần số là H(z) tại z=e^(jω), nếu vòng đơn vị thuộc ROC.",
+    "tip": "H(z) → H(e^jω): unit circle.",
+    "active": false
+  },
+  {
+    "id": "DGT302-774",
+    "question": "A sampled spectrum shows repeated copies centered at multiples of fs. This is",
+    "options": [
+      "aliasing",
+      "interpolation",
+      "quantization",
+      "normal spectrum replication due to sampling"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Lấy mẫu tạo bản sao phổ tại mọi bội của Fs, kể cả khi không có alias.",
+    "tip": "replicas at kFs → normal sampling.",
+    "active": false
+  },
+  {
+    "id": "DGT302-775",
+    "question": "Which FFT property allows computation using only one memory array?",
+    "options": [
+      "Parseval theorem",
+      "In-place computation",
+      "Zero padding",
+      "Circular convolution"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "In-place tái sử dụng các ô nhớ đầu vào cho kết quả của từng bướm.",
+    "tip": "one memory array → in-place.",
+    "active": false
+  },
+  {
+    "id": "DGT302-776",
+    "question": "For a real-valued signal, which DFT property reduces computation?",
+    "options": [
+      "Linearity",
+      "Parseval theorem",
+      "Conjugate symmetry",
+      "Circular symmetry"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Dãy thực có các bin tần số đối xứng liên hợp, nên không cần tính độc lập cả hai nửa.",
+    "tip": "real signal → conjugate symmetry.",
+    "active": false
+  },
+  {
+    "id": "DGT302-777",
+    "question": "Two distinct analog signals produce exactly the same samples at a given sampling rate. Which explanation is most accurate?",
+    "options": [
+      "Both passed through a DAC",
+      "Both used the same ADC resolution",
+      "Both were oversampled",
+      "Both experienced aliasing",
+      "The samples cannot distinguish the signals: this is an aliasing ambiguity, without requiring both signals to exceed Nyquist."
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "Hai tín hiệu khác nhau có thể trùng ở mọi thời điểm lấy mẫu. Ví dụ cos(2π·1k·t) và cos(2π·7k·t) cho cùng mẫu khi fs=8 kHz; chỉ tone 7 kHz vượt Nyquist.",
+    "tip": "Different analog signals, same samples → aliasing ambiguity; không cần cả hai vượt Nyquist.",
+    "active": true
+  },
+  {
+    "id": "DGT302-778",
+    "question": "The main trade-off of Zero-Order Hold is",
+    "options": [
+      "no imaging",
+      "simple implementation but staircase distortion",
+      "perfect reconstruction with high cost",
+      "alias-free output"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Giữ nguyên mẫu đến lần cập nhật sau tạo dạng bậc thang, dù phần cứng rất đơn giản.",
+    "tip": "Zero-Order Hold → staircase.",
+    "active": true
+  },
+  {
+    "id": "DGT302-779",
+    "question": "Why is direct inverse filtering unreliable at frequencies where |H(e^(jω))| is very small but nonzero?",
+    "options": [
+      "It can strongly amplify noise at those frequencies",
+      "It converts a periodic input into an aperiodic output",
+      "It forces every system pole onto the unit circle",
+      "It removes all phase information from the recovered signal"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Khi |H| rất nhỏ, bộ nghịch đảo 1/H rất lớn và khuếch đại cả nhiễu.",
+    "tip": "near spectral zero → noise amplification.",
+    "active": true
+  },
+  {
+    "id": "DGT302-780",
+    "question": "Zero-stuffing alone does not reconstruct a signal because",
+    "options": [
+      "It introduces imaging that requires LPF removal",
+      "It reduces amplitude only",
+      "It changes quantization",
+      "It causes aliasing"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Chèn zero chỉ tăng rate và tạo ảnh phổ; cần low-pass để nội suy các giá trị giữa mẫu.",
+    "tip": "zero stuffing ≠ interpolation hoàn chỉnh; thêm LPF.",
+    "active": true
+  },
+  {
+    "id": "DGT302-781",
+    "question": "Why does whitening simplify prediction?",
+    "options": [
+      "It increases PSD",
+      "It reduces sampling rate",
+      "It removes correlation, leaving only innovation",
+      "It creates poles"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Whitening loại tương quan giữa các mẫu, để lại phần đổi mới không dự đoán được từ quá khứ.",
+    "tip": "whitening → decorrelation / innovation.",
+    "active": true
+  },
+  {
+    "id": "DGT302-782",
+    "question": "What does |H(e^(jω))| indicate for a sinusoidal input at frequency ω?",
+    "options": [
+      "The output sampling period at that frequency",
+      "The input signal energy at that frequency",
+      "The amplitude scaling applied at that frequency",
+      "The output time shift at that frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Độ lớn |H(ω)| là hệ số nhân biên độ của sóng sin tại tần số ω.",
+    "tip": "|H| → amplitude; ∠H → phase.",
+    "active": true
+  },
+  {
+    "id": "DGT302-783",
+    "question": "Why must fixed-point FFT implementations carefully manage rounding, truncation and scaling?",
+    "options": [
+      "The DFT matrix is singular.",
+      "The exact FFT changes signal energy.",
+      "Butterfly equations are inherently nonlinear.",
+      "Limited fractional precision and fixed scaling can accumulate rounding/truncation errors."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Độ chính xác phần lẻ và dải biểu diễn cố định làm sai số làm tròn/cắt tích lũy nếu không chọn word length và scale phù hợp. Floating-point cũng có làm tròn.",
+    "tip": "fixed-point FFT → quản lý precision + scaling + rounding.",
+    "active": true
+  },
+  {
+    "id": "DGT302-784",
+    "question": "Which realization is widely recommended to reduce numerical problems when implementing a high-order IIR filter?",
+    "options": [
+      "Direct Form I",
+      "Cascade Second-Order Sections",
+      "Parallel FIR",
+      "Single polynomial"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Các tầng SOS giảm vấn đề độ nhạy hệ số và sai số số học của IIR bậc cao.",
+    "tip": "implementation high-order → cascade SOS.",
+    "active": false
+  },
+  {
+    "id": "DGT302-785",
+    "question": "An ADC samples a signal at 12 kHz while the signal contains frequency components up to 8 kHz. Which phenomenon is most likely if no analog filter is used?",
+    "options": [
+      "Quantization noise dominates",
+      "Encoder overflow",
+      "Aliasing due to spectral overlap",
+      "Sine interpolation error"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Fs=12 kHz nhỏ hơn 2·8=16 kHz nên các bản phổ bị chồng nếu không lọc trước.",
+    "tip": "12 < 16 → aliasing.",
+    "active": true
+  },
+  {
+    "id": "DGT302-786",
+    "question": "Why must an anti-aliasing filter precede a downsampler?",
+    "options": [
+      "To reduce quantization noise",
+      "To compensate DAC gain",
+      "To increase sampling rate",
+      "Aliasing cannot be removed after spectral overlap"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Downsampling có thể gộp các thành phần phổ; phải loại dải gây chồng trước khi bỏ mẫu.",
+    "tip": "decimate → LPF trước downsampler.",
+    "active": true
+  },
+  {
+    "id": "DGT302-787",
+    "question": "If the 1/N factor is omitted from the inverse of an unnormalized forward DFT, what happens to the reconstructed amplitudes?",
+    "options": [
+      "Phase reversal",
+      "Output amplitude is multiplied by N",
+      "Frequency resolution improves",
+      "Time shift"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tổng IDFT cần chia N để bù tổng DFT thuận; bỏ 1/N làm đầu ra lớn N lần.",
+    "tip": "missing 1/N → gain N.",
+    "active": true
+  },
+  {
+    "id": "DGT302-788",
+    "question": "A designer downsamples first and filters later. The most likely consequence is",
+    "options": [
+      "Higher SNR",
+      "Improved efficiency with identical output",
+      "Perfect reconstruction",
+      "Irreversible aliasing distortion"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Khi đã giảm mẫu gây chồng phổ, lọc phía sau không tách lại được các thành phần gốc.",
+    "tip": "downsample first → irreversible aliasing.",
+    "active": false
+  },
+  {
+    "id": "DGT302-789",
+    "question": "Why are random signals described using statistical quantities instead of explicit equations?",
+    "options": [
+      "They have infinite bandwidth",
+      "Future samples cannot be predicted exactly",
+      "They are always periodic",
+      "Fourier transform cannot be applied"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Mẫu tương lai không xác định duy nhất nên dùng kỳ vọng, phương sai và tương quan để mô tả.",
+    "tip": "random → statistical quantities.",
+    "active": true
+  },
+  {
+    "id": "DGT302-790",
+    "question": "For a wide-sense stationary input with PSD Sxx(e^(jω)), which expression gives the output PSD of a stable LTI system?",
+    "options": [
+      "Syy(e^(jω)) = |H(e^(jω))|²·Sxx(e^(jω))",
+      "Syy(e^(jω)) = H(e^(jω)) + Sxx(e^(jω))",
+      "Syy(e^(jω)) = Sxx(e^(jω)) / |H(e^(jω))|",
+      "Syy(e^(jω)) = H(e^(jω))·Sxx(e^(jω))"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "LTI nhân biên độ phổ với H, nên công suất phổ nhân với |H|².",
+    "tip": "PSD output → |H|²·Sxx.",
+    "active": true
+  },
+  {
+    "id": "DGT302-791",
+    "question": "Convolution in time domain corresponds to what operation in frequency domain?",
+    "options": [
+      "Addition",
+      "Division",
+      "Multiplication",
+      "Differentiation"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Biến đổi Fourier chuyển phép chập thành phép nhân, giúp phân tích LTI dễ hơn.",
+    "tip": "time convolution → frequency multiplication.",
+    "active": false
+  },
+  {
+    "id": "DGT302-792",
+    "question": "Which statement best explains divide-and-conquer in FFT?",
+    "options": [
+      "Solve the same N-point DFT repeatedly",
+      "Eliminate recursion",
+      "Increase twiddle factors",
+      "Replace one large DFT with smaller DFTs recursively"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chia để trị thay một DFT lớn bằng nhiều DFT nhỏ rồi ghép kết quả.",
+    "tip": "divide-and-conquer → recursive smaller DFTs.",
+    "active": false
+  },
+  {
+    "id": "DGT302-793",
+    "question": "Which statement best explains Parseval's theorem?",
+    "options": [
+      "DFT reduces energy",
+      "Energy depends on zero padding",
+      "Energy is conserved between domains",
+      "FFT doubles energy"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Parseval cho cùng năng lượng trong hai miền khi dùng đúng hệ số chuẩn hóa.",
+    "tip": "Parseval → conserved energy.",
+    "active": false
+  },
+  {
+    "id": "DGT302-794",
+    "question": "Which theorem relates convolution in time domain to multiplication in z-domain?",
+    "options": [
+      "Convolution theorem",
+      "Sampling theorem",
+      "Parseval theorem",
+      "Nyquist theorem"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Z-transform chuyển chập thành tích các biến đổi z.",
+    "tip": "z-domain convolution theorem → Y=XH.",
+    "active": true
+  },
+  {
+    "id": "DGT302-795",
+    "question": "Which SciPy function to design FIR?",
+    "options": [
+      "lfilter",
+      "butter",
+      "freqz",
+      "firwin"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "firwin thiết kế hệ số FIR bằng phương pháp cửa sổ.",
+    "tip": "FIR + window → firwin.",
+    "active": true
+  },
+  {
+    "id": "DGT302-796",
+    "question": "Which SciPy function is most appropriate for applying an FIR or IIR filter to a signal?",
+    "options": [
+      "firwin",
+      "lfilter",
+      "freqz",
+      "butter"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "lfilter áp dụng phương trình sai phân với hệ số b,a cho dữ liệu tín hiệu.",
+    "tip": "apply FIR/IIR → lfilter, chữ l thường.",
+    "active": true
+  },
+  {
+    "id": "DGT302-797",
+    "question": "Which SciPy function is used to inspect the frequency response of a digital filter?",
+    "options": [
+      "lfilter",
+      "firwin",
+      "freqz",
+      "upfirdn"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "freqz tính đáp ứng biên độ và pha theo tần số của bộ lọc số.",
+    "tip": "inspect response → freqz.",
+    "active": false
+  },
+  {
+    "id": "DGT302-798",
+    "question": "Which SciPy function efficiently performs upsample-filter-downsample operations?",
+    "options": [
+      "freqz",
+      "butter",
+      "lfilter",
+      "upfirdn"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "upfirdn ghép tăng mẫu, lọc FIR và giảm mẫu trong một hàm hiệu quả.",
+    "tip": "up + FIR + down → upfirdn.",
+    "active": false
+  },
+  {
+    "id": "DGT302-799",
+    "question": "Which SciPy function is mainly used to design an IIR Butterworth filter?",
+    "options": [
+      "firwin",
+      "freqz",
+      "butter",
+      "lfilter"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "butter tạo bộ lọc Butterworth có đáp ứng biên độ passband phẳng tối đa.",
+    "tip": "Butterworth design → butter.",
+    "active": true
+  }
+]

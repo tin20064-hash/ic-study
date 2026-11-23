@@ -1,0 +1,105 @@
+{
+  "subject": "LOS201",
+  "groups": [
+    {
+      "ids": [
+        "LOS201-16",
+        "LOS201-17"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "LOS201-20",
+        "LOS201-70"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "LOS201-45",
+        "LOS201-207"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "LOS201-74",
+        "LOS201-75"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "LOS201-151",
+        "LOS201-164"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "LOS201-158",
+        "LOS201-174"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    },
+    {
+      "ids": [
+        "LOS201-161",
+        "LOS201-200"
+      ],
+      "reasonVi": "Cùng yêu cầu nhận diện cùng một khái niệm hoặc quan hệ; khác cách diễn đạt hay thứ tự lựa chọn.",
+      "kind": "reworded"
+    }
+  ],
+  "keptDistinct": [
+    {
+      "ids": [
+        "LOS201-22",
+        "LOS201-86"
+      ],
+      "reasonVi": "Mục đích cross-development và nhận diện ví dụ toolchain."
+    },
+    {
+      "ids": [
+        "LOS201-51",
+        "LOS201-89"
+      ],
+      "reasonVi": "dmesg và nm là hai công cụ khác nhau."
+    },
+    {
+      "ids": [
+        "LOS201-196",
+        "LOS201-203"
+      ],
+      "reasonVi": "Mục cha và mục hiện tại khác nhau."
+    },
+    {
+      "ids": [
+        "LOS201-99",
+        "LOS201-149"
+      ],
+      "reasonVi": "Chuỗi fork+exec và tác dụng riêng của exec."
+    },
+    {
+      "ids": [
+        "LOS201-160",
+        "LOS201-161"
+      ],
+      "reasonVi": "Loại mapping cụ thể và cơ chế IPC tổng quát."
+    },
+    {
+      "ids": [
+        "LOS201-93",
+        "LOS201-94"
+      ],
+      "reasonVi": "Vai trò arch/ và tên thư mục ARM cụ thể."
+    }
+  ]
+}

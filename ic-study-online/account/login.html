@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eef3f2">
+  <title>Đăng nhập · IC Study</title>
+  <link rel="stylesheet" href="/account/login.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <section class="login-landscape" aria-label="Giới thiệu IC Study">
+      <div class="login-brand"><span aria-hidden="true">IC</span> IC Study</div>
+      <div class="login-intro">
+        <h2>Ôn tập và thi thử</h2>
+        <p>753 câu hỏi thuộc 4 môn. Tiếp tục học trên mọi thiết bị với cùng một tài khoản.</p>
+      </div>
+    </section>
+    <section class="login-content" aria-labelledby="login-title">
+      <h1 id="login-title">Đăng nhập</h1>
+      <p class="login-description">Sử dụng thông tin đăng nhập do quản trị viên cấp.</p>
+      <form id="login">
+        <label for="username">Tên đăng nhập</label>
+        <input id="username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="80" required>
+        <label for="password">Mật khẩu</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" maxlength="128" required>
+        <p class="login-error" id="error" role="alert"></p>
+        <button type="submit">Đăng nhập <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="login-help">Quên mật khẩu hoặc chưa có tài khoản? Liên hệ quản trị viên để được hỗ trợ.</p>
+    </section>
+  </main>
+  <script src="/account/login.js"></script>
+</body>
+</html>

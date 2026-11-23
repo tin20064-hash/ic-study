@@ -1,0 +1,9 @@
+{
+  "source": "IC_Study_Anime.html",
+  "source_sha256": "5e70cf57bdbaa8f297889dee95a377cd527b7d49ac9c838641174440343d08c0",
+  "questions": 959,
+  "assets": 1852,
+  "index_bytes": 638781,
+  "max_asset_bytes": 133270,
+  "transformation": "Embedded image URLs extracted; all other source preserved exactly."
+}

@@ -1,0 +1,950 @@
+{
+  "DGT302": {
+    "core": {
+      "sampling": {
+        "example": "Tín hiệu thông thấp đến 3 kHz có tốc độ Nyquist 6 kHz. Lấy mẫu ở 8 kHz cho tần số Nyquist của bộ lấy mẫu là 4 kHz.",
+        "ids": [
+          "DGT302-536",
+          "DGT302-557",
+          "DGT302-558",
+          "DGT302-771"
+        ],
+        "formula": "Tín hiệu thông thấp: fs > 2fmax là điều kiện chọn an toàn; tần số Nyquist = fs/2"
+      },
+      "lti": {
+        "example": "Với h[n]=(1/2)ⁿu[n], đáp ứng xung bằng 0 trước n=0 và tổng |h[n]| bằng 2. Hệ nhân quả và ổn định BIBO.",
+        "ids": [
+          "DGT302-501",
+          "DGT302-517",
+          "DGT302-554",
+          "DGT302-612",
+          "DGT302-762"
+        ]
+      },
+      "roc": {
+        "example": "x[n]=10ⁿu[n−2] ⇒ X(z)=100z⁻²/(1−10z⁻¹), ROC |z|>10. Viết tổng bắt đầu tại n=2 để giữ đúng thừa số đầu.",
+        "ids": [
+          "DGT302-533",
+          "DGT302-542",
+          "DGT302-552",
+          "DGT302-555"
+        ],
+        "formula": "H(e^(jω)) = H(z) tại z=e^(jω), nếu ROC chứa vòng tròn đơn vị"
+      },
+      "dft": {
+        "example": "Với x=[1,0,0,0], DFT cho X=[1,1,1,1]. Năng lượng hai phía đều là 1 sau khi chia tổng bình phương phổ cho 4.",
+        "ids": [
+          "DGT302-508",
+          "DGT302-519",
+          "DGT302-521",
+          "DGT302-535"
+        ]
+      },
+      "convolution": {
+        "example": "Hai chuỗi dài 3 và 5 cho tích chập tuyến tính dài 7. Nếu dùng FFT radix-2, có thể chọn N=8 rồi đệm zero cho cả hai chuỗi.",
+        "ids": [
+          "DGT302-512",
+          "DGT302-529",
+          "DGT302-549",
+          "DGT302-589"
+        ]
+      },
+      "fft": {
+        "example": "FFT radix-2 N=16 có 4 tầng, 8 butterfly mỗi tầng. Theo phép đếm chuẩn, có 32 phép nhân và 64 phép cộng phức, kể cả nhân với twiddle tầm thường.",
+        "ids": [
+          "DGT302-513",
+          "DGT302-518",
+          "DGT302-598",
+          "DGT302-599"
+        ]
+      },
+      "filters": {
+        "example": "Một IIR bậc 6 có thể hiện thực bằng ba khối bậc hai nối tiếp. Sau lượng tử hóa, kiểm tra lại cực của từng khối.",
+        "ids": [
+          "DGT302-502",
+          "DGT302-562",
+          "DGT302-593",
+          "DGT302-752"
+        ],
+        "note": "FIR có đáp ứng xung hữu hạn. IIR có đáp ứng xung vô hạn và thường dùng hồi tiếp. Direct Form II chuẩn dùng max(M,N) phần tử trễ với bậc tử M, bậc mẫu N. IIR bậc cao nên chia thành các khối bậc hai để giảm nhạy với lượng tử hóa."
+      },
+      "window": {
+        "example": "Phân tích một âm ngắn bằng STFT: cửa sổ ngắn định vị thời điểm tốt hơn. Muốn phân biệt hai tone sát nhau, tăng thời lượng cửa sổ nếu tín hiệu đủ ổn định.",
+        "ids": [
+          "DGT302-504",
+          "DGT302-511",
+          "DGT302-547",
+          "DGT302-731"
+        ]
+      },
+      "multirate": {
+        "example": "x=[3,5,7,9,11] với chỉ số bắt đầu từ 0. Downsample D=2 lấy các mẫu 0, 2, 4, được y=[3,7,11].",
+        "ids": [
+          "DGT302-516",
+          "DGT302-578",
+          "DGT302-580",
+          "DGT302-581"
+        ]
+      },
+      "prediction": {
+        "example": "Dự đoán x[n] từ x[n−1] dùng quá khứ của chính x. Ước lượng tín hiệu sạch d[n] từ phép đo nhiễu x[n] là bài toán lọc Wiener khi tối ưu MSE.",
+        "ids": [
+          "DGT302-506",
+          "DGT302-567",
+          "DGT302-603",
+          "DGT302-629"
+        ]
+      }
+    },
+    "extra": [
+      {
+        "id": "fourier-properties",
+        "title": "Dịch phổ, đạo hàm và đối xứng",
+        "formula": "x[n]·exp(jω₀n) ↔ X(ω−ω₀)\nn·x[n] ↔ j·dX(ω)/dω\nx[n] thực ⇒ X(−ω) = X*(ω)",
+        "note": "Với DFT, nhân cos có tần số đúng bin k₀ tạo hai bản phổ dịch ±k₀, mỗi bản nhân 1/2. Chỉ số DFT tính theo modulo N. Dãy thực có biên độ phổ chẵn và pha lẻ theo modulo 2π ở những điểm phổ khác 0.",
+        "tip": "Thấy n đứng ngoài x[n] thì lấy đạo hàm theo ω. Thấy cos thì tách thành hai hàm mũ trước khi dịch phổ.",
+        "example": "N = 8, k₀ = 2. Sau khi nhân cos, bin 1 bằng [X[7] + X[3]]/2 vì 1−2 = −1 ≡ 7 (mod 8).",
+        "ids": [
+          "DGT302-510",
+          "DGT302-519",
+          "DGT302-574",
+          "DGT302-575",
+          "DGT302-576",
+          "DGT302-577"
+        ]
+      },
+      {
+        "id": "block-convolution",
+        "title": "Chập từng khối bằng Overlap-Save",
+        "formula": "M = số hệ số FIR, N ≥ M là chiều dài FFT\nSố mẫu mới mỗi khối = N−M+1\nBỏ M−1 mẫu đầu của IFFT, giữ N−M+1 mẫu cuối",
+        "note": "Mỗi khối N mẫu chứa M−1 mẫu cuối của khối trước và N−M+1 mẫu mới. Chập vòng qua FFT làm các mẫu đầu bị cuộn chồng. Overlap-Save chuẩn ghép trực tiếp phần hợp lệ của từng khối.",
+        "tip": "Thấy “discard first” thì tính M−1. Nhân thêm cửa sổ Hamming vào từng khối sẽ thay đổi trọng số mẫu và có thể làm biên độ đầu ra dao động.",
+        "example": "FIR dài 5 mẫu, FFT dài 16. Lặp 4 mẫu cũ, lấy 12 mẫu mới rồi bỏ 4 mẫu đầu của IFFT.",
+        "ids": [
+          "DGT302-512",
+          "DGT302-610",
+          "DGT302-636",
+          "DGT302-735"
+        ]
+      },
+      {
+        "id": "notch-inversion",
+        "title": "Đặt zero để lọc notch và đọc bộ nghịch đảo",
+        "formula": "ω₀ = 2πf₀/fs\nNotch hệ số thực tại ±ω₀ ⇒ zero ở z = exp(±jω₀)\nH_inv(z) = 1/H(z) ⇒ zero của H thành pole của H_inv",
+        "note": "Đặt zero trên vòng đơn vị để H bằng 0 đúng tần số cần loại. Bộ nghịch đảo cần H khác 0 trên dải cần khôi phục. Nếu |H| rất nhỏ, |1/H| rất lớn và làm nhiễu mạnh lên.",
+        "tip": "Đề hỏi vị trí notch thì tìm góc ±ω₀ và bán kính 1. Đề hỏi nhiễu sau nghịch đảo thì kiểm tra những tần số có |H| nhỏ.",
+        "example": "Triệt nhiễu 60 Hz khi fs = 480 Hz. ω₀ = π/4 nên đặt cặp zero ở exp(±jπ/4).",
+        "ids": [
+          "DGT302-537",
+          "DGT302-540",
+          "DGT302-713",
+          "DGT302-743",
+          "DGT302-779"
+        ]
+      },
+      {
+        "id": "bilinear-design",
+        "title": "Bilinear và bù méo tần số",
+        "formula": "s = (2/T)·(1−z⁻¹)/(1+z⁻¹), T = 1/fs\nΩ = (2/T)·tan(ω/2)\nω tính bằng rad/mẫu, Ω tính bằng rad/s",
+        "note": "Bilinear đưa nửa trái mặt phẳng s vào bên trong vòng đơn vị và làm méo trục tần số. Tính trước Ω từ cạnh dải số mong muốn rồi dùng Ω để thiết kế bộ lọc tương tự. Ở cùng bậc, Chebyshev I thường chuyển dải sắc hơn Butterworth và có ripple trong dải thông.",
+        "tip": "Thấy “pre-warp” thì đổi cạnh dải số sang tương tự trước. “Passband ripple” là dấu hiệu của Chebyshev I trong cặp so sánh này.",
+        "example": "Cạnh dải số ωc = π/2 tương ứng Ωc = (2/T)·tan(π/4) = 2/T.",
+        "ids": [
+          "DGT302-595",
+          "DGT302-621",
+          "DGT302-712",
+          "DGT302-750"
+        ]
+      },
+      {
+        "id": "multirate-calculation",
+        "title": "Tính cutoff, gain và phổ sau giảm mẫu",
+        "formula": "Đổi I/D qua bộ lọc ở tốc độ I·fs ⇒ ωc = π/max(I,D), gain DC = I\nVới y[m] = x[2m], Y(ω) = ½[X(ω/2) + X(ω/2−π)]",
+        "note": "Cutoff lý tưởng tính ở lưới sau khi chèn zero, nơi Nyquist ứng với π. Giảm mẫu làm các bản sao phổ có thể chồng lên nhau. Polyphase bỏ các phép tính có mẫu chèn bằng 0 hoặc kết quả sẽ bị decimator bỏ.",
+        "tip": "Nếu đề chuẩn hóa theo Nyquist, chia ωc cho π. Gain lấy hệ số tăng mẫu I. Với D=2, đối số phổ đầu tiên là ω/2.",
+        "example": "Đổi tốc độ 3/4. Tăng 3, lọc rồi giảm 4. Cutoff chuẩn hóa theo Nyquist của tốc độ trung gian bằng 1/4 và gain DC bằng 3.",
+        "ids": [
+          "DGT302-516",
+          "DGT302-579",
+          "DGT302-580",
+          "DGT302-581",
+          "DGT302-756"
+        ]
+      },
+      {
+        "id": "adc-quantization",
+        "title": "ADC, số bit và nhiễu trong dải",
+        "formula": "ADC lý tưởng đều B bit có 2^B mức, Δ = dải toàn thang/2^B\nMô hình lỗi lượng tử đều ⇒ σ²ₑ ≈ Δ²/12",
+        "note": "Sampling lấy mẫu theo thời gian, holding giữ mức trong lúc chuyển đổi, quantization chọn mức biên độ. SAR thử từng bit từ MSB xuống LSB. Nếu nhiễu lượng tử trải đều và dải tín hiệu cố định, oversampling rồi lọc thấp giảm phần nhiễu nằm trong dải cần giữ.",
+        "tip": "“One bit at a time” gợi SAR. Đề giữ fs và tăng số bit thì xét bước lượng tử Δ và SNR lượng tử.",
+        "example": "Cùng toàn thang, tăng từ 8 lên 10 bit làm Δ giảm 4 lần và công suất lỗi lượng tử lý tưởng giảm 16 lần.",
+        "ids": [
+          "DGT302-509",
+          "DGT302-520",
+          "DGT302-645",
+          "DGT302-716",
+          "DGT302-724",
+          "DGT302-771"
+        ]
+      },
+      {
+        "id": "fixed-point",
+        "title": "Fixed-point, tràn FFT và dịch cực IIR",
+        "formula": "Dịch phải 1 bit ⇒ giảm biên độ xấp xỉ 2 lần\nCắt LSB kiểu floor và e = giá trị lượng tử − giá trị thật ⇒ e ≤ 0 khi không tràn",
+        "note": "Tổng ở butterfly có thể cần thêm bit. Dùng bit dự phòng hoặc giảm thang trước khi kết quả vượt dải lưu trữ. Làm tròn hệ số IIR dịch chuyển cực và zero. Với IIR nhân quả, kiểm tra lại mọi cực sau lượng tử hóa.",
+        "tip": "“Butterfly + fixed-point” gợi tràn số. “Coefficient quantization + IIR” gợi cực dịch chuyển và có thể mất ổn định.",
+        "example": "Số nguyên có dấu 8 bit biểu diễn đến 127. Tổng 100 + 70 = 170 cần thêm bit. Tính bằng thanh ghi rộng rồi chia 2 cho kết quả 85.",
+        "ids": [
+          "DGT302-502",
+          "DGT302-564",
+          "DGT302-749",
+          "DGT302-761",
+          "DGT302-783"
+        ]
+      },
+      {
+        "id": "wiener-correlation",
+        "title": "Tương quan, sai số trực giao và Wiener",
+        "formula": "Wiener FIR với tín hiệu thực: Rxx·w = rxd\nRxx = E[x·xᵀ], rxd = E[x·d], với x là vectơ mẫu vào và d là tín hiệu đích\nỞ nghiệm tối ưu, E[x·e] = 0 với e = d−wᵀx",
+        "note": "Rxx chứa tự tương quan của đầu vào. Vế phải dùng tương quan chéo với tín hiệu đích. Yule–Walker dùng tự tương quan để tìm hệ số mô hình AR. Đỉnh tương quan chéo thường chỉ độ trễ khớp nhất theo quy ước dịch đang dùng.",
+        "tip": "“Desired signal” gợi tương quan chéo ở vế phải. “Orthogonality” nghĩa là sai số không tương quan với từng mẫu đã dùng để dự đoán.",
+        "example": "Một hệ số, E[x²] = 4 và E[xd] = 2. Giải 4w = 2 được w = 0,5.",
+        "ids": [
+          "DGT302-567",
+          "DGT302-588",
+          "DGT302-622",
+          "DGT302-640",
+          "DGT302-753"
+        ]
+      }
+    ],
+    "refs": [
+      [
+        "Julius O. Smith · Tính chất DTFT",
+        "https://www.dsprelated.com/freebooks/sasp/Fourier_Theorems_DTFT.html"
+      ],
+      [
+        "MathWorks · Overlap-Add và Overlap-Save",
+        "https://uk.mathworks.com/help/dsp/ug/overlap-add-save.html"
+      ],
+      [
+        "SciPy · Biến đổi bilinear",
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.bilinear.html"
+      ]
+    ]
+  },
+  "COS201": {
+    "core": {
+      "system": {
+        "example": "Nén nguồn bằng Huffman, sau đó thêm mã sửa lỗi trước điều chế. Hai bước có mục đích khác nhau dù cùng tác động lên số bit.",
+        "ids": [
+          "COS201-854",
+          "COS201-856",
+          "COS201-886"
+        ]
+      },
+      "pcm": {
+        "example": "Hai kênh, 48 kHz mỗi kênh, 16 bit/mẫu ⇒ Rb=2×48.000×16=1,536 Mbit/s, chưa tính phần phụ.",
+        "ids": [
+          "COS201-805",
+          "COS201-810",
+          "COS201-811",
+          "COS201-962"
+        ],
+        "formula": "L = 2^b; Rb = Nch·b·fs (cùng fs và b mỗi kênh, chưa tính phần phụ)\nSQNR ≈ 6,02b + 1,76 dB (sin toàn thang, lượng tử đều lý tưởng)"
+      },
+      "am": {
+        "example": "Một tone 5 kHz điều chế AM quanh sóng mang 100 kHz tạo hai biên tại 95 và 105 kHz. Khi μ=1, tổng công suất hai biên chiếm 1/3.",
+        "ids": [
+          "COS201-860",
+          "COS201-866",
+          "COS201-874",
+          "COS201-877"
+        ],
+        "formula": "AM thông thường: B = 2W\nVới bản tin một tone: η = μ²/(2+μ²); μ=1 ⇒ η=1/3",
+        "note": "Với bản tin một tone và μ=1, sóng mang chiếm 2/3 tổng công suất, hai dải biên chiếm 1/3. Tách đường bao cần tránh quá điều chế."
+      },
+      "sidebands": {
+        "example": "Bản tin giới hạn ở W=4 kHz: DSB-SC rộng 8 kHz, SSB rộng 4 kHz. DSB-SC cần tham chiếu sóng mang phù hợp khi thu.",
+        "ids": [
+          "COS201-825",
+          "COS201-851",
+          "COS201-861",
+          "COS201-868"
+        ]
+      },
+      "fm": {
+        "example": "FM một tone 5 kHz với Δf=75 kHz cho β=15 và băng thông Carson xấp xỉ 160 kHz.",
+        "ids": [
+          "COS201-803",
+          "COS201-838",
+          "COS201-842",
+          "COS201-895"
+        ],
+        "formula": "FM một tone: β = Δf/fm; bản tin băng W: tỉ số độ lệch = Δf/W\nCarson: B ≈ 2(Δf + W)",
+        "tip": "Tính băng thông Carson từ độ lệch tần số cực đại Δf và tần số cao nhất W của bản tin. Dùng cùng đơn vị trước khi cộng."
+      },
+      "digital": {
+        "example": "16-QAM mang 4 bit/ký hiệu. Với 240 kbit/s ở đầu vào bộ điều chế, tốc độ ký hiệu là 60 kbaud.",
+        "ids": [
+          "COS201-821",
+          "COS201-887",
+          "COS201-973",
+          "COS201-1006"
+        ]
+      },
+      "detection": {
+        "example": "Với mẫu xung chữ nhật trong khoảng [0,T], bộ tương quan nhân với xung mẫu rồi tích phân trên [0,T]. Giá trị tại T là thống kê dùng để quyết định.",
+        "ids": [
+          "COS201-807",
+          "COS201-832"
+        ]
+      },
+      "noise": {
+        "example": "Nếu xung của ký hiệu trước vẫn có giá trị tại thời điểm lấy mẫu ký hiệu hiện tại, nó tạo ISI ngay cả khi kênh không có nhiễu ngẫu nhiên.",
+        "ids": [
+          "COS201-802",
+          "COS201-823",
+          "COS201-837",
+          "COS201-974"
+        ]
+      },
+      "information": {
+        "example": "Hai ký hiệu đồng xác suất có entropy 1 bit/ký hiệu. Bốn ký hiệu đồng xác suất có entropy 2 bit/ký hiệu và Huffman cho từ mã dài 2 bit.",
+        "ids": [
+          "COS201-801",
+          "COS201-815",
+          "COS201-964",
+          "COS201-998"
+        ]
+      },
+      "random": {
+        "example": "X đều trên [0,2] ⇒ mật độ là 1/2 trong khoảng này. F(1,5)=1,5/2=0,75, còn P(X=1,5)=0.",
+        "ids": [
+          "COS201-831",
+          "COS201-843",
+          "COS201-904",
+          "COS201-926",
+          "COS201-930"
+        ],
+        "formula": "CDF: F(x) = P(X ≤ x)\nBiến tuyệt đối liên tục: f(x) = F′(x) tại các điểm khả vi\n−1 ≤ hệ số tương quan ≤ 1 khi hệ số xác định"
+      }
+    },
+    "extra": [
+      {
+        "id": "delta-modulation",
+        "title": "Delta Modulation và bộ ADC sigma-delta",
+        "formula": "DM bước cố định: Tₛ = 1/fₛ, độ dốc bám tối đa = Δ/Tₛ = Δfₛ. Với sin biên độ A và tần số fₘ, độ dốc lớn nhất là 2πfₘA.",
+        "note": "DM gửi 1 bit biểu thị dấu sai lệch so với mẫu dự đoán để tăng hoặc giảm bậc thang. Tín hiệu dốc hơn mức bám gây slope overload. Bước Δ lớn trên đoạn biến thiên chậm làm bậc thang dao động và sinh granular noise. ADC sigma-delta lấy mẫu nhanh, đẩy nhiễu lượng tử ra ngoài dải quan tâm rồi lọc trước khi giảm tốc độ mẫu.",
+        "tip": "Gặp độ dốc, so |dx/dt| với Δfₛ. Gặp dao động quanh đoạn gần phẳng, xét bước Δ có quá lớn. Gặp noise shaping, tìm bộ lọc số và decimation.",
+        "example": "Δ = 0,1 V và fₛ = 10 kHz cho mức bám 1000 V/s. Đoạn có độ dốc 1500 V/s gây slope overload. Tăng fₛ lên 20 kHz với cùng Δ cho mức bám 2000 V/s.",
+        "ids": [
+          "COS201-812",
+          "COS201-849",
+          "COS201-898",
+          "COS201-941",
+          "COS201-965"
+        ]
+      },
+      {
+        "id": "fm-receiver-noise",
+        "title": "Nhiễu ở bộ thu FM và de-emphasis",
+        "formula": "FM trên ngưỡng, nhiễu trắng ở đầu vào: PSD nhiễu sau bộ phân biệt tần số tỉ lệ f². Công suất nhiễu trong dải |f| ≤ W trước de-emphasis tỉ lệ W³.",
+        "note": "Bộ limiter giảm dao động biên độ trước khi discriminator đổi độ lệch tần số thành điện áp. Để giảm nhiễu cao tần sau giải điều chế, máy phát nâng trước các thành phần cao tần và máy thu hạ lại bằng de-emphasis.",
+        "tip": "Đề hỏi nhiễu tại một tần số thì dùng f². Đề hỏi tổng công suất nhiễu trong dải âm tần thì tích phân f² theo tần số, cho W³.",
+        "example": "Tăng W từ 5 lên 10 kHz, giữ nguyên các hệ số của mô hình. Công suất nhiễu trước de-emphasis tăng (10/5)³ = 8 lần.",
+        "ids": [
+          "COS201-816",
+          "COS201-835",
+          "COS201-905",
+          "COS201-912",
+          "COS201-935"
+        ]
+      },
+      {
+        "id": "carrier-phase-recovery",
+        "title": "Mixer, lệch pha sóng mang và PLL",
+        "formula": "Mixer lý tưởng nhân hai sóng sin tạo f₁ + f₂ và |f₁ − f₂|. Với DSB-SC một nhánh, bộ nhân thu chuẩn hóa rồi lọc thông thấp cho m(t)cos φ, trong đó φ là lệch pha sóng mang.",
+        "note": "Trong bộ thu I/Q, lệch pha làm xoay cặp I và Q. PLL khóa khi sai lệch pha duy trì ổn định, có thể khác 0. Costas loop giúp khôi phục tham chiếu sóng mang cho DSB-SC.",
+        "tip": "Gặp lệch pha trong DSB-SC một nhánh, lấy cos φ. Gặp lệch pha trong bộ thu hai nhánh I/Q, xét phép xoay làm trộn I và Q.",
+        "example": "Mixer nhân hai sóng 105 MHz và 100 MHz cho 205 MHz và 5 MHz. Với DSB-SC, lệch pha 60° làm phần tín hiệu sau lọc còn 0,5m(t), còn lệch 90° làm phần này bằng 0.",
+        "ids": [
+          "COS201-806",
+          "COS201-808",
+          "COS201-851",
+          "COS201-868",
+          "COS201-982"
+        ]
+      },
+      {
+        "id": "ofdm-equalization",
+        "title": "OFDM, khoảng cách sóng mang và cân bằng",
+        "formula": "Δf = 1/Tᵤ, với Tᵤ là thời gian hữu ích của ký hiệu OFDM. Sau FFT, Yₖ = HₖXₖ + Nₖ. Zero-forcing cho X̂ₖ = Yₖ/Hₖ khi Hₖ ≠ 0.",
+        "note": "IFFT ở máy phát ghép các sóng mang con và FFT ở máy thu tách chúng. Khi đồng bộ phù hợp và cyclic prefix đủ dài so với độ trải trễ, mỗi sóng mang con có thể được cân bằng riêng. Lệch tần số phá trực giao và gây nhiễu giữa các sóng mang (ICI).",
+        "tip": "Khi tính Δf, lấy Tᵤ sau khi bỏ thời gian cyclic prefix. Khi chia cho Hₖ nhỏ, cả nhiễu trên sóng mang đó cũng bị khuếch đại.",
+        "example": "Tᵤ = 64 μs cho Δf = 15,625 kHz. Với Yₖ = 1 và Hₖ = 0,5 trong ví dụ không nhiễu, chia Yₖ/Hₖ được X̂ₖ = 2.",
+        "ids": [
+          "COS201-817",
+          "COS201-833",
+          "COS201-847",
+          "COS201-883",
+          "COS201-979",
+          "COS201-1000"
+        ]
+      },
+      {
+        "id": "nyquist-eye",
+        "title": "Giới hạn zero-ISI và cách đọc biểu đồ mắt",
+        "formula": "Với kênh baseband lý tưởng và tốc độ ký hiệu Rₛ, điều kiện băng thông một phía để có thể truyền zero-ISI là B ≥ Rₛ/2.",
+        "note": "ISI là ảnh hưởng của ký hiệu lân cận tại thời điểm lấy mẫu. Bộ cân bằng có thể giảm ISI do méo kênh. Chiều cao phần mở của mắt cho biết biên độ dự trữ, còn chiều rộng cho biết dung sai thời điểm lấy mẫu.",
+        "tip": "Đề cho tốc độ bit, đổi sang tốc độ ký hiệu trước khi tính Rₛ/2. Nếu hình mắt khép lại hoặc điểm lấy mẫu lệch tâm, biên quyết định giảm.",
+        "example": "Bộ điều chế 16-QAM nhận 400 kbit/s. Mỗi ký hiệu mang 4 bit nên Rₛ = 100 kbaud. Giới hạn baseband một phía là 50 kHz, vì vậy băng thông 40 kHz không đủ để đạt zero-ISI ở tốc độ đó.",
+        "ids": [
+          "COS201-823",
+          "COS201-974",
+          "COS201-977",
+          "COS201-1001",
+          "COS201-1011"
+        ]
+      },
+      {
+        "id": "ber-comparison",
+        "title": "So BER của BPSK và BFSK",
+        "formula": "Trong AWGN, thu đồng bộ và hai bit đồng xác suất: BPSK đối cực có Pᵦ = Q(√(2Eᵦ/N₀)), BFSK trực giao có Pᵦ = Q(√(Eᵦ/N₀)).",
+        "note": "Hàm Q giảm khi đối số tăng. Cùng Eᵦ/N₀, hai tín hiệu đối cực của BPSK có khoảng cách lớn hơn hai tín hiệu trực giao của BFSK. Với hai mức ±A đồng xác suất và nhiễu Gaussian đối xứng, ngưỡng quyết định tối ưu là 0.",
+        "tip": "Đề hỏi cùng BER, đặt hai đối số của Q bằng nhau. Nhân đôi Eᵦ/N₀ tương ứng tăng khoảng 3 dB.",
+        "example": "BPSK ở Eᵦ/N₀ = 4 cho Pᵦ = Q(√8). BFSK trực giao cần Eᵦ/N₀ = 8 để cho cùng Pᵦ. Chênh lệch là 10log₁₀(8/4) ≈ 3 dB.",
+        "ids": [
+          "COS201-802",
+          "COS201-827",
+          "COS201-975",
+          "COS201-991",
+          "COS201-995",
+          "COS201-1007"
+        ]
+      },
+      {
+        "id": "block-code-distance",
+        "title": "Mã khối, syndrome và khoảng cách Hamming",
+        "formula": "Mã (n,k): R = k/n. Với khoảng cách tối thiểu dₘᵢₙ, bảo đảm phát hiện đến dₘᵢₙ−1 lỗi hoặc sửa đến ⌊(dₘᵢₙ−1)/2⌋ lỗi.",
+        "note": "Với mã tuyến tính nhị phân, syndrome s = Hrᵀ được tính modulo 2 từ ma trận kiểm tra H và từ nhận r. Syndrome bằng 0 nghĩa là r thỏa các kiểm tra của mã. Nếu lỗi biến từ đã gửi thành một từ mã khác, kiểm tra này sẽ bỏ sót lỗi.",
+        "tip": "Phân biệt số lỗi phát hiện và số lỗi sửa. Khi dₘᵢₙ tăng từ 3 lên 4, số lỗi sửa bảo đảm vẫn là 1 vì có phép lấy phần nguyên.",
+        "example": "Mã lặp 3 có hai từ mã 000 và 111, tốc độ 1/3 và dₘᵢₙ = 3. Nhận 010 thì sửa về 000 theo đa số. Nếu 000 bị lật cả ba bit thành 111, syndrome vẫn bằng 0.",
+        "ids": [
+          "COS201-800",
+          "COS201-966",
+          "COS201-992",
+          "COS201-1008",
+          "COS201-1009"
+        ]
+      },
+      {
+        "id": "mutual-information",
+        "title": "Thông tin tương hỗ và dung lượng kênh",
+        "formula": "I(X;Y) = H(X) − H(X|Y). Dung lượng kênh rời rạc không nhớ C = max I(X;Y) trên các phân bố đầu vào, tính theo bit/lần dùng kênh.",
+        "note": "H(X) đo độ bất định của nguồn và H(X|Y) đo phần bất định còn lại sau khi quan sát đầu ra. Phân bố đầu vào tối ưu phụ thuộc kênh. Với kênh nhị phân đối xứng, hai bit đầu vào đồng xác suất đạt dung lượng.",
+        "tip": "Gặp câu hỏi nhiễu làm giảm thông tin qua kênh, xét phần bất định H(X|Y) tăng. Gặp dung lượng, tìm phép tối đa hóa theo phân bố đầu vào.",
+        "example": "Kênh nhị phân đối xứng có xác suất lật p = 0,1. Với đầu vào đồng xác suất, H(X) = 1 và H(X|Y) = −0,1log₂0,1 − 0,9log₂0,9 ≈ 0,469. Dung lượng là khoảng 0,531 bit/lần dùng kênh.",
+        "ids": [
+          "COS201-984",
+          "COS201-987",
+          "COS201-994",
+          "COS201-1012"
+        ]
+      }
+    ],
+    "refs": [
+      [
+        "MIT OCW · Truyền thông số",
+        "https://ocw.mit.edu/courses/6-451-principles-of-digital-communication-ii-spring-2005/"
+      ],
+      [
+        "MathWorks · Điều chế OFDM",
+        "https://www.mathworks.com/help/comm/ref/comm.ofdmmodulator-system-object.html"
+      ],
+      [
+        "UCCS · Bộ thu và nhiễu FM",
+        "https://faculty.uccs.edu/mwickert/wp-content/uploads/sites/58/2024/10/N5625_4.pdf"
+      ]
+    ]
+  },
+  "LOS201": {
+    "core": {
+      "boot": {
+        "example": "U-Boot tải kernel và DTB qua TFTP, sau đó kernel có thể mount root filesystem qua NFS. TFTP và NFS phục vụ hai bước khác nhau.",
+        "ids": [
+          "LOS201-46",
+          "LOS201-47",
+          "LOS201-71",
+          "LOS201-72"
+        ]
+      },
+      "process": {
+        "example": "Shell gọi fork(), tiến trình con gọi execve() để chạy ls, tiến trình cha có thể waitpid() để đợi con. PID của tiến trình con giữ nguyên khi execve() thành công.",
+        "ids": [
+          "LOS201-41",
+          "LOS201-99",
+          "LOS201-145",
+          "LOS201-149"
+        ]
+      },
+      "segments": {
+        "example": "Theo bố trí ELF thông thường, static int a=7 nằm ở data, static int b=0 ở BSS. Dữ liệu malloc() có vùng cấp phát động, có thể do heap hoặc mmap cấp.",
+        "ids": [
+          "LOS201-45",
+          "LOS201-63",
+          "LOS201-118",
+          "LOS201-124"
+        ],
+        "formula": "Text: mã máy · Data: biến tĩnh/toàn cục ghi được, khởi tạo khác 0 · BSS: biến tĩnh/toàn cục zero hoặc chưa khởi tạo",
+        "note": "Vùng cấp phát động có thể do heap hoặc mmap cấp. Stack thường chứa frame hàm và biến tự động, tùy tối ưu của trình biên dịch. Text thường chỉ đọc. Bộ nhớ ảo giúp cách ly process."
+      },
+      "permissions": {
+        "example": "Có quyền x nhưng thiếu r trên thư mục: vẫn có thể truy cập một mục biết tên nếu các quyền còn lại cho phép, nhưng không liệt kê được tên các mục.",
+        "ids": [
+          "LOS201-150",
+          "LOS201-153",
+          "LOS201-168",
+          "LOS201-177"
+        ]
+      },
+      "driver": {
+        "example": "Driver đã nạp nhưng open() trả EACCES: kiểm tra quyền truy cập và quyền đi qua các thư mục. Nếu node chưa tồn tại, kiểm tra cơ chế tạo node và cặp major/minor.",
+        "ids": [
+          "LOS201-15",
+          "LOS201-28",
+          "LOS201-83",
+          "LOS201-85"
+        ]
+      },
+      "memory": {
+        "example": "Hai process cùng dùng chung 20 MiB và mỗi process có 10 MiB riêng. RSS mỗi process là 30 MiB, PSS là 20 MiB và USS là 10 MiB.",
+        "ids": [
+          "LOS201-13",
+          "LOS201-14"
+        ]
+      },
+      "filesystem": {
+        "example": "Một hệ nhúng có thể dùng SquashFS cho rootfs ít thay đổi, còn /tmp đặt trên tmpfs cho dữ liệu tạm.",
+        "ids": [
+          "LOS201-91",
+          "LOS201-92",
+          "LOS201-108",
+          "LOS201-109"
+        ]
+      },
+      "ipc": {
+        "example": "Hai tiến trình trên các máy khác nhau có thể gửi dữ liệu qua socket TCP. Hai tiến trình cùng máy truyền khối lớn có thể dùng shared memory và đồng bộ bằng mutex chia sẻ.",
+        "ids": [
+          "LOS201-64",
+          "LOS201-130",
+          "LOS201-151",
+          "LOS201-161",
+          "LOS201-183"
+        ]
+      },
+      "tools": {
+        "example": "Build chương trình ARM trên máy x86 bằng cross compiler. Trên target chạy gdbserver, rồi kết nối từ GDB trên máy phát triển với bản chương trình có symbol.",
+        "ids": [
+          "LOS201-22",
+          "LOS201-51",
+          "LOS201-86",
+          "LOS201-89",
+          "LOS201-90",
+          "LOS201-107"
+        ]
+      },
+      "standards": {
+        "example": "pthread_create() là API POSIX. Một lời gọi thư viện như malloc() có thể phục vụ từ vùng nhớ đã có mà không gọi kernel ở mọi lần.",
+        "ids": [
+          "LOS201-42",
+          "LOS201-117",
+          "LOS201-119",
+          "LOS201-138"
+        ]
+      }
+    },
+    "extra": [
+      {
+        "id": "yocto",
+        "title": "Yocto và BitBake",
+        "formula": "BBLAYERS → layer tham gia build · IMAGE_INSTALL → gói có trong image · populate_sdk → SDK",
+        "note": "BSP chứa cấu hình bo mạch và phần hỗ trợ phần cứng. BitBake báo lỗi khi tệp khai báo bằng require bị thiếu. Với Yocto 3.4 trở lên, IMAGE_INSTALL:append = \" strace\" thêm gói strace vào image. Bản cũ dùng IMAGE_INSTALL_append.",
+        "tip": "Thấy «thêm layer» thì tìm conf/bblayers.conf. Thấy «gói có sẵn khi khởi động» thì tìm IMAGE_INSTALL. Thấy «toolchain và sysroot cho máy phát triển» thì chọn tác vụ populate_sdk.",
+        "example": "Chạy bitbake -c populate_sdk core-image-minimal để tạo bộ cài SDK cho image core-image-minimal.",
+        "ids": [
+          "LOS201-35",
+          "LOS201-36",
+          "LOS201-37",
+          "LOS201-66",
+          "LOS201-79",
+          "LOS201-80"
+        ]
+      },
+      {
+        "id": "boot-diagnosis",
+        "title": "Chẩn đoán lỗi khởi động",
+        "formula": "Đã in log kernel → kernel đang chạy · VFS unable to mount root fs → kiểm tra root filesystem",
+        "note": "Với QEMU vexpress-a9, RAM bắt đầu ở 0x60000000. Địa chỉ nạp kernel, DTB và initramfs phải nằm trong RAM của bo đang dùng và các vùng phải tránh chồng nhau. Falcon Mode cho phép SPL khởi động thẳng kernel trên hệ thống đã cấu hình hỗ trợ.",
+        "tip": "Thấy «VFS unable to mount root fs» thì kiểm tra root=, driver lưu trữ hoặc initramfs. Nếu đã tải kernel qua TFTP và dùng root=/dev/nfs, kiểm tra tham số NFS, mạng và thư mục export trên máy chủ.",
+        "example": "Với vexpress-a9, bật hỗ trợ PL011 và PL011 console trong kernel, thêm console=ttyAMA0,115200 và dùng -nographic để xem log ở terminal. Nếu khởi động bằng initramfs, kiểm tra ảnh có /init chạy được.",
+        "ids": [
+          "LOS201-46",
+          "LOS201-48",
+          "LOS201-52",
+          "LOS201-54",
+          "LOS201-76",
+          "LOS201-96"
+        ]
+      },
+      {
+        "id": "busybox-init",
+        "title": "BusyBox và tiến trình init",
+        "formula": "Một binary → nhiều applet · sysinit chạy trước · askfirst đợi Enter",
+        "note": "BusyBox thường cung cấp shell ash. Nó chọn applet dựa trên tên lệnh gọi qua symlink hoặc đối số đầu tiên, với điều kiện applet đã được bật khi build. BusyBox init đọc /etc/inittab. Trường đầu chỉ định thiết bị đầu cuối nếu có. Trường trống dùng console mặc định.",
+        "tip": "Thấy «nhiều lệnh Unix trong một tệp nhỏ» thì nghĩ đến multi-call binary. Thấy script khởi tạo bắt buộc chạy xong trước các tác vụ khác thì chọn sysinit. Thấy shell chờ người dùng nhấn Enter thì chọn askfirst.",
+        "example": "busybox ls /dev gọi applet ls. Dòng ::sysinit:/etc/init.d/rcS chạy rcS lúc khởi tạo. Dòng ::askfirst:-/bin/sh mở login shell sau khi nhấn Enter.",
+        "ids": [
+          "LOS201-24",
+          "LOS201-25",
+          "LOS201-38",
+          "LOS201-39",
+          "LOS201-40",
+          "LOS201-74"
+        ]
+      },
+      {
+        "id": "kbuild-artifacts",
+        "title": "Kbuild và tệp sinh ra khi build kernel",
+        "formula": "obj-y → built-in · obj-m → module .ko · vmlinux → ELF kernel chưa nén",
+        "note": "Kbuild sinh include/generated/autoconf.h để mã C dùng các macro CONFIG_. Kbuild cũ gom các đối tượng built-in bằng built-in.o. Kbuild hiện đại dùng built-in.a. Tên vmlinuz thường chỉ ảnh kernel nén dùng để khởi động.",
+        "tip": "Thấy «ELF», «symbol» hoặc gỡ lỗi GDB thì chọn vmlinux. Thấy «nạp riêng lúc chạy» thì tìm tệp .ko. Câu hỏi nhắc đích danh drivers/built-in.o đang dùng tên theo Kbuild cũ.",
+        "example": "Dùng file vmlinux để kiểm tra định dạng ELF. Dùng nm vmlinux để xem bảng symbol khi tệp còn giữ symbol.",
+        "ids": [
+          "LOS201-60",
+          "LOS201-61",
+          "LOS201-62",
+          "LOS201-89",
+          "LOS201-95",
+          "LOS201-134"
+        ]
+      },
+      {
+        "id": "module-diagnostics",
+        "title": "Module, tham số và luồng gọi driver",
+        "formula": "modprobe → nạp module cùng phụ thuộc · insmod → nạp tệp .ko chỉ định",
+        "note": "module_param(debug_enable, int, 0) vẫn cho phép truyền tham số khi nạp module. Quyền 0 khiến tham số đó không hiện trong sysfs. Khi mở character device, major/minor xác định thiết bị đã đăng ký. VFS dùng file_operations để gọi thao tác của driver.",
+        "tip": "Thấy «dependency» hoặc cần nạp bằng tên module thì chọn modprobe. Nếu open() gây kernel panic, xem stack trace và phần mã mà driver thực sự chạy. Callback .open để NULL thường được VFS bỏ qua.",
+        "example": "Nếu demo_driver đã được cài và chưa nạp, chạy modprobe demo_driver debug_enable=1 để nạp cùng các phụ thuộc và đặt giá trị tham số lúc nạp.",
+        "ids": [
+          "LOS201-26",
+          "LOS201-27",
+          "LOS201-28",
+          "LOS201-83",
+          "LOS201-84",
+          "LOS201-85"
+        ]
+      },
+      {
+        "id": "fd-mmap",
+        "title": "File descriptor và ánh xạ bộ nhớ",
+        "formula": "read(fd, …) → đọc dữ liệu · lseek(fd, …) → đổi offset · mmap/munmap → tạo/gỡ ánh xạ",
+        "note": "lseek chỉ dùng được với đối tượng hỗ trợ seek. MAP_ANONYMOUS tạo vùng nhớ ban đầu bằng 0. MAP_SHARED cho phép các tiến trình cùng ánh xạ thấy thay đổi. Cần cơ chế đồng bộ nếu có truy cập đồng thời.",
+        "tip": "Thấy «đọc từ vị trí khác trong tệp» thì nghĩ đến lseek rồi read. Thấy «truy cập bằng con trỏ» thì chọn mmap. Thấy «chia sẻ vùng nhớ vô danh giữa cha và con» thì dùng MAP_SHARED | MAP_ANONYMOUS trước fork().",
+        "example": "Trên Linux, mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0) tạo vùng dùng chung sau fork(). Kiểm tra MAP_FAILED và dùng munmap(p, 4096) khi xong.",
+        "ids": [
+          "LOS201-120",
+          "LOS201-122",
+          "LOS201-128",
+          "LOS201-148",
+          "LOS201-160",
+          "LOS201-176"
+        ]
+      },
+      {
+        "id": "realtime-locking",
+        "title": "Deadline thời gian thực và đồng bộ luồng",
+        "formula": "Thời gian đáp ứng trường hợp xấu nhất ≤ deadline · mutex bao trọn thao tác đọc–sửa–ghi",
+        "note": "Hệ thời gian thực được đánh giá theo khả năng đáp ứng deadline. Giảm đoạn không thể ngắt và chọn chính sách lập lịch phù hợp có thể giảm độ trễ. Với condition variable, đợi trong vòng while kiểm tra điều kiện và giữ cùng mutex khi kiểm tra.",
+        "tip": "Thấy «worst case» hoặc «deadline» thì so thời gian đáp ứng lớn nhất với mốc đề bài. Nếu đề tách độ trễ chờ và thời gian thực thi, tính cả hai. Thấy hai luồng cùng cập nhật biến thì tìm đoạn cần khóa.",
+        "example": "Deadline 10 ms tính từ lúc yêu cầu xuất hiện. Nếu phải chờ 7 ms rồi thực thi 4 ms, thời gian đáp ứng là 11 ms, vượt deadline.",
+        "ids": [
+          "LOS201-19",
+          "LOS201-20",
+          "LOS201-42",
+          "LOS201-69",
+          "LOS201-100",
+          "LOS201-101"
+        ]
+      },
+      {
+        "id": "posix-sus",
+        "title": "Nhận diện các chuẩn POSIX và SUS",
+        "formula": "POSIX.1b → real-time · POSIX.1c → threads · XBD → định nghĩa · XCU → shell và tiện ích · XSH → giao diện",
+        "note": "Theo cách đánh số lịch sử, POSIX.1b bao gồm mở rộng real-time như asynchronous I/O, còn POSIX.1c bổ sung threads. Single UNIX Specification Version 2 gắn với chứng nhận UNIX 98. SUSv3 kết hợp bộ POSIX.1-2001 với đặc tả X/Open Curses Issue 4 Version 2.",
+        "tip": "Thấy «async I/O» trong câu hỏi về phiên bản cũ thì chọn POSIX.1b. Thấy «pthread» thì chọn POSIX.1c. Trong cấu trúc SUS, tra header ở XBD, lệnh shell ở XCU, hàm ở XSH.",
+        "example": "Tra kiểu dữ liệu và macro của <unistd.h> trong XBD, cú pháp lệnh grep trong XCU và giao diện hàm read() trong XSH.",
+        "ids": [
+          "LOS201-117",
+          "LOS201-119",
+          "LOS201-121",
+          "LOS201-127",
+          "LOS201-138",
+          "LOS201-165"
+        ]
+      }
+    ],
+    "refs": [
+      [
+        "Yocto Project · Biến cấu hình",
+        "https://docs.yoctoproject.org/ref-manual/variables.html#term-IMAGE_INSTALL"
+      ],
+      [
+        "Linux Kernel · Kbuild",
+        "https://docs.kernel.org/kbuild/makefiles.html"
+      ],
+      [
+        "Linux man-pages · mmap",
+        "https://man7.org/linux/man-pages/man2/mmap.2.html"
+      ],
+      [
+        "U-Boot · Falcon Mode",
+        "https://docs.u-boot.org/en/latest/develop/falcon.html"
+      ]
+    ]
+  },
+  "ICI211": {
+    "core": {
+      "mos": {
+        "example": "Cùng L và Vov trong vùng bão hòa kênh dài, transistor rộng 4 μm có dòng gấp đôi transistor rộng 2 μm.",
+        "ids": [
+          "ICI211-293",
+          "ICI211-308",
+          "ICI211-342",
+          "ICI211-484"
+        ]
+      },
+      "inverter": {
+        "example": "Vin=0: PMOS kéo Vout lên VDD. Tăng Vin đến VDD: NMOS kéo Vout về 0, PMOS ngắt.",
+        "ids": [
+          "ICI211-283",
+          "ICI211-313",
+          "ICI211-317",
+          "ICI211-470"
+        ]
+      },
+      "noise": {
+        "example": "VOH=1,8 V, VIH=1,05 V, VIL=0,65 V, VOL=0,1 V. NMH=0,75 V, NML=0,55 V. Biên nhỏ hơn là 0,55 V.",
+        "ids": [
+          "ICI211-280",
+          "ICI211-301",
+          "ICI211-357",
+          "ICI211-440"
+        ]
+      },
+      "power": {
+        "example": "Với α=0,2, CL=20 fF, VDD=1 V và f=500 MHz, Pđộng=0,2×20×1²×500 nW=2 μW.",
+        "ids": [
+          "ICI211-309",
+          "ICI211-393",
+          "ICI211-423",
+          "ICI211-465"
+        ]
+      },
+      "delay": {
+        "example": "Với CL=20 fF và điện trở kéo xuống 5 kΩ, 0,69RC cho trễ xuống xấp xỉ 69 ps.",
+        "ids": [
+          "ICI211-304",
+          "ICI211-334",
+          "ICI211-450",
+          "ICI211-474"
+        ]
+      },
+      "logic": {
+        "example": "NAND 3 ngõ vào: 3 NMOS nối tiếp và 3 PMOS song song, tổng 6 transistor. Y=0 khi cả ba ngõ vào bằng 1.",
+        "ids": [
+          "ICI211-305",
+          "ICI211-344",
+          "ICI211-406",
+          "ICI211-422",
+          "ICI211-455"
+        ]
+      },
+      "dynamic": {
+        "example": "Ở cổng động n-type, pha precharge nạp nút động lên cao. Pha đánh giá có thể kéo nút xuống, làm ngõ ra sau inverter domino tăng.",
+        "ids": [
+          "ICI211-256",
+          "ICI211-321",
+          "ICI211-324",
+          "ICI211-358",
+          "ICI211-456"
+        ]
+      },
+      "timing": {
+        "example": "tCQ=120 ps, tcomb=600 ps, tsetup=80 ps ⇒ Tmin=800 ps ⇒ fmax=1,25 GHz khi bỏ qua skew/jitter.",
+        "ids": [
+          "ICI211-314",
+          "ICI211-316",
+          "ICI211-322",
+          "ICI211-339",
+          "ICI211-448"
+        ]
+      },
+      "memory": {
+        "example": "1024 word × 8 bit/word = 8192 bit = 1024 byte. Địa chỉ word cần 10 bit.",
+        "ids": [
+          "ICI211-263",
+          "ICI211-275",
+          "ICI211-329",
+          "ICI211-336",
+          "ICI211-444"
+        ]
+      },
+      "lowpower": {
+        "example": "Nếu khối thanh ghi tạm rảnh nhưng cần giữ dữ liệu, clock gating giảm chuyển mạch. Power gating ngắt nguồn của khối nên cần giữ hoặc khôi phục trạng thái nếu dữ liệu còn dùng.",
+        "ids": [
+          "ICI211-250",
+          "ICI211-290",
+          "ICI211-310",
+          "ICI211-356",
+          "ICI211-429",
+          "ICI211-463"
+        ]
+      }
+    },
+    "extra": [
+      {
+        "id": "mos-regions",
+        "title": "Xác định vùng hoạt động của NMOS",
+        "formula": "Vov = VGS − VT\nVGS ≤ VT → ngắt lý tưởng\nVGS > VT: VDS < Vov → triode, VDS ≥ Vov → bão hòa",
+        "note": "Các mốc dùng cho mô hình NMOS kênh dài, với VDS ≥ 0 và bỏ qua dòng dưới ngưỡng. Phân cực ngược thân tăng VSB và thường làm VT tăng.",
+        "tip": "Kiểm tra VGS so với VT trước. Khi transistor dẫn, so VDS với phần điện áp vượt ngưỡng Vov.",
+        "example": "VGS = 1,2 V, VT = 0,4 V, VDS = 0,3 V. Vov = 0,8 V và 0,3 < 0,8 nên NMOS ở vùng triode.",
+        "ids": [
+          "ICI211-293",
+          "ICI211-328",
+          "ICI211-354",
+          "ICI211-411"
+        ]
+      },
+      {
+        "id": "short-channel",
+        "title": "DIBL, điều biến chiều dài kênh và bão hòa vận tốc",
+        "formula": "DIBL → VDS tăng làm VT giảm\nĐiều biến chiều dài kênh → VDS tăng làm Leff giảm, ID bão hòa tăng",
+        "note": "DIBL xuất hiện khi điện trường từ drain hạ rào thế phía source. Bão hòa vận tốc xảy ra khi vận tốc hạt tải tăng chậm dần ở điện trường lớn, làm mô hình dòng bình phương kênh dài kém chính xác.",
+        "tip": "Đề hỏi đại lượng nào thay đổi. VT giảm gợi DIBL, chiều dài hiệu dụng giảm gợi điều biến chiều dài kênh, vận tốc đạt giới hạn gợi velocity saturation.",
+        "example": "Giữ VGS, tăng VDS và thấy dòng bão hòa có độ dốc dương do điểm pinch-off dịch về source. Đây là dấu hiệu của điều biến chiều dài kênh.",
+        "ids": [
+          "ICI211-271",
+          "ICI211-427",
+          "ICI211-442",
+          "ICI211-460",
+          "ICI211-473"
+        ]
+      },
+      {
+        "id": "pass-gate",
+        "title": "Pass transistor, transmission gate và MUX",
+        "formula": "nMOS pass truyền 0 mạnh, 1 yếu\nTG = nMOS ∥ pMOS, hai cổng điều khiển bù nhau\nMUX 2:1: Y = S̄D0 + SD1",
+        "note": "Khi truyền mức cao bằng nMOS đơn, VGS giảm dần và transistor gần ngắt ở Vout ≈ VDD − VTn trong mô hình đơn giản. TG phối hợp hai loại transistor để truyền cả hai mức logic đầy đủ.",
+        "tip": "Gặp câu chọn biểu thức MUX, thế S = 0 rồi S = 1 để kiểm tra từng ngõ vào được chọn.",
+        "example": "VDD = 1,2 V, VTn giả sử không đổi ở 0,3 V. nMOS đơn truyền mức cao đến khoảng 0,9 V. Với TG bật, pMOS hỗ trợ kéo lên gần 1,2 V.",
+        "ids": [
+          "ICI211-259",
+          "ICI211-269",
+          "ICI211-312",
+          "ICI211-425",
+          "ICI211-469"
+        ]
+      },
+      {
+        "id": "charge-sharing",
+        "title": "Tính sụt áp và chia sẻ điện tích",
+        "formula": "Sụt áp do mất điện tích: ΔV = ΔQ/C\nHai tụ nối chung: Vf = (C1V1 + C2V2)/(C1 + C2)",
+        "note": "Dùng bảo toàn điện tích khi hai nút được nối và cách ly nguồn trong mô hình lý tưởng. Keeper yếu giúp bù rò tại nút động. Tăng sức kéo của keeper có thể kéo dài pha đánh giá.",
+        "tip": "Đề cho lượng điện tích mất thì chia cho điện dung. Đề cho hai nút nối nhau thì cộng điện tích ban đầu và chia tổng điện dung.",
+        "example": "Nút 30 fF ở 1,2 V nối với nút 10 fF ở 0 V. Vf = (30 × 1,2 + 10 × 0)/40 = 0,9 V.",
+        "ids": [
+          "ICI211-350",
+          "ICI211-378",
+          "ICI211-397",
+          "ICI211-456"
+        ]
+      },
+      {
+        "id": "elmore",
+        "title": "Trễ dây dẫn và điện trở chung trong cây RC",
+        "formula": "Elmore tại ngõ ra k: τk = Σ Ci·Rchung(i,k)\nMột cực RC tại ngưỡng 50%: t50 ≈ 0,69RC",
+        "note": "Rchung là điện trở trên đoạn đường chung từ nguồn đến tụ i và ngõ ra k. Dây dài cần xét điện trở và điện dung phân bố. Bộ đệm có kích thước phù hợp có thể giảm trễ trên dây rất dài.",
+        "tip": "Với các tụ bằng nhau, tìm tụ có Rchung lớn nhất với đúng ngõ ra được hỏi. kΩ × fF cho kết quả bằng ps.",
+        "example": "R = 4 kΩ, C = 50 fF cho RC = 200 ps. Trễ qua ngưỡng 50% của mạch một cực xấp xỉ 0,69 × 200 = 138 ps.",
+        "ids": [
+          "ICI211-304",
+          "ICI211-306",
+          "ICI211-327",
+          "ICI211-420",
+          "ICI211-450",
+          "ICI211-468"
+        ]
+      },
+      {
+        "id": "scaling",
+        "title": "Thu nhỏ theo mô hình điện trường không đổi",
+        "formula": "Hệ số thu nhỏ S > 1: kích thước, VDD và C → 1/S\nf → S, diện tích cổng → 1/S², Pđộng/cổng → 1/S²",
+        "note": "Giữ hệ số hoạt động và dùng mô hình lý tưởng. Điện trường V/L gần giữ nguyên vì V và L cùng chia S. Mật độ cổng tăng S² nên mật độ công suất động xấp xỉ giữ nguyên.",
+        "tip": "Đề hỏi công suất trên mỗi cổng hay trên mỗi diện tích. Viết riêng hệ số công suất và hệ số mật độ cổng trước khi nhân.",
+        "example": "S = 2 cho Pđộng/cổng còn 1/4 và số cổng trên một đơn vị diện tích tăng 4 lần. Mật độ công suất động có hệ số 1/4 × 4 = 1.",
+        "ids": [
+          "ICI211-300",
+          "ICI211-368",
+          "ICI211-374"
+        ]
+      },
+      {
+        "id": "sram-sizing",
+        "title": "SRAM 6T, đường đọc 8T và khả năng ghi",
+        "formula": "Đọc 6T: pull-down giữ nút 0 trước access transistor\nGhi 0: access transistor kéo thắng pull-up\n8T: đường đọc tách khỏi nút lưu",
+        "note": "Khi đọc 6T, bitline được nạp trước có thể nâng điện áp của nút đang lưu 0. Pull-down đủ mạnh giúp giữ trạng thái. Sense amplifier phát hiện chênh lệch nhỏ giữa hai bitline trong mạch đọc vi sai.",
+        "tip": "Tách hai thao tác. Đọc phải giữ bit cũ. Ghi phải thắng phản hồi của ô để đổi bit.",
+        "example": "Một ô 6T dễ bị lật khi đọc. Tách đường đọc bằng cấu trúc 8T giúp giảm nhiễu lên nút lưu và tăng diện tích ô.",
+        "ids": [
+          "ICI211-299",
+          "ICI211-323",
+          "ICI211-347",
+          "ICI211-404",
+          "ICI211-497"
+        ]
+      },
+      {
+        "id": "vlsi-design",
+        "title": "Luồng thiết kế, FPGA và hiệu suất chế tạo",
+        "formula": "Đặc tả → kiến trúc → RTL → logic và bố trí vật lý\nYield = die đạt / die chế tạo × 100%\nChi phí mỗi die đạt = tổng chi phí / số die đạt",
+        "note": "FPGA cấu hình được sau sản xuất. Standard cell dùng thư viện cell có sẵn. Full-custom cho phép chỉnh tới transistor và layout để tối ưu các ràng buộc khắt khe.",
+        "tip": "Sản lượng thấp và còn cần sửa thiết kế gợi FPGA. Khi tính chi phí trên die sử dụng được, lấy số die đạt làm mẫu số.",
+        "example": "1,5 triệu die đạt trên 2 triệu die chế tạo cho yield 75%. Một lô giá 600.000 USD có 10.000 die đạt thì chi phí là 60 USD mỗi die đạt.",
+        "ids": [
+          "ICI211-307",
+          "ICI211-362",
+          "ICI211-405",
+          "ICI211-431",
+          "ICI211-475",
+          "ICI211-492"
+        ]
+      }
+    ],
+    "refs": [
+      [
+        "MIT OCW · MOSFET Scaling",
+        "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/036333b326d0db0a3589ef6ee6eb0dc4_lecture32.pdf"
+      ],
+      [
+        "Harvey Mudd College · Dynamic Logic",
+        "https://pages.hmc.edu/harris/class/hal/lect7.pdf"
+      ],
+      [
+        "UBC · CMOS Inverter",
+        "https://courses.ece.ubc.ca/481/lectures/Lecture_06.pdf"
+      ]
+    ]
+  }
+}

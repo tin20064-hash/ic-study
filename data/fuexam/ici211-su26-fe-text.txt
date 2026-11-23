@@ -1,0 +1,199 @@
+01 In which domain does switching analysis study the output behavior of a digital circuit?
+A. Frequency response domain | B. Time response domain | C. Spatial electric domain | D. Magnetic coupling domain
+KEY [1] MATCH ICI211-287 0.9942 REUSE ICI211-287
+
+02 What is the main source of interconnect capacitance in integrated circuit layouts?
+A. Adjacent metal structures | B. Threshold voltage variation | C. Carrier mobility reduction | D. Oxide breakdown effects
+KEY [0] MATCH ICI211-278 0.9939 REUSE ICI211-278
+
+03 What does tPLH represent in the switching behavior of a digital circuit?
+A. High-to-low transition | B. Low-to-high transition | C. Capacitive loading factor | D. Switching power product
+KEY [1] MATCH ICI211-251 0.993 REUSE ICI211-251
+
+04 How do interconnects typically behave in VLSI and digital circuit models?
+A. Ideal constant-voltage network sources | B. Nearly perfect conducting paths | C. Purely ideal capacitive network elements | D. Distributed RC interconnect networks
+KEY [3] MATCH ICI211-258 0.9931 REUSE ICI211-258
+
+05 What modeling approach is commonly used for short interconnects in digital and VLSI circuits?
+A. Lumped RC approximation | B. Full transmission models | C. Magnetic coupling networks | D. Quantum mechanical models
+KEY [0] MATCH ICI211-270 1.0 REUSE ICI211-270
+
+06 What does tPHL represent in the switching behavior of a digital circuit?
+A. Low-to-high transition | B. High-to-low transition | C. Threshold switching voltage | D. Average rise interval
+KEY [1] MATCH ICI211-272 0.993 REUSE ICI211-272
+
+07 What type of output states are produced by static logic circuits in digital system design?
+A. Temporary charge levels | B. Stable operating states | C. Floating dynamic nodes | D. Oscillating Signal levels
+KEY [1] MATCH ICI211-274 0.9944 REUSE ICI211-274
+
+08 What issue does two-phase clocking help prevent in dynamic digital circuits?
+A. Signal propagation delays | B. Signal overlap conflicts | C. Dynamic node charging | D. Threshold voltage effects
+KEY [1] MATCH ICI211-296 0.9934 REUSE ICI211-296
+
+09 What does dynamic logic require to maintain correct operation in digital CMOS circuits?
+A. Constant threshold scaling | B. Continuous conduction paths | C. Infinite voltage supply | D. Frequent node refresh
+KEY None MATCH ICI211-268 1.0 REUSE 
+
+10 What limitations are commonly associated with dynamic CMOS logic circuits?
+A. Charge sharing leakage | B. Infinite switching speed | C. Reduced transistor counts | D. Constant voltage operation
+KEY [0] MATCH ICI211-282 0.9932 REUSE ICI211-282
+
+11 How does voltage bootstrapping restore full output voltage swing in CMOS and dynamic circuit design?
+A. Increasing internal node voltage | B. Reducing oxide capacitance value | C. Eliminating parasitic resistance entirely | D. Lowering transistor body effect
+KEY [0] MATCH ICI211-297 0.995 REUSE ICI211-297
+
+12 What type of operation is used in synchronous dynamic circuits for proper digital circuit control?
+A. Clock controlled operation | B. Continuous asynchronous control Ili | C. Static feedback networks | D. Constant bias voltages
+KEY [0] MATCH ICI211-288 0.9897 REUSE ICI211-288
+
+13 What does yield represent the percentage oP
+A. Routing layer utilization | B. Available memory blocks | C. Power distribution buses | D. Functional fabricated chips
+KEY [3] MATCH ICI211-292 0.9767 REUSE ICI211-292
+
+14 What is RTL an abbreviation for?
+A. Register transfer level | B. Routing timing logic | C. Reduced transistor layout | D. Recursive timing language
+KEY [0] MATCH ICI211-266 0.9841 REUSE ICI211-266
+
+15 Which FPGA component implements Boolean functions?
+A. Memory controller blocks | B. Phase lock loops | C. Signal driver circuits | D. Look-up table units
+KEY [3] MATCH ICI211-279 0.9899 REUSE ICI211-279
+
+16 What is the major advantage of FPGAQ
+A. Lowest fabrication complexity | B. Post-fabrication customization | C. Maximum transistor density | D. Minimal routing overhead
+KEY [1] MATCH ICI211-257 0.9859 REUSE ICI211-257
+
+17 What does testability mainly focus orp
+A. Chip thermal expansion | B. Fault detection coverage | C. Layout scaling reduction | D. Packaging material quality
+KEY [1] MATCH ICI211-265 0.96 REUSE ICI211-265
+
+18 What aspects do 8T SRAM cells improve in semiconductor memory and SRAM circuit design?
+A. Read operation stability | B. Dynamic refresh efficiency | C. Floating gate storage | D. Threshold voltage scaling
+KEY [0] MATCH ICI211-299 0.9942 REUSE ICI211-299
+
+19 What does access time determine in semiconductor memory and digital system performance?
+A. Memory operating speed | B. Threshold voltage stability | C. Capacitor dielectric strength | D. Decoder transistor count
+KEY [0] MATCH ICI211-289 0.9942 REUSE ICI211-289
+
+20 What advantage does full CMOS SRAM provide in semiconductor memory and digital storage circuit design?
+A. Large static dissipation | B. Superior noise margins | C. Dynamic refresh operation | D. Floating output states
+KEY [1] MATCH ICI211-263 0.9951 REUSE ICI211-263
+
+21 What type of operation is self-refresh mode useful for semiconductor memory systems?
+A. High-performance overclocking | B. Low-power standby operation | C. Dynamic threshold tuning | D. Differential sensing operation
+KEY [1] MATCH ICI211-267 0.994 REUSE ICI211-267
+
+22 What advantages does NOR Flash memory provide in semiconductor memory and embedded storage systems?
+A. Fast random access | B. Highest storage density | C. Continuous refresh operation | D. Dynamic voltage scaling
+KEY [0] MATCH ICI211-275 0.9949 REUSE ICI211-275
+
+23 What do sense amplifiers detect in semiconductor memory?
+A. Small voltage differences | B. Large current overloads | C. Threshold oxide shifts | D. Dynamic clock overlaps
+KEY [0] MATCH ICI211-284 0.991 REUSE ICI211-284
+
+24 Under what condition does a long-channel nMOS in strong inversion enter the saturation region?
+A. Channel pinch-off formation | B. Oxide capacitance reduction | C. Body bias elimination | D. Reverse gate conduction
+KEY None MATCH ICI211-293 0.6776 REUSE 
+
+25 What effect does channel-length modulation cause in a MOSFET operating in saturation region?
+A. Constant saturation current | B. Rising saturation current | C. Reduced threshold voltage | D. Larger oxide capacitance
+KEY [1] MATCH ICI211-271 1.0 REUSE ICI211-271
+
+26 What is the term used for full scaling in VLSI technology?
+A. Constant field scaling | B. Constant power scaling | C. Constant current scaling | D. Constant resistance scaling
+KEY [0] MATCH ICI211-300 0.9913 REUSE ICI211-300
+
+27 What does electron affinity mean?
+A. Surface inversion voltage | B. Conduction vacuum difference | C. Depletion charge density | D. Oxide electric field
+KEY [1] MATCH ICI211-262 0.9846 REUSE ICI211-262
+
+28 What happens in the semiconductor region during depletion of a MOS structure with a p-type body and positive gate bias below inversion?
+A. Holes accumulate at the surface | B. Holes are repelled from the surface | C. Electrons form a channel | D. Oxide breaks down
+KEY None MATCH ICI211-264 0.7438 REUSE 
+
+29 Compared with one nMOS pass transistor, what signal-transfer benefit does a CMOS transmission gate provide?
+A. Capacitor leakage current | B. Passing both strong logic 0 and strong logic 1 | C. Oxide breakdown voltage | D. Threshold voltage mismatch
+KEY None MATCH ICI211-259 0.8174 REUSE 
+
+30 Which of the following statements best describes the behavior of an NMOS pass transistor when transferring logic levels in digital circuitsO b;
+A. Strong logic one | B. Weak logic one | C. Equal voltage swings | D. Infinite drive current
+KEY [1] MATCH ICI211-269 0.9893 REUSE ICI211-269
+
+31 What disadvantage is associated with the use of pseudo-NMOS logic in digital circuit design?
+A. Dynamic power reduction | B. Static power dissipation | C. Reduced threshold voltage | D. Eliminated body effect
+KEY [1] MATCH ICI211-256 0.9945 REUSE ICI211-256
+
+32 What type of circuit structures are commonly used in multiplexers for digital and CMOS circuit design?
+A. Transmission gate structures | B. Bipolar transistor stages | C. Resistive divider circuits | D. Dynamic capacitor arrays
+KEY [0] MATCH ICI211-298 1.0 REUSE ICI211-298
+
+33 What type of network is used in the pull-up network of a CMOS logic circuit?
+A. PMOS transistor network | B. NMOS transistor network | C. Resistive load devices | D. Bipolar switching devices
+KEY [0] MATCH ICI211-277 0.9799 REUSE ICI211-277
+
+34 How does the resistance of a transmission gate typically behave during circuit operatiorP
+A. Roughly constant value | B. Infinite during switching | C. Strongly nonlinear always | D. Equal threshold voltage
+KEY None MATCH ICI211-273 0.6875 REUSE 
+
+35 What type of power supply is used in a saturated enhancement-load inverter circuit?
+A. Variable threshold supply | B. Floating substrate supply | C. Single power supply | D. Dual power supplies
+KEY [2] MATCH ICI211-260 1.0 REUSE ICI211-260
+
+36 What does the voltage transfer characteristic (VTC) describe in a CMOS inverter?
+A. Current versus voltage | B. Area versus delay | C. Power versus frequency | D. Output versus input
+KEY [3] MATCH ICI211-283 0.9935 REUSE ICI211-283
+
+37 What does the noise margin low (NML) equal in a digital logic circuit?
+A. VOL minus VIL | B. VIL minus VOL | C. VIH minus VOH | D. VOH minus VOL
+KEY [1] MATCH ICI211-280 0.9926 REUSE ICI211-280
+
+38 What DC noise-margin property characterizes a CMOS inverter with a symmetric voltage transfer curve?
+A. Equal switching margins | B. Zero leakage current | C. Infinite transconductance ratio | D. Minimum output voltage
+KEY None MATCH ICI211-295 0.6667 REUSE 
+
+39 Under what input condition does direct-path current approximately peak in a symmetric CMOS inverter during a slow input sweep?
+A. Vin equals threshold | B. Vin equals ground | C. Vout equals VDD | D. Current becomes zero | E. Vin near the switching point VM ≈ VDD/2
+KEY [4] MATCH ICI211-291 0.7033 REUSE 
+
+40 What type of stable state does a monostable circuit contain in sequential circuit design?
+A. Multiple stable states | B. Single stable state | C. Two unstable states | D. Infinite oscillation modes
+KEY [1] MATCH ICI211-253 0.9831 REUSE ICI211-253
+
+41 What does the term SR latch stand for in sequential digital circuit design?
+A. Set reset latch | B. Sequential register logic | C. Storage relay latch | D. Static resistor latch
+KEY [0] MATCH ICI211-276 1.0 REUSE ICI211-276
+
+42 What type of operation do clocked latches provide in sequential digital circuit systems?
+A. Asynchronous operation only | B. Synchronous controlled operation Ill | C. Continuous analog operation | D. Transmission line behavior
+KEY [1] MATCH ICI211-254 0.9943 REUSE ICI211-254
+
+43 What does a CMOS D-latch contain in its sequential circuit configuration?
+A. Single data input | B. Multiple clock inputs | C. Dynamic feedback arrays | D. Parallel carry logic
+KEY [0] MATCH ICI211-285 0.9931 REUSE ICI211-285
+
+44 What happens to small disturbances around an asymptotically stable operating point during circuit operation?
+A. Grow exponentially larger | B. Decay gradually away | C. Cause continuous oscillation | D. Eliminate feedback action
+KEY None MATCH ICI211-261 0.7586 REUSE 
+
+45 What aspect does SDFF (Semi-Dynamic Flip-Flop) improve in sequential digital circuit performance?
+A. Faster switching robustness | B. Reduced setup margins | C. Dynamic threshold instability | D. Oscillating latch behavior
+KEY None MATCH ICI211-255 0.9305 REUSE 
+
+46 Under what condition does short-circuit power occur in a CMOS inverter or digital circuit operation?
+A. Both transistors conduct | B. Output remains floating | C. Clock becomes disabled | D. Capacitors fully discharge
+KEY [0] MATCH ICI211-291 1.0 REUSE ICI211-291
+
+47 What does stepwise charging help to reduce in adiabatic for low-power CMOS circuit design?
+A. Dynamic leakage currents | B. Clock gating efficiency | C. Threshold voltage scaling | D. Resistive energy losses
+KEY [3] MATCH ICI211-252 0.9944 REUSE ICI211-252
+
+48 What does standby operation in an MTCMOS (Mufti-Threshold CMOS) circuit disconnect to reduce leakage power consumption?
+A. Oscillating current mirrors | B. Capacitive output nodes | C. Dynamic clock networks | D. Logic supply paths
+KEY [3] MATCH ICI211-290 0.9914 REUSE ICI211-290
+
+49 What advantages does the active VTCMOS operating mode provide in low-power CMOS circuit design?
+A. High-speed operation | B. Infinite noise margins | C. Zero dynamic current | D. Constant propagation delay
+KEY [0] MATCH ICI211-250 0.9947 REUSE ICI211-250
+
+50 Why is low-power CMOS design becoming increasingly important in modern electronic systems?
+A. Portable systems increasing | B. Threshold voltages rising | C. Clock frequencies reducing | D. Capacitor densities decreasing
+KEY [0] MATCH ICI211-281 0.9944 REUSE ICI211-281

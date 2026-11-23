@@ -1,0 +1,4598 @@
+{
+  "subject": "DGT302",
+  "questions": [
+    {
+      "id": "DGT302-500",
+      "subject": "DGT302",
+      "question": "In the context of the z-transform, the complex variable z can be represented in polar form as z = r·e^(jω). What happens to the z-transform when it is evaluated exactly on the unit circle r = 1?",
+      "options": [
+        "It becomes the Continuous-Time Fourier Transform (CTFT).",
+        "It becomes the Discrete-Time Fourier Transform (DTFT).",
+        "It evaluates to identically zero.",
+        "It becomes the Laplace transform."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-501",
+      "subject": "DGT302",
+      "question": "For an LTI system to be Bounded-input Bounded-Output (BIBO) stable, what specific condition must its Region of Convergence (ROC) in the z-domain satisfy?",
+      "options": [
+        "The ROC must be strictly bounded inside the unit circle.",
+        "The ROC must not include the origin z = O.",
+        "The ROC must include the Unit Circle Izl = 1",
+        "The ROC must encompass the entire z-plane."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-502",
+      "subject": "DGT302",
+      "question": "What is the primary hardware consequence of quantizing the ideal, infinite-precision coefficients ak, bk of an IIR filter to fit into a b-bit memory register?",
+      "options": [
+        "The roots of the polynomial (poles and zeros) migrate to new grid-snapped locations, which can potentially push poles outside the unit circle and cause instability.",
+        "The poles are immediately forced to the origin z = 0 transforming the filter into an FIR type.",
+        "The filter's response becomes perfectly stable regardless of the original pole locations, which can potentially push poles outside the unit circle and cause instability",
+        "The poles remain entirely unaffected; only the zeros migrate."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-503",
+      "subject": "DGT302",
+      "question": "When an FIR Lattice structure is inverted to create an IIR All-Pole Lattice filter, what is the strict mathematical condition to guarantee that the resulting IIR system is BIBO stable?",
+      "options": [
+        "The absolute magnitude of all reflection coefficients must be strictly less than 1",
+        "The magnitude of all reflection coefficients must be exactly equal to 0.",
+        "The absolute magnitude of all reflection coefficients must be strictly greater than 1.",
+        "The sum of all reflection coefficients must equal exactly 1."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-504",
+      "subject": "DGT302",
+      "question": "The fundamental limitation in STFT, akin to the Gabor Limit (Uncertainty Principle), states that:",
+      "options": [
+        "High frequency signals cannot be down sampled.",
+        "You cannot have perfect time resolution and perfect frequency resolution simultaneously.",
+        "The rectangular window has the lowest sidelobes.",
+        "Zero-padding destroys spectral leakage."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-505",
+      "subject": "DGT302",
+      "question": "In a two-channel QMF bank with H1(z)=H0(-z), which conventional synthesis pair cancels the alias component?",
+      "options": [
+        "G0(z) = -H0(z) and G1(z) = -H0(-z)",
+        "G0(z) = H1(z) and G1(z) = H0(z)",
+        "G0(z) = 1/H0(z) and G1(z) = 1/H1(z)",
+        "G0(z) = H0(z) and G1(z) = -H0(-z)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-506",
+      "subject": "DGT302",
+      "question": "What is the primary difference in operational objectives between Linear Prediction and Optimum Linear Filtering (Wiener Filtering)?",
+      "options": [
+        "Prediction estimates the signal from its own past.",
+        "Prediction uses IIR filters, while Wiener filtering strictly uses continuous-time analog filters.",
+        "Prediction minimizes the Absolute Error, while Wiener filtering minimizes the Mean Square Error.",
+        "Prediction requires non-causal data, while Wiener filtering is purely causal."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-507",
+      "subject": "DGT302",
+      "question": "Why is a Minimum-Phase system highly desirable in telecommunications and data storage?",
+      "options": [
+        "It delays the signal by the maximum possible amount.",
+        "It perfectly rejects all ambient noise.",
+        "It has a stable, causal inverse filter (which may be FIR or IIR).",
+        "It requires absolutely no multipliers to implement."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-508",
+      "subject": "DGT302",
+      "question": "To simplify the writing and calculation of the DFT, the \"Twiddle Factor\" WN is introduced. How is it mathematically defined?",
+      "options": [
+        "WN = exp(j2π/N)",
+        "WN = exp(-j2π/N)",
+        "WN = exp(-jπ/N)",
+        "WN = exp(jπ/N)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-509",
+      "subject": "DGT302",
+      "question": "Which term applies to maintaining a given analog signal voltage level perfectly steady until the next sampling clock edge, allowing the ADC time to process it?",
+      "options": [
+        "Aliasing",
+        "Holding",
+        "Multiplexing",
+        "Stair-stepping"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-510",
+      "subject": "DGT302",
+      "question": "Using the frequency differentiation property n·x(n) ↔ j·dX(ω)/dω, evaluate the DTFT of the sequence x(n) = n·a^n·u(n) for |a| < 1",
+      "options": [
+        "a·e^(-jω) / (1 - a·e^(-jω))²",
+        "a·e^(-jω) / (1 + a·e^(-jω))²",
+        "e^(-jω) / (1 - a·e^(-jω))²",
+        "-a·e^(-jω) / (1 - a·e^(-jω))²"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-511",
+      "subject": "DGT302",
+      "question": "When choosing a smoother window function (like Hamming instead of Rectangular) to improve the stopband attenuation of an FIR filter, what unavoidable trade-off must the engineer accept for a fixed filter length M?",
+      "options": [
+        "A wider main-lobe, resulting in a wider transition band (lower frequency resolution).",
+        "A narrower transition band, causing steeper cutoffs.",
+        "The total loss of the linear phase characteristic.",
+        "The filter becoming inherently unstable."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-512",
+      "subject": "DGT302",
+      "question": "For finite sequences of lengths L and M, what is the minimum general requirement on N that guarantees their N-point circular convolution equals their zero-padded linear convolution?",
+      "options": [
+        "N ≤ L + M - 1",
+        "N ≥ L·M",
+        "N ≥ L + M - 1",
+        "N = L = M"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-513",
+      "subject": "DGT302",
+      "question": "For a standard Radix-2 DIF FFT algorithm, what are the ordering requirements for the arrays?",
+      "options": [
+        "Input is in Natural order, Output is in Bit-reversed order.",
+        "Input is in Bit-reversed order, Output is in Natural order.",
+        "Both are in Natural order.",
+        "Both are in Bit-reversed order."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-514",
+      "subject": "DGT302",
+      "question": "When an analog signal is sampled in the time domain, what happens to its spectrum X(F) in the frequency domain?",
+      "options": [
+        "The spectrum is compressed into a single point.",
+        "The spectrum becomes a periodic repetition of the analog spectrum Xa(F) at integer multiples of Fs.",
+        "The spectrum is completely attenuated.",
+        "The spectrum shifts entirely to the negative frequency axis."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-515",
+      "subject": "DGT302",
+      "question": "Consider the 8-point DIT FFT of the step sequence x(n) = {0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0}. At the final computational stage (Stage 3), the calculation for the frequency bin X(1) involves a butterfly with inputs from Stage 2 and the twiddle factor W8^1 ≈ 0.707 - j0.707. Given that the top input to this specific butterfly is 0.5 and the bottom input (already multiplied by the twiddle) contributes to the phase, what is the exact complex value of X(1)?",
+      "options": [
+        "0.5 + j1.207",
+        "0.5 - j1.207",
+        "2.0 + j0",
+        "0 - j0.707"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-516",
+      "subject": "DGT302",
+      "question": "To convert sample rate by 3/4 using upsample-by-3, FIR filtering and downsample-by-4, what ideal low-pass cutoff (normalized to the Nyquist frequency of the upsampled grid) and DC gain should the FIR have?",
+      "options": [
+        "Normalized Cutoff = 1/4, Gain = 3",
+        "Normalized Cutoff = 1/3, Gain = 4",
+        "Normalized Cutoff = 3/4, Gain = 3",
+        "Normalized Cutoff = 1/4, Gain = 1"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-517",
+      "subject": "DGT302",
+      "question": "When a complex exponential sequence x(n) = A·exp(jωn) passes through an LTI system, it emerges as y(n) = A·H(ω)·exp(jωn). Because the signal's shape does not change, complex exponentials are considered:",
+      "options": [
+        "Aliased signals of the system",
+        "Eigenfunctions of LTI systems",
+        "Transient responses",
+        "Notch frequencies"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-518",
+      "subject": "DGT302",
+      "question": "Using the standard radix-2 butterfly count (N/2)·log₂N, including trivial twiddle-factor multiplications, how many complex multiplications are counted for N = 1024?",
+      "options": [
+        "1024",
+        "5120",
+        "10240",
+        "2048"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-519",
+      "subject": "DGT302",
+      "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = x(n)·cos(2πk0n/N), its N-point DFT is:",
+      "options": [
+        "(1/2)·[X((k - k0))N + X((k + k0))N]",
+        "X(k)·e^(-j2πkk0/N)",
+        "(1/2)·X(k)·cos(2πk0/N)",
+        "X((k - k0))N"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-520",
+      "subject": "DGT302",
+      "question": "An ADC that compares each bit, one at a time, with the input analog signal is known as",
+      "options": [
+        "Flash converter",
+        "Dual-slope ramp converter",
+        "Successive-approximation converter",
+        "Tracking converter"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-521",
+      "subject": "DGT302",
+      "question": "According to Parseval's Theorem for the DFT, which equation correctly represents the conservation of energy between the time domain and frequency domain?",
+      "options": [
+        "Sum from n = 0 to N-1 of |x(n)|² = Sum from k = 0 to N-1 of |X(k)|²",
+        "Sum from n = 0 to N-1 of |x(n)|² = (1/N) · Sum from k = 0 to N-1 of |X(k)|²",
+        "Sum from n = 0 to N-1 of |x(n)| = (1/N) · Sum from k = 0 to N-1 of |X(k)|",
+        "Sum from n = 0 to N-1 of |x(n)|² = N · Sum from k = 0 to N-1 of |X(k)|²"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-522",
+      "subject": "DGT302",
+      "question": "Determine the exact z-transform of the finite-duration signal x(n) = {2, 4, 5, 7, 0, 1} (where the arrow indicates the origin n = 0 at the first sample value 2).",
+      "options": [
+        "X(z) = 2 + 4z^-1 + 5z^-2 + 7z^-3 + z^-5",
+        "X(z) = 2z² + 4z + 5 + 7z^-1 + z^-3",
+        "X(z) = 2 + 4z + 5z² + 7z³ + z^5",
+        "X(z) = 2z^-1 + 4z^-2 + 5z^-3 + 7z^-4 + z^-6"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-523",
+      "subject": "DGT302",
+      "question": "The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform (DTFT) of a sequence x(n) is mathematically defined as:",
+      "options": [
+        "X(ω) = Sum from n = -∞ to ∞ of x(n)·e^(jωn)",
+        "X(ω) = Sum from n = -∞ to ∞ of x(n)·e^(-jωn)",
+        "X(ω) = Integral from -∞ to ∞ of x(t)·e^(-jωt) dt",
+        "X(ω) = Sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-524",
+      "subject": "DGT302",
+      "question": "A finite-order linear constant-coefficient difference equation can be implemented using which three basic DSP building blocks?",
+      "options": [
+        "Integrator, Differentiator, and Adder.",
+        "Sampler, Quantizer, and Unit Delay.",
+        "Adder, Multiplier, and Unit Delay.",
+        "Multiplier, Quantizer, and Encoder."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-525",
+      "subject": "DGT302",
+      "question": "What is the prerequisite for the radix-4 approach to compute DFT applicable?",
+      "options": [
+        "The number N of data points is a prime number.",
+        "The number N of data points is a composite number.",
+        "The number N of data points is a Fibonacci number.",
+        "The number N of data points is a power of 4."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-526",
+      "subject": "DGT302",
+      "question": "In Python's scipy.signal library, the function upfirdn is specifically designed to:",
+      "options": [
+        "Efficiently apply an FIR filter using a Polyphase architecture while simultaneously performing upsampling and downsampling.",
+        "Calculate the Fast Fourier Transform of a decimated signal.",
+        "Automatically design an IIR filter using the Bilinear Transform.",
+        "Convert an FIR filter to an IIR Lattice-Ladder structure."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-527",
+      "subject": "DGT302",
+      "question": "When designing an FIR filter using a rectangular window, does increasing the filter length M to a very large number eliminate the ripple amplitude of the Gibbs phenomenon?",
+      "options": [
+        "No, increasing M only narrows the transition band, but the maximum overshoot amplitude remains fixed at approximately 9%.",
+        "Yes, the ripple amplitude decreases proportionally to I/M, eventually reaching zero.",
+        "No, increasing M completely widens the transition band, making the ripple worse.",
+        "Yes, it perfectly flattens both the passband and the stopband."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-528",
+      "subject": "DGT302",
+      "question": "The Direct Form II (Canonic Form) implementation improves upon Direct Form I by merging the delay elements. What is the total number of memory delays required for this highly memory-efficient structure?",
+      "options": [
+        "M + N",
+        "M×N",
+        "max(M,N)",
+        "M/N"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-529",
+      "subject": "DGT302",
+      "question": "Two LTI systems connected in parallel can be mathematically replaced by a single equivalent system with the impulse response:",
+      "options": [
+        "heq(n) = h1(n) * h2(n)",
+        "heq(n) = h1(n) - h2(n)",
+        "heq(n) = h1(n) + h2(n)",
+        "heq(n) = h1(n) · h2(n)"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-530",
+      "subject": "DGT302",
+      "question": "In the design of optimal linear predictors, what is the standard mathematical objective function that engineers seek to minimize?",
+      "options": [
+        "The Mean Square Error (MSE)",
+        "The Absolute Error",
+        "The Signal-to-Noise Ratio (SNR)",
+        "The Maximum Amplitude Error"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-531",
+      "subject": "DGT302",
+      "question": "In the Parallel-Form structure for IIR filters, what mathematical technique is used to decompose the overall system function H(z) into independent parallel branches?",
+      "options": [
+        "Partial Fraction Expansion",
+        "Polynomial Long Division",
+        "The Bilinear Transformation",
+        "Fast Fourier Transform (FFT)"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-532",
+      "subject": "DGT302",
+      "question": "A Moving Average (MA) model estimates the current value x(n) as a linear combination of current and past white noise inputs w(n). Structurally, this corresponds to:",
+      "options": [
+        "An All-Zero (FIR) filter",
+        "An All-Pole filter",
+        "An Infinite Impulse Response (IIR) filter",
+        "An All-Pass phase equalizer"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-533",
+      "subject": "DGT302",
+      "question": "According to the Linearity property of the z-transform, what is the new Region of Convergence (ROC) when two signals are linearly combined al•xl(n) + a2•x2(n)?",
+      "options": [
+        "It is the union of the individual ROCs.",
+        "It is at least the intersection of the individual ROCS (ROC 2 ROCI n ROC2)",
+        "It covers the entire z-plane regardless of the signals.",
+        "It is the mathematical difference between the two ROCs."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-534",
+      "subject": "DGT302",
+      "question": "Lattice structures for FIR filters characterize the system using a specific set of parameters that offer high robustness against quantization. These parameters are called:",
+      "options": [
+        "Reflection coefficients",
+        "Twiddle factors",
+        "Quality factors",
+        "Transition bandwidths"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-535",
+      "subject": "DGT302",
+      "question": "Consider the causal decaying exponential sequence x(n) = a^n·u(n) with |a| < 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+      "options": [
+        "1 / (1 + a·e^(-jω))",
+        "1 / (1 - a·e^(-jω))",
+        "a / (1 - e^(-jω))",
+        "1 / (1 - a·e^(jω))"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-536",
+      "subject": "DGT302",
+      "question": "What is the name given to the frequency limit that is exactly half of the sampling frequency Fs/2?",
+      "options": [
+        "Nyquist frequency (or Folding frequency)",
+        "Shannon frequency",
+        "Baseband frequency",
+        "Intermediate frequency"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-537",
+      "subject": "DGT302",
+      "question": "To design a simple Notch filter that completely rejects and zeroes out a specific interference frequency (e.g., 60 Hz hum), where MUST the zeros be placed on the z-plane?",
+      "options": [
+        "Exactly on the unit circle at angles ±ω0",
+        "At the origin z = 0",
+        "Outside the unit circle at z = 2",
+        "Exactly at z = -1 only"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-538",
+      "subject": "DGT302",
+      "question": "The Multiplication Theorem states that multiplying two signals in the time domain x1(n)•x2(n) (e.g., applying a window function) causes what in the frequency domain?",
+      "options": [
+        "Periodic convolution of their spectra.",
+        "Multiplication of their spectra.",
+        "Phase distortion only.",
+        "Amplitude attenuation only."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-539",
+      "subject": "DGT302",
+      "question": "To avoid phase distortion caused by different frequencies having different group delays, a filter should have a:",
+      "options": [
+        "Linear phase response",
+        "Nonlinear phase response",
+        "Zero magnitude response",
+        "Maximum-phase response"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-540",
+      "subject": "DGT302",
+      "question": "When designing an inverse system Hi(z) = 1/H(z) for the purpose of deconvolution (e.g., channel equalization), what happens to the zeros of the original channel H(z)?",
+      "options": [
+        "They become the zeros of the inverse system.",
+        "They disappear completely.",
+        "They become the poles of the inverse system.",
+        "They are shifted to the origin."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-541",
+      "subject": "DGT302",
+      "question": "In Sigma-Delta Modulation (SDM), where is the Integrator i placed to achieve noise shaping compared to standard Delta Modulation?",
+      "options": [
+        "After the lowpass filter.",
+        "Before the Delta modulator (Quantizer).",
+        "In the feedback loop of the DAC.",
+        "It replaces the holding circuit."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-542",
+      "subject": "DGT302",
+      "question": "What is the mathematical definition of the direct (two-sided) z-transform for a discrete-time sequence x(n)?",
+      "options": [
+        "X(z) = Sum from n = 0 to ∞ of x(n)·z^(-n)",
+        "X(z) = Sum from n = -∞ to ∞ of x(n)·z^(-n)",
+        "X(z) = Sum from n = -∞ to ∞ of x(n)·e^(-jωn)",
+        "X(z) = Integral from -∞ to ∞ of x(t)·z^(-t) dt"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-543",
+      "subject": "DGT302",
+      "question": "In the Window Method for FIR filter design, what is the correct mathematical relationship used to obtain the practical impulse response h(n) from the ideal infinite response h_d(n) and the window w(n)?",
+      "options": [
+        "h(n) = h_d(n) / w(n)",
+        "h(n) = h_d(n) * w(n)",
+        "h(n) = h_d(n) + w(n)",
+        "h(n) = h_d(n) · w(n)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-544",
+      "subject": "DGT302",
+      "question": "For the most efficient division in a standard Radix-2 FFT algorithm, the sequence length N must satisfy which specific condition?",
+      "options": [
+        "N = 2^v, where v is an integer.",
+        "N must be any even number.",
+        "N must be a prime number.",
+        "N = 4^k, where k is an integer."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-545",
+      "subject": "DGT302",
+      "question": "What is the conventional general-purpose processing order for rational sample-rate conversion by I/D?",
+      "options": [
+        "Upsample by I, apply an anti-imaging/anti-aliasing low-pass filter, then downsample by D.",
+        "Downsample by D before any needed anti-aliasing filtering, then upsample by I.",
+        "The order does not matter because both are linear operations.",
+        "Both must be performed simultaneously without any intermediate filtering."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-546",
+      "subject": "DGT302",
+      "question": "If a system's characteristics do not change over time, meaning a delayed input x(n-k) produces an identically delayed output y(n-k), the system is classified as:",
+      "options": [
+        "Time-Variant",
+        "Linear",
+        "Time-Invariant",
+        "Dynamic"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-547",
+      "subject": "DGT302",
+      "question": "Among the listed equal-length window functions, which has the lowest peak sidelobe (about −58 dB) and the broadest main lobe?",
+      "options": [
+        "Blackman window",
+        "Rectangular window",
+        "Bartlett (Triangular) window",
+        "Hanning window"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-548",
+      "subject": "DGT302",
+      "question": "In the fundamental frequency range [-π, π] of the DTFT, the frequencies near ω = 0 represent:",
+      "options": [
+        "The highest rate of oscillation.",
+        "The DC component (slowest variations).",
+        "The Nyquist frequency.",
+        "The phase distortion."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-549",
+      "subject": "DGT302",
+      "question": "If two finite-duration signals x(n) and h(n) have lengths Lx and Lh respectively, what is the exact number of samples in their linear convolution sequence?",
+      "options": [
+        "Lx + Lh",
+        "Max(Lx, Lh)",
+        "Lx x Lh",
+        "LX+ Lh -1"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-551",
+      "subject": "DGT302",
+      "question": "According to the Time Delay property of the One-Sided z-transform, what is the correct algebraic expression for a delay by 1 sample, Z+{y(n - 1)}?",
+      "options": [
+        "z^-1 Y+(z)",
+        "z^-1 Y+(z) + y(-1)",
+        "z·Y+(z) - z·y(0)",
+        "Y+(z) - Y(-1)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-552",
+      "subject": "DGT302",
+      "question": "What is the mathematically derived Z-transform of the delayed sequence x(n) = 10^n·u(n - 2)?",
+      "options": [
+        "10z^(-1)/(1−10z^(-2)), ROC: |z| > √10",
+        "100z^(-1)/(1−10z^(-1)), ROC: |z| > 10",
+        "100z^(-2)/(1−10z^(-1)), ROC: |z| > 10",
+        "10z^(-2)/(1−10z^(-2)), ROC: |z| > √10"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-553",
+      "subject": "DGT302",
+      "question": "For an LTI system to be BOTH causal and stable, what is the absolute requirement for the locations of its poles?",
+      "options": [
+        "ALL its poles must lie strictly INSIDE the unit circle Izl < 1",
+        "ALL its poles must lie strictly OUTSIDE the unit circle.",
+        "At least one pole must lie exactly ON the unit circle.",
+        "The poles must be located exactly at the origin z = 0."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-554",
+      "subject": "DGT302",
+      "question": "The System Function (Transfer Function) H(z) of a linear time-invariant system is mathematically defined as:",
+      "options": [
+        "The sum of the input and output z-transforms Y(z) + X(z).",
+        "The derivative of the output z-transform with respect to z.",
+        "The ratio of the output z-transform to the input z-transform Y(z)/X(z)",
+        "The convolution of X(z) and Y(z)."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-555",
+      "subject": "DGT302",
+      "question": "A linear time-invariant system is characterized by the system function H(z) = (3 - 4z^-1) / [(1 - 0.5z^-1)(1 - 2z^-1)]. What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?",
+      "options": [
+        "|z| < 0.5",
+        "0.5 < |z| < 2",
+        "|z| > 0.5",
+        "|z| > 2"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-556",
+      "subject": "DGT302",
+      "question": "Discrete-time signals are mathematically characterized by which of the following statements?",
+      "options": [
+        "They are defined only at certain specific integer values of time.",
+        "They have continuous values in both time and amplitude.",
+        "They are always periodic.",
+        "Their frequencies can extend to infinity without limits."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-557",
+      "subject": "DGT302",
+      "question": "A bandpass signal occupies Fl=10,677.5 kHz to Fh=10,702.5 kHz. Let B=Fh−Fl and k=floor(Fh/B). Using the valid bandpass-sampling interval 2Fh/k ≤ Fs ≤ 2Fl/(k−1), what is the minimum Fs?",
+      "options": [
+        "10,702.5 kHz",
+        "21,405 kHz",
+        "25 kHz",
+        "50.0117 kHz"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-558",
+      "subject": "DGT302",
+      "question": "In DSP theory, the mathematical model of Ideal Sampling is equivalent to multiplying the continuous-time signal xa(t) by:",
+      "options": [
+        "A single impulse function δ(t)",
+        "A rectangular window w(n)",
+        "A periodic impulse train Σδ(t - nT)",
+        "A continuous sine wave"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-559",
+      "subject": "DGT302",
+      "question": "For delta modulation with step size Δ and sampling period T, which condition avoids slope-overload distortion?",
+      "options": [
+        "max_t |dx(t)/dt| ≤ Δ/T",
+        "max_t |dx(t)/dt| ≤ 2Δ/T",
+        "max_t |x(t)| ≤ Δ",
+        "max_t |d²x(t)/dt²| ≤ Δ/T"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-560",
+      "subject": "DGT302",
+      "question": "The Ideal Reconstruction Filter used in the D/A conversion process to extract the original baseband spectrum is an:",
+      "options": [
+        "Ideal high-pass filter",
+        "Ideal band-stop filter",
+        "Ideal band-pass filter",
+        "Ideal low-pass filter"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-561",
+      "subject": "DGT302",
+      "question": "Given a 3rd-order FIR filter with the system function H(z) = 1 + (13/24)z^-1 + (5/8)z^-2 + (1/3)z^-3. What is the exact value of the reflection coefficient K3 for its equivalent Lattice structure?",
+      "options": [
+        "1/3",
+        "13/24",
+        "5/8",
+        "1"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-562",
+      "subject": "DGT302",
+      "question": "Which statement correctly distinguishes IIR and FIR responses and their usual realizations?",
+      "options": [
+        "IIR responses require effective recursion; FIR responses have finite duration and can be realized using feed-forward paths.",
+        "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+        "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot.",
+        "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-563",
+      "subject": "DGT302",
+      "question": "Which realization usually improves numerical robustness for a high-order IIR filter by splitting it into lower-order sections?",
+      "options": [
+        "Cascade Form",
+        "Direct Form I as a single massive 8th-order block.",
+        "Tapped-Delay-Line Form.",
+        "Non-causal Time-Reversal Form."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-564",
+      "subject": "DGT302",
+      "question": "In two’s-complement fixed-point arithmetic, assume truncation drops low-order bits (rounds toward −∞), with no overflow. For error e=quantized value−exact value, what is its sign/bias?",
+      "options": [
+        "The error is nonpositive; for values spread within quantization cells it generally has a negative mean (DC bias).",
+        "The error has a perfectly zero mean and a uniform distribution.",
+        "The error is completely eliminated for all even numbers.",
+        "The error is symmetrically bounded between -b and b, creating a negative DC bias in the system."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-565",
+      "subject": "DGT302",
+      "question": "The Levinson-Durbin algorithm is revolutionary for solving the Yule-Walker equations because it exploits the Toeplitz structure to reduce computational complexity from O(p³) down to:",
+      "options": [
+        "O(p²)",
+        "O(p⁴)",
+        "O(N²)",
+        "O(p)"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-566",
+      "subject": "DGT302",
+      "question": "In the innovations representation of a purely nondeterministic WSS process with an admissible stable spectral factor, the process is modeled by an LTI filter driven by which input?",
+      "options": [
+        "White noise",
+        "A single unit impulse",
+        "A deterministic sine wave",
+        "A constant DC signal"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-567",
+      "subject": "DGT302",
+      "question": "The optimal FIR Wiener filter coefficients are determined by solving the Wiener-Hopf Equation. The right-hand side of this equation strictly requires which statistical information to isolate the target?",
+      "options": [
+        "The cross-correlation between the desired signal and the noisy input.",
+        "The autocorrelation of the environmental white noise.",
+        "The Discrete Fourier Transform of the input sequence.",
+        "The reflection coefficients of the acoustic channel."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-568",
+      "subject": "DGT302",
+      "question": "Directly computing an N-point DFT using the standard summation formula demands computational complexity proportional to:",
+      "options": [
+        "O(N log₂ N)",
+        "O(N²)",
+        "O(N)",
+        "O(2^N)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-569",
+      "subject": "DGT302",
+      "question": "For an N-sample record extended by zero outside 0≤n<N, its N-point DFT can be viewed as:",
+      "options": [
+        "the sampling of the Fourier transform of a periodic discrete-time sequence.",
+        "the sampling of the Fourier transform of an aperiodic discrete-time sequence.",
+        "the Fourier transform in a continuous frequency domain.",
+        "a transform for determining the frequency content of continuous-time aperiodic signals."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-570",
+      "subject": "DGT302",
+      "question": "The Analysis Equation (Forward DFT) that transforms an N-point time-domain sequence x(n) into an N-point frequency sequence X(k) is mathematically defined as:",
+      "options": [
+        "X(k) = sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)",
+        "X(k) = sum from n = 0 to N-1 of x(n)·e^(j2πkn/N)",
+        "X(k) = (1/N) · sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)",
+        "X(k) = sum from n = -∞ to ∞ of x(n)·e^(-j2πkn/N)"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-571",
+      "subject": "DGT302",
+      "question": "The Discrete Cosine Transform (DCT) dominates image compression standards (like JPEG) because of its Even Extension property and its ability to:",
+      "options": [
+        "Pack most of the signal energy into a very small number of low-frequency coefficients (Energy Compaction).",
+        "Use only complex exponentials to save memory.",
+        "Avoid multiplying by zero.",
+        "Maintain exact linear phase."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-572",
+      "subject": "DGT302",
+      "question": "What is/are the effect(s) of limiting the duration of a discrete-time sequence of signal (windowing with a rectangular window) to its spectrum?",
+      "options": [
+        "Distort the spectral estimate due to the leakage effects.",
+        "Reduce spectral resolution.",
+        "Both leakage and spectral resolution reduction effects.",
+        "None of the above."
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-573",
+      "subject": "DGT302",
+      "question": "According to the Linearity property of the DTFT, the transform of a1·x1(n) + a2·x2(n) is:",
+      "options": [
+        "a1·X1(ω) · a2·X2(ω)",
+        "a1·X1(ω) + a2·X2(ω)",
+        "X1(a1·ω) + X2(a2·ω)",
+        "(a1 + a2)·X1(ω)·X2(ω)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-574",
+      "subject": "DGT302",
+      "question": "Multiplying a time sequence by the index n i.e., n.x(n) is mathematically equivalent to which operation on its DTFT spectrum X(w)?",
+      "options": [
+        "Integrating X(w) over w",
+        "Multiplying X(w) over jw",
+        "jdX(w)/dw",
+        "-jdX(w)/dw"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-575",
+      "subject": "DGT302",
+      "question": "For a real sequence, wherever X(ω)≠0 and phase is interpreted modulo 2π, conjugate symmetry implies that the phase spectrum is:",
+      "options": [
+        "Even function ∠X(-ω) = ∠X(ω)",
+        "Odd function ∠X(-ω) = -∠X(ω)",
+        "Periodic function with period π",
+        "Purely positive function"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-576",
+      "subject": "DGT302",
+      "question": "The Frequency Shifting (Modulation) theorem states that multiplying a signal x(n) by a complex exponential exp(jw0n) results in:",
+      "options": [
+        "A shift of the spectrum to X(ω−ω₀)",
+        "A shift of the spectrum to X(ω+ω₀)",
+        "A phase rotation exp(jw0n)X(w)",
+        "No change in the magnitude spectrum"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-577",
+      "subject": "DGT302",
+      "question": "Consider a discrete-time signal that is entirely real-valued and possesses perfect even symmetry in the time domain x(n) = x(-n). By applying the DTFT symmetry properties, what strict conclusion can be drawn about its frequency spectrum X(ω)?",
+      "options": [
+        "X(ω) is purely imaginary and odd.",
+        "X(ω) is real and even; wherever X(ω) is nonzero, its phase is 0 or π modulo 2π.",
+        "X(ω) has a linear phase shift proportional to n.",
+        "X(ω) is zero at the Nyquist frequency ω = π."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-578",
+      "subject": "DGT302",
+      "question": "In Multirate Digital Signal Processing, the mathematical operation of Decimation (Downsampling) by an integer factor D is defined as generating a new sequence y(m) such that:",
+      "options": [
+        "y(m) = x(m)·D",
+        "y(m) = x(m/D)",
+        "y(m) = x(mD)",
+        "y(m) = x(m - D)"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-579",
+      "subject": "DGT302",
+      "question": "For a fractional sample rate converter by factor I/D, the cascaded anti-imaging and anti-aliasing filters can be combined into a single lowpass filter. What is the required cutoff frequency ω_c of this combined filter?",
+      "options": [
+        "min(π/I, π/D)",
+        "max(π/I, π/D)",
+        "π/(I·D)",
+        "π·(I/D)"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-580",
+      "subject": "DGT302",
+      "question": "Based on Proakis 11.2, downsampling a discrete sequence x(n) by a factor of D = 2 produces the signal xd(n) = x(2n). In the frequency domain, what is the exact mathematical relationship between the new spectrum Xd(ω) and the original spectrum X(ω)?",
+      "options": [
+        "Xd(ω) = X(ω/2)",
+        "Xd(ω) = X(2ω)",
+        "Xd(ω) = (1/2)·[X(2ω) + X(2ω - 2π)]",
+        "Xd(ω) = (1/2)·[X(ω/2) + X((ω - 2π)/2)]"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-581",
+      "subject": "DGT302",
+      "question": "What is the primary engineering goal of utilizing Polyphase Decomposition in multirate DSP structures?",
+      "options": [
+        "To push the filter calculations to the lowest possible sampling rate, strictly avoiding wasted CPU cycles computing multiplications by zero.",
+        "To completely eliminate the need for analog anti-aliasing filters at the ADC.",
+        "To convert an unstable IIR filter into an unconditionally stable FIR filter.",
+        "To artificially increase the transition bandwidth of the filter for faster execution."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-582",
+      "subject": "DGT302",
+      "question": "In Python, which scipy.signal function is typically used by engineers to rapidly compute and evaluate the continuous frequency response H(exp(jw)) of an LTI system given its difference equation coefficients b and a?",
+      "options": [
+        "scipy.signal.lfilter",
+        "scipy.signal.freqz",
+        "scipy.signal.convolve",
+        "numpy.fft.fft"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-583",
+      "subject": "DGT302",
+      "question": "In the frequency domain, the output spectrum Y(ω) of an LTI system is related to the input spectrum X(ω) and the frequency response H(ω) by which fundamental equation?",
+      "options": [
+        "Y(ω) = X(ω) * H(ω)",
+        "Y(ω) = X(ω) · H(ω)",
+        "Y(ω) = X(ω) + H(ω)",
+        "Y(ω) = X(ω) / H(ω)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-584",
+      "subject": "DGT302",
+      "question": "For H(z)=(1−a)/(1−az^(-1)), 0<a<1, suppose a −3 dB cutoff ωc∈[0,π] exists. Which equation must ωc satisfy?",
+      "options": [
+        "cos(ωc) = (4a - 1 - a²) / (2a)",
+        "cos(ωc) = (1 + a²) / (2a)",
+        "cos(ωc) = (1 - a) / (1 + a)",
+        "cos(ωc) = a"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-585",
+      "subject": "DGT302",
+      "question": "Provided the ROC contains the unit circle, the frequency response H(e^(jω)) is obtained from H(z) by evaluating it on the:",
+      "options": [
+        "Imaginary axis of the s-plane",
+        "Real axis, where z = w",
+        "Unit circle, where z = exp(jw)",
+        "Origin, where z = 0"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-586",
+      "subject": "DGT302",
+      "question": "For a causal first-order filter H(z)=b0/(1−az^(-1)), with nonzero b0 and real 0<a<1, the magnitude response is fundamentally:",
+      "options": [
+        "Lowpass filter",
+        "Highpass filter",
+        "Bandpass filter",
+        "All-pass filter"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-587",
+      "subject": "DGT302",
+      "question": "A relaxed LTI system is Causal if and only if its impulse response h(n) satisfies the condition:",
+      "options": [
+        "Sum of h(k) from k = -∞ to ∞ equals 0",
+        "h(n) = 0 for n < 0",
+        "h(n) = 0 for n > 0",
+        "Sum of h(k) from k = -∞ to ∞ is finite (< ∞)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-588",
+      "subject": "DGT302",
+      "question": "The fundamental mathematical difference between Cross-Correlation and Convolution is that in Correlation:",
+      "options": [
+        "The output is always a continuous-time signal.",
+        "The shifted second sequence is not time-reversed as in convolution; complex correlation also uses conjugation.",
+        "The multiplication operation is replaced by division.",
+        "The shifting operation over time is completely omitted."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-589",
+      "subject": "DGT302",
+      "question": "The Commutative Property of convolution states that the order of convolution does not matter. This is mathematically written as:",
+      "options": [
+        "[x(n) * h1(n)] * h2(n) = x(n) * [h1(n) * h2(n)]",
+        "x(n) * [h1(n) + h2(n)] = x(n) * h1(n) + x(n) * h2(n)",
+        "x(n) * δ(n) = 1",
+        "x(n) * h(n) = h(n) * x(n)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-590",
+      "subject": "DGT302",
+      "question": "Multiplying two polynomials (e.g., P(z) = 1 + 3z + z2 and Q(z) = 1 + 2z + 2z2) is mathematically equivalent to performing which operation on their respective coefficient sequences?",
+      "options": [
+        "Addition",
+        "Cross-correlation",
+        "Convolution",
+        "Autocorrelation"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-591",
+      "subject": "DGT302",
+      "question": "Compute the convolution y(n) of the signals x(n) = {1, 3, 1} and h(n) = {1, 2, 2}. What is the total length (number of non-zero samples) of the resulting sequence y(n)?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-592",
+      "subject": "DGT302",
+      "question": "Type Ill and Type IV linear-phase FIR filters possess an antisymmetric impulse response. Consequently, their frequency response is always zero at DC H(O) = 0. This constraint prevents them from being used as:",
+      "options": [
+        "Lowpass filters",
+        "Highpass filters",
+        "Differentiators",
+        "Bandpass filters"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-593",
+      "subject": "DGT302",
+      "question": "When comparing FIR and IIR designs for the exact same magnitude specifications (e.g., sharp cutoff and deep stopband), which filter type generally requires a significantly lower order (fewer coefficients)?",
+      "options": [
+        "IIR Filter.",
+        "FIR Filter with a Rectangular window.",
+        "FIR Filter with a Blackman window.",
+        "Non-causal Moving Average Filter."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-594",
+      "subject": "DGT302",
+      "question": "For a real-coefficient FIR filter to have generalized linear phase, what condition must its impulse response h[n] satisfy?",
+      "options": [
+        "h(n) must be exactly symmetric or antisymmetric around its center point.",
+        "h(n) must be completely zero for all even time indices.",
+        "h(n) must have all its poles located strictly outside the unit circle.",
+        "h(n) must exponentially decay to zero as n 00"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-595",
+      "subject": "DGT302",
+      "question": "How do DSP engineers counteract the Frequency Warping distortion caused by the Bilinear Transformation during the filter design process?",
+      "options": [
+        "By \"Pre-warping\" the target digital cutoff frequencies into virtual analog cutoff frequencies before designing the analog prototype H(s)",
+        "By multiplying the final digital impulse response by a Hamming window.",
+        "By cascading a phase equalizer network at the output of the IIR filter.",
+        "By doubling the sampling frequency Fs of the entire system."
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-596",
+      "subject": "DGT302",
+      "question": "In the standard Decimation-ln-Frequency (DIF) butterfly structure, the complex multiplication by the twiddle factor WNAk occurs:",
+      "options": [
+        "BEFORE the addition and subtraction.",
+        "AFTER the addition and subtraction operations, strictly on the bottom branch.",
+        "AFTER the addition and subtraction operations, strictly on the top branch.",
+        "Inside the accumulator."
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-597",
+      "subject": "DGT302",
+      "question": "Let X(k) be the N-point DFT of the sequence x(n), where 0 ≤ n ≤ N-1. Based on the Duality property of the DFT, what is the exact N-point DFT of the sequence s(n) = X(n)?",
+      "options": [
+        "N·x((-k))N or N·x(N - k)",
+        "(1/N)·x(k)",
+        "x(-k)",
+        "N·X(k)"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-598",
+      "subject": "DGT302",
+      "question": "For an 8-point FFT (N = 8, requiring 3 bits), what is the correctly calculated Bit-Reversed index corresponding to the natural decimal index 3?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-599",
+      "subject": "DGT302",
+      "question": "What is the total number of complex additions required to compute an N-point DFT using the Radix-2 FFT algorithm?",
+      "options": [
+        "N²",
+        "N·log₂(N)",
+        "(N/2)·log₂(N)",
+        "2N·log₂(N)"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-600",
+      "subject": "DGT302",
+      "question": "Evaluate the exact complex value of the twiddle factor W8^2",
+      "options": [
+        "1",
+        "-1",
+        "-j",
+        "j"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-602",
+      "subject": "DGT302",
+      "question": "Which window offers the best leakage suppression among common windows?",
+      "options": [
+        "Hann",
+        "Rectangular",
+        "Hamming",
+        "Blackman"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-603",
+      "subject": "DGT302",
+      "question": "Why do the Yule-Walker equations use only autocorrelation values?",
+      "options": [
+        "FFT is applied",
+        "PSD is constant",
+        "Prediction uses samples of the same WSS process, so the required second-order moments are shifted autocorrelation values.",
+        "Noise is removed"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-604",
+      "subject": "DGT302",
+      "question": "Which of the following defines a linear system?",
+      "options": [
+        "f(ax1+bx2) = af(x1)+bf(x2)",
+        "f(x²) = (f(x))²",
+        "f(x+c) = f(x)+c",
+        "f(x) = mx+c"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-605",
+      "subject": "DGT302",
+      "question": "Which property allows the DFT to be computed using the FFT?",
+      "options": [
+        "Linearity",
+        "Periodicity and Symmetry",
+        "Causality",
+        "Stability"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-606",
+      "subject": "DGT302",
+      "question": "A system is causal if the output depends on:",
+      "options": [
+        "Random inputs",
+        "Past outputs only",
+        "Future inputs",
+        "Present and past inputs"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-607",
+      "subject": "DGT302",
+      "question": "Why are AR models preferred in speech coding?",
+      "options": [
+        "They are always linear phase",
+        "They model the vocal tract efficiently with few parameters",
+        "They eliminate quantization",
+        "They require no optimization"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-608",
+      "subject": "DGT302",
+      "question": "Why are AR models preferred in speech coding?",
+      "options": [
+        "They are always linear phase",
+        "They model the vocal tract efficiently with few parameters",
+        "They eliminate quantization",
+        "They require no optimization"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-609",
+      "subject": "DGT302",
+      "question": "If signal and noise statistics change rapidly over time, the preferred solution is",
+      "options": [
+        "Direct inversion",
+        "Blackman window",
+        "Increase predictor order",
+        "Adaptive filtering such as LMS"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-610",
+      "subject": "DGT302",
+      "question": "Applying a Hamming window before Overlap-Save filtering would most likely",
+      "options": [
+        "Amplitude-modulate the reconstructed signal",
+        "Remove aliasing",
+        "Improve filtering accuracy",
+        "Reduce FFT size"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-611",
+      "subject": "DGT302",
+      "question": "Why must an anti-aliasing filter be placed before the sampler instead of after it?",
+      "options": [
+        "It performs interpolation",
+        "Aliasing cannot be removed once spectral overlap has occurred",
+        "It reduces quantization noise",
+        "It increases ADC resolution"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-612",
+      "subject": "DGT302",
+      "question": "For a causal rational LTI system, which pole condition guarantees BIBO stability?",
+      "options": [
+        "Every zero lies strictly outside the unit circle",
+        "Every pole lies exactly on the unit circle",
+        "Every pole lies strictly inside the unit circle",
+        "Every zero lies exactly at the origin"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-613",
+      "subject": "DGT302",
+      "question": "The relationship between z-transform and DTFT is obtained by:",
+      "options": [
+        "Differentiating z",
+        "Setting z = 0",
+        "Evaluating z-transform on the unit circle",
+        "Using convolution"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-614",
+      "subject": "DGT302",
+      "question": "An FIR system generally has:",
+      "options": [
+        "Infinite impulse response",
+        "Finite impulse response",
+        "Unstable poles",
+        "Feedback loop"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-615",
+      "subject": "DGT302",
+      "question": "Increasing the predictor order p generally",
+      "options": [
+        "Makes the signal deterministic",
+        "Removes white noise",
+        "Increases prediction error",
+        "Cannot increase theoretical MMSE; it may decrease when the added past samples provide useful correlation."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-616",
+      "subject": "DGT302",
+      "question": "A lattice predictor is numerically attractive mainly due to",
+      "options": [
+        "Better robustness to fixed-point errors",
+        "No multipliers",
+        "Lower filter order",
+        "Linear phase"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-617",
+      "subject": "DGT302",
+      "question": "A DSP engineer wants minimum RAM usage with identical numerical results. Which FFT feature is most valuable?",
+      "options": [
+        "Zero padding",
+        "In-place butterfly computation",
+        "Bit reversal",
+        "Windowing"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-618",
+      "subject": "DGT302",
+      "question": "For resolving two closely spaced tones, the best choice is",
+      "options": [
+        "More zero-padding",
+        "Longer observation window",
+        "More overlap",
+        "Lower FFT size"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-619",
+      "subject": "DGT302",
+      "question": "BIBO stability means:",
+      "options": [
+        "Unstable poles",
+        "Bounded output gives infinite input",
+        "Bounded input gives bounded output",
+        "Nonlinear response"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-620",
+      "subject": "DGT302",
+      "question": "Zero-padding improves",
+      "options": [
+        "Observation time",
+        "Information content",
+        "Display density of the spectrum",
+        "True frequency resolution"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-621",
+      "subject": "DGT302",
+      "question": "Bilinear transformation maps the s-plane left-half to",
+      "options": [
+        "Outside unit circle",
+        "Origin only",
+        "Inside unit circle",
+        "Infinity"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-622",
+      "subject": "DGT302",
+      "question": "The orthogonality principle states that the optimal prediction error is",
+      "options": [
+        "Equal to zero",
+        "Orthogonal to the past samples used in prediction",
+        "Independent of autocorrelation",
+        "White only for FIR"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-623",
+      "subject": "DGT302",
+      "question": "Compared with Direct Form l, Direct Form II mainly reduces",
+      "options": [
+        "Memory usage",
+        "Filter order",
+        "Quantization noise to zero",
+        "Arithmetic operations"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-624",
+      "subject": "DGT302",
+      "question": "What is the primary purpose of an Anti-Aliasing Filter in a DSP system?",
+      "options": [
+        "Store digital data",
+        "Amplify the signal",
+        "Remove frequencies above Nyquist limit",
+        "Convert analog to digital"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-625",
+      "subject": "DGT302",
+      "question": "Which difference-equation realization is used internally by scipy.signal.lfilter?",
+      "options": [
+        "Parallel Form",
+        "Lattice-Ladder",
+        "Transposed Direct Form II",
+        "Direct Form I"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-626",
+      "subject": "DGT302",
+      "question": "The computational complexity of Radix-2 FFT is",
+      "options": [
+        "O(1)",
+        "O(N²)",
+        "O(log₂N)",
+        "O(N·log₂N)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-627",
+      "subject": "DGT302",
+      "question": "Lowpass-to-highpass FIR transformation is achieved by",
+      "options": [
+        "Doubling filter order",
+        "Zero-padding",
+        "Applying BLT",
+        "Alternating the sign of coefficients"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-628",
+      "subject": "DGT302",
+      "question": "Lowpass-to-highpass FIR transformation is achieved by",
+      "options": [
+        "Alternating the sign of coefficients",
+        "Zero-padding",
+        "Doubling filter order",
+        "Applying BLT"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-629",
+      "subject": "DGT302",
+      "question": "Levinson-Durbin is preferred over direct inversion because",
+      "options": [
+        "It reduces the standard dense solve cost from O(p³) to O(p²) by exploiting Toeplitz structure.",
+        "It guarantees MMSE = 0",
+        "It computes FFTs",
+        "It removes quantization"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-630",
+      "subject": "DGT302",
+      "question": "A butterfly computes",
+      "options": [
+        "One DFT stage",
+        "One output using one multiplication",
+        "Four outputs simultaneously",
+        "Two outputs using one complex multiplication and two additions"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-631",
+      "subject": "DGT302",
+      "question": "When using an FFT implementation restricted to radix 2, and zero extension is acceptable, how can a record whose length is not a power of two be prepared?",
+      "options": [
+        "Discard samples",
+        "Use IDFT",
+        "Zero-padding to the next power of two",
+        "Reduce sampling rate"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-632",
+      "subject": "DGT302",
+      "question": "A memoryless system depends only on:",
+      "options": [
+        "Random values",
+        "Future input",
+        "Current input",
+        "Past outputs"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-633",
+      "subject": "DGT302",
+      "question": "According to Nyquist theorem, the sampling frequency must be:",
+      "options": [
+        "Fs < 2Fmax",
+        "Fs > 2Fmax",
+        "Fs = Fmax",
+        "Fs = 0"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-634",
+      "subject": "DGT302",
+      "question": "Polyphase interpolation improves efficiency by",
+      "options": [
+        "Avoiding multiplications with inserted zeros",
+        "Eliminating delay elements",
+        "Using IIR only",
+        "Increasing cutoff frequency"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-635",
+      "subject": "DGT302",
+      "question": "JPEG compression mainly discards",
+      "options": [
+        "DC coefficient",
+        "Low-frequency coefficients",
+        "High-frequency coefficients after quantization",
+        "Image pixels"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-636",
+      "subject": "DGT302",
+      "question": "Overlap-Save discards the first M-1 samples because they are",
+      "options": [
+        "Circular-convolution artifacts",
+        "Quantization noise",
+        "DC components",
+        "Window coefficients"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-637",
+      "subject": "DGT302",
+      "question": "ROC stands for:",
+      "options": [
+        "Range of Correlation",
+        "Response of Causality",
+        "Rate of Conversion",
+        "Region of Convergence"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-638",
+      "subject": "DGT302",
+      "question": "The relationship between z-transform and DTFT is obtained by:",
+      "options": [
+        "Using convolution",
+        "Evaluating z-transform on the unit circle",
+        "Setting z=0",
+        "Differentiating z"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-639",
+      "subject": "DGT302",
+      "question": "The Wiener filter minimizes",
+      "options": [
+        "Phase distortion",
+        "Maximum absolute error",
+        "Peak error",
+        "Mean square estimation error"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-640",
+      "subject": "DGT302",
+      "question": "A peak in the cross-correlation rxy[m] most directly indicates which property?",
+      "options": [
+        "The delay producing the best alignment between two signals",
+        "The number of poles located outside the unit circle",
+        "The cutoff frequency of the system transfer function",
+        "The total bandwidth occupied by the input spectrum"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-641",
+      "subject": "DGT302",
+      "question": "The DFT of a real-valued signal has:",
+      "options": [
+        "Random phase",
+        "Constant magnitude",
+        "Hermitian symmetry",
+        "No DC component"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-642",
+      "subject": "DGT302",
+      "question": "The DCT compresses images efficiently because",
+      "options": [
+        "It removes quantization",
+        "It uses complex exponentials",
+        "It has strong energy compaction",
+        "It increases entropy"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-643",
+      "subject": "DGT302",
+      "question": "Which of the following is an advantage of digital processing?",
+      "options": [
+        "Component aging",
+        "Software flexibility",
+        "Noise accumulation",
+        "Thermal drift"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-644",
+      "subject": "DGT302",
+      "question": "Fourier Series is mainly used for:",
+      "options": [
+        "Binary signals",
+        "Impulse signals",
+        "Random signals",
+        "Periodic signals"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-645",
+      "subject": "DGT302",
+      "question": "Quantization error in an ADC is generally modeled as:",
+      "options": [
+        "Deterministic sine wave",
+        "White noise",
+        "DC offset",
+        "Impulse train"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-646",
+      "subject": "DGT302",
+      "question": "If N doubles, the number of FFT stages",
+      "options": [
+        "Remains constant",
+        "Increases by one",
+        "Doubles",
+        "Quadruples"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-647",
+      "subject": "DGT302",
+      "question": "A typical DSP processor is optimized for:",
+      "options": [
+        "Large database queries",
+        "Multiply-accumulate (MAC) operations",
+        "GUI rendering",
+        "Web browsing"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-648",
+      "subject": "DGT302",
+      "question": "Which block delays a discrete-time signal by one sample?",
+      "options": [
+        "Adder",
+        "Integrator",
+        "Unit Delay",
+        "Multiplier"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-649",
+      "subject": "DGT302",
+      "question": "Which window has the narrowest main lobe for a fixed length M?",
+      "options": [
+        "Hamming",
+        "Rectangular",
+        "Blackman",
+        "Hann"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-650",
+      "subject": "DGT302",
+      "question": "An IIR system usually contains:",
+      "options": [
+        "No memory",
+        "Feedback",
+        "No poles",
+        "Only finite delays"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-651",
+      "subject": "DGT302",
+      "question": "The major inefficiency of direct interpolation is",
+      "options": [
+        "Multiplications by inserted zeros",
+        "Pole migration",
+        "Overflow",
+        "FFT leakage"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-652",
+      "subject": "DGT302",
+      "question": "Two stable systems have identical magnitude responses but different phase responses. What can be concluded?",
+      "options": [
+        "Their impulse responses must be identical for every time index",
+        "Their pole-zero diagrams must contain the same zero locations",
+        "Their output waveforms may differ even when output magnitudes match",
+        "Their output spectra must have different magnitude values"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-653",
+      "subject": "DGT302",
+      "question": "Increasing the filter length M of a rectangular-window FIR mainly",
+      "options": [
+        "Reduces cutoff frequency",
+        "Narrows the transition band without eliminating Gibbs overshoot",
+        "Eliminates ripple completely",
+        "Makes the filter nonlinear"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-654",
+      "subject": "DGT302",
+      "question": "Downsampling by D changes the sampling rate to",
+      "options": [
+        "fs D",
+        "D fs",
+        "fs/D",
+        "fS+D"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-655",
+      "subject": "DGT302",
+      "question": "Which of the following defines a linear system?",
+      "options": [
+        "f(ax1+bx2) = af(x1)+bf(x2)",
+        "f(x²) = (f(x))²",
+        "f(x+c) = f(x)+c",
+        "f(x) = mx+c"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-656",
+      "subject": "DGT302",
+      "question": "Which property allows the DFT to be computed using the FFT?",
+      "options": [
+        "Linearity",
+        "Periodicity and Symmetry",
+        "Causality",
+        "Stability"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-657",
+      "subject": "DGT302",
+      "question": "A system is causal if the output depends on:",
+      "options": [
+        "Random inputs",
+        "Past outputs only",
+        "Future inputs",
+        "Present and past inputs"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-658",
+      "subject": "DGT302",
+      "question": "Why are AR models preferred in speech coding?",
+      "options": [
+        "They are always linear phase",
+        "They model the vocal tract efficiently with few parameters",
+        "They eliminate quantization",
+        "They require no optimization"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-659",
+      "subject": "DGT302",
+      "question": "If signal and noise statistics change rapidly over time, the preferred solution is",
+      "options": [
+        "Direct inversion",
+        "Blackman window",
+        "Increase predictor order",
+        "Adaptive filtering such as LMS"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-660",
+      "subject": "DGT302",
+      "question": "Applying a Hamming window before Overlap-Save filtering would most likely",
+      "options": [
+        "Amplitude-modulate the reconstructed signal",
+        "Remove aliasing",
+        "Improve filtering accuracy",
+        "Reduce FFT size"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-661",
+      "subject": "DGT302",
+      "question": "Why must an anti-aliasing filter be placed before the sampler instead of after it?",
+      "options": [
+        "It performs interpolation",
+        "Aliasing cannot be removed once spectral overlap has occurred",
+        "It reduces quantization noise",
+        "It increases ADC resolution"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-662",
+      "subject": "DGT302",
+      "question": "For a causal rational LTI system, which pole condition guarantees BIBO stability?",
+      "options": [
+        "Every zero lies strictly outside the unit circle",
+        "Every pole lies exactly on the unit circle",
+        "Every pole lies strictly inside the unit circle",
+        "Every zero lies exactly at the origin"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-663",
+      "subject": "DGT302",
+      "question": "The relationship between z-transform and DTFT is obtained by:",
+      "options": [
+        "Using convolution",
+        "Evaluating z-transform on the unit circle",
+        "Setting z=0",
+        "Differentiating z"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-664",
+      "subject": "DGT302",
+      "question": "Why must an anti-aliasing filter be placed before the sampler instead of after it?",
+      "options": [
+        "It performs interpolation",
+        "Aliasing cannot be removed once spectral overlap has occurred",
+        "It reduces quantization noise",
+        "It increases ADC resolution"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-665",
+      "subject": "DGT302",
+      "question": "For a causal rational LTI system, which pole condition guarantees BIBO stability?",
+      "options": [
+        "Every zero lies strictly outside the unit circle",
+        "Every pole lies exactly on the unit circle",
+        "Every pole lies strictly inside the unit circle",
+        "Every zero lies exactly at the origin"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-666",
+      "subject": "DGT302",
+      "question": "The relationship between z-transform and DTFT is obtained by:",
+      "options": [
+        "Differentiating z",
+        "Setting z = 0",
+        "Evaluating z-transform on the unit circle",
+        "Using convolution"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-667",
+      "subject": "DGT302",
+      "question": "An FIR system generally has:",
+      "options": [
+        "Infinite impulse response",
+        "Finite impulse response",
+        "Unstable poles",
+        "Feedback loop"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-668",
+      "subject": "DGT302",
+      "question": "Increasing the predictor order p generally",
+      "options": [
+        "Makes the signal deterministic",
+        "Removes white noise",
+        "Increases prediction error",
+        "Cannot increase theoretical MMSE; it may decrease when the added past samples provide useful correlation."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-669",
+      "subject": "DGT302",
+      "question": "A lattice predictor is numerically attractive mainly due to",
+      "options": [
+        "Better robustness to fixed-point errors",
+        "No multipliers",
+        "Lower filter order",
+        "Linear phase"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-670",
+      "subject": "DGT302",
+      "question": "A DSP engineer wants minimum RAM usage with identical numerical results. Which FFT feature is most valuable?",
+      "options": [
+        "Zero padding",
+        "In-place butterfly computation",
+        "Bit reversal",
+        "Windowing"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-671",
+      "subject": "DGT302",
+      "question": "For resolving two closely spaced tones, the best choice is",
+      "options": [
+        "More zero-padding",
+        "Longer observation window",
+        "More overlap",
+        "Lower FFT size"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-672",
+      "subject": "DGT302",
+      "question": "BIBO stability means:",
+      "options": [
+        "Unstable poles",
+        "Bounded output gives infinite input",
+        "Bounded input gives bounded output",
+        "Nonlinear response"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-673",
+      "subject": "DGT302",
+      "question": "Zero-padding improves",
+      "options": [
+        "Observation time",
+        "Information content",
+        "Display density of the spectrum",
+        "True frequency resolution"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-674",
+      "subject": "DGT302",
+      "question": "Bilinear transformation maps the s-plane left-half to",
+      "options": [
+        "Outside unit circle",
+        "Origin only",
+        "Inside unit circle",
+        "Infinity"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-675",
+      "subject": "DGT302",
+      "question": "The orthogonality principle states that the optimal prediction error is",
+      "options": [
+        "Equal to zero",
+        "Orthogonal to the past samples used in prediction",
+        "Independent of autocorrelation",
+        "White only for FIR"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-676",
+      "subject": "DGT302",
+      "question": "Compared with Direct Form l, Direct Form II mainly reduces",
+      "options": [
+        "Memory usage",
+        "Filter order",
+        "Quantization noise to zero",
+        "Arithmetic operations"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-677",
+      "subject": "DGT302",
+      "question": "What is the primary purpose of an Anti-Aliasing Filter in a DSP system?",
+      "options": [
+        "Store digital data",
+        "Amplify the signal",
+        "Remove frequencies above Nyquist limit",
+        "Convert analog to digital"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-678",
+      "subject": "DGT302",
+      "question": "Which difference-equation realization is used internally by scipy.signal.lfilter?",
+      "options": [
+        "Parallel Form",
+        "Lattice-Ladder",
+        "Transposed Direct Form II",
+        "Direct Form I"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-679",
+      "subject": "DGT302",
+      "question": "The computational complexity of Radix-2 FFT is",
+      "options": [
+        "O(1)",
+        "O(N²)",
+        "O(log₂N)",
+        "O(N·log₂N)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-680",
+      "subject": "DGT302",
+      "question": "Lowpass-to-highpass FIR transformation is achieved by",
+      "options": [
+        "Doubling filter order",
+        "Zero-padding",
+        "Applying BLT",
+        "Alternating the sign of coefficients"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-681",
+      "subject": "DGT302",
+      "question": "Lowpass-to-highpass FIR transformation is achieved by",
+      "options": [
+        "Alternating the sign of coefficients",
+        "Zero-padding",
+        "Doubling filter order",
+        "Applying BLT"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-682",
+      "subject": "DGT302",
+      "question": "Levinson-Durbin is preferred over direct inversion because",
+      "options": [
+        "It reduces the standard dense solve cost from O(p³) to O(p²) by exploiting Toeplitz structure.",
+        "It guarantees MMSE = 0",
+        "It computes FFTs",
+        "It removes quantization"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-683",
+      "subject": "DGT302",
+      "question": "A butterfly computes",
+      "options": [
+        "One DFT stage",
+        "One output using one multiplication",
+        "Four outputs simultaneously",
+        "Two outputs using one complex multiplication and two additions"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-684",
+      "subject": "DGT302",
+      "question": "When using an FFT implementation restricted to radix 2, and zero extension is acceptable, how can a record whose length is not a power of two be prepared?",
+      "options": [
+        "Discard samples",
+        "Use IDFT",
+        "Zero-padding to the next power of two",
+        "Reduce sampling rate"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-685",
+      "subject": "DGT302",
+      "question": "A memoryless system depends only on:",
+      "options": [
+        "Random values",
+        "Future input",
+        "Current input",
+        "Past outputs"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-686",
+      "subject": "DGT302",
+      "question": "According to Nyquist theorem, the sampling frequency must be:",
+      "options": [
+        "Fs < 2Fmax",
+        "Fs > 2Fmax",
+        "Fs = Fmax",
+        "Fs = 0"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-687",
+      "subject": "DGT302",
+      "question": "Polyphase interpolation improves efficiency by",
+      "options": [
+        "Avoiding multiplications with inserted zeros",
+        "Eliminating delay elements",
+        "Using IIR only",
+        "Increasing cutoff frequency"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-688",
+      "subject": "DGT302",
+      "question": "JPEG compression mainly discards",
+      "options": [
+        "DC coefficient",
+        "Low-frequency coefficients",
+        "High-frequency coefficients after quantization",
+        "Image pixels"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-689",
+      "subject": "DGT302",
+      "question": "Overlap-Save discards the first M-1 samples because they are",
+      "options": [
+        "Circular-convolution artifacts",
+        "Quantization noise",
+        "DC components",
+        "Window coefficients"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-690",
+      "subject": "DGT302",
+      "question": "ROC stands for:",
+      "options": [
+        "Range of Correlation",
+        "Response of Causality",
+        "Rate of Conversion",
+        "Region of Convergence"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-691",
+      "subject": "DGT302",
+      "question": "The relationship between z-transform and DTFT is obtained by:",
+      "options": [
+        "Using convolution",
+        "Evaluating z-transform on the unit circle",
+        "Setting z=0",
+        "Differentiating z"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-692",
+      "subject": "DGT302",
+      "question": "The Wiener filter minimizes",
+      "options": [
+        "Phase distortion",
+        "Maximum absolute error",
+        "Peak error",
+        "Mean square estimation error"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-693",
+      "subject": "DGT302",
+      "question": "A peak in the cross-correlation rxy[m] most directly indicates which property?",
+      "options": [
+        "The delay producing the best alignment between two signals",
+        "The number of poles located outside the unit circle",
+        "The cutoff frequency of the system transfer function",
+        "The total bandwidth occupied by the input spectrum"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-694",
+      "subject": "DGT302",
+      "question": "The DFT of a real-valued signal has:",
+      "options": [
+        "Random phase",
+        "Constant magnitude",
+        "Hermitian symmetry",
+        "No DC component"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-695",
+      "subject": "DGT302",
+      "question": "The DCT compresses images efficiently because",
+      "options": [
+        "It removes quantization",
+        "It uses complex exponentials",
+        "It has strong energy compaction",
+        "It increases entropy"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-696",
+      "subject": "DGT302",
+      "question": "Which of the following is an advantage of digital processing?",
+      "options": [
+        "Component aging",
+        "Software flexibility",
+        "Noise accumulation",
+        "Thermal drift"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-697",
+      "subject": "DGT302",
+      "question": "Fourier Series is mainly used for:",
+      "options": [
+        "Binary signals",
+        "Impulse signals",
+        "Random signals",
+        "Periodic signals"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-698",
+      "subject": "DGT302",
+      "question": "Quantization error in an ADC is generally modeled as:",
+      "options": [
+        "Deterministic sine wave",
+        "White noise",
+        "DC offset",
+        "Impulse train"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-699",
+      "subject": "DGT302",
+      "question": "If N doubles, the number of FFT stages",
+      "options": [
+        "Remains constant",
+        "Increases by one",
+        "Doubles",
+        "Quadruples"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-700",
+      "subject": "DGT302",
+      "question": "A typical DSP processor is optimized for:",
+      "options": [
+        "Large database queries",
+        "Multiply-accumulate (MAC) operations",
+        "GUI rendering",
+        "Web browsing"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-701",
+      "subject": "DGT302",
+      "question": "Which block delays a discrete-time signal by one sample?",
+      "options": [
+        "Adder",
+        "Integrator",
+        "Unit Delay",
+        "Multiplier"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-702",
+      "subject": "DGT302",
+      "question": "Which window has the narrowest main lobe for a fixed length M?",
+      "options": [
+        "Hamming",
+        "Rectangular",
+        "Blackman",
+        "Hann"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-703",
+      "subject": "DGT302",
+      "question": "An IIR system usually contains:",
+      "options": [
+        "No memory",
+        "Feedback",
+        "No poles",
+        "Only finite delays"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-704",
+      "subject": "DGT302",
+      "question": "The major inefficiency of direct interpolation is",
+      "options": [
+        "Multiplications by inserted zeros",
+        "Pole migration",
+        "Overflow",
+        "FFT leakage"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-705",
+      "subject": "DGT302",
+      "question": "Two stable systems have identical magnitude responses but different phase responses. What can be concluded?",
+      "options": [
+        "Their impulse responses must be identical for every time index",
+        "Their pole-zero diagrams must contain the same zero locations",
+        "Their output waveforms may differ even when output magnitudes match",
+        "Their output spectra must have different magnitude values"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-706",
+      "subject": "DGT302",
+      "question": "Increasing the filter length M of a rectangular-window FIR mainly",
+      "options": [
+        "Reduces cutoff frequency",
+        "Narrows the transition band without eliminating Gibbs overshoot",
+        "Eliminates ripple completely",
+        "Makes the filter nonlinear"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-707",
+      "subject": "DGT302",
+      "question": "Downsampling by D changes the sampling rate to",
+      "options": [
+        "fs D",
+        "D fs",
+        "fs/D",
+        "fS+D"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-708",
+      "subject": "DGT302",
+      "question": "Noble identities are valuable because they:",
+      "options": [
+        "Double sampling rate",
+        "Increase stopband attenuation",
+        "Move filters to the lower-rate side for efficiency",
+        "Remove aliasing mathematically"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-709",
+      "subject": "DGT302",
+      "question": "Convolution in time domain corresponds to what operation in frequency domain?",
+      "options": [
+        "Division",
+        "Addition",
+        "Multiplication",
+        "Differentiation"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-710",
+      "subject": "DGT302",
+      "question": "Fourier Transform is mainly used for:",
+      "options": [
+        "Quantized signals",
+        "Periodic signals only",
+        "Binary signals",
+        "Aperiodic signals"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-711",
+      "subject": "DGT302",
+      "question": "Which modification alone cannot eliminate aliasing once samples have been taken?",
+      "options": [
+        "Ideal LPF after sampling",
+        "All of the above",
+        "Oversampling later",
+        "Increase ADC bits"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-712",
+      "subject": "DGT302",
+      "question": "Compared with Butterworth, Chebyshev Type I filters generally:",
+      "options": [
+        "Need higher order for the same specification",
+        "Have flatter passbands",
+        "Are always linear phase",
+        "Achieve sharper transitions with passband ripple"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-713",
+      "subject": "DGT302",
+      "question": "Which condition is necessary for perfect frequency-domain inversion over a desired band?",
+      "options": [
+        "H(e^(jω)) must have unit magnitude over all frequencies",
+        "H(e^(jω)) must contain at least one zero on the unit circle",
+        "H(e^(jω)) must be nonzero throughout the desired band",
+        "H(e^(jω)) must have constant phase over all frequencies"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-714",
+      "subject": "DGT302",
+      "question": "In the DIT butterfly, the twiddle multiplication occurs:",
+      "options": [
+        "After subtraction only",
+        "Never",
+        "Before the add/subtract operations",
+        "At the final stage only"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-715",
+      "subject": "DGT302",
+      "question": "The twiddle factor primarily represents:",
+      "options": [
+        "Circular convolution",
+        "Window coefficient",
+        "Complex rotation on the unit circle",
+        "Quantization step"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-716",
+      "subject": "DGT302",
+      "question": "Oversampling improves effective SNR mainly because:",
+      "options": [
+        "it spreads quantization noise over a wider spectrum before filtering",
+        "it removes aliasing automatically",
+        "it doubles the ADC resolution",
+        "it increases signal amplitude"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-717",
+      "subject": "DGT302",
+      "question": "The unilateral z-transform is especially useful for:",
+      "options": [
+        "Continuous signals",
+        "Analog filters",
+        "Image compression",
+        "Difference equations with initial conditions"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-718",
+      "subject": "DGT302",
+      "question": "A complex exponential e^(jω0n) is applied to a relaxed LTI system whose frequency response exists at ω0. Which statement describes its steady-state output?",
+      "options": [
+        "Its phase remains unchanged while frequency and amplitude change",
+        "Its frequency remains unchanged while amplitude and phase change",
+        "Its amplitude becomes zero for every stable LTI system",
+        "Its frequency changes while amplitude remains fixed"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-719",
+      "subject": "DGT302",
+      "question": "For a causal sequence, the ROC is typically:",
+      "options": [
+        "Outside the outermost pole",
+        "Inside the innermost pole",
+        "At the origin",
+        "Nowhere"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-720",
+      "subject": "DGT302",
+      "question": "The primary purpose of bit-reversal in DIT is:",
+      "options": [
+        "Reduce FFT stages",
+        "Increase frequency resolution",
+        "Remove quantization noise",
+        "Match recursive butterfly data flow"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-721",
+      "subject": "DGT302",
+      "question": "Which block delays a discrete-time signal by one sample?",
+      "options": [
+        "Unit Delay",
+        "Adder",
+        "Integrator",
+        "Multiplier"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-722",
+      "subject": "DGT302",
+      "question": "Which signal classification describes uncertainty?",
+      "options": [
+        "Random",
+        "periodic",
+        "Deterministic",
+        "Continuous"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-723",
+      "subject": "DGT302",
+      "question": "A system is causal if the output depends on:",
+      "options": [
+        "Present and past inputs",
+        "Past outputs only",
+        "Future inputs",
+        "Random inputs"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-724",
+      "subject": "DGT302",
+      "question": "Quantization in ADC refers to:",
+      "options": [
+        "Noise filtering",
+        "Time discretization",
+        "Signal amplification",
+        "Amplitude discretization"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-725",
+      "subject": "DGT302",
+      "question": "BIBO stability means:",
+      "options": [
+        "Bounded input gives bounded output",
+        "Nonlinear response",
+        "Bounded output gives infinite input",
+        "Unstable poles"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-726",
+      "subject": "DGT302",
+      "question": "Why are lattice filters attractive in adaptive filtering?",
+      "options": [
+        "Lowest memory",
+        "Robust against coefficient quantization",
+        "No delays",
+        "Require no multipliers"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-727",
+      "subject": "DGT302",
+      "question": "The group delay of a linear-phase FIR filter is:",
+      "options": [
+        "Infinite",
+        "Frequency dependent",
+        "Constant for all frequencies",
+        "Zero for all frequencies"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-728",
+      "subject": "DGT302",
+      "question": "Which statement correctly describes the relationship between convolution in time domain and frequency-domain analysis for discrete-time signals?",
+      "options": [
+        "Convolution in time domain corresponds to differentiation in frequency domain",
+        "Convolution in time domain corresponds to multiplication in frequency domain, simplifying LTI system analysis",
+        "Convolution in time domain has no equivalent operation in frequency domain",
+        "Multiplication in time domain corresponds to convolution in frequency domain only for continuous signals"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-729",
+      "subject": "DGT302",
+      "question": "An AR model is best described as:",
+      "options": [
+        "A pole-zero model",
+        "An all-pole model driven by white noise",
+        "An all-zero FIR model",
+        "A noncausal predictor"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-730",
+      "subject": "DGT302",
+      "question": "Which application fundamentally relies on FFT/IFFT pairs?",
+      "options": [
+        "OFDM wireless communication",
+        "ADC calibration",
+        "Thermocouple measurement",
+        "PWM generation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-731",
+      "subject": "DGT302",
+      "question": "Increasing STFT window length generally:",
+      "options": [
+        "Improves both",
+        "Improves time resolution",
+        "Improves frequency resolution but worsens time resolution",
+        "Improves neither"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-732",
+      "subject": "DGT302",
+      "question": "A memoryless system depends only on:",
+      "options": [
+        "Past outputs",
+        "Future input",
+        "Current input",
+        "Random values"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-733",
+      "subject": "DGT302",
+      "question": "Perfect Reconstruction (PR) means:",
+      "options": [
+        "Infinite attenuation",
+        "Output equals delayed/scaled input after analysis-synthesis",
+        "No quantization",
+        "Zero delay"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-734",
+      "subject": "DGT302",
+      "question": "Why is sinc interpolation considered ideal?",
+      "options": [
+        "It compresses data",
+        "It avoids quantization",
+        "It exactly reconstructs band-limited signals sampled above Nyquist",
+        "It requires no filter"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-735",
+      "subject": "DGT302",
+      "question": "Circular convolution differs from linear convolution because:",
+      "options": [
+        "Samples wrap around modulo N",
+        "It ignores periodicity",
+        "FFT cannot compute it",
+        "Output is always longer"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-736",
+      "subject": "DGT302",
+      "question": "A noncausal Wiener filter can achieve MMSE no larger than a comparable causal filter because:",
+      "options": [
+        "It has infinite order",
+        "It removes aliasing",
+        "It can use future observations",
+        "It ignores noise"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-737",
+      "subject": "DGT302",
+      "question": "Spectral leakage mainly occurs when:",
+      "options": [
+        "Zero-padding is used",
+        "Signal frequency is not aligned with a DFT bin",
+        "FFT size is power of two",
+        "Hann window is used"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-738",
+      "subject": "DGT302",
+      "question": "If fs is gradually reduced below the Nyquist rate, what appears first?",
+      "options": [
+        "Higher dynamic range",
+        "Spectral overlap",
+        "Reduced SNR",
+        "Lower quantization error"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-739",
+      "subject": "DGT302",
+      "question": "Parseval's theorem states that:",
+      "options": [
+        "Signals are periodic",
+        "All poles are stable",
+        "Sampling removes noise",
+        "Energy in time domain equals energy in frequency domain"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-740",
+      "subject": "DGT302",
+      "question": "Which frequency-domain relation is equivalent to y[n] = x[n] * h[n]?",
+      "options": [
+        "Y(e^jω) = X(e^jω) - H(e^jω)",
+        "Y(e^jω) = X(e^jω) + H(e^jω)",
+        "Y(e^jω) = X(e^jω) / H(e^jω)",
+        "Y(e^jω) = X(e^jω)·H(e^jω)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-741",
+      "subject": "DGT302",
+      "question": "For sequences of lengths L and M, what is the minimum common FFT length N after zero-padding so FFT multiplication yields their exact linear convolution?",
+      "options": [
+        "max(L,M)",
+        "L+M-1",
+        "2L",
+        "L+M"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-742",
+      "subject": "DGT302",
+      "question": "The unilateral z-transform is especially useful for:",
+      "options": [
+        "Continuous signals",
+        "Difference equations with initial conditions",
+        "Image compression",
+        "Analog filters"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-743",
+      "subject": "DGT302",
+      "question": "For H(z) = 1 - z^(-M), at which frequencies do magnitude zeros occur?",
+      "options": [
+        "ω = π(2k + 1)/M for integer k",
+        "ω = πkM for integer k",
+        "ω = 2πk/M for integer k",
+        "ω = 2πM/k for integer k"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-744",
+      "subject": "DGT302",
+      "question": "Aliasing occurs when:",
+      "options": [
+        "Sampling rate is too high",
+        "Sampling rate is below Nyquist rate",
+        "Signal is filtered",
+        "Signal is amplified"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-745",
+      "subject": "DGT302",
+      "question": "A minimum-phase system has zeros:",
+      "options": [
+        "Outside the unit circle",
+        "At infinity",
+        "On the unit circle",
+        "Inside the unit circle"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-746",
+      "subject": "DGT302",
+      "question": "What is the primary purpose of an Anti-Aliasing Filter in a DSP system?",
+      "options": [
+        "Store digital data",
+        "Remove frequencies above Nyquist limit",
+        "Amplify the signal",
+        "Convert analog to digital"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-747",
+      "subject": "DGT302",
+      "question": "For a causal sequence, the ROC is typically:",
+      "options": [
+        "Nowhere",
+        "Outside the outermost pole",
+        "At the origin",
+        "Inside the innermost pole"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-748",
+      "subject": "DGT302",
+      "question": "What is the smallest positive period guaranteed for the DTFT of every discrete-time sequence?",
+      "options": [
+        "2π",
+        "π",
+        "∞",
+        "4π"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-749",
+      "subject": "DGT302",
+      "question": "Without scaling, the greatest practical risk in fixed-point FFT is",
+      "options": [
+        "Aliasing",
+        "Spectral leakage",
+        "Overflow during butterfly computations",
+        "Time reversal"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-750",
+      "subject": "DGT302",
+      "question": "The major drawback of the bilinear transform is",
+      "options": [
+        "Aliasing",
+        "Infinite impulse response",
+        "Frequency warping",
+        "Instability"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-751",
+      "subject": "DGT302",
+      "question": "A designer must choose between Fixed-point and Floating-point DSP. Which factor most strongly favors Fixed-point?",
+      "options": [
+        "No quantization",
+        "Lower power and silicon cost",
+        "No overflow",
+        "Infinite precision"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-752",
+      "subject": "DGT302",
+      "question": "Why is output='sos' recommended for high-order IIR filters in SciPy?",
+      "options": [
+        "Removes poles",
+        "Reduces sampling frequency",
+        "Improves numerical stability using second-order sections",
+        "Produces FIR coefficients"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-753",
+      "subject": "DGT302",
+      "question": "Which statement best distinguishes Yule-Walker and Wiener-Hopf?",
+      "options": [
+        "Yule-Walker never uses autocorrelation",
+        "Wiener-Hopf applies only to FIR",
+        "Yule-Walker estimates AR predictors, whereas Wiener-Hopf estimates optimal filters using cross-correlation",
+        "Both solve identical problems"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-754",
+      "subject": "DGT302",
+      "question": "For a causal rational LTI system, poles strictly inside the unit circle imply:",
+      "options": [
+        "Instability",
+        "Causality only",
+        "Infinite response",
+        "BIBO stability"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-755",
+      "subject": "DGT302",
+      "question": "Which statement correctly describes the relationship between convolution in time domain and frequency-domain analysis for discrete-time signals?",
+      "options": [
+        "Multiplication in time domain corresponds to convolution in frequency domain only for continuous signals",
+        "Convolution in time domain corresponds to multiplication in frequency domain, simplifying LTI system analysis",
+        "Convolution in time domain has no equivalent operation in frequency domain",
+        "Convolution in time domain corresponds to differentiation in frequency domain"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-756",
+      "subject": "DGT302",
+      "question": "Why must the anti-imaging filter have gain l?",
+      "options": [
+        "To restore amplitude lost by zero insertion",
+        "To widen bandwidth",
+        "To reduce ripple",
+        "To cancel aliasing"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-757",
+      "subject": "DGT302",
+      "question": "Which of the following is an advantage of digital processing?",
+      "options": [
+        "Thermal drift",
+        "Software flexibility",
+        "Component aging",
+        "Noise accumulation"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-758",
+      "subject": "DGT302",
+      "question": "Which hardware format generally offers the largest dynamic range?",
+      "options": [
+        "Integer Q7",
+        "Floating-point IEEE754",
+        "Unsigned binary",
+        "Fixed-point Q15"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-759",
+      "subject": "DGT302",
+      "question": "A continuous-time signal contains frequency components up to 8 kHz. Which sampling frequency below will avoid aliasing according to the Nyquist theorem?",
+      "options": [
+        "15 kHz",
+        "12 kHz",
+        "20 kHz",
+        "10 kHz"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-760",
+      "subject": "DGT302",
+      "question": "A low-pass filter is designed mainly to perform which operation?",
+      "options": [
+        "Preserve rapid variations and remove slow variations",
+        "Preserve low frequencies and attenuate high frequencies",
+        "Remove every component including the DC component",
+        "Pass only one narrow frequency around resonance"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-761",
+      "subject": "DGT302",
+      "question": "Why is a right shift often applied after every FFT stage in fixed-point hardware?",
+      "options": [
+        "To change frequency bins",
+        "To prevent overflow accumulation",
+        "To improve resolution",
+        "To reduce FFT stages"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-762",
+      "subject": "DGT302",
+      "question": "For a causal LTI system with system function H(z), which condition guarantees both causality and BIBO stability?",
+      "options": [
+        "All zeros are inside unit circle regardless of pole locations",
+        "ROC is outside outermost pole and all poles are strictly inside unit circle",
+        "ROC is between poles",
+        "ROC contains origin only"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-763",
+      "subject": "DGT302",
+      "question": "For a causal LTI system with system function H(z), which condition guarantees both causality and BIBO stability?",
+      "options": [
+        "All zeros are inside unit circle regardless of pole locations",
+        "ROC is outside outermost pole and all poles are strictly inside unit circle",
+        "ROC is between poles",
+        "ROC contains origin only"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-764",
+      "subject": "DGT302",
+      "question": "For a causal LTI system with system function H(z), which condition guarantees both causality and BIBO stability?",
+      "options": [
+        "All zeros are inside unit circle regardless of pole locations",
+        "ROC is outside outermost pole and all poles are strictly inside unit circle",
+        "ROC is between poles",
+        "ROC contains origin only"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-765",
+      "subject": "DGT302",
+      "question": "Reflection coefficients are primarily associated with",
+      "options": [
+        "Lattice structures",
+        "Parallel Form",
+        "Cascade SOS",
+        "Direct Form II"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-766",
+      "subject": "DGT302",
+      "question": "Bandpass sampling below 2fmax is possible only when",
+      "options": [
+        "oversampling is used",
+        "sinc interpolation is unavailable",
+        "quantization is nonlinear",
+        "spectral replicas remain non-overlapping"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-767",
+      "subject": "DGT302",
+      "question": "Interpolation in multirate DSP is always followed by a low-pass filter because",
+      "options": [
+        "it removes inserted spectral images",
+        "it avoids clipping",
+        "it reduces quantization levels",
+        "it performs encoding"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-768",
+      "subject": "DGT302",
+      "question": "Why is the FFT dramatically faster than the direct DFT?",
+      "options": [
+        "It reduces the number of frequency bins",
+        "It avoids complex arithmetic",
+        "It approximates the DFT",
+        "It recursively decomposes the DFT into smaller transforms"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-769",
+      "subject": "DGT302",
+      "question": "A smoother-looking spectrum after zero-padding indicates",
+      "options": [
+        "More information collected",
+        "Better frequency resolution",
+        "Less leakage",
+        "Better interpolation of existing DTFT samples"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-770",
+      "subject": "DGT302",
+      "question": "The primary spectral effect of downsampling is",
+      "options": [
+        "Frequency translation",
+        "Spectral compression",
+        "Spectral expansion with possible aliasing",
+        "Gibbs phenomenon"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-771",
+      "subject": "DGT302",
+      "question": "A designer doubles the ADC resolution from 8 bits to 16 bits but keeps the sampling frequency unchanged. Which improvement is expected?",
+      "options": [
+        "Less aliasing",
+        "Lower bandwidth",
+        "Higher SNR from reduced quantization error",
+        "Elimination of reconstruction filter"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-772",
+      "subject": "DGT302",
+      "question": "Why is multiplication by -j often considered hardware-free?",
+      "options": [
+        "It is ignored",
+        "It removes twiddle factors",
+        "It equals zero",
+        "It only swaps real/imaginary parts with a sign change"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-773",
+      "subject": "DGT302",
+      "question": "How is the frequency response obtained from a rational system function H(z)?",
+      "options": [
+        "Replace every pole of H(z) by a zero",
+        "Evaluate H(z) only at the origin z = 0",
+        "Differentiate H(z) with respect to z",
+        "Evaluate H(z) on the unit circle z = e^(jω)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-774",
+      "subject": "DGT302",
+      "question": "A sampled spectrum shows repeated copies centered at multiples of fs. This is",
+      "options": [
+        "aliasing",
+        "interpolation",
+        "quantization",
+        "normal spectrum replication due to sampling"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-775",
+      "subject": "DGT302",
+      "question": "Which FFT property allows computation using only one memory array?",
+      "options": [
+        "Parseval theorem",
+        "In-place computation",
+        "Zero padding",
+        "Circular convolution"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-776",
+      "subject": "DGT302",
+      "question": "For a real-valued signal, which DFT property reduces computation?",
+      "options": [
+        "Linearity",
+        "Parseval theorem",
+        "Conjugate symmetry",
+        "Circular symmetry"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-777",
+      "subject": "DGT302",
+      "question": "Two distinct analog signals produce exactly the same samples at a given sampling rate. Which explanation is most accurate?",
+      "options": [
+        "Both passed through a DAC",
+        "Both used the same ADC resolution",
+        "Both were oversampled",
+        "Both experienced aliasing",
+        "The samples cannot distinguish the signals: this is an aliasing ambiguity, without requiring both signals to exceed Nyquist."
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "id": "DGT302-778",
+      "subject": "DGT302",
+      "question": "The main trade-off of Zero-Order Hold is",
+      "options": [
+        "no imaging",
+        "simple implementation but staircase distortion",
+        "perfect reconstruction with high cost",
+        "alias-free output"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-779",
+      "subject": "DGT302",
+      "question": "Why is direct inverse filtering unreliable at frequencies where |H(e^(jω))| is very small but nonzero?",
+      "options": [
+        "It can strongly amplify noise at those frequencies",
+        "It converts a periodic input into an aperiodic output",
+        "It forces every system pole onto the unit circle",
+        "It removes all phase information from the recovered signal"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-780",
+      "subject": "DGT302",
+      "question": "Zero-stuffing alone does not reconstruct a signal because",
+      "options": [
+        "It introduces imaging that requires LPF removal",
+        "It reduces amplitude only",
+        "It changes quantization",
+        "It causes aliasing"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-781",
+      "subject": "DGT302",
+      "question": "Why does whitening simplify prediction?",
+      "options": [
+        "It increases PSD",
+        "It reduces sampling rate",
+        "It removes correlation, leaving only innovation",
+        "It creates poles"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-782",
+      "subject": "DGT302",
+      "question": "What does |H(e^(jω))| indicate for a sinusoidal input at frequency ω?",
+      "options": [
+        "The output sampling period at that frequency",
+        "The input signal energy at that frequency",
+        "The amplitude scaling applied at that frequency",
+        "The output time shift at that frequency"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-783",
+      "subject": "DGT302",
+      "question": "Why must fixed-point FFT implementations carefully manage rounding, truncation and scaling?",
+      "options": [
+        "The DFT matrix is singular.",
+        "The exact FFT changes signal energy.",
+        "Butterfly equations are inherently nonlinear.",
+        "Limited fractional precision and fixed scaling can accumulate rounding/truncation errors."
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-784",
+      "subject": "DGT302",
+      "question": "Which realization is widely recommended to reduce numerical problems when implementing a high-order IIR filter?",
+      "options": [
+        "Direct Form I",
+        "Cascade Second-Order Sections",
+        "Parallel FIR",
+        "Single polynomial"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-785",
+      "subject": "DGT302",
+      "question": "An ADC samples a signal at 12 kHz while the signal contains frequency components up to 8 kHz. Which phenomenon is most likely if no analog filter is used?",
+      "options": [
+        "Quantization noise dominates",
+        "Encoder overflow",
+        "Aliasing due to spectral overlap",
+        "Sine interpolation error"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-786",
+      "subject": "DGT302",
+      "question": "Why must an anti-aliasing filter precede a downsampler?",
+      "options": [
+        "To reduce quantization noise",
+        "To compensate DAC gain",
+        "To increase sampling rate",
+        "Aliasing cannot be removed after spectral overlap"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-787",
+      "subject": "DGT302",
+      "question": "If the 1/N factor is omitted from the inverse of an unnormalized forward DFT, what happens to the reconstructed amplitudes?",
+      "options": [
+        "Phase reversal",
+        "Output amplitude is multiplied by N",
+        "Frequency resolution improves",
+        "Time shift"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-788",
+      "subject": "DGT302",
+      "question": "A designer downsamples first and filters later. The most likely consequence is",
+      "options": [
+        "Higher SNR",
+        "Improved efficiency with identical output",
+        "Perfect reconstruction",
+        "Irreversible aliasing distortion"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-789",
+      "subject": "DGT302",
+      "question": "Why are random signals described using statistical quantities instead of explicit equations?",
+      "options": [
+        "They have infinite bandwidth",
+        "Future samples cannot be predicted exactly",
+        "They are always periodic",
+        "Fourier transform cannot be applied"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-790",
+      "subject": "DGT302",
+      "question": "For a wide-sense stationary input with PSD Sxx(e^(jω)), which expression gives the output PSD of a stable LTI system?",
+      "options": [
+        "Syy(e^(jω)) = |H(e^(jω))|²·Sxx(e^(jω))",
+        "Syy(e^(jω)) = H(e^(jω)) + Sxx(e^(jω))",
+        "Syy(e^(jω)) = Sxx(e^(jω)) / |H(e^(jω))|",
+        "Syy(e^(jω)) = H(e^(jω))·Sxx(e^(jω))"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-791",
+      "subject": "DGT302",
+      "question": "Convolution in time domain corresponds to what operation in frequency domain?",
+      "options": [
+        "Addition",
+        "Division",
+        "Multiplication",
+        "Differentiation"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-792",
+      "subject": "DGT302",
+      "question": "Which statement best explains divide-and-conquer in FFT?",
+      "options": [
+        "Solve the same N-point DFT repeatedly",
+        "Eliminate recursion",
+        "Increase twiddle factors",
+        "Replace one large DFT with smaller DFTs recursively"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-793",
+      "subject": "DGT302",
+      "question": "Which statement best explains Parseval's theorem?",
+      "options": [
+        "DFT reduces energy",
+        "Energy depends on zero padding",
+        "Energy is conserved between domains",
+        "FFT doubles energy"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-794",
+      "subject": "DGT302",
+      "question": "Which theorem relates convolution in time domain to multiplication in z-domain?",
+      "options": [
+        "Convolution theorem",
+        "Sampling theorem",
+        "Parseval theorem",
+        "Nyquist theorem"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "DGT302-795",
+      "subject": "DGT302",
+      "question": "Which SciPy function to design FIR?",
+      "options": [
+        "lfilter",
+        "butter",
+        "freqz",
+        "firwin"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-796",
+      "subject": "DGT302",
+      "question": "Which SciPy function is most appropriate for applying an FIR or IIR filter to a signal?",
+      "options": [
+        "firwin",
+        "lfilter",
+        "freqz",
+        "butter"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "DGT302-797",
+      "subject": "DGT302",
+      "question": "Which SciPy function is used to inspect the frequency response of a digital filter?",
+      "options": [
+        "lfilter",
+        "firwin",
+        "freqz",
+        "upfirdn"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "DGT302-798",
+      "subject": "DGT302",
+      "question": "Which SciPy function efficiently performs upsample-filter-downsample operations?",
+      "options": [
+        "freqz",
+        "butter",
+        "lfilter",
+        "upfirdn"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "DGT302-799",
+      "subject": "DGT302",
+      "question": "Which SciPy function is mainly used to design an IIR Butterworth filter?",
+      "options": [
+        "firwin",
+        "freqz",
+        "butter",
+        "lfilter"
+      ],
+      "answer": [
+        2
+      ]
+    }
+  ],
+  "sameStemGroups": [
+    [
+      "DGT302-604",
+      "DGT302-655"
+    ],
+    [
+      "DGT302-605",
+      "DGT302-656"
+    ],
+    [
+      "DGT302-606",
+      "DGT302-657",
+      "DGT302-723"
+    ],
+    [
+      "DGT302-607",
+      "DGT302-608",
+      "DGT302-658"
+    ],
+    [
+      "DGT302-609",
+      "DGT302-659"
+    ],
+    [
+      "DGT302-610",
+      "DGT302-660"
+    ],
+    [
+      "DGT302-611",
+      "DGT302-661",
+      "DGT302-664"
+    ],
+    [
+      "DGT302-612",
+      "DGT302-662",
+      "DGT302-665"
+    ],
+    [
+      "DGT302-613",
+      "DGT302-638",
+      "DGT302-663",
+      "DGT302-666",
+      "DGT302-691"
+    ],
+    [
+      "DGT302-614",
+      "DGT302-667"
+    ],
+    [
+      "DGT302-615",
+      "DGT302-668"
+    ],
+    [
+      "DGT302-616",
+      "DGT302-669"
+    ],
+    [
+      "DGT302-617",
+      "DGT302-670"
+    ],
+    [
+      "DGT302-618",
+      "DGT302-671"
+    ],
+    [
+      "DGT302-619",
+      "DGT302-672",
+      "DGT302-725"
+    ],
+    [
+      "DGT302-620",
+      "DGT302-673"
+    ],
+    [
+      "DGT302-621",
+      "DGT302-674"
+    ],
+    [
+      "DGT302-622",
+      "DGT302-675"
+    ],
+    [
+      "DGT302-623",
+      "DGT302-676"
+    ],
+    [
+      "DGT302-624",
+      "DGT302-677",
+      "DGT302-746"
+    ],
+    [
+      "DGT302-625",
+      "DGT302-678"
+    ],
+    [
+      "DGT302-626",
+      "DGT302-679"
+    ],
+    [
+      "DGT302-627",
+      "DGT302-628",
+      "DGT302-680",
+      "DGT302-681"
+    ],
+    [
+      "DGT302-629",
+      "DGT302-682"
+    ],
+    [
+      "DGT302-630",
+      "DGT302-683"
+    ],
+    [
+      "DGT302-631",
+      "DGT302-684"
+    ],
+    [
+      "DGT302-632",
+      "DGT302-685",
+      "DGT302-732"
+    ],
+    [
+      "DGT302-633",
+      "DGT302-686"
+    ],
+    [
+      "DGT302-634",
+      "DGT302-687"
+    ],
+    [
+      "DGT302-635",
+      "DGT302-688"
+    ],
+    [
+      "DGT302-636",
+      "DGT302-689"
+    ],
+    [
+      "DGT302-637",
+      "DGT302-690"
+    ],
+    [
+      "DGT302-639",
+      "DGT302-692"
+    ],
+    [
+      "DGT302-640",
+      "DGT302-693"
+    ],
+    [
+      "DGT302-641",
+      "DGT302-694"
+    ],
+    [
+      "DGT302-642",
+      "DGT302-695"
+    ],
+    [
+      "DGT302-643",
+      "DGT302-696",
+      "DGT302-757"
+    ],
+    [
+      "DGT302-644",
+      "DGT302-697"
+    ],
+    [
+      "DGT302-645",
+      "DGT302-698"
+    ],
+    [
+      "DGT302-646",
+      "DGT302-699"
+    ],
+    [
+      "DGT302-647",
+      "DGT302-700"
+    ],
+    [
+      "DGT302-648",
+      "DGT302-701",
+      "DGT302-721"
+    ],
+    [
+      "DGT302-649",
+      "DGT302-702"
+    ],
+    [
+      "DGT302-650",
+      "DGT302-703"
+    ],
+    [
+      "DGT302-651",
+      "DGT302-704"
+    ],
+    [
+      "DGT302-652",
+      "DGT302-705"
+    ],
+    [
+      "DGT302-653",
+      "DGT302-706"
+    ],
+    [
+      "DGT302-654",
+      "DGT302-707"
+    ],
+    [
+      "DGT302-709",
+      "DGT302-791"
+    ],
+    [
+      "DGT302-717",
+      "DGT302-742"
+    ],
+    [
+      "DGT302-719",
+      "DGT302-747"
+    ],
+    [
+      "DGT302-728",
+      "DGT302-755"
+    ],
+    [
+      "DGT302-762",
+      "DGT302-763",
+      "DGT302-764"
+    ]
+  ],
+  "candidates": [
+    {
+      "ids": [
+        "DGT302-644",
+        "DGT302-710"
+      ],
+      "similarity": 0.814
+    },
+    {
+      "ids": [
+        "DGT302-697",
+        "DGT302-710"
+      ],
+      "similarity": 0.814
+    },
+    {
+      "ids": [
+        "DGT302-611",
+        "DGT302-786"
+      ],
+      "similarity": 0.708
+    },
+    {
+      "ids": [
+        "DGT302-661",
+        "DGT302-786"
+      ],
+      "similarity": 0.708
+    },
+    {
+      "ids": [
+        "DGT302-664",
+        "DGT302-786"
+      ],
+      "similarity": 0.708
+    },
+    {
+      "ids": [
+        "DGT302-612",
+        "DGT302-762"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-612",
+        "DGT302-763"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-612",
+        "DGT302-764"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-662",
+        "DGT302-762"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-662",
+        "DGT302-763"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-662",
+        "DGT302-764"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-665",
+        "DGT302-762"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-665",
+        "DGT302-763"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-665",
+        "DGT302-764"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "DGT302-792",
+        "DGT302-793"
+      ],
+      "similarity": 0.674
+    },
+    {
+      "ids": [
+        "DGT302-523",
+        "DGT302-570"
+      ],
+      "similarity": 0.664
+    },
+    {
+      "ids": [
+        "DGT302-614",
+        "DGT302-650"
+      ],
+      "similarity": 0.653
+    },
+    {
+      "ids": [
+        "DGT302-614",
+        "DGT302-703"
+      ],
+      "similarity": 0.653
+    },
+    {
+      "ids": [
+        "DGT302-650",
+        "DGT302-667"
+      ],
+      "similarity": 0.653
+    },
+    {
+      "ids": [
+        "DGT302-667",
+        "DGT302-703"
+      ],
+      "similarity": 0.653
+    },
+    {
+      "ids": [
+        "DGT302-795",
+        "DGT302-799"
+      ],
+      "similarity": 0.652
+    },
+    {
+      "ids": [
+        "DGT302-710",
+        "DGT302-717"
+      ],
+      "similarity": 0.64
+    },
+    {
+      "ids": [
+        "DGT302-710",
+        "DGT302-742"
+      ],
+      "similarity": 0.64
+    },
+    {
+      "ids": [
+        "DGT302-542",
+        "DGT302-552"
+      ],
+      "similarity": 0.636
+    },
+    {
+      "ids": [
+        "DGT302-612",
+        "DGT302-754"
+      ],
+      "similarity": 0.636
+    },
+    {
+      "ids": [
+        "DGT302-662",
+        "DGT302-754"
+      ],
+      "similarity": 0.636
+    },
+    {
+      "ids": [
+        "DGT302-665",
+        "DGT302-754"
+      ],
+      "similarity": 0.636
+    }
+  ]
+}

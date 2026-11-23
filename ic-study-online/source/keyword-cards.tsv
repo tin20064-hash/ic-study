@@ -1,0 +1,48 @@
+DGT302	Real signal x[n]	Magnitude chẵn; phase lẻ (mod 2π, nơi phổ khác 0)	Magnitude lẻ; phase chẵn	Magnitude và phase luôn bằng 0	Phổ chỉ có tần số dương	Phổ có đối xứng liên hợp X(−ω)=X*(ω); suy ra đối xứng biên độ và pha.
+DGT302	JPEG / DCT	Energy compaction vào ít hệ số tần số thấp	Luôn triệt hết nhiễu	Tăng gấp đôi tần số lấy mẫu	Biến mọi hệ số thành 0	DCT gom phần lớn năng lượng ảnh thường gặp vào ít hệ số để nén hiệu quả.
+DGT302	Rectangular window (cùng độ dài, so với Hann/Hamming)	Main lobe hẹp nhưng side lobe cao, dễ leakage	Không có spectral leakage	Side lobe thấp nhất trong ba cửa sổ	Main lobe rộng nhất trong ba cửa sổ	Cắt đột ngột gây side lobe cao. Phân giải còn phụ thuộc độ dài cửa sổ; không nên nhớ máy móc rectangular = mất phân giải.
+DGT302	n·x[n] ↔ ? (DTFT, đủ điều kiện lấy đạo hàm)	j·dX(ω)/dω	−j·dX(ω)/dω	X(ω)²	X(−ω)	Lấy đạo hàm e^(−jωn) sinh −jn; nhân j sẽ cho n.
+DGT302	Real + even x[n]	Real + even X(ω)	Pure imaginary + odd X(ω)	Phổ chỉ chứa pha π/2	X(ω) luôn bằng 0	Tính chẵn triệt phần sin, còn phần cos thực và chẵn.
+DGT302	Downsample by D	y[m] = x[mD]	y[m] = x[m/D] ở mọi m	y[m] = D·x[m]	y[m] = x[m−D]	Giữ mỗi D mẫu một lần; tần số lấy mẫu mới bằng Fs/D.
+DGT302	Parallel LTI systems	h_eq = h₁ + h₂	h_eq = h₁ * h₂	h_eq = h₁ / h₂	h_eq = h₁ − h₂ trong mọi cấu hình	Hai nhánh cùng nhận đầu vào rồi cộng đầu ra → cộng đáp ứng xung.
+DGT302	Cascade LTI systems	h_eq = h₁ * h₂	h_eq = h₁ + h₂	h_eq = h₁ − h₂	h_eq = h₁ / h₂	Đầu ra hệ thứ nhất đi qua hệ thứ hai → chập hai đáp ứng xung.
+DGT302	BIBO stability + z-transform	ROC chứa vòng tròn đơn vị	ROC phải loại vòng tròn đơn vị	Mọi zero phải ở gốc	Mọi pole phải nằm trên vòng đơn vị	Đáp ứng tần số phải tồn tại trên z=e^(jω).
+DGT302	Minimum-phase causal stable system	Có nghịch đảo nhân quả và ổn định	Mọi zero nằm ngoài vòng đơn vị	Mọi pole nằm trên vòng đơn vị	Pha luôn bằng 0	Với hệ hữu tỉ, zero nằm trong vòng đơn vị trở thành pole ổn định của nghịch đảo nhân quả.
+DGT302	Parseval (DFT thuận không chuẩn hóa)	Σ|x[n]|² = (1/N)Σ|X[k]|²	Σ|x[n]|² = NΣ|X[k]|²	Σ|x[n]|² = Σ|X[k]|² với mọi N	Σ|x[n]|² = 0	DFT thuận không chia N → bảo toàn năng lượng cần hệ số 1/N ở miền tần số.
+DGT302	Multiply x[n] by cos(2πk₀n/N)	Hai phổ dịch ±k₀, mỗi phổ nhân 1/2	Chỉ đổi pha bằng một hệ số mũ	Chỉ dịch đúng một bin, không đổi biên độ	Phổ luôn bằng 0	Viết cos thành tổng hai hàm mũ; mỗi hàm mũ dịch một bản sao phổ DFT.
+COS201	AM không overmodulation (tín hiệu chuẩn hóa)	0 ≤ μ ≤ 1	μ > 1	μ < −1	μ luôn bằng 2	Độ sâu điều chế vượt 1 làm đường bao đổi dấu; μ=1 là biên 100%.
+COS201	Delta modulation: slope overload	Bước Δ quá nhỏ để bám tín hiệu biến thiên nhanh	Bước Δ quá lớn trên đoạn gần như phẳng	Tín hiệu không bao giờ đổi	Bộ thu có băng thông vô hạn	Tốc độ bám tối đa xấp xỉ Δ/T; dốc đầu vào lớn hơn mức này gây quá tải dốc.
+COS201	Delta modulation: granular noise	Bước Δ quá lớn khi tín hiệu biến thiên chậm	Bước Δ quá nhỏ để bám đoạn dốc	Chỉ xuất hiện khi không có lượng tử hóa	Luôn do tần số sóng mang thấp	Bậc thang nhảy quanh mức thật khi đầu vào chậm mà bước lượng tử lớn.
+COS201	I / Q	In-phase / Quadrature	Input / Quality	Impulse / Quantization	Interference / Queue	Hai thành phần vuông pha, thường gắn với các sóng mang cos và sin.
+COS201	Huffman coding	Mã prefix có thể có độ dài khác nhau; ký hiệu phổ biến thường có mã ngắn	Mọi ký hiệu bắt buộc có mã cùng độ dài	Là mã sửa lỗi kênh bắt buộc	Luôn cần đúng 8 bit/ký hiệu	Huffman tối ưu độ dài trung bình trong lớp mã prefix theo ký hiệu. Trường hợp 2^k ký hiệu đồng xác suất cho mã cùng dài k bit.
+COS201	Prefix-free code	Không từ mã nào là tiền tố của từ mã khác	Mọi từ mã phải có cùng số bit 1	Không thể giải mã tức thời	Mọi từ mã bắt đầu bằng 0	Không phải chờ thêm bit để biết một từ mã vừa kết thúc.
+COS201	Not prefix-free	Chưa đủ kết luận không giải mã duy nhất	Chắc chắn không giải mã duy nhất	Chắc chắn không thể dùng để truyền	Chắc chắn mọi từ mã trùng nhau	Một mã không prefix-free vẫn có thể giải mã duy nhất với nhìn trước; cần kiểm tra thêm.
+COS201	PCM: L = 2^n mức lượng tử	n bit cho mỗi mẫu	2n bit cho mỗi mẫu	L² bit cho mỗi mẫu	Luôn chỉ 1 bit cho mỗi mẫu	Chọn một trong L mức cần log₂L bit.
+COS201	QPSK	2 bit mỗi symbol	1 bit mỗi symbol	4 bit mỗi symbol	8 bit mỗi symbol	Bốn trạng thái pha mang log₂4=2 bit/symbol.
+COS201	16-QAM	4 bit mỗi symbol	2 bit mỗi symbol	8 bit mỗi symbol	16 bit mỗi symbol	Có 16 điểm chòm sao → log₂16=4 bit/symbol.
+COS201	ISI	Các symbol lân cận chồng lấn do bộ nhớ kênh	Chỉ là nhiễu nhiệt độc lập giữa các symbol	Luôn được loại bỏ bằng tăng công suất	Không liên quan đáp ứng xung kênh	Kênh làm xung trải dài nên một symbol ảnh hưởng thời điểm lấy mẫu của symbol khác.
+COS201	Nyquist sampling: tín hiệu baseband giới hạn B	Fs > 2B để bảo đảm tránh chồng phổ, kể cả khi có thành phần ở biên B	Fs = B/2	Fs < B trong mọi trường hợp	Fs không liên quan B	Fs=2B là tốc độ Nyquist nhưng trường hợp đúng biên cần điều kiện bổ sung: sin(2πBt) lấy mẫu tại Fs=2B cho toàn zero. Dùng Fs>2B để bảo đảm với mọi thành phần đến B.
+ICI211	CMOS dynamic switching power	P ≈ α·C·VDD²·f	P ≈ C/VDD²	P ≈ VDD/f trong mọi trường hợp	P độc lập VDD	Mỗi lần nạp/xả điện dung tiêu tốn năng lượng; giảm VDD có tác động bậc hai.
+ICI211	RC delay (mô hình bậc một, ngưỡng 50%)	t ≈ 0,69·R·C	t ≈ R/C	t ≈ C/R	t ≈ 2π/R	Đáp ứng mũ đạt 50% sau ln(2)·RC ≈ 0,69RC.
+ICI211	Charge loss ΔQ on capacitance C	|ΔV| = |ΔQ|/C	|ΔV| = |ΔQ|·C	|ΔV| = C/|ΔQ|	ΔV luôn bằng VDD	Từ Q=CV: lượng điện tích đổi chia cho điện dung là độ đổi điện áp.
+ICI211	Transmission gate	NMOS và PMOS mắc song song, điều khiển bù nhau	Hai NMOS nối tiếp cùng điều khiển	Một tụ điện đơn lẻ	Một điện trở lý tưởng không có transistor	NMOS truyền mức thấp tốt, PMOS truyền mức cao tốt; ghép song song để truyền cả hai mức.
+ICI211	NMOS pass transistor	Truyền 0 tốt; mức 1 có thể bị giảm bởi Vth	Truyền 1 tốt; mức 0 luôn bằng VDD	Truyền mọi mức không sụt áp trong mọi điều kiện	Chỉ hoạt động với tín hiệu quang	Khi đầu ra tăng, VGS giảm đến gần Vth nên NMOS khó kéo mức cao sát VDD.
+ICI211	PMOS pass transistor	Truyền 1 tốt; truyền 0 kém hơn	Truyền 0 tốt; không truyền được 1	Luôn dẫn khi gate ở VDD	Không có điện áp ngưỡng	PMOS bổ sung cho NMOS trong transmission gate.
+ICI211	Dynamic logic node	Lưu điện tích; cần precharge/evaluate đúng pha	Luôn có đường DC giữ mức ở mọi pha	Không chịu ảnh hưởng leakage	Không cần clock trong mọi cấu trúc	Nút động có thể mất điện tích do rò; phải tuân theo cơ chế nạp và đánh giá.
+ICI211	SRAM cell	Không cần refresh định kỳ khi còn cấp nguồn	Cần refresh như DRAM	Dữ liệu được lưu vĩnh viễn khi mất nguồn	Chỉ gồm một tụ điện	Các inverter hồi tiếp giữ trạng thái trong khi nguồn được duy trì.
+ICI211	DRAM cell	Lưu dữ liệu bằng điện tích và cần refresh	Lưu bằng fuse không thể đổi	Không mất dữ liệu khi tắt nguồn	Không có điện dung lưu trữ	Điện tích rò dần nên DRAM cần làm tươi định kỳ.
+ICI211	Noise margin high	NMH = VOH(min) − VIH(min)	NMH = VIL(max) − VOL(max)	NMH = VDD²·f	NMH = R·C	Lấy mức ra cao đảm bảo trừ mức vào cao tối thiểu cần nhận.
+ICI211	Noise margin low	NML = VIL(max) − VOL(max)	NML = VOH(min) − VIH(min)	NML = VDD + VOH	NML = C/VDD	Lấy giới hạn mức vào thấp trừ mức ra thấp tối đa.
+ICI211	SDFF	Semi-Dynamic Flip-Flop	Static Diode Feedback Filter	Serial Digital Frequency Filter	Single Data Fourier Function	SDFF dùng phần đầu động và chốt tĩnh, hướng đến clock-to-Q nhanh; không đồng nhất với sense-amplifier flip-flop.
+LOS201	fork()	Tạo tiến trình con	Thay chương trình của tiến trình hiện tại	Chỉ đổi thư mục hiện tại	Xóa một file	fork tạo tiến trình con; exec mới là họ lệnh thay ảnh chương trình.
+LOS201	exec family	Thay ảnh chương trình của tiến trình hiện tại	Luôn tạo thêm một PID con	Chỉ chờ tiến trình con kết thúc	Chỉ đóng socket	Khi thành công, exec thay chương trình trong cùng tiến trình và không quay lại chương trình cũ.
+LOS201	wait() / waitpid()	Chờ và thu nhận trạng thái của tiến trình con	Đổi quyền truy cập file	Tạo phân vùng swap	Biên dịch kernel	Thu trạng thái kết thúc giúp giải phóng mục zombie của tiến trình con.
+LOS201	Shared memory IPC	Các tiến trình truy cập chung vùng nhớ; cần đồng bộ phù hợp	Luôn mã hóa dữ liệu bằng khóa công khai	Chỉ truyền đúng một byte mỗi lần	Bắt buộc copy toàn bộ dữ liệu qua pipe	Chung vùng nhớ giảm việc sao chép, nhưng không tự loại bỏ race condition.
+LOS201	Pipe thông thường	Luồng byte một chiều	Kênh hai chiều bắt buộc	Bộ nhớ không mất dữ liệu khi tắt nguồn	Giao thức định tuyến Internet	Một pipe có đầu đọc và đầu ghi; cần hai pipe nếu muốn trao đổi hai chiều.
+LOS201	chmod	Thay quyền truy cập file	Thay chủ sở hữu file	Chỉ xem dung lượng ổ đĩa	Đổi mật khẩu user	chmod đổi các bit quyền; chown đổi chủ sở hữu.
+LOS201	chown	Thay chủ sở hữu file	Chỉ đổi các bit quyền rwx	Chỉ tìm PID	Bắt đầu một shell mới	Tên gợi nhớ change owner; có thể chỉ định cả nhóm khi phù hợp.
+LOS201	pwd	In đường dẫn thư mục hiện tại	Đổi mật khẩu	Xóa thư mục hiện tại	Liệt kê mọi tiến trình	pwd là print working directory.
+LOS201	BusyBox	Nhiều tiện ích gọn trong một executable	Chỉ là một trình biên dịch C	Chỉ là một hệ quản trị cơ sở dữ liệu	Luôn cần Python để chạy	BusyBox chọn applet theo tên gọi, phù hợp hệ nhúng hạn chế tài nguyên.
+LOS201	VFS	Lớp trừu tượng chung cho các hệ thống file	Bộ điều khiển màn hình vật lý	Một trình soạn thảo duy nhất	Một bản phân phối Linux	VFS cung cấp giao diện file chung dù phía dưới là các filesystem khác nhau.
+LOS201	lseek()	Đổi offset hiện tại của file descriptor có thể seek	Luôn đọc toàn bộ file	Luôn tạo thêm một tiến trình	Đổi địa chỉ IP	lseek đổi vị trí đọc/ghi; pipe và một số thiết bị không hỗ trợ seek.
+LOS201	Yocto: IMAGE_INSTALL	Danh sách package thêm vào image	Danh sách tài khoản GitHub	Số CPU vật lý bắt buộc	Địa chỉ IP của kernel	IMAGE_INSTALL dùng để xác định các package được cài vào image.

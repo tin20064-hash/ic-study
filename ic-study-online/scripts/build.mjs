@@ -1,0 +1,54 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=process.cwd(),dist=path.resolve(root,'dist');if(path.dirname(dist)!==root||path.basename(root)!=='ic-study-online')throw Error('Unexpected build directory');
+const original=fs.readFileSync('source/study.html','utf8');let html=original;
+const studyStyles=[...original.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/g)].map(match=>match[1]).join('\n');
+const defaultPalette=studyStyles.match(/^:root\s*(\{[^{}]*--accent-rgb:[^{}]*\})/m);
+const pastelPalettes=[...studyStyles.matchAll(/^body\[data-palette=([\w-]+)\]\s*(\{[^{}]*\})/gm)];
+const boldPalettes=[...studyStyles.matchAll(/^:is\(body\[data-palette="([\w-]+)"\], \[data-bold-preset="\1"\]\)\s*(\{[^{}]*\})/gm)];
+if(!defaultPalette||!pastelPalettes.length||!boldPalettes.length)throw Error('Study palette definitions are missing');
+const palettes=[['sakura',defaultPalette[1]],...[...pastelPalettes,...boldPalettes].map(([,name,tokens])=>[name,tokens])];
+const adminPaletteCSS=palettes.map(([name,tokens])=>`html.admin-page[data-palette="${name}"]${tokens}`).join('\n');
+const bank=JSON.parse(html.match(/<script[^>]*id=["']question-bank["'][^>]*>([\s\S]*?)<\/script>/)[1]);
+const duplicateGroups=JSON.parse(html.match(/<script[^>]*id="duplicate-groups"[^>]*>([\s\S]*?)<\/script>/)[1]);
+const canonical=new Map(duplicateGroups.flatMap(g=>g.ids.map((id,rank)=>[id,{canonicalId:g.ids[0],canonicalRank:rank}])));
+const questionKeys=Object.fromEntries(bank.map(q=>[q.id,{subject:q.subject,answer:q.answer,optionCount:q.options.length,canonicalId:q.id,canonicalRank:0,...canonical.get(q.id)}]));
+html=html.replace("const KEY='on-tap-anime-v1';","const KEY='on-tap-anime-v1:'+IC_BOOT.user.id;");
+const old="const old=JSON.parse((localStorage.getItem(KEY)||localStorage.getItem('on-tap-v1')));";
+if(!html.includes(old))throw Error('Source progress loader changed; review integration');
+html=html.replace(old,"const syncMeta=JSON.parse(localStorage.getItem('ic-sync:'+IC_BOOT.user.id)||'null');const localCopy=localStorage.getItem(KEY);if(syncMeta?.dirty&&syncMeta.revision!==IC_BOOT.revision&&localCopy)localStorage.setItem('ic-recovery:'+IC_BOOT.user.id,localCopy);const old=syncMeta?.dirty&&localCopy?JSON.parse(localCopy):IC_BOOT.state;");
+html=html.replace("localStorage.setItem(KEY,JSON.stringify(S))","localStorage.setItem(KEY,JSON.stringify(S));if(typeof icQueueSync==='function')icQueueSync()");
+html=html.replace("normalizeSessionStore(out,data);","normalizeSessionStore(out,data);out.accountLook=data.accountLook||null;");
+html=html.replace("S=pendingImport;pendingImport=null;", "S=icMergeProgress(S,pendingImport);pendingImport=null;");
+html=html.replace('Dữ liệu hiện tại sẽ được thay bằng bản sao này.','Tiến độ trên web sẽ được giữ và gộp thêm từ bản sao. Câu trùng dùng lần trả lời mới hơn; các phiên học cũ cũng được giữ.');
+html=html.replace("btn('Khôi phục bản sao','confirm-import'", "btn('Gộp tiến độ vào tài khoản','confirm-import'");
+html=html.replace("toast('Đã khôi phục tiến độ.')", "toast('Đã gộp tiến độ. Đang đồng bộ vào tài khoản.')");
+html=html.replace("const LOOK_KEY='on-tap-anime-look-v2';","const LOOK_KEY='on-tap-anime-look-v2:'+IC_BOOT.user.id;");
+html=html.replace("const WALL_DB='ic-study-original-wallpaper-v2'","const WALL_DB='ic-study-original-wallpaper-v2:'+IC_BOOT.user.id");
+html=html.replaceAll("localStorage.getItem('on-tap-anime-look-v1')","localStorage.getItem('on-tap-anime-look-v1:'+IC_BOOT.user.id)");
+html=html.replace("if(save)saveLookSettings();","if(save){saveLookSettings();if(typeof icQueueSync==='function')icQueueSync()}");
+const wallPatch=(from,to)=>{if(!html.includes(from))throw Error('Wallpaper integration anchor changed: '+from.slice(0,70));html=html.replace(from,to)};
+wallPatch('restoreStoredWallpaper();','window.icLocalWallpaperReady=restoreStoredWallpaper();');
+wallPatch('toast(stored?',"if(typeof icWallpaperSelected==='function')icWallpaperSelected(file);toast(stored?");
+wallPatch("applyLook(true);appearancePanel();toast('Đã dùng lại ảnh nền mặc định.');", "applyLook(true);if(typeof icWallpaperReset==='function')icWallpaperReset();appearancePanel();toast('Đã dùng lại ảnh nền mặc định.');");
+wallPatch('file.size>60*1024*1024','file.size>20*1024*1024');
+wallPatch('GIF dưới 60 MB.','GIF tối đa 20 MB để đồng bộ theo tài khoản.');
+wallPatch('<strong>Ảnh nền HD · giữ nguyên chất lượng gốc</strong>',`<strong>Ảnh nền HD · giữ nguyên chất lượng gốc</strong><p class="ic-wall-status" data-ic-wall-status role="status">\${typeof icWallpaperStatus==='function'?escapeLook(icWallpaperStatus()):'Đang kiểm tra ảnh nền tài khoản…'}</p><div class="look-actions"><button class="btn small" data-ic-wall="retry">Đồng bộ ảnh máy này</button><button class="btn small ghost" data-ic-wall="restore">Tải từ tài khoản</button></div>`);
+wallPatch('<div class="look-control"><label for="wall-opacity">',`\${typeof icWallpaperGallery==='function'?icWallpaperGallery():''}<div class="look-control"><label for="wall-opacity">`);
+html=html.replace('Ảnh được giữ nguyên byte gốc trong trình duyệt (IndexedDB, hoặc localStorage nếu ảnh đủ nhỏ), không bị thu về 1600px hay 3840px.', 'Ảnh tối đa 20 MB được lưu nguyên byte gốc theo tài khoản và giữ thêm trong trình duyệt để dùng offline. Đăng nhập ở máy khác sẽ tự tải lại ảnh, không thu nhỏ hoặc nén lại.');
+// Online status and backup controls live in the upper-right account menu.
+html=html.replace('<span class="offline-pill"><i></i> Học offline</span>','<span class="offline-pill online-pill"><i aria-hidden="true"></i> Học online</span>');
+html=html.replace('Không gian luyện ôn offline cho','Không gian luyện ôn online cho');
+const boot=`<script>window.IC_BOOT=/*IC_ACCOUNT_BOOT*/;try{const k='on-tap-anime-look-v2:'+IC_BOOT.user.id;const m=JSON.parse(localStorage.getItem('ic-sync:'+IC_BOOT.user.id)||'null');const pending=m?.dirty?JSON.parse(localStorage.getItem('on-tap-anime-v1:'+IC_BOOT.user.id)||'null'):null;const prefs=pending?.accountLook||IC_BOOT.state?.accountLook;if(prefs)localStorage.setItem(k,JSON.stringify({...JSON.parse(localStorage.getItem(k)||'{}'),...prefs}))}catch(e){}</script><!--IC_ADMIN_BRIEF_EXTRA--><link rel="stylesheet" href="/account/account.css">`;
+html=html.replace('<style>',boot+'<script src="/account/progress-merge.js"></script><style>');html=html.replace('</body>','<script src="/account/account-client.js"></script><script src="/account/wallpaper-client.js"></script><script src="/account/wallpaper-gallery.js"></script></body>');
+// Only generated build output is replaced. The user's HTML and public assets are retained.
+fs.rmSync(dist,{recursive:true,force:true});fs.mkdirSync('dist/client',{recursive:true});fs.mkdirSync('dist/server',{recursive:true});fs.mkdirSync('dist/.openai',{recursive:true});
+fs.cpSync('public/assets','dist/client/assets',{recursive:true});fs.cpSync('account','dist/client/account',{recursive:true});fs.copyFileSync('account/login.html','dist/client/index.html');
+fs.writeFileSync('dist/client/account/admin-palette.css',adminPaletteCSS+'\n');
+// Protected HTML is served only by the authenticated Worker. Static asset routing
+// can otherwise canonicalize /study to study.html before the Worker executes.
+fs.rmSync('dist/client/account/admin.html');
+const adminBriefExtra=fs.readFileSync('source/admin-brief-extra.js','utf8');
+fs.writeFileSync('dist/server/index.js',`const QUESTION_KEYS=${JSON.stringify(questionKeys)};\nconst STUDY_HTML=${JSON.stringify(html)};\nconst ADMIN_HTML=${JSON.stringify(fs.readFileSync('account/admin.html','utf8'))};\nconst ADMIN_PALETTES=${JSON.stringify(palettes.map(([name])=>name))};\nconst ADMIN_BRIEF_EXTRA=${JSON.stringify(adminBriefExtra)};\n`+fs.readFileSync('server/api.mjs','utf8'));
+fs.copyFileSync('.openai/hosting.json','dist/.openai/hosting.json');
+fs.writeFileSync('dist/server/wrangler.json',JSON.stringify({name:'ic-study',main:'index.js',compatibility_date:'2026-11-08',assets:{directory:'../client',binding:'ASSETS',run_worker_first:true},d1_databases:[{binding:'DB',database_name:'ic-study-db',database_id:'00000000-0000-4000-8000-000000000000'}],r2_buckets:[{binding:'BUCKET',bucket_name:'ic-study-wallpapers'}]}));
+console.log(`Built authenticated IC Study: ${bank.length} questions, preserved user interface.`);

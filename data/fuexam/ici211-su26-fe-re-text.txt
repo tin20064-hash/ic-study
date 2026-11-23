@@ -1,0 +1,199 @@
+01 What type of inverter stages are required for a ring oscillator to operate correctly?
+A. Even inverter stages | B. Odd inverter stages | C. Single inverter stage | D. Transmission line stages
+KEY [1] MATCH ICI211-372 0.8488 REUSE 
+
+02 What does signal crosstalk introduce in a digital or VLSI interconnect system?
+A. Additional switching noise | B. Reduced wire resistance | C. Infinite propagation speed | D. Zero coupling effects
+KEY [0] MATCH ICI211-453 0.6883 REUSE 
+
+03 Which change decreases interconnect coupling capacitance, with other dimensions held fixed?
+A. Reduced wire spacing | B. Reducing coupling area or increasing dielectric separation | C. Increased threshold voltage | D. Saturated carrier velocity
+KEY [1] MATCH ICI211-291 0.5604 REUSE 
+
+04 What does the input transition time affect in digital circuit performance analysis?
+A. Delay calculation accuracy | B. Oxide capacitance value | C. Junction depth profile | D. Substrate doping concentration
+KEY [0] MATCH ICI211-276 0.5513 REUSE 
+
+05 What factors does the total wire resistance depend on In an interconnect system?
+A. Geometry and resistivity | B. Threshold and mobility | C. Frequency and voltage | D. Oxide and doping
+KEY [0] MATCH ICI211-311 0.8387 REUSE 
+
+06 What does the T-model approximation improve in interconnect?
+A. Delay estimation accuracy | B. Threshold voltage extraction | C. Carrier mobility analysis | D. Oxide capacitance scaling
+KEY [0] MATCH ICI211-311 0.5224 REUSE 
+
+07 What clocking scheme alternately enables the two transmission-gate latches in a master-slave flip-flop?
+A. Single clock signal | B. Two-phase clocking scheme | C. Continuous asynchronous control | D. Dynamic bootstrap voltage
+KEY [1] MATCH ICI211-370 0.6667 REUSE 
+
+08 What does the term NORA logic mean in dynamic CMOS and high-speed digital circuit design?
+A. Nonoverlap race architecture | B. NoraceCMOS | C. Negative resistor array | D. Noninverting register architecture
+KEY [1] MATCH ICI211-485 0.8444 REUSE 
+
+09 For an n-type dynamic CMOS gate with an nMOS evaluation transistor driven by CLK, when does evaluation occur?
+A. Clock signal active | B. Clock signal inactive | C. Threshold voltage removed | D. Dynamic node isolated
+KEY [0] MATCH ICI211-291 0.6667 REUSE 
+
+10 What type of circuit structures and buffers are used in domino logic for high-speed dynamic CMOS design?
+A. Dynamic stages buffers | B. Static inverter chains | C. Continuous resistor loads | D. Bipolar feedback loops
+KEY [1] MATCH ICI211-298 0.6634 REUSE 
+
+11 What problems do voltage bootstrapping help overcome in dynamic and pass-transistor logic circuits?
+A. Threshold voltage losses | B. Dynamic clock overlap | C. Static power consumption | D. Current mirror mismatch
+KEY [0] MATCH ICI211-337 0.9596 REUSE ICI211-337
+
+12 In what type of component do dynamic shift registers store data in dynamic digital circuit design?
+A. Parasitic capacitances only | B. Bipolar latch elements | C. Transmission line stages | D. Current source arrays
+KEY [0] MATCH ICI211-254 0.5946 REUSE 
+
+13 What does technology updateability aim to do?
+A. Reduce design portability | B. Adapt designs efficiently | C. Eliminate CAD automation | D. Increase fabrication complexity
+KEY [1] MATCH ICI211-466 0.6263 REUSE 
+
+14 What does regularity mean in VLSI design?
+A. Variable transistor shapes | B. Repeated similar blocks | C. Randomized routing paths | D. Independent timing domains
+KEY [1] MATCH ICI211-489 0.68 REUSE 
+
+15 What does the standard-cell methodology use?
+A. Fully manual layouts | B. Pre-designed logic cells | C. Analog routing structures | D. Uncommitted transistor rows
+KEY [1] MATCH ICI211-362 0.6607 REUSE 
+
+16 Which design style gives the best performance optimization?
+A. Gate array design | B. FPGA implementation | C. Standard-cell design | D. Full-custom design
+KEY [3] MATCH ICI211-428 0.9016 REUSE ICI211-428
+
+17 Which domain describes system functionality?
+A. Physical implementation domain | B. Routing optimization domain | C. Behavioral design domain | D. Manufacturing process domain
+KEY [2] MATCH ICI211-435 0.9247 REUSE ICI211-435
+
+18 What aspect does multi-stage decoding improve in semiconductor memory and digital circuit design?
+A. Speed signal strength | B. Leakage current generation | C. Threshold voltage mismatch | D. Dynamic charge sharing
+KEY [0] MATCH ICI211-436 0.9691 REUSE ICI211-436
+
+19 What type of circuit structure is used by SRAM cells to store data in semiconductor memory design?
+A. Floating gate charge | B. Cross-coupled inverters | C. Dynamic capacitor arrays | D. Ferroelectric polarization states
+KEY [1] MATCH ICI211-303 0.9255 REUSE ICI211-303
+
+20 What does SRAM stand for in semiconductor memory?
+A. Static Random-Access Memory | B. Sequential register access | C. Synchronous random architecture | D. Signal retention array
+KEY [0] MATCH ICI211-398 0.9038 REUSE ICI211-398
+
+21 What does static noise margin measure in SRAM cells and digital memory stability analysis?
+A. Cell stability tolerance | B. Dynamic refresh timing | C. Floating gate voltage | D. Current mirror accuracy
+KEY [0] MATCH ICI211-280 0.586 REUSE 
+
+22 What type of mechanism does FRAM use to store information in semiconductor memory technology?
+A. Floating gate electrons | B. Polarization charge states | C. Dynamic capacitor charge | D. Static latch circuits
+KEY [1] MATCH ICI211-417 0.9266 REUSE ICI211-417
+
+23 What effect do leakage currents cause in DRAM semiconductor memory?
+A. Charge storage loss | B. Infinite sensing delay | C. Permanent threshold shifts | D. Dynamic voltage boosting
+KEY [0] MATCH ICI211-398 0.5854 REUSE 
+
+24 As source-body reverse bias increases in an nMOS, what does the body effect cause?
+A. Threshold voltage increase | B. Oxide thickness reduction | C. Channel length increase | D. Mobility enhancement effect
+KEY [0] MATCH ICI211-283 0.5669 REUSE 
+
+25 In which type of MOSFET devices do the hot-carrier effect commonly appear?
+A. Large geometry devices | B. Reverse biased capacitors | C. Bipolar transistor circuits | D. Small geometry devices
+KEY [3] MATCH ICI211-410 0.8082 REUSE 
+
+26 What does the junction capacitance in a semiconductor device depend on?
+A. Applied junction voltage | B. Constant oxide thickness | C. Channel mobility only | D. Drain current only
+KEY [0] MATCH ICI211-319 0.7059 REUSE 
+
+27 In which type of semiconductor devices do short-channel effects mainly appear in modern CMOS and VLSI circuit design?
+A. Large geometry MOSFET devices | B. Deep-submicron MOSFET devices | C. Bipolar transistor arrays | D. Static resistor networks
+KEY [1] MATCH ICI211-346 0.5189 REUSE 
+
+28 What are overlap capacitances in a MOSFET device?
+A. Approximately voltage-independent capacitances | B. Strongly current-dependent capacitances | C. Primarily temperature-controlled capacitances | D. Highly frequency-dependent capacitances
+KEY [0] MATCH ICI211-319 0.5692 REUSE 
+
+29 Which of the following best describes the function of a pass transistor in digital electronic circuits?
+A. Controlled switch element | B. Constant current source | C. Dynamic storage node | D. Floating intermediate values
+KEY [0] MATCH ICI211-439 0.9951 REUSE ICI211-439
+
+30 Under what condition does the output ofa NAND gate become low?
+A. Any input high | B. Both inputs high | C. Both inputs low | D. Threshold becomes zero
+KEY [1] MATCH ICI211-344 0.7667 REUSE 
+
+31 What does the term OAI stand for in digital logic and CMOS circuit design?
+A. OUTPUT ANALOG INVERTER | B. OR AND INVERT | C. OVERLAP AREA INTERFACE | D. OFFSET ANALOG INPUT
+KEY [1] MATCH ICI211-376 0.8493 REUSE 
+
+32 What do the outputs of sequential logic circuits depend ono
+A. Current inputs only | B. Previous input history | C. Supply voltage level | D. Threshold voltage shifts
+KEY [1] MATCH ICI211-395 0.6164 REUSE 
+
+33 Under what condition does the output of a NOR gate become low?
+A. Both inputs low | B. Any input high | C. Both inputs equal | D. Supply voltage reduced
+KEY [1] MATCH ICI211-305 0.7731 REUSE 
+
+34 What advantage is included in the use of pseudo-NMOS logic in digital circuit design?
+A. Smaller silicon area | B. Larger noise margins | C. Zero static current | D. Infinite switching speed
+KEY [0] MATCH ICI211-256 0.8914 REUSE 
+
+35 What is the ideal steady-state current in a CMOS inverter at a valid static input logic level, apart from leakage?
+A. Ideally zero except leakage current | B. Extremely large during operation | C. Independent of leakage effects | D. Equal to threshold current
+KEY [0] MATCH ICI211-486 0.7719 REUSE 
+
+36 What happens in a resistive-load inverter when it operates in the cutoff region?
+A. Output equals ground | B. Voltage becomes negative | C. Driver enters linear | D. Current becomes zero
+KEY [3] MATCH ICI211-364 0.6432 REUSE 
+
+37 What advantages does a CMOS inverter provide in digital circuit performance?
+A. Large noise margins | B. Very weak transitions | C. Extremely high power | D. Small output swing
+KEY [0] MATCH ICI211-250 0.6471 REUSE 
+
+38 What is the main source of static power consumption in CMOS circuits?
+A. Leakage current mechanisms | B. Switching capacitance effects | C. Oxide charging mechanisms | D. Fan-out interconnection effects
+KEY [0] MATCH ICI211-338 0.9054 REUSE ICI211-338
+
+39 What advantages does a linear enhancement-load inverter provide in digital circuit design?
+A. Lower noise margins | B. Higher noise margins | C. Smaller output swing | D. Larger leakage current
+KEY [1] MATCH ICI211-363 0.7049 REUSE 
+
+40 What does the switching activity factor represent in CMOS and digital circuit power analysis?
+A. Transition probability measure | B. Threshold voltage variation | C. Dynamic capacitance ratio | D. Clock skew difference
+KEY [0] MATCH ICI211-449 0.6742 REUSE 
+
+41 What types of components are mainly included in leakage current in CMOS digital circuit operation?
+A. Regenerative clock current | B. Dynamic oscillating current | C. Capacitive inductive current | D. Subthreshold leakage and reverse-biased junction leakage
+KEY [3] MATCH ICI211-352 0.8865 REUSE 
+
+42 How does pipelining improve low-power digital circuit design?
+A. Allowing voltage reduction | B. Eliminating dynamic switching | C. Removing register overhead | D. Increasing threshold voltage
+KEY [0] MATCH ICI211-463 0.625 REUSE 
+
+43 What advantages do partitioned buses provide in low-power digital systems?
+A. Lower switched capacitance | B. Increased clock frequency | C. Infinite noise immunity | D. Dynamic voltage scaling
+KEY [0] MATCH ICI211-359 0.9524 REUSE ICI211-359
+
+44 What factor does switching power depend strongly on in CMOS and digital circuit operation?
+A. Supply voltage squared | B. Threshold voltage cubed | C. Frequency inverse relation | D. Resistance independent behavior
+KEY [0] MATCH ICI211-488 0.7253 REUSE 
+
+45 What output state is forced during the reset operation in an SR latch or sequential circuit?
+A. Logic high state | B. Logic low state | C. Floating output state | D. Oscillating feedback state
+KEY [1] MATCH ICI211-381 0.7516 REUSE 
+
+46 Under what condition does the invalid state occur in a NOR-based SR latch?
+A. S equals zero | B. R equals zero | C. Clock becomes inactive | D. S and R high
+KEY [3] MATCH ICI211-454 0.8082 REUSE 
+
+47 What problem does the JK latch eliminate in sequential digital circuit design?
+A. Hold operating state | B. Invalid SR condition | C. Clock synchronization requirement | D. Feedback regenerative loops
+KEY [1] MATCH ICI211-276 0.7632 REUSE 
+
+48 What type of gate configuration is used in a NOR-based SR latch in sequential circuit design?
+A. Cross-coupled NOR gates | B. Parallel NAND gates | C. Dynamic transmission gates | D. Capacitive feedback loops
+KEY [0] MATCH ICI211-385 0.9213 REUSE ICI211-385
+
+49 What does DETFF (Dual-Edge Triggered Flip-Flop) help reduce in sequential digital circuit operation?
+A. Clock operating frequency | B. Supply voltage scaling | C. Threshold voltage shifts | D. Transmission line effects
+KEY [0] MATCH ICI211-255 0.7016 REUSE 
+
+50 What advantages does an embedded SDFF (Semi-Dynamic Flip-Flop) provide in high-performance sequential digital circuit design?
+A. Improved operation speed | B. Infinite setup margins | C. Zero power consumption | D. Constant output delays
+KEY [0] MATCH ICI211-255 0.6667 REUSE 

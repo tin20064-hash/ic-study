@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {passwordHash} from '../ic-study-online/dist/server/index.js';
+import {database} from '../ic-study-online/tests/d1-adapter.mjs';
+const bank=JSON.parse(fs.readFileSync('source/study.html','utf8').match(/<script[^>]*id="question-bank"[^>]*>([\s\S]*?)<\/script>/)[1]);
+const dgt=bank.filter(q=>q.subject==='DGT302').slice(0,19),cos=bank.filter(q=>q.subject==='COS201').slice(0,3),at=Date.now()-100000;
+const responses=Object.fromEntries([...dgt,...cos].map(q=>[q.id,{value:q===dgt[18]?q.answer:[(q.answer[0]+1)%4],at}]));
+const session=(id,questions)=>({id,mode:'practice',ids:questions.map(q=>q.id),index:questions.length-1,answers:Object.fromEntries(questions.map(q=>[q.id,responses[q.id].value])),drafts:{},wrongIds:questions.filter(q=>q!==dgt[18]).map(q=>q.id),started:at,updated:at,status:'saved'});
+const state={version:1,responses,overrides:{},bookmarks:{},notes:{},daily:{},studyPlan:{},history:[],lastSubject:'COS201',sessions:[session('review-dgt',dgt),session('review-cos',cos)],session:session('review-cos',cos),wrongIds:cos.map(q=>q.id)};
+const db=database('.review-preview.sqlite');
+const hash=await passwordHash('Preview-explanations-2026!');
+await db.prepare('INSERT OR IGNORE INTO users(id,username,display_name,role,password_hash,disabled,created_at) VALUES(?,?,?,?,?,?,?)').bind('initial-admin','reviewadmin','Kiểm thử câu sai','admin',hash,0,Date.now()).run();
+await db.prepare('INSERT OR REPLACE INTO progress(user_id,state,revision,updated_at) VALUES(?,?,?,?)').bind('initial-admin',JSON.stringify(state),1,Date.now()).run();
+console.log('Seeded isolated preview only: DGT 18 wrong + COS 3 wrong; 22 answered; legacy cache 3.');

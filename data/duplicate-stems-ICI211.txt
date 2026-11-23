@@ -1,0 +1,247 @@
+ICI211-250 | What advantages does the active VTCMOS operating mode provide in low-power CMOS circuit design? | High-speed operation
+ICI211-251 | What does tPLH represent in the switching behavior of a digital circuit? | Low-to-high transition
+ICI211-252 | What does stepwise charging help to reduce in adiabatic for low-power CMOS circuit design? | Resistive energy losses
+ICI211-253 | What type of stable state does a monostable circuit contain in sequential circuit design? | Single stable state
+ICI211-254 | What type of operation do clocked latches provide in sequential digital circuit systems? | Synchronous controlled operation
+ICI211-255 | What is a characteristic performance advantage of a semi-dynamic flip-flop (SDFF)? | Fast clock-to-Q operation using a dynamic front end and a static latch
+ICI211-256 | What disadvantage is associated with the use of pseudo-NMOS logic in digital circuit design? | Static power dissipation
+ICI211-257 | What is the major advantage of FPGA? | Post-fabrication customization
+ICI211-258 | How do interconnects typically behave in VLSI and digital circuit models? | Distributed RC interconnect networks
+ICI211-259 | Compared with a single nMOS pass transistor, what signal-transfer benefit does a CMOS transmission gate provide? | Passing both strong logic 0 and strong logic 1
+ICI211-260 | What type of power supply is used in a saturated enhancement-load inverter circuit? | Single power supply
+ICI211-261 | What happens to sufficiently small disturbances around an asymptotically stable circuit operating point? | Decay gradually away
+ICI211-262 | What does electron affinity mean? | Conduction vacuum difference
+ICI211-263 | What advantage does full CMOS SRAM provide in semiconductor memory and digital storage circuit design? | Superior noise margins
+ICI211-264 | In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion? | Majority holes are repelled from the surface, leaving ionized acceptors
+ICI211-265 | What does testability mainly focus on? | Fault detection coverage
+ICI211-266 | What is RTL an abbreviation for? | Register transfer level
+ICI211-267 | What type of operation is self-refresh mode useful for semiconductor memory systems? | Low-power standby operation
+ICI211-268 | What does dynamic logic require to maintain correct operation in digital CMOS circuits? | Periodic precharge/evaluate cycles that restore dynamic-node charge
+ICI211-269 | Which of the following statements best describes the behavior of an NMOS pass transistor when transferring logic levels in digital circuits? | Weak logic one
+ICI211-270 | What modeling approach is commonly used for short interconnects in digital and VLSI circuits? | Lumped RC approximation
+ICI211-271 | What effect does channel-length modulation cause in a MOSFET operating in saturation region? | Rising saturation current
+ICI211-272 | What does tPHL represent in the switching behavior of a digital circuit? | High-to-low transition
+ICI211-273 | While enabled over the signal range, how does the ON resistance of a suitably sized CMOS transmission gate approximately vary? | Roughly constant value
+ICI211-274 | What type of output states are produced by static logic circuits in digital system design? | Stable operating states
+ICI211-275 | What advantages does NOR Flash memory provide in semiconductor memory and embedded storage systems? | Fast random access
+ICI211-276 | What does the term SR latch stand for in sequential digital circuit design? | Set reset latch
+ICI211-277 | What type of network is used in the pull-up network of a CMOS logic circuit? | PMOS transistor network
+ICI211-278 | What is the main source of interconnect capacitance in integrated circuit layouts? | Adjacent metal structures
+ICI211-279 | Which FPGA component implements Boolean functions? | Look-up table units
+ICI211-280 | What does the noise margin low (NML) equal in a digital logic circuit? | VIL minus VOL
+ICI211-281 | Why is low-power CMOS design becoming increasingly important in modern electronic systems? | Portable systems increasing
+ICI211-282 | What limitations are commonly associated with dynamic CMOS logic circuits? | Charge sharing leakage
+ICI211-283 | What does the voltage transfer characteristic (VTC) describe in a CMOS inverter? | Output versus input
+ICI211-284 | What do sense amplifiers detect in semiconductor memory? | Small voltage differences
+ICI211-285 | What does a CMOS D-latch contain in its sequential circuit configuration? | Single data input
+ICI211-286 | In a symmetric CMOS inverter under a slow input sweep, where is the direct-path short-circuit current approximately greatest? | Vin near the inverter switching point VM ≈ VDD/2
+ICI211-287 | In which domain does switching analysis study the output behavior of a digital circuit? | Time response domain
+ICI211-288 | What type of operation is used in synchronous dynamic circuits for proper digital circuit control? | Clock controlled operation
+ICI211-289 | What does access time determine in semiconductor memory and digital system performance? | Memory operating speed
+ICI211-290 | What does standby operation in an MTCMOS (Multi-Threshold CMOS) circuit disconnect to reduce leakage power consumption? | Logic supply paths
+ICI211-291 | Under what condition does short-circuit power occur in a CMOS inverter or digital circuit operation? | Both transistors conduct
+ICI211-292 | What does yield represent the percentage of? | Functional fabricated chips
+ICI211-293 | For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model? | Channel pinch-off formation
+ICI211-295 | Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2? | Equal switching margins
+ICI211-296 | What issue does two-phase clocking help prevent in dynamic digital circuits? | Signal overlap conflicts
+ICI211-297 | How does voltage bootstrapping restore full output voltage swing in CMOS and dynamic circuit design? | Increasing internal node voltage
+ICI211-298 | What type of circuit structures are commonly used in multiplexers for digital and CMOS circuit design? | Transmission gate structures
+ICI211-299 | What aspects do 8T SRAM cells improve in semiconductor memory and SRAM circuit design? | Read operation stability
+ICI211-300 | What is the term used for full scaling in VLSI technology? | Constant field scaling
+ICI211-301 | An inverter has VOH = 1.8 V, VOL = 0.1 V, VIH = 1.05 V, and VIL = 0.65 V. What is the smaller of its two noise margins? | 0.55 V
+ICI211-302 | Which signal quantity is detected by a sense amplifier in semiconductor memory? | Small voltage differences
+ICI211-303 | Which circuit structure is used by SRAM cells to store data in semiconductor memory design? | Cross-coupled inverters
+ICI211-304 | Why can widening a long interconnect fail to reduce delay as much as expected? | Lower resistance may be partly offset by increased parasitic capacitance
+ICI211-305 | Which input condition forces the output of a NOR gate LOW? | Any input high
+ICI211-306 | For equal-valued capacitors and a fixed observed output in an RC tree, which capacitor contributes most to the Elmore delay? | A capacitor reached through the largest shared upstream resistance
+ICI211-307 | Which sequence best represents a valid top-down VLSI design refinement flow? | Specification -> architecture -> logic/circuit design -> physical layout
+ICI211-308 | Two long-channel nMOS devices have equal process parameters and overdrive voltage. Device A has W/L = 8 and device B has W/L = 2. What is the ideal saturation-current ratio IA/IB? | 4
+ICI211-309 | A circuit consumes 4 mW dynamic power at 200 MHz. If only frequency doubles and all other factors remain constant, what is the new dynamic power? | 8 mW
+ICI211-310 | Which low-power technique disables the clock to inactive sequential blocks? | Clock gating
+ICI211-311 | Which factors determine the total wire resistance in an interconnect system? | Geometry and resistivity
+ICI211-312 | Which device combination allows a transmission gate to pass both strong logic 0 and strong logic 1? | Parallel nMOS and PMOS devices driven by complementary controls
+ICI211-313 | Why is the PMOS commonly made wider than the nMOS in a symmetric CMOS inverter? | Hole mobility is lower than electron mobility
+ICI211-314 | Which timing condition must be satisfied to avoid a setup-time violation? | Data must be stable for a minimum interval before the active clock edge
+ICI211-315 | Which option states the primary advantage of static logic circuits? | Stable operating states
+ICI211-316 | What is the main timing advantage of a two-phase latch-based pipeline over a strictly edge-triggered pipeline? | Time borrowing between adjacent stages
+ICI211-317 | Which sizing change shifts the switching threshold of a CMOS inverter upward toward VDD? | Strengthening the PMOS relative to the nMOS
+ICI211-318 | Which operating mode characterizes synchronous sequential digital circuits? | Synchronous controlled operation
+ICI211-319 | Which operating quantity influences junction capacitance in a semiconductor device? | Applied junction voltage
+ICI211-320 | Which modeling approach is commonly used for short interconnects in VLSI circuits? | Lumped RC approximation
+ICI211-321 | Why is a static inverter commonly placed after a dynamic gate in domino logic? | It restores logic levels and enforces a monotonic interface
+ICI211-322 | A flip-flop has setup time 80 ps, clock-to-Q delay 120 ps, and combinational path delay 600 ps. Ignoring clock skew, what is the minimum clock period? | 800 ps
+ICI211-323 | Which change most directly improves SRAM read stability but may increase cell area? | Using an 8T cell with a decoupled read path
+ICI211-324 | In conventional domino logic, which element is placed between successive n-type dynamic logic stages to enforce a rising-only evaluation interface? | A static inverting CMOS gate, commonly a static inverter
+ICI211-325 | Which option states the major advantage of FPGA? | Post-fabrication customization
+ICI211-326 | Which effect is caused by channel-length modulation when a MOSFET operates in saturation? | Rising saturation current
+ICI211-327 | Why is a distributed RC model preferred for a long on-chip wire? | Wire resistance and capacitance are spread continuously along its length
+ICI211-328 | If the nMOS body is driven to a lower potential than its source while all other biases remain unchanged, what happens to the threshold voltage? | It increases because VSB increases
+ICI211-329 | A memory contains 1024 words of 8 bits each. How many address bits are required to select one word? | 10
+ICI211-330 | Which consequence results from leakage current in DRAM? | Charge storage loss
+ICI211-331 | What happens to sufficiently small disturbances around an asymptotically stable circuit operating point? | Decay gradually away
+ICI211-332 | Why does conventional domino logic naturally implement only non-inverting cascaded logic functions? | Each dynamic stage is followed by a static inverter and evaluation transitions are monotonic
+ICI211-333 | A positive-edge-triggered D flip-flop samples D = 1 immediately before the active edge. Ignoring setup/hold violations, what value appears at Q after the clock-to-Q delay? | 1
+ICI211-334 | A wire has R = 2 kΩ and total C = 100 fF. Using the first-order estimate 0.69RC, what delay is expected? | 138 ps
+ICI211-335 | Which term is another name for Full Scaling in VLSI technology? | Constant Electric Field Scaling
+ICI211-336 | Why must a conventional DRAM cell be refreshed periodically? | Its storage capacitor loses charge through leakage
+ICI211-337 | Which problem does voltage bootstrapping help overcome in dynamic and pass-transistor logic circuits? | Threshold voltage losses
+ICI211-338 | Which mechanism is the main source of static power consumption in CMOS circuits? | Leakage current mechanisms
+ICI211-339 | Which timing requirement states that data must remain stable for a minimum interval after the active clock edge? | Hold time
+ICI211-340 | Which change causes interconnect capacitance to decrease? | Reducing coupling area or increasing dielectric separation, with other factors fixed
+ICI211-341 | For otherwise identical wires, which geometric change generally reduces wire resistance? | Increasing cross-sectional area
+ICI211-342 | Two saturated MOSFETs have the same L and overdrive voltage, but transistor A has twice the width of transistor B. Ignoring short-channel effects, what is I_D,A / I_D,B? | 2
+ICI211-343 | Which aspect of timing analysis is directly affected by input transition time? | Delay calculation accuracy
+ICI211-344 | Which input condition forces the output of a NAND gate LOW? | Both inputs high
+ICI211-345 | Why can a multi-threshold CMOS design combine fast operation with low standby leakage? | Low-VT devices are used on critical paths and high-VT devices reduce leakage elsewhere
+ICI211-346 | Which phrase correctly defines NORA logic in dynamic CMOS and high-speed digital circuit design? | No race CMOS
+ICI211-347 | Which operation in a 6T SRAM cell is most sensitive to the strength ratio between the access transistor and pull-down transistor? | Read stability
+ICI211-348 | Which operation in a 6T SRAM cell is most sensitive to the strength ratio between the access transistor and pull-down transistor? | Read stability
+ICI211-349 | What is the primary purpose of using a master-slave latch arrangement? | To create edge-triggered behavior from two level-sensitive stages
+ICI211-350 | A dynamic node with capacitance 20 fF loses 2 fC of charge during evaluation. What voltage droop results from ΔV = ΔQ/C? | 0.10 V
+ICI211-351 | In a symmetric CMOS inverter under a slow input sweep, where is the direct-path short-circuit current approximately greatest? | Vin near the inverter switching point VM ≈ VDD/2
+ICI211-352 | Which component is mainly included in leakage current in CMOS digital circuit operation? | Subthreshold leakage and reverse-biased junction leakage
+ICI211-353 | Which relationship is described by the voltage transfer characteristic (VTC) of a CMOS inverter? | Output versus input
+ICI211-354 | An nMOS transistor has VT = 0.4 V, VGS = 1.2 V, and VDS = 0.3 V. Which operating region is predicted by the long-channel model? | Triode
+ICI211-355 | Which programmable logic element is primarily used to implement Boolean functions in an FPGA? | Look-Up Table (LUT)
+ICI211-356 | Which combined action is characteristic of dynamic voltage and frequency scaling when workload decreases? | Reduce VDD and clock frequency together
+ICI211-357 | Which condition gives the largest static noise margins simultaneously for a fixed VDD and steep VTC? | A switching threshold near VDD/2 with VOL near 0 and VOH near VDD
+ICI211-358 | During evaluation of an n-type dynamic gate, which input transition is generally unsafe? | 1 → 0
+ICI211-359 | Which advantage do partitioned buses provide in low-power digital systems? | Lower switched capacitance
+ICI211-360 | Which limitation is commonly associated with dynamic CMOS logic circuits? | Charge sharing leakage
+ICI211-361 | For an nMOS whose source-body junction becomes more reverse biased (VSB increases), which device parameter increases? | Threshold voltage increase
+ICI211-362 | Which type of building block is used by the standard-cell methodology? | Pre-designed logic cells
+ICI211-363 | Compared with a saturated enhancement-load inverter, what advantage does a properly biased linear enhancement-load inverter provide? | Higher noise margins
+ICI211-364 | In an ideal resistive-load nMOS inverter with its pull-down transistor in cutoff, what is the steady-state DC conduction current, neglecting leakage? | Current becomes zero
+ICI211-365 | A design team must maximize performance for a high-volume processor and can accept a long development cycle. Which design style is most appropriate? | Full-custom design
+ICI211-366 | Which power-supply arrangement is used in a saturated enhancement-load inverter circuit? | Single power supply
+ICI211-367 | Which statement correctly defines electron affinity (X) in a semiconductor? | Energy difference between the vacuum level and the conduction band edge
+ICI211-368 | Under constant-field scaling by a factor S > 1, how should device dimensions and supply voltage change? | Dimensions and voltage both scale by 1/S
+ICI211-369 | A square memory array contains 1,048,576 one-bit cells. If organized with equal numbers of rows and columns, how many cells are in each row? | 1,024
+ICI211-370 | In a master-slave transmission-gate flip-flop, which clock-phase arrangement alternately enables the two level-sensitive latches? | Complementary, non-overlapping clock phases
+ICI211-371 | A four-input NAND gate uses four series nMOS devices. Which sizing action best preserves pull-down strength relative to a unit inverter? | Make each series nMOS approximately four times wider
+ICI211-372 | Which inverter-stage arrangement is required for a ring oscillator to operate correctly? | An odd number of at least three inverting stages in a conventional inverter ring
+ICI211-373 | Which design style provides the greatest opportunity for performance optimization? | Full-custom design
+ICI211-374 | Under ideal constant-field scaling by S > 1, device dimensions and voltages scale by 1/S. What happens to dynamic power density if clock frequency scales by S? | It ideally remains approximately constant
+ICI211-375 | A CMOS gate drives four identical gate inputs instead of one. If interconnect effects are negligible, which load parameter increases approximately fourfold? | Load capacitance
+ICI211-376 | Which phrase does OAI stand for in digital logic and CMOS circuit design? | OR AND INVERT
+ICI211-377 | Which option describes the basic operating principle of synchronous dynamic circuits? | Clock controlled operation
+ICI211-378 | A 30 fF dynamic node initially at 1.2 V shares charge with an initially discharged 10 fF internal node. Ignoring other effects, what is the final voltage? | 0.9 V
+ICI211-379 | How many stable states are present in a monostable multivibrator? | Single stable state
+ICI211-380 | Which option states the main limitation of an NMOS pass transistor when transmitting a logic HIGH level? | Weak logic one
+ICI211-381 | Which output state is forced by the reset operation of an SR latch? | Logic low state
+ICI211-382 | Which term best describes the electron affinity of a semiconductor? | Conduction-vacuum energy difference
+ICI211-383 | Which change increases the drain current most directly in the square-law saturation model, assuming all other parameters are fixed? | Increasing W/L
+ICI211-384 | For a symmetric long-channel CMOS inverter with VDD = 1.8 V, VTN = 0.4 V, |VTP| = 0.4 V, and βn = βp, what is the approximate switching threshold VM? | 0.9 V
+ICI211-385 | Which gate configuration is used in a NOR-based SR latch in sequential circuit design? | Cross-coupled NOR gates
+ICI211-386 | Which design decision most directly applies the principle of locality in a VLSI system? | Placing frequently communicating modules close together
+ICI211-387 | Which property is measured by the static noise margin of an SRAM cell? | Cell stability tolerance
+ICI211-388 | Which memory architecture generally offers higher density but slower random read access? | NAND Flash
+ICI211-389 | Which small-signal parameter represents the sensitivity of drain current to a change in gate-source voltage? | Transconductance gm
+ICI211-390 | Under which condition does short-circuit power dissipation occur in a CMOS inverter? | Both transistors conduct
+ICI211-391 | Which statement correctly defines electron affinity? | Conduction vacuum difference
+ICI211-392 | A regular layout is reused many times in a datapath. Which combined benefit is most defensible? | Lower verification effort and more predictable physical implementation
+ICI211-393 | For α = 0.2, CL = 20 fF, VDD = 1 V, and f = 500 MHz, what is the switching power α·CL·VDD²·f? | 2 μW
+ICI211-394 | Which phrase does RTL abbreviate? | Register transfer level
+ICI211-395 | Besides current inputs, which factor determines the output of a sequential logic circuit? | Previous input history
+ICI211-396 | For which operating mode is self-refresh useful in semiconductor memory? | Low-power standby operation
+ICI211-397 | What is the function of the weak keeper transistor in domino logic? | To compensate leakage and help retain the precharged level
+ICI211-398 | Which phrase does SRAM stand for in semiconductor memory? | Static Random-Access Memory
+ICI211-399 | Why can two arbitrary n-type dynamic gates not always be cascaded directly during the same evaluation phase? | A first-stage falling output can violate the second stage's monotonic-input requirement
+ICI211-400 | For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model? | Channel pinch-off formation
+ICI211-401 | Which option states the primary objective of testability in VLSI circuit design? | Fault detection coverage
+ICI211-402 | In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion? | Majority holes are repelled from the surface, leaving ionized acceptors
+ICI211-403 | Why is low-power CMOS design becoming increasingly important in modern electronic systems? | Portable systems increasing
+ICI211-404 | During a differential SRAM read, what does the sense amplifier detect? | A small voltage difference between complementary bit lines
+ICI211-405 | A fabrication run costs $600,000 and produces 10,000 functional dies. Ignoring packaging cost, what is the manufacturing cost per functional die? | $60
+ICI211-406 | How many transistors are required by a conventional complementary static CMOS three-input NAND gate? | 6
+ICI211-407 | A block leaks 2 mA at VDD = 0.8 V. What is its static power consumption? | 1.6 mW
+ICI211-408 | In which domain is the output behavior examined during switching analysis? | Time response domain
+ICI211-409 | Which transistor network forms the pull-up network (PUN) in a CMOS logic gate? | PMOS transistor network
+ICI211-410 | In which MOSFET devices is the hot-carrier effect most commonly observed? | Small geometry devices
+ICI211-411 | For a long-channel nMOS transistor, VGS = 1.8 V and VT = 0.5 V. At which VDS value does the ideal device enter saturation? | 1.3 V
+ICI211-412 | Yield is defined as the percentage of which fabricated items? | Functional fabricated chips
+ICI211-413 | Which input is included in the configuration of a CMOS D-latch? | Single data input
+ICI211-414 | In a conventional n-type dynamic gate with an nMOS evaluation transistor driven by CLK, which clock level enables evaluation? | CLK = HIGH (active evaluation phase)
+ICI211-415 | Which option states the primary purpose of using two-phase non-overlapping clocks in dynamic CMOS logic? | Prevent overlap between clock phases
+ICI211-416 | Which aspect do 8T SRAM cells improve in semiconductor memory and SRAM circuit design? | Read operation stability
+ICI211-417 | Which mechanism does FRAM use to store information in semiconductor memory technology? | Polarization charge states
+ICI211-418 | Which limitation of the SR latch is eliminated by the JK latch? | Invalid SR condition
+ICI211-419 | Which failure is most likely when an asynchronous input changes close to a flip-flop clock edge? | Metastability with an unpredictable resolution time
+ICI211-420 | Which repeater strategy is most likely to reduce the delay of a very long RC-dominated interconnect? | Insert appropriately sized buffers at intervals
+ICI211-421 | Which loss mechanism is reduced by stepwise charging in adiabatic low-power CMOS design? | Resistive energy losses
+ICI211-422 | For a static CMOS gate implementing Y = NOT(A•B + C), how should the nMOS pull-down network be arranged? | A and B in series, in parallel with C
+ICI211-423 | If VDD is reduced from 1.2 V to 0.9 V while α, CL, and f remain unchanged, what fraction of the original dynamic power remains? | 0.5625
+ICI211-424 | Which performance advantage is characteristic of a semi-dynamic flip-flop (SDFF)? | Fast clock-to-Q operation using a dynamic front end and a static latch
+ICI211-425 | Why does an nMOS pass transistor produce a degraded logic HIGH? | Conduction stops when the output approaches VDD - VTn
+ICI211-426 | Which phrase is represented by the abbreviation RTL in digital circuit design? | Register transfer level
+ICI211-427 | Why does the drain current of a real MOSFET increase slightly with VDS in saturation? | The effective channel length decreases due to channel-length modulation
+ICI211-428 | Which VLSI design style offers the best performance optimization? | Full-custom design
+ICI211-429 | What is the main trade-off introduced by power gating with sleep transistors? | Lower standby leakage at the cost of wake-up delay and area
+ICI211-430 | If ßn/ßp increases while threshold magnitudes remain approximately equal, how does the inverter switching threshold change? | It moves toward ground
+ICI211-431 | A manufacturing batch contains 2.0 million fabricated dies, of which 1.5 million pass all tests. What is the manufacturing yield? | 75%
+ICI211-432 | Which technique reduces dynamic power quadratically but may also reduce circuit speed? | Reducing supply voltage
+ICI211-433 | Which description best characterizes the ON resistance of a CMOS transmission gate? | Roughly constant value
+ICI211-434 | Which expression correctly calculates the low noise margin (NML) of a CMOS inverter? | VIL - VOL
+ICI211-435 | Which design domain describes system functionality? | Behavioral design domain
+ICI211-436 | Which aspect does multi-stage decoding improve in semiconductor memory and digital circuit design? | Speed signal strength
+ICI211-437 | Which model is typically used for interconnects in modern VLSI circuits? | Distributed RC interconnect networks
+ICI211-438 | Which output transition is represented by the propagation delay tPLH? | Low-to-high transition
+ICI211-439 | Which of the following best describes the function of a pass transistor in digital electronic circuits? | Controlled switch element
+ICI211-440 | For a CMOS inverter with VOH = 1.8 V, VIH = 1.1 V, VIL = 0.7 V, and VOL = 0 V, what are NMH and NML? | NMH = 0.7 V and NML = 0.7 V
+ICI211-441 | In an n-type dynamic logic gate, what normally happens to the dynamic node during precharge? | It is charged to VDD
+ICI211-442 | Why does velocity saturation reduce the accuracy of the square-law MOSFET model in short-channel devices? | Carrier velocity no longer increases linearly with lateral electric field
+ICI211-443 | Which storage element holds data in a dynamic shift register? | Parasitic capacitances only
+ICI211-444 | A 256 x 16 memory is organized as 256 words. What is its total storage capacity? | 4096 bits
+ICI211-445 | Which memory characteristic is determined by access time? | Memory operating speed
+ICI211-446 | Which VTC characteristic most directly indicates strong rejection of small input disturbances around valid logic levels? | A large magnitude of gain in the transition region and wide noise margins
+ICI211-447 | If both nMOS and PMOS widths are multiplied by the same factor while their ratio is unchanged, which inverter property remains approximately unchanged? | Switching threshold
+ICI211-448 | A synchronous path has clock-to-Q delay 100 PS, combinational delay 750 PS, and setup time 150 ps. Ignoring skew, what is the maximum clock frequency? | 1.0 GHz
+ICI211-449 | Which quantity is represented by the switching activity factor in CMOS power analysis? | Transition probability measure
+ICI211-450 | A first-order RC node has R = 4 kΩ and C = 50 fF. Using t ≈ 0.69RC, what is the estimated propagation delay? | 138 ps
+ICI211-451 | A 64 K × 8 memory, with K = 1024 words, stores how many bits in total? | 524,288 bits
+ICI211-452 | Which property distinguishes pseudo-nMOS logic from complementary static CMOS? | Its PMOS load is always ON, causing ratioed operation
+ICI211-453 | Which effect is introduced by signal crosstalk in a VLSI interconnect system? | Additional switching noise
+ICI211-454 | Which input condition produces the invalid state in a NOR-based SR latch? | S and R high
+ICI211-455 | Which Boolean function is implemented by a static CMOS gate whose pull-down network has A and B in parallel and that combination in series with C? | Y = NOT[(A + B)C]
+ICI211-456 | What is the principal speed-versus-robustness trade-off when increasing the strength of a domino keeper? | A stronger keeper improves noise immunity but increases evaluation contention
+ICI211-457 | Which option states the primary advantage of NOR Flash memory compared with NAND Flash memory? | Fast random access
+ICI211-458 | If defect density remains constant while die area increases, which result is most likely according to common yield models? | Yield decreases because a larger die is more likely to contain a defect
+ICI211-459 | Which option states the primary advantage of a full CMOS SRAM cell? | Superior noise margins
+ICI211-460 | Which short-channel effect primarily causes the threshold voltage to decrease as drain voltage increases? | Drain-induced barrier lowering
+ICI211-461 | Which circuit path is disconnected during standby operation in an MTCMOS circuit? | Logic supply paths
+ICI211-462 | Compared with complementary static CMOS implementing the same logic function, what advantage can pseudo-nMOS provide? | Smaller silicon area
+ICI211-463 | At a fixed required throughput, how can pipelining potentially reduce dynamic power? | Allowing a lower supply voltage by reducing combinational delay per stage
+ICI211-464 | Which option states the main disadvantage of pseudo-nMOS logic circuits? | Static power dissipation
+ICI211-465 | A node with capacitance 40 fF is charged from 0 to 1 V. Using E = CL·VDD², how much energy is drawn from the supply for one charging event? | 40 fJ
+ICI211-466 | Which objective is addressed by technology updateability? | Adapt designs efficiently
+ICI211-467 | Which change most directly reduces the propagation delay of an inverter driving a fixed external load? | Increasing transistor width to reduce effective resistance
+ICI211-468 | Two adjacent long wires switch simultaneously in opposite directions. Compared with switching in the same direction, what is the likely crosstalk effect? | Higher effective coupling capacitance and potentially higher delay
+ICI211-469 | A transmission-gate 2:1 multiplexer selects D0 when S = 0 and D1 when S = 1. Which Boolean expression describes its output? | Y = NOT(S)·D0 + S·D1
+ICI211-470 | At Vin = 0 in an ideal CMOS inverter, which transistor states establish the output? | nMOS OFF and PMOS ON
+ICI211-471 | Which option states the primary objective of Active VTCMOS during normal circuit operation? | High-speed operation
+ICI211-472 | Which aspect of interconnect analysis is improved by the T-model approximation? | Delay estimation accuracy
+ICI211-473 | In which MOSFET category are short-channel effects most significant? | Deep-submicron MOSFET devices
+ICI211-474 | An inverter drives CL = 20 fF through an effective pull-down resistance of 5 kΩ. Using tPHL ≈ 0.69RCL, what is the estimated delay? | 69 ps
+ICI211-475 | A design is expected to ship only 500 units and may require future hardware updates. Which implementation choice best minimizes non-recurring engineering risk? | FPGA
+ICI211-476 | Which output transition is represented by the propagation delay tPHL? | High-to-low transition
+ICI211-477 | Which description correctly characterizes MOSFET overlap capacitances? | Approximately voltage-independent capacitances
+ICI211-478 | Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2? | Equal switching margins
+ICI211-479 | For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model? | Channel pinch-off formation
+ICI211-480 | A CMOS inverter drives only an identical inverter input and is at a valid static logic level. Which statement best explains its near-zero ideal static power? | One transistor in the pull-up/pull-down path is OFF
+ICI211-481 | Which phrase correctly defines NORA logic in dynamic CMOS and high-speed digital circuit design? | NO RAce logic
+ICI211-482 | A two-latch pipeline uses non-overlapping clock phases φ1 and φ2. Why must the phases not overlap? | To prevent both latches from being transparent simultaneously
+ICI211-483 | In a dynamic latch, what stores the logic value while the sampling transistor is OFF? | Charge on an internal capacitance
+ICI211-484 | For a long-channel nMOS in saturation, ID = 0.5β(VGS - VT)². If the overdrive voltage doubles while β is unchanged, by what factor does ID increase? | 4
+ICI211-485 | Which phrase does NORA logic stand for in dynamic CMOS and high-speed digital circuit design? | NO RAce logic
+ICI211-486 | For a CMOS inverter at a valid steady-state logic level, what is the ideal DC supply current, apart from real-device leakage? | Ideally zero except leakage current
+ICI211-487 | Which phrase is represented by the abbreviation SR latch? | Set reset latch
+ICI211-488 | Which factor has a strong influence on switching power in CMOS and digital circuit operation? | Supply voltage squared
+ICI211-489 | Which statement correctly defines regularity in VLSI design? | Repeated similar blocks
+ICI211-490 | Which requirement allows dynamic logic to maintain correct operation? | Periodic precharge/evaluate cycles that restore dynamic-node charge
+ICI211-491 | Which input condition produces the invalid state in a NOR-based SR latch? | When both the Set and Reset inputs are HIGH (S = 1, R = 1)
+ICI211-492 | Which abstraction level should be refined immediately after the architectural description in a typical top- down digital VLSI flow? | Register-transfer level
+ICI211-493 | Which option states the primary purpose of voltage bootstrapping in CMOS circuits? | Increasing internal node voltage
+ICI211-494 | Why must the pull-up network be the dual of the pull-down network in complementary static CMOS? | To ensure one network connects the output to a supply for every valid input combination
+ICI211-495 | Which loss mechanism is reduced by stepwise charging in adiabatic low-power CMOS design? | Resistive energy losses
+ICI211-496 | Which circuit structure is commonly used in multiplexers for digital and CMOS circuit design? | Transmission gate structures
+ICI211-497 | Which SRAM sizing relationship most directly supports a successful write operation? | The access transistor must overpower the cell pull-up sufficiently

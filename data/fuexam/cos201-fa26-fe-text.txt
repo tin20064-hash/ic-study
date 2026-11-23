@@ -1,0 +1,199 @@
+01 What do the I and Q components stand for?
+A. DC and AC | B. Input and output | C. In-phase and quadrature | D. DC and AC
+KEY [2] MATCH COS201-929 0.4211 REUSE 
+
+02 The quadrature component is associated with:
+A. Cosine | B. Sine | C. DC | D. Frequency
+KEY [1] MATCH COS201-925 1.0 REUSE COS201-925
+
+03 De-emphasis filter mainly:
+A. Amplifies noise | B. Reduces high-frequency noise | C. Increases bandwidth | D. Removes signal
+KEY [1] MATCH COS201-905 1.0 REUSE COS201-905
+
+04 Noise PSD at FM output becomes:
+A. Flat | B. Linear | C. Parabolic | D. Constant
+KEY [2] MATCH COS201-995 0.3721 REUSE 
+
+05 In AM, most transmitted power is:
+A. Useful | B. Noise | C. In carrier | D. In sidebands
+KEY None MATCH COS201-822 0.5385 REUSE 
+
+06 In AM, the bandwidth required is:
+A. W | B. 2W | C. 3W | D. W/2
+KEY [1] MATCH COS201-810 0.6197 REUSE 
+
+07 Coherent detection requires:
+A. Only amplitude matching | B. Same frequency and phase as carrier | C. Same amplitude only | D. Random phase
+KEY None MATCH COS201-917 0.7302 REUSE 
+
+08 A DSB-SC signal contains:
+A. Carrier only | B. One sideband | C. Two sidebands without carrier | D. Noise components
+KEY None MATCH COS201-861 0.5063 REUSE 
+
+09 Single Sideband (SSB) modulation transmits:
+A. Both sidebands | B. Only carrier | C. One sideband only | D. Noise components
+KEY None MATCH COS201-812 0.7273 REUSE 
+
+10 A carrier Signal is typically:
+A. Low-frequency signal | B. Random signal | C. High-frequency sinusoidal signal | D. Discrete-time signal
+KEY None MATCH COS201-820 0.4314 REUSE 
+
+11 Why does QAM require linear amplifiers?
+A. Uses frequency | B. Varying amplitude | C. Uses phase | D. Uses time
+KEY None MATCH COS201-814 0.675 REUSE 
+
+12 In IQ modulation, the I component is associated with:
+A. Sine wave | B. Cosine wave | C. Noise | D. Frequency shift
+KEY None MATCH COS201-925 0.7021 REUSE 
+
+13 If bandwidth is limited, best modulation is:
+A. FSK | B. BPSK | C. QAM | D. ASK
+KEY None MATCH COS201-894 0.5 REUSE 
+
+14 With sufficient FEC redundancy, if one OFDM subcarrier is lost, the system can:
+A. Fail completely | B. Lose all data | C. Recover using FEC | D. Stop transmission
+KEY None MATCH COS201-840 0.4894 REUSE 
+
+15 If power is limited, best modulation is:
+A. QAM | B. BPSK | C. OFDM | D. FSK
+KEY None MATCH COS201-812 0.5312 REUSE 
+
+16 What is the primary role of the RF stage in a transmitter
+A. To perform baseband filtering | B. To amplify the signal and radiate it via an antenna | C. To recover the original message | D. To synchronize signals | E. To compress data
+KEY None MATCH COS201-844 0.7692 REUSE 
+
+17 Fading in wireless communication is an example of:
+A. Frequency selectivity | B. Time-varying channel behavior | C. Nonlinear distortion | D. Noise | E. Multiplexing
+KEY None MATCH COS201-885 0.5376 REUSE 
+
+18 How do peer layers in the OSI model communicate?
+A. Through direct physical connections between all layers | B. By transmitting signals only through the physical layer | C. By exchanging information via corresponding layers across the communication medium | D. Through the transmitter only | E. Without any interaction
+KEY None MATCH COS201-856 0.5895 REUSE 
+
+19 What is the purpose of channel compensation in a receiver
+A. To increase transmission power | B. To reduce the number of users | C. To mitigate the effects of channel impairments | D. To generate new signals | E. To change Signal frequency
+KEY None MATCH COS201-804 0.55 REUSE 
+
+20 Angle modulation is considered a:
+A. Linear process | B. Time-invariant process | C. Nonlinear process | D. Static process
+KEY [2] MATCH COS201-915 1.0 REUSE COS201-915
+
+21 Angle modulation is defined as:
+A. Varying amplitude of a carrier | B. Varying the angle of a carrier according to the message Signal | C. Varying only the phase randomly | D. Removing the carrier
+KEY [1] MATCH COS201-894 1.0 REUSE COS201-894
+
+22 Frequency conversion (heterodyning) involves:
+A. Filtering | B. Amplification | C. Mixing with a local oscillator | D. Demodulation
+KEY None MATCH COS201-835 0.4557 REUSE 
+
+23 The instantaneous frequency is defined as:
+A. Derivative of amplitude | B. Derivative of phase | C. Integral of phase | D. Average frequency
+KEY None MATCH COS201-811 0.6761 REUSE 
+
+24 Carson's rule estimates FM bandwidth as:
+A. W | B. 2W | C. 2(Δf + fm) | D. Δf only
+KEY [2] MATCH COS201-842 0.4583 REUSE 
+
+25 Flat-top sampling uses:
+A. Impulse pulses | B. Rectangular pulses | C. Sine waves | D. Triangular waves
+KEY [1] MATCH COS201-927 1.0 REUSE COS201-927
+
+26 The aperture effect is corrected using:
+A. Amplifier | B. Equalizer | C. Modulator | D. Sampler
+KEY [1] MATCH COS201-953 1.0 REUSE COS201-953
+
+27 Delta-Sigma modulation improves DM by:
+A. Increasing noise | B. Reducing slope overload | C. Increasing bandwidth | D. Removing quantization
+KEY None MATCH COS201-812 0.6032 REUSE 
+
+28 Why is PPM more noise-resistant than PAMO
+A. Uses frequency | B. Encodes information in timing | C. Uses amplitude | D. Uses phase
+KEY [1] MATCH COS201-934 0.9877 REUSE COS201-934
+
+29 Increasing ADC bits from 8 to 10 improves SNR by:
+A. 6dB | B. IO dB | C. 12dB | D. 20 dB
+KEY None MATCH COS201-966 0.4167 REUSE 
+
+30 Granular noise occurs when:
+A. Step size too small | B. Signal is fast | C. Frequency is high | D. Sampling is low | E. Step size too large for a small or slowly varying input
+KEY [4] MATCH COS201-941 1.0 REUSE 
+
+31 Why is entropy maximum when symbols are equally likely?
+A. Minimum uncertainty | B. Maximum uncertainty | C. No noise | D. Equal power
+KEY [1] MATCH COS201-1012 0.9908 REUSE COS201-1012
+
+32 Why does entropy set a lower bound for compression?
+A. Due to noise | B. Due to coding constraints | C. It represents irreducible information | D. Due to bandwidth
+KEY None MATCH COS201-984 0.4848 REUSE 
+
+33 Why is repetition coding inefficient?
+A. High error | B. Low redundancy | C. Very low rate | D. High noise
+KEY [2] MATCH COS201-1008 0.9863 REUSE COS201-1008
+
+34 If a source has entropy = 1 bit/symbol, best compression is:
+A. 0 bits | B. 0.5 bits | C. 1 bit | D. 2 bits
+KEY None MATCH COS201-873 0.4196 REUSE 
+
+35 Why does Lempel-Ziv outperform Huffman in unknown sources?
+A. Uses probability | B. Adaptive learning | C. Uses fixed codes | D. Uses entropy
+KEY None MATCH COS201-800 0.495 REUSE 
+
+36 The Dirac delta function is meaningful primarily:
+A. As a standalone function | B. In graphical representation | C. Inside an integral | D. In discrete systems only | E. In nonlinear systems
+KEY None MATCH COS201-1007 0.5205 REUSE 
+
+37 A complex exponential input to an LTI system produces:
+A. Random output | B. Zero output | C. The same exponential scaled by the transfer function | D. A sinusoidal output only | E. A constant output
+KEY None MATCH COS201-840 0.4906 REUSE 
+
+38 What does the frequency-domain representation of a signal reveal?
+A. Signal amplitude over time | B. Signal delay | C. Signal bandwidth and frequency content | D. Signal noise level | E. Signal power only
+KEY None MATCH COS201-893 0.5455 REUSE 
+
+39 A system is causal if:
+A. Output depends on future input | B. Output depends only on present and past inputs | C. Output is constant | D. Output is periodic | E. Output is random
+KEY None MATCH COS201-885 0.4923 REUSE 
+
+40 A signal can be described equivalently in which Wo domains?
+A. Analog and digital | B. Time and space | C. Time and frequency | D. Energy and power | E. Continuous and discrete
+KEY None MATCH COS201-821 0.4301 REUSE 
+
+41 The mean of a random process is computed over:
+A. Time | B. Ensemble | C. Frequency | D. Space
+KEY None MATCH COS201-951 0.5938 REUSE 
+
+42 A sample function represents:
+A. A variable | B. One realization of a random process | C. A PDF | D. A system
+KEY [1] MATCH COS201-893 0.6301 REUSE 
+
+43 The correlation coefficient lies in the range:
+A. [0, 1] | B. [-1, 1] | C. [1, 2] | D. (-∞, ∞)
+KEY [1] MATCH COS201-911 0.5263 REUSE 
+
+44 If events A and B are independent, then:
+A. P(A|B) = 0 | B. P(A|B) = P(A) | C. P(A|B) = 1 | D. P(A|B) > P(A)
+KEY None MATCH COS201-930 0.5591 REUSE 
+
+45 An ensemble is:
+A. A signal | B. A collection of all possible realizations | C. A variable | D. A system
+KEY None MATCH COS201-910 0.4848 REUSE 
+
+46 In a matched-filter receiver for a bit transmitted over [0, T], the optimal sampling instant occurs:
+A. At start of bit | B. At end of bit period | C. At midpoint | D. Randomly
+KEY None MATCH COS201-927 0.5614 REUSE 
+
+47 If channel distortion increases, eye diagram will:
+A. Open wider | B. Close | C. Stay same | D. Increase amplitude
+KEY [1] MATCH COS201-977 1.0 REUSE COS201-977
+
+48 For equiprobable symmetric antipodal signaling in AWGN, the optimum binary decision threshold is:
+A. Maximum value | B. Zero | C. Minimum value | D. Average value
+KEY None MATCH COS201-840 0.463 REUSE 
+
+49 Given Eb/NO increases by 3 dB, BER will:
+A. Increase | B. Decrease significantly | C. Stay same | D. Become zero
+KEY None MATCH COS201-977 0.5349 REUSE 
+
+50 ISI is caused by:
+A. Noise only | B. Pulse spreading in time | C. High amplitude | D. Quantization
+KEY None MATCH COS201-974 0.5263 REUSE 

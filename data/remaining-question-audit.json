@@ -1,0 +1,3051 @@
+{
+  "reviewedAt": "2026-11-23",
+  "coverage": {
+    "pastPapers": 12,
+    "pastQuestions": 600,
+    "method": "Read all question text, choices, keys and reasons; independently checked flagged calculations and compared flagged images. This is not a claim that all 600 source photos were individually reread.",
+    "legacyBank": "Existing reviewed legacy corrections used only through explicitly selected ID pairs; structural validation remains separate from a new scientific review.",
+    "legacyStructuralCheck": {
+      "questionIds": 959,
+      "invalidChoicesOrIndices": 0,
+      "independentScientificRereview": false
+    }
+  },
+  "records": {
+    "dgt302-su26-fe-re-002": {
+      "before": {
+        "question": "What is the mathematically derived Z-transform of the delayed sequence x(n) = 10ⁿ·u(n - 2)?",
+        "options": [
+          "10z⁻¹/(1 - 10z⁻²), ROC:",
+          "100z⁻¹/(1 - 10z⁻¹), ROC:",
+          "100z⁻²/(1 - 10z⁻¹), ROC:",
+          "10z⁻²/(1 - 10z⁻²), ROC:"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Tổng từ n=2 của 10^n z⁻ⁿ bằng 100z⁻²/(1-10z⁻¹); ROC là |z|>10.",
+        "tip": null
+      },
+      "after": {
+        "question": "What is the mathematically derived Z-transform of the delayed sequence x(n) = 10ⁿ·u(n - 2)?",
+        "options": [
+          "10z⁻¹/(1 - 10z⁻²), ROC: |z| > √10",
+          "100z⁻¹/(1 - 10z⁻¹), ROC: |z| > 10",
+          "100z⁻²/(1 - 10z⁻¹), ROC: |z| > 10",
+          "10z⁻²/(1 - 10z⁻²), ROC: |z| > √10"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Tổng từ n=2 của 10^n z⁻ⁿ bằng 100z⁻²/(1-10z⁻¹); ROC là |z|>10.",
+        "tip": "Bắt đầu tại n=2 → tử 100z⁻²; dãy phải với cơ số 10 → ROC |z|>10.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Ảnh gốc để trống sau ROC ở cả bốn lựa chọn. Đã bổ sung ROC nhân quả tương ứng; biểu thức và khóa chấm giữ nguyên.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "dgt302-su26-fe-re-009": {
+      "before": {
+        "question": "In classic Delta Modulation (DM), \"slope-overload distortion\" occurs when the analog signal changes too rapidly for the staircase to keep up. The mathematical condition to avoid this overload is:",
+        "options": [
+          "max(dx(t)/dt) ≤ Δ/t",
+          "max(dx(t)/dt) ≥ Δ/t",
+          "max|x(t)| ≤ Δ·t",
+          "max(d²x(t)/dt²) ≤ Δ/t"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Bậc thang có độ dốc tối đa Δ/T, nên tránh slope overload khi max|dx/dt|≤Δ/T.",
+        "tip": null
+      },
+      "after": {
+        "question": "For delta modulation with step size Δ and sampling period T, which condition avoids slope-overload distortion?",
+        "options": [
+          "max_t |dx(t)/dt| ≤ Δ/T",
+          "max_t |dx(t)/dt| ≤ 2Δ/T",
+          "max_t |x(t)| ≤ Δ",
+          "max_t |d²x(t)/dt²| ≤ Δ/T"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Độ dốc bậc thang Δ/T phải theo kịp độ dốc lớn nhất của tín hiệu.",
+        "tip": "avoid slope overload → Δ/T ≥ max|dx/dt|.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Đề gốc thiếu trị tuyệt đối và ghi Δ/t. Điều kiện chống slope overload phải so độ lớn độ dốc với Δ/T.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "dgt302-fa26-fe-040": {
+      "before": {
+        "question": "Which mathematical substitution of the twiddle factor is the fundamental key that allows an N-point DFT to be reduced into two N-2 point DFTs?",
+        "options": [
+          "W_N² = W_(N/2)",
+          "W_N⁻¹ = W_(N/2)",
+          "W_N^N = 0",
+          "W_N² = W_(2N)"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "W_N²=exp(-j4π/N)=W_(N/2), cho phép tái sử dụng DFT nửa kích thước.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which mathematical substitution of the twiddle factor is the fundamental key that allows an N-point DFT to be reduced into two N/2-point DFTs?",
+        "options": [
+          "W_N² = W_(N/2)",
+          "W_N⁻¹ = W_(N/2)",
+          "W_N^N = 0",
+          "W_N² = W_(2N)"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "W_N²=exp(-j4π/N)=W_(N/2), cho phép tái sử dụng DFT nửa kích thước.",
+        "tip": "Radix-2 chia chỉ số chẵn/lẻ: mỗi nhánh N/2 mẫu; W_N² = W_(N/2).",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Ảnh gốc ghi N−2 point DFTs. Đã sửa thành hai DFT N/2 điểm theo phân rã radix-2.",
+      "sourcePhotoReviewed": true,
+      "references": [
+        "https://brianmcfee.net/dstbook-site/content/ch08-fft/FFT.html"
+      ]
+    },
+    "dgt302-su26-fe-040": {
+      "before": {
+        "question": "Calculate the total number of complex multiplications strictly required to compute a 1024-point DFT using the optimal Radix-2 FFT algorithm.",
+        "options": [
+          "1024",
+          "5120",
+          "10240",
+          "2048"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Phép đếm butterfly chuẩn cho (N/2)log2N=512·10=5120 lượt nhân, trước khi lược các hệ số twiddle tầm thường.",
+        "tip": null
+      },
+      "after": {
+        "question": "Using the standard radix-2 butterfly count (N/2)·log₂N, including trivial twiddle-factor multiplications, how many complex multiplications are counted for N = 1024?",
+        "options": [
+          "1024",
+          "5120",
+          "10240",
+          "2048"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Số phép nhân radix-2 theo công thức đếm chuẩn là (N/2)·log₂N = 512·10.",
+        "tip": "Đếm chuẩn radix-2: (N/2)log₂N; N=1024 → 512×10=5120 phép nhân, kể cả twiddle tầm thường.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "5120 là số phép nhân theo mô hình butterfly chuẩn, có tính twiddle đơn giản; không phải số phép nhân không tầm thường tối thiểu.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-014": {
+      "before": {
+        "question": "When a multiplier output is reduced from 2b-bits back to b-bits using the Truncation (Chop) method, what is the statistical characteristic of the resulting quantization error?",
+        "options": [
+          "The error is strictly negative or zero, creating a negative DC bias in the system.",
+          "The error has a perfectly zero mean and a uniform distribution.",
+          "The error is completely eliminated for all even numbers.",
+          "The error is symmetrically bounded between -b and b, creating a negative DC bias in the system."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với cắt bit theo quy ước bù hai tương đương floor, sai số không dương và có mean âm.",
+        "tip": null
+      },
+      "after": {
+        "question": "In two’s-complement fixed-point arithmetic, assume truncation drops low-order bits (rounds toward −∞), with no overflow. For error e=quantized value−exact value, what is its sign/bias?",
+        "options": [
+          "The error is nonpositive; for values spread within quantization cells it generally has a negative mean (DC bias).",
+          "The error has a perfectly zero mean and a uniform distribution.",
+          "The error is completely eliminated for all even numbers.",
+          "The error is symmetrically bounded between -b and b, creating a negative DC bias in the system."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Khi bỏ LSB của số bù hai tương đương làm tròn xuống, giá trị sau lượng tử không lớn hơn giá trị thật. Với e=sau−trước, sai số không dương và thường có bias âm.",
+        "tip": "drop LSB / floor + e=quantized−exact → e≤0.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bổ sung quy ước bù hai, bỏ bit là làm tròn xuống và dấu sai số. Truncation về zero không luôn có bias âm.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-fa26-fe-038": {
+      "before": {
+        "question": "What is the mathematical consequence of using Truncation instead of Rounding when handling finite word-length effects in FFT multipliers?",
+        "options": [
+          "Truncation creates a uniform zero-mean error.",
+          "Truncation creates a negative DC bias because discarded bits always force the value toward negative infinity.",
+          "Truncation eliminates all quantization noise.",
+          "Truncation increases the dynamic range exponentially."
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Khi truncation theo quy ước bỏ bit của số bù hai tương đương làm tròn xuống, sai số có thiên lệch âm.",
+        "tip": null
+      },
+      "after": {
+        "question": "In two’s-complement fixed-point FFT arithmetic, truncation drops low-order bits and rounds toward −∞, with no overflow. For e = quantized value − exact value, what bias results?",
+        "options": [
+          "Truncation creates a uniform zero-mean error.",
+          "The error is nonpositive and generally has a negative mean for values spread within quantization cells.",
+          "Truncation eliminates all quantization noise.",
+          "Truncation increases the dynamic range exponentially."
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Khi bỏ LSB của số bù hai tương đương làm tròn xuống, giá trị sau lượng tử không lớn hơn giá trị thật. Với e=sau−trước, sai số không dương và thường có bias âm.",
+        "tip": "drop LSB / floor + e=quantized−exact → e≤0.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bias âm chỉ đúng với bỏ bit bù hai làm tròn xuống; đề gốc chưa nêu quy ước lượng tử hóa.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-050": {
+      "before": {
+        "question": "Why is a Minimum-Phase system highly desirable in telecommunications and data storage?",
+        "options": [
+          "It delays the signal by the maximum possible amount",
+          "It perfectly rejects all ambient noise.",
+          "It can be completely and perfectly equalized by a stable, causal IIR inverse filter.",
+          "It requires absolutely no multipliers to implement"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Hệ minimum-phase ổn định có cực và zero phù hợp để bộ lọc nghịch đảo cũng nhân quả và ổn định.",
+        "tip": null
+      },
+      "after": {
+        "question": "Why is a Minimum-Phase system highly desirable in telecommunications and data storage?",
+        "options": [
+          "It delays the signal by the maximum possible amount",
+          "It perfectly rejects all ambient noise.",
+          "It has a stable, causal inverse filter, which may be FIR or IIR.",
+          "It requires absolutely no multipliers to implement"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Hệ và nghịch đảo của hệ minimum-phase đều nhân quả, ổn định. Ví dụ H(z)=1/(1−az⁻¹), |a|<1 có nghịch đảo FIR 1−az⁻¹, nên không thể bắt buộc nghịch đảo là IIR.",
+        "tip": "Minimum-phase → nghịch đảo ổn định và nhân quả; không kết luận luôn là IIR.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Nghịch đảo của hệ minimum-phase ổn định có thể là FIR hoặc IIR; không bắt buộc là IIR.",
+      "sourcePhotoReviewed": false,
+      "references": [
+        "https://dsprelated.com/freebooks/filters/Minimum_Phase_Filters.html"
+      ]
+    },
+    "dgt302-su26-fe-re-034": {
+      "before": {
+        "question": "Determine the exact mathematical relationship for the 3-dB cutoff bandwidth of the first-order lowpass filter H(z) = (1-a)/(1-az⁻¹) (where 0 &lt; a &lt; 1). The 3-dB frequency must satisfy which of the following equations?",
+        "options": [
+          "cos(ωc) = (4a - 1 - a²)/(2a)",
+          "cos(ωc) = (1 + a²)/(2a)",
+          "cos(ωc) = (1 - a)/(1 + a)",
+          "cos(ωc) = a"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Đặt |H(exp(jωc))|²=1/2 so với DC=1 và giải cho cosωc được (4a-1-a²)/(2a).",
+        "tip": null
+      },
+      "after": {
+        "question": "For H(z)=(1−a)/(1−az^(-1)), 0<a<1, suppose a −3 dB cutoff ωc∈[0,π] exists. Which equation must ωc satisfy?",
+        "options": [
+          "cos(ωc) = (4a - 1 - a²)/(2a)",
+          "cos(ωc) = (1 + a²)/(2a)",
+          "cos(ωc) = (1 - a)/(1 + a)",
+          "cos(ωc) = a"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Đặt |H|²=1/2 và giải được cos(ωc)=(4a−1−a²)/(2a). Trong [0,π], cutoff này chỉ tồn tại khi a≥3−2√2.",
+        "tip": "−3 dB → |H|²=1/2; dùng |1−ae^(−jω)|²=1+a²−2a cosω rồi giải cosωc.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Không phải mọi 0<a<1 đều có điểm −3 dB trong [0,π]. Đã nêu điều kiện tồn tại; ngưỡng là a≥3−2√2.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-035": {
+      "before": {
+        "question": "The frequency response H(ω) can be directly obtained from the system's Z-transform transfer function H(ω) by evaluating it exactly on the:",
+        "options": [
+          "Imaginary axis of the s-plane",
+          "Real axis, where z = ω",
+          "Unit circle, where z = exp(jω)",
+          "Origin, where z = 0"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "DTFT bằng H(z) trên z=exp(jω) khi ROC chứa vòng tròn đơn vị.",
+        "tip": null
+      },
+      "after": {
+        "question": "Provided the ROC contains the unit circle, the frequency response H(e^(jω)) is obtained from H(z) by evaluating it on the:",
+        "options": [
+          "Imaginary axis of the s-plane",
+          "Real axis, where z = ω",
+          "Unit circle, where z = exp(jω)",
+          "Origin, where z = 0"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Tần số thực tương ứng các điểm z=e^(jω) trên vòng đơn vị.",
+        "tip": "frequency response → evaluate unit circle.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Sửa tên hàm biến đổi thành H(z) và bổ sung điều kiện ROC chứa đường tròn đơn vị.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-012": {
+      "before": {
+        "question": "Which characteristic distinctly separates Infinite Impulse Response (IIR) systems from Finite Impulse Response (FIR) systems in terms of structural implementation?",
+        "options": [
+          "IIR systems contain feedback loops (recursive paths), while FIR systems strictly use feed-forward paths.",
+          "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+          "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot.",
+          "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Trong cấu trúc chuẩn không triệt tiêu cực-zero đặc biệt, IIR có hồi tiếp và đáp ứng kéo dài vô hạn.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which statement correctly distinguishes IIR and FIR responses and their usual realizations?",
+        "options": [
+          "IIR responses require recursion in a finite-order realization; FIR responses admit a finite feed-forward realization.",
+          "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+          "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot.",
+          "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Hồi tiếp làm đáp ứng IIR kéo dài; FIR thông thường chỉ dùng các nhánh tiến.",
+        "tip": "IIR → recursive / feedback.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "FIR có thể có hiện thực hồi tiếp với triệt tiêu cực-zero. Đã bỏ khẳng định FIR chỉ có thể dùng feed-forward.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-013": {
+      "before": {
+        "question": "To prevent catastrophic instability caused by coefficient quantization in high-order IIR filters (e.g., N = 8, what structural implementation is mandated by industry standards?",
+        "options": [
+          "Cascade Form",
+          "Direct Form I as a single massive 8th-order block.",
+          "Tapped-Delay-Line Form.",
+          "Non-causal Time-Reversal Form."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Ghép tầng các biquad bậc hai thường ít nhạy với lượng tử hệ số hơn một khối trực tiếp bậc cao.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which realization usually improves numerical robustness for a high-order IIR filter by splitting it into lower-order sections?",
+        "options": [
+          "Cascade Form",
+          "Direct Form I as a single massive 8th-order block.",
+          "Tapped-Delay-Line Form.",
+          "Non-causal Time-Reversal Form."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Chia bộ lọc bậc cao thành các tầng bậc hai giúp giảm độ nhạy với lượng tử hóa hệ số.",
+        "tip": "high-order IIR → cascade biquads.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Cascade các section bậc thấp thường cải thiện độ bền số; không có cơ sở cho khẳng định bị bắt buộc bởi mọi tiêu chuẩn công nghiệp.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-016": {
+      "before": {
+        "question": "The Innovations Representation models any stationary random process x(n) with a specific PSD as the output of a stable LTI filter driven by which specific input?",
+        "options": [
+          "White noise",
+          "A single unit impulse",
+          "A deterministic sine wave",
+          "A constant DC signal"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Innovations là nhiễu trắng kích thích bộ lọc tạo phổ; không phải một xung đơn hay một sóng sin xác định.",
+        "tip": null
+      },
+      "after": {
+        "question": "In the innovations representation of a purely nondeterministic WSS process with an admissible stable spectral factor, the process is modeled by an LTI filter driven by which input?",
+        "options": [
+          "White noise",
+          "A single unit impulse",
+          "A deterministic sine wave",
+          "A constant DC signal"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Phần không tất định của quá trình WSS có nhân tử phổ phù hợp có thể được tạo bằng cách đưa nhiễu trắng qua bộ lọc ổn định.",
+        "tip": "purely nondeterministic innovations → white noise.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Biểu diễn innovations cần giả thiết quá trình WSS thuần bất định và có spectral factor phù hợp; không áp dụng vô điều kiện cho mọi quá trình dừng.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-025": {
+      "before": {
+        "question": "As a direct consequence of Conjugate Symmetry for real signals, the Phase spectrum ∠X(ω) is always an:",
+        "options": [
+          "Even function ∠X(-ω) = ∠X(ω)",
+          "Odd function ∠X(-ω) = -∠X(ω)",
+          "Periodic function with period π",
+          "Purely positive function"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Dãy thực có phổ liên hợp đối xứng, nên pha là hàm lẻ modulo 2π ở các điểm phổ khác 0.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a real sequence, wherever X(ω)≠0 and phase is interpreted modulo 2π, conjugate symmetry implies that the phase spectrum is:",
+        "options": [
+          "Even function ∠X(-ω) = ∠X(ω)",
+          "Odd function ∠X(-ω) = -∠X(ω)",
+          "Periodic function with period π",
+          "Purely positive function"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "X(−ω)=X*(ω) nên pha đổi dấu modulo 2π ở những điểm X khác zero; tại zero phổ không có pha xác định.",
+        "tip": "real signal → magnitude chẵn, phase lẻ modulo 2π khi X≠0.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Đối xứng pha được hiểu modulo 2π tại các điểm phổ khác zero; pha tại zero không xác định.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-fa26-fe-030": {
+      "before": {
+        "question": "As a direct consequence of Conjugate Symmetry for real signals, the Magnitude spectrum |X(ω)| is always an:",
+        "options": [
+          "Even function |X(-ω)| = |X(ω)|",
+          "Odd function |X(-ω)| = -|X(ω)|",
+          "Exponential function",
+          "Constant function"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Dãy thực có X(-ω)=X*(ω), nên độ lớn phổ là hàm chẵn.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a real sequence, wherever X(ω)≠0 and phase is interpreted modulo 2π, conjugate symmetry implies that the phase spectrum is:",
+        "options": [
+          "Even function |X(-ω)| = |X(ω)|",
+          "Odd function |X(-ω)| = -|X(ω)|",
+          "Exponential function",
+          "Constant function"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "X(−ω)=X*(ω) nên pha đổi dấu modulo 2π ở những điểm X khác zero; tại zero phổ không có pha xác định.",
+        "tip": "real signal → magnitude chẵn, phase lẻ modulo 2π khi X≠0.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bổ sung điều kiện X(ω) khác zero và pha modulo 2π để tránh khẳng định pha luôn lẻ ở mọi điểm.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-027": {
+      "before": {
+        "question": "Consider a discrete-time signal that is entirely real-valued and possesses perfect even symmetry in the time domain x(n) = x(-n). By applying the DTFT symmetry properties, what strict conclusion can be drawn about its frequency spectrum X(ω)?",
+        "options": [
+          "X(ω) is purely imaginary and odd.",
+          "X(ω) is purely real and even, meaning its phase is strictly 0 or ±π.",
+          "X(ω) has a linear phase shift proportional to n.",
+          "X(ω) is zero at the Nyquist frequency ω = π."
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Phần sin triệt tiêu khi cộng cặp n và -n của dãy thực chẵn, nên X thực và chẵn.",
+        "tip": null
+      },
+      "after": {
+        "question": "Consider a discrete-time signal that is entirely real-valued and possesses perfect even symmetry in the time domain x(n) = x(-n). By applying the DTFT symmetry properties, what strict conclusion can be drawn about its frequency spectrum X(ω)?",
+        "options": [
+          "X(ω) is purely imaginary and odd.",
+          "X(ω) is real and even; wherever it is nonzero, its phase is 0 or π modulo 2π.",
+          "X(ω) has a linear phase shift proportional to n.",
+          "X(ω) is zero at the Nyquist frequency ω = π."
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "DTFT của dãy thực chẵn là thực chẵn. Giá trị dương có pha 0, giá trị âm có pha π modulo 2π; không gán pha tại X(ω)=0.",
+        "tip": "Thực + chẵn → phổ thực + chẵn; dấu phổ quyết định 0/π khi phổ khác zero.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Phổ thực chẵn có pha 0 hoặc π tại nơi phổ khác zero; pha không xác định tại các điểm zero.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-su26-fe-re-044": {
+      "before": {
+        "question": "To guarantee that an FIR filter has a perfectly linear phase response (i.e., a constant group delay), what strict mathematical condition must its impulse response h(n) satisfy?",
+        "options": [
+          "h(n) must be exactly symmetric or antisymmetric around its center point.",
+          "h(n) must be completely zero for all even time indices.",
+          "h(n) must have all its poles located strictly outside the unit circle.",
+          "h(n) must exponentially decay to zero as n → ∞"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với FIR hệ số thực, đối xứng hoặc phản đối xứng quanh tâm cho pha tuyến tính trong các dải phổ khác 0.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a real-coefficient FIR filter to have generalized linear phase, what condition must its impulse response h[n] satisfy?",
+        "options": [
+          "h(n) must be exactly symmetric or antisymmetric around its center point.",
+          "h(n) must be completely zero for all even time indices.",
+          "h(n) must have all its poles located strictly outside the unit circle.",
+          "h(n) must exponentially decay to zero as n → ∞"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Đối xứng hoặc phản đối xứng quanh tâm làm phần pha biến thiên tuyến tính theo ω.",
+        "tip": "linear-phase FIR → symmetry / antisymmetry.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Điều kiện đối xứng hoặc phản đối xứng được phát biểu cho FIR hệ số thực, theo generalized linear phase.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "dgt302-fa26-fe-035": {
+      "before": {
+        "question": "Two systems have transfer functions H1(z) and H2(z). If they are designed such that |H1(z)| = |H2(z)| for all ω, but they have different phase responses, they must be:",
+        "options": [
+          "Inverses of each other",
+          "Aliased systems",
+          "Systems whose poles and zeros are reciprocals reflected across the unit circle (differing by an all-pass filter)",
+          "Linear phase FIR systems"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Một yếu tố all-pass có thể thay đổi pha mà giữ nguyên biên độ trên vòng tròn đơn vị.",
+        "tip": null
+      },
+      "after": {
+        "question": "Two rational systems have equal magnitude responses |H1(e^(jω))| = |H2(e^(jω))| wherever the ratio is defined, but different phase responses. Which statement describes their ratio?",
+        "options": [
+          "Inverses of each other",
+          "Aliased systems",
+          "Their ratio has unit magnitude on the unit circle: they differ by an all-pass factor.",
+          "Linear phase FIR systems"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Tỉ số H1/H2 có biên độ 1 trên đường tròn đơn vị nên là thừa số all-pass. Hai hệ vẫn có thể giữ nguyên nhiều cực, zero chung; không phải tất cả đều bị phản xạ.",
+        "tip": "Cùng biên độ, khác pha → xét tỉ số all-pass; không phản xạ toàn bộ cực-zero một cách máy móc.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Hai đáp ứng cùng biên độ có thể khác bởi thừa số all-pass; không bắt buộc mọi cực và zero của hai hệ đều là ảnh nghịch đảo nhau.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-001": {
+      "before": {
+        "question": "In-phase and quadrature",
+        "options": [
+          "DC and AC",
+          "Input and output",
+          "In-phase and quadrature",
+          "DC and AC"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "I và Q lần lượt chỉ thành phần đồng pha và vuông pha của biểu diễn tín hiệu.",
+        "tip": null
+      },
+      "after": {
+        "question": "In the I-Q representation of a modulated signal, what do I and Q stand for?",
+        "options": [
+          "DC and AC",
+          "Input and output",
+          "In-phase and quadrature",
+          "DC and AC"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "I và Q là hai thành phần theo sóng mang cùng pha và vuông pha.",
+        "tip": "I = In-phase; Q = Quadrature.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Ảnh nguồn chỉ ghi “In-phase and quadrature”, thiếu câu hỏi. Đã bổ sung câu hỏi về ý nghĩa I/Q; giữ lựa chọn gốc.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "cos201-fa26-fe-023": {
+      "before": {
+        "question": "The instantaneous frequency is defined as:",
+        "options": [
+          "Derivative of amplitude",
+          "Derivative of phase",
+          "Integral of phase",
+          "Average frequency"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Tần số tức thời bằng đạo hàm pha theo thời gian chia 2π khi pha đo bằng radian.",
+        "tip": null
+      },
+      "after": {
+        "question": "For total phase θ(t) measured in radians, how is instantaneous frequency f_i(t) in hertz defined?",
+        "options": [
+          "Derivative of amplitude",
+          "f_i(t) = (1/(2π)) · dθ(t)/dt",
+          "Integral of phase",
+          "Average frequency"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Tần số tức thời bằng đạo hàm pha theo thời gian chia 2π khi pha đo bằng radian.",
+        "tip": "Pha radian → đạo hàm ra rad/s; đổi sang Hz phải chia 2π.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Nếu pha tính bằng radian, tần số Hz là đạo hàm pha chia 2π; đạo hàm pha riêng cho tần số góc.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-046": {
+      "before": {
+        "question": "The optimal sampling instant occurs:",
+        "options": [
+          "At start of bit",
+          "At end of bit period",
+          "At midpoint",
+          "Randomly"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với matched filter cho xung bit trên [0,T], lấy mẫu ở cuối khoảng T tối đa hóa SNR đầu ra.",
+        "tip": null
+      },
+      "after": {
+        "question": "For the matched filter of a known bit pulse supported on [0,T] in white noise, at what time is its sampled output SNR maximized?",
+        "options": [
+          "At start of bit",
+          "At end of bit period",
+          "At midpoint",
+          "Randomly"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với matched filter cho xung bit trên [0,T], lấy mẫu ở cuối khoảng T tối đa hóa SNR đầu ra.",
+        "tip": "Matched filter cho xung dài T → lấy mẫu tại t=T.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Lấy mẫu cuối bit là kết quả của matched filter với xung hỗ trợ trên [0,T], không phải quy tắc chung cho mọi bộ thu.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-014": {
+      "before": {
+        "question": "If one OFDM subcarrier is lost, system will:",
+        "options": [
+          "Fail completely",
+          "Lose all data",
+          "Recover using FEC",
+          "Stop transmission"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "FEC có thể khôi phục dữ liệu mất ở một số subcarrier nếu mã và độ dư còn đủ khả năng sửa lỗi.",
+        "tip": null
+      },
+      "after": {
+        "question": "In a coded OFDM system with sufficient interleaving and FEC redundancy, what may recover data affected by a lost subcarrier when the loss is within the code capability?",
+        "options": [
+          "Fail completely",
+          "Lose all data",
+          "Recover using FEC",
+          "Stop transmission"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "FEC có thể khôi phục khi có đủ dư thừa và lỗi/xóa nằm trong khả năng mã. OFDM tự nó không bảo đảm cứu dữ liệu khi mất subcarrier.",
+        "tip": "Lost subcarrier → FEC có thể phục hồi nếu còn đủ redundancy.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Khôi phục dữ liệu mất subcarrier cần FEC/interleaving đủ mạnh và tổn thất nằm trong khả năng sửa lỗi; OFDM tự nó không bảo đảm phục hồi.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-013": {
+      "before": {
+        "question": "If bandwidth is limited, best modulation is:",
+        "options": [
+          "FSK",
+          "BPSK",
+          "QAM",
+          "ASK"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Khi SNR cho phép, QAM bậc cao mang nhiều bit trên mỗi ký hiệu và tăng hiệu suất phổ.",
+        "tip": null
+      },
+      "after": {
+        "question": "When bandwidth is scarce and SNR is sufficient for a higher-order constellation at the target BER, which listed amplitude-and-phase modulation is commonly used for high spectral efficiency?",
+        "options": [
+          "FSK",
+          "BPSK",
+          "QAM",
+          "ASK"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "QAM bậc cao ghép nhiều bit vào một ký hiệu nhờ nhiều điểm biên độ–pha. Cần đủ SNR cho BER yêu cầu; hiệu suất phổ không tự tăng nếu chỉ đổi tên điều chế.",
+        "tip": "Cần nhiều bit/ký hiệu + đủ SNR → cân nhắc QAM bậc cao.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Chọn điều chế phải xét SNR, BER và bậc chòm sao; không có loại tốt nhất cho mọi kênh giới hạn băng thông.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-015": {
+      "before": {
+        "question": "If power is limited, best modulation is:",
+        "options": [
+          "QAM",
+          "BPSK",
+          "OFDM",
+          "FSK"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Trong so sánh nhị phân kết hợp trên AWGN, BPSK có hiệu quả năng lượng tốt.",
+        "tip": null
+      },
+      "after": {
+        "question": "For coherent detection in AWGN at the same target BER, which listed binary scheme needs less Eb/N0 than coherent orthogonal BFSK?",
+        "options": [
+          "16-QAM",
+          "BPSK",
+          "An OFDM waveform with unspecified subcarrier modulation",
+          "Coherent orthogonal BFSK"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với cùng BER, coherent antipodal BPSK cần ít Eb/N0 hơn coherent orthogonal BFSK khoảng 3 dB. QAM và OFDM chưa nêu bậc hoặc cấu hình thì không đủ để kết luận tốt hơn.",
+        "tip": "Cùng BER, coherent BPSK so với orthogonal BFSK → BPSK lợi khoảng 3 dB.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Đề gốc chưa quy định bậc điều chế và mô hình kênh. Đã nêu so sánh cùng BER trong AWGN để lựa chọn có nghĩa rõ ràng.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-035": {
+      "before": {
+        "question": "Why does Lempel-Ziv outperform Huffman in unknown sources?",
+        "options": [
+          "Uses probability",
+          "Adaptive learning",
+          "Uses fixed codes",
+          "Uses entropy"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Lempel-Ziv học từ điển từ dữ liệu, phù hợp nguồn chưa biết trước phân bố xác suất.",
+        "tip": null
+      },
+      "after": {
+        "question": "Why is Lempel–Ziv coding useful when source statistics are not known in advance?",
+        "options": [
+          "Uses probability",
+          "Adaptive learning",
+          "Uses fixed codes",
+          "Uses entropy"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Lempel–Ziv học các chuỗi lặp và xây từ điển khi đọc dữ liệu, nên không cần bảng xác suất ký hiệu cố định có sẵn. Hiệu quả thực tế còn phụ thuộc dữ liệu và độ dài mẫu.",
+        "tip": "Chưa biết thống kê nguồn → từ điển thích nghi; không suy ra luôn nén tốt hơn Huffman.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Lempel–Ziv phù hợp khi chưa biết thống kê nguồn, nhưng không luôn thắng Huffman trên mọi dữ liệu.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-fa26-fe-048": {
+      "before": {
+        "question": "The decision threshold for binary symmetric signaling is:",
+        "options": [
+          "Maximum value",
+          "Zero",
+          "Minimum value",
+          "Average value"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với tín hiệu antipodal đối xứng, xác suất hai bit bằng nhau và nhiễu đối xứng, ngưỡng tối ưu là 0.",
+        "tip": null
+      },
+      "after": {
+        "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+        "options": [
+          "Maximum value",
+          "Zero",
+          "Minimum value",
+          "The noise variance"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.",
+        "tip": "Hai mức −A,+A cân bằng trong AWGN → ngưỡng 0; lệch xác suất thì ngưỡng có thể đổi.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bổ sung antipodal, xác suất bằng nhau và AWGN. Đổi lựa chọn “Average value” mơ hồ để tránh hai cách diễn đạt cùng ngưỡng 0.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-011": {
+      "before": {
+        "question": "Why is QAM more spectrally efficient than PSK?",
+        "options": [
+          "Uses frequency",
+          "Uses amplitude and phase",
+          "Uses noise",
+          "Uses time"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "QAM dùng cả biên độ lẫn pha để bố trí chòm sao. Lợi thế phổ cần so sánh tại cùng yêu cầu SNR/BER và điều kiện hệ thống.",
+        "tip": null
+      },
+      "after": {
+        "question": "Compared with a PSK constellation restricted to one amplitude, which additional signal dimension does QAM use to place constellation points?",
+        "options": [
+          "Uses frequency",
+          "Both amplitude and phase",
+          "Uses noise",
+          "Uses time"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "QAM bố trí điểm theo cả biên độ và pha; PSK giữ biên độ cố định và đổi pha. Cùng số điểm M thì cả hai đều mang log₂M bit/ký hiệu, nên không tự có lợi thế phổ chỉ nhờ đổi PSK thành QAM.",
+        "tip": "QAM → biên độ + pha; so hiệu suất phổ phải so thêm M, pulse shaping và BER.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "QAM và PSK cùng M đều mang log₂M bit/ký hiệu; không thể kết luận QAM luôn hiệu quả phổ hơn chỉ vì dùng biên độ.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-013": {
+      "before": {
+        "question": "If roll-off between subcarriers is incorrect, OFDM will:",
+        "options": [
+          "Improve",
+          "Lose orthogonality",
+          "Reduce bandwidth",
+          "Increase SNR"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Sai điều kiện tạo và thu subcarrier có thể làm mất tính trực giao và gây ICI.",
+        "tip": null
+      },
+      "after": {
+        "question": "If OFDM subcarrier spacing or useful symbol timing violates the orthogonality condition, the subcarriers will:",
+        "options": [
+          "Improve",
+          "Lose orthogonality",
+          "Reduce bandwidth",
+          "Increase SNR"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Trực giao phụ thuộc khoảng cách sóng mang và khoảng tích phân hữu ích. Vi phạm điều kiện đó sinh ICI; “roll-off sai” không phải mô tả tổng quát chính xác.",
+        "tip": "OFDM → Δf·Tu integer + timing phù hợp; mất trực giao → ICI.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Nguyên nhân ICI là vi phạm điều kiện trực giao về giãn cách sóng mang hoặc timing; không kết luận từ một roll-off chưa định nghĩa.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-015": {
+      "before": {
+        "question": "Why does DPSK have worse performance than BPSK?",
+        "options": [
+          "Lower bandwidth",
+          "Error propagation",
+          "Higher frequency",
+          "Lower energy"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Tách vi sai dựa vào quan hệ hai ký hiệu kế tiếp, có thể làm sai lệch ảnh hưởng các quyết định liên quan.",
+        "tip": null
+      },
+      "after": {
+        "question": "In differentially encoded coherent BPSK followed by hard-decision differential decoding, why can one detected symbol error affect two decoded bits?",
+        "options": [
+          "Lower bandwidth",
+          "Error propagation",
+          "Higher frequency",
+          "Lower energy"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Bit được giải mã từ quan hệ giữa hai quyết định ký hiệu liên tiếp. Một quyết định sai tham gia vào hai cặp kề nhau nên có thể làm sai hai bit sau giải mã vi sai.",
+        "tip": "Giải mã vi sai dùng hai ký hiệu kề → một quyết định sai có thể ảnh hưởng hai bit.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Truyền lỗi hai bit là đặc điểm của mã hóa vi sai và giải mã vi sai quyết định cứng; không thay cho mọi so sánh bộ tách DPSK không kết hợp.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-024": {
+      "before": {
+        "question": "The amplitudes of FM spectral components are determined by:",
+        "options": [
+          "Fourier series coefficients",
+          "Bessel functions",
+          "Exponential functions",
+          "Linear scaling"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Khai triển FM đơn âm cho biên độ các vạch phổ là các hàm Bessel của chỉ số điều chế.",
+        "tip": null
+      },
+      "after": {
+        "question": "For single-tone sinusoidal FM, which special-function family explicitly gives the carrier and sideband amplitude coefficients?",
+        "options": [
+          "Fourier series coefficients",
+          "Bessel functions",
+          "Exponential functions",
+          "Linear scaling"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "FM một tone có hệ số Jn(β), là hàm Bessel. Các hệ số đó cũng là hệ số Fourier, nên lựa chọn D cũ mô tả cùng đối tượng theo nghĩa rộng.",
+        "tip": "FM một tone: hệ số sóng mang/dải biên là Jn(β) → hàm Bessel.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Hệ số Bessel cũng là hệ số Fourier của FM đơn âm, nên hai lựa chọn gốc cùng mô tả đúng. Đã hỏi rõ tên họ hàm đặc biệt.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-031": {
+      "before": {
+        "question": "If Huffman coding is applied to equal probabilities, result is:",
+        "options": [
+          "Variable-length codes",
+          "Fixed-length codes",
+          "No coding",
+          "Compression failure"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với 2^k ký hiệu đồng xác suất, mã Huffman có thể dùng đúng k bit cho mỗi ký hiệu.",
+        "tip": null
+      },
+      "after": {
+        "question": "For an alphabet of exactly 2^k equally likely symbols, what codeword-length pattern does optimal binary Huffman coding produce?",
+        "options": [
+          "Variable-length codes",
+          "Fixed-length codes",
+          "No coding",
+          "Compression failure"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Có 2^k ký hiệu đồng xác suất thì mọi từ mã dài k bit. Nếu có 3 ký hiệu đồng xác suất, độ dài 1,2,2 là phản ví dụ cho đề cũ.",
+        "tip": "Equal probabilities + 2^k symbols → fixed length k.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Nguồn đồng xác suất chỉ cho Huffman có mọi độ dài bằng nhau khi số ký hiệu là lũy thừa của 2.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-049": {
+      "before": {
+        "question": "Why does ideal Nyquist filter fail in practice?",
+        "options": [
+          "Too simple",
+          "Infinite time response",
+          "Low bandwidth",
+          "High noise"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Bộ lọc Nyquist lý tưởng có đáp ứng sinc dài vô hạn nên chỉ có thể xấp xỉ khi triển khai.",
+        "tip": null
+      },
+      "after": {
+        "question": "Why can the ideal brick-wall, zero-excess-bandwidth Nyquist low-pass filter not be implemented exactly as a finite-length causal filter?",
+        "options": [
+          "Too simple",
+          "Infinite time response",
+          "Low bandwidth",
+          "High noise"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Đáp ứng tần số chữ nhật có biến đổi ngược là sinc kéo dài vô hạn theo cả hai phía thời gian. Bộ lọc thực phải trễ và xấp xỉ/cắt ngắn hoặc dùng excess bandwidth.",
+        "tip": "Brick-wall lý tưởng → sinc vô hạn; triển khai hữu hạn chỉ là xấp xỉ.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Đáp ứng sinc vô hạn là trường hợp Nyquist brick-wall, excess bandwidth bằng 0; không phải mọi bộ lọc Nyquist.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-035": {
+      "before": {
+        "question": "Why is Huffman coding not suitable for real-time systems?",
+        "options": [
+          "High noise",
+          "Requires full source statistics",
+          "Low efficiency",
+          "High bandwidth"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Huffman tĩnh cần biết hoặc ước lượng thống kê nguồn trước khi lập bảng mã; Huffman thích nghi là trường hợp khác.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which requirement of conventional static Huffman coding can be inconvenient when source statistics are unavailable or change rapidly?",
+        "options": [
+          "High noise",
+          "Requires full source statistics",
+          "Low efficiency",
+          "High bandwidth"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Huffman tĩnh cần ước lượng xác suất ký hiệu để xây cây mã. Điều này không có nghĩa mọi hệ thống thời gian thực đều không dùng được Huffman; bảng mã có thể biết trước hoặc thích nghi.",
+        "tip": "Static Huffman → cần thống kê để xây codebook; không cấm dùng real-time.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Static Huffman cần thống kê để lập codebook; không được khẳng định mọi Huffman đều không dùng được thời gian thực vì có adaptive Huffman.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-050": {
+      "before": {
+        "question": "Why is ISI harder to handle than noise?",
+        "options": [
+          "It is random",
+          "It is deterministic",
+          "It is weaker",
+          "It is filtered"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "ISI phụ thuộc các ký hiệu lân cận và bộ nhớ kênh, nên cần xử lý cấu trúc tương quan như cân bằng kênh.",
+        "tip": null
+      },
+      "after": {
+        "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+        "options": [
+          "It is random",
+          "It is structured interference depending on neighboring symbols and channel memory.",
+          "It is weaker",
+          "It is filtered"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "ISI phụ thuộc các symbol lân cận và đáp ứng kênh có bộ nhớ. Equalizer xử lý phần trộn symbol này; chỉ gọi nó là “deterministic” không giải thích được độ khó.",
+        "tip": "ISI → channel memory + neighboring symbols → equalization.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "ISI là can nhiễu có cấu trúc từ các ký hiệu lân cận, không phải luôn khó hơn nhiễu ngẫu nhiên.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-022": {
+      "before": {
+        "question": "A PLL is considered locked when:",
+        "options": [
+          "Frequency differs",
+          "Phase error is constant",
+          "Phase error is zero or constant",
+          "Signal amplitude is zero"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "PLL khóa khi hai tần số bám nhau và sai lệch pha hằng; hằng đó có thể bằng zero.",
+        "tip": "locked → constant phase error, không bắt buộc zero."
+      },
+      "after": {
+        "question": "A PLL is considered locked when:",
+        "options": [
+          "Frequency differs",
+          "Phase error is constant",
+          "Phase error is zero or constant",
+          "Signal amplitude is zero"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "PLL khóa khi tần số được bám và sai lệch pha không trôi theo thời gian. Sai lệch hằng có thể bằng zero; cả hai lựa chọn diễn đạt điều này đều được chấp nhận.",
+        "tip": "PLL lock → tần số khớp, sai lệch pha hằng; không nhất thiết bằng 0.",
+        "acceptedAnswers": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      "kind": "source-clarification",
+      "note": "Hai lựa chọn “phase error is constant” và “zero or constant” đều mô tả PLL khóa. Giữ nguyên lựa chọn nguồn và chấp nhận riêng từng lựa chọn đó.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-002": {
+      "before": {
+        "question": "What approximation is commonly used in simple delay estimation for digital circuits?",
+        "options": [
+          "Average current approximation",
+          "Constant resistance approximation",
+          "Threshold voltage approximation",
+          "Distributed inductance approximation"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Mô hình dòng trung bình ước lượng thời gian nạp/xả bằng t ≈ C·ΔV/Iavg.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which approximation estimates a digital gate delay using t ≈ C·ΔV/I_avg?",
+        "options": [
+          "Average current approximation",
+          "Constant resistance approximation",
+          "Threshold voltage approximation",
+          "Distributed inductance approximation"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Mô hình dòng trung bình ước lượng thời gian nạp/xả bằng t ≈ C·ΔV/Iavg.",
+        "tip": "CΔV/I_avg → dòng trung bình; RC → mô hình điện trở tương đương.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Cả mô hình dòng trung bình và điện trở tương đương đều dùng để ước lượng trễ. Đã nêu công thức để câu hỏi chỉ tới mô hình dòng trung bình.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-007": {
+      "before": {
+        "question": "What does pipelining allow in digital circuit system design?",
+        "options": [
+          "Sequential data processing",
+          "Static memory retention",
+          "Threshold voltage control",
+          "Constant power operation"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Pipeline chia công việc thành các tầng, cho phép nhiều phần dữ liệu được xử lý nối tiếp và chồng lấp theo chu kỳ.",
+        "tip": null
+      },
+      "after": {
+        "question": "What does pipelining allow in digital circuit system design?",
+        "options": [
+          "Overlapped processing of successive data items in different pipeline stages.",
+          "Static memory retention",
+          "Threshold voltage control",
+          "Constant power operation"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Pipeline chia phép tính thành các tầng có thanh ghi ngăn cách. Nhiều dữ liệu được xử lý đồng thời ở các tầng khác nhau, tăng throughput nhưng không bảo đảm giảm latency của một dữ liệu.",
+        "tip": "Pipeline → chồng lấp các dữ liệu, tăng throughput; latency không nhất thiết giảm.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Pipeline xử lý chồng lấp nhiều dữ liệu ở các tầng, không chỉ xử lý lần lượt từng dữ liệu.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-021": {
+      "before": {
+        "question": "What technique is commonly used during flash memory programming in semiconductor memory technology?",
+        "options": [
+          "Hot-electron injection",
+          "Dynamic latch operation",
+          "Differential sensing loops",
+          "Floating node discharge"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Một cơ chế lập trình flash phổ biến là đưa điện tử năng lượng cao vào vùng lưu điện tích.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which technique is commonly used to program a conventional NOR floating-gate flash cell?",
+        "options": [
+          "Hot-electron injection",
+          "Dynamic latch operation",
+          "Differential sensing loops",
+          "Floating node discharge"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Một cơ chế lập trình flash phổ biến là đưa điện tử năng lượng cao vào vùng lưu điện tích.",
+        "tip": "NOR điển hình → hot-electron injection; không áp dụng khẳng định này cho mọi NAND.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Hot-electron injection là cách lập trình NOR flash điển hình; NAND thường dùng Fowler–Nordheim tunneling.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-026": {
+      "before": {
+        "question": "What happens in a MOS capacitor during accumulation mode?",
+        "options": [
+          "Holes move surfaceward",
+          "Electrons dominate channel",
+          "Inversion layer disappears",
+          "Oxide capacitance vanishes"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với nền p, điện áp gate âm hút lỗ trống về bề mặt, tạo accumulation.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a MOS capacitor with a p-type substrate under sufficiently negative gate bias, what occurs in accumulation?",
+        "options": [
+          "Holes move surfaceward",
+          "Electrons dominate channel",
+          "Inversion layer disappears",
+          "Oxide capacitance vanishes"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với nền p, điện áp gate âm hút lỗ trống về bề mặt, tạo accumulation.",
+        "tip": "Nền p + gate âm → hút lỗ trống về bề mặt.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Accumulation là lỗ trống tập trung ở bề mặt khi nền p và gate âm; nền n sẽ tích tụ electron.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-032": {
+      "before": {
+        "question": "What does complex gate sizing examine in CMOS and VLSI circuit design?",
+        "options": [
+          "Output-ground Signal paths",
+          "Oxide breakdown regions",
+          "Capacitive coupling nodes",
+          "Dynamic switching clocks"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Phân tích các đường dẫn từ output đến ground giúp chọn kích thước transistor của mạng pull-down.",
+        "tip": null
+      },
+      "after": {
+        "question": "What does complex gate sizing examine in CMOS and VLSI circuit design?",
+        "options": [
+          "Worst-case conducting paths in both the pull-up and pull-down transistor networks.",
+          "Oxide breakdown regions",
+          "Capacitive coupling nodes",
+          "Dynamic switching clocks"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Transistor nối tiếp làm tăng điện trở dẫn. Sizing cần xét đường dẫn xấu nhất trong cả pull-down nMOS và pull-up pMOS để đáp ứng trễ xuống/lên phù hợp.",
+        "tip": "Sizing complex gate → đếm transistor nối tiếp của cả hai mạng, không chỉ đường xuống ground.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Sizing cổng CMOS phải xét cả mạng kéo lên và kéo xuống, không chỉ output-ground.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-037": {
+      "before": {
+        "question": "What advantage does a pseudo-nMOS inverter provide in digital circuit operation?",
+        "options": [
+          "Faster transition times",
+          "Infinite output voltage",
+          "Zero leakage current",
+          "Larger resistor area"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Pull-up luôn dẫn của pseudo-nMOS có thể tạo chuyển mức nhanh trong cấu hình phù hợp, với đánh đổi công suất tĩnh.",
+        "tip": null
+      },
+      "after": {
+        "question": "Compared with a same-size input-driven transistor pair in a static CMOS inverter, what input-loading advantage can a pseudo-nMOS inverter provide?",
+        "options": [
+          "Lower input gate capacitance because the input drives only the nMOS gate.",
+          "Infinite output voltage",
+          "Zero leakage current",
+          "Larger resistor area"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Trong pseudo-nMOS, gate pMOS được nối cố định để kéo lên, nên tín hiệu vào chỉ lái gate nMOS. Điều này giảm tải gate đầu vào so với việc lái cả nMOS và pMOS; đổi lại có công suất tĩnh khi đầu ra thấp.",
+        "tip": "Pseudo-nMOS → input chỉ lái nMOS; đánh đổi là dòng tĩnh khi output thấp.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Pseudo-nMOS không bảo đảm mọi chuyển mức đều nhanh hơn CMOS. Đã thay bằng lợi điểm rõ ràng của đầu vào chỉ lái nMOS.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-038": {
+      "before": {
+        "question": "What does the input high voltage (VIH) correspond to in the voltage transfer characteristic of a digital inverter",
+        "options": [
+          "Smaller switching voltage",
+          "Larger switching voltage",
+          "Lowest output voltage",
+          "Highest current level"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "VIH là ngưỡng biên phía điện áp vào cao của VTC, thường xác định tại độ dốc -1.",
+        "tip": null
+      },
+      "after": {
+        "question": "What does the input high voltage (VIH) correspond to in the voltage transfer characteristic of a digital inverter",
+        "options": [
+          "Smaller switching voltage",
+          "The minimum input voltage guaranteed to be interpreted as logic HIGH.",
+          "Lowest output voltage",
+          "Highest current level"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "VIH là biên phía HIGH của miền điện áp vào hợp lệ; với VTC inverter thường lấy tại điểm độ dốc −1 phía điện áp vào cao. Không nhầm với VM tại Vin=Vout.",
+        "tip": "VIH → input HIGH tối thiểu; VM → điểm Vin=Vout.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "VIH là mức vào nhỏ nhất được bảo đảm nhận là HIGH, không phải điện áp switching VM.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-fa26-fe-042": {
+      "before": {
+        "question": "What effect does positive feedback cause in electronic and sequential circuit systems?",
+        "options": [
+          "Signal attenuation effects",
+          "Exponential signal amplification",
+          "Constant voltage behavior",
+          "Reduced propagation delay"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Hồi tiếp dương khuếch đại sai lệch ban đầu trong vùng làm việc tái sinh.",
+        "tip": null
+      },
+      "after": {
+        "question": "Near the metastable operating point of a regenerative latch with loop gain greater than one, how does a small differential disturbance initially evolve?",
+        "options": [
+          "Signal attenuation effects",
+          "Exponential signal amplification",
+          "Constant voltage behavior",
+          "Reduced propagation delay"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Hồi tiếp dương khuếch đại sai lệch ban đầu trong vùng làm việc tái sinh.",
+        "tip": "Latch gần metastable + positive feedback → sai lệch nhỏ được khuếch đại cho đến khi bão hòa về logic 0/1.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Tăng trưởng mũ do tái sinh xảy ra gần điểm metastable không ổn định với loop gain đủ lớn, không vô điều kiện ở mọi vòng feedback.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-001": {
+      "before": {
+        "question": "What type of inverter stages are required for a ring oscillator to operate correctly?",
+        "options": [
+          "Even inverter stages",
+          "Odd inverter stages",
+          "Single inverter stage",
+          "Transmission line stages"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Vòng inverter thông thường cần số tầng đảo lẻ và ít nhất ba tầng, với đủ trễ và gain để dao động.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a conventional digital ring oscillator made from N≥3 ordinary inverter stages, which parity of N provides the required net inversion?",
+        "options": [
+          "Even inverter stages",
+          "Odd inverter stages",
+          "Single inverter stage",
+          "Transmission line stages"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Số tầng đảo lẻ tạo đảo pha tổng; cùng độ trễ vòng làm mạch tự dao động.",
+        "tip": "Vòng inverter thông thường cần số tầng lẻ và ít nhất 3; chỉ thấy odd là chưa đủ giả thiết của đề.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Làm rõ vòng dao động số thông thường dùng số lẻ N≥3 tầng; tránh lựa chọn “single inverter” chồng lấn.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-007": {
+      "before": {
+        "question": "What type of clocking scheme is used in CMOS transmission gate logic circuits?",
+        "options": [
+          "Single clock signal",
+          "Two-phase clocking scheme",
+          "Continuous asynchronous control",
+          "Dynamic bootstrap voltage"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với hai latch master-slave dùng transmission gate, hai pha bổ sung mở luân phiên và tránh chồng dẫn.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which clocking scheme is used in CMOS transmission gate logic circuits? (Consider the two latches in a master-slave flip-flop.)",
+        "options": [
+          "Single clock signal",
+          "Two-phase clocking scheme",
+          "Continuous asynchronous control",
+          "Dynamic bootstrap voltage"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Hai latch được mở ở hai pha khác nhau để tránh cùng trong suốt. Transmission gate tổ hợp nói chung không bắt buộc một sơ đồ clock hai pha.",
+        "tip": "Master/slave phải mở luân phiên → chọn hai pha bù nhau và không chồng, tránh cả hai latch cùng trong suốt.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Clock hai pha đang nói tới hai latch master-slave; không phải mọi mạch transmission gate đều cần clock hai pha.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-009": {
+      "before": {
+        "question": "Under what condition does the evaluation phase occur in a dynamic CMOS logic circuit?",
+        "options": [
+          "Clock signal active",
+          "Clock signal inactive",
+          "Threshold voltage removed",
+          "Dynamic node isolated"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với dynamic gate n-type thông thường, clock ở mức active HIGH bật transistor evaluate.",
+        "tip": null
+      },
+      "after": {
+        "question": "In conventional n-type dynamic CMOS logic with a clocked nMOS evaluation device, when does evaluation occur?",
+        "options": [
+          "Clock HIGH, enabling the evaluation nMOS.",
+          "Clock signal inactive",
+          "Threshold voltage removed",
+          "Dynamic node isolated"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với dynamic gate n-type thông thường, clock ở mức active HIGH bật transistor evaluate.",
+        "tip": "n-type dynamic: CLK thấp precharge, CLK cao evaluate.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Pha evaluate tại CLK=1 đang nói tới n-type dynamic logic; p-type có quy ước ngược lại.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-010": {
+      "before": {
+        "question": "What type of circuit structures and buffers are used in domino logic for high-speed dynamic CMOS design?",
+        "options": [
+          "Dynamic stages buffers",
+          "Static inverter chains",
+          "Continuous resistor loads",
+          "Bipolar feedback loops"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Inverter tĩnh giữa hai tầng động biến chuyển giảm của nút động thành chuyển tăng đơn điệu.",
+        "tip": null
+      },
+      "after": {
+        "question": "What type of circuit structures and buffers are used in domino logic for high-speed dynamic CMOS design?",
+        "options": [
+          "Dynamic stages connected directly without intervening static inverters.",
+          "Dynamic logic gates, each followed by a static inverter.",
+          "Continuous resistor loads",
+          "Bipolar feedback loops"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Nút động n-type chỉ giữ mức cao hoặc chuyển xuống khi evaluate. Inverter tĩnh đổi nó thành tín hiệu chỉ giữ thấp hoặc chuyển lên, để tầng n-type kế tiếp nhận đầu vào đơn điệu.",
+        "tip": "Domino → dynamic gate rồi static inverter; tránh nối trực tiếp hai nút dynamic.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Domino gồm tầng dynamic và inverter tĩnh giữa các tầng; một chuỗi inverter tĩnh riêng không mô tả đủ domino.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "ici211-su26-fe-re-024": {
+      "before": {
+        "question": "What does the body effect cause in a MOSFET device?",
+        "options": [
+          "Threshold voltage increase",
+          "Oxide thickness reduction",
+          "Channel length increase",
+          "Mobility enhancement effect"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với nMOS, tăng phân cực ngược source-body làm điện áp ngưỡng tăng.",
+        "tip": null
+      },
+      "after": {
+        "question": "For an nMOS transistor, what happens to its threshold voltage as reverse source-to-body bias VSB increases?",
+        "options": [
+          "Threshold voltage increase",
+          "Oxide thickness reduction",
+          "Channel length increase",
+          "Mobility enhancement effect"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với nMOS, tăng phân cực ngược source-body làm điện áp ngưỡng tăng.",
+        "tip": "nMOS: VSB tăng (reverse bias) → VT tăng.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Vt tăng khi tăng phân cực ngược thân–nguồn của nMOS; không phải mọi thay đổi body bias đều làm tăng Vt.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-035": {
+      "before": {
+        "question": "What is the value of the steady-state current in a CMOS inverter during normal operation?",
+        "options": [
+          "Ideally zero except leakage current",
+          "Extremely large during operation",
+          "Independent of leakage effects",
+          "Equal to threshold current"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Ở mức logic tĩnh hợp lệ, một transistor trong cặp CMOS tắt nên dòng DC lý tưởng bằng 0, ngoài dòng rò thực tế.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which option gives the value of the steady-state current in a CMOS inverter during normal operation? (Assume a valid static input logic level.)",
+        "options": [
+          "Ideally zero except leakage current",
+          "Extremely large during operation",
+          "Independent of leakage effects",
+          "Equal to threshold current"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Ở mức logic hợp lệ, một transistor tắt nên không có đường DC lý tưởng từ VDD xuống ground.",
+        "tip": "static CMOS → ideally zero DC current.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Dòng tĩnh xấp xỉ zero khi input ở logic hợp lệ và bỏ qua rò; không áp dụng tại vùng chuyển tiếp.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-039": {
+      "before": {
+        "question": "What advantages does a linear enhancement-load inverter provide in digital circuit design?",
+        "options": [
+          "Lower noise margins",
+          "Higher noise margins",
+          "Smaller output swing",
+          "Larger leakage current"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "So với tải enhancement bão hòa, tải enhancement ở vùng tuyến tính được phân cực phù hợp có thể cải thiện mức ra và noise margin.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which advantage does a linear enhancement-load inverter provide in digital circuit design? (Compare a properly biased load with a saturated enhancement load.)",
+        "options": [
+          "Lower noise margins",
+          "Higher noise margins",
+          "Smaller output swing",
+          "Larger leakage current"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Nguồn bias cổng bổ sung giữ transistor tải ở vùng tuyến tính và giúp VOH đạt VDD, cải thiện noise margin so với tải enhancement bão hòa.",
+        "tip": "Linear enhancement load → VOH gần VDD → noise margin tốt hơn.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bổ sung đối tượng so sánh là enhancement-load bão hòa, với bias phù hợp.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-041": {
+      "before": {
+        "question": "What types of components are mainly included in leakage current in CMOS digital circuit operation?",
+        "options": [
+          "Regenerative clock current",
+          "Dynamic oscillating current",
+          "Capacitive inductive current",
+          "Reverse subthreshold current"
+        ],
+        "answer": [
+          3
+        ],
+        "reason": "Dòng rò gồm các thành phần như subthreshold và rò tiếp giáp phân cực ngược; cụm từ trong ảnh được diễn đạt chưa chuẩn.",
+        "tip": null
+      },
+      "after": {
+        "question": "What types of components are mainly included in leakage current in CMOS digital circuit operation?",
+        "options": [
+          "Regenerative clock current",
+          "Dynamic oscillating current",
+          "Capacitive inductive current",
+          "Subthreshold leakage and reverse-biased junction leakage."
+        ],
+        "answer": [
+          3
+        ],
+        "reason": "Subthreshold leakage đi qua kênh transistor dưới ngưỡng; junction leakage đi qua tiếp giáp phân cực ngược. Đây là hai cơ chế riêng, không phải một dòng “reverse subthreshold”.",
+        "tip": "Rò CMOS → phân biệt rò dưới ngưỡng qua kênh và rò ngược tiếp giáp; còn có thể có gate leakage.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "“Reverse subthreshold current” gộp sai hai cơ chế. Đã tách subthreshold leakage và reverse-biased junction leakage.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-042": {
+      "before": {
+        "question": "How does pipelining improve low-power digital circuit design?",
+        "options": [
+          "Allowing voltage reduction",
+          "Eliminating dynamic switching",
+          "Removing register overhead",
+          "Increasing threshold voltage"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với throughput cố định, pipeline có thể cho phép hạ VDD nhờ rút ngắn đường tổ hợp mỗi tầng.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which statement explains how pipelining improves low-power digital circuit design? (Assume a fixed required throughput.)",
+        "options": [
+          "Allowing voltage reduction",
+          "Eliminating dynamic switching",
+          "Removing register overhead",
+          "Increasing threshold voltage"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Pipeline rút ngắn đường tổ hợp mỗi tầng, cho phép giảm VDD mà vẫn giữ thông lượng yêu cầu.",
+        "tip": "Giữ throughput: pipeline rút ngắn delay mỗi tầng → có thể hạ VDD để giảm P∝VDD², không tự bảo đảm tiết kiệm.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Pipeline có thể cho giảm VDD khi giữ cùng throughput yêu cầu; thanh ghi thêm cũng gây overhead.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-049": {
+      "before": {
+        "question": "What does DETFF (Dual-Edge Triggered Flip-Flop) help reduce in sequential digital circuit operation?",
+        "options": [
+          "Clock operating frequency",
+          "Supply voltage scaling",
+          "Threshold voltage shifts",
+          "Transmission line effects"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "DETFF chốt ở cả hai cạnh, nên có thể giảm tần số clock cho cùng tốc độ cập nhật dữ liệu.",
+        "tip": null
+      },
+      "after": {
+        "question": "At the same number of data captures per second as a single-edge-triggered flip-flop, what can a dual-edge-triggered flip-flop reduce?",
+        "options": [
+          "Clock operating frequency",
+          "Supply voltage scaling",
+          "Threshold voltage shifts",
+          "Transmission line effects"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "DETFF chốt ở cả hai cạnh, nên có thể giảm tần số clock cho cùng tốc độ cập nhật dữ liệu.",
+        "tip": "Bắt dữ liệu cả hai cạnh → cùng captures/s có thể dùng clock bằng một nửa.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "DETFF cho phép giảm tần số clock khi giữ cùng tốc độ lấy mẫu so với single-edge; không tự động giảm trong mọi cấu hình.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-050": {
+      "before": {
+        "question": "What advantages does an embedded SDFF (Sense Delay Flip-Flop) provide in high-performance sequential digital circuit design?",
+        "options": [
+          "Improved operation speed",
+          "Infinite setup margins",
+          "Zero power consumption",
+          "Constant output delays"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "SDFF ở đây được hiểu là semi-dynamic flip-flop, dùng kết cấu động/tĩnh để cải thiện tốc độ.",
+        "tip": null
+      },
+      "after": {
+        "question": "What advantages does an embedded SDFF (Semi-Dynamic Flip-Flop) provide in high-performance sequential digital circuit design?",
+        "options": [
+          "Improved operation speed",
+          "Infinite setup margins",
+          "Zero power consumption",
+          "Constant output delays"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "SDFF kết hợp front end động và latch tĩnh, tạo đường clock-to-Q nhanh đồng thời giữ trạng thái ở phần tĩnh. Nó không có công suất zero hoặc setup margin vô hạn.",
+        "tip": "SDFF → Semi-Dynamic: đầu động, phần giữ tĩnh.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Tên đúng trong ngữ cảnh này là Semi-Dynamic Flip-Flop, không phải Sense Delay Flip-Flop.",
+      "sourcePhotoReviewed": false,
+      "references": [
+        "https://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Fall07/PROJECT/SHUKOOR/semi-dyn-FF.pdf"
+      ]
+    },
+    "ici211-su26-fe-024": {
+      "before": {
+        "question": "Under what condition does a MOSFET enter the saturation region?",
+        "options": [
+          "Channel pinch-off formation",
+          "Oxide capacitance reduction",
+          "Body bias elimination",
+          "Reverse gate conduction"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với MOSFET kênh dài ở strong inversion, saturation bắt đầu khi kênh bị pinch-off ở phía drain.",
+        "tip": null
+      },
+      "after": {
+        "question": "Under what condition does a MOSFET enter the saturation region? (Use the ideal long-channel nMOS model in strong inversion.)",
+        "options": [
+          "Channel pinch-off formation",
+          "Oxide capacitance reduction",
+          "Body bias elimination",
+          "Reverse gate conduction"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.",
+        "tip": "long-channel saturation → VDS ≥ VGS−VT → pinch-off.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Điều kiện pinch-off được dùng trong mô hình nMOS kênh dài, strong inversion.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-028": {
+      "before": {
+        "question": "What happens in the semiconductor region during the depletion condition of a MOS structure?",
+        "options": [
+          "Holes accumulate surface",
+          "Holes repel substrate",
+          "Electrons form channel",
+          "Oxide breaks down"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với nền p dưới gate dương trước inversion, lỗ trống bị đẩy khỏi bề mặt tạo vùng nghèo.",
+        "tip": null
+      },
+      "after": {
+        "question": "What happens in the semiconductor region during the depletion condition of a MOS structure? (Assume a p-type body under positive gate bias below inversion.)",
+        "options": [
+          "Holes accumulate surface",
+          "Holes are repelled from the semiconductor surface, leaving a depletion region.",
+          "Electrons form channel",
+          "Oxide breaks down"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số.",
+        "tip": "Nền p + gate dương trước inversion → đẩy lỗ trống ra, để lại acceptor ion hóa: depletion.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bổ sung nền p và gate dương trước inversion; lỗ trống bị đẩy khỏi bề mặt, không phải khỏi toàn bộ substrate.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-029": {
+      "before": {
+        "question": "What aspect of digital signal performance do transmission gates help improve in CMOS circuits?",
+        "options": [
+          "Capacitor leakage current",
+          "Signal drive strength",
+          "Oxide breakdown voltage",
+          "Threshold voltage mismatch"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Transmission gate CMOS truyền được cả mức 0 và 1 tốt hơn một nMOS pass transistor riêng lẻ.",
+        "tip": null
+      },
+      "after": {
+        "question": "What aspect of digital signal performance do transmission gates help improve in CMOS circuits? (Compare with a single nMOS pass transistor.)",
+        "options": [
+          "Capacitor leakage current",
+          "Passing both a strong logic 0 and a strong logic 1 compared with a single nMOS pass transistor.",
+          "Oxide breakdown voltage",
+          "Threshold voltage mismatch"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "NMOS và PMOS bổ trợ nhau, giúp transmission gate truyền cả hai mức logic đầy đủ hơn.",
+        "tip": "transmission gate → strong 0 + strong 1.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Transmission gate truyền cả mức 0 và 1 mạnh hơn nMOS pass transistor đơn; không tự là bộ khuếch đại.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-034": {
+      "before": {
+        "question": "How does the resistance of a transmission gate typically behave during circuit operation?",
+        "options": [
+          "Roughly constant value",
+          "Infinite during switching",
+          "Strongly nonlinear always",
+          "Equal threshold voltage"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Hai transistor n/p bổ sung làm điện trở ON tổng biến thiên ít hơn trên dải điện áp tín hiệu.",
+        "tip": null
+      },
+      "after": {
+        "question": "How does the resistance of a transmission gate typically behave during circuit operation? (Consider the ON resistance over the signal range of a suitably sized CMOS gate.)",
+        "options": [
+          "Roughly constant value",
+          "Infinite during switching",
+          "Strongly nonlinear always",
+          "Equal threshold voltage"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Điện trở NMOS và PMOS bù xu hướng biến thiên cho nhau theo điện áp tín hiệu.",
+        "tip": "TG đang ON: Rn và Rp mắc song song, bù biến thiên theo mức tín hiệu → RON gần hằng, không bằng 0.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Điện trở gần phẳng nói tới ON resistance của TG được sizing phù hợp trong miền tín hiệu.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-038": {
+      "before": {
+        "question": "What is required to achieve a symmetric inverter design in CMOS circuits?",
+        "options": [
+          "Equal switching margins",
+          "Zero leakage current",
+          "Infinite transconductance ratio",
+          "Minimum output voltage"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "VTC DC đối xứng quanh VDD/2 cho noise margin cao và thấp bằng nhau.",
+        "tip": null
+      },
+      "after": {
+        "question": "What is required to achieve a symmetric inverter design in CMOS circuits? (Consider the DC noise margins for a VTC symmetric about Vin = Vout = VDD/2.)",
+        "options": [
+          "Equal low and high DC noise margins: NML = NMH.",
+          "Zero leakage current",
+          "Infinite transconductance ratio",
+          "Minimum output voltage"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau.",
+        "tip": "symmetric DC VTC → balanced noise margins.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Điều kiện đối xứng nói tới hai DC noise margin NML và NMH, không phải một switching margin chưa định nghĩa.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-044": {
+      "before": {
+        "question": "What happens to small disturbances in stable systems during circuit operation?",
+        "options": [
+          "Grow exponentially larger",
+          "Decay gradually away",
+          "Cause continuous oscillation",
+          "Eliminate feedback action"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Nhiễu nhỏ quanh điểm làm việc ổn định tiệm cận sẽ suy giảm theo thời gian.",
+        "tip": null
+      },
+      "after": {
+        "question": "What happens to small disturbances in stable systems during circuit operation? (Assume an asymptotically stable operating point.)",
+        "options": [
+          "Grow exponentially larger",
+          "Decay gradually away",
+          "Cause continuous oscillation",
+          "Eliminate feedback action"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm.",
+        "tip": "asymptotically stable → disturbances decay.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Sai lệch tắt dần là tính chất ổn định tiệm cận, không phải mọi hệ ổn định Lyapunov.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-045": {
+      "before": {
+        "question": "What aspect does SDFF (Sense Delay Flip-Flop) improve in sequential digital circuit performance?",
+        "options": [
+          "Faster switching robustness",
+          "Reduced setup margins",
+          "Dynamic threshold instability",
+          "Oscillating latch behavior"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Semi-dynamic flip-flop có tầng động hỗ trợ tốc độ clock-to-Q cao, không tạo setup margin vô hạn.",
+        "tip": null
+      },
+      "after": {
+        "question": "What aspect does SDFF (Semi-Dynamic Flip-Flop) improve in sequential digital circuit performance?",
+        "options": [
+          "Fast clock-to-Q operation using a dynamic front end and a static latch.",
+          "Reduced setup margins",
+          "Dynamic threshold instability",
+          "Oscillating latch behavior"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "SDFF dùng tầng vào động để giảm trễ clock-to-Q và latch tĩnh để giữ đầu ra.",
+        "tip": "Hỏi ưu điểm tốc độ của SDFF → chọn clock-to-Q nhanh; tầng vào động, tầng giữ đầu ra tĩnh.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Sửa tên Semi-Dynamic Flip-Flop và mô tả lợi ích clock-to-Q thay vì “switching robustness” không rõ nghĩa.",
+      "sourcePhotoReviewed": false,
+      "references": [
+        "https://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Fall07/PROJECT/SHUKOOR/semi-dyn-FF.pdf"
+      ]
+    },
+    "los201-su26-fe-re-002": {
+      "before": {
+        "question": "Which scenario is most appropriate for shared memory created using",
+        "options": [
+          "Inter-process communication with low overhead",
+          "Request-response communication through a UNIX domain socket",
+          "Sending byte-stream data through a named pipe",
+          "Publish-subscribe message exchange using a messaging framework"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "mmap với vùng chia sẻ cho các process truy cập cùng trang nhớ, tránh sao chép dữ liệu nhiều lần.",
+        "tip": "low-overhead IPC → shared mmap."
+      },
+      "after": {
+        "question": "Which scenario is most appropriate for shared memory created using mmap()?",
+        "options": [
+          "Inter-process communication with low overhead",
+          "Request-response communication through a UNIX domain socket",
+          "Sending byte-stream data through a named pipe",
+          "Publish-subscribe message exchange using a messaging framework"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "mmap với vùng chia sẻ cho các process truy cập cùng trang nhớ, tránh sao chép dữ liệu nhiều lần.",
+        "tip": "low-overhead IPC → shared mmap.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Bản chép trước bị mất mmap() ở cuối câu; đã khôi phục đúng ảnh nguồn.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "los201-su26-fe-re-003": {
+      "before": {
+        "question": "A developer examines What information is primarily obtained from this file?",
+        "options": [
+          "CPU scheduling statistics",
+          "Process memory mappings",
+          "NeWork socket states",
+          "Thread priorities"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "/proc/PID/maps liệt kê các vùng địa chỉ ảo, quyền truy cập và file ánh xạ của tiến trình.",
+        "tip": "/proc/<pid>/maps → danh sách các vùng ánh xạ bộ nhớ của tiến trình; “maps” không phải thống kê CPU."
+      },
+      "after": {
+        "question": "A developer examines /proc/<pid>/maps. What information is primarily obtained from this file?",
+        "options": [
+          "CPU scheduling statistics",
+          "Process memory mappings",
+          "Network socket states",
+          "Thread priorities"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "/proc/PID/maps liệt kê các vùng địa chỉ ảo, quyền truy cập và file ánh xạ của tiến trình.",
+        "tip": "/proc/<pid>/maps → danh sách các vùng ánh xạ bộ nhớ của tiến trình; “maps” không phải thống kê CPU.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Bản chép trước bị mất /proc/<pid>/maps và đọc sai Network; đã khôi phục theo ảnh nguồn.",
+      "sourcePhotoReviewed": true,
+      "references": [
+        "https://www.man7.org/linux/man-pages/man5/proc_pid_maps.5.html"
+      ]
+    },
+    "los201-su26-fe-re-014": {
+      "before": {
+        "question": "A student wants serial output from the ARMv7 guest to appear in the terminal- Which pair of settings is most consistent with the lab?",
+        "options": [
+          "Enable ARM AMBA PLOII support and use",
+          "Disable all serial drivers and use",
+          "Enable IJSB mass storage and use •console=/dev/sdal'.",
+          "Use only because QEMIJ '-nographic• does not support UART output-"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "UART PL011 cùng console=ttyAMA0 và cấu hình terminal phù hợp đưa log của guest vexpress-a9 ra serial console.",
+        "tip": null
+      },
+      "after": {
+        "question": "A student wants serial output from the ARMv7 guest to appear in the terminal. Which pair of settings is most consistent with the lab?",
+        "options": [
+          "Enable ARM AMBA PL011 support and use `console=ttyAMA0,115200`.",
+          "Disable all serial drivers and use `console=ttyS0,9600`.",
+          "Enable USB mass storage and use `console=/dev/sda1`.",
+          "Use `console=tty0` only because QEMU `-nographic` does not support UART output."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "UART PL011 cùng console=ttyAMA0 và cấu hình terminal phù hợp đưa log của guest vexpress-a9 ra serial console.",
+        "tip": "ARM PL011 → ttyAMA0; driver kernel và console= phải khớp UART của máy mô phỏng.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục PL011, console=ttyAMA0,115200 và các lựa chọn command line bị OCR bỏ sót trong ảnh gốc.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "los201-su26-fe-025": {
+      "before": {
+        "question": "Which variable is commonly extended to install additional packages into an image during development?",
+        "options": [
+          "KERNEL FEATURES",
+          "IMAGE INSTALL",
+          "PACKAGE CLASSES",
+          "BBPATH"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "IMAGE_INSTALL chỉ định các gói được đưa vào image rootfs.",
+        "tip": "add packages to image → IMAGE_INSTALL."
+      },
+      "after": {
+        "question": "Which variable is commonly extended to install additional packages into an image during development?",
+        "options": [
+          "KERNEL_FEATURES",
+          "IMAGE_INSTALL",
+          "PACKAGE_CLASSES",
+          "BBPATH"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "IMAGE_INSTALL chỉ định các gói được đưa vào image rootfs.",
+        "tip": "add packages to image → IMAGE_INSTALL.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục dấu gạch dưới trong tên biến Yocto đúng như ảnh nguồn; IMAGE_INSTALL là tên biến thực.",
+      "sourcePhotoReviewed": true,
+      "references": [
+        "https://docs.yoctoproject.org/dev/dev-manual/customizing-images.html"
+      ]
+    },
+    "los201-su26-fe-re-027": {
+      "before": {
+        "question": "What is the purpose of nmo",
+        "options": [
+          "Mount filesystems",
+          "Debug hardware",
+          "Transfer files",
+          "Display symbols in object files"
+        ],
+        "answer": [
+          3
+        ],
+        "reason": "nm liệt kê tên và địa chỉ các symbol trong object hoặc executable.",
+        "tip": "object symbols → nm."
+      },
+      "after": {
+        "question": "What is the purpose of nm?",
+        "options": [
+          "Mount filesystems",
+          "Debug hardware",
+          "Transfer files",
+          "Display symbols in object files"
+        ],
+        "answer": [
+          3
+        ],
+        "reason": "nm liệt kê tên và địa chỉ các symbol trong object hoặc executable.",
+        "tip": "object symbols → nm.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "OCR đọc sai tên tiện ích nm thành nmo; đã khôi phục câu hỏi trong ảnh.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "los201-fa26-fe-034": {
+      "before": {
+        "question": "What is a kernel oops?",
+        "options": [
+          "A recoverable kernel error report that provides diagnostic information about a fault",
+          "A kernel panic that immediately halts the entire system .4",
+          "A trace of all system calls executed by a process",
+          "A log of shared library dependencies loaded at runtime"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Oops ghi lại lỗi kernel và thông tin chẩn đoán; hậu quả phụ thuộc lỗi và cấu hình panic.",
+        "tip": null
+      },
+      "after": {
+        "question": "What is a kernel oops?",
+        "options": [
+          "A kernel fault report with diagnostic information; the kernel may attempt to continue, depending on the fault and configuration.",
+          "A kernel panic that immediately halts the entire system .4",
+          "A trace of all system calls executed by a process",
+          "A log of shared library dependencies loaded at runtime"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Oops ghi lại lỗi kernel và thông tin chẩn đoán; hậu quả phụ thuộc lỗi và cấu hình panic.",
+        "tip": "Oops → báo lỗi/chẩn đoán, có thể tiếp tục; panic_on_oops có thể chuyển thành panic.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Oops không bảo đảm luôn recover được: hậu quả còn tùy loại lỗi và cấu hình panic_on_oops.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-fa26-fe-037": {
+      "before": {
+        "question": "Why is static linking required when building BusyBox for a minimal initramfs?",
+        "options": [
+          "It allows BusyBox to run without copying shared libraries into the small root filesystem",
+          "It makes the kernel ignore the Device Tree Blob.",
+          "It automatically enables SMP support in the kernel.",
+          "It changes the root filesystem format from cpio to JFFS2."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "BusyBox liên kết tĩnh chạy trong initramfs tối giản mà không cần các thư viện dùng chung.",
+        "tip": null
+      },
+      "after": {
+        "question": "Why choose static linking for BusyBox in a minimal initramfs that does not include shared libraries?",
+        "options": [
+          "It allows BusyBox to run without copying shared libraries into the small root filesystem",
+          "It makes the kernel ignore the Device Tree Blob.",
+          "It automatically enables SMP support in the kernel.",
+          "It changes the root filesystem format from cpio to JFFS2."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "BusyBox liên kết tĩnh chạy trong initramfs tối giản mà không cần các thư viện dùng chung.",
+        "tip": "Initramfs không có shared libs → BusyBox static tự mang phần thư viện cần thiết.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Static linking là cách tránh phải cấp shared libraries trong initramfs tối giản, không phải yêu cầu tuyệt đối của mọi BusyBox.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-re-022": {
+      "before": {
+        "question": "A driver successfully registers itself, but opening the device from user space triggers a kernel crash. Which design issue is the most likely cause?",
+        "options": [
+          "An invalid or NULL callback in file_operations",
+          "A missing DHCP server",
+          "A corrupted initramfs image",
+          "An incorrect kernel command line"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Con trỏ callback không hợp lệ hoặc lỗi bên trong đường open có thể làm kernel crash. Callback .open bằng NULL theo API được kiểm tra, không mặc định gây crash.",
+        "tip": "Crash đúng lúc open thiết bị → kiểm tra con trỏ hàm không hợp lệ hoặc lỗi trong đường callback .open."
+      },
+      "after": {
+        "question": "A driver successfully registers itself, but opening the device from user space triggers a kernel crash. Which design issue is the most likely cause?",
+        "options": [
+          "An invalid function pointer or a bug inside a file_operations callback.",
+          "A missing DHCP server",
+          "A corrupted initramfs image",
+          "An incorrect kernel command line"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Con trỏ callback không hợp lệ hoặc lỗi bên trong đường open có thể làm kernel crash. Callback .open bằng NULL theo API được kiểm tra, không mặc định gây crash.",
+        "tip": "NULL .open không mặc định crash; kiểm tra callback hỏng và lỗi trong đường open.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Callback .open bằng NULL có thể hợp lệ vì VFS kiểm tra trước khi gọi. Nguyên nhân crash là con trỏ không hợp lệ hoặc lỗi bên trong callback.",
+      "sourcePhotoReviewed": false,
+      "references": [
+        "https://docs.kernel.org/filesystems/vfs.html"
+      ]
+    },
+    "los201-su26-fe-re-019": {
+      "before": {
+        "question": "Which TWO consequences are likely if an embedded processor lacks MMU support but attempts to run a Linux configuration designed for MMU-based systems?",
+        "options": [
+          "Virtual memory features may be unavailable",
+          "Memory isolation between processes may be limited",
+          "The processor automatically becomes multicore",
+          "Interrupt handling is disabled"
+        ],
+        "answer": [
+          0,
+          1
+        ],
+        "reason": "Khi dùng Linux no-MMU phù hợp, thiếu MMU làm mất hoặc hạn chế virtual memory và cách ly bộ nhớ tiến trình.",
+        "tip": null
+      },
+      "after": {
+        "question": "Which TWO consequences are likely if an embedded processor lacks MMU support and runs Linux configured for systems without an MMU?",
+        "options": [
+          "Virtual memory features may be unavailable",
+          "Memory isolation between processes may be limited",
+          "The processor automatically becomes multicore",
+          "Interrupt handling is disabled"
+        ],
+        "answer": [
+          0,
+          1
+        ],
+        "reason": "Linux no-MMU có hỗ trợ ánh xạ hạn chế và không có cơ chế cách ly bằng MMU như hệ MMU. Kernel biên dịch đòi MMU không tự chạy được trên CPU thiếu MMU.",
+        "tip": "no MMU → hạn chế VM và bảo vệ/cách ly bộ nhớ.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Để nói về các hạn chế NOMMU phải giả sử Linux được cấu hình cho NOMMU; image cấu hình MMU trên CPU không MMU có thể không boot.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-re-033": {
+      "before": {
+        "question": "A developer modifies kernel source code and expects the changes to appear in the final bootable image. Which TWO kernel build artifacts should be examined first to verify that the modified object files were linked into the final kernel image?",
+        "options": [
+          "vmlinux",
+          "System.map",
+          "built-in.o files",
+          "modules.dep"
+        ],
+        "answer": [
+          0,
+          2
+        ],
+        "reason": "Trong Kbuild kiểu cũ, vmlinux là ELF kernel liên kết cuối và built-in.o chứa các object tích hợp của thư mục.",
+        "tip": null
+      },
+      "after": {
+        "question": "A developer modifies kernel source code and expects the changes to appear in the final bootable image. Which TWO kernel build artifacts should be examined first to verify that the modified object files were linked into the final kernel image? (Assume legacy Kbuild.)",
+        "options": [
+          "vmlinux",
+          "System.map",
+          "built-in.o files",
+          "modules.dep"
+        ],
+        "answer": [
+          0,
+          2
+        ],
+        "reason": "built-in.o là bước gom object của mô hình Kbuild cũ; vmlinux là ELF cuối để kiểm tra mã đã liên kết. Kernel mới dùng archive built-in.a.",
+        "tip": "“final uncompressed ELF” → vmlinux; “legacy built-in aggregation” → built-in.o. Chọn hai tên đó.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "built-in.o thuộc Kbuild đời cũ; hiện nay thường dùng built-in.a. Đã nêu rõ ngữ cảnh legacy của bài lab.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-013": {
+      "before": {
+        "question": "A developer creates symbolic links such as 'Is', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?",
+        "options": [
+          "By inspecting the name used to invoke the executable",
+          "By parsing kernel boot parameters",
+          "By reading the current process ID",
+          "By loading separate shared libraries for each command"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "BusyBox xem tên gọi chương trình trong argv[0] để chọn applet tương ứng.",
+        "tip": "Các symlink ls/cp/mount cùng trỏ BusyBox → xem tên gọi argv[0] để chọn applet."
+      },
+      "after": {
+        "question": "A developer creates symbolic links such as 'ls', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?",
+        "options": [
+          "By inspecting the name used to invoke the executable",
+          "By parsing kernel boot parameters",
+          "By reading the current process ID",
+          "By loading separate shared libraries for each command"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "BusyBox xem tên gọi chương trình trong argv[0] để chọn applet tương ứng.",
+        "tip": "Các symlink ls/cp/mount cùng trỏ BusyBox → xem tên gọi argv[0] để chọn applet.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Khôi phục tên lệnh ls bị đọc thành Is; BusyBox phân nhánh theo tên gọi trong argv[0].",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-049": {
+      "before": {
+        "question": "A board-specific driver has been configured as built-in rather than as a module. Into which component of the kernel image is it most likely linked?",
+        "options": [
+          "drivers/built-in.o",
+          "lib/lib.a",
+          "usr/built-in.o",
+          "arch/arm/kernel/head.o"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Trong Kbuild kiểu cũ, driver dưới drivers/ được tích hợp qua drivers/built-in.o trước khi liên kết vmlinux.",
+        "tip": null
+      },
+      "after": {
+        "question": "A board-specific driver has been configured as built-in rather than as a module. Into which component of the kernel image is it most likely linked? (Assume a legacy build with the driver under drivers/.)",
+        "options": [
+          "drivers/built-in.o",
+          "lib/lib.a",
+          "usr/built-in.o",
+          "arch/arm/kernel/head.o"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Ở mô hình Kbuild cũ, object driver được gom vào drivers/built-in.o trước khi liên kết kernel. Kernel mới dùng built-in.a thay cho tên này.",
+        "tip": "Đề ghi legacy + driver dưới drivers/ → chọn drivers/built-in.o; đừng chọn object của usr/ hay arch/.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Đường dẫn drivers/built-in.o dùng trong build legacy; không khẳng định đây là artifact của mọi kernel hiện đại.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "ici211-su26-fe-re-003": {
+      "before": {
+        "question": "Under what condition does capacitance decrease in an interconnect or VLSI structure?",
+        "options": [
+          "Reduced wire spacing conditions",
+          "Reduced wire dimension effects",
+          "Increased threshold voltage levels",
+          "Saturated carrier velocity effects"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Giảm diện tích ghép hoặc tăng khoảng cách điện môi làm điện dung ghép giảm khi các yếu tố khác cố định.",
+        "tip": null
+      },
+      "after": {
+        "question": "For interconnect coupling approximated by C = εA/d, with dielectric permittivity and gap d fixed, which change reduces capacitance?",
+        "options": [
+          "Reduced wire spacing conditions",
+          "Reducing the coupling area A.",
+          "Increased threshold voltage levels",
+          "Saturated carrier velocity effects"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Trong mô hình C=εA/d, giữ ε và d cố định thì giảm diện tích ghép A làm C giảm. Thu hẹp khoảng cách d lại làm C tăng, nên không dùng quy tắc chung “dây nhỏ hơn luôn ít điện dung”.",
+        "tip": "C=εA/d: giảm A hoặc tăng d → C giảm, nếu các yếu tố khác giữ nguyên.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Giảm kích thước dây không bảo đảm giảm mọi điện dung vì còn khoảng cách và hình học. Đã nêu diện tích ghép và giữ cố định dielectric gap.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-004": {
+      "before": {
+        "question": "Channel SNR is defined using noise power over:",
+        "options": [
+          "RF bandwidth",
+          "Infinite bandwidth",
+          "Baseband bandwidth",
+          "Carrier frequency"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Theo quy ước SNR kênh tham chiếu trong bài điều chế analog, công suất nhiễu được chuẩn hóa theo băng thông baseband W.",
+        "tip": null
+      },
+      "after": {
+        "question": "In the analog-modulation reference convention SNR_ref = P_received/(N0·W), where W is the message bandwidth, over which bandwidth is reference noise power normalized?",
+        "options": [
+          "RF bandwidth",
+          "Infinite bandwidth",
+          "Baseband bandwidth",
+          "Carrier frequency"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Đây là quy ước SNR tham chiếu dùng N0W với W là băng thông baseband. SNR đầu vào receiver RF có thể dùng băng thông RF khác; không đánh đồng hai định nghĩa.",
+        "tip": "Thấy mẫu N0W và W là message bandwidth → baseband reference; RF SNR phải dùng đúng noise bandwidth của bộ thu.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "SNR kênh thường dùng băng thông receiver; đề này đang dùng SNR tham chiếu analog với noise power N0W. Đã nêu rõ quy ước để không nhầm với RF input SNR.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "cos201-su26-fe-re-034": {
+      "before": {
+        "question": "If convolutional code constraint length increases, performance will:",
+        "options": [
+          "Decrease",
+          "Increase",
+          "Stay same",
+          "Reduce bandwidth"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Trong họ mã thiết kế phù hợp, tăng constraint length thường cải thiện khoảng cách mã nhưng làm giải mã phức tạp hơn.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a well-designed convolutional-code family at fixed code rate with suitable maximum-likelihood decoding, what can increasing constraint length achieve?",
+        "options": [
+          "Decrease",
+          "Improved distance/error performance, at the cost of higher decoding complexity.",
+          "Stay same",
+          "Reduce bandwidth"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Bộ nhớ mã dài hơn cho phép thiết kế khoảng cách tự do tốt hơn, nhưng trellis có nhiều trạng thái hơn nên giải mã phức tạp hơn. Không có bảo đảm chỉ cần tăng chiều dài một mã bất kỳ là BER luôn giảm.",
+        "tip": "Constraint length tăng → có thể tăng free distance; đổi lại số trạng thái trellis tăng mạnh.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Tăng constraint length không bảo đảm mọi mã đều tốt hơn. Cần so họ mã được thiết kế tốt, cùng code rate và bộ giải mã phù hợp.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-032": {
+      "before": {
+        "question": "Why are interrupts preferred over polling?",
+        "options": [
+          "Replace DMA",
+          "Improve file compression",
+          "Reduce CPU overhead",
+          "Increase RAM usage"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "Interrupt chỉ xử lý khi có sự kiện thay vì để CPU liên tục kiểm tra trạng thái thiết bị.",
+        "tip": "interrupt vs polling → less busy waiting."
+      },
+      "after": {
+        "question": "For an otherwise idle CPU waiting for infrequent device events, why can interrupts be preferable to busy polling?",
+        "options": [
+          "Replace DMA",
+          "Improve file compression",
+          "Reduce CPU overhead",
+          "Increase RAM usage"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "CPU không cần lặp đọc thanh ghi trạng thái khi chưa có sự kiện; interrupt chỉ gọi handler lúc cần. Ở tốc độ sự kiện rất cao, chi phí interrupt có thể làm polling/batching phù hợp hơn.",
+        "tip": "Sự kiện thưa → interrupt tránh busy wait; không kết luận interrupt luôn rẻ hơn polling.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Interrupt giảm CPU bận chờ trong các hệ có sự kiện thưa; ở tốc độ sự kiện rất cao, polling có thể hiệu quả hơn.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-re-034": {
+      "before": {
+        "question": "A student boots QEMU with *-kernel zlmage• and *-dtb vexpress-v2p-ca9.dtb' but no initramfs is supplied. The , kernel stops with a VFS root mount panic. What is the most likely reason?",
+        "options": [
+          "The kernel cannot find a root filesystem because no initramfs image or root device was provided.",
+          "The CPU is not Cortex-A9 because '-cpu cortex-as is ignored by QEMU-",
+          "The PLOI 1 driver is always disabled in 'vexpress_defconfig•",
+          "The •zlmage' file must always be replaced by •ulmage• for ARMv7."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Kernel và DTB không thay thế rootfs có init. Không có initramfs hay root device dùng được sẽ dẫn đến lỗi mount root; QEMU có thể nạp trực tiếp zImage.",
+        "tip": "VFS root mount panic → kiểm tra initramfs / root= / rootfs."
+      },
+      "after": {
+        "question": "A student boots QEMU with `-kernel zImage` and `-dtb vexpress-v2p-ca9.dtb`, but no initramfs is supplied. The kernel stops with a VFS root mount panic. What is the most likely reason?",
+        "options": [
+          "The kernel cannot find a root filesystem because no initramfs image or root device was provided.",
+          "The CPU is not Cortex-A9 because `-cpu cortex-a9` is ignored by QEMU.",
+          "The PL011 driver is always disabled in `vexpress_defconfig`.",
+          "The `zImage` file must always be replaced by `uImage` for ARMv7."
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Kernel và DTB không thay thế rootfs có init. Không có initramfs hay root device dùng được sẽ dẫn đến lỗi mount root; QEMU có thể nạp trực tiếp zImage.",
+        "tip": "VFS root mount panic → kiểm tra initramfs / root= / rootfs.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục các tên zImage, uImage, PL011, vexpress_defconfig và lệnh QEMU bị OCR đọc sai theo ảnh gốc.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "los201-su26-fe-048": {
+      "before": {
+        "question": "Which kernel image is the uncompressed ELF binary used for debugging?",
+        "options": [
+          "initrd",
+          "zlmage",
+          "ulmage",
+          "vmlinux"
+        ],
+        "answer": [
+          3
+        ],
+        "reason": "vmlinux là ELF kernel chưa nén, giữ thông tin cần để phân tích symbol và debug.",
+        "tip": "uncompressed ELF kernel → vmlinux."
+      },
+      "after": {
+        "question": "Which kernel image is the uncompressed ELF binary used for debugging?",
+        "options": [
+          "initrd",
+          "zImage",
+          "uImage",
+          "vmlinux"
+        ],
+        "answer": [
+          3
+        ],
+        "reason": "vmlinux là ELF kernel chưa nén, giữ thông tin cần để phân tích symbol và debug.",
+        "tip": "uncompressed ELF kernel → vmlinux.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục tên image đúng trong ảnh: zImage và uImage, thay cho zlmage/ulmage bị OCR nhầm.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "dgt302-su26-fe-re-005": {
+      "before": {
+        "question": "A linear time-invariant system is characterized by the system function H(z). What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?\nH(z) = (3-4z⁻¹)/[(1-0.5z⁻¹)(1-2z⁻¹)]",
+        "options": [
+          "|z| &lt; 0.5",
+          "0.5 &lt; |z| &lt; 2",
+          "|z| &gt; 0.5",
+          "|z| &gt; 2"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "ROC ổn định phải chứa |z|=1 và không chứa cực 0,5 hoặc 2.",
+        "tip": "Ổn định → ROC phải chứa |z|=1; hai cực 0,5 và 2 kẹp vòng đơn vị → chọn 0,5<|z|<2."
+      },
+      "after": {
+        "question": "A linear time-invariant system is characterized by the system function H(z). What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?\nH(z) = (3-4z⁻¹)/[(1-0.5z⁻¹)(1-2z⁻¹)]",
+        "options": [
+          "|z| < 0.5",
+          "0.5 < |z| < 2",
+          "|z| > 0.5",
+          "|z| > 2"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "ROC ổn định phải chứa |z|=1 và không chứa cực 0,5 hoặc 2.",
+        "tip": "Ổn định → ROC phải chứa |z|=1; hai cực 0,5 và 2 kẹp vòng đơn vị → chọn 0,5<|z|<2.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Ảnh nguồn hiển thị literal &lt;/&gt; thay cho dấu bất đẳng thức. Đã hiển thị lại ký hiệu < và > để đọc ROC rõ ràng.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "dgt302-su26-fe-re-036": {
+      "before": {
+        "question": "For a causal first-order digital filter with system function H(z), if the parameter “a” is real and satisfies 0 &lt; a &lt; 1, the filter fundamentally acts as a:\nH(z) = b0/(1-az⁻¹)",
+        "options": [
+          "Lowpass filter",
+          "Highpass filter",
+          "Bandpass filter",
+          "All-pass filter"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Với 0<a<1 và tử số hằng khác 0, mẫu 1-az⁻¹ cho gain lớn ở DC hơn Nyquist.",
+        "tip": null
+      },
+      "after": {
+        "question": "For a causal first-order filter H(z)=b0/(1−az^(-1)), with nonzero b0 and real 0<a<1, the magnitude response is fundamentally:",
+        "options": [
+          "Lowpass filter",
+          "Highpass filter",
+          "Bandpass filter",
+          "All-pass filter"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "|H(e^(jω))|=|b0|/sqrt(1+a²−2a cosω). Với mọi 0<a<1, độ lớn lớn nhất ở DC và giảm dần đến ω=π, nên đây là low-pass.",
+        "tip": "0<a<1: mẫu số nhỏ nhất tại ω=0, lớn nhất tại π → gain giảm theo tần số, là low-pass.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Bỏ literal &lt; trong ảnh nguồn, bổ sung b0 khác zero và dùng đúng mô hình nhân quả với 0<a<1.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "dgt302-su26-fe-042": {
+      "before": {
+        "question": "Consider the causal decaying exponential sequence x(n) = aⁿ·u(n) with |a| &lt; 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+        "options": [
+          "1/(1+a·exp(-jω))",
+          "1/(1-a·exp(-jω))",
+          "a/(1-exp(-jω))",
+          "1/(1-a·exp(jω))"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Chuỗi hình học Σ a^n exp(-jωn) cho 1/(1-a exp(-jω)) khi |a|<1.",
+        "tip": null
+      },
+      "after": {
+        "question": "Consider the causal decaying exponential sequence x(n) = aⁿ·u(n) with |a| < 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+        "options": [
+          "1/(1+a·exp(-jω))",
+          "1/(1-a·exp(-jω))",
+          "a/(1-exp(-jω))",
+          "1/(1-a·exp(jω))"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Chuỗi hình học Σ a^n exp(-jωn) cho 1/(1-a exp(-jω)) khi |a|<1.",
+        "tip": null,
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Ảnh nguồn viết literal &lt; trong điều kiện |a|<1. Đã chuyển về dấu nhỏ hơn đúng ký hiệu toán học.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "dgt302-fa26-fe-043": {
+      "before": {
+        "question": "In a standard two-channel QMF bank, if the given analysis lowpass filter is H0(z) = 1 + z⁻¹, what must be the transfer function of the analysis highpass filter H1(z) to establish the required quadrature mirror relationship?",
+        "options": [
+          "H1(z) = 1 + z⁻²",
+          "H1(z) = -1 - z⁻¹",
+          "H1(z) = 1 - z⁻¹",
+          "H1(z) = z⁻¹ - 1"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "H0(-z)=1-z⁻¹ nên highpass theo quan hệ QMF này là 1-z⁻¹.",
+        "tip": null
+      },
+      "after": {
+        "question": "Using the QMF convention H1(z) = H0(−z), if H0(z) = 1 + z⁻¹, what is H1(z)?",
+        "options": [
+          "H1(z) = 1 + z⁻²",
+          "H1(z) = -1 - z⁻¹",
+          "H1(z) = 1 - z⁻¹",
+          "H1(z) = z⁻¹ - 1"
+        ],
+        "answer": [
+          2
+        ],
+        "reason": "H0(-z)=1-z⁻¹ nên highpass theo quan hệ QMF này là 1-z⁻¹.",
+        "tip": "Thay z bằng −z: (−z)⁻¹=−z⁻¹ → 1−z⁻¹; đừng tự thêm dấu toàn bộ khác quy ước.",
+        "acceptedAnswers": null
+      },
+      "kind": "source-clarification",
+      "note": "Hai đáp án highpass có thể khác nhau một dấu. Đã nêu rõ quy ước QMF H1(z)=H0(−z) để đáp án duy nhất có ý nghĩa.",
+      "sourcePhotoReviewed": false,
+      "references": []
+    },
+    "los201-su26-fe-re-001": {
+      "before": {
+        "question": "In Linux virtual memory management, what is a pageo",
+        "options": [
+          "A fixed-size unit of memory used for mapping virtual and physical addresses",
+          "A region of memory reserved for a single thread",
+          "A filesystem block used to store file data",
+          "A kernel structure representing a process"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Page là đơn vị kích thước cố định mà hệ thống dùng cho ánh xạ và quản lý bộ nhớ ảo.",
+        "tip": "page → memory mapping unit."
+      },
+      "after": {
+        "question": "In Linux virtual memory management, what is a page?",
+        "options": [
+          "A fixed-size unit of memory used for mapping virtual and physical addresses",
+          "A region of memory reserved for a single thread",
+          "A filesystem block used to store file data",
+          "A kernel structure representing a process"
+        ],
+        "answer": [
+          0
+        ],
+        "reason": "Page là đơn vị kích thước cố định mà hệ thống dùng cho ánh xạ và quản lý bộ nhớ ảo.",
+        "tip": "page → memory mapping unit.",
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục dấu câu bị OCR đọc nhầm thành chữ o hoặc bullet theo ảnh nguồn; không đổi lựa chọn hay khóa chấm.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "ici211-su26-fe-re-032": {
+      "before": {
+        "question": "What do the outputs of sequential logic circuits depend ono",
+        "options": [
+          "Current inputs only",
+          "Previous input history",
+          "Supply voltage level",
+          "Threshold voltage shifts"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Mạch tuần tự có trạng thái nhớ nên đầu ra có thể phụ thuộc lịch sử đầu vào.",
+        "tip": null
+      },
+      "after": {
+        "question": "What do the outputs of sequential logic circuits depend on?",
+        "options": [
+          "Current inputs only",
+          "Previous input history",
+          "Supply voltage level",
+          "Threshold voltage shifts"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Mạch tuần tự có trạng thái nhớ nên đầu ra có thể phụ thuộc lịch sử đầu vào.",
+        "tip": null,
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục dấu câu bị OCR đọc nhầm thành chữ o hoặc bullet theo ảnh nguồn; không đổi lựa chọn hay khóa chấm.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "cos201-su26-fe-re-020": {
+      "before": {
+        "question": "A balanced frequency discriminator improves •",
+        "options": [
+          "Power efficiency",
+          "Linearity",
+          "Bandwidth",
+          "Noise level"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Hai nhánh cân bằng giúp đặc tuyến bộ phân biệt tần số tuyến tính hơn quanh tần số trung tâm.",
+        "tip": null
+      },
+      "after": {
+        "question": "A balanced frequency discriminator improves:",
+        "options": [
+          "Power efficiency",
+          "Linearity",
+          "Bandwidth",
+          "Noise level"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Hai nhánh cân bằng giúp đặc tuyến bộ phân biệt tần số tuyến tính hơn quanh tần số trung tâm.",
+        "tip": null,
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục dấu câu bị OCR đọc nhầm thành chữ o hoặc bullet theo ảnh nguồn; không đổi lựa chọn hay khóa chấm.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    },
+    "cos201-su26-fe-re-025": {
+      "before": {
+        "question": "Sampling converts a signal from •",
+        "options": [
+          "Discrete-time to continuous-time",
+          "Continuous-time to discrete-time",
+          "Analog to frequency",
+          "Digital to analog"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Lấy mẫu chọn giá trị tín hiệu tại các thời điểm rời rạc, chưa trực tiếp lượng tử hóa biên độ.",
+        "tip": null
+      },
+      "after": {
+        "question": "Sampling converts a signal from:",
+        "options": [
+          "Discrete-time to continuous-time",
+          "Continuous-time to discrete-time",
+          "Analog to frequency",
+          "Digital to analog"
+        ],
+        "answer": [
+          1
+        ],
+        "reason": "Lấy mẫu chọn giá trị tín hiệu tại các thời điểm rời rạc, chưa trực tiếp lượng tử hóa biên độ.",
+        "tip": null,
+        "acceptedAnswers": null
+      },
+      "kind": "transcription-restoration",
+      "note": "Khôi phục dấu câu bị OCR đọc nhầm thành chữ o hoặc bullet theo ảnh nguồn; không đổi lựa chọn hay khóa chấm.",
+      "sourcePhotoReviewed": true,
+      "references": []
+    }
+  }
+}

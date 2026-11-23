@@ -1,0 +1,199 @@
+01 What does the oscillation frequency of a ring oscillator mainly depend on?
+A. Number of stages | B. Oxide capacitance only | C. Threshold voltage only | D. Junction resistance only
+KEY [0] MATCH ICI211-397 0.5143 REUSE 
+
+02 What approximation is commonly used in simple delay estimation for digital circuits?
+A. Average current approximation | B. Constant resistance approximation | C. Threshold voltage approximation | D. Distributed inductance approximation
+KEY [0] MATCH ICI211-496 0.6136 REUSE 
+
+03 What factors does CMOS switching performance depend on in digital circuit operation?
+A. Delay capacitance activity | B. Mobility substrate leakage | C. Threshold inductance geometry | D. Oxide frequency diffusion
+KEY [0] MATCH ICI211-488 0.6591 REUSE 
+
+04 What aspect of circuit analysis is greatly simplified by using the lumped capacitance model?
+A. Simplifies delay calculations | B. Oxide fabrication complexity | C. Threshold extraction methods | D. Carrier recombination rates
+KEY [0] MATCH ICI211-472 0.5917 REUSE 
+
+05 What does the lumped RC model provide in interconnect?
+A. Rough delay approximation | B. Exact transient solution | C. Infinite propagation speed | D. Perfect distributed modeling
+KEY [0] MATCH ICI211-250 0.5405 REUSE 
+
+06 What is the main cause of crosstalk in interconnects of VLSI circuits?
+A. Capacitive line coupling | B. Threshold voltage mismatch | C. Mobility degradation effect | D. Gate oxide tunneling
+KEY [0] MATCH ICI211-437 0.6525 REUSE 
+
+07 What does pipelining allow in digital circuit system design?
+A. Sequential data processing | B. Static memory retention | C. Threshold voltage control | D. Constant power operation
+KEY [0] MATCH ICI211-276 0.6119 REUSE 
+
+08 What does TSPC stand for in high-speed dynamic CMOS and sequential circuit design?
+A. True single-phase clock | B. Timing synchronized pass-control | C. Threshold scaling phase-control | D. Transmission stage pipeline-control
+KEY [0] MATCH ICI211-485 0.7126 REUSE 
+
+09 What type of structures are commonly used to implement bootstrap capacitors in dynamic CMOS circuit designi
+A. MOS capacitor structures | B. Bipolar transistor stages | C. Dynamic resistor chains | D. Transmission line networks
+KEY [0] MATCH ICI211-298 0.7115 REUSE 
+
+10 What do dynamic logic circuits mainly depend on for their operation in digital CMOS designi
+A. Temporary charge storage | B. Continuous current paths | C. Bipolar transistor action | D. Constant voltage sources
+KEY [0] MATCH ICI211-268 0.7119 REUSE 
+
+11 What advantage is included in the use of NORA logic in dynamic CMOS circuit design?
+A. Eliminating static inverters | B. Removing clock signals | C. Eliminating evaluation phases | D. Reducing output transitions
+KEY [0] MATCH ICI211-256 0.7356 REUSE 
+
+12 What type of output does domino logic stages perform during their operation in dynamic CMOS circuit design?
+A. Multiple output transitions | B. Single output transition | C. Infinite oscillation cycles | D. Static memory operation
+KEY [1] MATCH ICI211-268 0.5907 REUSE 
+
+13 Larger adders commonly apply which strategy?
+A. Random placement method | B. Sequential timing reduction | C. Analog Signal replication | D. Divide and conquer
+KEY [3] MATCH ICI211-321 0.4132 REUSE 
+
+14 What does hierarchical decomposition mainly improve?
+A. Routing channel density | B. Silicon defect tolerance | C. Modularity & manageability | D. Clock synchronization accuracy
+KEY [2] MATCH ICI211-262 0.5952 REUSE 
+
+15 Which activity belongs to the physical domain?
+A. Functional verification stage | B. Placement and routing | C. System algorithm design | D. Boolean logic reduction
+KEY [1] MATCH ICI211-315 0.4464 REUSE 
+
+16 What does a floorplan primarily define?
+A. Functional verification rules | B. Functional block placement | C. Device threshold values | D. Timing simulation models
+KEY [1] MATCH ICI211-262 0.5352 REUSE 
+
+17 What mainly drives the growth of IC complexity?
+A. Lower supply voltage | B. Manufacturing advancements | C. Reduced clock frequency | D. Smaller packaging size
+KEY [1] MATCH ICI211-413 0.4771 REUSE 
+
+18 What clocking method does DDR (Double Data Rate) memory use to transfer data in semiconductor memory systems?
+A. Single clock edges | B. Both clock edges | C. Dynamic current loops | D. Floating voltage nodes
+KEY [1] MATCH ICI211-417 0.6073 REUSE 
+
+19 What type of information can multi-level cells (MLCs) store in flash memory and semiconductor storage technology?
+A. Multiple bits information | B. Single dynamic charge | C. Continuous analog currents | D. Permanent threshold states
+KEY [0] MATCH ICI211-267 0.5464 REUSE 
+
+20 What does memory density measure in semiconductor memory and VLSI circuit design?
+A. Bits per area | B. Current per voltage | C. Speed per transistor | D. Frequency per cycle
+KEY [0] MATCH ICI211-436 0.7303 REUSE 
+
+21 What technique is commonly used during flash memory programming in semiconductor memory technology?
+A. Hot-electron injection | B. Dynamic latch operation | C. Differential sensing loops | D. Floating node discharge
+KEY [0] MATCH ICI211-417 0.6522 REUSE 
+
+22 What advantage does NAND Flash memory provide in semiconductor memory and digital storage systems?
+A. Higher storage density | B. Faster random access | C. Permanent dynamic refresh | D. Larger transistor spacing
+KEY [1] MATCH ICI211-275 0.9026 REUSE ICI211-275
+
+23 What aspects do internal voltage regulators improve in semiconductor memory and integrated circuit systems?
+A. Power efficiency reliability | B. Dynamic threshold leakage | C. Clock overlap timing | D. Decoder transistor scaling
+KEY [0] MATCH ICI211-299 0.733 REUSE 
+
+24 What causes velocity saturation to occur in a MOSFET device?
+A. Large lateral fields | B. Small oxide thickness | C. Low substrate doping | D. Weak inversion region
+KEY [0] MATCH ICI211-442 0.5976 REUSE 
+
+25 What parameter increases when constant-voltage scaling is applied in VLSI technology?
+A. Effective channel length | B. Oxide thickness strongly | C. Junction resistance rapidly | D. Power density significantly
+KEY [3] MATCH ICI211-300 0.5915 REUSE 
+
+26 What happens in a MOS capacitor during accumulation mode?
+A. Holes move surfaceward | B. Electrons dominate channel | C. Inversion layer disappears | D. Oxide capacitance vanishes
+KEY [0] MATCH ICI211-271 0.473 REUSE 
+
+27 What is the work function represent?
+A. Electron removal energy | B. Channel conduction current | C. Oxide breakdown voltage | D. Junction diffusion depth
+KEY [0] MATCH ICI211-397 0.5098 REUSE 
+
+28 What parameter is reduced due to the short-channel effect in a MOSFET device?
+A. Drain saturation current | B. Threshold voltage value | C. Oxide capacitance value | D. Junction depletion width
+KEY [1] MATCH ICI211-473 0.5139 REUSE 
+
+29 What do stick diagrams represent in VLSI circuit layout design?
+A. Exact transistor dimensions | B. Relative device positions | C. Current voltage equations | D. Dynamic timing behavior
+KEY [1] MATCH ICI211-401 0.5493 REUSE 
+
+30 Which of the following components or design techniques are commonly used in the implementation of ripple-carry adders in digital circuits?
+A. Cascaded full adders | B. Dynamic logic stages | C. Bipolar transmission gates | D. Capacitive storage nodes
+KEY [0] MATCH ICI211-439 0.575 REUSE 
+
+31 What type of signals does NMOS transistor pass most strongly in digital circuits?
+A. Strong logic-I signals | B. Strong logic-0 signals | C. Equal logic-level signals | D. Weak logic-0 signals
+KEY [1] MATCH ICI211-253 0.5799 REUSE 
+
+32 What does complex gate sizing examine in CMOS and VLSI circuit design?
+A. Output-ground Signal paths | B. Oxide breakdown regions | C. Capacitive coupling nodes | D. Dynamic switching clocks
+KEY [0] MATCH ICI211-297 0.5917 REUSE 
+
+33 What does ratioed logic depend on in digital circuit design?
+A. Logic levels depend on transistor size ratios | B. Output levels depend on equal voltage swings | C. Signal timing depends on constant delay values | D. Circuit operation depends on fixed supply voltage
+KEY [0] MATCH ICI211-276 0.6567 REUSE 
+
+34 What advantage does CMOS combinational logic provide in digital circuit design?
+A. Low power robustness | B. Large static currents | C. Weak switching margins | D. Floating output nodes
+KEY [0] MATCH ICI211-250 0.6705 REUSE 
+
+35 What does DC power dissipation mainly depend on in a CMOS circuit?
+A. Voltage and current | B. Width and length | C. Mobility and oxide | D. Threshold and gain
+KEY [0] MATCH ICI211-390 0.5906 REUSE 
+
+36 What type of devices does a CMOS inverter use in its circuit configuration?
+A. Complementary pull devices | B. Resistive load network | C. Bipolar switching transistors | D. Floating gate operation
+KEY [0] MATCH ICI211-285 0.6531 REUSE 
+
+37 What advantage does a pseudo-nMOS inverter provide in digital circuit operation?
+A. Faster transition times | B. Infinite output voltage | C. Zero leakage current | D. Larger resistor area
+KEY [0] MATCH ICI211-256 0.6471 REUSE 
+
+38 What does the input high voltage (VIH) correspond to in the voltage transfer characteristic of a digital inverter
+A. Smaller switching voltage | B. Larger switching voltage | C. Lowest output voltage | D. Highest current level
+KEY [1] MATCH ICI211-283 0.617 REUSE 
+
+39 What is the general effect of increasing the product of kn and RL in a resistive-load inverter circuit?
+A. Larger output voltage | B. Smaller output low | C. Smaller transition slope | D. Larger leakage current
+KEY [1] MATCH ICI211-456 0.5171 REUSE 
+
+40 Under what condition does the toggle operation occur in a JK latch during sequential circuit operation?
+A. J and K low | B. J and K high | C. Clock signal inactive | D. Output becomes floating
+KEY [1] MATCH ICI211-291 0.7065 REUSE 
+
+41 Which of the following best describes combinational circuits in digital electronics?
+A. Regenerative feedback systems | B. Nonregenerative logic circuits | C. Dynamic storage systems | D. Oscillating timing circuits
+KEY [1] MATCH ICI211-439 0.7527 REUSE 
+
+42 What effect does positive feedback cause in electronic and sequential circuit systems?
+A. Signal attenuation effects | B. Exponential signal amplification | C. Constant voltage behavior | D. Reduced propagation delay
+KEY [1] MATCH ICI211-254 0.578 REUSE 
+
+43 What does the hold condition mean in the operation of an SR latch or sequential circuit?
+A. Output changes continuously | B. Previous state maintained | C. Inputs become invalid | D. Clock signal disabled
+KEY [1] MATCH ICI211-276 0.5963 REUSE 
+
+44 What type of latch configuration is used in a master-slave latch in sequential digital circuit design?
+A. Two cascaded latches | B. Parallel transmission gates | C. Dynamic capacitor arrays | D. Current mirror networks
+KEY [0] MATCH ICI211-385 0.7701 REUSE 
+
+45 Under what condition does metastability occur in a sequential digital circuit or flip-flop system?
+A. Timing constraints violated | B. Power supply removed | C. Gain becomes negative | D. Clock frequency reduced
+KEY [0] MATCH ICI211-291 0.6701 REUSE 
+
+46 What does adiabatic logic attempt to achieve in low-power CMOS energy-efficient digital circuit design?
+A. Remove supply voltages | B. Eliminate logic transitions | C. Increase leakage current | D. Recover switching energy
+KEY [3] MATCH ICI211-485 0.5641 REUSE 
+
+47 What does clock gating mainly reduce in CMOS ow-power digital circuit operation?
+A. Capacitive signal distortion | B. Reverse leakage current | C. Dynamic threshold mismatch | D. Unnecessary switching activity
+KEY [3] MATCH ICI211-252 0.6154 REUSE 
+
+48 What does reverse body biasing help achieve in low-power CMOS digital circuit design?
+A. Reduce leakage currents | B. Increase switching activity | C. Eliminate propagation delay | D. Remove load capacitance
+KEY [0] MATCH ICI211-252 0.6782 REUSE 
+
+49 What causes dynamic power consumption to occur in CMOS circuit operation?
+A. Reverse body biasing | B. Floating threshold voltages | C. Continuous static conduction | D. Capacitor charging discharging
+KEY [3] MATCH ICI211-291 0.5698 REUSE 
+
+50 What method does VTCMOS use to adjust the threshold voltage in low-power CMOS circuit design?
+A. Clock frequency scaling | B. Capacitive charge recovery | C. Dynamic latch feedback | D. Body bias control
+KEY [3] MATCH ICI211-250 0.6129 REUSE 

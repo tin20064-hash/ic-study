@@ -1,0 +1,4048 @@
+{
+  "subject": "ICI211",
+  "questions": [
+    {
+      "id": "ICI211-250",
+      "subject": "ICI211",
+      "question": "What advantages does the active VTCMOS operating mode provide in low-power CMOS circuit design?",
+      "options": [
+        "High-speed operation",
+        "Infinite noise margins",
+        "Zero dynamic current",
+        "Constant propagation delay"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-251",
+      "subject": "ICI211",
+      "question": "What does tPLH represent in the switching behavior of a digital circuit?",
+      "options": [
+        "High-to-low transition",
+        "Low-to-high transition",
+        "Capacitive loading factor",
+        "Switching power product"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-252",
+      "subject": "ICI211",
+      "question": "What does stepwise charging help to reduce in adiabatic for low-power CMOS circuit design?",
+      "options": [
+        "Dynamic leakage currents",
+        "Clock gating efficiency",
+        "Threshold voltage scaling",
+        "Resistive energy losses"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-253",
+      "subject": "ICI211",
+      "question": "What type of stable state does a monostable circuit contain in sequential circuit design?",
+      "options": [
+        "Multiple stable states",
+        "Single stable state",
+        "Two unstable states",
+        "Infinite oscillation modes"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-254",
+      "subject": "ICI211",
+      "question": "What type of operation do clocked latches provide in sequential digital circuit systems?",
+      "options": [
+        "Asynchronous operation only",
+        "Synchronous controlled operation",
+        "Continuous analog operation",
+        "Transmission line behavior"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-255",
+      "subject": "ICI211",
+      "question": "What is a characteristic performance advantage of a semi-dynamic flip-flop (SDFF)?",
+      "options": [
+        "Fast clock-to-Q operation using a dynamic front end and a static latch",
+        "Reduced setup margins",
+        "Dynamic threshold instability",
+        "Oscillating latch behavior"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-256",
+      "subject": "ICI211",
+      "question": "What disadvantage is associated with the use of pseudo-NMOS logic in digital circuit design?",
+      "options": [
+        "Dynamic power reduction",
+        "Static power dissipation",
+        "Reduced threshold voltage",
+        "Eliminated body effect"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-257",
+      "subject": "ICI211",
+      "question": "What is the major advantage of FPGA?",
+      "options": [
+        "Lowest fabrication complexity",
+        "Post-fabrication customization",
+        "Maximum transistor density",
+        "Minimal routing overhead"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-258",
+      "subject": "ICI211",
+      "question": "How do interconnects typically behave in VLSI and digital circuit models?",
+      "options": [
+        "Ideal constant-voltage network sources",
+        "Nearly perfect conducting paths",
+        "Purely ideal capacitive network elements",
+        "Distributed RC interconnect networks"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-259",
+      "subject": "ICI211",
+      "question": "Compared with a single nMOS pass transistor, what signal-transfer benefit does a CMOS transmission gate provide?",
+      "options": [
+        "Capacitor leakage current",
+        "Passing both strong logic 0 and strong logic 1",
+        "Oxide breakdown voltage",
+        "Threshold voltage mismatch"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-260",
+      "subject": "ICI211",
+      "question": "What type of power supply is used in a saturated enhancement-load inverter circuit?",
+      "options": [
+        "Variable threshold supply",
+        "Floating substrate supply",
+        "Single power supply",
+        "Dual power supplies"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-261",
+      "subject": "ICI211",
+      "question": "What happens to sufficiently small disturbances around an asymptotically stable circuit operating point?",
+      "options": [
+        "Grow exponentially larger",
+        "Decay gradually away",
+        "Cause continuous oscillation",
+        "Eliminate feedback action"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-262",
+      "subject": "ICI211",
+      "question": "What does electron affinity mean?",
+      "options": [
+        "Surface inversion voltage",
+        "Conduction vacuum difference",
+        "Depletion charge density",
+        "Oxide electric field"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-263",
+      "subject": "ICI211",
+      "question": "What advantage does full CMOS SRAM provide in semiconductor memory and digital storage circuit design?",
+      "options": [
+        "Large static dissipation",
+        "Superior noise margins",
+        "Dynamic refresh operation",
+        "Floating output states"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-264",
+      "subject": "ICI211",
+      "question": "In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion?",
+      "options": [
+        "Holes accumulate surface",
+        "Majority holes are repelled from the surface, leaving ionized acceptors",
+        "Electrons form channel",
+        "Oxide breaks down"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-265",
+      "subject": "ICI211",
+      "question": "What does testability mainly focus on?",
+      "options": [
+        "Chip thermal expansion",
+        "Fault detection coverage",
+        "Layout scaling reduction",
+        "Packaging material quality"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-266",
+      "subject": "ICI211",
+      "question": "What is RTL an abbreviation for?",
+      "options": [
+        "Register transfer level",
+        "Routing timing logic",
+        "Reduced transistor layout",
+        "Recursive timing language"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-267",
+      "subject": "ICI211",
+      "question": "What type of operation is self-refresh mode useful for semiconductor memory systems?",
+      "options": [
+        "High-performance overclocking",
+        "Low-power standby operation",
+        "Dynamic threshold tuning",
+        "Differential sensing operation"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-268",
+      "subject": "ICI211",
+      "question": "What does dynamic logic require to maintain correct operation in digital CMOS circuits?",
+      "options": [
+        "Constant threshold scaling",
+        "Continuous conduction paths",
+        "Infinite voltage supply",
+        "Periodic precharge/evaluate cycles that restore dynamic-node charge"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-269",
+      "subject": "ICI211",
+      "question": "Which of the following statements best describes the behavior of an NMOS pass transistor when transferring logic levels in digital circuits?",
+      "options": [
+        "Strong logic one",
+        "Weak logic one",
+        "Equal voltage swings",
+        "Infinite drive current"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-270",
+      "subject": "ICI211",
+      "question": "What modeling approach is commonly used for short interconnects in digital and VLSI circuits?",
+      "options": [
+        "Lumped RC approximation",
+        "Full transmission models",
+        "Magnetic coupling networks",
+        "Quantum mechanical models"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-271",
+      "subject": "ICI211",
+      "question": "What effect does channel-length modulation cause in a MOSFET operating in saturation region?",
+      "options": [
+        "Constant saturation current",
+        "Rising saturation current",
+        "Reduced threshold voltage",
+        "Larger oxide capacitance"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-272",
+      "subject": "ICI211",
+      "question": "What does tPHL represent in the switching behavior of a digital circuit?",
+      "options": [
+        "Low-to-high transition",
+        "High-to-low transition",
+        "Threshold switching voltage",
+        "Average rise interval"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-273",
+      "subject": "ICI211",
+      "question": "While enabled over the signal range, how does the ON resistance of a suitably sized CMOS transmission gate approximately vary?",
+      "options": [
+        "Roughly constant value",
+        "Infinite during switching",
+        "Strongly nonlinear always",
+        "Equal threshold voltage"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-274",
+      "subject": "ICI211",
+      "question": "What type of output states are produced by static logic circuits in digital system design?",
+      "options": [
+        "Temporary charge levels",
+        "Stable operating states",
+        "Floating dynamic nodes",
+        "Oscillating signal levels"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-275",
+      "subject": "ICI211",
+      "question": "What advantages does NOR Flash memory provide in semiconductor memory and embedded storage systems?",
+      "options": [
+        "Fast random access",
+        "Highest storage density",
+        "Continuous refresh operation",
+        "Dynamic voltage scaling"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-276",
+      "subject": "ICI211",
+      "question": "What does the term SR latch stand for in sequential digital circuit design?",
+      "options": [
+        "Set reset latch",
+        "Sequential register logic",
+        "Storage relay latch",
+        "Static resistor latch"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-277",
+      "subject": "ICI211",
+      "question": "What type of network is used in the pull-up network of a CMOS logic circuit?",
+      "options": [
+        "PMOS transistor network",
+        "NMOS transistor network",
+        "Resistive load devices",
+        "Bipolar switching devices"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-278",
+      "subject": "ICI211",
+      "question": "What is the main source of interconnect capacitance in integrated circuit layouts?",
+      "options": [
+        "Adjacent metal structures",
+        "Threshold voltage variation",
+        "Carrier mobility reduction",
+        "Oxide breakdown effects"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-279",
+      "subject": "ICI211",
+      "question": "Which FPGA component implements Boolean functions?",
+      "options": [
+        "Memory controller blocks",
+        "Phase lock loops",
+        "Signal driver circuits",
+        "Look-up table units"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-280",
+      "subject": "ICI211",
+      "question": "What does the noise margin low (NML) equal in a digital logic circuit?",
+      "options": [
+        "VOL minus VIL",
+        "VIL minus VOL",
+        "VIH minus VOH",
+        "VOH minus VOL"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-281",
+      "subject": "ICI211",
+      "question": "Why is low-power CMOS design becoming increasingly important in modern electronic systems?",
+      "options": [
+        "Portable systems increasing",
+        "Threshold voltages rising",
+        "Clock frequencies reducing",
+        "Capacitor densities decreasing"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-282",
+      "subject": "ICI211",
+      "question": "What limitations are commonly associated with dynamic CMOS logic circuits?",
+      "options": [
+        "Charge sharing leakage",
+        "Infinite switching speed",
+        "Reduced transistor counts",
+        "Constant voltage operation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-283",
+      "subject": "ICI211",
+      "question": "What does the voltage transfer characteristic (VTC) describe in a CMOS inverter?",
+      "options": [
+        "Current versus voltage",
+        "Area versus delay",
+        "Power versus frequency",
+        "Output versus input"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-284",
+      "subject": "ICI211",
+      "question": "What do sense amplifiers detect in semiconductor memory?",
+      "options": [
+        "Small voltage differences",
+        "Large current overloads",
+        "Threshold oxide shifts",
+        "Dynamic clock overlaps"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-285",
+      "subject": "ICI211",
+      "question": "What does a CMOS D-latch contain in its sequential circuit configuration?",
+      "options": [
+        "Single data input",
+        "Multiple clock inputs",
+        "Dynamic feedback arrays",
+        "Parallel carry logic"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-286",
+      "subject": "ICI211",
+      "question": "In a symmetric CMOS inverter under a slow input sweep, where is the direct-path short-circuit current approximately greatest?",
+      "options": [
+        "Vin near the inverter switching point VM ≈ VDD/2",
+        "Vin equals ground",
+        "Vout equals VDD",
+        "Current becomes zero"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-287",
+      "subject": "ICI211",
+      "question": "In which domain does switching analysis study the output behavior of a digital circuit?",
+      "options": [
+        "Frequency response domain",
+        "Time response domain",
+        "Spatial electric domain",
+        "Magnetic coupling domain"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-288",
+      "subject": "ICI211",
+      "question": "What type of operation is used in synchronous dynamic circuits for proper digital circuit control?",
+      "options": [
+        "Clock controlled operation",
+        "Continuous asynchronous control",
+        "Static feedback networks",
+        "Constant bias voltages"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-289",
+      "subject": "ICI211",
+      "question": "What does access time determine in semiconductor memory and digital system performance?",
+      "options": [
+        "Memory operating speed",
+        "Threshold voltage stability",
+        "Capacitor dielectric strength",
+        "Decoder transistor count"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-290",
+      "subject": "ICI211",
+      "question": "What does standby operation in an MTCMOS (Multi-Threshold CMOS) circuit disconnect to reduce leakage power consumption?",
+      "options": [
+        "Oscillating current mirrors",
+        "Capacitive output nodes",
+        "Dynamic clock networks",
+        "Logic supply paths"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-291",
+      "subject": "ICI211",
+      "question": "Under what condition does short-circuit power occur in a CMOS inverter or digital circuit operation?",
+      "options": [
+        "Both transistors conduct",
+        "Output remains floating",
+        "Clock becomes disabled",
+        "Capacitors fully discharge"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-292",
+      "subject": "ICI211",
+      "question": "What does yield represent the percentage of?",
+      "options": [
+        "Routing layer utilization",
+        "Available memory blocks",
+        "Power distribution buses",
+        "Functional fabricated chips"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-293",
+      "subject": "ICI211",
+      "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?",
+      "options": [
+        "Channel pinch-off formation",
+        "Oxide capacitance reduction",
+        "Body bias elimination",
+        "Reverse gate conduction"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-295",
+      "subject": "ICI211",
+      "question": "Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2?",
+      "options": [
+        "Equal switching margins",
+        "Zero leakage current",
+        "Infinite transconductance ratio",
+        "Minimum output voltage"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-296",
+      "subject": "ICI211",
+      "question": "What issue does two-phase clocking help prevent in dynamic digital circuits?",
+      "options": [
+        "Signal propagation delays",
+        "Signal overlap conflicts",
+        "Dynamic node charging",
+        "Threshold voltage effects"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-297",
+      "subject": "ICI211",
+      "question": "How does voltage bootstrapping restore full output voltage swing in CMOS and dynamic circuit design?",
+      "options": [
+        "Increasing internal node voltage",
+        "Reducing oxide capacitance value",
+        "Eliminating parasitic resistance entirely",
+        "Lowering transistor body effect"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-298",
+      "subject": "ICI211",
+      "question": "What type of circuit structures are commonly used in multiplexers for digital and CMOS circuit design?",
+      "options": [
+        "Transmission gate structures",
+        "Bipolar transistor stages",
+        "Resistive divider circuits",
+        "Dynamic capacitor arrays"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-299",
+      "subject": "ICI211",
+      "question": "What aspects do 8T SRAM cells improve in semiconductor memory and SRAM circuit design?",
+      "options": [
+        "Read operation stability",
+        "Dynamic refresh efficiency",
+        "Floating gate storage",
+        "Threshold voltage scaling"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-300",
+      "subject": "ICI211",
+      "question": "What is the term used for full scaling in VLSI technology?",
+      "options": [
+        "Constant field scaling",
+        "Constant power scaling",
+        "Constant current scaling",
+        "Constant resistance scaling"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-301",
+      "subject": "ICI211",
+      "question": "An inverter has VOH = 1.8 V, VOL = 0.1 V, VIH = 1.05 V, and VIL = 0.65 V. What is the smaller of its two noise margins?",
+      "options": [
+        "0.75 V",
+        "0.55 V",
+        "0.65 v",
+        "0.45 V"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-302",
+      "subject": "ICI211",
+      "question": "Which signal quantity is detected by a sense amplifier in semiconductor memory?",
+      "options": [
+        "Small voltage differences",
+        "Dynamic clock overlaps",
+        "Threshold oxide shifts",
+        "Large current overloads"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-303",
+      "subject": "ICI211",
+      "question": "Which circuit structure is used by SRAM cells to store data in semiconductor memory design?",
+      "options": [
+        "Ferroelectric polarization states",
+        "Floating gate charge",
+        "Cross-coupled inverters",
+        "Dynamic capacitor arrays"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-304",
+      "subject": "ICI211",
+      "question": "Why can widening a long interconnect fail to reduce delay as much as expected?",
+      "options": [
+        "Wider wires always have higher sheet resistance",
+        "Widening removes the driving transistor",
+        "Wire delay is independent of geometry",
+        "Lower resistance may be partly offset by increased parasitic capacitance"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-305",
+      "subject": "ICI211",
+      "question": "Which input condition forces the output of a NOR gate LOW?",
+      "options": [
+        "Any input high",
+        "Supply voltage reduced",
+        "Both inputs equal",
+        "Both inputs low"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-306",
+      "subject": "ICI211",
+      "question": "For equal-valued capacitors and a fixed observed output in an RC tree, which capacitor contributes most to the Elmore delay?",
+      "options": [
+        "A capacitor reached through the largest shared upstream resistance",
+        "A capacitor with zero path resistance",
+        "Every capacitor contributes identically regardless of location",
+        "A capacitor connected directly to an ideal voltage source"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-307",
+      "subject": "ICI211",
+      "question": "Which sequence best represents a valid top-down VLSI design refinement flow?",
+      "options": [
+        "Transistor model -> packaging -> algorithm -> specification",
+        "Layout -> transistor sizing -> architecture -> specification",
+        "Specification -> architecture -> logic/circuit design -> physical layout",
+        "Fabrication -> verification -> specification -> architecture"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-308",
+      "subject": "ICI211",
+      "question": "Two long-channel nMOS devices have equal process parameters and overdrive voltage. Device A has W/L = 8 and device B has W/L = 2. What is the ideal saturation-current ratio IA/IB?",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "64"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-309",
+      "subject": "ICI211",
+      "question": "A circuit consumes 4 mW dynamic power at 200 MHz. If only frequency doubles and all other factors remain constant, what is the new dynamic power?",
+      "options": [
+        "2 mW",
+        "4 mW",
+        "16 mW",
+        "8 mW"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-310",
+      "subject": "ICI211",
+      "question": "Which low-power technique disables the clock to inactive sequential blocks?",
+      "options": [
+        "Body contact removal",
+        "Voltage bootstrapping",
+        "Clock gating",
+        "Charge pumping"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-311",
+      "subject": "ICI211",
+      "question": "Which factors determine the total wire resistance in an interconnect system?",
+      "options": [
+        "Geometry and resistivity",
+        "Oxide and doping",
+        "Threshold and mobility",
+        "Frequency and voltage"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-312",
+      "subject": "ICI211",
+      "question": "Which device combination allows a transmission gate to pass both strong logic 0 and strong logic 1?",
+      "options": [
+        "Series nMOS and PMOS devices driven by the same control",
+        "Two PMOS devices with the same control",
+        "Two nMOS devices with the same control",
+        "Parallel nMOS and PMOS devices driven by complementary controls"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-313",
+      "subject": "ICI211",
+      "question": "Why is the PMOS commonly made wider than the nMOS in a symmetric CMOS inverter?",
+      "options": [
+        "Hole mobility is lower than electron mobility",
+        "The PMOS threshold voltage must be eliminated",
+        "Electron mobility is lower than hole mobility",
+        "The PMOS always operates in cutoff"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-314",
+      "subject": "ICI211",
+      "question": "Which timing condition must be satisfied to avoid a setup-time violation?",
+      "options": [
+        "Data must remain stable only after the clock edge",
+        "Data must be stable for a minimum interval before the active clock edge",
+        "Output must change before the input",
+        "Clock must remain LOW permanently"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-315",
+      "subject": "ICI211",
+      "question": "Which option states the primary advantage of static logic circuits?",
+      "options": [
+        "Reduced clock power",
+        "Dynamic charge storage",
+        "High switching frequency",
+        "Stable operating states"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-316",
+      "subject": "ICI211",
+      "question": "What is the main timing advantage of a two-phase latch-based pipeline over a strictly edge-triggered pipeline?",
+      "options": [
+        "Time borrowing between adjacent stages",
+        "Guaranteed zero clock power",
+        "Complete elimination of setup time",
+        "No requirement for non-overlapping clocks"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-317",
+      "subject": "ICI211",
+      "question": "Which sizing change shifts the switching threshold of a CMOS inverter upward toward VDD?",
+      "options": [
+        "Reducing both widths by the same factor",
+        "Increasing only the load capacitance",
+        "Strengthening the nMOS relative to the PMOS",
+        "Strengthening the PMOS relative to the nMOS"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-318",
+      "subject": "ICI211",
+      "question": "Which operating mode characterizes synchronous sequential digital circuits?",
+      "options": [
+        "Synchronous controlled operation",
+        "Continuous analog operation",
+        "Event-driven operation",
+        "Asynchronous operation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-319",
+      "subject": "ICI211",
+      "question": "Which operating quantity influences junction capacitance in a semiconductor device?",
+      "options": [
+        "Channel mobility only",
+        "Constant oxide thickness",
+        "Applied junction voltage",
+        "Drain current only"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-320",
+      "subject": "ICI211",
+      "question": "Which modeling approach is commonly used for short interconnects in VLSI circuits?",
+      "options": [
+        "Magnetic coupling networks",
+        "Quantum mechanical models",
+        "Full transmission models",
+        "Lumped RC approximation"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-321",
+      "subject": "ICI211",
+      "question": "Why is a static inverter commonly placed after a dynamic gate in domino logic?",
+      "options": [
+        "It makes the dynamic node precharge to ground",
+        "It removes the need for a clock",
+        "It guarantees zero dynamic power",
+        "It restores logic levels and enforces a monotonic interface"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-322",
+      "subject": "ICI211",
+      "question": "A flip-flop has setup time 80 ps, clock-to-Q delay 120 ps, and combinational path delay 600 ps. Ignoring clock skew, what is the minimum clock period?",
+      "options": [
+        "600 ps",
+        "680 ps",
+        "720 ps",
+        "800 ps"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-323",
+      "subject": "ICI211",
+      "question": "Which change most directly improves SRAM read stability but may increase cell area?",
+      "options": [
+        "Connecting both bit lines permanently to ground",
+        "Using an 8T cell with a decoupled read path",
+        "Removing one cross-coupled inverter",
+        "Reducing the supply voltage without changing the cell"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-324",
+      "subject": "ICI211",
+      "question": "In conventional domino logic, which element is placed between successive n-type dynamic logic stages to enforce a rising-only evaluation interface?",
+      "options": [
+        "Bipolar feedback loops",
+        "Continuous resistor loads",
+        "A static inverting CMOS gate, commonly a static inverter",
+        "Dynamic stages buffers"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-325",
+      "subject": "ICI211",
+      "question": "Which option states the major advantage of FPGA?",
+      "options": [
+        "Minimal routing overhead",
+        "Lowest fabrication complexity",
+        "Post-fabrication customization",
+        "Maximum transistor density"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-326",
+      "subject": "ICI211",
+      "question": "Which effect is caused by channel-length modulation when a MOSFET operates in saturation?",
+      "options": [
+        "Reduced threshold voltage",
+        "Rising saturation current",
+        "Larger oxide capacitance",
+        "Constant saturation current"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-327",
+      "subject": "ICI211",
+      "question": "Why is a distributed RC model preferred for a long on-chip wire?",
+      "options": [
+        "Inductance is always the only relevant parasitic",
+        "Wire resistance and capacitance are spread continuously along its length",
+        "The wire has no parasitic capacitance",
+        "The driver resistance becomes exactly zero"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-328",
+      "subject": "ICI211",
+      "question": "If the nMOS body is driven to a lower potential than its source while all other biases remain unchanged, what happens to the threshold voltage?",
+      "options": [
+        "It becomes zero",
+        "It decreases because VSB increases",
+        "It increases because VSB increases",
+        "It is unaffected by body bias"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-329",
+      "subject": "ICI211",
+      "question": "A memory contains 1024 words of 8 bits each. How many address bits are required to select one word?",
+      "options": [
+        "16",
+        "10",
+        "13",
+        "8"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-330",
+      "subject": "ICI211",
+      "question": "Which consequence results from leakage current in DRAM?",
+      "options": [
+        "Infinite sensing delay",
+        "Permanent threshold shifts",
+        "Dynamic voltage boosting",
+        "Charge storage loss"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-331",
+      "subject": "ICI211",
+      "question": "What happens to sufficiently small disturbances around an asymptotically stable circuit operating point?",
+      "options": [
+        "Grow exponentially larger",
+        "Cause continuous oscillation",
+        "Decay gradually away",
+        "Eliminate feedback action"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-332",
+      "subject": "ICI211",
+      "question": "Why does conventional domino logic naturally implement only non-inverting cascaded logic functions?",
+      "options": [
+        "Domino gates do not use a clock",
+        "The precharge transistor permanently holds the output LOW",
+        "The pull-down network contains only PMOS devices",
+        "Each dynamic stage is followed by a static inverter and evaluation transitions are monotonic"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-333",
+      "subject": "ICI211",
+      "question": "A positive-edge-triggered D flip-flop samples D = 1 immediately before the active edge. Ignoring setup/hold violations, what value appears at Q after the clock-to-Q delay?",
+      "options": [
+        "0",
+        "High impedance",
+        "1",
+        "An oscillating value"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-334",
+      "subject": "ICI211",
+      "question": "A wire has R = 2 kΩ and total C = 100 fF. Using the first-order estimate 0.69RC, what delay is expected?",
+      "options": [
+        "13.8 ps",
+        "1.38 ns",
+        "138 ps",
+        "69 ps"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-335",
+      "subject": "ICI211",
+      "question": "Which term is another name for Full Scaling in VLSI technology?",
+      "options": [
+        "Constant Electric Field Scaling",
+        "Dynamic Voltage Scaling",
+        "Constant Voltage Scaling",
+        "Threshold Voltage Scaling"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-336",
+      "subject": "ICI211",
+      "question": "Why must a conventional DRAM cell be refreshed periodically?",
+      "options": [
+        "Its storage capacitor loses charge through leakage",
+        "Its word line cannot be decoded",
+        "Its floating gate is erased after each read",
+        "Its cross-coupled inverters oscillate"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-337",
+      "subject": "ICI211",
+      "question": "Which problem does voltage bootstrapping help overcome in dynamic and pass-transistor logic circuits?",
+      "options": [
+        "Current mirror mismatch",
+        "Threshold voltage losses",
+        "Dynamic clock overlap",
+        "Static power consumption"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-338",
+      "subject": "ICI211",
+      "question": "Which mechanism is the main source of static power consumption in CMOS circuits?",
+      "options": [
+        "Clock charging mechanisms",
+        "Parasitic interconnection effects",
+        "Leakage current mechanisms",
+        "Switching capacitance effects"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-339",
+      "subject": "ICI211",
+      "question": "Which timing requirement states that data must remain stable for a minimum interval after the active clock edge?",
+      "options": [
+        "Clock-to-Q delay",
+        "Recovery time",
+        "Setup time",
+        "Hold time"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-340",
+      "subject": "ICI211",
+      "question": "Which change causes interconnect capacitance to decrease?",
+      "options": [
+        "Increased threshold voltage levels",
+        "Reducing coupling area or increasing dielectric separation, with other factors fixed",
+        "Reduced wire spacing conditions",
+        "Saturated carrier velocity effects"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-341",
+      "subject": "ICI211",
+      "question": "For otherwise identical wires, which geometric change generally reduces wire resistance?",
+      "options": [
+        "Reducing width",
+        "Increasing cross-sectional area",
+        "Reducing thickness",
+        "Increasing length"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-342",
+      "subject": "ICI211",
+      "question": "Two saturated MOSFETs have the same L and overdrive voltage, but transistor A has twice the width of transistor B. Ignoring short-channel effects, what is I_D,A / I_D,B?",
+      "options": [
+        "2",
+        "1",
+        "0.5",
+        "4"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-343",
+      "subject": "ICI211",
+      "question": "Which aspect of timing analysis is directly affected by input transition time?",
+      "options": [
+        "Substrate doping concentration",
+        "Oxide capacitance value",
+        "Junction depth profile",
+        "Delay calculation accuracy"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-344",
+      "subject": "ICI211",
+      "question": "Which input condition forces the output of a NAND gate LOW?",
+      "options": [
+        "Any input high",
+        "Both inputs high",
+        "Both inputs low",
+        "Threshold becomes zero"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-345",
+      "subject": "ICI211",
+      "question": "Why can a multi-threshold CMOS design combine fast operation with low standby leakage?",
+      "options": [
+        "High-VT devices are used only to increase switching activity",
+        "Low-VT devices are used on critical paths and high-VT devices reduce leakage elsewhere",
+        "Low-VT devices eliminate the need for power supplies",
+        "All devices use zero threshold voltage"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-346",
+      "subject": "ICI211",
+      "question": "Which phrase correctly defines NORA logic in dynamic CMOS and high-speed digital circuit design?",
+      "options": [
+        "Noninverting register architecture",
+        "Nonoverlap race architecture",
+        "Negative resistor array",
+        "No race CMOS"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-347",
+      "subject": "ICI211",
+      "question": "Which operation in a 6T SRAM cell is most sensitive to the strength ratio between the access transistor and pull-down transistor?",
+      "options": [
+        "Read stability",
+        "Row decoding only",
+        "Package sealing",
+        "Refresh scheduling"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-348",
+      "subject": "ICI211",
+      "question": "Which operation in a 6T SRAM cell is most sensitive to the strength ratio between the access transistor and pull-down transistor?",
+      "options": [
+        "Read stability",
+        "Row decoding only",
+        "Package sealing",
+        "Refresh scheduling"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-349",
+      "subject": "ICI211",
+      "question": "What is the primary purpose of using a master-slave latch arrangement?",
+      "options": [
+        "To increase static current intentionally",
+        "To implement combinational feedback only",
+        "To create edge-triggered behavior from two level-sensitive stages",
+        "To eliminate the clock signal"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-350",
+      "subject": "ICI211",
+      "question": "A dynamic node with capacitance 20 fF loses 2 fC of charge during evaluation. What voltage droop results from ΔV = ΔQ/C?",
+      "options": [
+        "1.0 V",
+        "0.10 V",
+        "0.01 V",
+        "10 V"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-351",
+      "subject": "ICI211",
+      "question": "In a symmetric CMOS inverter under a slow input sweep, where is the direct-path short-circuit current approximately greatest?",
+      "options": [
+        "Vin near VTN, well below VDD/2",
+        "Vin equals 0 V",
+        "Vin equals VDD",
+        "Vin near the inverter switching point VM ≈ VDD/2"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-352",
+      "subject": "ICI211",
+      "question": "Which component is mainly included in leakage current in CMOS digital circuit operation?",
+      "options": [
+        "Dynamic oscillating current",
+        "Subthreshold leakage and reverse-biased junction leakage",
+        "Capacitive inductive current",
+        "Regenerative clock current"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-353",
+      "subject": "ICI211",
+      "question": "Which relationship is described by the voltage transfer characteristic (VTC) of a CMOS inverter?",
+      "options": [
+        "Current versus voltage",
+        "Power versus frequency",
+        "Area versus delay",
+        "Output versus input"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-354",
+      "subject": "ICI211",
+      "question": "An nMOS transistor has VT = 0.4 V, VGS = 1.2 V, and VDS = 0.3 V. Which operating region is predicted by the long-channel model?",
+      "options": [
+        "Triode",
+        "Subthreshold only",
+        "Cutoff",
+        "Saturation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-355",
+      "subject": "ICI211",
+      "question": "Which programmable logic element is primarily used to implement Boolean functions in an FPGA?",
+      "options": [
+        "Look-Up Table (LUT)",
+        "Flip-flop registers",
+        "Multiplexer network",
+        "Carry chain"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-356",
+      "subject": "ICI211",
+      "question": "Which combined action is characteristic of dynamic voltage and frequency scaling when workload decreases?",
+      "options": [
+        "Disable all high-threshold devices permanently",
+        "Increase VDD while reducing frequency",
+        "Increase switching activity and capacitance",
+        "Reduce VDD and clock frequency together"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-357",
+      "subject": "ICI211",
+      "question": "Which condition gives the largest static noise margins simultaneously for a fixed VDD and steep VTC?",
+      "options": [
+        "A shallow V TC with equal input and output voltages",
+        "A switching threshold near VDD with VOL near VDD/2",
+        "A switching threshold near VDD/2 with VOL near 0 and VOH near VDD",
+        "A switching threshold near 0 with VOH near VDD/2"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-358",
+      "subject": "ICI211",
+      "question": "During evaluation of an n-type dynamic gate, which input transition is generally unsafe?",
+      "options": [
+        "No transition at all",
+        "1 → 0",
+        "A monotonic 0 → 1 transition",
+        "0 → 1"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-359",
+      "subject": "ICI211",
+      "question": "Which advantage do partitioned buses provide in low-power digital systems?",
+      "options": [
+        "Dynamic voltage scaling",
+        "Increased clock frequency",
+        "Infinite noise immunity",
+        "Lower switched capacitance"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-360",
+      "subject": "ICI211",
+      "question": "Which limitation is commonly associated with dynamic CMOS logic circuits?",
+      "options": [
+        "Constant voltage operation",
+        "Charge sharing leakage",
+        "Infinite switching speed",
+        "Reduced transistor counts"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-361",
+      "subject": "ICI211",
+      "question": "For an nMOS whose source-body junction becomes more reverse biased (VSB increases), which device parameter increases?",
+      "options": [
+        "Oxide thickness reduction",
+        "Threshold voltage increase",
+        "Channel length increase",
+        "Mobility enhancement effect"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-362",
+      "subject": "ICI211",
+      "question": "Which type of building block is used by the standard-cell methodology?",
+      "options": [
+        "Fully manual layouts",
+        "Analog routing structures",
+        "Pre-designed logic cells",
+        "Uncommitted transistor rows"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-363",
+      "subject": "ICI211",
+      "question": "Compared with a saturated enhancement-load inverter, what advantage does a properly biased linear enhancement-load inverter provide?",
+      "options": [
+        "Higher noise margins",
+        "Smaller output swing",
+        "Larger leakage current",
+        "Lower noise margins"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-364",
+      "subject": "ICI211",
+      "question": "In an ideal resistive-load nMOS inverter with its pull-down transistor in cutoff, what is the steady-state DC conduction current, neglecting leakage?",
+      "options": [
+        "Current becomes zero",
+        "Voltage becomes negative",
+        "Output equals ground",
+        "Driver enters linear"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-365",
+      "subject": "ICI211",
+      "question": "A design team must maximize performance for a high-volume processor and can accept a long development cycle. Which design style is most appropriate?",
+      "options": [
+        "Full-custom design",
+        "FPGA implementation",
+        "Gate-array design",
+        "Standard-cell design"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-366",
+      "subject": "ICI211",
+      "question": "Which power-supply arrangement is used in a saturated enhancement-load inverter circuit?",
+      "options": [
+        "Floating substrate supply",
+        "Variable threshold supply",
+        "Single power supply",
+        "Dual power supplies"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-367",
+      "subject": "ICI211",
+      "question": "Which statement correctly defines electron affinity (X) in a semiconductor?",
+      "options": [
+        "Energy difference between the vacuum level and the conduction band edge",
+        "Depletion charge density",
+        "Surface inversion voltage",
+        "Oxide electric field"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-368",
+      "subject": "ICI211",
+      "question": "Under constant-field scaling by a factor S > 1, how should device dimensions and supply voltage change?",
+      "options": [
+        "Dimensions remain constant while voltage scales by 1/S",
+        "Dimensions scale by 1/S while voltage remains constant",
+        "Dimensions and voltage both scale by S",
+        "Dimensions and voltage both scale by 1/S"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-369",
+      "subject": "ICI211",
+      "question": "A square memory array contains 1,048,576 one-bit cells. If organized with equal numbers of rows and columns, how many cells are in each row?",
+      "options": [
+        "1,024",
+        "256",
+        "512",
+        "2 048"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-370",
+      "subject": "ICI211",
+      "question": "In a master-slave transmission-gate flip-flop, which clock-phase arrangement alternately enables the two level-sensitive latches?",
+      "options": [
+        "Continuous asynchronous control",
+        "Single clock signal",
+        "Complementary, non-overlapping clock phases",
+        "Dynamic bootstrap voltage"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-371",
+      "subject": "ICI211",
+      "question": "A four-input NAND gate uses four series nMOS devices. Which sizing action best preserves pull-down strength relative to a unit inverter?",
+      "options": [
+        "Use minimum widths because series resistance cancels",
+        "Make each series nMOS four times narrower",
+        "Resize only the PMOS devices",
+        "Make each series nMOS approximately four times wider"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-372",
+      "subject": "ICI211",
+      "question": "Which inverter-stage arrangement is required for a ring oscillator to operate correctly?",
+      "options": [
+        "An odd number of at least three inverting stages in a conventional inverter ring",
+        "Even inverter stages",
+        "Single inverter stage",
+        "Transmission line stages"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-373",
+      "subject": "ICI211",
+      "question": "Which design style provides the greatest opportunity for performance optimization?",
+      "options": [
+        "FPGA",
+        "Standard-cell design",
+        "Gate array",
+        "Full-custom design"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-374",
+      "subject": "ICI211",
+      "question": "Under ideal constant-field scaling by S > 1, device dimensions and voltages scale by 1/S. What happens to dynamic power density if clock frequency scales by S?",
+      "options": [
+        "It increases by S³",
+        "It ideally remains approximately constant",
+        "It increases by S",
+        "It decreases by S²"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-375",
+      "subject": "ICI211",
+      "question": "A CMOS gate drives four identical gate inputs instead of one. If interconnect effects are negligible, which load parameter increases approximately fourfold?",
+      "options": [
+        "Threshold voltage",
+        "Load capacitance",
+        "Supply voltage",
+        "Noise-margin ratio"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-376",
+      "subject": "ICI211",
+      "question": "Which phrase does OAI stand for in digital logic and CMOS circuit design?",
+      "options": [
+        "OFFSET ANALOG INPUT",
+        "OR AND INVERT",
+        "OUTPUT ANALOG INVERTER",
+        "OVERLAP AREA INTERFACE"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-377",
+      "subject": "ICI211",
+      "question": "Which option describes the basic operating principle of synchronous dynamic circuits?",
+      "options": [
+        "Voltage controlled operation",
+        "Clock controlled operation",
+        "Asynchronous signal processing",
+        "Continuous conduction operation"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-378",
+      "subject": "ICI211",
+      "question": "A 30 fF dynamic node initially at 1.2 V shares charge with an initially discharged 10 fF internal node. Ignoring other effects, what is the final voltage?",
+      "options": [
+        "0.3 V",
+        "0.6 V",
+        "1.2 v",
+        "0.9 V"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-379",
+      "subject": "ICI211",
+      "question": "How many stable states are present in a monostable multivibrator?",
+      "options": [
+        "Multiple stable states",
+        "Two unstable states",
+        "Infinite oscillation modes",
+        "Single stable state"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-380",
+      "subject": "ICI211",
+      "question": "Which option states the main limitation of an NMOS pass transistor when transmitting a logic HIGH level?",
+      "options": [
+        "Weak logic zero",
+        "Strong logic zero",
+        "Strong logic one",
+        "Weak logic one"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-381",
+      "subject": "ICI211",
+      "question": "Which output state is forced by the reset operation of an SR latch?",
+      "options": [
+        "Logic high state",
+        "Logic low state",
+        "Floating output state",
+        "Oscillating feedback state"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-382",
+      "subject": "ICI211",
+      "question": "Which term best describes the electron affinity of a semiconductor?",
+      "options": [
+        "Depletion charge density",
+        "Oxide electric field",
+        "Conduction-vacuum energy difference",
+        "Surface inversion voltage"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-383",
+      "subject": "ICI211",
+      "question": "Which change increases the drain current most directly in the square-law saturation model, assuming all other parameters are fixed?",
+      "options": [
+        "Increasing threshold voltage",
+        "Increasing W/L",
+        "Reducing W/L",
+        "Reducing gate overdrive"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-384",
+      "subject": "ICI211",
+      "question": "For a symmetric long-channel CMOS inverter with VDD = 1.8 V, VTN = 0.4 V, |VTP| = 0.4 V, and βn = βp, what is the approximate switching threshold VM?",
+      "options": [
+        "0.7 v",
+        "0.4 V",
+        "1.4 v",
+        "0.9 V"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-385",
+      "subject": "ICI211",
+      "question": "Which gate configuration is used in a NOR-based SR latch in sequential circuit design?",
+      "options": [
+        "Parallel NAND gates",
+        "Capacitive feedback loops",
+        "Dynamic transmission gates",
+        "Cross-coupled NOR gates"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-386",
+      "subject": "ICI211",
+      "question": "Which design decision most directly applies the principle of locality in a VLSI system?",
+      "options": [
+        "Placing frequently communicating modules close together",
+        "Replacing all local wires with global buses",
+        "Using unrelated cell geometries throughout the chip",
+        "Increasing the number of hierarchy levels without partitioning"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-387",
+      "subject": "ICI211",
+      "question": "Which property is measured by the static noise margin of an SRAM cell?",
+      "options": [
+        "Current mirror accuracy",
+        "Cell stability tolerance",
+        "Dynamic refresh timing",
+        "Floating gate voltage"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-388",
+      "subject": "ICI211",
+      "question": "Which memory architecture generally offers higher density but slower random read access?",
+      "options": [
+        "NAND Flash",
+        "Register file",
+        "NOR Flash",
+        "6T SRAM"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-389",
+      "subject": "ICI211",
+      "question": "Which small-signal parameter represents the sensitivity of drain current to a change in gate-source voltage?",
+      "options": [
+        "Output resistance ro",
+        "Body capacitance Cdb",
+        "Transconductance gm",
+        "Threshold voltage VT"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-390",
+      "subject": "ICI211",
+      "question": "Under which condition does short-circuit power dissipation occur in a CMOS inverter?",
+      "options": [
+        "Both transistors are OFF",
+        "Both transistors conduct",
+        "Only the NMOS transistor conducts",
+        "Only the PMOS transistor conducts"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-391",
+      "subject": "ICI211",
+      "question": "Which statement correctly defines electron affinity?",
+      "options": [
+        "Surface inversion voltage",
+        "Conduction vacuum difference",
+        "Depletion charge density",
+        "Oxide electric field"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-392",
+      "subject": "ICI211",
+      "question": "A regular layout is reused many times in a datapath. Which combined benefit is most defensible?",
+      "options": [
+        "Removal of the need for timing analysis",
+        "Guaranteed maximum yield independent of die area",
+        "Elimination of all interconnect delay and power",
+        "Lower verification effort and more predictable physical implementation"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-393",
+      "subject": "ICI211",
+      "question": "For α = 0.2, CL = 20 fF, VDD = 1 V, and f = 500 MHz, what is the switching power α·CL·VDD²·f?",
+      "options": [
+        "0.2 μW",
+        "20 μW",
+        "200 μW",
+        "2 μW"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-394",
+      "subject": "ICI211",
+      "question": "Which phrase does RTL abbreviate?",
+      "options": [
+        "Routing timing logic",
+        "Register transfer level",
+        "Reduced transistor layout",
+        "Recursive timing language"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-395",
+      "subject": "ICI211",
+      "question": "Besides current inputs, which factor determines the output of a sequential logic circuit?",
+      "options": [
+        "Previous input history",
+        "Threshold voltage shifts",
+        "Current inputs only",
+        "Supply voltage level"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-396",
+      "subject": "ICI211",
+      "question": "For which operating mode is self-refresh useful in semiconductor memory?",
+      "options": [
+        "Dynamic threshold tuning",
+        "High-performance overclocking",
+        "Low-power standby operation",
+        "Differential sensing operation"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-397",
+      "subject": "ICI211",
+      "question": "What is the function of the weak keeper transistor in domino logic?",
+      "options": [
+        "To replace the evaluation network",
+        "To generate the clock signal",
+        "To compensate leakage and help retain the precharged level",
+        "To discharge the dynamic node during precharge"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-398",
+      "subject": "ICI211",
+      "question": "Which phrase does SRAM stand for in semiconductor memory?",
+      "options": [
+        "Signal retention array",
+        "Sequential register access",
+        "Static Random-Access Memory",
+        "Synchronous random architecture"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-399",
+      "subject": "ICI211",
+      "question": "Why can two arbitrary n-type dynamic gates not always be cascaded directly during the same evaluation phase?",
+      "options": [
+        "Both stages precharge permanently to ground",
+        "A first-stage falling output can violate the second stage's monotonic-input requirement",
+        "The second stage has no pull-down network",
+        "The first stage always outputs an analog sine wave"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-400",
+      "subject": "ICI211",
+      "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?",
+      "options": [
+        "Body bias elimination",
+        "Reverse gate conduction",
+        "Oxide capacitance reduction",
+        "Channel pinch-off formation"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-401",
+      "subject": "ICI211",
+      "question": "Which option states the primary objective of testability in VLSI circuit design?",
+      "options": [
+        "Packaging material quality",
+        "Fault detection coverage",
+        "Layout scaling reduction",
+        "Chip thermal expansion"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-402",
+      "subject": "ICI211",
+      "question": "In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion?",
+      "options": [
+        "Electrons form channel",
+        "Majority holes are repelled from the surface, leaving ionized acceptors",
+        "Holes accumulate surface",
+        "Oxide breaks down"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-403",
+      "subject": "ICI211",
+      "question": "Why is low-power CMOS design becoming increasingly important in modern electronic systems?",
+      "options": [
+        "Portable systems increasing",
+        "Clock frequencies reducing",
+        "Threshold voltages rising",
+        "Capacitor densities decreasing"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-404",
+      "subject": "ICI211",
+      "question": "During a differential SRAM read, what does the sense amplifier detect?",
+      "options": [
+        "A full rail-to-rail word-line swing at its input",
+        "The refresh counter state",
+        "A small voltage difference between complementary bit lines",
+        "The absolute package temperature only"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-405",
+      "subject": "ICI211",
+      "question": "A fabrication run costs $600,000 and produces 10,000 functional dies. Ignoring packaging cost, what is the manufacturing cost per functional die?",
+      "options": [
+        "$6",
+        "$600",
+        "$6,000",
+        "$60"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-406",
+      "subject": "ICI211",
+      "question": "How many transistors are required by a conventional complementary static CMOS three-input NAND gate?",
+      "options": [
+        "4",
+        "12",
+        "6",
+        "8"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-407",
+      "subject": "ICI211",
+      "question": "A block leaks 2 mA at VDD = 0.8 V. What is its static power consumption?",
+      "options": [
+        "0.16 mW",
+        "2.5 mW",
+        "16 mW",
+        "1.6 mW"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-408",
+      "subject": "ICI211",
+      "question": "In which domain is the output behavior examined during switching analysis?",
+      "options": [
+        "Spatial electric domain",
+        "Time response domain",
+        "Magnetic coupling domain",
+        "Frequency response domain"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-409",
+      "subject": "ICI211",
+      "question": "Which transistor network forms the pull-up network (PUN) in a CMOS logic gate?",
+      "options": [
+        "Dynamic transistor network",
+        "Transmission gate network",
+        "PMOS transistor network",
+        "NMOS transistor network"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-410",
+      "subject": "ICI211",
+      "question": "In which MOSFET devices is the hot-carrier effect most commonly observed?",
+      "options": [
+        "Reverse biased capacitors",
+        "Bipolar transistor circuits",
+        "Large geometry devices",
+        "Small geometry devices"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-411",
+      "subject": "ICI211",
+      "question": "For a long-channel nMOS transistor, VGS = 1.8 V and VT = 0.5 V. At which VDS value does the ideal device enter saturation?",
+      "options": [
+        "0.5 V",
+        "1.3 V",
+        "1.8 V",
+        "1.0 V"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-412",
+      "subject": "ICI211",
+      "question": "Yield is defined as the percentage of which fabricated items?",
+      "options": [
+        "Routing layer utilization",
+        "Power distribution buses",
+        "Available memory blocks",
+        "Functional fabricated chips"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-413",
+      "subject": "ICI211",
+      "question": "Which input is included in the configuration of a CMOS D-latch?",
+      "options": [
+        "Dynamic feedback arrays",
+        "Multiple clock inputs",
+        "Single data input",
+        "Parallel carry logic"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-414",
+      "subject": "ICI211",
+      "question": "In a conventional n-type dynamic gate with an nMOS evaluation transistor driven by CLK, which clock level enables evaluation?",
+      "options": [
+        "Clock signal inactive",
+        "Threshold voltage removed",
+        "Dynamic node isolated",
+        "CLK = HIGH (active evaluation phase)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-415",
+      "subject": "ICI211",
+      "question": "Which option states the primary purpose of using two-phase non-overlapping clocks in dynamic CMOS logic?",
+      "options": [
+        "Increase switching frequency",
+        "Eliminate body effect",
+        "Improve voltage scaling",
+        "Prevent overlap between clock phases"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-416",
+      "subject": "ICI211",
+      "question": "Which aspect do 8T SRAM cells improve in semiconductor memory and SRAM circuit design?",
+      "options": [
+        "Floating gate storage",
+        "Read operation stability",
+        "Threshold voltage scaling",
+        "Dynamic refresh efficiency"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-417",
+      "subject": "ICI211",
+      "question": "Which mechanism does FRAM use to store information in semiconductor memory technology?",
+      "options": [
+        "Floating gate electrons",
+        "Dynamic capacitor charge",
+        "Static latch circuits",
+        "Polarization charge states"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-418",
+      "subject": "ICI211",
+      "question": "Which limitation of the SR latch is eliminated by the JK latch?",
+      "options": [
+        "Feedback regenerative loops",
+        "Hold operating state",
+        "Clock synchronization requirement",
+        "Invalid SR condition"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-419",
+      "subject": "ICI211",
+      "question": "Which failure is most likely when an asynchronous input changes close to a flip-flop clock edge?",
+      "options": [
+        "Permanent short circuit in every gate",
+        "Automatic removal of clock skew",
+        "Metastability with an unpredictable resolution time",
+        "Guaranteed synchronous sampling"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-420",
+      "subject": "ICI211",
+      "question": "Which repeater strategy is most likely to reduce the delay of a very long RC-dominated interconnect?",
+      "options": [
+        "Insert appropriately sized buffers at intervals",
+        "Remove the receiver and leave the wire floating",
+        "Increase wire length without changing width",
+        "Place one minimum-size inverter only at the source"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-421",
+      "subject": "ICI211",
+      "question": "Which loss mechanism is reduced by stepwise charging in adiabatic low-power CMOS design?",
+      "options": [
+        "Resistive energy losses",
+        "Threshold voltage scaling",
+        "Clock gating efficiency",
+        "Dynamic leakage currents"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-422",
+      "subject": "ICI211",
+      "question": "For a static CMOS gate implementing Y = NOT(A•B + C), how should the nMOS pull-down network be arranged?",
+      "options": [
+        "A and B in parallel, then in series with C",
+        "A and B in series, in parallel with C",
+        "A, B, and C all in series",
+        "A, B, and C all in parallel"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-423",
+      "subject": "ICI211",
+      "question": "If VDD is reduced from 1.2 V to 0.9 V while α, CL, and f remain unchanged, what fraction of the original dynamic power remains?",
+      "options": [
+        "1.78",
+        "0.5625",
+        "1.33",
+        "0.75"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-424",
+      "subject": "ICI211",
+      "question": "Which performance advantage is characteristic of a semi-dynamic flip-flop (SDFF)?",
+      "options": [
+        "Signal drive strength",
+        "Capacitor leakage current",
+        "Threshold voltage mismatch",
+        "Oxide breakdown voltage",
+        "Fast clock-to-Q operation using a dynamic front end and a static latch"
+      ],
+      "answer": [
+        4
+      ]
+    },
+    {
+      "id": "ICI211-425",
+      "subject": "ICI211",
+      "question": "Why does an nMOS pass transistor produce a degraded logic HIGH?",
+      "options": [
+        "Its output cannot rise above ground",
+        "Conduction stops when the output approaches VDD - VTn",
+        "The PMOS pull-up remains permanently ON",
+        "The drain junction is always forward biased"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-426",
+      "subject": "ICI211",
+      "question": "Which phrase is represented by the abbreviation RTL in digital circuit design?",
+      "options": [
+        "Routing timing logic",
+        "Recursive timing language",
+        "Register transfer level",
+        "Reduced transistor layout"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-427",
+      "subject": "ICI211",
+      "question": "Why does the drain current of a real MOSFET increase slightly with VDS in saturation?",
+      "options": [
+        "The effective channel length decreases due to channel-length modulation",
+        "The source junction becomes forward biased",
+        "The oxide capacitance becomes zero",
+        "The threshold voltage becomes equal to VDS"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-428",
+      "subject": "ICI211",
+      "question": "Which VLSI design style offers the best performance optimization?",
+      "options": [
+        "Gate array design",
+        "Standard cell design",
+        "Full-custom design",
+        "FPGA implementation"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-429",
+      "subject": "ICI211",
+      "question": "What is the main trade-off introduced by power gating with sleep transistors?",
+      "options": [
+        "Higher supply voltage with lower reliability",
+        "Lower standby leakage at the cost of wake-up delay and area",
+        "Elimination of all dynamic power without delay",
+        "Higher leakage with zero area overhead"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-430",
+      "subject": "ICI211",
+      "question": "If ßn/ßp increases while threshold magnitudes remain approximately equal, how does the inverter switching threshold change?",
+      "options": [
+        "It moves toward ground",
+        "It moves toward VDD",
+        "It becomes independent of transistor sizing",
+        "It remains exactly at VDD/2"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-431",
+      "subject": "ICI211",
+      "question": "A manufacturing batch contains 2.0 million fabricated dies, of which 1.5 million pass all tests. What is the manufacturing yield?",
+      "options": [
+        "80%",
+        "75%",
+        "50%",
+        "25%"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-432",
+      "subject": "ICI211",
+      "question": "Which technique reduces dynamic power quadratically but may also reduce circuit speed?",
+      "options": [
+        "Increasing clock frequency",
+        "Reducing supply voltage",
+        "Increasing load capacitance",
+        "Increasing switching activity"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-433",
+      "subject": "ICI211",
+      "question": "Which description best characterizes the ON resistance of a CMOS transmission gate?",
+      "options": [
+        "Exponentially increasing value",
+        "Roughly constant value",
+        "Zero resistance value",
+        "Highly nonlinear value"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-434",
+      "subject": "ICI211",
+      "question": "Which expression correctly calculates the low noise margin (NML) of a CMOS inverter?",
+      "options": [
+        "VOH - VIH",
+        "VIL - VOL",
+        "VOH - VIL",
+        "VIH - VOL"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-435",
+      "subject": "ICI211",
+      "question": "Which design domain describes system functionality?",
+      "options": [
+        "Manufacturing process domain",
+        "Behavioral design domain",
+        "Routing optimization domain",
+        "Physical implementation domain"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-436",
+      "subject": "ICI211",
+      "question": "Which aspect does multi-stage decoding improve in semiconductor memory and digital circuit design?",
+      "options": [
+        "Speed signal strength",
+        "Dynamic charge sharing",
+        "Leakage current generation",
+        "Threshold voltage mismatch"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-437",
+      "subject": "ICI211",
+      "question": "Which model is typically used for interconnects in modern VLSI circuits?",
+      "options": [
+        "Pure ideal capacitive network elements",
+        "Ideal constant-voltage network sources",
+        "Nearly perfect conducting paths",
+        "Distributed RC interconnect networks"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-438",
+      "subject": "ICI211",
+      "question": "Which output transition is represented by the propagation delay tPLH?",
+      "options": [
+        "Low-to-high transition",
+        "High-to-low transition",
+        "Fall time",
+        "Rise time"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-439",
+      "subject": "ICI211",
+      "question": "Which of the following best describes the function of a pass transistor in digital electronic circuits?",
+      "options": [
+        "Constant current source",
+        "Dynamic storage node",
+        "Controlled switch element",
+        "Floating intermediate values"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-440",
+      "subject": "ICI211",
+      "question": "For a CMOS inverter with VOH = 1.8 V, VIH = 1.1 V, VIL = 0.7 V, and VOL = 0 V, what are NMH and NML?",
+      "options": [
+        "NMH = 1.8 V and NML = 0 V",
+        "NMH = 0.7 V and NML = 1.1 V",
+        "NMH = 1.1 V and NML = 0.7 V",
+        "NMH = 0.7 V and NML = 0.7 V"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-441",
+      "subject": "ICI211",
+      "question": "In an n-type dynamic logic gate, what normally happens to the dynamic node during precharge?",
+      "options": [
+        "It is forced to VDD/2",
+        "It is disconnected from every capacitance",
+        "It is discharged to ground",
+        "It is charged to VDD"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-442",
+      "subject": "ICI211",
+      "question": "Why does velocity saturation reduce the accuracy of the square-law MOSFET model in short-channel devices?",
+      "options": [
+        "Gate oxide capacitance becomes exactly zero",
+        "Threshold voltage becomes independent of bias",
+        "Carrier velocity no longer increases linearly with lateral electric field",
+        "The source and drain exchange physical positions"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-443",
+      "subject": "ICI211",
+      "question": "Which storage element holds data in a dynamic shift register?",
+      "options": [
+        "Parasitic capacitances only",
+        "Transmission line stages",
+        "Bipolar latch elements",
+        "Current source arrays"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-444",
+      "subject": "ICI211",
+      "question": "A 256 x 16 memory is organized as 256 words. What is its total storage capacity?",
+      "options": [
+        "2048 bits",
+        "256 bits",
+        "4096 bits",
+        "8192 bits"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-445",
+      "subject": "ICI211",
+      "question": "Which memory characteristic is determined by access time?",
+      "options": [
+        "Data retention time",
+        "Power consumption",
+        "Memory capacity",
+        "Memory operating speed"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-446",
+      "subject": "ICI211",
+      "question": "Which VTC characteristic most directly indicates strong rejection of small input disturbances around valid logic levels?",
+      "options": [
+        "A small difference between VOH and VOL",
+        "An output fixed near VDD/2",
+        "A high static current at Vin = 0",
+        "A large magnitude of gain in the transition region and wide noise margins"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-447",
+      "subject": "ICI211",
+      "question": "If both nMOS and PMOS widths are multiplied by the same factor while their ratio is unchanged, which inverter property remains approximately unchanged?",
+      "options": [
+        "Switching threshold",
+        "Input capacitance",
+        "Propagation delay under the same external load",
+        "Drive current"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-448",
+      "subject": "ICI211",
+      "question": "A synchronous path has clock-to-Q delay 100 PS, combinational delay 750 PS, and setup time 150 ps. Ignoring skew, what is the maximum clock frequency?",
+      "options": [
+        "1.0 GHz",
+        "0.5 GHz",
+        "1.25 GHz",
+        "2.0 GHz"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-449",
+      "subject": "ICI211",
+      "question": "Which quantity is represented by the switching activity factor in CMOS power analysis?",
+      "options": [
+        "Threshold voltage variation",
+        "Clock skew difference",
+        "Transition probability measure",
+        "Dynamic capacitance ratio"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-450",
+      "subject": "ICI211",
+      "question": "A first-order RC node has R = 4 kΩ and C = 50 fF. Using t ≈ 0.69RC, what is the estimated propagation delay?",
+      "options": [
+        "69 ps",
+        "13.8 ps",
+        "345 ps",
+        "138 ps"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-451",
+      "subject": "ICI211",
+      "question": "A 64 K × 8 memory, with K = 1024 words, stores how many bits in total?",
+      "options": [
+        "262,144 bits",
+        "1,048,576 bits",
+        "524,288 bits",
+        "65,536 bits"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-452",
+      "subject": "ICI211",
+      "question": "Which property distinguishes pseudo-nMOS logic from complementary static CMOS?",
+      "options": [
+        "It uses no PMOS transistor",
+        "Its PMOS load is always ON, causing ratioed operation",
+        "Its pull-down network contains only PMOS devices",
+        "It has zero static current for every input"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-453",
+      "subject": "ICI211",
+      "question": "Which effect is introduced by signal crosstalk in a VLSI interconnect system?",
+      "options": [
+        "Reduced wire resistance",
+        "Infinite propagation speed",
+        "Additional switching noise",
+        "Zero coupling effects"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-454",
+      "subject": "ICI211",
+      "question": "Which input condition produces the invalid state in a NOR-based SR latch?",
+      "options": [
+        "R equals zero",
+        "S equals zero",
+        "Clock becomes inactive",
+        "S and R high"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-455",
+      "subject": "ICI211",
+      "question": "Which Boolean function is implemented by a static CMOS gate whose pull-down network has A and B in parallel and that combination in series with C?",
+      "options": [
+        "Y = A + B + C",
+        "Y = (A + B)C",
+        "Y = NOT[(A + B)C]",
+        "Y = NOT(AB + C)"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-456",
+      "subject": "ICI211",
+      "question": "What is the principal speed-versus-robustness trade-off when increasing the strength of a domino keeper?",
+      "options": [
+        "A stronger keeper makes the gate independent of leakage",
+        "A stronger keeper eliminates dynamic power",
+        "A stronger keeper removes all clock loading without penalty",
+        "A stronger keeper improves noise immunity but increases evaluation contention"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-457",
+      "subject": "ICI211",
+      "question": "Which option states the primary advantage of NOR Flash memory compared with NAND Flash memory?",
+      "options": [
+        "Higher storage density",
+        "Fast random access",
+        "Faster write and erase operations",
+        "Lower manufacturing cost"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-458",
+      "subject": "ICI211",
+      "question": "If defect density remains constant while die area increases, which result is most likely according to common yield models?",
+      "options": [
+        "Yield remains unchanged because technology is unchanged",
+        "Yield increases because more functions share each die",
+        "Yield becomes independent of process defects",
+        "Yield decreases because a larger die is more likely to contain a defect"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-459",
+      "subject": "ICI211",
+      "question": "Which option states the primary advantage of a full CMOS SRAM cell?",
+      "options": [
+        "Dynamic refresh operation",
+        "Floating output states",
+        "Large static dissipation",
+        "Superior noise margins"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-460",
+      "subject": "ICI211",
+      "question": "Which short-channel effect primarily causes the threshold voltage to decrease as drain voltage increases?",
+      "options": [
+        "Drain-induced barrier lowering",
+        "Gate-oxide tunneling",
+        "Body effect",
+        "Channel-length modulation"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-461",
+      "subject": "ICI211",
+      "question": "Which circuit path is disconnected during standby operation in an MTCMOS circuit?",
+      "options": [
+        "Logic supply paths",
+        "Dynamic clock networks",
+        "Capacitive output nodes",
+        "Oscillating current mirrors"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-462",
+      "subject": "ICI211",
+      "question": "Compared with complementary static CMOS implementing the same logic function, what advantage can pseudo-nMOS provide?",
+      "options": [
+        "Smaller silicon area",
+        "Larger noise margins",
+        "Infinite switching speed",
+        "Zero static current"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-463",
+      "subject": "ICI211",
+      "question": "At a fixed required throughput, how can pipelining potentially reduce dynamic power?",
+      "options": [
+        "Increasing threshold voltage",
+        "Allowing a lower supply voltage by reducing combinational delay per stage",
+        "Eliminating dynamic switching",
+        "Removing register overhead"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-464",
+      "subject": "ICI211",
+      "question": "Which option states the main disadvantage of pseudo-nMOS logic circuits?",
+      "options": [
+        "Large propagation delay",
+        "Poor switching speed",
+        "Static power dissipation",
+        "High transistor count"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-465",
+      "subject": "ICI211",
+      "question": "A node with capacitance 40 fF is charged from 0 to 1 V. Using E = CL·VDD², how much energy is drawn from the supply for one charging event?",
+      "options": [
+        "40 fJ",
+        "20 fJ",
+        "4 fJ",
+        "80 fJ"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-466",
+      "subject": "ICI211",
+      "question": "Which objective is addressed by technology updateability?",
+      "options": [
+        "Eliminate CAD automation",
+        "Increase fabrication complexity",
+        "Reduce design portability",
+        "Adapt designs efficiently"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-467",
+      "subject": "ICI211",
+      "question": "Which change most directly reduces the propagation delay of an inverter driving a fixed external load?",
+      "options": [
+        "Increasing transistor width to reduce effective resistance",
+        "Adding interconnect capacitance",
+        "Increasing effective ON resistance",
+        "Reducing transistor width"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-468",
+      "subject": "ICI211",
+      "question": "Two adjacent long wires switch simultaneously in opposite directions. Compared with switching in the same direction, what is the likely crosstalk effect?",
+      "options": [
+        "No dependence on neighboring transitions",
+        "Zero coupling capacitance in both cases",
+        "Higher effective coupling capacitance and potentially higher delay",
+        "Lower effective coupling capacitance and lower delay"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-469",
+      "subject": "ICI211",
+      "question": "A transmission-gate 2:1 multiplexer selects D0 when S = 0 and D1 when S = 1. Which Boolean expression describes its output?",
+      "options": [
+        "Y = NOT(S)·D0 + S·D1",
+        "Y = S(D0 + D1)",
+        "Y = S·D0 + NOT(S)·D1",
+        "Y = D0D1"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-470",
+      "subject": "ICI211",
+      "question": "At Vin = 0 in an ideal CMOS inverter, which transistor states establish the output?",
+      "options": [
+        "nMOS OFF and PMOS ON",
+        "Both transistors OFF",
+        "nMOS ON and PMOS OFF",
+        "Both transistors ON"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-471",
+      "subject": "ICI211",
+      "question": "Which option states the primary objective of Active VTCMOS during normal circuit operation?",
+      "options": [
+        "High-speed operation",
+        "Improved noise margin",
+        "Reduced chip area",
+        "Low leakage current"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-472",
+      "subject": "ICI211",
+      "question": "Which aspect of interconnect analysis is improved by the T-model approximation?",
+      "options": [
+        "Delay estimation accuracy",
+        "Oxide capacitance scaling",
+        "Carrier mobility analysis",
+        "Threshold voltage extraction"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-473",
+      "subject": "ICI211",
+      "question": "In which MOSFET category are short-channel effects most significant?",
+      "options": [
+        "Deep-submicron MOSFET devices",
+        "Static resistor networks",
+        "Bipolar transistor arrays",
+        "Large geometry MOSFET devices"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-474",
+      "subject": "ICI211",
+      "question": "An inverter drives CL = 20 fF through an effective pull-down resistance of 5 kΩ. Using tPHL ≈ 0.69RCL, what is the estimated delay?",
+      "options": [
+        "6.9 ps",
+        "69 ps",
+        "690 ps",
+        "1.45 ns"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-475",
+      "subject": "ICI211",
+      "question": "A design is expected to ship only 500 units and may require future hardware updates. Which implementation choice best minimizes non-recurring engineering risk?",
+      "options": [
+        "Gate array requiring custom masks",
+        "Standard-cell ASIC",
+        "FPGA",
+        "Full-custom ASIC"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-476",
+      "subject": "ICI211",
+      "question": "Which output transition is represented by the propagation delay tPHL?",
+      "options": [
+        "High-to-low transition",
+        "Fall time",
+        "Rise time",
+        "Low-to-high transition"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-477",
+      "subject": "ICI211",
+      "question": "Which description correctly characterizes MOSFET overlap capacitances?",
+      "options": [
+        "Strongly current-dependent capacitances",
+        "Highly frequency-dependent capacitances",
+        "Approximately voltage-independent capacitances",
+        "Primarily temperature-controlled capacitances"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-478",
+      "subject": "ICI211",
+      "question": "Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2?",
+      "options": [
+        "Equal switching margins",
+        "Equal output voltages",
+        "Equal transistor sizes",
+        "Equal propagation delays"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-479",
+      "subject": "ICI211",
+      "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?",
+      "options": [
+        "Reverse gate conduction",
+        "Oxide capacitance reduction",
+        "Channel pinch-off formation",
+        "Body bias elimination"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-480",
+      "subject": "ICI211",
+      "question": "A CMOS inverter drives only an identical inverter input and is at a valid static logic level. Which statement best explains its near-zero ideal static power?",
+      "options": [
+        "The substrate supplies the load current",
+        "Both devices carry equal DC current",
+        "The output capacitor blocks all transient current",
+        "One transistor in the pull-up/pull-down path is OFF"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-481",
+      "subject": "ICI211",
+      "question": "Which phrase correctly defines NORA logic in dynamic CMOS and high-speed digital circuit design?",
+      "options": [
+        "NO RAce logic",
+        "Negative Output Race Avoidance",
+        "Non-Optimized Routing Architecture",
+        "Non-Overlapping Register Architecture"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-482",
+      "subject": "ICI211",
+      "question": "A two-latch pipeline uses non-overlapping clock phases φ1 and φ2. Why must the phases not overlap?",
+      "options": [
+        "To prevent both latches from being transparent simultaneously",
+        "To double the static noise margin automatically",
+        "To force both outputs LOW",
+        "To remove every clock transistor"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-483",
+      "subject": "ICI211",
+      "question": "In a dynamic latch, what stores the logic value while the sampling transistor is OFF?",
+      "options": [
+        "A forward-biased diode",
+        "A DC current through both rails",
+        "Charge on an internal capacitance",
+        "A resistive divider"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-484",
+      "subject": "ICI211",
+      "question": "For a long-channel nMOS in saturation, ID = 0.5β(VGS - VT)². If the overdrive voltage doubles while β is unchanged, by what factor does ID increase?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "64"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-485",
+      "subject": "ICI211",
+      "question": "Which phrase does NORA logic stand for in dynamic CMOS and high-speed digital circuit design?",
+      "options": [
+        "NO RAce logic",
+        "Non-Optimized Routing Architecture",
+        "Negative Output Race Avoidance",
+        "Non-Overlapping Register Architecture"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-486",
+      "subject": "ICI211",
+      "question": "For a CMOS inverter at a valid steady-state logic level, what is the ideal DC supply current, apart from real-device leakage?",
+      "options": [
+        "Extremely large during operation",
+        "Ideally zero except leakage current",
+        "Independent of leakage effects",
+        "Equal to threshold current"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-487",
+      "subject": "ICI211",
+      "question": "Which phrase is represented by the abbreviation SR latch?",
+      "options": [
+        "Shift register latch",
+        "Synchronous register latch",
+        "Set reset latch",
+        "Sequential register latch"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-488",
+      "subject": "ICI211",
+      "question": "Which factor has a strong influence on switching power in CMOS and digital circuit operation?",
+      "options": [
+        "Frequency inverse relation",
+        "Resistance independent behavior",
+        "Supply voltage squared",
+        "Threshold voltage cubed"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-489",
+      "subject": "ICI211",
+      "question": "Which statement correctly defines regularity in VLSI design?",
+      "options": [
+        "Variable transistor shapes",
+        "Independent timing domains",
+        "Repeated similar blocks",
+        "Randomized routing paths"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-490",
+      "subject": "ICI211",
+      "question": "Which requirement allows dynamic logic to maintain correct operation?",
+      "options": [
+        "Continuous conduction paths",
+        "Periodic precharge/evaluate cycles that restore dynamic-node charge",
+        "Infinite voltage supply",
+        "Constant threshold scaling"
+      ],
+      "answer": [
+        1
+      ]
+    },
+    {
+      "id": "ICI211-491",
+      "subject": "ICI211",
+      "question": "Which input condition produces the invalid state in a NOR-based SR latch?",
+      "options": [
+        "When both inputs are LOW (S = 0, R = 0)",
+        "When the Set input is HIGH and the Reset input is LOW (S = 1, R = 0)",
+        "When the Set input is LOW and the Reset input is HIGH (S = 0, R = 1)",
+        "When both the Set and Reset inputs are HIGH (S = 1, R = 1)"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-492",
+      "subject": "ICI211",
+      "question": "Which abstraction level should be refined immediately after the architectural description in a typical top- down digital VLSI flow?",
+      "options": [
+        "Register-transfer level",
+        "Package assembly level",
+        "Crystal-growth level",
+        "Fabrication mask level"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-493",
+      "subject": "ICI211",
+      "question": "Which option states the primary purpose of voltage bootstrapping in CMOS circuits?",
+      "options": [
+        "Increasing internal node voltage",
+        "Reducing oxide capacitance value",
+        "Eliminating parasitic resistance entirely",
+        "Lowering transistor body effect"
+      ],
+      "answer": [
+        0
+      ]
+    },
+    {
+      "id": "ICI211-494",
+      "subject": "ICI211",
+      "question": "Why must the pull-up network be the dual of the pull-down network in complementary static CMOS?",
+      "options": [
+        "To force the output to high impedance",
+        "To eliminate all input capacitance",
+        "To ensure one network connects the output to a supply for every valid input combination",
+        "To make both networks conduct strongly in steady state"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-495",
+      "subject": "ICI211",
+      "question": "Which loss mechanism is reduced by stepwise charging in adiabatic low-power CMOS design?",
+      "options": [
+        "Threshold voltage scaling",
+        "Dynamic leakage currents",
+        "Clock gating efficiency",
+        "Resistive energy losses"
+      ],
+      "answer": [
+        3
+      ]
+    },
+    {
+      "id": "ICI211-496",
+      "subject": "ICI211",
+      "question": "Which circuit structure is commonly used in multiplexers for digital and CMOS circuit design?",
+      "options": [
+        "Bipolar transistor stages",
+        "Dynamic capacitor arrays",
+        "Transmission gate structures",
+        "Resistive divider circuits"
+      ],
+      "answer": [
+        2
+      ]
+    },
+    {
+      "id": "ICI211-497",
+      "subject": "ICI211",
+      "question": "Which SRAM sizing relationship most directly supports a successful write operation?",
+      "options": [
+        "Both bit lines must remain precharged HIGH throughout the write",
+        "The cell pull-up must always overpower the access transistor",
+        "The word line must remain LOW during the write",
+        "The access transistor must overpower the cell pull-up sufficiently"
+      ],
+      "answer": [
+        3
+      ]
+    }
+  ],
+  "sameStemGroups": [
+    [
+      "ICI211-261",
+      "ICI211-331"
+    ],
+    [
+      "ICI211-264",
+      "ICI211-402"
+    ],
+    [
+      "ICI211-281",
+      "ICI211-403"
+    ],
+    [
+      "ICI211-286",
+      "ICI211-351"
+    ],
+    [
+      "ICI211-293",
+      "ICI211-400",
+      "ICI211-479"
+    ],
+    [
+      "ICI211-295",
+      "ICI211-478"
+    ],
+    [
+      "ICI211-346",
+      "ICI211-481"
+    ],
+    [
+      "ICI211-347",
+      "ICI211-348"
+    ],
+    [
+      "ICI211-421",
+      "ICI211-495"
+    ],
+    [
+      "ICI211-454",
+      "ICI211-491"
+    ]
+  ],
+  "candidates": [
+    {
+      "ids": [
+        "ICI211-251",
+        "ICI211-272"
+      ],
+      "similarity": 0.983
+    },
+    {
+      "ids": [
+        "ICI211-438",
+        "ICI211-476"
+      ],
+      "similarity": 0.983
+    },
+    {
+      "ids": [
+        "ICI211-299",
+        "ICI211-416"
+      ],
+      "similarity": 0.958
+    },
+    {
+      "ids": [
+        "ICI211-305",
+        "ICI211-344"
+      ],
+      "similarity": 0.947
+    },
+    {
+      "ids": [
+        "ICI211-282",
+        "ICI211-360"
+      ],
+      "similarity": 0.929
+    },
+    {
+      "ids": [
+        "ICI211-298",
+        "ICI211-496"
+      ],
+      "similarity": 0.909
+    },
+    {
+      "ids": [
+        "ICI211-270",
+        "ICI211-320"
+      ],
+      "similarity": 0.899
+    },
+    {
+      "ids": [
+        "ICI211-346",
+        "ICI211-485"
+      ],
+      "similarity": 0.861
+    },
+    {
+      "ids": [
+        "ICI211-481",
+        "ICI211-485"
+      ],
+      "similarity": 0.861
+    },
+    {
+      "ids": [
+        "ICI211-260",
+        "ICI211-366"
+      ],
+      "similarity": 0.847
+    },
+    {
+      "ids": [
+        "ICI211-367",
+        "ICI211-391"
+      ],
+      "similarity": 0.844
+    },
+    {
+      "ids": [
+        "ICI211-257",
+        "ICI211-325"
+      ],
+      "similarity": 0.812
+    },
+    {
+      "ids": [
+        "ICI211-300",
+        "ICI211-335"
+      ],
+      "similarity": 0.808
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-464"
+      ],
+      "similarity": 0.797
+    },
+    {
+      "ids": [
+        "ICI211-416",
+        "ICI211-436"
+      ],
+      "similarity": 0.795
+    },
+    {
+      "ids": [
+        "ICI211-426",
+        "ICI211-487"
+      ],
+      "similarity": 0.772
+    },
+    {
+      "ids": [
+        "ICI211-271",
+        "ICI211-326"
+      ],
+      "similarity": 0.771
+    },
+    {
+      "ids": [
+        "ICI211-255",
+        "ICI211-424"
+      ],
+      "similarity": 0.761
+    },
+    {
+      "ids": [
+        "ICI211-325",
+        "ICI211-459"
+      ],
+      "similarity": 0.758
+    },
+    {
+      "ids": [
+        "ICI211-299",
+        "ICI211-436"
+      ],
+      "similarity": 0.756
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-493"
+      ],
+      "similarity": 0.756
+    },
+    {
+      "ids": [
+        "ICI211-283",
+        "ICI211-353"
+      ],
+      "similarity": 0.753
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-459"
+      ],
+      "similarity": 0.75
+    },
+    {
+      "ids": [
+        "ICI211-263",
+        "ICI211-275"
+      ],
+      "similarity": 0.744
+    },
+    {
+      "ids": [
+        "ICI211-401",
+        "ICI211-471"
+      ],
+      "similarity": 0.74
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-401"
+      ],
+      "similarity": 0.736
+    },
+    {
+      "ids": [
+        "ICI211-291",
+        "ICI211-390"
+      ],
+      "similarity": 0.735
+    },
+    {
+      "ids": [
+        "ICI211-391",
+        "ICI211-489"
+      ],
+      "similarity": 0.735
+    },
+    {
+      "ids": [
+        "ICI211-373",
+        "ICI211-428"
+      ],
+      "similarity": 0.734
+    },
+    {
+      "ids": [
+        "ICI211-320",
+        "ICI211-437"
+      ],
+      "similarity": 0.733
+    },
+    {
+      "ids": [
+        "ICI211-367",
+        "ICI211-489"
+      ],
+      "similarity": 0.73
+    },
+    {
+      "ids": [
+        "ICI211-267",
+        "ICI211-396"
+      ],
+      "similarity": 0.727
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-325"
+      ],
+      "similarity": 0.722
+    },
+    {
+      "ids": [
+        "ICI211-263",
+        "ICI211-299"
+      ],
+      "similarity": 0.717
+    },
+    {
+      "ids": [
+        "ICI211-263",
+        "ICI211-436"
+      ],
+      "similarity": 0.713
+    },
+    {
+      "ids": [
+        "ICI211-376",
+        "ICI211-485"
+      ],
+      "similarity": 0.701
+    },
+    {
+      "ids": [
+        "ICI211-367",
+        "ICI211-382"
+      ],
+      "similarity": 0.7
+    },
+    {
+      "ids": [
+        "ICI211-284",
+        "ICI211-302"
+      ],
+      "similarity": 0.696
+    },
+    {
+      "ids": [
+        "ICI211-325",
+        "ICI211-464"
+      ],
+      "similarity": 0.693
+    },
+    {
+      "ids": [
+        "ICI211-263",
+        "ICI211-416"
+      ],
+      "similarity": 0.692
+    },
+    {
+      "ids": [
+        "ICI211-438",
+        "ICI211-487"
+      ],
+      "similarity": 0.692
+    },
+    {
+      "ids": [
+        "ICI211-476",
+        "ICI211-487"
+      ],
+      "similarity": 0.692
+    },
+    {
+      "ids": [
+        "ICI211-269",
+        "ICI211-439"
+      ],
+      "similarity": 0.689
+    },
+    {
+      "ids": [
+        "ICI211-398",
+        "ICI211-417"
+      ],
+      "similarity": 0.689
+    },
+    {
+      "ids": [
+        "ICI211-457",
+        "ICI211-459"
+      ],
+      "similarity": 0.687
+    },
+    {
+      "ids": [
+        "ICI211-401",
+        "ICI211-493"
+      ],
+      "similarity": 0.681
+    },
+    {
+      "ids": [
+        "ICI211-415",
+        "ICI211-493"
+      ],
+      "similarity": 0.675
+    },
+    {
+      "ids": [
+        "ICI211-252",
+        "ICI211-421"
+      ],
+      "similarity": 0.671
+    },
+    {
+      "ids": [
+        "ICI211-252",
+        "ICI211-495"
+      ],
+      "similarity": 0.671
+    },
+    {
+      "ids": [
+        "ICI211-270",
+        "ICI211-437"
+      ],
+      "similarity": 0.671
+    },
+    {
+      "ids": [
+        "ICI211-284",
+        "ICI211-398"
+      ],
+      "similarity": 0.667
+    },
+    {
+      "ids": [
+        "ICI211-277",
+        "ICI211-409"
+      ],
+      "similarity": 0.656
+    },
+    {
+      "ids": [
+        "ICI211-459",
+        "ICI211-464"
+      ],
+      "similarity": 0.655
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-457"
+      ],
+      "similarity": 0.647
+    },
+    {
+      "ids": [
+        "ICI211-322",
+        "ICI211-448"
+      ],
+      "similarity": 0.644
+    },
+    {
+      "ids": [
+        "ICI211-263",
+        "ICI211-289"
+      ],
+      "similarity": 0.642
+    },
+    {
+      "ids": [
+        "ICI211-268",
+        "ICI211-490"
+      ],
+      "similarity": 0.642
+    },
+    {
+      "ids": [
+        "ICI211-396",
+        "ICI211-398"
+      ],
+      "similarity": 0.642
+    },
+    {
+      "ids": [
+        "ICI211-464",
+        "ICI211-493"
+      ],
+      "similarity": 0.641
+    },
+    {
+      "ids": [
+        "ICI211-315",
+        "ICI211-471"
+      ],
+      "similarity": 0.637
+    },
+    {
+      "ids": [
+        "ICI211-305",
+        "ICI211-454"
+      ],
+      "similarity": 0.636
+    },
+    {
+      "ids": [
+        "ICI211-305",
+        "ICI211-491"
+      ],
+      "similarity": 0.636
+    },
+    {
+      "ids": [
+        "ICI211-303",
+        "ICI211-416"
+      ],
+      "similarity": 0.635
+    },
+    {
+      "ids": [
+        "ICI211-276",
+        "ICI211-285"
+      ],
+      "similarity": 0.634
+    },
+    {
+      "ids": [
+        "ICI211-253",
+        "ICI211-285"
+      ],
+      "similarity": 0.632
+    },
+    {
+      "ids": [
+        "ICI211-269",
+        "ICI211-380"
+      ],
+      "similarity": 0.631
+    },
+    {
+      "ids": [
+        "ICI211-344",
+        "ICI211-454"
+      ],
+      "similarity": 0.63
+    },
+    {
+      "ids": [
+        "ICI211-344",
+        "ICI211-491"
+      ],
+      "similarity": 0.63
+    },
+    {
+      "ids": [
+        "ICI211-376",
+        "ICI211-398"
+      ],
+      "similarity": 0.63
+    },
+    {
+      "ids": [
+        "ICI211-381",
+        "ICI211-487"
+      ],
+      "similarity": 0.627
+    },
+    {
+      "ids": [
+        "ICI211-459",
+        "ICI211-493"
+      ],
+      "similarity": 0.624
+    },
+    {
+      "ids": [
+        "ICI211-250",
+        "ICI211-263"
+      ],
+      "similarity": 0.623
+    },
+    {
+      "ids": [
+        "ICI211-276",
+        "ICI211-376"
+      ],
+      "similarity": 0.623
+    },
+    {
+      "ids": [
+        "ICI211-262",
+        "ICI211-391"
+      ],
+      "similarity": 0.622
+    },
+    {
+      "ids": [
+        "ICI211-299",
+        "ICI211-303"
+      ],
+      "similarity": 0.622
+    },
+    {
+      "ids": [
+        "ICI211-325",
+        "ICI211-457"
+      ],
+      "similarity": 0.622
+    },
+    {
+      "ids": [
+        "ICI211-436",
+        "ICI211-485"
+      ],
+      "similarity": 0.621
+    }
+  ]
+}

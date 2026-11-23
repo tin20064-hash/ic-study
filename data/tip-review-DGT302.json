@@ -1,0 +1,2129 @@
+{
+  "subject": "DGT302",
+  "reviewedCount": 298,
+  "ledger": [
+    {
+      "id": "DGT302-500",
+      "status": "fix",
+      "whyVi": "Giữ cue r=1 nhưng thêm điều kiện tồn tại DTFT và phân biệt CTFT trong lựa chọn."
+    },
+    {
+      "id": "DGT302-501",
+      "status": "keep",
+      "whyVi": "Cue BIBO và ROC đã dẫn đúng tới điều kiện chứa vòng đơn vị; lời giải cùng nội dung."
+    },
+    {
+      "id": "DGT302-502",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ gọi tên pole migration, chưa nêu hậu quả mất ổn định mà câu hỏi yêu cầu."
+    },
+    {
+      "id": "DGT302-503",
+      "status": "keep",
+      "whyVi": "Mẹo kiểm tra mọi |Ki|<1 khớp trực tiếp điều kiện ổn định lattice all-pole, không lẫn vị trí cực."
+    },
+    {
+      "id": "DGT302-504",
+      "status": "fix",
+      "whyVi": "Cụm đánh đổi thời gian–tần số còn chung; nêu chiều đánh đổi để loại đáp án cải thiện đồng thời."
+    },
+    {
+      "id": "DGT302-505",
+      "status": "fix",
+      "whyVi": "Thêm cách nhận ra dấu trừ triệt alias; bỏ lời giải nhắc vị trí đáp án của bản cũ đã được sửa."
+    },
+    {
+      "id": "DGT302-506",
+      "status": "fix",
+      "whyVi": "Câu hỏi so sánh hai mục tiêu; mẹo cũ chỉ nêu một nửa prediction."
+    },
+    {
+      "id": "DGT302-507",
+      "status": "keep",
+      "whyVi": "Mẹo giữ cả causal và stable cho nghịch đảo, đồng thời tránh khẳng định sai nghịch đảo luôn IIR."
+    },
+    {
+      "id": "DGT302-508",
+      "status": "fix",
+      "whyVi": "Bổ sung dấu nhận biết DFT thuận và góc 2π/N thay vì chỉ chép công thức chọn."
+    },
+    {
+      "id": "DGT302-509",
+      "status": "keep",
+      "whyVi": "Giữ điện áp đến clock tiếp theo là Holding; cue trong mẹo trùng đúng hành vi ADC mô tả."
+    },
+    {
+      "id": "DGT302-510",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ kiểm tra dấu tử, thiếu đặc điểm mẫu bình phương để phân biệt đầy đủ công thức."
+    },
+    {
+      "id": "DGT302-511",
+      "status": "fix",
+      "whyVi": "Nêu đúng điều kiện M cố định và hai vế đánh đổi; tránh nhầm tăng chiều dài làm transition hẹp."
+    },
+    {
+      "id": "DGT302-512",
+      "status": "keep",
+      "whyVi": "Mẹo zero-pad đủ L+M−1 đúng điều kiện chập vòng không cuộn chồng, không chọn nhầm tích L·M."
+    },
+    {
+      "id": "DGT302-513",
+      "status": "keep",
+      "whyVi": "Cue DIF dẫn natural input và bit-reversed output, đúng cấu trúc tiêu chuẩn trong stem."
+    },
+    {
+      "id": "DGT302-514",
+      "status": "keep",
+      "whyVi": "Sampling tạo các bản sao phổ cách Fs; mẹo không nhầm sự lặp bình thường với aliasing."
+    },
+    {
+      "id": "DGT302-515",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nói phần ảo âm, không đủ phân biệt hai phương án có phần ảo âm; thêm phép cộng đúng dữ kiện."
+    },
+    {
+      "id": "DGT302-516",
+      "status": "keep",
+      "whyVi": "Mẹo gắn đúng up=3/down=4, cutoff chuẩn hóa 1/4 và gain 3; không áp dụng gain theo down."
+    },
+    {
+      "id": "DGT302-517",
+      "status": "keep",
+      "whyVi": "Giữ dạng qua LTI là dấu nhận biết eigenfunction; khớp biểu thức đầu ra đã cho."
+    },
+    {
+      "id": "DGT302-518",
+      "status": "fix",
+      "whyVi": "Bổ sung N/2 và quy ước kể phép nhân tầm thường để không chỉ học thuộc số 5120."
+    },
+    {
+      "id": "DGT302-519",
+      "status": "keep",
+      "whyVi": "Mẹo nhân cos tạo hai phổ dịch với hệ số 1/2 là đúng đặc điểm phân biệt với điều chế mũ phức."
+    },
+    {
+      "id": "DGT302-520",
+      "status": "keep",
+      "whyVi": "Thử từng bit là cue nhận ra successive approximation, phù hợp mô tả SAR trong lời giải."
+    },
+    {
+      "id": "DGT302-521",
+      "status": "keep",
+      "whyVi": "Mẹo nêu chuẩn hóa DFT thuận không chia N nên Parseval có 1/N, đủ phân biệt các hệ số nhiễu."
+    },
+    {
+      "id": "DGT302-522",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đúng dấu mũ nhưng chưa dùng vị trí zero và mẫu cuối để kiểm tra công thức cụ thể."
+    },
+    {
+      "id": "DGT302-523",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt DTFT thuận bằng dấu âm và tổng hai phía, đủ loại CTFT và DFT hữu hạn."
+    },
+    {
+      "id": "DGT302-524",
+      "status": "fix",
+      "whyVi": "Thay cue LTI quá rộng bằng đúng cấu trúc phương trình sai phân trong stem."
+    },
+    {
+      "id": "DGT302-525",
+      "status": "fix",
+      "whyVi": "Giữ điều kiện radix-4 thuần và thêm cách loại hợp số, không khái quát sang mixed radix."
+    },
+    {
+      "id": "DGT302-526",
+      "status": "keep",
+      "whyVi": "Tên up–FIR–down gắn trực tiếp với ba thao tác và hàm upfirdn; lời giải có polyphase hiệu quả."
+    },
+    {
+      "id": "DGT302-527",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nêu 9%, thiếu thay đổi nào thực sự xảy ra khi tăng M."
+    },
+    {
+      "id": "DGT302-528",
+      "status": "keep",
+      "whyVi": "Canonic Direct Form II dùng max(M,N) delay, mẹo và lý do chia sẻ dãy trễ phù hợp."
+    },
+    {
+      "id": "DGT302-529",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt song song cộng và nối tiếp chập bám đúng lỗi nguồn đã sửa; đáp án hiện là tổng h1+h2."
+    },
+    {
+      "id": "DGT302-530",
+      "status": "keep",
+      "whyVi": "Đây là câu hỏi tên hàm mục tiêu; mnemonic predictor→minimize MSE cụ thể và lời giải đúng."
+    },
+    {
+      "id": "DGT302-531",
+      "status": "keep",
+      "whyVi": "Phân thức riêng tạo tổng các nhánh song song; cue parallel IIR khớp đúng kỹ thuật cần gọi tên."
+    },
+    {
+      "id": "DGT302-532",
+      "status": "keep",
+      "whyVi": "MA không có hồi tiếp nên all-zero/FIR; mẹo MA→FIR đủ phân biệt AR/all-pole."
+    },
+    {
+      "id": "DGT302-533",
+      "status": "keep",
+      "whyVi": "Mẹo có từ ít nhất phần giao, giữ khả năng ROC rộng hơn do triệt cực; không khẳng định luôn bằng giao."
+    },
+    {
+      "id": "DGT302-534",
+      "status": "keep",
+      "whyVi": "Tên tham số lattice là reflection coefficients, mnemonic cụ thể khớp đúng câu định nghĩa."
+    },
+    {
+      "id": "DGT302-535",
+      "status": "fix",
+      "whyVi": "Thêm bước công bội và tổng hình học để nhận công thức, không chỉ lặp nguyên đáp án."
+    },
+    {
+      "id": "DGT302-536",
+      "status": "keep",
+      "whyVi": "Câu gọi tên Fs/2; Nyquist/folding là mnemonic đúng và không lẫn Nyquist rate bằng 2Fmax."
+    },
+    {
+      "id": "DGT302-537",
+      "status": "keep",
+      "whyVi": "Notch ở ω0 đòi zero trên vòng đơn vị góc ±ω0, mẹo thể hiện cả góc lẫn bán kính."
+    },
+    {
+      "id": "DGT302-538",
+      "status": "fix",
+      "whyVi": "Nêu rõ hướng thời gian→tần số và tính tuần hoàn của chập DTFT để không lẫn định lý chập."
+    },
+    {
+      "id": "DGT302-539",
+      "status": "fix",
+      "whyVi": "Mẹo cũ đưa magnitude vào dù câu hỏi chỉ xét méo pha; thay bằng chuỗi suy luận đúng mục tiêu."
+    },
+    {
+      "id": "DGT302-540",
+      "status": "keep",
+      "whyVi": "Nghịch đảo đổi tử/mẫu nên zeros thành poles; cue này đủ nhận dạng thao tác deconvolution trong stem."
+    },
+    {
+      "id": "DGT302-541",
+      "status": "keep",
+      "whyVi": "Sigma là tích phân trước quantizer trong mô hình sigma-delta đang hỏi; mẹo đúng vị trí thành phần."
+    },
+    {
+      "id": "DGT302-542",
+      "status": "keep",
+      "whyVi": "Mẹo z^(−n) và tổng hai phía phân biệt rõ định nghĩa bilateral Z với DTFT và unilateral Z."
+    },
+    {
+      "id": "DGT302-543",
+      "status": "keep",
+      "whyVi": "Window method là nhân từng mẫu hd·w, mẹo phân biệt đúng dấu chấm với dấu chập."
+    },
+    {
+      "id": "DGT302-544",
+      "status": "keep",
+      "whyVi": "Stem giới hạn radix-2 nên N=2^v chính xác; không nói mọi FFT phải dùng chiều dài lũy thừa 2."
+    },
+    {
+      "id": "DGT302-545",
+      "status": "keep",
+      "whyVi": "Mẹo giữ đúng chuỗi quy ước upsample→filter→downsample, không phát biểu mọi biến đổi tương đương đều bị cấm."
+    },
+    {
+      "id": "DGT302-546",
+      "status": "keep",
+      "whyVi": "Delay in=delay out là phép thử time-invariant, không nhầm điều kiện tuyến tính."
+    },
+    {
+      "id": "DGT302-547",
+      "status": "fix",
+      "whyVi": "Mẹo cũ stopband sâu còn rộng; thêm −58 dB và giới hạn trong các lựa chọn để không nói Blackman tốt nhất mọi cửa sổ."
+    },
+    {
+      "id": "DGT302-548",
+      "status": "keep",
+      "whyVi": "ω=0 là DC, lân cận 0 biến thiên chậm; mẹo không lẫn mép ±π là nhanh nhất."
+    },
+    {
+      "id": "DGT302-549",
+      "status": "keep",
+      "whyVi": "Cộng hai chiều dài rồi trừ 1 khớp độ dài chập tuyến tính, không dùng max hay tích."
+    },
+    {
+      "id": "DGT302-551",
+      "status": "keep",
+      "whyVi": "Mẹo one-sided delay giữ y(−1), đúng khác biệt với tính chất Z hai phía."
+    },
+    {
+      "id": "DGT302-552",
+      "status": "keep",
+      "whyVi": "Mẹo bắt đầu 100z⁻² đúng n=2; lời giải giữ mẫu số 1−10z⁻¹ và ROC |z|>10."
+    },
+    {
+      "id": "DGT302-553",
+      "status": "keep",
+      "whyVi": "Có đồng thời causal và stable nên mọi |pole|<1; mẹo không khái quát điều kiện này cho hệ không nhân quả."
+    },
+    {
+      "id": "DGT302-554",
+      "status": "keep",
+      "whyVi": "Output/input là đúng transfer function dưới trạng thái nghỉ ban đầu đã ghi trong lời giải."
+    },
+    {
+      "id": "DGT302-555",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ đưa vành đáp án; thêm cách thử vòng đơn vị để giải được biến thể."
+    },
+    {
+      "id": "DGT302-556",
+      "status": "keep",
+      "whyVi": "Mẹo chỉ số thời gian nguyên phân biệt discrete-time với lượng tử biên độ; lời giải giữ biên độ có thể liên tục."
+    },
+    {
+      "id": "DGT302-557",
+      "status": "fix",
+      "whyVi": "Mẹo cũ dừng ở bước tính k, chưa chỉ cách lấy Fs tối thiểu theo khoảng cho sẵn."
+    },
+    {
+      "id": "DGT302-558",
+      "status": "keep",
+      "whyVi": "Mẹo nhân impulse train khớp ideal sampling, khác giữ mẫu hay nhân cửa sổ."
+    },
+    {
+      "id": "DGT302-559",
+      "status": "keep",
+      "whyVi": "So sánh độ dốc Δ/T với max|dx/dt| là phép kiểm đúng tránh slope overload, không nhầm giới hạn biên độ."
+    },
+    {
+      "id": "DGT302-560",
+      "status": "fix",
+      "whyVi": "Thêm cue baseband và thao tác loại ảnh phổ thay vì chỉ D/A→low-pass."
+    },
+    {
+      "id": "DGT302-561",
+      "status": "keep",
+      "whyVi": "Đa thức FIR chuẩn hóa đầu bằng 1: hệ số cuối z⁻³ là K3=1/3; mẹo khớp đúng dữ kiện."
+    },
+    {
+      "id": "DGT302-562",
+      "status": "keep",
+      "whyVi": "IIR→recursive/feedback phù hợp câu so sánh; lý do đã chỉ FIR hữu hạn và thường feed-forward."
+    },
+    {
+      "id": "DGT302-563",
+      "status": "keep",
+      "whyVi": "Bậc cao chia cascade biquads là nhận diện đúng mục tiêu numerical robustness, không nhầm tapped delay FIR."
+    },
+    {
+      "id": "DGT302-564",
+      "status": "keep",
+      "whyVi": "Mẹo giữ cả giả thiết floor và quy ước e=sau−trước nên dấu e≤0 đúng; tránh suy rộng mọi kiểu truncation."
+    },
+    {
+      "id": "DGT302-565",
+      "status": "fix",
+      "whyVi": "Thêm cơ chế nhớ bậc hai theo p để không lẫn p với N hay nhầm bậc tuyến tính."
+    },
+    {
+      "id": "DGT302-566",
+      "status": "keep",
+      "whyVi": "Mẹo có purely nondeterministic innovations nên white noise phù hợp điều kiện nhân tử phổ, không áp cho mọi WSS tùy ý."
+    },
+    {
+      "id": "DGT302-567",
+      "status": "fix",
+      "whyVi": "Mẹo chỉ cross-correlation còn thiếu với ai; nêu đúng input–target và đối chiếu hai vế."
+    },
+    {
+      "id": "DGT302-568",
+      "status": "fix",
+      "whyVi": "Thêm phép đếm cụ thể thay vì chỉ ghép nhãn direct DFT với bậc độ phức tạp."
+    },
+    {
+      "id": "DGT302-569",
+      "status": "fix",
+      "whyVi": "Mẹo sampled DTFT chưa chỉ ra aperiodic, trong khi lựa chọn gây nhiễu dùng periodic."
+    },
+    {
+      "id": "DGT302-570",
+      "status": "keep",
+      "whyVi": "Forward DFT dấu âm, tổng n=0…N−1 phân biệt đủ với IDFT và DTFT hai phía."
+    },
+    {
+      "id": "DGT302-571",
+      "status": "keep",
+      "whyVi": "JPEG/DCT→energy compaction là cue cụ thể câu hỏi, lý do đã nói ít hệ số thấp giữ phần lớn năng lượng."
+    },
+    {
+      "id": "DGT302-572",
+      "status": "keep",
+      "whyVi": "Mẹo rectangular→leakage+resolution loss khớp cả hai hiệu ứng cắt ngắn, không chọn riêng từng hiệu ứng."
+    },
+    {
+      "id": "DGT302-573",
+      "status": "keep",
+      "whyVi": "Mẹo tuyến tính giữ hệ số a1,a2 và phép cộng, không biến thành nhân hay co tần số."
+    },
+    {
+      "id": "DGT302-574",
+      "status": "fix",
+      "whyVi": "Thêm cách nhớ dấu +j để loại distractor −j, không chỉ chép công thức."
+    },
+    {
+      "id": "DGT302-575",
+      "status": "keep",
+      "whyVi": "Mẹo giữ X≠0 và modulo 2π, đúng pha lẻ của tín hiệu thực; không nói pha xác định ở zero phổ."
+    },
+    {
+      "id": "DGT302-576",
+      "status": "keep",
+      "whyVi": "Điều chế e^(+jω0n) dịch đối số thành ω−ω0; mẹo có dấu đủ phân biệt phương án ω+ω0."
+    },
+    {
+      "id": "DGT302-577",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ đặc điểm pha 0/π trong đáp án và chỉ nhắc zero; thêm quy tắc đúng dấu phổ."
+    },
+    {
+      "id": "DGT302-578",
+      "status": "keep",
+      "whyVi": "Downsample D giữ mỗi D mẫu, y[m]=x[mD] đúng; không nhầm co chỉ số m/D."
+    },
+    {
+      "id": "DGT302-579",
+      "status": "keep",
+      "whyVi": "π/max(I,D) tương đương min(π/I,π/D), đúng kết hợp hai giới hạn chống alias và ảnh phổ."
+    },
+    {
+      "id": "DGT302-580",
+      "status": "keep",
+      "whyVi": "Mẹo giữ đúng ω/2 và tổng hai bản có 1/2, phù hợp phép giảm mẫu D=2 đã kiểm chứng độc lập."
+    },
+    {
+      "id": "DGT302-581",
+      "status": "fix",
+      "whyVi": "Mẹo tính ở rate thấp quá tắt; thêm hai loại phép tính thừa được polyphase loại bỏ."
+    },
+    {
+      "id": "DGT302-582",
+      "status": "keep",
+      "whyVi": "Cue H(e^jω) và hệ số b/a dẫn freqz, đúng phân biệt hàm tính đáp ứng với hàm lọc dữ liệu."
+    },
+    {
+      "id": "DGT302-583",
+      "status": "keep",
+      "whyVi": "Mẹo có hướng LTI trong miền tần số Y=X·H, khớp đúng yêu cầu phương trình phổ đầu ra."
+    },
+    {
+      "id": "DGT302-584",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc cutoff tồn tại, không giúp phân biệt bốn công thức cosωc; thêm phương trình mẫu cần dùng."
+    },
+    {
+      "id": "DGT302-585",
+      "status": "keep",
+      "whyVi": "Stem đã cho ROC chứa vòng đơn vị; mẹo evaluate unit circle đúng phép thay z=e^jω."
+    },
+    {
+      "id": "DGT302-586",
+      "status": "fix",
+      "whyVi": "Mẹo pole dương đúng nhưng lời giải cũ thêm gần vòng đơn vị không cần thiết, hẹp hơn giả thiết stem."
+    },
+    {
+      "id": "DGT302-587",
+      "status": "keep",
+      "whyVi": "Causal impulse response bằng zero trước n=0, cue và lý do phản ứng sau xung khớp nhau."
+    },
+    {
+      "id": "DGT302-588",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện dãy phức thay cho slide+conjugate có thể khiến người học nghĩ liên hợp là khác biệt thấy được ở dãy thực."
+    },
+    {
+      "id": "DGT302-589",
+      "status": "keep",
+      "whyVi": "Commutative là đổi thứ tự x*h=h*x, đủ phân biệt associativity và distributivity trong các lựa chọn."
+    },
+    {
+      "id": "DGT302-590",
+      "status": "fix",
+      "whyVi": "Thêm quy tắc cộng chỉ số để nhận vì sao là chập, không chỉ ghép nhãn phép nhân đa thức."
+    },
+    {
+      "id": "DGT302-591",
+      "status": "fix",
+      "whyVi": "Mẹo cũ dừng ở phép tính chưa ra 5; thêm kết quả và điều kiện không có mẫu nội bộ bị triệt ở ví dụ này."
+    },
+    {
+      "id": "DGT302-592",
+      "status": "keep",
+      "whyVi": "Type III/IV phản đối xứng làm H(0)=0, không dùng low-pass; mẹo đúng đúng constraint DC cần kiểm tra."
+    },
+    {
+      "id": "DGT302-593",
+      "status": "keep",
+      "whyVi": "Same magnitude specs→IIR lower order có từ điều kiện so sánh cùng đặc tả; không nhầm IIR luôn linear phase."
+    },
+    {
+      "id": "DGT302-594",
+      "status": "keep",
+      "whyVi": "Symmetric/antisymmetric quanh tâm là nhận biết linear-phase FIR hệ số thực, khớp lý do pha tuyến tính."
+    },
+    {
+      "id": "DGT302-595",
+      "status": "keep",
+      "whyVi": "Bilinear warping được bù bằng pre-warping, cue và thao tác thiết kế trước prototype khớp nhau."
+    },
+    {
+      "id": "DGT302-596",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nói sau phép cộng/trừ nhưng chưa chỉ bottom/difference branch, là điểm phân biệt hai lựa chọn."
+    },
+    {
+      "id": "DGT302-597",
+      "status": "keep",
+      "whyVi": "DFT hai lần ra N·x[−k mod N], mẹo giữ cả hệ số N lẫn đảo vòng nên đủ phân biệt các phương án."
+    },
+    {
+      "id": "DGT302-598",
+      "status": "fix",
+      "whyVi": "Mẹo dùng đủ 3 bit đúng nhưng chưa chỉ thao tác 011→110 và kết quả cụ thể."
+    },
+    {
+      "id": "DGT302-599",
+      "status": "fix",
+      "whyVi": "Thêm phép đếm phân biệt công thức phép cộng với công thức phép nhân có hệ số 1/2."
+    },
+    {
+      "id": "DGT302-600",
+      "status": "fix",
+      "whyVi": "Mẹo góc −90° chưa chỉ cách tính góc từ 8 và 2, thêm bước quy đổi để giải biến thể."
+    },
+    {
+      "id": "DGT302-602",
+      "status": "fix",
+      "whyVi": "Giới hạn mẹo trong bốn lựa chọn, tránh khẳng định Blackman là cửa sổ giảm leakage tốt nhất nói chung."
+    },
+    {
+      "id": "DGT302-603",
+      "status": "fix",
+      "whyVi": "Câu hỏi tại sao chỉ dùng tự tương quan; mẹo cũ chỉ gắn tên phương trình với thuật ngữ, thiếu cue cùng quá trình."
+    },
+    {
+      "id": "DGT302-604",
+      "status": "fix",
+      "whyVi": "Thay superposition đơn độc bằng phép thử đủ hai tính chất và loại distractor mx+c."
+    },
+    {
+      "id": "DGT302-605",
+      "status": "keep",
+      "whyVi": "FFT reuse nhờ periodicity+symmetry đúng mục tiêu thuộc tính giúp tái sử dụng twiddle."
+    },
+    {
+      "id": "DGT302-606",
+      "status": "keep",
+      "whyVi": "Present+past và không có future là dấu nhận biết causal đúng trong cả ba bản thứ tự đáp án khác nhau."
+    },
+    {
+      "id": "DGT302-607",
+      "status": "fix",
+      "whyVi": "Stem hỏi vì sao AR được dùng, không hỏi tên model; mẹo cũ speech→AR không nêu lý do ít tham số."
+    },
+    {
+      "id": "DGT302-608",
+      "status": "fix",
+      "whyVi": "Stem hỏi vì sao AR được dùng, không hỏi tên model; mẹo cũ speech→AR không nêu lý do ít tham số."
+    },
+    {
+      "id": "DGT302-609",
+      "status": "keep",
+      "whyVi": "Statistics đổi theo thời gian cần adaptive/LMS cập nhật hệ số; mẹo khớp sự biến thiên trong stem."
+    },
+    {
+      "id": "DGT302-610",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ khuyên không thêm Hamming, chưa dẫn tới hậu quả amplitude-modulate là đáp án cần chọn."
+    },
+    {
+      "id": "DGT302-611",
+      "status": "fix",
+      "whyVi": "Câu hỏi là tại sao trước thay vì sau; thêm tính không đảo ngược của spectral overlap, không chỉ nhắc thứ tự."
+    },
+    {
+      "id": "DGT302-612",
+      "status": "keep",
+      "whyVi": "Mẹo có causal stability nên mọi pole strict inside đúng với hệ hữu tỉ đã nêu trong stem."
+    },
+    {
+      "id": "DGT302-613",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-614",
+      "status": "keep",
+      "whyVi": "Câu mở rộng chữ FIR; Finite Impulse Response là mnemonic định nghĩa cụ thể, lời giải hữu hạn mẫu phù hợp."
+    },
+    {
+      "id": "DGT302-615",
+      "status": "fix",
+      "whyVi": "Thêm cách lập luận hệ số mới bằng 0 để tránh nhớ sai tăng bậc luôn giảm lỗi hoặc xóa nhiễu trắng."
+    },
+    {
+      "id": "DGT302-616",
+      "status": "keep",
+      "whyVi": "Stem hỏi numerical attraction fixed-point, mẹo lattice→robust quantization đúng thuộc tính cần nhận biết."
+    },
+    {
+      "id": "DGT302-617",
+      "status": "keep",
+      "whyVi": "Minimum RAM→in-place khớp yêu cầu dùng lại mảng mà không đổi kết quả."
+    },
+    {
+      "id": "DGT302-618",
+      "status": "fix",
+      "whyVi": "Thêm lý do và loại lựa chọn zero-padding, thay câu trả lời dài cửa sổ đơn độc."
+    },
+    {
+      "id": "DGT302-619",
+      "status": "keep",
+      "whyVi": "Định nghĩa Bounded Input→Bounded Output đúng chiều, không nhầm phép suy ngược."
+    },
+    {
+      "id": "DGT302-620",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt phổ hiển thị mịn với độ phân giải thật, đúng hiệu ứng duy nhất của zero-padding."
+    },
+    {
+      "id": "DGT302-621",
+      "status": "keep",
+      "whyVi": "Bilinear ánh xạ LHP s vào inside unit circle, mẹo đúng chiều và bảo toàn ổn định."
+    },
+    {
+      "id": "DGT302-622",
+      "status": "fix",
+      "whyVi": "Thêm tiêu chuẩn trực giao và loại distractor error=0, thay nhắc đáp án orthogonal đơn thuần."
+    },
+    {
+      "id": "DGT302-623",
+      "status": "fix",
+      "whyVi": "Thêm cơ chế tiết kiệm memory và loại các lợi ích giả trong lựa chọn."
+    },
+    {
+      "id": "DGT302-624",
+      "status": "keep",
+      "whyVi": "Loại trên Nyquist đúng mục đích anti-alias cho ADC baseband, lời giải đã chỉ lọc trước lấy mẫu."
+    },
+    {
+      "id": "DGT302-625",
+      "status": "keep",
+      "whyVi": "Mẹo lfilter→transposed DFII đúng cấu trúc thư viện được hỏi; không khẳng định SOS là cấu trúc nội bộ của lfilter."
+    },
+    {
+      "id": "DGT302-626",
+      "status": "fix",
+      "whyVi": "Thêm phép đếm thay chỉ lặp ký hiệu độ phức tạp."
+    },
+    {
+      "id": "DGT302-627",
+      "status": "keep",
+      "whyVi": "LP→HP đổi dấu xen kẽ đúng h[n](−1)^n dịch phổ π; mẹo độc lập vị trí các đáp án đảo thứ tự."
+    },
+    {
+      "id": "DGT302-628",
+      "status": "keep",
+      "whyVi": "LP→HP đổi dấu xen kẽ đúng h[n](−1)^n dịch phổ π; mẹo độc lập vị trí các đáp án đảo thứ tự."
+    },
+    {
+      "id": "DGT302-629",
+      "status": "fix",
+      "whyVi": "Thêm cấu trúc Toeplitz và loại bẫy error=0 thay vì chỉ kể hai bậc phức tạp."
+    },
+    {
+      "id": "DGT302-630",
+      "status": "fix",
+      "whyVi": "Thêm hai đầu ra và tích dùng chung, giới hạn radix-2 thay vì phát biểu cho mọi loại butterfly."
+    },
+    {
+      "id": "DGT302-631",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ pad không chỉ đến đâu; thêm lũy thừa 2 kế tiếp và giữ điều kiện radix-2-only."
+    },
+    {
+      "id": "DGT302-632",
+      "status": "keep",
+      "whyVi": "Memoryless→current input only là định nghĩa đúng, không lẫn causal vẫn có thể có bộ nhớ."
+    },
+    {
+      "id": "DGT302-633",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện baseband và phân biệt Nyquist rate với Nyquist frequency, tránh dùng máy móc cho bandpass sampling."
+    },
+    {
+      "id": "DGT302-634",
+      "status": "keep",
+      "whyVi": "Polyphase interpolation bỏ tích với zero vừa chèn là cơ chế hiệu quả cụ thể, đúng câu hỏi."
+    },
+    {
+      "id": "DGT302-635",
+      "status": "keep",
+      "whyVi": "JPEG discard high-frequency coefficients sau quantization, mẹo có đúng đối tượng hệ số thay vì pixels hay DC."
+    },
+    {
+      "id": "DGT302-636",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ lặp số mẫu bỏ, trong khi stem hỏi vì sao bỏ; thêm circular artifacts."
+    },
+    {
+      "id": "DGT302-637",
+      "status": "keep",
+      "whyVi": "Câu hỏi viết tắt ROC; mở rộng Region of Convergence là mnemonic phù hợp, lời giải nêu tập hội tụ."
+    },
+    {
+      "id": "DGT302-638",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-639",
+      "status": "keep",
+      "whyVi": "Wiener→minimum MSE đúng tên tiêu chuẩn tối ưu; mẹo định nghĩa đủ cho bốn loại sai số trong lựa chọn."
+    },
+    {
+      "id": "DGT302-640",
+      "status": "keep",
+      "whyVi": "Correlation peak→best delay/alignment khớp câu hỏi vị trí đỉnh, không đánh đồng với công suất hay cutoff."
+    },
+    {
+      "id": "DGT302-641",
+      "status": "fix",
+      "whyVi": "Thêm phép kiểm hai bin liên hợp thay vì chỉ nhắc nhãn Hermitian."
+    },
+    {
+      "id": "DGT302-642",
+      "status": "keep",
+      "whyVi": "DCT→energy compaction là keyword cụ thể, lý do đã giải thích dồn năng lượng vào ít hệ số ảnh."
+    },
+    {
+      "id": "DGT302-643",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ gắn digital với software flexibility; thêm hành động thực tế và cách loại distractors."
+    },
+    {
+      "id": "DGT302-644",
+      "status": "keep",
+      "whyVi": "Periodic→Fourier Series đúng đối tượng định nghĩa chính; không nhầm transform của tín hiệu không tuần hoàn."
+    },
+    {
+      "id": "DGT302-645",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện mô hình đã có trong lời giải, tránh hiểu lỗi lượng tử luôn trắng độc lập."
+    },
+    {
+      "id": "DGT302-646",
+      "status": "fix",
+      "whyVi": "Mẹo cũ thiếu radix-2 và cơ sở logarit nên dễ nhớ sai tăng đôi số tầng."
+    },
+    {
+      "id": "DGT302-647",
+      "status": "keep",
+      "whyVi": "DSP processor tối ưu multiply-accumulate; MAC là mnemonic phần cứng cụ thể phù hợp các phép lọc."
+    },
+    {
+      "id": "DGT302-648",
+      "status": "fix",
+      "whyVi": "Thêm biểu thức nhận diện khối unit delay thay vì chỉ lặp tên khối."
+    },
+    {
+      "id": "DGT302-649",
+      "status": "fix",
+      "whyVi": "Giữ điều kiện cùng chiều dài và phạm vi các cửa sổ đang so sánh; tránh khẳng định tối ưu không điều kiện."
+    },
+    {
+      "id": "DGT302-650",
+      "status": "keep",
+      "whyVi": "Stem dùng usually, IIR→feedback khớp cấu trúc hồi tiếp thông thường và không phát biểu mọi sơ đồ có hồi tiếp đều IIR."
+    },
+    {
+      "id": "DGT302-651",
+      "status": "keep",
+      "whyVi": "Direct interpolation waste→multiplications by inserted zeros là chi phí cụ thể, không lẫn pole migration hay FFT leakage."
+    },
+    {
+      "id": "DGT302-652",
+      "status": "keep",
+      "whyVi": "Same magnitude≠same waveform vì pha khác, đúng kết luận may differ thay vì bắt buộc mọi dạng sóng khác nhau."
+    },
+    {
+      "id": "DGT302-653",
+      "status": "fix",
+      "whyVi": "Narrower transition only trong mẹo cũ mơ hồ; nêu rõ hiệu ứng Gibbs còn lại mà stem đang phân biệt."
+    },
+    {
+      "id": "DGT302-654",
+      "status": "keep",
+      "whyVi": "Downsample D→fs/D là đúng tỉ lệ mẫu mỗi giây, không lẫn nhân biên độ với đổi rate."
+    },
+    {
+      "id": "DGT302-655",
+      "status": "fix",
+      "whyVi": "Thay superposition đơn độc bằng phép thử đủ hai tính chất và loại distractor mx+c."
+    },
+    {
+      "id": "DGT302-656",
+      "status": "keep",
+      "whyVi": "FFT reuse nhờ periodicity+symmetry đúng mục tiêu thuộc tính giúp tái sử dụng twiddle."
+    },
+    {
+      "id": "DGT302-657",
+      "status": "keep",
+      "whyVi": "Present+past và không có future là dấu nhận biết causal đúng trong cả ba bản thứ tự đáp án khác nhau."
+    },
+    {
+      "id": "DGT302-658",
+      "status": "fix",
+      "whyVi": "Stem hỏi vì sao AR được dùng, không hỏi tên model; mẹo cũ speech→AR không nêu lý do ít tham số."
+    },
+    {
+      "id": "DGT302-659",
+      "status": "keep",
+      "whyVi": "Statistics đổi theo thời gian cần adaptive/LMS cập nhật hệ số; mẹo khớp sự biến thiên trong stem."
+    },
+    {
+      "id": "DGT302-660",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ khuyên không thêm Hamming, chưa dẫn tới hậu quả amplitude-modulate là đáp án cần chọn."
+    },
+    {
+      "id": "DGT302-661",
+      "status": "fix",
+      "whyVi": "Câu hỏi là tại sao trước thay vì sau; thêm tính không đảo ngược của spectral overlap, không chỉ nhắc thứ tự."
+    },
+    {
+      "id": "DGT302-662",
+      "status": "keep",
+      "whyVi": "Mẹo có causal stability nên mọi pole strict inside đúng với hệ hữu tỉ đã nêu trong stem."
+    },
+    {
+      "id": "DGT302-663",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-664",
+      "status": "fix",
+      "whyVi": "Câu hỏi là tại sao trước thay vì sau; thêm tính không đảo ngược của spectral overlap, không chỉ nhắc thứ tự."
+    },
+    {
+      "id": "DGT302-665",
+      "status": "keep",
+      "whyVi": "Mẹo có causal stability nên mọi pole strict inside đúng với hệ hữu tỉ đã nêu trong stem."
+    },
+    {
+      "id": "DGT302-666",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-667",
+      "status": "keep",
+      "whyVi": "Câu mở rộng chữ FIR; Finite Impulse Response là mnemonic định nghĩa cụ thể, lời giải hữu hạn mẫu phù hợp."
+    },
+    {
+      "id": "DGT302-668",
+      "status": "fix",
+      "whyVi": "Thêm cách lập luận hệ số mới bằng 0 để tránh nhớ sai tăng bậc luôn giảm lỗi hoặc xóa nhiễu trắng."
+    },
+    {
+      "id": "DGT302-669",
+      "status": "keep",
+      "whyVi": "Stem hỏi numerical attraction fixed-point, mẹo lattice→robust quantization đúng thuộc tính cần nhận biết."
+    },
+    {
+      "id": "DGT302-670",
+      "status": "keep",
+      "whyVi": "Minimum RAM→in-place khớp yêu cầu dùng lại mảng mà không đổi kết quả."
+    },
+    {
+      "id": "DGT302-671",
+      "status": "fix",
+      "whyVi": "Thêm lý do và loại lựa chọn zero-padding, thay câu trả lời dài cửa sổ đơn độc."
+    },
+    {
+      "id": "DGT302-672",
+      "status": "keep",
+      "whyVi": "Định nghĩa Bounded Input→Bounded Output đúng chiều, không nhầm phép suy ngược."
+    },
+    {
+      "id": "DGT302-673",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt phổ hiển thị mịn với độ phân giải thật, đúng hiệu ứng duy nhất của zero-padding."
+    },
+    {
+      "id": "DGT302-674",
+      "status": "keep",
+      "whyVi": "Bilinear ánh xạ LHP s vào inside unit circle, mẹo đúng chiều và bảo toàn ổn định."
+    },
+    {
+      "id": "DGT302-675",
+      "status": "fix",
+      "whyVi": "Thêm tiêu chuẩn trực giao và loại distractor error=0, thay nhắc đáp án orthogonal đơn thuần."
+    },
+    {
+      "id": "DGT302-676",
+      "status": "fix",
+      "whyVi": "Thêm cơ chế tiết kiệm memory và loại các lợi ích giả trong lựa chọn."
+    },
+    {
+      "id": "DGT302-677",
+      "status": "keep",
+      "whyVi": "Loại trên Nyquist đúng mục đích anti-alias cho ADC baseband, lời giải đã chỉ lọc trước lấy mẫu."
+    },
+    {
+      "id": "DGT302-678",
+      "status": "keep",
+      "whyVi": "Mẹo lfilter→transposed DFII đúng cấu trúc thư viện được hỏi; không khẳng định SOS là cấu trúc nội bộ của lfilter."
+    },
+    {
+      "id": "DGT302-679",
+      "status": "fix",
+      "whyVi": "Thêm phép đếm thay chỉ lặp ký hiệu độ phức tạp."
+    },
+    {
+      "id": "DGT302-680",
+      "status": "keep",
+      "whyVi": "LP→HP đổi dấu xen kẽ đúng h[n](−1)^n dịch phổ π; mẹo độc lập vị trí các đáp án đảo thứ tự."
+    },
+    {
+      "id": "DGT302-681",
+      "status": "keep",
+      "whyVi": "LP→HP đổi dấu xen kẽ đúng h[n](−1)^n dịch phổ π; mẹo độc lập vị trí các đáp án đảo thứ tự."
+    },
+    {
+      "id": "DGT302-682",
+      "status": "fix",
+      "whyVi": "Thêm cấu trúc Toeplitz và loại bẫy error=0 thay vì chỉ kể hai bậc phức tạp."
+    },
+    {
+      "id": "DGT302-683",
+      "status": "fix",
+      "whyVi": "Thêm hai đầu ra và tích dùng chung, giới hạn radix-2 thay vì phát biểu cho mọi loại butterfly."
+    },
+    {
+      "id": "DGT302-684",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ pad không chỉ đến đâu; thêm lũy thừa 2 kế tiếp và giữ điều kiện radix-2-only."
+    },
+    {
+      "id": "DGT302-685",
+      "status": "keep",
+      "whyVi": "Memoryless→current input only là định nghĩa đúng, không lẫn causal vẫn có thể có bộ nhớ."
+    },
+    {
+      "id": "DGT302-686",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện baseband và phân biệt Nyquist rate với Nyquist frequency, tránh dùng máy móc cho bandpass sampling."
+    },
+    {
+      "id": "DGT302-687",
+      "status": "keep",
+      "whyVi": "Polyphase interpolation bỏ tích với zero vừa chèn là cơ chế hiệu quả cụ thể, đúng câu hỏi."
+    },
+    {
+      "id": "DGT302-688",
+      "status": "keep",
+      "whyVi": "JPEG discard high-frequency coefficients sau quantization, mẹo có đúng đối tượng hệ số thay vì pixels hay DC."
+    },
+    {
+      "id": "DGT302-689",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ lặp số mẫu bỏ, trong khi stem hỏi vì sao bỏ; thêm circular artifacts."
+    },
+    {
+      "id": "DGT302-690",
+      "status": "keep",
+      "whyVi": "Câu hỏi viết tắt ROC; mở rộng Region of Convergence là mnemonic phù hợp, lời giải nêu tập hội tụ."
+    },
+    {
+      "id": "DGT302-691",
+      "status": "fix",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-692",
+      "status": "keep",
+      "whyVi": "Wiener→minimum MSE đúng tên tiêu chuẩn tối ưu; mẹo định nghĩa đủ cho bốn loại sai số trong lựa chọn."
+    },
+    {
+      "id": "DGT302-693",
+      "status": "keep",
+      "whyVi": "Correlation peak→best delay/alignment khớp câu hỏi vị trí đỉnh, không đánh đồng với công suất hay cutoff."
+    },
+    {
+      "id": "DGT302-694",
+      "status": "fix",
+      "whyVi": "Thêm phép kiểm hai bin liên hợp thay vì chỉ nhắc nhãn Hermitian."
+    },
+    {
+      "id": "DGT302-695",
+      "status": "keep",
+      "whyVi": "DCT→energy compaction là keyword cụ thể, lý do đã giải thích dồn năng lượng vào ít hệ số ảnh."
+    },
+    {
+      "id": "DGT302-696",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ gắn digital với software flexibility; thêm hành động thực tế và cách loại distractors."
+    },
+    {
+      "id": "DGT302-697",
+      "status": "keep",
+      "whyVi": "Periodic→Fourier Series đúng đối tượng định nghĩa chính; không nhầm transform của tín hiệu không tuần hoàn."
+    },
+    {
+      "id": "DGT302-698",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện mô hình đã có trong lời giải, tránh hiểu lỗi lượng tử luôn trắng độc lập."
+    },
+    {
+      "id": "DGT302-699",
+      "status": "fix",
+      "whyVi": "Mẹo cũ thiếu radix-2 và cơ sở logarit nên dễ nhớ sai tăng đôi số tầng."
+    },
+    {
+      "id": "DGT302-700",
+      "status": "keep",
+      "whyVi": "DSP processor tối ưu multiply-accumulate; MAC là mnemonic phần cứng cụ thể phù hợp các phép lọc."
+    },
+    {
+      "id": "DGT302-701",
+      "status": "fix",
+      "whyVi": "Thêm biểu thức nhận diện khối unit delay thay vì chỉ lặp tên khối."
+    },
+    {
+      "id": "DGT302-702",
+      "status": "fix",
+      "whyVi": "Giữ điều kiện cùng chiều dài và phạm vi các cửa sổ đang so sánh; tránh khẳng định tối ưu không điều kiện."
+    },
+    {
+      "id": "DGT302-703",
+      "status": "keep",
+      "whyVi": "Stem dùng usually, IIR→feedback khớp cấu trúc hồi tiếp thông thường và không phát biểu mọi sơ đồ có hồi tiếp đều IIR."
+    },
+    {
+      "id": "DGT302-704",
+      "status": "keep",
+      "whyVi": "Direct interpolation waste→multiplications by inserted zeros là chi phí cụ thể, không lẫn pole migration hay FFT leakage."
+    },
+    {
+      "id": "DGT302-705",
+      "status": "keep",
+      "whyVi": "Same magnitude≠same waveform vì pha khác, đúng kết luận may differ thay vì bắt buộc mọi dạng sóng khác nhau."
+    },
+    {
+      "id": "DGT302-706",
+      "status": "fix",
+      "whyVi": "Narrower transition only trong mẹo cũ mơ hồ; nêu rõ hiệu ứng Gibbs còn lại mà stem đang phân biệt."
+    },
+    {
+      "id": "DGT302-707",
+      "status": "keep",
+      "whyVi": "Downsample D→fs/D là đúng tỉ lệ mẫu mỗi giây, không lẫn nhân biên độ với đổi rate."
+    },
+    {
+      "id": "DGT302-708",
+      "status": "keep",
+      "whyVi": "Noble→lower-rate filtering đúng mục tiêu chuyển phép tính sang rate thấp trong cấu trúc tương đương."
+    },
+    {
+      "id": "DGT302-709",
+      "status": "keep",
+      "whyVi": "Mẹo có đầy đủ chiều time convolution→frequency multiplication, khớp đúng thao tác được hỏi."
+    },
+    {
+      "id": "DGT302-710",
+      "status": "keep",
+      "whyVi": "Aperiodic→Fourier Transform là đối chiếu định nghĩa chính trong câu, không khẳng định Fourier không bao giờ biểu diễn tín hiệu tuần hoàn."
+    },
+    {
+      "id": "DGT302-711",
+      "status": "fix",
+      "whyVi": "Thêm kiểm tra từng phương án để dẫn tới đáp án all of the above, không chỉ nhắc hậu xử lý chung chung."
+    },
+    {
+      "id": "DGT302-712",
+      "status": "keep",
+      "whyVi": "Type I→passband ripple là đặc điểm phân biệt Chebyshev I, lý do nêu transition sắc hơn cùng bậc."
+    },
+    {
+      "id": "DGT302-713",
+      "status": "keep",
+      "whyVi": "H≠0 trong đúng dải muốn nghịch đảo là điều kiện cần, mẹo không nhầm với điều kiện đủ cho nghịch đảo causal stable."
+    },
+    {
+      "id": "DGT302-714",
+      "status": "keep",
+      "whyVi": "DIT→twiddle trước cộng/trừ đúng vị trí Wb trong a±Wb, khác DIF đã được phân biệt."
+    },
+    {
+      "id": "DGT302-715",
+      "status": "keep",
+      "whyVi": "Twiddle→complex rotation đúng vai trò hình học có độ lớn 1; lời giải không nhầm hệ số cửa sổ."
+    },
+    {
+      "id": "DGT302-716",
+      "status": "keep",
+      "whyVi": "Spread noise then LPF đúng cơ chế tăng SNR trong dải của oversampling, không nói oversampling tự xóa aliasing."
+    },
+    {
+      "id": "DGT302-717",
+      "status": "keep",
+      "whyVi": "Unilateral Z→initial conditions đúng ưu điểm phương trình sai phân có số hạng trạng thái ban đầu."
+    },
+    {
+      "id": "DGT302-718",
+      "status": "fix",
+      "whyVi": "Mẹo cũ same frequency đúng nhưng thiếu hai đại lượng còn lại được so sánh trực tiếp trong lựa chọn."
+    },
+    {
+      "id": "DGT302-719",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện hữu tỉ đã có trong lời giải, tránh áp dụng mẫu ROC theo cực cho mọi dãy không hữu tỉ."
+    },
+    {
+      "id": "DGT302-720",
+      "status": "fix",
+      "whyVi": "Recursive data flow trong mẹo cũ quá chung; nêu thao tác chẵn–lẻ giải thích đúng mục đích bit reversal."
+    },
+    {
+      "id": "DGT302-721",
+      "status": "fix",
+      "whyVi": "Thêm biểu thức nhận diện khối unit delay thay vì chỉ lặp tên khối."
+    },
+    {
+      "id": "DGT302-722",
+      "status": "keep",
+      "whyVi": "Uncertainty→random đúng phân loại tín hiệu cần mô tả xác suất, không lẫn rời rạc/liên tục hay tuần hoàn."
+    },
+    {
+      "id": "DGT302-723",
+      "status": "keep",
+      "whyVi": "Present+past và không có future là dấu nhận biết causal đúng trong cả ba bản thứ tự đáp án khác nhau."
+    },
+    {
+      "id": "DGT302-724",
+      "status": "keep",
+      "whyVi": "Quantization biên độ và sampling thời gian được phân biệt rõ trong mẹo, đúng hai distractors quan trọng."
+    },
+    {
+      "id": "DGT302-725",
+      "status": "keep",
+      "whyVi": "Định nghĩa Bounded Input→Bounded Output đúng chiều, không nhầm phép suy ngược."
+    },
+    {
+      "id": "DGT302-726",
+      "status": "fix",
+      "whyVi": "Mẹo cũ robust coefficients còn mơ hồ; liên hệ cấu trúc phản xạ và loại hai lợi ích tuyệt đối không có."
+    },
+    {
+      "id": "DGT302-727",
+      "status": "fix",
+      "whyVi": "Thêm công thức suy ra và điều kiện pha xác định, không hiểu group delay tại zero phổ cũng hữu hạn hằng."
+    },
+    {
+      "id": "DGT302-728",
+      "status": "fix",
+      "whyVi": "Mẹo cũ convolution↔multiplication thiếu nhãn miền, có thể áp ngược khi stem khác."
+    },
+    {
+      "id": "DGT302-729",
+      "status": "keep",
+      "whyVi": "AR→all-pole+white noise đúng mô hình hồi tiếp, đối chiếu rõ MA all-zero trong các lựa chọn."
+    },
+    {
+      "id": "DGT302-730",
+      "status": "keep",
+      "whyVi": "OFDM→IFFT phát, FFT thu cụ thể đúng hai phép biến đổi được hỏi và không lẫn ADC calibration."
+    },
+    {
+      "id": "DGT302-731",
+      "status": "keep",
+      "whyVi": "Long STFT→frequency tốt/time kém đúng chiều đánh đổi của tăng chiều dài, không nói cải thiện đồng thời."
+    },
+    {
+      "id": "DGT302-732",
+      "status": "keep",
+      "whyVi": "Memoryless→current input only là định nghĩa đúng, không lẫn causal vẫn có thể có bộ nhớ."
+    },
+    {
+      "id": "DGT302-733",
+      "status": "keep",
+      "whyVi": "PR→scaled/delayed original đúng định nghĩa có cho phép gain và delay, không nhầm zero delay bắt buộc."
+    },
+    {
+      "id": "DGT302-734",
+      "status": "fix",
+      "whyVi": "Câu hỏi vì sao sinc ideal; mẹo cũ ideal interpolation→sinc chỉ nhắc tên và không nêu điều kiện tái tạo."
+    },
+    {
+      "id": "DGT302-735",
+      "status": "keep",
+      "whyVi": "Circular→wrap around là cue modulo N chính xác, đủ phân biệt chập vòng với tuyến tính."
+    },
+    {
+      "id": "DGT302-736",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ nhắc bất đẳng thức MMSE, thiếu lý do future observations mà câu đang hỏi."
+    },
+    {
+      "id": "DGT302-737",
+      "status": "keep",
+      "whyVi": "Between DFT bins→leakage đúng dữ kiện tone lệch bin, lời giải liên hệ quan sát không trọn chu kỳ."
+    },
+    {
+      "id": "DGT302-738",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện baseband để không mâu thuẫn các câu bandpass sampling bên cạnh."
+    },
+    {
+      "id": "DGT302-739",
+      "status": "keep",
+      "whyVi": "Parseval→energy conservation là mnemonic định lý cụ thể; lý do đã nhắc chuẩn hóa đúng."
+    },
+    {
+      "id": "DGT302-740",
+      "status": "keep",
+      "whyVi": "y=x*h→Y=XH có nhãn chữ hoa phổ và phép nhân, bám trực tiếp phương trình trong stem."
+    },
+    {
+      "id": "DGT302-741",
+      "status": "keep",
+      "whyVi": "Mẹo phân biệt tổng FFT length N≥L+M−1 với số zero cần thêm, đúng chỗ dễ hiểu nhầm của câu."
+    },
+    {
+      "id": "DGT302-742",
+      "status": "keep",
+      "whyVi": "Unilateral Z→initial conditions đúng ưu điểm phương trình sai phân có số hạng trạng thái ban đầu."
+    },
+    {
+      "id": "DGT302-743",
+      "status": "fix",
+      "whyVi": "Thêm bước giải nghiệm để phân biệt bội chẵn 2π với bội lẻ π, thay chỉ chép vị trí zeros."
+    },
+    {
+      "id": "DGT302-744",
+      "status": "fix",
+      "whyVi": "Giữ giới hạn baseband để không dùng Nyquist low-pass máy móc cho mọi tín hiệu dải thông."
+    },
+    {
+      "id": "DGT302-745",
+      "status": "fix",
+      "whyVi": "Thêm liên hệ zeros→inverse poles để phân biệt stability của hệ gốc với minimum phase."
+    },
+    {
+      "id": "DGT302-746",
+      "status": "keep",
+      "whyVi": "Loại trên Nyquist đúng mục đích anti-alias cho ADC baseband, lời giải đã chỉ lọc trước lấy mẫu."
+    },
+    {
+      "id": "DGT302-747",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện hữu tỉ đã có trong lời giải, tránh áp dụng mẫu ROC theo cực cho mọi dãy không hữu tỉ."
+    },
+    {
+      "id": "DGT302-748",
+      "status": "keep",
+      "whyVi": "Chu kỳ bảo đảm chung 2π đúng cho mọi DTFT, mẹo không gọi 2π là chu kỳ cơ bản bắt buộc từng dãy riêng."
+    },
+    {
+      "id": "DGT302-749",
+      "status": "fix",
+      "whyVi": "Thêm cơ chế tăng biên độ trong bướm để nhận đúng rủi ro, thay chỉ fixed-point→overflow."
+    },
+    {
+      "id": "DGT302-750",
+      "status": "fix",
+      "whyVi": "Thêm nguyên nhân phi tuyến để phân biệt warping với các nhược điểm khác."
+    },
+    {
+      "id": "DGT302-751",
+      "status": "keep",
+      "whyVi": "Low power/cost→fixed-point đúng yếu tố phần cứng của câu so sánh; không hứa no overflow hay no quantization."
+    },
+    {
+      "id": "DGT302-752",
+      "status": "fix",
+      "whyVi": "Stem hỏi why sos; mẹo cũ chỉ nhắc tùy chọn, chưa nêu mục đích numerical stability."
+    },
+    {
+      "id": "DGT302-753",
+      "status": "keep",
+      "whyVi": "AR→Yule–Walker, target→Wiener–Hopf đúng sự khác biệt autocorrelation so với cross-correlation của bài toán ước lượng."
+    },
+    {
+      "id": "DGT302-754",
+      "status": "fix",
+      "whyVi": "Mẹo cũ thêm nếu ROC còn để người học kiểm tra lại giả thiết đã suy được; nêu mạch suy luận từ causal đang có."
+    },
+    {
+      "id": "DGT302-755",
+      "status": "fix",
+      "whyVi": "Mẹo cũ convolution↔multiplication thiếu nhãn miền, có thể áp ngược khi stem khác."
+    },
+    {
+      "id": "DGT302-756",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ cho gain bằng I trong khi stem hỏi tại sao; thêm cơ chế giảm DC do chèn zero."
+    },
+    {
+      "id": "DGT302-757",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ gắn digital với software flexibility; thêm hành động thực tế và cách loại distractors."
+    },
+    {
+      "id": "DGT302-758",
+      "status": "fix",
+      "whyVi": "Thêm đặc điểm số mũ giải thích lựa chọn thay vì chỉ ghép largest dynamic range với floating-point."
+    },
+    {
+      "id": "DGT302-759",
+      "status": "keep",
+      "whyVi": "Fmax=8→Fs>16 kHz là bước tính đúng; trong các lựa chọn chỉ 20 kHz thỏa."
+    },
+    {
+      "id": "DGT302-760",
+      "status": "keep",
+      "whyVi": "Low-pass giữ thấp/chặn cao là mnemonic định nghĩa đúng, đủ loại high-pass và band-pass."
+    },
+    {
+      "id": "DGT302-761",
+      "status": "keep",
+      "whyVi": "Right shift→scale down tránh overflow đúng mục tiêu fixed-point, lời giải đã chỉ chia 2 tạo headroom."
+    },
+    {
+      "id": "DGT302-762",
+      "status": "fix",
+      "whyVi": "Mẹo poles inside/ROC outside cũ thiếu ngoài cực nào; nêu đúng cả hai điều kiện, không lẫn ngoài vòng đơn vị."
+    },
+    {
+      "id": "DGT302-763",
+      "status": "fix",
+      "whyVi": "Mẹo poles inside/ROC outside cũ thiếu ngoài cực nào; nêu đúng cả hai điều kiện, không lẫn ngoài vòng đơn vị."
+    },
+    {
+      "id": "DGT302-764",
+      "status": "fix",
+      "whyVi": "Mẹo poles inside/ROC outside cũ thiếu ngoài cực nào; nêu đúng cả hai điều kiện, không lẫn ngoài vòng đơn vị."
+    },
+    {
+      "id": "DGT302-765",
+      "status": "keep",
+      "whyVi": "Reflection coefficients→lattice đúng tên cấu trúc cần gọi, không nhầm twiddle FFT hay hệ số biquad."
+    },
+    {
+      "id": "DGT302-766",
+      "status": "keep",
+      "whyVi": "Bandpass sampling→non-overlapping replicas đúng điều kiện quyết định, không dùng cứng Fs>2fmax."
+    },
+    {
+      "id": "DGT302-767",
+      "status": "keep",
+      "whyVi": "Sau upsampling cần anti-imaging LPF là đúng lý do loại ảnh phổ trong câu; không nhầm anti-clipping hay lượng tử."
+    },
+    {
+      "id": "DGT302-768",
+      "status": "keep",
+      "whyVi": "FFT speed→divide and conquer đúng chia DFT lớn thành nhỏ, không nói FFT là xấp xỉ hay giảm số bin."
+    },
+    {
+      "id": "DGT302-769",
+      "status": "keep",
+      "whyVi": "Mẹo smoother spectrum→interpolation không resolution mới phân biệt đúng hiển thị với thông tin quan sát."
+    },
+    {
+      "id": "DGT302-770",
+      "status": "fix",
+      "whyVi": "Thêm trục tần số chuẩn hóa đã có trong lời giải, tránh nhầm giãn tần số vật lý Hz của tín hiệu."
+    },
+    {
+      "id": "DGT302-771",
+      "status": "keep",
+      "whyVi": "More ADC bits→better quantization SNR đúng thay đổi độ phân giải biên độ khi Fs giữ nguyên, không nhầm giảm aliasing."
+    },
+    {
+      "id": "DGT302-772",
+      "status": "keep",
+      "whyVi": "×(−j)→swap+sign cụ thể đúng (a+jb)(−j)=b−ja, không cần bộ nhân phức tổng quát."
+    },
+    {
+      "id": "DGT302-773",
+      "status": "fix",
+      "whyVi": "Thêm điều kiện ROC để dùng phép thế hợp lệ, thống nhất lời giải đã nêu."
+    },
+    {
+      "id": "DGT302-774",
+      "status": "fix",
+      "whyVi": "Mẹo normal sampling đúng nhưng thêm cách phân biệt aliasing là distractor dễ nhầm nhất."
+    },
+    {
+      "id": "DGT302-775",
+      "status": "keep",
+      "whyVi": "One memory array→in-place là nhận biết đúng nhu cầu lưu trữ của FFT, không nhầm zero-padding."
+    },
+    {
+      "id": "DGT302-776",
+      "status": "fix",
+      "whyVi": "Câu hỏi giảm tính như thế nào; thêm quy tắc suy nửa phổ thay chỉ nhắc tên đối xứng."
+    },
+    {
+      "id": "DGT302-777",
+      "status": "keep",
+      "whyVi": "Mẹo same samples→aliasing ambiguity và không cần cả hai vượt Nyquist khớp phương án thứ năm sửa nguồn."
+    },
+    {
+      "id": "DGT302-778",
+      "status": "fix",
+      "whyVi": "Mẹo cũ chỉ staircase thiếu vế simple implementation trong trade-off được hỏi."
+    },
+    {
+      "id": "DGT302-779",
+      "status": "fix",
+      "whyVi": "Thêm bước nghịch đảo độ lớn và giữ điều kiện nonzero để phân biệt với không tồn tại nghịch đảo."
+    },
+    {
+      "id": "DGT302-780",
+      "status": "keep",
+      "whyVi": "Zero stuffing chưa là nội suy hoàn chỉnh, cần LPF loại imaging; mẹo bám đúng thiếu sót của chèn zero đơn thuần."
+    },
+    {
+      "id": "DGT302-781",
+      "status": "keep",
+      "whyVi": "Whitening→decorrelation/innovation đúng loại phần dự đoán được bằng quá khứ, lời giải không nói tạo thêm thông tin."
+    },
+    {
+      "id": "DGT302-782",
+      "status": "keep",
+      "whyVi": "|H| biên độ và ∠H pha đúng ý nghĩa đáp ứng với sin tại ω, không lẫn năng lượng đầu vào."
+    },
+    {
+      "id": "DGT302-783",
+      "status": "fix",
+      "whyVi": "Mẹo cũ liệt kê precision/scaling/rounding mà chưa chỉ vì sao phải quản lý; thêm sai số tích lũy và loại lý do sai."
+    },
+    {
+      "id": "DGT302-784",
+      "status": "keep",
+      "whyVi": "High-order implementation→cascade SOS đúng giảm numerical problems bằng tầng bậc hai, khớp lời giải."
+    },
+    {
+      "id": "DGT302-785",
+      "status": "keep",
+      "whyVi": "12<2×8=16 kHz đúng kiểm tra Nyquist để chọn spectral overlap, không lẫn quantization từ tăng bit."
+    },
+    {
+      "id": "DGT302-786",
+      "status": "keep",
+      "whyVi": "LPF trước downsampler đúng thứ tự chống alias, lời giải đã nêu phổ gộp không tách lại được."
+    },
+    {
+      "id": "DGT302-787",
+      "status": "keep",
+      "whyVi": "Missing 1/N→gain N đúng với DFT thuận không chuẩn hóa, không nhầm phase reversal hay tăng resolution."
+    },
+    {
+      "id": "DGT302-788",
+      "status": "fix",
+      "whyVi": "Mẹo cũ khẳng định downsample first luôn alias; thêm điều kiện dải chưa phù hợp, đúng tính most likely trong stem."
+    },
+    {
+      "id": "DGT302-789",
+      "status": "fix",
+      "whyVi": "Câu hỏi tại sao dùng thống kê; mẹo cũ random→statistical quantities chỉ lặp lại câu hỏi, không nêu sự bất định."
+    },
+    {
+      "id": "DGT302-790",
+      "status": "fix",
+      "whyVi": "Thêm cue công suất→bình phương để phân biệt hai phương án H và |H|²."
+    },
+    {
+      "id": "DGT302-791",
+      "status": "keep",
+      "whyVi": "Mẹo có đầy đủ chiều time convolution→frequency multiplication, khớp đúng thao tác được hỏi."
+    },
+    {
+      "id": "DGT302-792",
+      "status": "keep",
+      "whyVi": "Divide-and-conquer→recursive smaller DFTs là định nghĩa cụ thể đúng, không nhầm lặp cùng DFT lớn."
+    },
+    {
+      "id": "DGT302-793",
+      "status": "keep",
+      "whyVi": "Parseval→conserved energy là mnemonic định lý đúng; lời giải có chuẩn hóa, không nói FFT tăng năng lượng."
+    },
+    {
+      "id": "DGT302-794",
+      "status": "keep",
+      "whyVi": "Chập thời gian và tích Z là convolution theorem; mẹo Y=XH khớp quan hệ và tên định lý cần chọn."
+    },
+    {
+      "id": "DGT302-795",
+      "status": "keep",
+      "whyVi": "FIR+window→firwin đúng tên hàm thiết kế, phân biệt apply lfilter và inspect freqz."
+    },
+    {
+      "id": "DGT302-796",
+      "status": "keep",
+      "whyVi": "Apply FIR/IIR→lfilter là cue đúng thao tác áp dụng hệ số lên dữ liệu, chữ l thường rõ ràng."
+    },
+    {
+      "id": "DGT302-797",
+      "status": "keep",
+      "whyVi": "Inspect frequency response→freqz đúng hàm phân tích, không nhầm thiết kế hay lọc tín hiệu."
+    },
+    {
+      "id": "DGT302-798",
+      "status": "keep",
+      "whyVi": "Up+FIR+down→upfirdn đúng ba bước và tên hàm, lý do đã nêu tích hợp hiệu quả."
+    },
+    {
+      "id": "DGT302-799",
+      "status": "keep",
+      "whyVi": "Butterworth design→butter là mnemonic cụ thể, không lẫn firwin, freqz hay lfilter."
+    }
+  ],
+  "changes": [
+    {
+      "id": "DGT302-500",
+      "tip": "r=1 → z=e^(jω), được DTFT nếu ROC chứa vòng đơn vị; không phải CTFT.",
+      "whyVi": "Giữ cue r=1 nhưng thêm điều kiện tồn tại DTFT và phân biệt CTFT trong lựa chọn."
+    },
+    {
+      "id": "DGT302-502",
+      "tip": "Lượng tử hệ số IIR → cực/zero dịch vị trí; cực vượt |z|=1 có thể làm mất ổn định.",
+      "whyVi": "Mẹo cũ chỉ gọi tên pole migration, chưa nêu hậu quả mất ổn định mà câu hỏi yêu cầu."
+    },
+    {
+      "id": "DGT302-504",
+      "tip": "Giới hạn STFT: cửa sổ ngắn rõ thời điểm, dài rõ tần số → không thể đồng thời hoàn hảo cả hai.",
+      "whyVi": "Cụm đánh đổi thời gian–tần số còn chung; nêu chiều đánh đổi để loại đáp án cải thiện đồng thời."
+    },
+    {
+      "id": "DGT302-505",
+      "tip": "H1(z)=H0(−z): giữ G0=H0, đảo dấu nhánh G1=−H0(−z) để hai tích alias triệt nhau.",
+      "whyVi": "Thêm cách nhận ra dấu trừ triệt alias; bỏ lời giải nhắc vị trí đáp án của bản cũ đã được sửa.",
+      "reason": "Với H1(z)=H0(−z), chọn G0=H0 và G1=−H0(−z) làm tổng alias H0(−z)G0(z)+H1(−z)G1(z)=0.",
+      "references": [
+        "https://dsprelated.com/freebooks/SASP/Quadrature_Mirror_Filters_QMF.html"
+      ]
+    },
+    {
+      "id": "DGT302-506",
+      "tip": "Prediction đoán từ quá khứ của chính tín hiệu; Wiener dùng đầu vào để ước lượng tín hiệu đích, cùng tối ưu MSE.",
+      "whyVi": "Câu hỏi so sánh hai mục tiêu; mẹo cũ chỉ nêu một nửa prediction."
+    },
+    {
+      "id": "DGT302-508",
+      "tip": "DFT thuận dùng dấu âm: WN=e^(−j2π/N); 2π/N là góc giữa hai căn đơn vị kề nhau.",
+      "whyVi": "Bổ sung dấu nhận biết DFT thuận và góc 2π/N thay vì chỉ chép công thức chọn."
+    },
+    {
+      "id": "DGT302-510",
+      "tip": "n·aⁿu[n]: lấy j·đạo hàm của 1/(1−ae^(−jω)) → tử +ae^(−jω), mẫu bình phương.",
+      "whyVi": "Mẹo cũ chỉ kiểm tra dấu tử, thiếu đặc điểm mẫu bình phương để phân biệt đầy đủ công thức."
+    },
+    {
+      "id": "DGT302-511",
+      "tip": "Giữ M cố định, cửa sổ mượt hơn → sidelobe thấp hơn nhưng main-lobe/transition rộng hơn.",
+      "whyVi": "Nêu đúng điều kiện M cố định và hai vế đánh đổi; tránh nhầm tăng chiều dài làm transition hẹp."
+    },
+    {
+      "id": "DGT302-515",
+      "tip": "N=8, k=1: cộng 0,5[1+e^(−jπ/4)+e^(−jπ/2)+e^(−j3π/4)] = 0,5−j1,207.",
+      "whyVi": "Mẹo cũ chỉ nói phần ảo âm, không đủ phân biệt hai phương án có phần ảo âm; thêm phép cộng đúng dữ kiện."
+    },
+    {
+      "id": "DGT302-518",
+      "tip": "Đếm chuẩn radix-2: (N/2)log₂N; N=1024 → 512×10=5120 phép nhân, kể cả twiddle tầm thường.",
+      "whyVi": "Bổ sung N/2 và quy ước kể phép nhân tầm thường để không chỉ học thuộc số 5120."
+    },
+    {
+      "id": "DGT302-522",
+      "tip": "Gốc tại mẫu 2: ghép x[n]z^(−n) từ n=0; bỏ mẫu zero n=4, mẫu 1 cuối mang z⁻⁵.",
+      "whyVi": "Mẹo cũ đúng dấu mũ nhưng chưa dùng vị trí zero và mẫu cuối để kiểm tra công thức cụ thể."
+    },
+    {
+      "id": "DGT302-524",
+      "tip": "Phương trình sai phân: cộng các nhánh, nhân hệ số, trễ mẫu bằng z⁻¹ → adder + multiplier + unit delay.",
+      "whyVi": "Thay cue LTI quá rộng bằng đúng cấu trúc phương trình sai phân trong stem."
+    },
+    {
+      "id": "DGT302-525",
+      "tip": "Radix-4 thuần chia 4 ở mọi tầng → N=4^v; chỉ là số chẵn hay hợp số thì chưa đủ.",
+      "whyVi": "Giữ điều kiện radix-4 thuần và thêm cách loại hợp số, không khái quát sang mixed radix."
+    },
+    {
+      "id": "DGT302-527",
+      "tip": "Rectangular + tăng M → transition hẹp, vùng Gibbs hẹp; đỉnh overshoot vẫn khoảng 9% bước nhảy.",
+      "whyVi": "Mẹo cũ chỉ nêu 9%, thiếu thay đổi nào thực sự xảy ra khi tăng M."
+    },
+    {
+      "id": "DGT302-535",
+      "tip": "aⁿu[n], |a|<1: công bội ae^(−jω) → tổng hình học 1/(1−ae^(−jω)); dấu trừ ở mẫu.",
+      "whyVi": "Thêm bước công bội và tổng hình học để nhận công thức, không chỉ lặp nguyên đáp án."
+    },
+    {
+      "id": "DGT302-538",
+      "tip": "Đề nói nhân x1[n]x2[n] hoặc windowing → chập tuần hoàn các phổ DTFT; không chọn nhân phổ.",
+      "whyVi": "Nêu rõ hướng thời gian→tần số và tính tuần hoàn của chập DTFT để không lẫn định lý chập."
+    },
+    {
+      "id": "DGT302-539",
+      "tip": "Không méo pha do các tần số trễ khác nhau → cần group delay hằng → pha tuyến tính.",
+      "whyVi": "Mẹo cũ đưa magnitude vào dù câu hỏi chỉ xét méo pha; thay bằng chuỗi suy luận đúng mục tiêu."
+    },
+    {
+      "id": "DGT302-547",
+      "tip": "Cùng độ dài, peak sidelobe khoảng −58 dB và main-lobe rộng → Blackman trong các cửa sổ được liệt kê.",
+      "whyVi": "Mẹo cũ stopband sâu còn rộng; thêm −58 dB và giới hạn trong các lựa chọn để không nói Blackman tốt nhất mọi cửa sổ.",
+      "references": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.windows.blackman.html"
+      ]
+    },
+    {
+      "id": "DGT302-555",
+      "tip": "Ổn định → ROC phải chứa |z|=1; hai cực 0,5 và 2 kẹp vòng đơn vị → chọn 0,5<|z|<2.",
+      "whyVi": "Mẹo cũ chỉ đưa vành đáp án; thêm cách thử vòng đơn vị để giải được biến thể."
+    },
+    {
+      "id": "DGT302-557",
+      "tip": "B=10702,5−10677,5=25 kHz; k=floor(Fh/B)=428; Fs,min=2Fh/k≈50,0117 kHz.",
+      "whyVi": "Mẹo cũ dừng ở bước tính k, chưa chỉ cách lấy Fs tối thiểu theo khoảng cho sẵn."
+    },
+    {
+      "id": "DGT302-560",
+      "tip": "Đề cần lấy lại baseband sau D/A → giữ phổ quanh 0, loại ảnh cao tần bằng ideal low-pass.",
+      "whyVi": "Thêm cue baseband và thao tác loại ảnh phổ thay vì chỉ D/A→low-pass."
+    },
+    {
+      "id": "DGT302-565",
+      "tip": "Levinson–Durbin tận dụng Toeplitz: p tầng đệ quy, mỗi tầng O(p) → O(p²), giảm từ O(p³).",
+      "whyVi": "Thêm cơ chế nhớ bậc hai theo p để không lẫn p với N hay nhầm bậc tuyến tính."
+    },
+    {
+      "id": "DGT302-567",
+      "tip": "Wiener–Hopf: vế trái autocorrelation của input; vế phải cross-correlation input với desired/target.",
+      "whyVi": "Mẹo chỉ cross-correlation còn thiếu với ai; nêu đúng input–target và đối chiếu hai vế."
+    },
+    {
+      "id": "DGT302-568",
+      "tip": "DFT trực tiếp: N bin đầu ra × N số hạng mỗi bin → O(N²); FFT mới là O(NlogN).",
+      "whyVi": "Thêm phép đếm cụ thể thay vì chỉ ghép nhãn direct DFT với bậc độ phức tạp."
+    },
+    {
+      "id": "DGT302-569",
+      "tip": "Record hữu hạn rồi mở rộng bằng zero → dãy không tuần hoàn; DFT là N mẫu đều của DTFT dãy đó.",
+      "whyVi": "Mẹo sampled DTFT chưa chỉ ra aperiodic, trong khi lựa chọn gây nhiễu dùng periodic."
+    },
+    {
+      "id": "DGT302-574",
+      "tip": "Nhân n: đạo hàm e^(−jωn) sinh −jn, nhân thêm j bù lại → n·x[n] ↔ j·dX/dω.",
+      "whyVi": "Thêm cách nhớ dấu +j để loại distractor −j, không chỉ chép công thức."
+    },
+    {
+      "id": "DGT302-577",
+      "tip": "Thực + chẵn → sin triệt nhau, X thực chẵn; X>0 pha 0, X<0 pha π, X=0 không xác định pha.",
+      "whyVi": "Mẹo cũ bỏ đặc điểm pha 0/π trong đáp án và chỉ nhắc zero; thêm quy tắc đúng dấu phổ."
+    },
+    {
+      "id": "DGT302-581",
+      "tip": "Polyphase → chỉ tính mẫu cần giữ, bỏ tích với zero hoặc đầu ra sẽ bị downsample loại; giảm số phép tính.",
+      "whyVi": "Mẹo tính ở rate thấp quá tắt; thêm hai loại phép tính thừa được polyphase loại bỏ."
+    },
+    {
+      "id": "DGT302-584",
+      "tip": "−3 dB → |H|²=1/2; dùng |1−ae^(−jω)|²=1+a²−2a cosω rồi giải cosωc.",
+      "whyVi": "Mẹo cũ chỉ nhắc cutoff tồn tại, không giúp phân biệt bốn công thức cosωc; thêm phương trình mẫu cần dùng."
+    },
+    {
+      "id": "DGT302-586",
+      "tip": "0<a<1: mẫu số nhỏ nhất tại ω=0, lớn nhất tại π → gain giảm theo tần số, là low-pass.",
+      "whyVi": "Mẹo pole dương đúng nhưng lời giải cũ thêm gần vòng đơn vị không cần thiết, hẹp hơn giả thiết stem.",
+      "reason": "|H(e^(jω))|=|b0|/sqrt(1+a²−2a cosω). Với mọi 0<a<1, độ lớn lớn nhất ở DC và giảm dần đến ω=π, nên đây là low-pass."
+    },
+    {
+      "id": "DGT302-588",
+      "tip": "Correlation trượt để so khớp, không gập như convolution; nếu dãy phức thì thêm liên hợp.",
+      "whyVi": "Thêm điều kiện dãy phức thay cho slide+conjugate có thể khiến người học nghĩ liên hợp là khác biệt thấy được ở dãy thực."
+    },
+    {
+      "id": "DGT302-590",
+      "tip": "Nhân đa thức: hệ số bậc k là tổng p[i]q[k−i] → chính là convolution hai dãy hệ số.",
+      "whyVi": "Thêm quy tắc cộng chỉ số để nhận vì sao là chập, không chỉ ghép nhãn phép nhân đa thức."
+    },
+    {
+      "id": "DGT302-591",
+      "tip": "Hai dãy dài 3, hai đầu đều khác zero và đều dương → chập dài 3+3−1=5, không có triệt mẫu.",
+      "whyVi": "Mẹo cũ dừng ở phép tính chưa ra 5; thêm kết quả và điều kiện không có mẫu nội bộ bị triệt ở ví dụ này."
+    },
+    {
+      "id": "DGT302-596",
+      "tip": "DIF: cộng/trừ trước, nhân twiddle vào nhánh hiệu phía dưới sau đó; DIT làm nhân trước.",
+      "whyVi": "Mẹo cũ chỉ nói sau phép cộng/trừ nhưng chưa chỉ bottom/difference branch, là điểm phân biệt hai lựa chọn."
+    },
+    {
+      "id": "DGT302-598",
+      "tip": "N=8 dùng đúng 3 bit: 3=011₂ → đảo thành 110₂=6; giữ cả bit 0 đầu.",
+      "whyVi": "Mẹo dùng đủ 3 bit đúng nhưng chưa chỉ thao tác 011→110 và kết quả cụ thể."
+    },
+    {
+      "id": "DGT302-599",
+      "tip": "Radix-2: log₂N tầng × N/2 bướm/tầng × 2 phép cộng/bướm = Nlog₂N phép cộng phức.",
+      "whyVi": "Thêm phép đếm phân biệt công thức phép cộng với công thức phép nhân có hệ số 1/2."
+    },
+    {
+      "id": "DGT302-600",
+      "tip": "W8²=e^(−j2π·2/8)=e^(−jπ/2)=−j; dùng dấu âm của DFT thuận.",
+      "whyVi": "Mẹo góc −90° chưa chỉ cách tính góc từ 8 và 2, thêm bước quy đổi để giải biến thể."
+    },
+    {
+      "id": "DGT302-602",
+      "tip": "Giảm leakage → so sidelobe; trong Hann/Rectangular/Hamming/Blackman, Blackman thấp nhất, đổi lại main-lobe rộng.",
+      "whyVi": "Giới hạn mẹo trong bốn lựa chọn, tránh khẳng định Blackman là cửa sổ giảm leakage tốt nhất nói chung.",
+      "references": [
+        "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.windows.blackman.html"
+      ]
+    },
+    {
+      "id": "DGT302-603",
+      "tip": "Yule–Walker dự đoán từ các mẫu của cùng quá trình WSS → mọi moment cần dùng đều là autocorrelation.",
+      "whyVi": "Câu hỏi tại sao chỉ dùng tự tương quan; mẹo cũ chỉ gắn tên phương trình với thuật ngữ, thiếu cue cùng quá trình."
+    },
+    {
+      "id": "DGT302-604",
+      "tip": "Tuyến tính = cộng được + nhân hệ số được: f(ax1+bx2)=af(x1)+bf(x2); có offset c≠0 thì loại.",
+      "whyVi": "Thay superposition đơn độc bằng phép thử đủ hai tính chất và loại distractor mx+c."
+    },
+    {
+      "id": "DGT302-607",
+      "tip": "Speech coding: AR/all-pole mô hình các cộng hưởng vocal tract bằng ít hệ số → tiết kiệm tham số.",
+      "whyVi": "Stem hỏi vì sao AR được dùng, không hỏi tên model; mẹo cũ speech→AR không nêu lý do ít tham số."
+    },
+    {
+      "id": "DGT302-608",
+      "tip": "Speech coding: AR/all-pole mô hình các cộng hưởng vocal tract bằng ít hệ số → tiết kiệm tham số.",
+      "whyVi": "Stem hỏi vì sao AR được dùng, không hỏi tên model; mẹo cũ speech→AR không nêu lý do ít tham số."
+    },
+    {
+      "id": "DGT302-610",
+      "tip": "Thêm Hamming vào Overlap-Save chuẩn → nhân các mẫu khối với trọng số khác nhau, có thể gây điều biên đầu ra.",
+      "whyVi": "Mẹo cũ chỉ khuyên không thêm Hamming, chưa dẫn tới hậu quả amplitude-modulate là đáp án cần chọn."
+    },
+    {
+      "id": "DGT302-611",
+      "tip": "Hỏi vì sao lọc trước sampler: phổ đã chồng thì không tách lại được → anti-alias phải đặt trước lấy mẫu.",
+      "whyVi": "Câu hỏi là tại sao trước thay vì sau; thêm tính không đảo ngược của spectral overlap, không chỉ nhắc thứ tự."
+    },
+    {
+      "id": "DGT302-613",
+      "tip": "Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-615",
+      "tip": "Tăng bậc predictor tối ưu: có thể đặt hệ số mới=0 nên MMSE lý thuyết không tăng; không bảo đảm giảm hẳn.",
+      "whyVi": "Thêm cách lập luận hệ số mới bằng 0 để tránh nhớ sai tăng bậc luôn giảm lỗi hoặc xóa nhiễu trắng."
+    },
+    {
+      "id": "DGT302-618",
+      "tip": "Hai tone sát nhau → tăng thời lượng quan sát để main-lobe hẹp; thêm zero chỉ làm phổ mịn, không tách tone thật.",
+      "whyVi": "Thêm lý do và loại lựa chọn zero-padding, thay câu trả lời dài cửa sổ đơn độc."
+    },
+    {
+      "id": "DGT302-622",
+      "tip": "Sai số tối ưu phải không tương quan với các mẫu dùng dự đoán: E{e·x*past}=0; trực giao không có nghĩa e=0.",
+      "whyVi": "Thêm tiêu chuẩn trực giao và loại distractor error=0, thay nhắc đáp án orthogonal đơn thuần."
+    },
+    {
+      "id": "DGT302-623",
+      "tip": "DF II dùng chung dãy delay cho tử và mẫu → giảm bộ nhớ; không làm giảm bậc hay xóa nhiễu lượng tử.",
+      "whyVi": "Thêm cơ chế tiết kiệm memory và loại các lợi ích giả trong lựa chọn."
+    },
+    {
+      "id": "DGT302-626",
+      "tip": "Radix-2: log₂N tầng, mỗi tầng O(N) phép toán → tổng O(Nlog₂N), khác DFT trực tiếp O(N²).",
+      "whyVi": "Thêm phép đếm thay chỉ lặp ký hiệu độ phức tạp."
+    },
+    {
+      "id": "DGT302-629",
+      "tip": "Có Toeplitz → dùng Levinson–Durbin đệ quy O(p²), thay giải ma trận đặc O(p³); không bảo đảm MMSE=0.",
+      "whyVi": "Thêm cấu trúc Toeplitz và loại bẫy error=0 thay vì chỉ kể hai bậc phức tạp."
+    },
+    {
+      "id": "DGT302-630",
+      "tip": "Bướm radix-2 tính a±Wb: dùng chung 1 tích Wb, rồi 1 tổng + 1 hiệu → 2 đầu ra, 1 nhân và 2 cộng phức.",
+      "whyVi": "Thêm hai đầu ra và tích dùng chung, giới hạn radix-2 thay vì phát biểu cho mọi loại butterfly."
+    },
+    {
+      "id": "DGT302-631",
+      "tip": "FFT chỉ radix-2: đệm zero tới 2^ceil(log₂L), không bỏ mẫu; FFT tổng quát không bắt buộc chiều dài lũy thừa 2.",
+      "whyVi": "Mẹo cũ chỉ pad không chỉ đến đâu; thêm lũy thừa 2 kế tiếp và giữ điều kiện radix-2-only."
+    },
+    {
+      "id": "DGT302-633",
+      "tip": "Baseband có Fmax: lấy Fs>2Fmax để tránh chồng phổ; mốc 2Fmax là Nyquist rate, còn Fs/2 là tần số Nyquist.",
+      "whyVi": "Phân biệt mốc tốc độ Nyquist 2Fmax với tần số Nyquist Fs/2; giữ bất đẳng thức lấy mẫu đủ cao."
+    },
+    {
+      "id": "DGT302-636",
+      "tip": "Overlap-Save: M−1 mẫu đầu bị chập vòng cuộn chồng nên bỏ; giữ phần cuối sạch, không phải bỏ vì nhiễu lượng tử.",
+      "whyVi": "Mẹo cũ chỉ lặp số mẫu bỏ, trong khi stem hỏi vì sao bỏ; thêm circular artifacts."
+    },
+    {
+      "id": "DGT302-638",
+      "tip": "Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-641",
+      "tip": "Dãy thực → X[N−k]=X*[k]: cùng độ lớn, pha đối dấu; nhận Hermitian/conjugate symmetry.",
+      "whyVi": "Thêm phép kiểm hai bin liên hợp thay vì chỉ nhắc nhãn Hermitian."
+    },
+    {
+      "id": "DGT302-643",
+      "tip": "Ưu điểm DSP: đổi thuật toán bằng phần mềm, ít phải sửa mạch → software flexibility; aging/drift là nhược điểm phần cứng.",
+      "whyVi": "Mẹo cũ chỉ gắn digital với software flexibility; thêm hành động thực tế và cách loại distractors."
+    },
+    {
+      "id": "DGT302-645",
+      "tip": "ADC lý tưởng, tín hiệu đủ biến thiên → xấp xỉ lỗi lượng tử bằng white noise; đây là mô hình, không đúng cho mọi tín hiệu.",
+      "whyVi": "Thêm điều kiện mô hình đã có trong lời giải, tránh hiểu lỗi lượng tử luôn trắng độc lập."
+    },
+    {
+      "id": "DGT302-646",
+      "tip": "FFT radix-2 có log₂N tầng: N→2N thì log₂(2N)=log₂N+1 → thêm đúng một tầng.",
+      "whyVi": "Mẹo cũ thiếu radix-2 và cơ sở logarit nên dễ nhớ sai tăng đôi số tầng."
+    },
+    {
+      "id": "DGT302-648",
+      "tip": "Trễ đúng một mẫu: y[n]=x[n−1] ↔ z⁻¹ → Unit Delay; không phải tích phân hay nhân hệ số.",
+      "whyVi": "Thêm biểu thức nhận diện khối unit delay thay vì chỉ lặp tên khối."
+    },
+    {
+      "id": "DGT302-649",
+      "tip": "Cùng M, cần main-lobe hẹp nhất trong các lựa chọn → Rectangular; đổi lại sidelobe cao, leakage lớn.",
+      "whyVi": "Giữ điều kiện cùng chiều dài và phạm vi các cửa sổ đang so sánh; tránh khẳng định tối ưu không điều kiện."
+    },
+    {
+      "id": "DGT302-653",
+      "tip": "Rectangular dài hơn → transition hẹp hơn; Gibbs overshoot không mất, nên loại đáp án eliminates ripple.",
+      "whyVi": "Narrower transition only trong mẹo cũ mơ hồ; nêu rõ hiệu ứng Gibbs còn lại mà stem đang phân biệt."
+    },
+    {
+      "id": "DGT302-655",
+      "tip": "Tuyến tính = cộng được + nhân hệ số được: f(ax1+bx2)=af(x1)+bf(x2); có offset c≠0 thì loại.",
+      "whyVi": "Thay superposition đơn độc bằng phép thử đủ hai tính chất và loại distractor mx+c."
+    },
+    {
+      "id": "DGT302-658",
+      "tip": "Speech coding: AR/all-pole mô hình các cộng hưởng vocal tract bằng ít hệ số → tiết kiệm tham số.",
+      "whyVi": "Stem hỏi vì sao AR được dùng, không hỏi tên model; mẹo cũ speech→AR không nêu lý do ít tham số."
+    },
+    {
+      "id": "DGT302-660",
+      "tip": "Thêm Hamming vào Overlap-Save chuẩn → nhân các mẫu khối với trọng số khác nhau, có thể gây điều biên đầu ra.",
+      "whyVi": "Mẹo cũ chỉ khuyên không thêm Hamming, chưa dẫn tới hậu quả amplitude-modulate là đáp án cần chọn."
+    },
+    {
+      "id": "DGT302-661",
+      "tip": "Hỏi vì sao lọc trước sampler: phổ đã chồng thì không tách lại được → anti-alias phải đặt trước lấy mẫu.",
+      "whyVi": "Câu hỏi là tại sao trước thay vì sau; thêm tính không đảo ngược của spectral overlap, không chỉ nhắc thứ tự."
+    },
+    {
+      "id": "DGT302-663",
+      "tip": "Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-664",
+      "tip": "Hỏi vì sao lọc trước sampler: phổ đã chồng thì không tách lại được → anti-alias phải đặt trước lấy mẫu.",
+      "whyVi": "Câu hỏi là tại sao trước thay vì sau; thêm tính không đảo ngược của spectral overlap, không chỉ nhắc thứ tự."
+    },
+    {
+      "id": "DGT302-666",
+      "tip": "Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-668",
+      "tip": "Tăng bậc predictor tối ưu: có thể đặt hệ số mới=0 nên MMSE lý thuyết không tăng; không bảo đảm giảm hẳn.",
+      "whyVi": "Thêm cách lập luận hệ số mới bằng 0 để tránh nhớ sai tăng bậc luôn giảm lỗi hoặc xóa nhiễu trắng."
+    },
+    {
+      "id": "DGT302-671",
+      "tip": "Hai tone sát nhau → tăng thời lượng quan sát để main-lobe hẹp; thêm zero chỉ làm phổ mịn, không tách tone thật.",
+      "whyVi": "Thêm lý do và loại lựa chọn zero-padding, thay câu trả lời dài cửa sổ đơn độc."
+    },
+    {
+      "id": "DGT302-675",
+      "tip": "Sai số tối ưu phải không tương quan với các mẫu dùng dự đoán: E{e·x*past}=0; trực giao không có nghĩa e=0.",
+      "whyVi": "Thêm tiêu chuẩn trực giao và loại distractor error=0, thay nhắc đáp án orthogonal đơn thuần."
+    },
+    {
+      "id": "DGT302-676",
+      "tip": "DF II dùng chung dãy delay cho tử và mẫu → giảm bộ nhớ; không làm giảm bậc hay xóa nhiễu lượng tử.",
+      "whyVi": "Thêm cơ chế tiết kiệm memory và loại các lợi ích giả trong lựa chọn."
+    },
+    {
+      "id": "DGT302-679",
+      "tip": "Radix-2: log₂N tầng, mỗi tầng O(N) phép toán → tổng O(Nlog₂N), khác DFT trực tiếp O(N²).",
+      "whyVi": "Thêm phép đếm thay chỉ lặp ký hiệu độ phức tạp."
+    },
+    {
+      "id": "DGT302-682",
+      "tip": "Có Toeplitz → dùng Levinson–Durbin đệ quy O(p²), thay giải ma trận đặc O(p³); không bảo đảm MMSE=0.",
+      "whyVi": "Thêm cấu trúc Toeplitz và loại bẫy error=0 thay vì chỉ kể hai bậc phức tạp."
+    },
+    {
+      "id": "DGT302-683",
+      "tip": "Bướm radix-2 tính a±Wb: dùng chung 1 tích Wb, rồi 1 tổng + 1 hiệu → 2 đầu ra, 1 nhân và 2 cộng phức.",
+      "whyVi": "Thêm hai đầu ra và tích dùng chung, giới hạn radix-2 thay vì phát biểu cho mọi loại butterfly."
+    },
+    {
+      "id": "DGT302-684",
+      "tip": "FFT chỉ radix-2: đệm zero tới 2^ceil(log₂L), không bỏ mẫu; FFT tổng quát không bắt buộc chiều dài lũy thừa 2.",
+      "whyVi": "Mẹo cũ chỉ pad không chỉ đến đâu; thêm lũy thừa 2 kế tiếp và giữ điều kiện radix-2-only."
+    },
+    {
+      "id": "DGT302-686",
+      "tip": "Baseband có Fmax: lấy Fs>2Fmax để tránh chồng phổ; mốc 2Fmax là Nyquist rate, còn Fs/2 là tần số Nyquist.",
+      "whyVi": "Phân biệt mốc tốc độ Nyquist 2Fmax với tần số Nyquist Fs/2; giữ bất đẳng thức lấy mẫu đủ cao."
+    },
+    {
+      "id": "DGT302-689",
+      "tip": "Overlap-Save: M−1 mẫu đầu bị chập vòng cuộn chồng nên bỏ; giữ phần cuối sạch, không phải bỏ vì nhiễu lượng tử.",
+      "whyVi": "Mẹo cũ chỉ lặp số mẫu bỏ, trong khi stem hỏi vì sao bỏ; thêm circular artifacts."
+    },
+    {
+      "id": "DGT302-691",
+      "tip": "Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.",
+      "whyVi": "Mẹo cũ bỏ điều kiện ROC dù lời giải có; thêm điều kiện để không áp dụng trên điểm không hội tụ."
+    },
+    {
+      "id": "DGT302-694",
+      "tip": "Dãy thực → X[N−k]=X*[k]: cùng độ lớn, pha đối dấu; nhận Hermitian/conjugate symmetry.",
+      "whyVi": "Thêm phép kiểm hai bin liên hợp thay vì chỉ nhắc nhãn Hermitian."
+    },
+    {
+      "id": "DGT302-696",
+      "tip": "Ưu điểm DSP: đổi thuật toán bằng phần mềm, ít phải sửa mạch → software flexibility; aging/drift là nhược điểm phần cứng.",
+      "whyVi": "Mẹo cũ chỉ gắn digital với software flexibility; thêm hành động thực tế và cách loại distractors."
+    },
+    {
+      "id": "DGT302-698",
+      "tip": "ADC lý tưởng, tín hiệu đủ biến thiên → xấp xỉ lỗi lượng tử bằng white noise; đây là mô hình, không đúng cho mọi tín hiệu.",
+      "whyVi": "Thêm điều kiện mô hình đã có trong lời giải, tránh hiểu lỗi lượng tử luôn trắng độc lập."
+    },
+    {
+      "id": "DGT302-699",
+      "tip": "FFT radix-2 có log₂N tầng: N→2N thì log₂(2N)=log₂N+1 → thêm đúng một tầng.",
+      "whyVi": "Mẹo cũ thiếu radix-2 và cơ sở logarit nên dễ nhớ sai tăng đôi số tầng."
+    },
+    {
+      "id": "DGT302-701",
+      "tip": "Trễ đúng một mẫu: y[n]=x[n−1] ↔ z⁻¹ → Unit Delay; không phải tích phân hay nhân hệ số.",
+      "whyVi": "Thêm biểu thức nhận diện khối unit delay thay vì chỉ lặp tên khối."
+    },
+    {
+      "id": "DGT302-702",
+      "tip": "Cùng M, cần main-lobe hẹp nhất trong các lựa chọn → Rectangular; đổi lại sidelobe cao, leakage lớn.",
+      "whyVi": "Giữ điều kiện cùng chiều dài và phạm vi các cửa sổ đang so sánh; tránh khẳng định tối ưu không điều kiện."
+    },
+    {
+      "id": "DGT302-706",
+      "tip": "Rectangular dài hơn → transition hẹp hơn; Gibbs overshoot không mất, nên loại đáp án eliminates ripple.",
+      "whyVi": "Narrower transition only trong mẹo cũ mơ hồ; nêu rõ hiệu ứng Gibbs còn lại mà stem đang phân biệt."
+    },
+    {
+      "id": "DGT302-711",
+      "tip": "Đã alias: LPF sau, tăng rate sau hay tăng bit đều không tách lại phổ gốc → cả ba cách nêu đều không đủ.",
+      "whyVi": "Thêm kiểm tra từng phương án để dẫn tới đáp án all of the above, không chỉ nhắc hậu xử lý chung chung."
+    },
+    {
+      "id": "DGT302-718",
+      "tip": "Mũ phức qua LTI: y=H(ω0)e^(jω0n) → giữ ω0, biên độ nhân |H| và pha cộng ∠H.",
+      "whyVi": "Mẹo cũ same frequency đúng nhưng thiếu hai đại lượng còn lại được so sánh trực tiếp trong lựa chọn."
+    },
+    {
+      "id": "DGT302-719",
+      "tip": "Dãy nhân quả hữu tỉ → ROC ngoài cực xa gốc nhất và kéo tới vô cực; không chọn vành giữa các cực.",
+      "whyVi": "Thêm điều kiện hữu tỉ đã có trong lời giải, tránh áp dụng mẫu ROC theo cực cho mọi dãy không hữu tỉ."
+    },
+    {
+      "id": "DGT302-720",
+      "tip": "DIT chia chỉ số chẵn–lẻ liên tiếp; đảo bit sắp input theo các nhánh đó, để bướm ghép đúng dữ liệu.",
+      "whyVi": "Recursive data flow trong mẹo cũ quá chung; nêu thao tác chẵn–lẻ giải thích đúng mục đích bit reversal."
+    },
+    {
+      "id": "DGT302-721",
+      "tip": "Trễ đúng một mẫu: y[n]=x[n−1] ↔ z⁻¹ → Unit Delay; không phải tích phân hay nhân hệ số.",
+      "whyVi": "Thêm biểu thức nhận diện khối unit delay thay vì chỉ lặp tên khối."
+    },
+    {
+      "id": "DGT302-726",
+      "tip": "Lattice dùng các hệ số phản xạ từng tầng → thường ít nhạy với lượng tử hệ số; vẫn cần delay và multiplier.",
+      "whyVi": "Mẹo cũ robust coefficients còn mơ hồ; liên hệ cấu trúc phản xạ và loại hai lợi ích tuyệt đối không có."
+    },
+    {
+      "id": "DGT302-727",
+      "tip": "Group delay=−dφ/dω; pha là đường thẳng → đạo hàm hằng, tại điểm phổ khác zero.",
+      "whyVi": "Thêm công thức suy ra và điều kiện pha xác định, không hiểu group delay tại zero phổ cũng hữu hạn hằng."
+    },
+    {
+      "id": "DGT302-728",
+      "tip": "Nhìn convolution ở time domain → multiplication ở frequency domain: y=x*h ↔ Y=X·H; đừng đảo hai miền.",
+      "whyVi": "Mẹo cũ convolution↔multiplication thiếu nhãn miền, có thể áp ngược khi stem khác."
+    },
+    {
+      "id": "DGT302-734",
+      "tip": "Sinc là đáp ứng LPF lý tưởng: tái tạo chính xác tín hiệu band-limited nếu Fs vượt Nyquist; không bỏ được lượng tử.",
+      "whyVi": "Câu hỏi vì sao sinc ideal; mẹo cũ ideal interpolation→sinc chỉ nhắc tên và không nêu điều kiện tái tạo."
+    },
+    {
+      "id": "DGT302-736",
+      "tip": "Noncausal Wiener được dùng thêm quan sát tương lai; có thể bỏ qua chúng nên MMSE không tăng, đôi khi giảm.",
+      "whyVi": "Mẹo cũ chỉ nhắc bất đẳng thức MMSE, thiếu lý do future observations mà câu đang hỏi."
+    },
+    {
+      "id": "DGT302-738",
+      "tip": "Fs giảm dưới 2Fmax của tín hiệu baseband → các bản phổ tiến sát rồi chồng lên nhau: spectral overlap/aliasing.",
+      "whyVi": "Thêm điều kiện baseband để không mâu thuẫn các câu bandpass sampling bên cạnh."
+    },
+    {
+      "id": "DGT302-743",
+      "tip": "1−z⁻ᴹ=0 trên z=e^(jω) → e^(−jMω)=1 → Mω=2πk → ω=2πk/M.",
+      "whyVi": "Thêm bước giải nghiệm để phân biệt bội chẵn 2π với bội lẻ π, thay chỉ chép vị trí zeros."
+    },
+    {
+      "id": "DGT302-744",
+      "tip": "Với baseband chưa lọc, Fs<2Fmax làm các bản phổ chồng → aliasing; bandpass có thể có khoảng Fs thấp hợp lệ.",
+      "whyVi": "Giữ giới hạn baseband để không dùng Nyquist low-pass máy móc cho mọi tín hiệu dải thông."
+    },
+    {
+      "id": "DGT302-745",
+      "tip": "Minimum-phase → zeros ở |z|<1 để khi lấy 1/H, các zero thành pole ổn định của bộ nghịch đảo nhân quả.",
+      "whyVi": "Thêm liên hệ zeros→inverse poles để phân biệt stability của hệ gốc với minimum phase."
+    },
+    {
+      "id": "DGT302-747",
+      "tip": "Dãy nhân quả hữu tỉ → ROC ngoài cực xa gốc nhất và kéo tới vô cực; không chọn vành giữa các cực.",
+      "whyVi": "Thêm điều kiện hữu tỉ đã có trong lời giải, tránh áp dụng mẫu ROC theo cực cho mọi dãy không hữu tỉ."
+    },
+    {
+      "id": "DGT302-749",
+      "tip": "Fixed-point FFT không scale: tổng trong bướm có thể lớn hơn dải biểu diễn → overflow, không phải leakage/aliasing.",
+      "whyVi": "Thêm cơ chế tăng biên độ trong bướm để nhận đúng rủi ro, thay chỉ fixed-point→overflow."
+    },
+    {
+      "id": "DGT302-750",
+      "tip": "Bilinear ánh xạ tần số qua hàm tan phi tuyến → frequency warping; không gây aliasing như impulse invariance.",
+      "whyVi": "Thêm nguyên nhân phi tuyến để phân biệt warping với các nhược điểm khác."
+    },
+    {
+      "id": "DGT302-752",
+      "tip": "IIR bậc cao → chia thành SOS bậc hai, tránh một đa thức dài nhạy sai số; đây là lý do chọn output=\"sos\".",
+      "whyVi": "Stem hỏi why sos; mẹo cũ chỉ nhắc tùy chọn, chưa nêu mục đích numerical stability."
+    },
+    {
+      "id": "DGT302-754",
+      "tip": "Đã có causal rational + mọi |pole|<1 → ROC ngoài cực ngoài cùng chứa |z|=1 → BIBO stable.",
+      "whyVi": "Mẹo cũ thêm nếu ROC còn để người học kiểm tra lại giả thiết đã suy được; nêu mạch suy luận từ causal đang có."
+    },
+    {
+      "id": "DGT302-755",
+      "tip": "Nhìn convolution ở time domain → multiplication ở frequency domain: y=x*h ↔ Y=X·H; đừng đảo hai miền.",
+      "whyVi": "Mẹo cũ convolution↔multiplication thiếu nhãn miền, có thể áp ngược khi stem khác."
+    },
+    {
+      "id": "DGT302-756",
+      "tip": "Upsample I chèn I−1 zero làm DC trung bình giảm I lần → LPF anti-imaging cần gain I để bù biên độ.",
+      "whyVi": "Mẹo cũ chỉ cho gain bằng I trong khi stem hỏi tại sao; thêm cơ chế giảm DC do chèn zero."
+    },
+    {
+      "id": "DGT302-757",
+      "tip": "Ưu điểm DSP: đổi thuật toán bằng phần mềm, ít phải sửa mạch → software flexibility; aging/drift là nhược điểm phần cứng.",
+      "whyVi": "Mẹo cũ chỉ gắn digital với software flexibility; thêm hành động thực tế và cách loại distractors."
+    },
+    {
+      "id": "DGT302-758",
+      "tip": "Cần dynamic range lớn → floating-point có số mũ biểu diễn cả rất nhỏ lẫn rất lớn; fixed-point chỉ có một scale.",
+      "whyVi": "Thêm đặc điểm số mũ giải thích lựa chọn thay vì chỉ ghép largest dynamic range với floating-point."
+    },
+    {
+      "id": "DGT302-762",
+      "tip": "Causal: ROC ngoài cực xa nhất; stable: ROC chứa |z|=1 → tất cả pole ở |z|<1 và ROC ở phía ngoài chúng.",
+      "whyVi": "Mẹo poles inside/ROC outside cũ thiếu ngoài cực nào; nêu đúng cả hai điều kiện, không lẫn ngoài vòng đơn vị."
+    },
+    {
+      "id": "DGT302-763",
+      "tip": "Causal: ROC ngoài cực xa nhất; stable: ROC chứa |z|=1 → tất cả pole ở |z|<1 và ROC ở phía ngoài chúng.",
+      "whyVi": "Mẹo poles inside/ROC outside cũ thiếu ngoài cực nào; nêu đúng cả hai điều kiện, không lẫn ngoài vòng đơn vị."
+    },
+    {
+      "id": "DGT302-764",
+      "tip": "Causal: ROC ngoài cực xa nhất; stable: ROC chứa |z|=1 → tất cả pole ở |z|<1 và ROC ở phía ngoài chúng.",
+      "whyVi": "Mẹo poles inside/ROC outside cũ thiếu ngoài cực nào; nêu đúng cả hai điều kiện, không lẫn ngoài vòng đơn vị."
+    },
+    {
+      "id": "DGT302-770",
+      "tip": "Downsample D: theo tần số chuẩn hóa rad/sample, phổ giãn D lần và các bản có thể chồng gây aliasing.",
+      "whyVi": "Thêm trục tần số chuẩn hóa đã có trong lời giải, tránh nhầm giãn tần số vật lý Hz của tín hiệu."
+    },
+    {
+      "id": "DGT302-773",
+      "tip": "H(z)→đáp ứng tần số: thay z=e^(jω), |z|=1; cần vòng đơn vị nằm trong ROC.",
+      "whyVi": "Thêm điều kiện ROC để dùng phép thế hợp lệ, thống nhất lời giải đã nêu."
+    },
+    {
+      "id": "DGT302-774",
+      "tip": "Chỉ thấy các bản sao tại kFs → hệ quả lấy mẫu bình thường; chỉ khi chúng chồng nhau mới kết luận aliasing.",
+      "whyVi": "Mẹo normal sampling đúng nhưng thêm cách phân biệt aliasing là distractor dễ nhầm nhất."
+    },
+    {
+      "id": "DGT302-776",
+      "tip": "Dữ liệu thực → X[N−k]=X*[k], suy nửa phổ từ nửa còn lại → giảm tính nhờ conjugate symmetry.",
+      "whyVi": "Câu hỏi giảm tính như thế nào; thêm quy tắc suy nửa phổ thay chỉ nhắc tên đối xứng."
+    },
+    {
+      "id": "DGT302-778",
+      "tip": "Zero-Order Hold giữ giá trị đến mẫu tiếp → dễ làm phần cứng nhưng đầu ra thành bậc thang, không tái tạo lý tưởng.",
+      "whyVi": "Mẹo cũ chỉ staircase thiếu vế simple implementation trong trade-off được hỏi."
+    },
+    {
+      "id": "DGT302-779",
+      "tip": "|H| rất nhỏ → |1/H| rất lớn: inverse filter khuếch đại cả nhiễu ở tần số đó, dù H chưa bằng zero.",
+      "whyVi": "Thêm bước nghịch đảo độ lớn và giữ điều kiện nonzero để phân biệt với không tồn tại nghịch đảo."
+    },
+    {
+      "id": "DGT302-783",
+      "tip": "Độ dài từ hữu hạn → làm tròn/cắt ở mỗi tầng tích lũy sai số; chọn precision và scale phù hợp, không phải FFT đổi năng lượng.",
+      "whyVi": "Mẹo cũ liệt kê precision/scaling/rounding mà chưa chỉ vì sao phải quản lý; thêm sai số tích lũy và loại lý do sai."
+    },
+    {
+      "id": "DGT302-788",
+      "tip": "Nếu chưa giới hạn băng thông, downsample trước làm chồng phổ; lọc sau không tách lại được alias đã xảy ra.",
+      "whyVi": "Mẹo cũ khẳng định downsample first luôn alias; thêm điều kiện dải chưa phù hợp, đúng tính most likely trong stem."
+    },
+    {
+      "id": "DGT302-789",
+      "tip": "Không biết chính xác mẫu tương lai của tín hiệu random → mô tả bằng kỳ vọng, phương sai, tương quan thay một quỹ đạo xác định.",
+      "whyVi": "Câu hỏi tại sao dùng thống kê; mẹo cũ random→statistical quantities chỉ lặp lại câu hỏi, không nêu sự bất định."
+    },
+    {
+      "id": "DGT302-790",
+      "tip": "Đề hỏi PSD/công suất, không phải biên độ → Syy=|H|²Sxx; có bình phương độ lớn, không phải H·Sxx.",
+      "whyVi": "Thêm cue công suất→bình phương để phân biệt hai phương án H và |H|²."
+    }
+  ]
+}

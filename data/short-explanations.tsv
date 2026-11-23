@@ -1,0 +1,959 @@
+DGT302-500	Thay z = e^(jω) vào tổng z-transform sẽ được đúng định nghĩa DTFT, nếu ROC chứa vòng đơn vị.	r=1 → z=e^(jω), được DTFT nếu ROC chứa vòng đơn vị; không phải CTFT.
+DGT302-501	Ổn định đòi hỏi DTFT của đáp ứng xung tồn tại, tức ROC chứa |z| = 1.	BIBO + ROC → chứa vòng đơn vị.
+DGT302-502	Làm tròn hệ số làm dịch các cực; cực vượt vòng đơn vị có thể gây mất ổn định.	Lượng tử hệ số IIR → cực/zero dịch vị trí; cực vượt |z|=1 có thể làm mất ổn định.
+DGT302-503	Lattice all-pole ổn định khi mọi hệ số phản xạ có độ lớn nhỏ hơn 1.	reflection coefficient → kiểm tra |Ki| < 1.
+DGT302-504	Cửa sổ ngắn định vị thời gian tốt nhưng phân giải tần số kém, và ngược lại.	Giới hạn STFT: cửa sổ ngắn rõ thời điểm, dài rõ tần số → không thể đồng thời hoàn hảo cả hai.
+DGT302-505	Với H1(z)=H0(−z), chọn G0=H0 và G1=−H0(−z) làm tổng alias H0(−z)G0(z)+H1(−z)G1(z)=0.	H1(z)=H0(−z): giữ G0=H0, đảo dấu nhánh G1=−H0(−z) để hai tích alias triệt nhau.
+DGT302-506	Dự đoán dùng quá khứ của chính tín hiệu; Wiener ước lượng tín hiệu mong muốn bằng tối thiểu hóa MSE.	Prediction đoán từ quá khứ của chính tín hiệu; Wiener dùng đầu vào để ước lượng tín hiệu đích, cùng tối ưu MSE.
+DGT302-507	Hệ minimum-phase có bộ nghịch đảo nhân quả và ổn định; bộ nghịch đảo có thể là FIR hoặc IIR, tùy cấu trúc H(z).	minimum phase → inverse causal + stable; không bắt buộc IIR.
+DGT302-508	DFT thuận dùng số mũ âm; WN là căn bậc N cơ bản của đơn vị.	DFT thuận dùng dấu âm: WN=e^(−j2π/N); 2π/N là góc giữa hai căn đơn vị kề nhau.
+DGT302-509	Giữ điện áp không đổi giúp ADC có thời gian hoàn tất chuyển đổi.	giữ mức đến clock sau → holding.
+DGT302-510	Tổng Σ n·aⁿ·e^(−jωn) = a·e^(−jω)/(1−a·e^(−jω))². Nhân j với đạo hàm DTFT cho dấu dương.	n·aⁿu[n]: lấy j·đạo hàm của 1/(1−ae^(−jω)) → tử +ae^(−jω), mẫu bình phương.
+DGT302-511	Giảm sidelobe làm main-lobe rộng hơn khi giữ nguyên chiều dài bộ lọc.	Giữ M cố định, cửa sổ mượt hơn → sidelobe thấp hơn nhưng main-lobe/transition rộng hơn.
+DGT302-512	Cần đủ L + M − 1 mẫu để kết quả không bị cuộn chồng theo chu kỳ.	circular = linear → zero-pad đến L+M−1.
+DGT302-513	Radix-2 DIF tách theo tần số nên đầu ra nằm ở thứ tự đảo bit.	DIF → natural in, bit-reversed out.
+DGT302-514	Nhân tín hiệu với chuỗi xung lấy mẫu tạo các bản sao phổ cách nhau Fs.	sampling → lặp phổ mỗi Fs.
+DGT302-515	Cộng bốn số hạng 0,5·e^(−j2πn/8), n = 0…3, được 0,5 − j1,207.	N=8, k=1: cộng 0,5[1+e^(−jπ/4)+e^(−jπ/2)+e^(−j3π/4)] = 0,5−j1,207.
+DGT302-516	Cutoff chuẩn hóa là 1/max(3,4); gain bằng hệ số nội suy 3 để bù chèn zero.	up=3, down=4 → cutoff 1/4, gain 3.
+DGT302-517	Qua LTI, hàm mũ phức chỉ đổi biên độ và pha bởi H(ω), không đổi dạng.	giữ dạng qua hệ → eigenfunction.
+DGT302-518	Số phép nhân radix-2 theo công thức đếm chuẩn là (N/2)·log₂N = 512·10.	Đếm chuẩn radix-2: (N/2)log₂N; N=1024 → 512×10=5120 phép nhân, kể cả twiddle tầm thường.
+DGT302-519	Viết cos thành hai hàm mũ rồi dùng tính chất dịch phổ: Xs[k] = ½{X[(k−k0) mod N] + X[(k+k0) mod N]}.	Nhân cos → hai phổ dịch, mỗi phổ có hệ số ½.
+DGT302-520	SAR ADC thử từng bit từ MSB xuống LSB bằng DAC và bộ so sánh.	one bit at a time → successive approximation.
+DGT302-521	Với DFT thuận X[k] = Σ x[n]e^(−j2πkn/N), tổng năng lượng là Σ|x[n]|² = (1/N)Σ|X[k]|².	DFT thuận không chuẩn hóa → Parseval có 1/N.
+DGT302-522	Mẫu tại chỉ số n đóng góp x[n]z^(−n); mẫu zero tại n=4 không có số hạng.	Gốc tại mẫu 2: ghép x[n]z^(−n) từ n=0; bỏ mẫu zero n=4, mẫu 1 cuối mang z⁻⁵.
+DGT302-523	DTFT thuận cộng trên mọi chỉ số nguyên với nhân tử e^(−jωn).	forward → dấu âm, tổng −∞…∞.
+DGT302-524	Phương trình sai phân chỉ cần phép cộng, nhân hệ số và lưu trễ một mẫu.	Phương trình sai phân: cộng các nhánh, nhân hệ số, trễ mẫu bằng z⁻¹ → adder + multiplier + unit delay.
+DGT302-525	Chia thành bốn nhánh ở mỗi tầng đòi hỏi N = 4^v cho radix-4 thuần.	Radix-4 thuần chia 4 ở mọi tầng → N=4^v; chỉ là số chẵn hay hợp số thì chưa đủ.
+DGT302-526	upfirdn kết hợp upsample, FIR và downsample bằng cấu trúc polyphase để tránh tính thừa.	up–FIR–down → upfirdn.
+DGT302-527	Tăng chiều dài chỉ thu hẹp vùng dao động; biên overshoot Gibbs không tiến về zero.	Rectangular + tăng M → transition hẹp, vùng Gibbs hẹp; đỉnh overshoot vẫn khoảng 9% bước nhảy.
+DGT302-528	Direct Form II dùng chung dãy trễ cho phần tử số và mẫu số.	canonic → max(M,N) bộ trễ.
+DGT302-529	Hai nhánh cùng nhận x[n], rồi cộng đầu ra: y = x*h₁ + x*h₂ = x*(h₁+h₂). Vì vậy h_eq[n] = h₁[n] + h₂[n].	parallel / song song → cộng; cascade / nối tiếp → chập.
+DGT302-530	MSE đo trung bình bình phương sai lệch giữa giá trị thật và giá trị dự đoán.	optimal linear predictor → minimize MSE.
+DGT302-531	Khai triển phân thức tách H(z) thành tổng các nhánh bậc thấp độc lập.	parallel IIR → partial fractions.
+DGT302-532	MA chỉ cộng các mẫu nhiễu hiện tại và quá khứ, không có hồi tiếp đầu ra.	MA → all-zero / FIR.
+DGT302-533	Tổng hội tụ ở mọi điểm cả hai biến đổi cùng hội tụ; triệt cực có thể làm ROC rộng thêm.	linearity ROC → ít nhất phần giao.
+DGT302-534	Lattice mô tả từng tầng bằng hệ số phản xạ, thuận tiện kiểm soát ổn định và lượng tử hóa.	lattice → reflection coefficients.
+DGT302-535	Đây là tổng cấp số nhân với công bội a·e^(−jω), có độ lớn nhỏ hơn 1.	aⁿu[n], |a|<1: công bội ae^(−jω) → tổng hình học 1/(1−ae^(−jω)); dấu trừ ở mẫu.
+DGT302-536	Fs/2 là giới hạn nửa tần số lấy mẫu, nơi phổ bị gập lại.	Fs/2 → Nyquist / folding frequency.
+DGT302-537	Zero trên vòng đơn vị tại ±ω0 khiến đáp ứng đúng tần số cần loại bằng zero.	notch → zeros tại e^(±jω0).
+DGT302-538	Nhân trong miền thời gian tương ứng chập tuần hoàn các phổ trong miền DTFT.	Đề nói nhân x1[n]x2[n] hoặc windowing → chập tuần hoàn các phổ DTFT; không chọn nhân phổ.
+DGT302-539	Pha tuyến tính cho độ trễ nhóm không đổi, tránh méo do lệch trễ. Muốn giữ nguyên dạng mọi tín hiệu còn cần đáp ứng biên độ phẳng trong dải xét.	Không méo pha do các tần số trễ khác nhau → cần group delay hằng → pha tuyến tính.
+DGT302-540	Lấy 1/H(z) đảo tử và mẫu, nên zero của H trở thành cực của bộ nghịch đảo.	inverse → zeros đổi thành poles.
+DGT302-541	Sigma-delta tích phân sai số trước lượng tử hóa để đẩy nhiễu về tần số cao.	sigma = tích phân → trước quantizer.
+DGT302-542	Z-transform hai phía cộng x[n]z^(−n) trên mọi số nguyên n.	z-transform → z^(−n), tổng hai phía.
+DGT302-543	Cửa sổ cắt ngắn đáp ứng xung lý tưởng bằng phép nhân từng mẫu.	window method → h = hd·w.
+DGT302-544	Radix-2 chia đôi liên tiếp đến các DFT 2 điểm nên N phải là lũy thừa 2.	radix-2 → N = 2^v.
+DGT302-545	Nội suy trước rồi giảm mẫu giúp tránh mất thông tin do giảm mẫu quá sớm.	rational I/D → upsample → filter → downsample.
+DGT302-546	Dịch đầu vào bao nhiêu thì đầu ra dịch đúng bấy nhiêu là định nghĩa bất biến theo thời gian.	delay in = delay out → time-invariant.
+DGT302-547	Blackman giảm sidelobe mạnh hơn các cửa sổ cơ bản đổi lại main-lobe rộng hơn.	Cùng độ dài, peak sidelobe khoảng −58 dB và main-lobe rộng → Blackman trong các cửa sổ được liệt kê.
+DGT302-548	ω gần zero biểu diễn thành phần không đổi hoặc biến thiên chậm.	ω = 0 → DC.
+DGT302-549	Chập tuyến tính của hai dãy dài Lx và Lh có chiều dài tối đa Lx + Lh − 1.	convolution length → cộng rồi trừ 1.
+DGT302-551	Z một phía vẫn chứa mẫu ban đầu y(−1) khi dịch trễ một bước.	one-sided delay → z⁻¹Y⁺ + y(−1).
+DGT302-552	Dãy bắt đầu tại n=2 nên tổng cấp số nhân có số đầu 10²z⁻²; ROC là |z|>10.	u(n−2) → bắt đầu từ 100z⁻².
+DGT302-553	Nhân quả có ROC ngoài cực ngoài cùng; để chứa vòng đơn vị, mọi cực phải nằm bên trong.	causal + stable → |pole| < 1.
+DGT302-554	Ở trạng thái nghỉ ban đầu, y = x*h nên Y = XH và H = Y/X.	transfer function → output/input.
+DGT302-555	ROC ổn định phải chứa |z|=1 và không chứa cực 0,5 hoặc 2.	Ổn định → ROC phải chứa |z|=1; hai cực 0,5 và 2 kẹp vòng đơn vị → chọn 0,5<|z|<2.
+DGT302-556	Thời gian rời rạc chỉ nhận các chỉ số nguyên; biên độ vẫn có thể liên tục.	discrete-time → integer time indices.
+DGT302-557	B=25 kHz, k=floor(10702,5/25)=428; Fs tối thiểu theo nhánh này là 2Fh/k≈50,0117 kHz.	B=10702,5−10677,5=25 kHz; k=floor(Fh/B)=428; Fs,min=2Fh/k≈50,0117 kHz.
+DGT302-558	Lấy mẫu lý tưởng giữ giá trị tín hiệu tại các thời điểm cách nhau T bằng chuỗi delta.	ideal sampling → nhân impulse train.
+DGT302-559	Độ dốc bậc thang Δ/T phải theo kịp độ dốc lớn nhất của tín hiệu.	avoid slope overload → Δ/T ≥ max|dx/dt|.
+DGT302-560	Bộ lọc tái tạo giữ bản phổ gốc ở baseband và loại các ảnh phổ cao tần.	Đề cần lấy lại baseband sau D/A → giữ phổ quanh 0, loại ảnh cao tần bằng ideal low-pass.
+DGT302-561	Với đa thức FIR chuẩn hóa đầu bằng 1, hệ số phản xạ tầng cuối bằng hệ số cuối.	K3 → hệ số z⁻³ = 1/3.
+DGT302-562	Hồi tiếp làm đáp ứng IIR kéo dài; FIR thông thường chỉ dùng các nhánh tiến.	IIR → recursive / feedback.
+DGT302-563	Chia bộ lọc bậc cao thành các tầng bậc hai giúp giảm độ nhạy với lượng tử hóa hệ số.	high-order IIR → cascade biquads.
+DGT302-564	Khi bỏ LSB của số bù hai tương đương làm tròn xuống, giá trị sau lượng tử không lớn hơn giá trị thật. Với e=sau−trước, sai số không dương và thường có bias âm.	drop LSB / floor + e=quantized−exact → e≤0.
+DGT302-565	Levinson–Durbin tận dụng ma trận Toeplitz để giải đệ quy với độ phức tạp bậc hai.	Levinson–Durbin tận dụng Toeplitz: p tầng đệ quy, mỗi tầng O(p) → O(p²), giảm từ O(p³).
+DGT302-566	Phần không tất định của quá trình WSS có nhân tử phổ phù hợp có thể được tạo bằng cách đưa nhiễu trắng qua bộ lọc ổn định.	purely nondeterministic innovations → white noise.
+DGT302-567	Tương quan chéo giữa đầu vào và tín hiệu đích cho biết phần nào cần được ước lượng.	Wiener–Hopf: vế trái autocorrelation của input; vế phải cross-correlation input với desired/target.
+DGT302-568	Có N đầu ra, mỗi đầu ra cộng N tích nên DFT trực tiếp tốn bậc N².	DFT trực tiếp: N bin đầu ra × N số hạng mỗi bin → O(N²); FFT mới là O(NlogN).
+DGT302-569	DFT lấy N mẫu cách đều trên một chu kỳ phổ DTFT của dãy hữu hạn.	Record hữu hạn rồi mở rộng bằng zero → dãy không tuần hoàn; DFT là N mẫu đều của DTFT dãy đó.
+DGT302-570	DFT thuận cộng N mẫu với trọng số e^(−j2πkn/N).	forward DFT → dấu âm, n=0…N−1.
+DGT302-571	DCT gom năng lượng ảnh vào ít hệ số tần số thấp, giúp bỏ nhiều hệ số nhỏ khi nén.	JPEG / DCT → energy compaction.
+DGT302-572	Cắt ngắn tín hiệu làm phổ chập với phổ cửa sổ, gây leakage và giảm độ phân giải.	rectangular window → leakage + resolution loss.
+DGT302-573	Biến đổi tuyến tính giữ nguyên các hệ số của tổ hợp tuyến tính.	a1x1+a2x2 → a1X1+a2X2.
+DGT302-574	Đạo hàm e^(−jωn) sinh −jn; nhân thêm j trả lại n.	Nhân n: đạo hàm e^(−jωn) sinh −jn, nhân thêm j bù lại → n·x[n] ↔ j·dX/dω.
+DGT302-575	X(−ω)=X*(ω) nên pha đổi dấu modulo 2π ở những điểm X khác zero; tại zero phổ không có pha xác định.	real signal → magnitude chẵn, phase lẻ modulo 2π khi X≠0.
+DGT302-576	Nhân e^(jω0n) thay ω bằng ω−ω0 trong biểu thức DTFT.	modulation → X(ω−ω0).
+DGT302-577	Tín hiệu thực chẵn có phần sin triệt nhau nên phổ thực chẵn. Pha là 0 hoặc π modulo 2π ở những điểm phổ khác zero.	Thực + chẵn → sin triệt nhau, X thực chẵn; X>0 pha 0, X<0 pha π, X=0 không xác định pha.
+DGT302-578	Giảm mẫu D lần giữ lại một mẫu sau mỗi D mẫu đầu vào.	downsample D → y[m]=x[mD].
+DGT302-579	Bộ lọc chung phải thỏa cả chống ảnh phổ và chống alias nên lấy cutoff nhỏ hơn.	I/D → ωc = π/max(I,D).
+DGT302-580	Dùng chỉ báo chỉ số chẵn [1+(−1)^n]/2, suy ra Xd(ω)=½[X(ω/2)+X(ω/2−π)]. Đối số phải là ω/2, không phải 2ω.	D=2 → ½[X(ω/2)+X(ω/2−π)]; phổ giãn, có thể alias.
+DGT302-581	Polyphase bỏ các phép tính trên mẫu zero hoặc mẫu sẽ bị loại, giảm tốc độ tính cần thiết.	Polyphase → chỉ tính mẫu cần giữ, bỏ tích với zero hoặc đầu ra sẽ bị downsample loại; giảm số phép tính.
+DGT302-582	freqz nhận hệ số b,a và trả đáp ứng tần số của bộ lọc số.	H(e^jω), b/a → freqz.
+DGT302-583	Phép chập đầu vào với đáp ứng xung trở thành phép nhân các phổ.	LTI frequency → Y=X·H.
+DGT302-584	Đặt |H|²=1/2 và giải được cos(ωc)=(4a−1−a²)/(2a). Trong [0,π], cutoff này chỉ tồn tại khi a≥3−2√2.	−3 dB → |H|²=1/2; dùng |1−ae^(−jω)|²=1+a²−2a cosω rồi giải cosωc.
+DGT302-585	Tần số thực tương ứng các điểm z=e^(jω) trên vòng đơn vị.	frequency response → evaluate unit circle.
+DGT302-586	|H(e^(jω))|=|b0|/sqrt(1+a²−2a cosω). Với mọi 0<a<1, độ lớn lớn nhất ở DC và giảm dần đến ω=π, nên đây là low-pass.	0<a<1: mẫu số nhỏ nhất tại ω=0, lớn nhất tại π → gain giảm theo tần số, là low-pass.
+DGT302-587	Hệ nhân quả không phản ứng trước khi xung đầu vào xuất hiện.	causal → h[n]=0 với n<0.
+DGT302-588	Tương quan so sánh các dãy khi trượt, không dùng phép gập của chập. Với dãy phức còn phải lấy liên hợp một dãy.	Correlation trượt để so khớp, không gập như convolution; nếu dãy phức thì thêm liên hợp.
+DGT302-589	Đổi vai trò hai dãy không đổi tổng tích trong phép chập.	commutative → x*h=h*x.
+DGT302-590	Hệ số của mỗi lũy thừa tích đa thức là tổng các tích có chỉ số cộng bằng nhau.	Nhân đa thức: hệ số bậc k là tổng p[i]q[k−i] → chính là convolution hai dãy hệ số.
+DGT302-591	Hai dãy đều dài 3 nên độ dài chập là 3+3−1=5.	Hai dãy dài 3, hai đầu đều khác zero và đều dương → chập dài 3+3−1=5, không có triệt mẫu.
+DGT302-592	Phản đối xứng làm tổng các hệ số bằng zero, nên không truyền được DC cho low-pass.	Type III/IV → H(0)=0 → không low-pass.
+DGT302-593	Nhờ các cực và hồi tiếp, IIR đạt đáp ứng biên độ sắc hơn với ít hệ số hơn FIR.	same magnitude specs → IIR lower order.
+DGT302-594	Đối xứng hoặc phản đối xứng quanh tâm làm phần pha biến thiên tuyến tính theo ω.	linear-phase FIR → symmetry / antisymmetry.
+DGT302-595	Ánh xạ bilinear làm méo trục tần số; pre-warp bù trước các tần số thiết kế quan trọng.	bilinear warping → pre-warping.
+DGT302-596	Bướm DIF tính tổng và hiệu trước, rồi nhân nhánh hiệu với twiddle.	DIF: cộng/trừ trước, nhân twiddle vào nhánh hiệu phía dưới sau đó; DIT làm nhân trước.
+DGT302-597	Áp dụng DFT hai lần tạo dãy đảo vòng và nhân thêm N.	DFT of X[n] → N·x[−k mod N].
+DGT302-598	3 viết bằng 3 bit là 011; đảo thành 110, tương ứng 6.	N=8 dùng đúng 3 bit: 3=011₂ → đảo thành 110₂=6; giữ cả bit 0 đầu.
+DGT302-599	Mỗi tầng có N/2 bướm, mỗi bướm hai phép cộng, tổng cộng log₂N tầng.	Radix-2: log₂N tầng × N/2 bướm/tầng × 2 phép cộng/bướm = Nlog₂N phép cộng phức.
+DGT302-600	W8²=e^(−jπ/2), nằm trên trục ảo âm.	W8²=e^(−j2π·2/8)=e^(−jπ/2)=−j; dùng dấu âm của DFT thuận.
+DGT302-602	Blackman có sidelobe thấp nên giảm rò phổ tốt, đổi lại main-lobe rộng.	Giảm leakage → so sidelobe; trong Hann/Rectangular/Hamming/Blackman, Blackman thấp nhất, đổi lại main-lobe rộng.
+DGT302-603	Lấy kỳ vọng tích các mẫu trong điều kiện sai số trực giao biến chúng thành các giá trị tự tương quan.	Yule–Walker dự đoán từ các mẫu của cùng quá trình WSS → mọi moment cần dùng đều là autocorrelation.
+DGT302-604	Hệ tuyến tính phải thỏa đồng thời tính cộng và nhân hệ số.	Tuyến tính = cộng được + nhân hệ số được: f(ax1+bx2)=af(x1)+bf(x2); có offset c≠0 thì loại.
+DGT302-605	FFT tái sử dụng các twiddle nhờ tính tuần hoàn và đối xứng, tránh tính lại các tổng giống nhau.	FFT reuse → periodicity + symmetry.
+DGT302-606	Hệ nhân quả không cần biết các mẫu đầu vào trong tương lai.	causal → present + past.
+DGT302-607	AR dùng ít hệ số all-pole để mô hình hóa các cộng hưởng của ống thanh quản.	Speech coding: AR/all-pole mô hình các cộng hưởng vocal tract bằng ít hệ số → tiết kiệm tham số.
+DGT302-608	AR dùng ít hệ số all-pole để mô hình hóa các cộng hưởng của ống thanh quản.	Speech coding: AR/all-pole mô hình các cộng hưởng vocal tract bằng ít hệ số → tiết kiệm tham số.
+DGT302-609	Bộ lọc thích nghi cập nhật hệ số liên tục để bám theo thống kê tín hiệu thay đổi.	time-varying statistics → LMS / adaptive.
+DGT302-610	Nhân cửa sổ Hamming làm thay đổi biên độ các khối; Overlap-Save chuẩn không cần cửa sổ này.	Thêm Hamming vào Overlap-Save chuẩn → nhân các mẫu khối với trọng số khác nhau, có thể gây điều biên đầu ra.
+DGT302-611	Sau khi các bản phổ chồng lên nhau, không thể tách lại chúng bằng lọc thông thường.	Hỏi vì sao lọc trước sampler: phổ đã chồng thì không tách lại được → anti-alias phải đặt trước lấy mẫu.
+DGT302-612	Với hệ hữu tỉ nhân quả, cực trong vòng đơn vị làm đáp ứng xung suy giảm và tổng tuyệt đối hữu hạn.	causal stability → mọi |pole|<1.
+DGT302-613	DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.	Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.
+DGT302-614	FIR có đáp ứng xung chỉ khác zero trong hữu hạn mẫu.	FIR → Finite Impulse Response.
+DGT302-615	Thêm mẫu quá khứ cung cấp thêm thông tin; nghiệm tối ưu có thể giữ hệ số mới bằng zero nên MMSE không tăng.	Tăng bậc predictor tối ưu: có thể đặt hệ số mới=0 nên MMSE lý thuyết không tăng; không bảo đảm giảm hẳn.
+DGT302-616	Cấu trúc lattice dùng hệ số phản xạ nên thường ít nhạy với sai số số học fixed-point.	lattice → robust quantization.
+DGT302-617	Tính in-place ghi kết quả bướm đè lên vùng nhớ đầu vào, tránh cần mảng thứ hai.	minimum RAM → in-place.
+DGT302-618	Quan sát dài hơn làm main-lobe hẹp, giúp tách hai tone có tần số gần nhau.	Hai tone sát nhau → tăng thời lượng quan sát để main-lobe hẹp; thêm zero chỉ làm phổ mịn, không tách tone thật.
+DGT302-619	BIBO yêu cầu mọi đầu vào bị chặn đều tạo ra đầu ra bị chặn.	Bounded Input → Bounded Output.
+DGT302-620	Thêm zero lấy nhiều điểm hơn trên cùng DTFT, không bổ sung thông tin quan sát.	zero-padding → phổ mịn, không tăng phân giải thật.
+DGT302-621	Ánh xạ bilinear đưa nửa trái mặt phẳng s vào bên trong vòng đơn vị, giữ tính ổn định.	left-half s-plane → inside unit circle.
+DGT302-622	Nếu sai số còn tương quan với mẫu dự đoán, ta vẫn có thể điều chỉnh hệ số để giảm MSE.	Sai số tối ưu phải không tương quan với các mẫu dùng dự đoán: E{e·x*past}=0; trực giao không có nghĩa e=0.
+DGT302-623	Direct Form II chia sẻ các phần tử trễ giữa phần tiến và hồi tiếp.	DF II dùng chung dãy delay cho tử và mẫu → giảm bộ nhớ; không làm giảm bậc hay xóa nhiễu lượng tử.
+DGT302-624	Loại thành phần trên Fs/2 trước lấy mẫu giúp tránh các bản phổ chồng nhau.	anti-aliasing → remove above Nyquist.
+DGT302-625	lfilter dùng Direct Form II chuyển vị để thực hiện phương trình sai phân.	lfilter → transposed DF II.
+DGT302-626	Radix-2 có log₂N tầng, mỗi tầng xử lý bậc N phép toán.	Radix-2: log₂N tầng, mỗi tầng O(N) phép toán → tổng O(Nlog₂N), khác DFT trực tiếp O(N²).
+DGT302-627	Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.	LP → HP: đổi dấu xen kẽ.
+DGT302-628	Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.	LP → HP: đổi dấu xen kẽ.
+DGT302-629	Cấu trúc Toeplitz cho phép giải đệ quy thay vì nghịch đảo ma trận tổng quát.	Có Toeplitz → dùng Levinson–Durbin đệ quy O(p²), thay giải ma trận đặc O(p³); không bảo đảm MMSE=0.
+DGT302-630	Bướm radix-2 tạo a+Wb và a−Wb, dùng chung tích Wb.	Bướm radix-2 tính a±Wb: dùng chung 1 tích Wb, rồi 1 tổng + 1 hiệu → 2 đầu ra, 1 nhân và 2 cộng phức.
+DGT302-631	Đệm lên lũy thừa 2 kế tiếp là cách dùng radix-2-only. Các thư viện FFT tổng quát có thể xử lý độ dài không phải lũy thừa 2.	FFT chỉ radix-2: đệm zero tới 2^ceil(log₂L), không bỏ mẫu; FFT tổng quát không bắt buộc chiều dài lũy thừa 2.
+DGT302-632	Hệ không nhớ không dùng mẫu trước hoặc sau thời điểm đang xét.	memoryless → current input only.
+DGT302-633	Các bản phổ không chồng nhau khi Fs lớn hơn hai lần tần số cao nhất của tín hiệu baseband.	Baseband có Fmax: lấy Fs>2Fmax để tránh chồng phổ; mốc 2Fmax là Nyquist rate, còn Fs/2 là tần số Nyquist.
+DGT302-634	Polyphase chỉ tính các nhánh cần thiết, bỏ các tích với zero do nội suy chèn vào.	interpolation efficiency → skip inserted zeros.
+DGT302-635	Hệ số tần số cao thường nhỏ nên lượng tử hóa mạnh làm nhiều hệ số thành zero.	JPEG discard → high-frequency coefficients.
+DGT302-636	M−1 mẫu đầu mỗi khối bị cuộn chồng trong chập vòng nên phải bỏ đi.	Overlap-Save: M−1 mẫu đầu bị chập vòng cuộn chồng nên bỏ; giữ phần cuối sạch, không phải bỏ vì nhiễu lượng tử.
+DGT302-637	ROC là tập các giá trị z làm tổng biến đổi z hội tụ.	ROC → Region of Convergence.
+DGT302-638	DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.	Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.
+DGT302-639	Wiener chọn các hệ số làm bình phương sai số ước lượng trung bình nhỏ nhất.	Wiener → minimum MSE.
+DGT302-640	Đỉnh tương quan xuất hiện ở độ trễ làm hai tín hiệu khớp nhau tốt nhất.	correlation peak → best delay/alignment.
+DGT302-641	Với dãy thực, hai bin đối xứng thỏa X[N−k]=X*[k].	Dãy thực → X[N−k]=X*[k]: cùng độ lớn, pha đối dấu; nhận Hermitian/conjugate symmetry.
+DGT302-642	DCT dồn phần lớn năng lượng vào ít hệ số, phù hợp biểu diễn ảnh gọn.	DCT → energy compaction.
+DGT302-643	Thuật toán số có thể đổi bằng chương trình mà không phải thay toàn bộ mạch.	Ưu điểm DSP: đổi thuật toán bằng phần mềm, ít phải sửa mạch → software flexibility; aging/drift là nhược điểm phần cứng.
+DGT302-644	Chuỗi Fourier biểu diễn tín hiệu tuần hoàn bằng tổng các hài rời rạc.	periodic → Fourier Series.
+DGT302-645	Trong mô hình lượng tử hóa lý tưởng với tín hiệu đủ biến thiên, sai số được xấp xỉ nhiễu trắng.	ADC lý tưởng, tín hiệu đủ biến thiên → xấp xỉ lỗi lượng tử bằng white noise; đây là mô hình, không đúng cho mọi tín hiệu.
+DGT302-646	Số tầng là log₂N; thay N bằng 2N làm giá trị này tăng đúng 1.	FFT radix-2 có log₂N tầng: N→2N thì log₂(2N)=log₂N+1 → thêm đúng một tầng.
+DGT302-647	Các phép lọc và biến đổi lặp nhiều lần phép nhân rồi cộng tích lũy.	DSP processor → MAC.
+DGT302-648	Khối trễ một mẫu tạo y[n]=x[n−1], tương ứng z⁻¹.	Trễ đúng một mẫu: y[n]=x[n−1] ↔ z⁻¹ → Unit Delay; không phải tích phân hay nhân hệ số.
+DGT302-649	Rectangular có main-lobe hẹp nhất trong các cửa sổ cơ bản cùng chiều dài, nhưng sidelobe cao.	Cùng M, cần main-lobe hẹp nhất trong các lựa chọn → Rectangular; đổi lại sidelobe cao, leakage lớn.
+DGT302-650	IIR thường dùng đầu ra quá khứ quay lại đầu vào nên có hồi tiếp.	IIR → feedback.
+DGT302-651	Chèn zero rồi lọc trực tiếp lãng phí nhiều phép nhân có kết quả bằng zero.	direct interpolation waste → zero multiplications.
+DGT302-652	Pha khác nhau làm các thành phần tần số lệch thời gian khác nhau, nên dạng sóng vẫn có thể khác.	same magnitude ≠ same waveform; xét phase.
+DGT302-653	Dãy dài hơn làm main-lobe hẹp, nhưng không xóa biên overshoot Gibbs của cửa sổ chữ nhật.	Rectangular dài hơn → transition hẹp hơn; Gibbs overshoot không mất, nên loại đáp án eliminates ripple.
+DGT302-654	Giữ một trong D mẫu làm số mẫu mỗi giây giảm D lần.	downsample D → fs/D.
+DGT302-655	Hệ tuyến tính phải thỏa đồng thời tính cộng và nhân hệ số.	Tuyến tính = cộng được + nhân hệ số được: f(ax1+bx2)=af(x1)+bf(x2); có offset c≠0 thì loại.
+DGT302-656	FFT tái sử dụng các twiddle nhờ tính tuần hoàn và đối xứng, tránh tính lại các tổng giống nhau.	FFT reuse → periodicity + symmetry.
+DGT302-657	Hệ nhân quả không cần biết các mẫu đầu vào trong tương lai.	causal → present + past.
+DGT302-658	AR dùng ít hệ số all-pole để mô hình hóa các cộng hưởng của ống thanh quản.	Speech coding: AR/all-pole mô hình các cộng hưởng vocal tract bằng ít hệ số → tiết kiệm tham số.
+DGT302-659	Bộ lọc thích nghi cập nhật hệ số liên tục để bám theo thống kê tín hiệu thay đổi.	time-varying statistics → LMS / adaptive.
+DGT302-660	Nhân cửa sổ Hamming làm thay đổi biên độ các khối; Overlap-Save chuẩn không cần cửa sổ này.	Thêm Hamming vào Overlap-Save chuẩn → nhân các mẫu khối với trọng số khác nhau, có thể gây điều biên đầu ra.
+DGT302-661	Sau khi các bản phổ chồng lên nhau, không thể tách lại chúng bằng lọc thông thường.	Hỏi vì sao lọc trước sampler: phổ đã chồng thì không tách lại được → anti-alias phải đặt trước lấy mẫu.
+DGT302-662	Với hệ hữu tỉ nhân quả, cực trong vòng đơn vị làm đáp ứng xung suy giảm và tổng tuyệt đối hữu hạn.	causal stability → mọi |pole|<1.
+DGT302-663	DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.	Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.
+DGT302-664	Sau khi các bản phổ chồng lên nhau, không thể tách lại chúng bằng lọc thông thường.	Hỏi vì sao lọc trước sampler: phổ đã chồng thì không tách lại được → anti-alias phải đặt trước lấy mẫu.
+DGT302-665	Với hệ hữu tỉ nhân quả, cực trong vòng đơn vị làm đáp ứng xung suy giảm và tổng tuyệt đối hữu hạn.	causal stability → mọi |pole|<1.
+DGT302-666	DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.	Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.
+DGT302-667	FIR có đáp ứng xung chỉ khác zero trong hữu hạn mẫu.	FIR → Finite Impulse Response.
+DGT302-668	Thêm mẫu quá khứ cung cấp thêm thông tin; nghiệm tối ưu có thể giữ hệ số mới bằng zero nên MMSE không tăng.	Tăng bậc predictor tối ưu: có thể đặt hệ số mới=0 nên MMSE lý thuyết không tăng; không bảo đảm giảm hẳn.
+DGT302-669	Cấu trúc lattice dùng hệ số phản xạ nên thường ít nhạy với sai số số học fixed-point.	lattice → robust quantization.
+DGT302-670	Tính in-place ghi kết quả bướm đè lên vùng nhớ đầu vào, tránh cần mảng thứ hai.	minimum RAM → in-place.
+DGT302-671	Quan sát dài hơn làm main-lobe hẹp, giúp tách hai tone có tần số gần nhau.	Hai tone sát nhau → tăng thời lượng quan sát để main-lobe hẹp; thêm zero chỉ làm phổ mịn, không tách tone thật.
+DGT302-672	BIBO yêu cầu mọi đầu vào bị chặn đều tạo ra đầu ra bị chặn.	Bounded Input → Bounded Output.
+DGT302-673	Thêm zero lấy nhiều điểm hơn trên cùng DTFT, không bổ sung thông tin quan sát.	zero-padding → phổ mịn, không tăng phân giải thật.
+DGT302-674	Ánh xạ bilinear đưa nửa trái mặt phẳng s vào bên trong vòng đơn vị, giữ tính ổn định.	left-half s-plane → inside unit circle.
+DGT302-675	Nếu sai số còn tương quan với mẫu dự đoán, ta vẫn có thể điều chỉnh hệ số để giảm MSE.	Sai số tối ưu phải không tương quan với các mẫu dùng dự đoán: E{e·x*past}=0; trực giao không có nghĩa e=0.
+DGT302-676	Direct Form II chia sẻ các phần tử trễ giữa phần tiến và hồi tiếp.	DF II dùng chung dãy delay cho tử và mẫu → giảm bộ nhớ; không làm giảm bậc hay xóa nhiễu lượng tử.
+DGT302-677	Loại thành phần trên Fs/2 trước lấy mẫu giúp tránh các bản phổ chồng nhau.	anti-aliasing → remove above Nyquist.
+DGT302-678	lfilter dùng Direct Form II chuyển vị để thực hiện phương trình sai phân.	lfilter → transposed DF II.
+DGT302-679	Radix-2 có log₂N tầng, mỗi tầng xử lý bậc N phép toán.	Radix-2: log₂N tầng, mỗi tầng O(N) phép toán → tổng O(Nlog₂N), khác DFT trực tiếp O(N²).
+DGT302-680	Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.	LP → HP: đổi dấu xen kẽ.
+DGT302-681	Nhân h[n] với (−1)^n dịch phổ π, đổi vùng thông thấp thành vùng thông cao.	LP → HP: đổi dấu xen kẽ.
+DGT302-682	Cấu trúc Toeplitz cho phép giải đệ quy thay vì nghịch đảo ma trận tổng quát.	Có Toeplitz → dùng Levinson–Durbin đệ quy O(p²), thay giải ma trận đặc O(p³); không bảo đảm MMSE=0.
+DGT302-683	Bướm radix-2 tạo a+Wb và a−Wb, dùng chung tích Wb.	Bướm radix-2 tính a±Wb: dùng chung 1 tích Wb, rồi 1 tổng + 1 hiệu → 2 đầu ra, 1 nhân và 2 cộng phức.
+DGT302-684	Đệm lên lũy thừa 2 kế tiếp là cách dùng radix-2-only. Các thư viện FFT tổng quát có thể xử lý độ dài không phải lũy thừa 2.	FFT chỉ radix-2: đệm zero tới 2^ceil(log₂L), không bỏ mẫu; FFT tổng quát không bắt buộc chiều dài lũy thừa 2.
+DGT302-685	Hệ không nhớ không dùng mẫu trước hoặc sau thời điểm đang xét.	memoryless → current input only.
+DGT302-686	Các bản phổ không chồng nhau khi Fs lớn hơn hai lần tần số cao nhất của tín hiệu baseband.	Baseband có Fmax: lấy Fs>2Fmax để tránh chồng phổ; mốc 2Fmax là Nyquist rate, còn Fs/2 là tần số Nyquist.
+DGT302-687	Polyphase chỉ tính các nhánh cần thiết, bỏ các tích với zero do nội suy chèn vào.	interpolation efficiency → skip inserted zeros.
+DGT302-688	Hệ số tần số cao thường nhỏ nên lượng tử hóa mạnh làm nhiều hệ số thành zero.	JPEG discard → high-frequency coefficients.
+DGT302-689	M−1 mẫu đầu mỗi khối bị cuộn chồng trong chập vòng nên phải bỏ đi.	Overlap-Save: M−1 mẫu đầu bị chập vòng cuộn chồng nên bỏ; giữ phần cuối sạch, không phải bỏ vì nhiễu lượng tử.
+DGT302-690	ROC là tập các giá trị z làm tổng biến đổi z hội tụ.	ROC → Region of Convergence.
+DGT302-691	DTFT chính là z-transform tại z=e^(jω), nếu vòng đơn vị thuộc ROC.	Z→DTFT: thay z=e^(jω) trên |z|=1; chỉ tồn tại DTFT theo cách này khi ROC chứa vòng đơn vị.
+DGT302-692	Wiener chọn các hệ số làm bình phương sai số ước lượng trung bình nhỏ nhất.	Wiener → minimum MSE.
+DGT302-693	Đỉnh tương quan xuất hiện ở độ trễ làm hai tín hiệu khớp nhau tốt nhất.	correlation peak → best delay/alignment.
+DGT302-694	Với dãy thực, hai bin đối xứng thỏa X[N−k]=X*[k].	Dãy thực → X[N−k]=X*[k]: cùng độ lớn, pha đối dấu; nhận Hermitian/conjugate symmetry.
+DGT302-695	DCT dồn phần lớn năng lượng vào ít hệ số, phù hợp biểu diễn ảnh gọn.	DCT → energy compaction.
+DGT302-696	Thuật toán số có thể đổi bằng chương trình mà không phải thay toàn bộ mạch.	Ưu điểm DSP: đổi thuật toán bằng phần mềm, ít phải sửa mạch → software flexibility; aging/drift là nhược điểm phần cứng.
+DGT302-697	Chuỗi Fourier biểu diễn tín hiệu tuần hoàn bằng tổng các hài rời rạc.	periodic → Fourier Series.
+DGT302-698	Trong mô hình lượng tử hóa lý tưởng với tín hiệu đủ biến thiên, sai số được xấp xỉ nhiễu trắng.	ADC lý tưởng, tín hiệu đủ biến thiên → xấp xỉ lỗi lượng tử bằng white noise; đây là mô hình, không đúng cho mọi tín hiệu.
+DGT302-699	Số tầng là log₂N; thay N bằng 2N làm giá trị này tăng đúng 1.	FFT radix-2 có log₂N tầng: N→2N thì log₂(2N)=log₂N+1 → thêm đúng một tầng.
+DGT302-700	Các phép lọc và biến đổi lặp nhiều lần phép nhân rồi cộng tích lũy.	DSP processor → MAC.
+DGT302-701	Khối trễ một mẫu tạo y[n]=x[n−1], tương ứng z⁻¹.	Trễ đúng một mẫu: y[n]=x[n−1] ↔ z⁻¹ → Unit Delay; không phải tích phân hay nhân hệ số.
+DGT302-702	Rectangular có main-lobe hẹp nhất trong các cửa sổ cơ bản cùng chiều dài, nhưng sidelobe cao.	Cùng M, cần main-lobe hẹp nhất trong các lựa chọn → Rectangular; đổi lại sidelobe cao, leakage lớn.
+DGT302-703	IIR thường dùng đầu ra quá khứ quay lại đầu vào nên có hồi tiếp.	IIR → feedback.
+DGT302-704	Chèn zero rồi lọc trực tiếp lãng phí nhiều phép nhân có kết quả bằng zero.	direct interpolation waste → zero multiplications.
+DGT302-705	Pha khác nhau làm các thành phần tần số lệch thời gian khác nhau, nên dạng sóng vẫn có thể khác.	same magnitude ≠ same waveform; xét phase.
+DGT302-706	Dãy dài hơn làm main-lobe hẹp, nhưng không xóa biên overshoot Gibbs của cửa sổ chữ nhật.	Rectangular dài hơn → transition hẹp hơn; Gibbs overshoot không mất, nên loại đáp án eliminates ripple.
+DGT302-707	Giữ một trong D mẫu làm số mẫu mỗi giây giảm D lần.	downsample D → fs/D.
+DGT302-708	Noble identities đổi thứ tự lọc và đổi rate để thực hiện lọc ở phía tốc độ thấp hơn.	Noble → lower-rate filtering.
+DGT302-709	Biến đổi Fourier chuyển phép chập thành phép nhân, giúp phân tích LTI dễ hơn.	time convolution → frequency multiplication.
+DGT302-710	Fourier Transform dùng phổ tần số liên tục để biểu diễn tín hiệu không tuần hoàn.	aperiodic → Fourier Transform.
+DGT302-711	Đổi xử lý sau lấy mẫu không khôi phục được thông tin đã nhập nhằng do aliasing.	Đã alias: LPF sau, tăng rate sau hay tăng bit đều không tách lại phổ gốc → cả ba cách nêu đều không đủ.
+DGT302-712	Chebyshev I chấp nhận ripple ở passband để chuyển dải sắc hơn Butterworth cùng bậc.	Type I → passband ripple.
+DGT302-713	Nếu H bằng zero ở tần số cần khôi phục, 1/H không tồn tại tại đó.	inverse filter → H ≠ 0 trong dải cần dùng.
+DGT302-714	Bướm DIT nhân nhánh b với twiddle trước khi tạo a±Wb.	DIT → twiddle trước cộng/trừ.
+DGT302-715	Twiddle có độ lớn 1 và góc xác định nên chỉ quay số phức trên vòng đơn vị.	twiddle → complex rotation.
+DGT302-716	Oversampling trải nhiễu lượng tử ra dải rộng; lọc bỏ ngoài dải giảm nhiễu còn lại.	oversampling SNR → spread noise then LPF.
+DGT302-717	Biến đổi một phía bắt đầu từ n=0 nên dễ giữ các số hạng điều kiện ban đầu.	unilateral Z → initial conditions.
+DGT302-718	Hàm mũ phức là hàm riêng của LTI, đầu ra chỉ nhân thêm H(ω0).	Mũ phức qua LTI: y=H(ω0)e^(jω0n) → giữ ω0, biên độ nhân |H| và pha cộng ∠H.
+DGT302-719	Dãy nhân quả hữu tỉ có ROC kéo ra vô cực từ cực ngoài cùng.	Dãy nhân quả hữu tỉ → ROC ngoài cực xa gốc nhất và kéo tới vô cực; không chọn vành giữa các cực.
+DGT302-720	Đảo bit sắp dữ liệu khớp các bước chia chẵn–lẻ trong thuật toán DIT.	DIT chia chỉ số chẵn–lẻ liên tiếp; đảo bit sắp input theo các nhánh đó, để bướm ghép đúng dữ liệu.
+DGT302-721	Khối trễ một mẫu tạo y[n]=x[n−1], tương ứng z⁻¹.	Trễ đúng một mẫu: y[n]=x[n−1] ↔ z⁻¹ → Unit Delay; không phải tích phân hay nhân hệ số.
+DGT302-722	Tín hiệu ngẫu nhiên có các mẫu tương lai không biết chính xác, cần mô tả bằng xác suất.	uncertainty → random.
+DGT302-723	Hệ nhân quả không cần biết các mẫu đầu vào trong tương lai.	causal → present + past.
+DGT302-724	Lượng tử hóa ánh xạ biên độ vào một tập mức hữu hạn.	quantization → amplitude; sampling → time.
+DGT302-725	BIBO yêu cầu mọi đầu vào bị chặn đều tạo ra đầu ra bị chặn.	Bounded Input → Bounded Output.
+DGT302-726	Hệ số phản xạ giúp lattice chịu sai số lượng tử hóa tốt, hữu ích khi cập nhật thích nghi.	Lattice dùng các hệ số phản xạ từng tầng → thường ít nhạy với lượng tử hệ số; vẫn cần delay và multiplier.
+DGT302-727	Pha tuyến tính có đạo hàm theo ω không đổi, nên độ trễ nhóm không đổi.	Group delay=−dφ/dω; pha là đường thẳng → đạo hàm hằng, tại điểm phổ khác zero.
+DGT302-728	Đầu ra LTI là chập với h[n]; trong miền tần số chỉ cần nhân X và H.	Nhìn convolution ở time domain → multiplication ở frequency domain: y=x*h ↔ Y=X·H; đừng đảo hai miền.
+DGT302-729	AR dùng hồi tiếp các mẫu quá khứ nên có mẫu số đa thức và tử số hằng.	AR → all-pole + white noise.
+DGT302-730	OFDM dùng IFFT ghép các sóng mang và FFT tách chúng ở phía thu.	OFDM → IFFT transmit, FFT receive.
+DGT302-731	Cửa sổ dài quan sát nhiều chu kỳ hơn nhưng định vị biến đổi theo thời gian kém hơn.	long STFT → frequency tốt, time kém.
+DGT302-732	Hệ không nhớ không dùng mẫu trước hoặc sau thời điểm đang xét.	memoryless → current input only.
+DGT302-733	Perfect Reconstruction cho phép khác đầu vào chỉ bởi một hệ số gain và một độ trễ.	PR → scaled/delayed original.
+DGT302-734	Sinc tương ứng bộ lọc thông thấp lý tưởng để khôi phục tín hiệu band-limited đủ điều kiện Nyquist.	Sinc là đáp ứng LPF lý tưởng: tái tạo chính xác tín hiệu band-limited nếu Fs vượt Nyquist; không bỏ được lượng tử.
+DGT302-735	Chập vòng dùng chỉ số modulo N nên phần vượt biên quay lại đầu dãy.	circular → wrap around.
+DGT302-736	Dùng thêm quan sát tương lai mở rộng tập nghiệm; bộ tối ưu có thể bỏ qua chúng nên MMSE không tăng, và có thể giảm khi thông tin mới hữu ích.	Noncausal Wiener được dùng thêm quan sát tương lai; có thể bỏ qua chúng nên MMSE không tăng, đôi khi giảm.
+DGT302-737	Tone không rơi đúng bin khiến đoạn quan sát không trọn chu kỳ, năng lượng rò sang bin khác.	between DFT bins → leakage.
+DGT302-738	Khi Fs xuống dưới Nyquist, các bản phổ dịch tiến sát rồi chồng lên nhau.	Fs giảm dưới 2Fmax của tín hiệu baseband → các bản phổ tiến sát rồi chồng lên nhau: spectral overlap/aliasing.
+DGT302-739	Parseval bảo toàn năng lượng khi chuyển miền, với hệ số chuẩn hóa phù hợp định nghĩa biến đổi.	Parseval → energy conservation.
+DGT302-740	Phép chập x*h trong thời gian trở thành tích XH trong miền tần số.	y=x*h → Y=XH.
+DGT302-741	Chập tuyến tính dài L+M−1, nên tổng chiều dài FFT N sau đệm phải ít nhất bằng số này; đây không phải số zero cần thêm.	FFT length N≥L+M−1; không phải thêm L+M−1 zero.
+DGT302-742	Biến đổi một phía bắt đầu từ n=0 nên dễ giữ các số hạng điều kiện ban đầu.	unilateral Z → initial conditions.
+DGT302-743	H=0 khi e^(−jMω)=1, tức Mω là bội của 2π.	1−z⁻ᴹ=0 trên z=e^(jω) → e^(−jMω)=1 → Mω=2πk → ω=2πk/M.
+DGT302-744	Với tín hiệu baseband, lấy mẫu dưới Nyquist làm các tần số khác nhau nhập vào cùng một dãy mẫu.	Với baseband chưa lọc, Fs<2Fmax làm các bản phổ chồng → aliasing; bandpass có thể có khoảng Fs thấp hợp lệ.
+DGT302-745	Zero bên trong vòng đơn vị giúp hệ nghịch đảo nhân quả có cực ổn định.	Minimum-phase → zeros ở |z|<1 để khi lấy 1/H, các zero thành pole ổn định của bộ nghịch đảo nhân quả.
+DGT302-746	Loại thành phần trên Fs/2 trước lấy mẫu giúp tránh các bản phổ chồng nhau.	anti-aliasing → remove above Nyquist.
+DGT302-747	Dãy nhân quả hữu tỉ có ROC kéo ra vô cực từ cực ngoài cùng.	Dãy nhân quả hữu tỉ → ROC ngoài cực xa gốc nhất và kéo tới vô cực; không chọn vành giữa các cực.
+DGT302-748	e^(−j(ω+2π)n)=e^(−jωn) vì n nguyên. 2π là chu kỳ dương nhỏ nhất bảo đảm cho mọi DTFT; tín hiệu riêng có thể có chu kỳ nhỏ hơn.	chu kỳ bảo đảm chung DTFT → 2π.
+DGT302-749	Tổng hai số trong bướm có thể cần thêm bit; không scale dễ vượt dải fixed-point.	Fixed-point FFT không scale: tổng trong bướm có thể lớn hơn dải biểu diễn → overflow, không phải leakage/aliasing.
+DGT302-750	Bilinear ánh xạ tần số theo hàm tan phi tuyến, tạo frequency warping.	Bilinear ánh xạ tần số qua hàm tan phi tuyến → frequency warping; không gây aliasing như impulse invariance.
+DGT302-751	Fixed-point dùng phần cứng đơn giản hơn nên thường giảm điện năng và diện tích silicon.	low power / cost → fixed-point.
+DGT302-752	SOS tách IIR bậc cao thành các tầng bậc hai, giảm độ nhạy số học so với đa thức bậc cao trực tiếp.	IIR bậc cao → chia thành SOS bậc hai, tránh một đa thức dài nhạy sai số; đây là lý do chọn output="sos".
+DGT302-753	Yule–Walker dùng tự tương quan cho AR; Wiener–Hopf thêm tương quan chéo với tín hiệu đích.	AR → Yule–Walker; target → Wiener–Hopf.
+DGT302-754	Với giả thiết hệ nhân quả của dạng bài này, cực trong vòng đơn vị cho đáp ứng xung suy giảm.	Đã có causal rational + mọi |pole|<1 → ROC ngoài cực ngoài cùng chứa |z|=1 → BIBO stable.
+DGT302-755	Đầu ra LTI là chập với h[n]; trong miền tần số chỉ cần nhân X và H.	Nhìn convolution ở time domain → multiplication ở frequency domain: y=x*h ↔ Y=X·H; đừng đảo hai miền.
+DGT302-756	Chèn I−1 zero làm mức DC trung bình giảm I lần, nên bộ lọc cần gain I để bù.	Upsample I chèn I−1 zero làm DC trung bình giảm I lần → LPF anti-imaging cần gain I để bù biên độ.
+DGT302-757	Thuật toán số có thể đổi bằng chương trình mà không phải thay toàn bộ mạch.	Ưu điểm DSP: đổi thuật toán bằng phần mềm, ít phải sửa mạch → software flexibility; aging/drift là nhược điểm phần cứng.
+DGT302-758	Số mũ của floating-point cho phép biểu diễn giá trị rất lớn lẫn rất nhỏ.	Cần dynamic range lớn → floating-point có số mũ biểu diễn cả rất nhỏ lẫn rất lớn; fixed-point chỉ có một scale.
+DGT302-759	Tần số lấy mẫu phải lớn hơn 16 kHz; 20 kHz thỏa điều kiện này.	Fmax=8 → Fs>16 kHz.
+DGT302-760	Low-pass truyền thành phần tần số thấp và làm suy giảm thành phần cao.	low-pass → giữ thấp, chặn cao.
+DGT302-761	Dịch phải chia biên độ cho 2, tạo headroom cho phép cộng ở tầng FFT tiếp theo.	right shift → scale down, tránh overflow.
+DGT302-762	Nhân quả cần ROC ngoài cực ngoài cùng; ổn định cần ROC chứa |z|=1.	Causal: ROC ngoài cực xa nhất; stable: ROC chứa |z|=1 → tất cả pole ở |z|<1 và ROC ở phía ngoài chúng.
+DGT302-763	Nhân quả cần ROC ngoài cực ngoài cùng; ổn định cần ROC chứa |z|=1.	Causal: ROC ngoài cực xa nhất; stable: ROC chứa |z|=1 → tất cả pole ở |z|<1 và ROC ở phía ngoài chúng.
+DGT302-764	Nhân quả cần ROC ngoài cực ngoài cùng; ổn định cần ROC chứa |z|=1.	Causal: ROC ngoài cực xa nhất; stable: ROC chứa |z|=1 → tất cả pole ở |z|<1 và ROC ở phía ngoài chúng.
+DGT302-765	Mỗi tầng lattice được đặc trưng bởi một hệ số phản xạ.	reflection coefficients → lattice.
+DGT302-766	Lấy mẫu dải thông dưới 2fmax chỉ hợp lệ khi chọn Fs để các bản phổ không chồng nhau.	bandpass sampling → non-overlapping replicas.
+DGT302-767	Chèn zero tạo các ảnh phổ lặp; low-pass loại chúng và giữ dải gốc.	after upsampling → anti-imaging LPF.
+DGT302-768	FFT chia DFT lớn thành các DFT nhỏ và tái sử dụng kết quả trung gian.	FFT speed → divide and conquer.
+DGT302-769	Zero-padding chỉ nội suy thêm điểm trên DTFT đang có, không làm tăng thời lượng quan sát.	smoother spectrum → interpolation, không resolution mới.
+DGT302-770	Giảm mẫu giãn phổ theo trục tần số chuẩn hóa, có thể làm các bản phổ chồng nhau.	Downsample D: theo tần số chuẩn hóa rad/sample, phổ giãn D lần và các bản có thể chồng gây aliasing.
+DGT302-771	Nhiều bit hơn làm bước lượng tử nhỏ hơn nên nhiễu lượng tử giảm và SNR tăng.	more ADC bits → better quantization SNR.
+DGT302-772	(a+jb)(−j)=b−ja, chỉ cần hoán đổi hai phần và đổi một dấu.	×(−j) → swap + sign.
+DGT302-773	Đáp ứng tần số là H(z) tại z=e^(jω), nếu vòng đơn vị thuộc ROC.	H(z)→đáp ứng tần số: thay z=e^(jω), |z|=1; cần vòng đơn vị nằm trong ROC.
+DGT302-774	Lấy mẫu tạo bản sao phổ tại mọi bội của Fs, kể cả khi không có alias.	Chỉ thấy các bản sao tại kFs → hệ quả lấy mẫu bình thường; chỉ khi chúng chồng nhau mới kết luận aliasing.
+DGT302-775	In-place tái sử dụng các ô nhớ đầu vào cho kết quả của từng bướm.	one memory array → in-place.
+DGT302-776	Dãy thực có các bin tần số đối xứng liên hợp, nên không cần tính độc lập cả hai nửa.	Dữ liệu thực → X[N−k]=X*[k], suy nửa phổ từ nửa còn lại → giảm tính nhờ conjugate symmetry.
+DGT302-777	Hai tín hiệu khác nhau có thể trùng ở mọi thời điểm lấy mẫu. Ví dụ cos(2π·1k·t) và cos(2π·7k·t) cho cùng mẫu khi fs=8 kHz; chỉ tone 7 kHz vượt Nyquist.	Different analog signals, same samples → aliasing ambiguity; không cần cả hai vượt Nyquist.
+DGT302-778	Giữ nguyên mẫu đến lần cập nhật sau tạo dạng bậc thang, dù phần cứng rất đơn giản.	Zero-Order Hold giữ giá trị đến mẫu tiếp → dễ làm phần cứng nhưng đầu ra thành bậc thang, không tái tạo lý tưởng.
+DGT302-779	Khi |H| rất nhỏ, bộ nghịch đảo 1/H rất lớn và khuếch đại cả nhiễu.	|H| rất nhỏ → |1/H| rất lớn: inverse filter khuếch đại cả nhiễu ở tần số đó, dù H chưa bằng zero.
+DGT302-780	Chèn zero chỉ tăng rate và tạo ảnh phổ; cần low-pass để nội suy các giá trị giữa mẫu.	zero stuffing ≠ interpolation hoàn chỉnh; thêm LPF.
+DGT302-781	Whitening loại tương quan giữa các mẫu, để lại phần đổi mới không dự đoán được từ quá khứ.	whitening → decorrelation / innovation.
+DGT302-782	Độ lớn |H(ω)| là hệ số nhân biên độ của sóng sin tại tần số ω.	|H| → amplitude; ∠H → phase.
+DGT302-783	Độ chính xác phần lẻ và dải biểu diễn cố định làm sai số làm tròn/cắt tích lũy nếu không chọn word length và scale phù hợp. Floating-point cũng có làm tròn.	Độ dài từ hữu hạn → làm tròn/cắt ở mỗi tầng tích lũy sai số; chọn precision và scale phù hợp, không phải FFT đổi năng lượng.
+DGT302-784	Các tầng SOS giảm vấn đề độ nhạy hệ số và sai số số học của IIR bậc cao.	implementation high-order → cascade SOS.
+DGT302-785	Fs=12 kHz nhỏ hơn 2·8=16 kHz nên các bản phổ bị chồng nếu không lọc trước.	12 < 16 → aliasing.
+DGT302-786	Downsampling có thể gộp các thành phần phổ; phải loại dải gây chồng trước khi bỏ mẫu.	decimate → LPF trước downsampler.
+DGT302-787	Tổng IDFT cần chia N để bù tổng DFT thuận; bỏ 1/N làm đầu ra lớn N lần.	missing 1/N → gain N.
+DGT302-788	Khi đã giảm mẫu gây chồng phổ, lọc phía sau không tách lại được các thành phần gốc.	Nếu chưa giới hạn băng thông, downsample trước làm chồng phổ; lọc sau không tách lại được alias đã xảy ra.
+DGT302-789	Mẫu tương lai không xác định duy nhất nên dùng kỳ vọng, phương sai và tương quan để mô tả.	Không biết chính xác mẫu tương lai của tín hiệu random → mô tả bằng kỳ vọng, phương sai, tương quan thay một quỹ đạo xác định.
+DGT302-790	LTI nhân biên độ phổ với H, nên công suất phổ nhân với |H|².	Đề hỏi PSD/công suất, không phải biên độ → Syy=|H|²Sxx; có bình phương độ lớn, không phải H·Sxx.
+DGT302-791	Biến đổi Fourier chuyển phép chập thành phép nhân, giúp phân tích LTI dễ hơn.	time convolution → frequency multiplication.
+DGT302-792	Chia để trị thay một DFT lớn bằng nhiều DFT nhỏ rồi ghép kết quả.	divide-and-conquer → recursive smaller DFTs.
+DGT302-793	Parseval cho cùng năng lượng trong hai miền khi dùng đúng hệ số chuẩn hóa.	Parseval → conserved energy.
+DGT302-794	Z-transform chuyển chập thành tích các biến đổi z.	z-domain convolution theorem → Y=XH.
+DGT302-795	firwin thiết kế hệ số FIR bằng phương pháp cửa sổ.	FIR + window → firwin.
+DGT302-796	lfilter áp dụng phương trình sai phân với hệ số b,a cho dữ liệu tín hiệu.	apply FIR/IIR → lfilter, chữ l thường.
+DGT302-797	freqz tính đáp ứng biên độ và pha theo tần số của bộ lọc số.	inspect response → freqz.
+DGT302-798	upfirdn ghép tăng mẫu, lọc FIR và giảm mẫu trong một hàm hiệu quả.	up + FIR + down → upfirdn.
+DGT302-799	butter tạo bộ lọc Butterworth có đáp ứng biên độ passband phẳng tối đa.	Butterworth design → butter.
+COS201-800	Mã hiện đại tổ chức bit dư theo cấu trúc giúp bộ giải mã sửa lỗi hiệu quả hơn.	modern codes → structured redundancy.
+COS201-801	Prefix-free bảo đảm giải mã tức thời. Chiều ngược lại không đúng: mã {0,01} không prefix-free nhưng vẫn giải mã duy nhất, vì nó là suffix-free.	Not prefix-free ≠ chắc chắn ambiguous; có thể cần nhìn trước.
+COS201-802	Với BPSK đồng bộ trong AWGN, Pb=Q(√(2Eb/N0)); phần đuôi Q giảm gần theo hàm mũ khi Eb/N0 lớn.	BPSK + AWGN + high SNR → Q-tail, không áp dụng cho mọi kênh.
+COS201-803	FM và PM mã hóa thông tin vào góc sóng mang thay vì biên độ.	angle modulation → frequency / phase.
+COS201-804	Tái tạo các mức số hạn chế cộng dồn nhiễu tương tự; nhiễu đủ lớn vẫn gây quyết định sai.	digital regeneration → hạn chế noise accumulation, không miễn nhiễm mọi nhiễu.
+COS201-805	Lấy mẫu đúng 2W không chừa dải chuyển tiếp cho bộ lọc thực tế.	exact Nyquist → no guard band.
+COS201-806	PLL khóa khi hai tần số bám nhau và sai lệch pha hằng; hằng đó có thể bằng zero.	locked → constant phase error, không bắt buộc zero.
+COS201-807	Matched filter lấy tích vô hướng với mẫu tín hiệu tại thời điểm quyết định, tương đương tương quan.	matched filter → template comparison.
+COS201-808	Nhân hai sóng cos tạo hai thành phần tại tổng và hiệu tần số.	mixer → f1+f2 và |f1−f2|.
+COS201-809	Máy thu phải đồng bộ, xử lý tín hiệu yếu và bù ảnh hưởng của kênh.	receiver → weak signal + synchronization + equalization.
+COS201-810	Với các kênh cùng fs và n bit/mẫu, Rb=Nch·fs·n. Tăng số kênh, tốc độ lấy mẫu hoặc số bit đều tăng bitrate và băng thông khi giữ nguyên cách tạo xung.	PCM nhiều kênh: Rb=Nch·fs·n → tăng fs, bit/mẫu hoặc số kênh đều cần thêm băng thông.
+COS201-811	Tín hiệu baseband băng W có tốc độ Nyquist bằng hai lần W.	Nyquist rate → 2W.
+COS201-812	DM cơ bản gửi một bit chỉ chiều tăng/giảm so với mức dự đoán, không gửi toàn bộ hiệu số.	DM → 1-bit sign of prediction error.
+COS201-813	Sóng mang giúp truyền và ghép kênh thuận tiện nhưng không tự làm giảm băng thông.	carrier benefit? không mặc định reduced bandwidth.
+COS201-814	FSK có đường bao không đổi nên chịu được khuếch đại phi tuyến mà ít méo thông tin tần số.	FSK → constant envelope.
+COS201-815	Huffman tĩnh cần ước lượng xác suất ký hiệu để xây cây mã. Điều này không có nghĩa mọi hệ thống thời gian thực đều không dùng được Huffman; bảng mã có thể biết trước hoặc thích nghi.	Static Huffman → cần thống kê để xây codebook; không cấm dùng real-time.
+COS201-816	PSD nhiễu sau discriminator tỷ lệ f²; tích phân từ 0 đến W cho hệ số W³.	Above threshold: ∫₀ᵂ f²df → W³.
+COS201-817	Mỗi subcarrier hẹp có symbol dài nên kênh gần phẳng trên từng nhánh và dễ cân bằng.	OFDM multipath → narrow subcarriers.
+COS201-818	Nhiễu làm quyết định hoặc khôi phục tín hiệu kém chính xác, giới hạn hiệu năng.	noise → limits SNR / performance.
+COS201-819	Nhiễu trắng có mật độ công suất phổ bằng nhau theo tần số trong mô hình lý tưởng.	white → flat PSD.
+COS201-820	Bộ lọc cho các dải tần khác nhau đi qua với gain khác nhau.	filter → frequency-selective.
+COS201-821	Sau nhân với sóng mang I/Q, low-pass giữ tín hiệu baseband và bỏ thành phần 2fc.	QAM demod → multiply then LPF.
+COS201-822	AM thông thường giữ nguyên sóng mang và cả hai dải biên.	standard AM → carrier + USB + LSB.
+COS201-823	ISI phụ thuộc các symbol lân cận và đáp ứng kênh có bộ nhớ. Equalizer xử lý phần trộn symbol này; chỉ gọi nó là “deterministic” không giải thích được độ khó.	ISI → channel memory + neighboring symbols → equalization.
+COS201-824	Multiplexing cho nhiều tín hiệu dùng chung một đường truyền bằng cách phân chia tài nguyên.	multiplexing → combine into one channel.
+COS201-825	SSB chỉ giữ một dải biên nên cần băng thông W thay vì 2W.	SSB → one sideband → bandwidth efficiency.
+COS201-826	Phân bố Gaussian được xác định bởi trung bình μ và phương sai σ².	Gaussian → mean + variance.
+COS201-827	Ở cùng Eb, d² của BFSK trực giao là 2Eb, còn BPSK đối cực là 4Eb; cần gấp đôi Eb ≈ 3 dB.	BFSK trực giao: d²=2Eb; BPSK đối cực: d²=4Eb → cùng BER/AWGN, BFSK cần gấp đôi Eb ≈ 3 dB.
+COS201-828	Chia lớp tách các nhiệm vụ và giao diện, giúp phát triển từng thành phần độc lập.	layering → modular design.
+COS201-829	Từ điển lớn có thể tìm được chuỗi khớp dài hơn nhưng cần chỉ mục dài hơn và thêm bộ nhớ. Tỷ lệ nén không tăng đơn điệu với mọi dữ liệu.	LZ dictionary lớn → tradeoff, không bảo đảm ratio tăng.
+COS201-830	Low-pass lý tưởng truyền phẳng trong dải và cắt ngay ngoài dải, tạo hình chữ nhật.	Ideal low-pass: biên độ gain hằng trong dải, bằng 0 ngoài dải → đặc tính biên độ hình chữ nhật.
+COS201-831	CDF tại x là xác suất biến ngẫu nhiên không vượt x: P(X≤x).	CDF tại x: F(x)=P(X≤x) → xác suất tích lũy đến x.
+COS201-832	Bất đẳng thức Cauchy–Schwarz đạt dấu bằng khi bộ lọc là phiên bản đảo thời gian/liên hợp của tín hiệu cần thu.	White noise + tín hiệu đã biết → H(f)∝S*(f)e^(−j2πfT): khớp phổ và pha tại thời điểm quyết định.
+COS201-833	Mất trực giao làm năng lượng subcarrier này rò vào quyết định của subcarrier khác.	Subcarrier mất trực giao → tín hiệu nhánh này lọt sang nhánh khác → nhiễu giữa sóng mang (ICI).
+COS201-834	Log biến phép nhân xác suất của các sự kiện độc lập thành phép cộng lượng tin.	Xác suất độc lập nhân nhau; −log(pq)=−log p−log q → lượng tin cộng được.
+COS201-835	Frequency discriminator biến độ lệch tần số tức thời thành điện áp thông điệp.	discriminator → FM demodulation.
+COS201-836	Dưới ngưỡng SNR khoảng 10 dB theo mô hình của đề, chất lượng FM giảm đột ngột.	FM threshold → khoảng 10 dB.
+COS201-837	Giới hạn băng có thể làm xung trải dài; thiết kế Nyquist đúng vẫn có thể triệt ISI tại thời điểm lấy mẫu.	band limit + không bù/tạo xung đúng → có thể ISI, không phải luôn luôn.
+COS201-838	FM thay đổi tần số tức thời theo thông điệp, giữ biên độ sóng mang không đổi.	FM = điều chế tần số → tần số tức thời thay đổi theo tín hiệu tin.
+COS201-839	Tích phân tuyệt đối hữu hạn là điều kiện đủ để Fourier Transform tồn tại theo nghĩa thông thường.	∫|x(t)|dt < ∞ → sufficient condition.
+COS201-840	Tổng ảnh hưởng của đáp ứng xung phải hữu hạn để mọi đầu vào bị chặn cho đầu ra bị chặn.	BIBO → ∫|h(t)|dt < ∞.
+COS201-841	Xác suất có điều kiện cập nhật khả năng sự kiện khi đã biết một sự kiện khác xảy ra.	P(A|B) → given B.
+COS201-842	NBFM với chỉ số nhỏ chủ yếu có sóng mang và cặp dải biên bậc nhất, cần khoảng 2W.	narrowband FM → BW≈2W.
+COS201-843	Tăng x chỉ có thể thêm xác suất vào P(X≤x), nên CDF không giảm.	valid CDF → non-decreasing.
+COS201-844	Máy phát điều chế và xử lý thông điệp thành dạng phù hợp với môi trường truyền.	message → channel-ready signal: transmitter.
+COS201-845	AM một tone có η=μ²/(2+μ²); tại μ=1 đạt 1/3. Không suy rộng 1/3 cho mọi dạng thông điệp hay mọi định nghĩa FOM.	Single-tone AM, μ=1 → ηmax=1/3.
+COS201-846	Dịch thời gian t0 nhân phổ với e^(−j2πft0), chỉ đổi pha chứ không đổi độ lớn.	time shift → linear phase shift.
+COS201-847	FFT chiếu tín hiệu OFDM lên các sóng mang trực giao để tách các nhánh dữ liệu.	OFDM receiver FFT → demultiplexing.
+COS201-848	Độ lệch chuẩn đưa phương sai về cùng đơn vị với biến gốc bằng phép căn bậc hai.	standard deviation → √variance.
+COS201-849	Tăng fs làm bước thời gian nhỏ hơn, nên độ dốc bám được Δ·fs lớn hơn.	DM tăng fs, giữ Δ → độ dốc bám tối đa Δ·fs tăng → giảm slope overload.
+COS201-851	Thành phần thông điệp ở đầu ra tỷ lệ cosφ; cos90°=0. Với thu I/Q tổng quát, lệch pha làm quay chòm sao.	DSB-SC single-branch: 90° → cos90°=0.
+COS201-852	Biểu diễn tín hiệu, điều chế và nhiễu là các nội dung nền để phân tích đường truyền thông tin.	Communications foundation → signals, modulation, noise.
+COS201-853	FIR cần nhiều tap để đạt dải chuyển tiếp rất hẹp, làm tăng tính toán và độ trễ.	sharp FIR → many coefficients.
+COS201-854	Suy hao truyền dẫn làm công suất tín hiệu giảm khi đi qua môi trường.	channel impairment → propagation loss.
+COS201-855	Biểu diễn đường bao phức gom hai thành phần trực giao thành I+jQ.	complex envelope → I + jQ.
+COS201-856	Mô hình OSI chia chức năng mạng thành bảy lớp.	OSI → 7 layers.
+COS201-857	VSB giữ một dải biên đầy đủ và phần dư của dải kia, dễ lọc hơn SSB nhưng tiết kiệm hơn AM.	vestigial → compromise SSB / AM.
+COS201-858	Quadrature là thành phần dùng sóng mang lệch pha 90° so với nhánh I.	Q → Quadrature, 90°.
+COS201-859	Cosine thực là tổng hai mũ phức quay ngược chiều, tạo hai delta tại ±fc.	cos → pair of impulses ±fc.
+COS201-860	Hai dải biên của AM mỗi dải rộng W nên tổng băng thông là 2W.	conventional AM → 2W.
+COS201-861	DSB-SC triệt sóng mang nhưng vẫn truyền cả dải biên trên và dưới.	DSB = two sidebands; SC = suppressed carrier.
+COS201-862	Tín hiệu tuần hoàn chỉ có các hài tại bội của tần số cơ bản.	periodic → line spectrum.
+COS201-863	Sợi quang là môi trường vật lý mang tín hiệu ánh sáng từ máy phát đến máy thu.	physical channel → optical fiber.
+COS201-864	Khôi phục pha sóng mang và thời điểm symbol từ tín hiệu nhận là chức năng phía thu; đồng bộ nói chung cũng có thể tồn tại trong máy phát.	Receiver → carrier/timing recovery from received waveform.
+COS201-865	AM làm biên độ sóng mang biến thiên tỷ lệ thông điệp.	Amplitude Modulation → amplitude.
+COS201-866	Khi μ>1, đường bao đi qua zero và đảo pha, làm tách sóng đường bao bị méo.	AM có μ>1 → đường bao có thể đổi dấu/đảo pha → bộ tách đường bao bị méo.
+COS201-867	Độ lớn |H(f)| biểu thị hệ số khuếch đại theo từng tần số.	amplitude response → gain response.
+COS201-868	Costas loop dùng hai nhánh trực giao để phục hồi pha sóng mang cho DSB-SC.	DSB-SC phase recovery → Costas.
+COS201-869	SDR chuyển nhiều chức năng xử lý vô tuyến từ mạch cố định sang thuật toán phần mềm.	radio in software → SDR.
+COS201-870	Tín hiệu hẹp băng có băng thông nhỏ hơn rất nhiều so với tần số trung tâm.	narrowband → W≪fc.
+COS201-871	Bộ lọc thông dải chọn dải tần mong muốn trong các thành phần do chuyển mạch tạo ra.	switching modulator → band-pass filter.
+COS201-872	Parseval, còn gọi định lý năng lượng Rayleigh, liên hệ năng lượng hai miền thời gian và tần số.	energy time ↔ frequency → Parseval.
+COS201-873	Với giả thiết LTI của bài học, mọi đầu ra được tính bằng chập đầu vào với đáp ứng xung.	LTI characterization → impulse response.
+COS201-874	Một tone tại μ=1: Ptotal=Pc(1+1/2)=1,5Pc nên Pc/Ptotal=2/3≈66,7%.	Single-tone 100% AM → carrier 2/3 of total.
+COS201-875	Chuỗi delta tuần hoàn có các hài đều đặn, nên biến đổi Fourier cũng là một chuỗi delta.	Dirac comb ↔ Dirac comb.
+COS201-876	FDM cấp một dải tần riêng cho mỗi tín hiệu trên cùng môi trường truyền.	FDM → separate in frequency.
+COS201-877	Với message chuẩn hóa và μ>0, μ≤1 giữ đường bao không đổi dấu. μ=1 là giới hạn lý tưởng hợp lệ; μ>1 gây overmodulation.	Envelope detection → không overmodulate → 0 < μ ≤ 1.
+COS201-878	Nén thời gian làm tín hiệu biến thiên nhanh hơn, nên phổ trải rộng hơn.	x(at) ↔ X(f/a)/|a|; |a|>1 nén thời gian và giãn phổ → tính chất time scaling.
+COS201-879	Khả tích tuyệt đối là điều kiện đủ cho FT thường. Tín hiệu zero trong lựa chọn cũ cũng có FT, nên cặp lựa chọn cũ không duy nhất.	Ordinary FT sufficient condition → ∫|x(t)|dt < ∞.
+COS201-880	Hệ nhân quả không có đáp ứng trước khi xung tại t=0 được đưa vào.	causal → h(t)=0 khi t<0.
+COS201-881	Tiêu chuẩn Paley–Wiener ràng buộc đáp ứng biên độ để một bộ lọc nhân quả có thể thực hiện được.	causal realizability → Paley–Wiener.
+COS201-882	Máy phát chuẩn bị và điều chế thông điệp cho kênh truyền.	message suitable for medium → transmitter.
+COS201-883	Với Yk=HkXk+Nk, zero forcing nhân Yk với 1/Hk. Gần điểm triệt kênh sẽ khuếch đại nhiễu; Hk=0 không nghịch đảo được.	Zero forcing → Yk/Hk, chỉ khi Hk≠0.
+COS201-884	Tín hiệu vật lý trong phần cứng và kênh vẫn liên tục nên nhiễu, méo có bản chất analog.	digital hardware channel → analog impairments.
+COS201-885	Mixer nhân với dao động nội để chuyển tín hiệu sang tần số tổng hoặc hiệu.	mixer → frequency translation.
+COS201-886	Lớp vật lý xử lý dạng sóng và việc truyền bit qua môi trường; các lớp trên xử lý khung, định tuyến hoặc dịch vụ ứng dụng.	Modulation / waveform / physical medium → Physical layer.
+COS201-887	Hai sóng mang cos và sin cùng tần số trực giao, cho phép truyền hai nhánh I và Q.	QAM → same frequency, 90° apart.
+COS201-888	Tín hiệu xác định có giá trị tính được chính xác tại mọi thời điểm từ mô tả của nó.	deterministic → fully specified waveform.
+COS201-889	Butterworth được thiết kế phẳng tối đa ở passband và không có ripple.	maximally flat → Butterworth.
+COS201-890	Tiêu chuẩn Paley–Wiener ràng buộc đáp ứng biên độ để một bộ lọc nhân quả có thể thực hiện được.	causal realizability → Paley–Wiener.
+COS201-891	Trong các điều chế analog đang so sánh, SSB chỉ dùng băng W cho thông điệp băng W.	most bandwidth-efficient analog option → SSB.
+COS201-892	ATSC 1.0 dùng 8-VSB; ATSC 3.0 dùng OFDM, nên không gọi chung mọi ATSC hiện đại là 8-VSB.	ATSC 1.0 → 8-VSB; ATSC 3.0 → OFDM.
+COS201-893	Signum biểu diễn dấu: +1 khi t>0, −1 khi t<0 và thường quy ước 0 tại t=0.	sgn(t) nhìn dấu của t: t>0 → +1; t<0 → −1 (thường quy ước sgn(0)=0).
+COS201-894	Góc của sóng mang gồm pha tức thời; thay đổi góc theo thông điệp tạo FM hoặc PM.	angle modulation → vary carrier angle.
+COS201-895	Chỉ số điều chế nhỏ cho phép bỏ qua các dải biên bậc cao trong xấp xỉ NBFM.	NBFM → β≪1.
+COS201-896	PAM chứa thông tin ở biên độ xung nên nhiễu và méo biên độ tác động trực tiếp.	PAM mang tin ở độ cao xung → nhiễu/méo biên độ làm đổi trực tiếp thông tin.
+COS201-897	Trong mô hình kênh nhiễu cộng, tín hiệu thu là r(t)=s(t)+n(t).	additive noise → signal + noise.
+COS201-898	Vòng delta-sigma đẩy phần lớn nhiễu lượng tử ra ngoài dải quan tâm; lọc số và giảm mẫu loại bớt nhiễu ngoài dải. Không loại bỏ lượng tử hóa hoặc mọi dạng overload.	Delta-sigma đẩy nhiễu lượng tử ra ngoài dải; LPF/decimation loại bớt nhiễu → giảm nhiễu trong dải.
+COS201-899	FM/PM đưa thông tin vào góc nên đường bao lý tưởng vẫn không đổi.	angle modulation → constant amplitude.
+COS201-900	Các đoạn tiếng nói yếu có sai số lượng tử lớn tương đối khi dùng bước đều; companding dành mức lượng tử dày hơn quanh zero.	Bước lượng tử Δ cố định + tiếng nói yếu → sai số lượng tử lớn tương đối so với tín hiệu.
+COS201-901	Độ lệch chuẩn đưa phương sai về cùng đơn vị với biến gốc bằng phép căn bậc hai.	standard deviation → √variance.
+COS201-902	AM một tone có η=μ²/(2+μ²); tại μ=1 đạt 1/3. Không suy rộng 1/3 cho mọi dạng thông điệp hay mọi định nghĩa FOM.	Single-tone AM, μ=1 → ηmax=1/3.
+COS201-903	Dải vi phạm tổng quát là fs<2W. fs=W chỉ là một trường hợp nằm trong dải đó, nên đề cũ có hai lựa chọn đúng theo nghĩa “xảy ra khi”.	Full range → fs<2W; fs=W chỉ là trường hợp riêng.
+COS201-904	Lấy phân bố biên bằng cách tích phân mật độ chung theo các biến còn lại.	marginal PDF → integrate other variables.
+COS201-905	De-emphasis giảm gain ở cao tần sau giải điều chế để giảm nhiễu cao tần.	de-emphasis → high-frequency noise reduction.
+COS201-906	I và Q là hai thành phần theo sóng mang cùng pha và vuông pha.	I = In-phase; Q = Quadrature.
+COS201-907	CDF tại x là xác suất biến ngẫu nhiên không vượt x: P(X≤x).	CDF tại x: F(x)=P(X≤x) → xác suất tích lũy đến x.
+COS201-908	BPF đầu vào chỉ cho dải kênh cần thu đi qua, giảm công suất nhiễu ngoài dải.	receiver input BPF → restrict noise bandwidth.
+COS201-909	Tự tương quan so sánh tín hiệu với chính nó sau một độ trễ.	autocorrelation → self-similarity versus lag.
+COS201-910	Aliasing khiến các bản phổ lặp chồng lên nhau và không còn phân biệt được tần số gốc.	aliasing → frequency overlap.
+COS201-911	Tương quan giảm nhanh theo độ trễ nghĩa là các mẫu mất giống nhau nhanh, tín hiệu biến đổi nhanh.	fast-decaying autocorrelation → rapidly changing.
+COS201-912	Thông tin FM nằm ở tần số; limiter bỏ biến thiên biên độ chủ yếu do nhiễu.	FM limiter → remove amplitude fluctuations.
+COS201-913	Với các kênh cùng fs và n bit/mẫu, Rb=Nch·fs·n. Tăng số kênh, tốc độ lấy mẫu hoặc số bit đều tăng bitrate và băng thông khi giữ nguyên cách tạo xung.	PCM nhiều kênh: Rb=Nch·fs·n → tăng fs, bit/mẫu hoặc số kênh đều cần thêm băng thông.
+COS201-914	2^(2R)=4^R là hàm mũ; thêm một bit làm SNR lý tưởng nhân 4, tương đương khoảng 6,02 dB.	2^(2R)=4^R → tăng theo hàm mũ; thêm 1 bit làm SNR tuyến tính nhân 4.
+COS201-915	Thông điệp nằm trong đối số sin/cos nên phép biến đổi không thỏa nguyên lý chồng chất.	angle modulation → nonlinear.
+COS201-916	Bất đẳng thức Cauchy–Schwarz chặn độ lớn hệ số tương quan chuẩn hóa không vượt 1.	correlation coefficient → −1…1.
+COS201-917	Tách sóng đồng bộ lý tưởng chiếu lên nhánh cùng pha; thành phần vuông pha không đi vào đầu ra baseband.	coherent DSB-SC → rejects quadrature noise.
+COS201-918	PPM dịch vị trí xung theo thông điệp, tương tự PM dịch pha sóng mang.	Pulse Position → Phase Modulation.
+COS201-919	PLL bám pha và tần số sóng mang, hỗ trợ đồng bộ và giải điều chế.	PLL → phase/carrier tracking.
+COS201-920	Tốc độ pha thay đổi làm khoảng cách giữa các lần qua zero biến thiên; tín hiệu có tần số tức thời hằng là ngoại lệ.	Varying instantaneous frequency → generally uneven zero crossings.
+COS201-921	Uniform liên tục là mật độ hằng trên miền hỗ trợ. Xác suất của một điểm riêng lẻ vẫn bằng 0.	Uniform continuous → constant PDF on its support.
+COS201-922	FM thay đổi tần số tức thời theo thông điệp, giữ biên độ sóng mang không đổi.	FM = điều chế tần số → tần số tức thời thay đổi theo tín hiệu tin.
+COS201-923	Hiệp phương sai đo xu hướng hai biến lệch khỏi trung bình cùng hoặc ngược chiều.	covariance → linear co-variation.
+COS201-924	FM stereo mang thông tin âm thanh trái và phải, thường ghép qua tổng L+R và hiệu L−R.	stereo → two channels.
+COS201-925	Theo quy ước I/Q của môn, nhánh Q dùng sóng sin vuông pha với cos của nhánh I.	I → cosine; Q → sine.
+COS201-926	Với phân bố liên tục khả vi, mật độ f(x) là đạo hàm của xác suất tích lũy F(x).	PDF = d(CDF)/dx.
+COS201-927	Flat-top giữ mỗi giá trị mẫu trong một khoảng thời gian, tạo các xung chữ nhật.	flat-top → rectangular held pulses.
+COS201-928	Nhiễu trắng có mật độ công suất phổ bằng nhau theo tần số trong mô hình lý tưởng.	white → flat PSD.
+COS201-929	AWGN là nhiễu cộng, có PSD phẳng và biên độ tuân phân bố Gaussian.	A=Additive, W=White, G=Gaussian.
+COS201-930	Độc lập nghĩa là biết biến này không đổi phân bố biến kia, nên mật độ chung phân tích thành tích.	independent → fXY=fX·fY.
+COS201-931	Tự tương quan so sánh tín hiệu với chính nó sau một độ trễ.	autocorrelation → self-similarity versus lag.
+COS201-932	Figure of merit so sánh SNR sau tách sóng với SNR chuẩn tham chiếu; phải biết quy ước chuẩn hóa của mô hình.	Noise figure of merit → SNRout / SNRreference.
+COS201-933	Theo quy ước I/Q của môn, nhánh Q dùng sóng sin vuông pha với cos của nhánh I.	I → cosine; Q → sine.
+COS201-934	PPM chứa tin ở vị trí xung nên ít bị tác động trực tiếp bởi nhiễu biên độ hơn PAM.	PPM mang tin ở thời điểm xung, PAM ở độ cao xung → PPM ít nhạy nhiễu biên độ hơn.
+COS201-935	Sau bộ phân biệt FM, PSD nhiễu tăng theo bình phương tần số.	FM trên ngưỡng, nhiễu trắng: PSD nhiễu sau discriminator ∝f² → cao tần nhiễu mạnh hơn.
+COS201-936	Flat-top giữ mỗi giá trị mẫu trong một khoảng thời gian, tạo các xung chữ nhật.	flat-top → rectangular held pulses.
+COS201-937	Lọc thông dải nhiễu trắng quanh một tần số trung tâm tạo nhiễu hẹp băng.	Narrowband noise → cho nhiễu trắng qua bộ lọc thông dải hẹp quanh tần số sóng mang.
+COS201-938	Nhiễu thông dải biểu diễn bằng hai nhánh I và Q trên cos/sin trực giao.	band-pass noise → in-phase + quadrature.
+COS201-939	FM một tone có hệ số Jn(β), là hàm Bessel. Các hệ số đó cũng là hệ số Fourier, nên lựa chọn D cũ mô tả cùng đối tượng theo nghĩa rộng.	FM một tone: hệ số sóng mang/dải biên là Jn(β) → hàm Bessel.
+COS201-940	Đường bao không đổi cho phép limiter loại nhiễu biên độ; FM trên ngưỡng thường chống nhiễu tốt hơn AM.	Đường bao FM/PM hằng cho phép limiter giảm nhiễu biên độ; lợi thế FM cần hoạt động trên ngưỡng.
+COS201-941	Khi tín hiệu đổi chậm mà bước Δ quá lớn, bậc thang dao động quanh tín hiệu và tạo granular noise. Δ quá nhỏ mới dễ gây slope overload khi tín hiệu đổi nhanh.	Δ lớn + tín hiệu chậm → granular; Δ/T thiếu → slope overload.
+COS201-942	Tách sóng đồng bộ lý tưởng chiếu lên nhánh cùng pha; thành phần vuông pha không đi vào đầu ra baseband.	coherent DSB-SC → rejects quadrature noise.
+COS201-943	Mật độ chung mô tả đồng thời khả năng các giá trị của hai biến ngẫu nhiên.	joint PDF → two variables together.
+COS201-944	Trung bình là thành phần không đổi theo thời gian, tương ứng DC trong mô tả tín hiệu.	Stationary + trung bình không đổi theo thời gian → thành phần DC.
+COS201-945	Lấy phân bố biên bằng cách tích phân mật độ chung theo các biến còn lại.	marginal PDF → integrate other variables.
+COS201-946	Phương sai là kỳ vọng bình phương khoảng cách đến trung bình, đo độ phân tán.	variance → spread around mean.
+COS201-947	Với FM một tone, β bằng độ lệch tần số cực đại Δf chia tần số điều chế fm.	FM index → β=Δf/fm.
+COS201-948	Tăng độ lệch tần số làm hệ số cải thiện SNR của FM tăng khi hoạt động trên ngưỡng.	FM trên ngưỡng: tăng độ lệch tần số Δf (β) làm tăng hệ số cải thiện SNR.
+COS201-949	Biên độ sóng mang lý tưởng không đổi nên công suất trung bình không đổi theo thông điệp.	Biên độ sóng mang và tải không đổi → công suất trung bình hằng, P∝Ac².
+COS201-950	Góc của sóng mang gồm pha tức thời; thay đổi góc theo thông điệp tạo FM hoặc PM.	angle modulation → vary carrier angle.
+COS201-951	Quá trình ngẫu nhiên là một họ biến ngẫu nhiên được đánh chỉ số bởi thời gian.	random process → time + randomness.
+COS201-952	FM và PM mã hóa thông tin vào góc sóng mang thay vì biên độ.	angle modulation → frequency / phase.
+COS201-953	Equalizer bù suy hao sinc do thời gian giữ mẫu hữu hạn.	aperture correction → equalizer.
+COS201-954	Xác suất có điều kiện cập nhật khả năng sự kiện khi đã biết một sự kiện khác xảy ra.	P(A|B) → given B.
+COS201-955	Xung giữ mẫu hữu hạn có biên độ sinc, làm cao tần suy giảm. Nó còn tạo trễ pha tuyến tính, nên đề cần chỉ rõ đang hỏi méo biên độ.	Sample-and-hold aperture → sinc magnitude droop.
+COS201-956	FM/PM thường tạo nhiều dải biên nên cần băng thông lớn hơn AM cho cùng thông điệp.	FM/PM ở chế độ wideband tạo nhiều dải biên → thường cần băng thông lớn hơn AM.
+COS201-957	Sau khi bỏ trung bình, công suất trung bình của nhiễu chính là phương sai.	Bỏ trung bình DC: σ²=E[(n−E[n])²] → công suất phần AC khi tải chuẩn hóa 1 Ω.
+COS201-958	BPF đầu vào chỉ cho dải kênh cần thu đi qua, giảm công suất nhiễu ngoài dải.	receiver input BPF → restrict noise bandwidth.
+COS201-959	Manchester luôn có chuyển mức giữa bit, cung cấp mốc đồng bộ clock.	mid-bit transition → clock recovery.
+COS201-960	Khi nhiễu kênh rất nhỏ, sai số lượng tử hóa còn lại trở thành nguồn nhiễu chính.	Giữ bộ lượng tử: Pn,kênh ≪ Pn,lượngtử → nhiễu lượng tử chi phối.
+COS201-961	Với các kênh cùng fs và n bit/mẫu, Rb=Nch·fs·n. Tăng số kênh, tốc độ lấy mẫu hoặc số bit đều tăng bitrate và băng thông khi giữ nguyên cách tạo xung.	PCM nhiều kênh: Rb=Nch·fs·n → tăng fs, bit/mẫu hoặc số kênh đều cần thêm băng thông.
+COS201-962	SNR≈6,02n+1,76 dB cho sinus full-scale; tăng 2 bit cho 12,04 dB≈12 dB.	ADC lý tưởng, sine full-scale: ΔSNR≈6,02·(10−8)=12,04 dB → khoảng 12 dB.
+COS201-963	CPFSK có đường bao hằng. BPSK lý tưởng không tạo xung có thể cũng hằng biên độ, nên phải phân biệt với BPSK đã pulse-shape làm biến thiên đường bao.	Nonlinear saturated PA → constant-envelope CPFSK.
+COS201-964	Có 2^k ký hiệu đồng xác suất thì mọi từ mã dài k bit. Nếu có 3 ký hiệu đồng xác suất, độ dài 1,2,2 là phản ví dụ cho đề cũ.	Equal probabilities + 2^k symbols → fixed length k.
+COS201-965	Định nghĩa quá tải dốc là |dx/dt|>Δ/T. Bước nhỏ trên đoạn đầu vào hằng không tự gây quá tải dốc.	Slope overload → input slope > Δ/T.
+COS201-966	Syndrome zero nghĩa là từ nhận thỏa các kiểm tra parity; vẫn có thể còn lỗi không phát hiện được.	syndrome 0 → no detectable error, chưa chắc no error.
+COS201-967	Với cùng dạng xung và roll-off, tốc độ symbol thấp hơn cần ít băng thông hơn.	Giữ dạng xung và roll-off: BW∝Rs → giảm tốc độ symbol thì băng thông giảm.
+COS201-968	Với BPSK đồng bộ trong AWGN, Pb=Q(√(2Eb/N0)); phần đuôi Q giảm gần theo hàm mũ khi Eb/N0 lớn.	BPSK + AWGN + high SNR → Q-tail, không áp dụng cho mọi kênh.
+COS201-969	Các đoạn tiếng nói yếu có sai số lượng tử lớn tương đối khi dùng bước đều; companding dành mức lượng tử dày hơn quanh zero.	Bước lượng tử Δ cố định + tiếng nói yếu → sai số lượng tử lớn tương đối so với tín hiệu.
+COS201-970	Loại bớt thành phần phổ có thể kéo dài xung và gây chồng symbol. Bộ lọc Nyquist đúng vẫn có thể không ISI tại thời điểm quyết định.	Giới hạn băng loại thành phần cao tần → xung trải dài, có thể chồng symbol nếu không bù/tạo xung đúng.
+COS201-971	Dải vi phạm tổng quát là fs<2W. fs=W chỉ là một trường hợp nằm trong dải đó, nên đề cũ có hai lựa chọn đúng theo nghĩa “xảy ra khi”.	Full range → fs<2W; fs=W chỉ là trường hợp riêng.
+COS201-972	Entropy là cận dưới độ dài trung bình cho mã nguồn không mất mát theo các giả thiết thông thường.	lossless → average length ≥ entropy.
+COS201-973	Gray gán các điểm lân cận khác đúng một bit, giảm số bit sai khi quyết định nhầm sang điểm gần nhất.	Gray: hai điểm kề khác 1 bit → nhầm sang điểm gần nhất thường chỉ gây 1 bit sai.
+COS201-974	Eye diagram thể hiện độ mở quyết định, ISI và sai lệch timing qua các đoạn tín hiệu chồng nhau.	eye → signal quality / timing margin.
+COS201-975	Tăng Eb/N0 làm khoảng cách tín hiệu so với nhiễu lớn hơn, nên xác suất lỗi giảm.	BPSK/AWGN: +3 dB ≈ nhân đôi Eb/N0 → Q(√(2Eb/N0)) nhỏ hơn → BER giảm.
+COS201-976	So sánh pha với symbol trước thay vì một pha tuyệt đối; vẫn cần đồng bộ thời gian/tần số phù hợp.	DPSK differential detector → previous symbol as phase reference.
+COS201-977	Méo và ISI thu hẹp khoảng phân biệt các mức, làm mắt khép lại.	worse channel → closed eye.
+COS201-978	ISI phụ thuộc các symbol lân cận và đáp ứng kênh có bộ nhớ. Equalizer xử lý phần trộn symbol này; chỉ gọi nó là “deterministic” không giải thích được độ khó.	ISI → channel memory + neighboring symbols → equalization.
+COS201-979	Trực giao phụ thuộc khoảng cách sóng mang và khoảng tích phân hữu ích. Vi phạm điều kiện đó sinh ICI; “roll-off sai” không phải mô tả tổng quát chính xác.	OFDM → Δf·Tu integer + timing phù hợp; mất trực giao → ICI.
+COS201-980	Aliasing khiến các bản phổ lặp chồng lên nhau và không còn phân biệt được tần số gốc.	aliasing → frequency overlap.
+COS201-981	Nhân với chuỗi xung lấy mẫu tạo các bản sao phổ tại bội của fs.	time sampling → spectral replication.
+COS201-982	Lệch pha quay vector I+jQ, tạo các thành phần chéo I cosφ−Q sinφ và I sinφ+Q cosφ.	Carrier phase error → I/Q rotation and mixing.
+COS201-983	Flat-top giữ mỗi giá trị mẫu trong một khoảng thời gian, tạo các xung chữ nhật.	flat-top → rectangular held pulses.
+COS201-984	Nhiễu làm đầu ra ít xác định được đầu vào hơn, tăng H(X|Y) và giảm I(X;Y).	Nhiễu làm từ Y khó đoán X hơn → chọn tăng bất định về đầu vào; I(X;Y)=H(X)−H(X|Y).
+COS201-985	Prefix-free bảo đảm giải mã tức thời. Chiều ngược lại không đúng: mã {0,01} không prefix-free nhưng vẫn giải mã duy nhất, vì nó là suffix-free.	Not prefix-free ≠ chắc chắn ambiguous; có thể cần nhìn trước.
+COS201-986	Lệch pha quay vector I+jQ, tạo các thành phần chéo I cosφ−Q sinφ và I sinφ+Q cosφ.	Carrier phase error → I/Q rotation and mixing.
+COS201-987	Dung lượng kênh là giá trị lớn nhất của mutual information trên các phân bố đầu vào hợp lệ.	C=max trên p(X) của I(X;Y) → chọn phân bố đầu vào tối ưu để đạt mức thông tin chung lớn nhất.
+COS201-988	Manchester luôn có chuyển mức giữa bit, cung cấp mốc đồng bộ clock.	mid-bit transition → clock recovery.
+COS201-989	AWGN cộng một giá trị ngẫu nhiên vào từng mẫu, làm điểm tín hiệu thu lệch ngẫu nhiên.	additive Gaussian → random sample displacement.
+COS201-990	Khoảng cách điểm nhỏ khiến nhiễu dễ đẩy tín hiệu qua biên quyết định hơn.	closer constellation → higher BER.
+COS201-991	Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.	Equal-prior ±A + symmetric AWGN → threshold 0.
+COS201-992	FEC có thể khôi phục khi có đủ dư thừa và lỗi/xóa nằm trong khả năng mã. OFDM tự nó không bảo đảm cứu dữ liệu khi mất subcarrier.	Lost subcarrier → FEC có thể phục hồi nếu còn đủ redundancy.
+COS201-993	Log biến phép nhân xác suất của các sự kiện độc lập thành phép cộng lượng tin.	Xác suất độc lập nhân nhau; −log(pq)=−log p−log q → lượng tin cộng được.
+COS201-994	Entropy lấy trung bình lượng tin −log₂p của các ký hiệu theo xác suất của chúng.	Entropy H=−Σp log₂p → lượng tin trung bình của mỗi ký hiệu.
+COS201-995	N0 không đổi thì Eb/N0 nhân 2, tương đương tăng 3,0103 dB.	Fixed N0: ×2 Eb → ×2 Eb/N0 → +3 dB.
+COS201-996	DM cơ bản gửi một bit chỉ chiều tăng/giảm so với mức dự đoán, không gửi toàn bộ hiệu số.	DM → 1-bit sign of prediction error.
+COS201-997	Jitter làm thời điểm lấy mẫu lệch, tạo sai số biên độ đặc biệt lớn với tín hiệu biến thiên nhanh.	clock jitter → timing error → worse performance.
+COS201-998	Huffman tối thiểu hóa độ dài mã kỳ vọng trong lớp mã prefix theo ký hiệu. Không khẳng định thắng mọi mã khối hoặc arithmetic coding.	Huffman trong lớp mã prefix từng ký hiệu → tối thiểu độ dài trung bình L̄=Σpᵢℓᵢ.
+COS201-999	Mất trực giao làm năng lượng subcarrier này rò vào quyết định của subcarrier khác.	Subcarrier mất trực giao → tín hiệu nhánh này lọt sang nhánh khác → nhiễu giữa sóng mang (ICI).
+COS201-1000	IFFT cộng các sóng mang trực giao được gán dữ liệu để tạo waveform OFDM.	OFDM transmitter IFFT → combine subcarriers.
+COS201-1001	Lấy mẫu lệch tâm mắt làm giảm biên độ phân biệt và tăng ảnh hưởng ISI.	Lấy mẫu lệch tâm mắt → biên phân biệt giảm, ảnh hưởng ISI tăng → dễ quyết định sai hơn.
+COS201-1002	FFT chiếu tín hiệu OFDM lên các sóng mang trực giao để tách các nhánh dữ liệu.	OFDM receiver FFT → demultiplexing.
+COS201-1003	Xung giữ mẫu chữ nhật có Fourier Transform dạng sinc, suy giảm dần ở cao tần.	PAM sinc envelope → high-frequency attenuation.
+COS201-1004	Bất đẳng thức Cauchy–Schwarz đạt dấu bằng khi bộ lọc là phiên bản đảo thời gian/liên hợp của tín hiệu cần thu.	White noise + tín hiệu đã biết → H(f)∝S*(f)e^(−j2πfT): khớp phổ và pha tại thời điểm quyết định.
+COS201-1005	Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.	Equal-prior ±A + symmetric AWGN → threshold 0.
+COS201-1006	Giữ năng lượng trung bình mỗi symbol Es và mức nhiễu mà tăng M làm các điểm QAM xếp sát hơn, nên khoảng cách quyết định giảm và xác suất nhầm tăng.	Giữ Es và mức AWGN: tăng M → điểm QAM xếp sít hơn, dmin giảm → dễ nhầm điểm.
+COS201-1007	Q(x) là xác suất đuôi Gaussian chuẩn, dùng tính xác suất nhiễu vượt biên quyết định.	Q(x)=P(Z>x), Z~N(0,1) → tính xác suất nhiễu Gaussian vượt ngưỡng gây lỗi.
+COS201-1008	Lặp cùng một bit nhiều lần tiêu tốn nhiều bit truyền cho mỗi bit thông tin.	repetition n lần → code rate 1/n.
+COS201-1009	Số lỗi bảo đảm sửa được t=⌊(dmin−1)/2⌋. Tăng dmin từ 3 lên 4 vẫn chỉ sửa được 1 lỗi, nên không luôn tăng nghiêm ngặt.	Tính t=⌊(dmin−1)/2⌋; dmin tăng 3→4 vẫn t=1 → khả năng sửa chỉ bảo đảm không giảm.
+COS201-1010	Ở cùng Eb, d² của BFSK trực giao là 2Eb, còn BPSK đối cực là 4Eb; cần gấp đôi Eb ≈ 3 dB.	BFSK trực giao: d²=2Eb; BPSK đối cực: d²=4Eb → cùng BER/AWGN, BFSK cần gấp đôi Eb ≈ 3 dB.
+COS201-1011	Tiêu chuẩn Nyquist yêu cầu B≥Rs/2 để có truyền không ISI lý tưởng; băng thấp hơn không đáp ứng ở cùng tốc độ symbol.	B<Rs/2 ở cùng Rs → không thể tạo xung truyền không ISI lý tưởng tại tốc độ đó.
+COS201-1012	Khi mọi ký hiệu đều dễ xảy ra như nhau, không có ký hiệu ưu thế để đoán trước nên bất định lớn nhất.	M ký hiệu đồng xác suất → khó đoán nhất, bất định lớn nhất → Hmax=log₂M.
+COS201-1013	Sóng mang đưa thông điệp vào dải RF phù hợp anten và phân kênh; không phải mọi đường truyền baseband đều bắt buộc điều chế lên RF.	Passband radio → practical antenna + allocated RF band.
+COS201-1014	Tái tạo các mức số hạn chế cộng dồn nhiễu tương tự; nhiễu đủ lớn vẫn gây quyết định sai.	digital regeneration → hạn chế noise accumulation, không miễn nhiễm mọi nhiễu.
+ICI211-250	VTCMOS ở chế độ active giảm ngưỡng bằng body bias để transistor chuyển mạch nhanh hơn.	Active VTCMOS cần nhanh → body bias hạ VT để tăng tốc chuyển mạch.
+ICI211-251	tPLH đo độ trễ lan truyền khi đầu ra chuyển từ mức thấp lên cao.	Đọc hai chữ cuối tPLH: đầu ra chuyển Low → High; đây là trễ lan truyền, không phải thời gian rise.
+ICI211-252	Nạp nhiều bước làm chênh lệch điện áp mỗi lần nhỏ hơn, giảm năng lượng mất trên điện trở.	Stepwise charging chia điện áp nạp thành nhiều bước nhỏ → giảm phần năng lượng mất trên điện trở.
+ICI211-253	Mạch monostable có một trạng thái bền và một trạng thái tạm thời sau kích thích.	mono = một → one stable state.
+ICI211-254	Latch có clock chỉ cập nhật khi mức điều khiển cho phép, phối hợp hoạt động đồng bộ.	clocked latch → controlled synchronous operation.
+ICI211-255	SDFF dùng tầng vào động để giảm trễ clock-to-Q và latch tĩnh để giữ đầu ra.	Hỏi ưu điểm tốc độ của SDFF → chọn clock-to-Q nhanh; tầng vào động, tầng giữ đầu ra tĩnh.
+ICI211-256	PMOS tải luôn bật nên khi đầu ra thấp có dòng DC từ nguồn xuống mass.	Pseudo-nMOS có PMOS tải luôn bật; đầu ra LOW tạo đường dòng DC → công suất tĩnh.
+ICI211-257	FPGA có logic và liên kết lập trình được sau khi chip đã được chế tạo.	FPGA → post-fabrication customization.
+ICI211-258	Điện trở và điện dung dây phân bố dọc chiều dài, nên dây dài cần mô hình RC phân bố.	long wire → distributed RC.
+ICI211-259	NMOS và PMOS bổ trợ nhau, giúp transmission gate truyền cả hai mức logic đầy đủ hơn.	transmission gate → strong 0 + strong 1.
+ICI211-260	Tải enhancement mắc kiểu bão hòa có thể dùng chung một nguồn với transistor kéo xuống.	Đọc đúng saturated enhancement-load: gate tải nối nguồn VDD → dùng một nguồn; không suy cho linear-load.
+ICI211-261	Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm.	asymptotically stable → disturbances decay.
+ICI211-262	Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn.	electron affinity → Evac−Ec.
+ICI211-263	Các inverter CMOS hồi tiếp tạo hai mức rail-to-rail với khả năng chống nhiễu tốt.	full CMOS SRAM → strong noise margins.
+ICI211-264	Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số.	Nền p + gate dương trước inversion → đẩy lỗ trống ra, để lại acceptor ion hóa: depletion.
+ICI211-265	Testability xét khả năng kích hoạt, quan sát và phát hiện lỗi của chip.	testability → fault detection coverage.
+ICI211-266	RTL mô tả việc chuyển dữ liệu và phép toán giữa các thanh ghi theo clock.	RTL → Register Transfer Level.
+ICI211-267	Self-refresh tự duy trì dữ liệu nhớ trong standby, giảm hoạt động điều khiển bên ngoài.	self-refresh → low-power standby.
+ICI211-268	Nút động lưu điện tích trong pha evaluate; precharge khôi phục điện tích. Không đòi hỏi đường DC liên tục và không nên giữ evaluate vô hạn khi có rò.	dynamic logic → precharge / evaluate, lưu điện tích.
+ICI211-269	NMOS ngừng truyền mức cao khi VGS giảm đến VT, nên đầu ra cao chỉ khoảng VDD−VT.	NMOS pass → strong 0, weak 1.
+ICI211-270	Với dây ngắn, có thể gom điện trở và điện dung thành các phần tử tập trung.	short interconnect → lumped RC.
+ICI211-271	Tăng VDS làm chiều dài kênh hiệu dụng giảm, khiến dòng bão hòa vẫn tăng.	channel-length modulation → ID rises with VDS.
+ICI211-272	tPHL đo độ trễ lan truyền khi đầu ra chuyển từ cao xuống thấp.	HL → High to Low.
+ICI211-273	Điện trở NMOS và PMOS bù xu hướng biến thiên cho nhau theo điện áp tín hiệu.	TG đang ON: Rn và Rp mắc song song, bù biến thiên theo mức tín hiệu → RON gần hằng, không bằng 0.
+ICI211-274	Static logic duy trì mức đầu ra bằng mạng kéo lên hoặc kéo xuống khi nguồn và đầu vào giữ nguyên.	static → stable output states.
+ICI211-275	NOR Flash cho phép truy cập ngẫu nhiên nhanh, phù hợp đọc mã lệnh trực tiếp.	NOR → random access; NAND → block storage.
+ICI211-276	Hai ngõ S và R dùng đặt hoặc xóa trạng thái lưu.	SR → Set / Reset.
+ICI211-277	PMOS dẫn khi cổng thấp, tạo mạng kéo đầu ra lên VDD.	pull-up → PMOS.
+ICI211-278	Các lớp và dây kim loại gần nhau tạo điện dung ký sinh qua điện môi.	wire capacitance → adjacent conductors.
+ICI211-279	LUT lưu bảng chân trị; các bit đầu vào chọn giá trị hàm Boolean tương ứng.	FPGA Boolean function → LUT.
+ICI211-280	Biên nhiễu thấp là khoảng cách giữa mức vào thấp tối đa và mức ra thấp tối đa.	NML = VIL−VOL.
+ICI211-281	Thiết bị di động phụ thuộc pin và giới hạn tản nhiệt nên cần giảm công suất tiêu thụ.	portable / battery → low-power CMOS.
+ICI211-282	Nút động không được giữ liên tục bởi nguồn, nên rò điện và chia sẻ điện tích có thể làm sai mức.	dynamic issues → leakage + charge sharing.
+ICI211-283	VTC là đường đặc tính điện áp ra theo điện áp vào trong trạng thái tĩnh.	VTC → Vout versus Vin.
+ICI211-284	Sense amplifier khuếch đại chênh lệch rất nhỏ giữa các bitline để quyết định bit nhớ.	sense amp → small ΔV.
+ICI211-285	D-latch có một đầu vào dữ liệu D, trạng thái được giữ hoặc truyền theo tín hiệu enable.	D → single data input.
+ICI211-286	Dòng ngắn mạch lớn khi cả NMOS và PMOS cùng dẫn mạnh gần điểm chuyển của inverter.	Đề cho inverter đối xứng, quét chậm → dòng trực tiếp cực đại gần VM ≈ VDD/2 vì cả hai transistor cùng dẫn.
+ICI211-287	Phân tích chuyển mạch theo dõi điện áp và độ trễ theo thời gian.	switching analysis → time domain.
+ICI211-288	Clock phân chia pha precharge và evaluate trong logic động đồng bộ.	synchronous dynamic → clock controlled.
+ICI211-289	Access time là thời gian từ yêu cầu truy cập đến dữ liệu hợp lệ, quyết định tốc độ nhớ.	access time → memory speed.
+ICI211-290	MTCMOS tắt transistor sleep ngưỡng cao để ngắt đường cấp nguồn của khối logic khi standby.	MTCMOS standby → power gating.
+ICI211-291	Trong khoảng chuyển mức, NMOS và PMOS cùng bật tạo đường trực tiếp VDD xuống mass.	short-circuit power → both on.
+ICI211-292	Yield là tỷ lệ chip chế tạo đạt chức năng và yêu cầu kiểm tra.	yield → good dies / total dies.
+ICI211-293	Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.	long-channel saturation → VDS ≥ VGS−VT → pinch-off.
+ICI211-295	VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau.	symmetric DC VTC → balanced noise margins.
+ICI211-296	Hai pha không chồng lấn tránh các latch cùng mở và dữ liệu chạy xuyên gây race.	Hai pha clock không chồng → tránh latch cùng mở/race-through; tìm phương án nói ngăn overlap.
+ICI211-297	Ghép điện dung nâng điện áp nút nội bộ, giúp cổng điều khiển vượt mức thông thường.	bootstrapping → boost internal voltage.
+ICI211-298	Transmission gate đóng hoặc ngắt đường tín hiệu theo lựa chọn, rất phù hợp làm mux.	multiplexer → transmission gates.
+ICI211-299	8T SRAM tách đường đọc khỏi nút lưu nên giảm read disturb và tăng ổn định đọc.	8T SRAM có đường đọc tách khỏi nút lưu → ít read disturb → ổn định đọc tốt hơn.
+ICI211-300	Full scaling giảm đồng thời kích thước và điện áp theo cùng tỷ lệ để giữ điện trường xấp xỉ không đổi.	full scaling → constant field.
+ICI211-301	NML=0,65−0,1=0,55 V; NMH=1,8−1,05=0,75 V; lấy giá trị nhỏ hơn.	Tính NML = 0,65−0,10 = 0,55; NMH = 1,80−1,05 = 0,75 V. Hỏi smaller → lấy 0,55 V.
+ICI211-302	Bộ khuếch đại cảm nhận phân biệt chênh lệch điện áp nhỏ trên bitline.	sense amplifier → small voltage difference.
+ICI211-303	Hai inverter mắc hồi tiếp chéo tạo hai trạng thái bền để lưu một bit.	SRAM storage → cross-coupled inverters.
+ICI211-304	Dây rộng làm R giảm nhưng có thể làm C ký sinh tăng, nên tích RC không giảm tương ứng.	wider wire → R↓ nhưng C có thể ↑.
+ICI211-305	NOR chỉ ra cao khi tất cả đầu vào thấp; có một đầu vào cao là đầu ra thấp.	NOR → any 1 forces 0.
+ICI211-306	Đóng góp của tụ Cj là Cj nhân điện trở chung giữa đường root→tụ và root→output. Chỉ khi Cj bằng nhau mới xếp đóng góp theo điện trở chung.	Các C bằng nhau → so điện trở CHUNG với đường tới output; shared R lớn nhất đóng góp trễ lớn nhất.
+ICI211-307	Thiết kế top-down đi từ yêu cầu tổng thể đến kiến trúc, logic/mạch rồi bố trí vật lý.	top-down → specification → architecture → logic → layout.
+ICI211-308	Dòng bão hòa tỷ lệ W/L khi các thông số khác giữ nguyên: 8/2=4.	Cùng overdrive và công nghệ → ID tỉ lệ W/L; lấy 8 ÷ 2 = 4, không bình phương tỉ lệ kích thước.
+ICI211-309	Pdynamic=αCV²f nên tăng đôi f làm công suất tăng đôi từ 4 lên 8 mW.	Chỉ f tăng đôi, các yếu tố khác giữ nguyên → P tăng đôi: 4 × 2 = 8 mW.
+ICI211-310	Clock gating chặn xung clock ở khối không cần hoạt động, giảm chuyển mạch vô ích.	stop inactive clock → clock gating.
+ICI211-311	Điện trở dây R=ρL/A, phụ thuộc điện trở suất và hình học.	Hỏi điện trở dây → R = ρL/A: tìm cả resistivity lẫn geometry, không chỉ chiều dài.
+ICI211-312	NMOS truyền tốt mức 0, PMOS truyền tốt mức 1; mắc song song với điều khiển bù cho swing đầy đủ.	NMOS truyền 0 tốt, PMOS truyền 1 tốt → mắc song song và điều khiển bù để truyền đủ hai mức.
+ICI211-313	Lỗ trống có độ linh động thấp hơn electron, nên PMOS cần rộng hơn để cân bằng dòng.	μp<μn → Wp>Wn.
+ICI211-314	Setup yêu cầu dữ liệu ổn định đủ lâu trước cạnh clock tác động.	setup → before edge.
+ICI211-315	Mạng kéo tĩnh duy trì đầu ra hợp lệ khi đầu vào ổn định, không cần refresh điện tích định kỳ.	static logic → stable states.
+ICI211-316	Latch trong suốt một phần chu kỳ cho phép tầng chậm mượn thời gian của tầng tiếp theo.	latch pipeline → time borrowing.
+ICI211-317	PMOS mạnh hơn cần Vin cao hơn để NMOS cân bằng được dòng, nên điểm chuyển dịch lên.	stronger PMOS → switching threshold ↑.
+ICI211-318	Mạch tuần tự đồng bộ cập nhật trạng thái theo tín hiệu clock chung.	synchronous → clock controlled.
+ICI211-319	Điện áp phân cực thay đổi độ rộng vùng nghèo của tiếp giáp, làm điện dung thay đổi.	junction capacitance → bias voltage.
+ICI211-320	Với dây đủ ngắn, gom R và C vào mô hình tập trung là xấp xỉ hợp lý.	short wire → lumped RC.
+ICI211-321	Inverter phục hồi mức và biến đầu ra động thành tín hiệu chỉ tăng trong pha evaluate cho tầng sau.	Ngõ ra động giảm 1→0 khi evaluate; inverter đảo thành 0→1 cho tầng sau → giao tiếp đơn điệu.
+ICI211-322	Tmin = tCQ + tcomb + tsetup = 120 + 600 + 80 = 800 ps.	Tmin = tCQ + tlogic + tsetup = 120 + 600 + 80 = 800 ps; không cộng hold time vào công thức này.
+ICI211-323	Đường đọc riêng trong 8T tránh kéo nhiễu nút lưu, đổi lại thêm transistor và diện tích.	Hỏi tăng read stability dù tốn diện tích → chọn 8T có read path riêng, tránh kéo nhiễu nút lưu.
+ICI211-324	Ngõ ra tầng động có thể chuyển 1→0 khi evaluate. Đặt cổng đảo tĩnh sau nó tạo tín hiệu 0→1 cho tầng động tiếp theo; đây là cặp dynamic/static của domino.	domino → dynamic gate + static inverter.
+ICI211-325	Có thể cấu hình lại hàm logic và liên kết FPGA sau khi sản xuất.	FPGA advantage → reprogrammable after fabrication.
+ICI211-326	Kênh ngắn hiệu dụng hơn khi VDS tăng làm dòng bão hòa có độ dốc dương.	channel-length modulation → rising saturation ID.
+ICI211-327	Dây dài có R và C phân bố suốt chiều dài, nên một cặp RC tập trung không mô tả đủ độ trễ.	long interconnect → distributed RC.
+ICI211-328	Body thấp hơn source làm VSB tăng; body effect làm điện áp ngưỡng NMOS tăng.	VSB↑ → VT↑.
+ICI211-329	Chọn một trong 1024=2¹⁰ từ nhớ cần 10 bit địa chỉ; 8 bit là độ rộng dữ liệu.	Hỏi địa chỉ word → chỉ dùng số word: 1024 = 2^10 nên cần 10 bit; bỏ qua độ rộng 8 bit/word.
+ICI211-330	Tụ lưu DRAM mất điện tích qua dòng rò, làm dữ liệu suy giảm nếu không refresh.	DRAM leakage → charge loss.
+ICI211-331	Ổn định tiệm cận nghĩa là nhiễu loạn đủ nhỏ suy giảm và trạng thái trở về điểm cân bằng; ổn định đơn thuần chưa nhất thiết có tính suy giảm.	asymptotically stable → disturbances decay.
+ICI211-332	Các đầu vào tầng domino chỉ được tăng trong evaluate; inverter sau tầng động tạo giao tiếp đơn điệu này.	Mỗi cặp dynamic + inverter cho ngõ ra chỉ tăng khi evaluate → chuỗi domino chuẩn thực hiện hàm không đảo.
+ICI211-333	D flip-flop chốt D tại cạnh tác động; D=1 thì Q thành 1 sau tCQ.	D flip-flop lấy D tại cạnh lên: D = 1 → Q = 1 sau tCQ, không đảo D.
+ICI211-334	t = 0,69RC = 0,69·(2×10³)·(100×10⁻¹⁵) s = 138 ps.	kΩ × fF = ps; 0,69 × 2 × 100 = 138.
+ICI211-335	Full scaling giữ điện trường bằng cách giảm điện áp cùng tỷ lệ với kích thước.	full scaling = constant electric field.
+ICI211-336	Điện tích trên tụ DRAM rò dần nên phải đọc và nạp lại định kỳ.	DRAM → capacitor → refresh.
+ICI211-337	Nâng điện áp điều khiển bằng bootstrap giúp bù sụt áp ngưỡng của pass transistor.	bootstrapping → overcome VT loss.
+ICI211-338	CMOS lý tưởng không có dòng DC ổn định; thực tế công suất tĩnh chủ yếu do các cơ chế rò.	static CMOS power → leakage.
+ICI211-339	Hold yêu cầu dữ liệu giữ nguyên thêm một khoảng sau cạnh clock.	hold → after edge.
+ICI211-340	Theo ý đề, giảm kích thước vùng ghép điện dung có thể làm C giảm; thực tế còn tùy khoảng cách và cấu trúc lớp.	Giữ ε không đổi: C ≈ εA/d → giảm diện tích ghép A hoặc tăng khoảng cách d thì C giảm.
+ICI211-341	R=ρL/A nên tăng tiết diện A làm điện trở giảm khi vật liệu và chiều dài giữ nguyên.	larger cross-section → lower R.
+ICI211-342	Cùng L và overdrive, dòng bão hòa tỷ lệ W nên tăng gấp đôi W cho tỷ số dòng 2.	Đề giữ L và overdrive, chỉ W gấp đôi → ID cũng gấp đôi: IA/IB = 2.
+ICI211-343	Sườn vào chậm thay đổi thời gian transistor cùng dẫn và thời gian nạp/xả đầu ra.	input slew → propagation-delay estimate.
+ICI211-344	NAND chỉ xuống thấp khi tất cả đầu vào cao.	NAND two inputs → 11 gives 0.
+ICI211-345	Low-VT cho đường quan trọng tốc độ cao; high-VT giảm rò ở nơi ít nhạy thời gian.	Đường tới hạn cần nhanh → low-VT; vị trí ít nhạy timing dùng high-VT để giảm rò.
+ICI211-346	NORA là tên kiến trúc CMOS động nhằm tránh race trong hoạt động theo clock.	Tách chữ NORA thành NO RAce → chọn tên logic tránh race.
+ICI211-347	Khi đọc 6T, access transistor không được thắng pull-down và nâng nút đang lưu 0 quá cao.	access vs pull-down ratio → read stability.
+ICI211-348	Khi đọc 6T, access transistor không được thắng pull-down và nâng nút đang lưu 0 quá cao.	access vs pull-down ratio → read stability.
+ICI211-349	Hai latch trong suốt ở hai pha đối nhau tạo hành vi chốt theo cạnh.	master + slave → edge-triggered.
+ICI211-350	ΔV = ΔQ/C = 2 fC / 20 fF = 0,10 V.	Mất điện tích → ΔV = ΔQ/C; fC/fF = V nên lấy 2/20 = 0,10 V.
+ICI211-351	Với inverter cân đối và ngõ vào quét chậm, dòng trực tiếp lớn nhất xấp xỉ vùng VM≈VDD/2. Gần VTN, NMOS mới bắt đầu dẫn nên dòng chưa cực đại.	Đề cho inverter đối xứng, quét chậm → dòng trực tiếp cực đại gần VM ≈ VDD/2 vì cả hai transistor cùng dẫn.
+ICI211-352	Công suất rò gồm dòng dưới ngưỡng, rò tiếp giáp phân cực ngược và có thể cả rò qua oxide cổng.	leakage → subthreshold / reverse junction.
+ICI211-353	VTC là đường đặc tính điện áp ra theo điện áp vào trong trạng thái tĩnh.	VTC → Vout versus Vin.
+ICI211-354	Overdrive=1,2−0,4=0,8 V; VDS=0,3 V nhỏ hơn overdrive và VGS>VT nên ở triode.	Tính overdrive 1,2−0,4 = 0,8 V; VGS>VT và VDS=0,3<0,8 → triode.
+ICI211-355	LUT lưu bảng chân trị; các bit đầu vào chọn giá trị hàm Boolean tương ứng.	FPGA Boolean function → LUT.
+ICI211-356	Giảm tải cho phép hạ tần số và điện áp cùng lúc, tiết kiệm công suất động mạnh.	DVFS → VDD↓ và f↓.
+ICI211-357	Hai rail ra gần lý tưởng và điểm chuyển ở giữa giúp cân bằng, tăng cả hai biên nhiễu.	Muốn cả hai noise margin lớn: VM gần VDD/2, đồng thời VOL gần 0 và VOH gần VDD.
+ICI211-358	Sau khi nút động đã xả, nó không tự nạp lại trong evaluate; đầu vào 1→0 có thể làm mất điều kiện đơn điệu.	Evaluate n-type không tự nạp lại nút đã xả → đầu vào giảm 1→0 là chuyển mức cần tránh.
+ICI211-359	Chia bus chỉ kích hoạt phần cần dùng, giảm điện dung phải nạp/xả mỗi lần.	partition bus → lower switched C.
+ICI211-360	Nút động không được giữ liên tục bởi nguồn, nên rò điện và chia sẻ điện tích có thể làm sai mức.	dynamic issues → leakage + charge sharing.
+ICI211-361	VT = VT0 + γ[√(2φF+VSB)−√(2φF)]; tăng VSB trong phân cực ngược làm VT tăng.	reverse body bias / VSB↑ → VT↑.
+ICI211-362	Standard-cell ghép các cổng đã thiết kế và đặc trưng sẵn thay vì vẽ mọi transistor từ đầu.	standard-cell → pre-designed cells.
+ICI211-363	Nguồn bias cổng bổ sung giữ transistor tải ở vùng tuyến tính và giúp VOH đạt VDD, cải thiện noise margin so với tải enhancement bão hòa.	Linear enhancement load → VOH gần VDD → noise margin tốt hơn.
+ICI211-364	Transistor kéo xuống tắt thì không có đường DC xuống mass, nên dòng lý tưởng bằng zero.	Đề nói cutoff + steady-state DC + bỏ leakage → nhánh NMOS hở, dòng qua điện trở tải bằng 0.
+ICI211-365	Full-custom cho phép tối ưu từng transistor và layout, hợp sản lượng cao khi chấp nhận chi phí thiết kế lớn.	max performance + high volume → full-custom.
+ICI211-366	Tải enhancement mắc kiểu bão hòa có thể dùng chung một nguồn với transistor kéo xuống.	Đọc đúng saturated enhancement-load: gate tải nối nguồn VDD → dùng một nguồn; không suy cho linear-load.
+ICI211-367	Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn.	electron affinity → Evac−Ec.
+ICI211-368	Giảm cả chiều dài đặc trưng và điện áp 1/S giữ tỷ số V/L, tức điện trường, không đổi.	constant field → dimensions/S, voltage/S.
+ICI211-369	Mảng vuông có cạnh √1.048.576=1024 ô.	Mảng vuông → lấy căn tổng số ô: 1.048.576 = 2^20 → mỗi cạnh 2^10 = 1024 ô.
+ICI211-370	Hai latch được mở ở hai pha khác nhau để tránh cùng trong suốt. Transmission gate tổ hợp nói chung không bắt buộc một sơ đồ clock hai pha.	Master/slave phải mở luân phiên → chọn hai pha bù nhau và không chồng, tránh cả hai latch cùng trong suốt.
+ICI211-371	Bốn NMOS nối tiếp có tổng điện trở khoảng 4 lần; tăng mỗi W lên 4 lần để bù.	4 NMOS nối tiếp làm R tổng tăng khoảng 4 lần → tăng W mỗi NMOS khoảng 4 lần để bù.
+ICI211-372	Số tầng đảo lẻ tạo đảo pha tổng; cùng độ trễ vòng làm mạch tự dao động.	Vòng inverter thông thường cần số tầng lẻ và ít nhất 3; chỉ thấy odd là chưa đủ giả thiết của đề.
+ICI211-373	Full-custom cho phép tối ưu trực tiếp kích thước transistor, mạch và layout, nên có mức tự do tối ưu hiệu năng cao nhất trong các lựa chọn.	Hỏi tối ưu hiệu năng sâu nhất → full-custom vì chỉnh được từng transistor và layout.
+ICI211-374	Công suất mỗi cổng giảm theo diện tích trong scaling lý tưởng, nên công suất trên một đơn vị diện tích gần giữ nguyên.	Scaling 1/S: C→C/S, V→V/S, f→Sf nên P/gate→P/S²; số gate/diện tích tăng S² → mật độ công suất giữ nguyên.
+ICI211-375	Bốn đầu vào giống nhau mắc làm tải có tổng điện dung cổng bằng bốn lần một đầu vào.	fanout ×4 → load C ×4.
+ICI211-376	OAI thực hiện phép OR, sau đó AND rồi đảo đầu ra.	OAI → OR–AND–INVERT.
+ICI211-377	Clock phân chia pha precharge và evaluate trong logic động đồng bộ.	synchronous dynamic → clock controlled.
+ICI211-378	Bảo toàn điện tích: Vf=(30×1,2+10×0)/(30+10)=0,9 V.	Chia sẻ điện tích: Vf = (30×1,2 + 10×0)/(30+10) = 0,9 V; không lấy trung bình hai điện áp.
+ICI211-379	Mạch monostable có một trạng thái bền và một trạng thái tạm thời sau kích thích.	mono = một → one stable state.
+ICI211-380	NMOS ngừng truyền mức cao khi VGS giảm đến VT, nên đầu ra cao chỉ khoảng VDD−VT.	NMOS pass → strong 0, weak 1.
+ICI211-381	Reset đưa bit lưu Q về zero trong định nghĩa SR latch thông thường.	reset → Q=0.
+ICI211-382	Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn.	electron affinity → Evac−Ec.
+ICI211-383	Theo mô hình bình phương, ID=½μCox(W/L)(VGS−VT)² nên tăng W/L làm ID tăng.	Đề giữ các tham số khác: ID = ½β(VGS−VT)², với β∝W/L → tăng W/L làm dòng tăng tuyến tính.
+ICI211-384	Hai nhánh có ngưỡng và sức dẫn cân bằng nên điểm chuyển ở VDD/2=0,9 V.	βn=βp và hai ngưỡng đối xứng → VM=VDD/2=1,8/2=0,9 V.
+ICI211-385	Hai cổng NOR hồi tiếp chéo lưu trạng thái và nhận hai tín hiệu Set/Reset.	NOR SR latch → cross-coupled NORs.
+ICI211-386	Đặt các khối thường trao đổi gần nhau rút ngắn dây, giảm độ trễ và năng lượng truyền.	locality → communicating blocks nearby.
+ICI211-387	SNM đo mức nhiễu DC lớn nhất ô nhớ chịu được trước khi đổi trạng thái lưu.	SRAM SNM → stability tolerance.
+ICI211-388	NAND Flash tổ chức cell nối chuỗi giúp mật độ cao, nhưng đọc ngẫu nhiên kém thuận tiện hơn NOR.	density → NAND; fast random read → NOR.
+ICI211-389	gm là đạo hàm ∂ID/∂VGS tại điểm làm việc, đo độ nhạy dòng theo điện áp cổng.	Đề hỏi độ nhạy ID theo VGS → gm = ∂ID/∂VGS; đừng nhầm với độ nhạy theo VDS.
+ICI211-390	Trong khoảng chuyển mức, NMOS và PMOS cùng bật tạo đường trực tiếp VDD xuống mass.	short-circuit power → both on.
+ICI211-391	Ái lực electron là chênh năng lượng giữa mức chân không và đáy vùng dẫn.	electron affinity → Evac−Ec.
+ICI211-392	Lặp lại layout đã kiểm chứng giảm công sức kiểm tra và làm đặc tính vật lý dễ dự đoán hơn.	regularity → reuse + predictable layout.
+ICI211-393	0,2·20×10⁻¹⁵·1²·500×10⁶=2×10⁻⁶ W=2 μW.	fF × MHz = nW: 0,2 × 20 × 1² × 500 = 2000 nW = 2 μW.
+ICI211-394	RTL mô tả việc chuyển dữ liệu và phép toán giữa các thanh ghi theo clock.	RTL → Register Transfer Level.
+ICI211-395	Mạch tuần tự có trạng thái lưu, nên đầu ra còn phụ thuộc lịch sử thông qua trạng thái trước.	sequential → inputs + stored state.
+ICI211-396	Self-refresh tự duy trì dữ liệu nhớ trong standby, giảm hoạt động điều khiển bên ngoài.	self-refresh → low-power standby.
+ICI211-397	Keeper yếu bù dòng rò để giữ mức precharge, nhưng vẫn phải cho mạng evaluate kéo xuống được.	Keeper phải bù leakage để giữ mức precharge nhưng đủ yếu cho evaluate xả nút → tìm giữ điện tích/rò.
+ICI211-398	SRAM lưu bit bằng trạng thái mạch tĩnh, không cần refresh như DRAM khi còn nguồn.	SRAM → Static Random Access Memory.
+ICI211-399	Đầu ra tầng động đầu tiên có thể giảm 1→0 trong evaluate, vi phạm yêu cầu đầu vào chỉ tăng của tầng sau.	Hai tầng dynamic trực tiếp: ngõ ra tầng đầu có thể giảm 1→0, trái yêu cầu ngõ vào chỉ tăng của tầng sau.
+ICI211-400	Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.	long-channel saturation → VDS ≥ VGS−VT → pinch-off.
+ICI211-401	Testability xét khả năng kích hoạt, quan sát và phát hiện lỗi của chip.	testability → fault detection coverage.
+ICI211-402	Với nền p, điện áp cổng dương đẩy lỗ trống ra khỏi bề mặt, tạo vùng nghèo hạt tải đa số.	Nền p + gate dương trước inversion → đẩy lỗ trống ra, để lại acceptor ion hóa: depletion.
+ICI211-403	Thiết bị di động phụ thuộc pin và giới hạn tản nhiệt nên cần giảm công suất tiêu thụ.	portable / battery → low-power CMOS.
+ICI211-404	Sense amplifier khuếch đại chênh lệch rất nhỏ giữa các bitline để quyết định bit nhớ.	sense amp → small ΔV.
+ICI211-405	Chi phí mỗi die hoạt động = 600.000 USD / 10.000 die = 60 USD/die.	Giá mỗi die tốt = 600.000/10.000 = 60 USD; chia cho số die hoạt động, không phải mọi die chế tạo.
+ICI211-406	CMOS bổ sung cần 3 NMOS kéo xuống và 3 PMOS kéo lên.	NAND CMOS 3 input: 3 NMOS + 3 PMOS = 6; quy tắc 2N ở đây dành cho NAND/NOR đơn, không mọi hàm N input.
+ICI211-407	P_static = VDD·I_leak = 0,8 V·2 mA = 1,6 mW.	V × mA → mW.
+ICI211-408	Phân tích chuyển mạch theo dõi điện áp và độ trễ theo thời gian.	switching analysis → time domain.
+ICI211-409	PMOS dẫn khi cổng thấp, tạo mạng kéo đầu ra lên VDD.	pull-up → PMOS.
+ICI211-410	Thiết bị kích thước nhỏ có điện trường mạnh gần drain, làm hạt tải đạt năng lượng cao.	hot carrier → small geometry / high field.
+ICI211-411	VDS,sat = VGS−VT = 1,8−0,5 = 1,3 V trong mô hình kênh dài lý tưởng.	Saturation onset → VDS = overdrive = VGS−VT.
+ICI211-412	Yield là tỷ lệ chip chế tạo đạt chức năng và yêu cầu kiểm tra.	yield → good dies / total dies.
+ICI211-413	D-latch có một đầu vào dữ liệu D, trạng thái được giữ hoặc truyền theo tín hiệu enable.	D → single data input.
+ICI211-414	Với gate động n-type chuẩn, clock tác động mở transistor evaluate để mạng NMOS có thể xả nút.	Đề cho transistor evaluate là NMOS nối CLK: CLK HIGH bật nhánh xả → pha evaluation.
+ICI211-415	Hai pha không chồng lấn tránh các latch cùng mở và dữ liệu chạy xuyên gây race.	Hai pha clock không chồng → tránh latch cùng mở/race-through; tìm phương án nói ngăn overlap.
+ICI211-416	8T SRAM tách đường đọc khỏi nút lưu nên giảm read disturb và tăng ổn định đọc.	8T SRAM có đường đọc tách khỏi nút lưu → ít read disturb → ổn định đọc tốt hơn.
+ICI211-417	FRAM lưu trạng thái phân cực bền của vật liệu sắt điện.	FRAM → ferroelectric polarization.
+ICI211-418	JK cho phép cả J và K cùng bật bằng cách đảo trạng thái, thay cho trạng thái cấm của SR.	J=K=1 → toggle.
+ICI211-419	Vi phạm setup/hold có thể đưa flip-flop vào mức siêu ổn định với thời gian phân giải không xác định.	asynchronous near edge → metastability.
+ICI211-420	Buffer chia dây dài thành nhiều đoạn RC ngắn, giảm thành phần trễ tăng theo bình phương chiều dài.	long RC wire → insert repeaters.
+ICI211-421	Nạp nhiều bước làm chênh lệch điện áp mỗi lần nhỏ hơn, giảm năng lượng mất trên điện trở.	Stepwise charging chia điện áp nạp thành nhiều bước nhỏ → giảm phần năng lượng mất trên điện trở.
+ICI211-422	PDN dẫn khi AB+C=1 nên A,B nối tiếp, nhánh này song song với C.	AND → series; OR → parallel in NMOS PDN.
+ICI211-423	Tỷ lệ Pnew/Pold=(0,9/1,2)²=0,5625 khi α, C và f giữ nguyên.	VDD scaling → square of voltage ratio.
+ICI211-424	SDFF dùng tầng động trước latch tĩnh để giảm trễ. Khả năng drive còn phụ thuộc tầng ra và sizing; không phải ưu điểm định nghĩa của mọi SDFF.	SDFF dùng tầng vào động để giảm clock-to-Q; tìm ưu điểm trễ ra nhanh, không phải chỉ tên semi-dynamic.
+ICI211-425	NMOS ngừng truyền mức cao khi VGS giảm đến VT, nên đầu ra cao chỉ khoảng VDD−VT.	NMOS truyền HIGH tới khi VGS tụt còn VT → Vout dừng gần VDD−VT, tạo weak 1.
+ICI211-426	RTL mô tả việc chuyển dữ liệu và phép toán giữa các thanh ghi theo clock.	RTL → Register Transfer Level.
+ICI211-427	Tăng VDS làm chiều dài kênh hiệu dụng giảm, khiến dòng bão hòa vẫn tăng.	Đang saturation mà ID vẫn tăng theo VDS → pinch-off lấn về source, Leff giảm: channel-length modulation.
+ICI211-428	Full-custom cho phép tối ưu trực tiếp kích thước transistor, mạch và layout, nên có mức tự do tối ưu hiệu năng cao nhất trong các lựa chọn.	Hỏi tối ưu hiệu năng sâu nhất → full-custom vì chỉnh được từng transistor và layout.
+ICI211-429	Ngắt nguồn bằng sleep transistor giảm rò nhưng thêm diện tích, trở đường nguồn và thời gian thức dậy.	power gating → leakage↓, wake-up cost↑.
+ICI211-430	NMOS mạnh hơn cân bằng PMOS ngay tại Vin thấp hơn, nên điểm chuyển dịch về ground.	βn/βp↑ → VM↓.
+ICI211-431	Yield=1,5/2,0=0,75=75%.	Yield = die đạt / die chế tạo ×100% = 1,5/2,0 ×100% = 75%.
+ICI211-432	Công suất động tỷ lệ VDD², nên giảm điện áp rất hiệu quả nhưng làm transistor chậm hơn.	quadratic power saving → lower VDD.
+ICI211-433	NMOS dẫn tốt ở mức thấp, PMOS dẫn tốt ở mức cao. Hai nhánh song song bù nhau nên R_ON tương đương khá phẳng theo điện áp, không bằng zero và không hoàn toàn hằng.	Transmission gate → Rn ∥ Rp → roughly constant.
+ICI211-434	Biên nhiễu thấp là khoảng cách giữa mức vào thấp tối đa và mức ra thấp tối đa.	NML = VIL−VOL.
+ICI211-435	Miền hành vi mô tả hệ thống làm gì, trước khi chọn cấu trúc và bố trí vật lý.	behavioral → functionality.
+ICI211-436	Giải mã nhiều tầng chia fanout và đường dây, giúp tín hiệu chọn dòng truyền nhanh và khỏe hơn.	Giải mã nhiều tầng chia tải/fanout → tín hiệu chọn có thể nhanh và khỏe hơn; không phải tăng dung lượng bit.
+ICI211-437	Điện trở và điện dung dây phân bố dọc chiều dài, nên dây dài cần mô hình RC phân bố.	long wire → distributed RC.
+ICI211-438	tPLH đo độ trễ lan truyền khi đầu ra chuyển từ mức thấp lên cao.	Đọc hai chữ cuối tPLH: đầu ra chuyển Low → High; đây là trễ lan truyền, không phải thời gian rise.
+ICI211-439	Pass transistor đóng hoặc mở đường truyền tín hiệu theo điện áp cổng.	pass transistor → controlled switch.
+ICI211-440	NMH = VOH−VIH = 1,8−1,1 = 0,7 V. NML = VIL−VOL = 0,7−0 = 0,7 V.	NMH = 1,8−1,1 = 0,7 V; NML = 0,7−0 = 0,7 V. HIGH: VOH−VIH; LOW: VIL−VOL.
+ICI211-441	Pha precharge bật PMOS nạp nút động lên VDD trước khi đánh giá.	n-type precharge → charge HIGH.
+ICI211-442	Ở điện trường mạnh, vận tốc hạt tải tiến tới giới hạn thay vì tăng tuyến tính, làm sai mô hình square-law.	Square-law giả sử vận tốc tăng theo điện trường; kênh ngắn làm vận tốc chạm trần → giả sử tuyến tính bị sai.
+ICI211-443	Thanh ghi dịch động giữ bit bằng điện tích trên điện dung nút khi khóa truyền tắt.	dynamic storage → capacitance.
+ICI211-444	Dung lượng bằng số từ nhân độ rộng mỗi từ: 256·16=4096 bit.	Dung lượng bit = word × bit/word = 256 × 16 = 2^8 × 2^4 = 4096 bit.
+ICI211-445	Access time là thời gian từ yêu cầu truy cập đến dữ liệu hợp lệ, quyết định tốc độ nhớ.	access time → memory speed.
+ICI211-446	VTC dốc ở vùng chuyển và mức logic có biên nhiễu rộng giúp tái tạo mức sạch sau nhiễu nhỏ.	noise rejection → steep VTC + wide margins.
+ICI211-447	Tăng cùng tỷ lệ hai W giữ βn/βp nên điểm cân bằng dòng và VM gần như giữ nguyên.	both widths scale equally → VM unchanged.
+ICI211-448	Tmin=100+750+150=1000 ps=1 ns, nên fmax=1 GHz.	Tmin=100+750+150=1000 ps=1 ns; lấy nghịch đảo → fmax=1 GHz.
+ICI211-449	Activity factor mô tả tần suất/xác suất chuyển mức hữu hiệu gây nạp xả điện dung.	α → switching activity.
+ICI211-450	t = 0,69RC = 0,69·(4×10³)·(50×10⁻¹⁵) s = 138 ps.	RC = 200 ps → 0,69RC = 138 ps.
+ICI211-451	64K=65.536 từ; nhân 8 được 524.288 bit.	64 K × 8 bit = 2^6 × 2^10 × 2^3 = 2^19 = 524.288 bit; K ở đề là 1024.
+ICI211-452	PMOS tải luôn ON nên NMOS phải đủ mạnh để kéo thấp, tạo logic phụ thuộc tỷ lệ kích thước.	pseudo-NMOS → always-on PMOS, ratioed logic.
+ICI211-453	Điện dung ghép khiến chuyển mức trên dây này gây nhiễu điện áp trên dây lân cận.	crosstalk → coupled switching noise.
+ICI211-454	Với SR dùng NOR, S=R=1 ép cả hai đầu ra thấp, phá tính bù và gây bất định khi nhả đồng thời.	NOR SR invalid → 11.
+ICI211-455	PDN dẫn khi (A+B)C đúng; đầu ra CMOS là phủ định điều kiện kéo xuống.	PDN: song song A,B → A+B; nối tiếp C → (A+B)C; đầu ra đảo → NOT[(A+B)C].
+ICI211-456	Keeper mạnh giữ mức chống nhiễu tốt hơn nhưng tranh dòng với mạng xả, làm evaluate chậm.	stronger keeper → robustness↑, contention↑.
+ICI211-457	NOR Flash cho phép truy cập ngẫu nhiên nhanh, phù hợp đọc mã lệnh trực tiếp.	NOR → random access; NAND → block storage.
+ICI211-458	Die lớn có xác suất gặp ít nhất một khuyết tật cao hơn khi mật độ lỗi giữ nguyên.	area↑, defect density fixed → yield↓.
+ICI211-459	Các inverter CMOS hồi tiếp tạo hai mức rail-to-rail với khả năng chống nhiễu tốt.	full CMOS SRAM → strong noise margins.
+ICI211-460	Điện áp drain cao hạ rào thế gần source, làm điện áp ngưỡng hiệu dụng giảm.	VDS tăng mà VT giảm → drain hạ rào source: DIBL; CLM chủ yếu mô tả dòng saturation tăng do Leff giảm.
+ICI211-461	MTCMOS tắt transistor sleep ngưỡng cao để ngắt đường cấp nguồn của khối logic khi standby.	MTCMOS standby → power gating.
+ICI211-462	Một PMOS tải thay cả mạng pull-up bổ sung giúp giảm số transistor và diện tích.	pseudo-NMOS benefit → smaller area.
+ICI211-463	Pipeline rút ngắn đường tổ hợp mỗi tầng, cho phép giảm VDD mà vẫn giữ thông lượng yêu cầu.	Giữ throughput: pipeline rút ngắn delay mỗi tầng → có thể hạ VDD để giảm P∝VDD², không tự bảo đảm tiết kiệm.
+ICI211-464	PMOS tải luôn bật nên khi đầu ra thấp có dòng DC từ nguồn xuống mass.	Pseudo-nMOS có PMOS tải luôn bật; đầu ra LOW tạo đường dòng DC → công suất tĩnh.
+ICI211-465	Năng lượng lấy từ nguồn cho lần nạp là CV²=40 fF·1²=40 fJ; năng lượng lưu trên tụ chỉ bằng một nửa.	Đọc drawn from supply → CV² = 40×1² = 40 fJ; stored on capacitor mới là ½CV².
+ICI211-466	Khả năng cập nhật công nghệ giúp chuyển thiết kế sang quy trình mới với công sức hợp lý.	technology updateability → adapt efficiently.
+ICI211-467	Transistor rộng hơn giảm điện trở dẫn, nạp/xả tải ngoài cố định nhanh hơn.	fixed external C → increase W to reduce R.
+ICI211-468	Hai dây chuyển ngược chiều làm chênh điện áp qua tụ ghép thay đổi mạnh hơn, tăng tải hiệu dụng.	Hai dây chuyển ngược chiều làm ΔV trên tụ ghép thay đổi mạnh hơn → tải ghép hiệu dụng và trễ có thể tăng.
+ICI211-469	Khi S=0 chỉ D0 được chọn; khi S=1 chỉ D1 được chọn.	2:1 mux → S̄D0+SD1.
+ICI211-470	Vin=0 tắt NMOS và bật PMOS, kéo đầu ra lên VDD.	CMOS Vin LOW → p ON, n OFF.
+ICI211-471	VTCMOS ở chế độ active giảm ngưỡng bằng body bias để transistor chuyển mạch nhanh hơn.	Active VTCMOS cần nhanh → body bias hạ VT để tăng tốc chuyển mạch.
+ICI211-472	Mô hình T chia điện trở dây quanh điện dung tương đương, xấp xỉ phân bố tốt hơn mô hình đơn giản.	T-model → better delay estimate.
+ICI211-473	Chiều dài kênh rất nhỏ khiến trường drain và bão hòa vận tốc ảnh hưởng mạnh.	short-channel effects → deep-submicron.
+ICI211-474	0,69·5000·20×10⁻¹⁵=69×10⁻¹² s=69 ps.	RC=100 ps → delay 69 ps.
+ICI211-475	FPGA tránh chi phí chế tạo riêng và có thể cập nhật phần cứng, hợp sản lượng nhỏ.	low volume + future changes → FPGA.
+ICI211-476	tPHL đo độ trễ lan truyền khi đầu ra chuyển từ cao xuống thấp.	HL → High to Low.
+ICI211-477	Điện dung overlap chủ yếu do hình học cổng chồng source/drain nên thường xấp xỉ không đổi theo điện áp.	overlap C → approximately voltage-independent.
+ICI211-478	VTC đối xứng cho các biên nhiễu HIGH và LOW bằng nhau; không đồng nghĩa hai transistor có cùng kích thước hoặc mọi trễ động đều bằng nhau.	symmetric DC VTC → balanced noise margins.
+ICI211-479	Kênh dài vào bão hòa tại VDS ≥ VGS−VT khi pinch-off xuất hiện gần drain. Không áp dụng lời giải này như cơ chế duy nhất cho transistor kênh ngắn.	long-channel saturation → VDS ≥ VGS−VT → pinch-off.
+ICI211-480	Ở mức logic hợp lệ, một transistor tắt nên không có đường DC lý tưởng từ VDD xuống ground.	Ở mức logic hợp lệ, một transistor OFF cắt đường VDD→GND → dòng DC lý tưởng gần 0.
+ICI211-481	NORA là tên kiến trúc CMOS động nhằm tránh race trong hoạt động theo clock.	Tách chữ NORA thành NO RAce → chọn tên logic tránh race.
+ICI211-482	Nếu cả hai latch cùng trong suốt, dữ liệu có thể chạy xuyên nhiều tầng thay vì dừng đúng pha.	non-overlap → prevent simultaneous transparency.
+ICI211-483	Khi switch lấy mẫu tắt, điện tích còn trên tụ nội bộ giữ giá trị logic tạm thời.	dynamic latch OFF → stored charge.
+ICI211-484	Dòng tỷ lệ bình phương overdrive; tăng gấp đôi cho hệ số 2²=4.	Overdrive gấp đôi, β giữ nguyên → ID nhân 2² = 4, không chỉ nhân 2.
+ICI211-485	NORA là tên kiến trúc CMOS động nhằm tránh race trong hoạt động theo clock.	Tách chữ NORA thành NO RAce → chọn tên logic tránh race.
+ICI211-486	Ở mức logic hợp lệ, một transistor tắt nên không có đường DC lý tưởng từ VDD xuống ground.	static CMOS → ideally zero DC current.
+ICI211-487	Hai ngõ S và R dùng đặt hoặc xóa trạng thái lưu.	SR → Set / Reset.
+ICI211-488	Mỗi lần chuyển mạch nạp/xả tụ; công suất động chứa bình phương điện áp nguồn.	Trong P=αCVDD²f, VDD có số mũ 2 còn α,C,f bậc 1 → chọn supply voltage squared.
+ICI211-489	Regularity lặp các khối có cấu trúc tương tự để đơn giản hóa thiết kế và layout.	regularity → repeated similar blocks.
+ICI211-490	Nút động lưu điện tích trong pha evaluate; precharge khôi phục điện tích. Không đòi hỏi đường DC liên tục và không nên giữ evaluate vô hạn khi có rò.	dynamic logic → precharge / evaluate, lưu điện tích.
+ICI211-491	Với SR dùng NOR, S=R=1 ép cả hai đầu ra thấp, phá tính bù và gây bất định khi nhả đồng thời.	NOR SR invalid → 11.
+ICI211-492	Sau kiến trúc, RTL cụ thể hóa các thanh ghi và luồng dữ liệu trước khi tổng hợp thành cổng.	architecture → RTL → gate level.
+ICI211-493	Ghép điện dung nâng điện áp nút nội bộ, giúp cổng điều khiển vượt mức thông thường.	bootstrapping → boost internal voltage.
+ICI211-494	Hai mạng bù nhau để đầu ra được kéo về đúng một rail cho mỗi tổ hợp vào hợp lệ.	PUN/PDN bù nhau: mỗi tổ hợp vào ổn định chỉ một mạng dẫn → đầu ra nối một rail, tránh floating và dòng DC xuyên.
+ICI211-495	Nạp nhiều bước làm chênh lệch điện áp mỗi lần nhỏ hơn, giảm năng lượng mất trên điện trở.	Stepwise charging chia điện áp nạp thành nhiều bước nhỏ → giảm phần năng lượng mất trên điện trở.
+ICI211-496	Transmission gate đóng hoặc ngắt đường tín hiệu theo lựa chọn, rất phù hợp làm mux.	multiplexer → transmission gates.
+ICI211-497	Khi ghi 0, access transistor phải thắng PMOS pull-up để đảo trạng thái ô nhớ.	write ability → access stronger than pull-up.
+LOS201-13	smemcap là chương trình C thu thập dữ liệu /proc để mang sang host chạy smem bằng Python.	target thiếu Python → smemcap capture.
+LOS201-14	OOM xảy ra khi không thể đáp ứng nhu cầu bộ nhớ; kernel có thể giết tiến trình để thu hồi RAM.	OOM → chọn đủ hai ý: nhu cầu bộ nhớ vượt khả năng đáp ứng và kernel có thể giết tiến trình.
+LOS201-15	mmap ánh xạ vùng thiết bị vào không gian user; ứng dụng có thể truy cập thanh ghi qua vùng ánh xạ thay vì gọi read/write cho từng thao tác.	mmap thanh ghi vào user space → truy cập qua vùng ánh xạ, giảm việc gọi read/write cho từng thao tác.
+LOS201-16	Build system tự động ghép nhiều thành phần và gói phụ thuộc thành bản phân phối hoàn chỉnh.	hundreds of packages → scalable build automation.
+LOS201-17	Tự động hóa dependency và cấu hình giúp dựng lại toàn hệ thống nhất quán thay vì thao tác tay.	manual assembly problem → reproducible automated build.
+LOS201-18	Build system theo dõi gói nào cần gói nào và phiên bản tương thích giữa các thành phần.	Build system thay lắp ghép tay → chọn quản lý phụ thuộc gói và quản lý phiên bản phần mềm.
+LOS201-19	Hệ thời gian thực cần kết quả đúng trong hạn thời gian xác định, không chỉ chạy nhanh trung bình.	Real-time → phải đáp ứng đúng hạn đã quy định; “chạy nhanh nhất” hoặc CPU xung cao chưa đủ.
+LOS201-20	Điều khiển phải chịu được lần phản hồi chậm nhất, nên độ trễ trường hợp xấu nhất quan trọng hơn trung bình.	Đề so “industrial control” với thời gian trung bình → chọn độ trễ phản hồi xấu nhất, không phải kích thước hệ thống.
+LOS201-21	NAND có mật độ cao và chi phí mỗi bit thấp, phù hợp lưu trữ dung lượng lớn.	large storage → NAND.
+LOS201-22	Cross-development dùng host để biên dịch và phát triển phần mềm chạy trên kiến trúc target khác.	Cross-development → phát triển trên host nhưng chương trình chạy trên target khác; không phải tăng tốc CPU.
+LOS201-23	Bootloader nạp kernel; root filesystem cung cấp init, thư viện và chương trình user-space.	kernel alone insufficient → bootloader + rootfs.
+LOS201-24	BusyBox thường cung cấp shell nhẹ ash, phù hợp hệ nhúng hạn chế tài nguyên.	BusyBox shell → ash.
+LOS201-25	BusyBox xem tên gọi chương trình trong argv[0] để chọn applet tương ứng.	Các symlink ls/cp/mount cùng trỏ BusyBox → xem tên gọi argv[0] để chọn applet.
+LOS201-26	VFS chuẩn hóa các thao tác file rồi chuyển open/read/write đến callback trong file_operations của driver.	VFS → giao diện file chung cho user space + chuyển thao tác tới callback file_operations của driver.
+LOS201-27	module_param nhận giá trị khi nạp module, cho phép thay đổi cấu hình mà không biên dịch lại; quyền 0 không xuất sysfs.	module_param → truyền giá trị lúc nạp module và đổi hành vi mà không biên dịch lại; chọn đủ hai ý.
+LOS201-28	modprobe tra dependency để nạp module cần thiết trước, còn insmod chỉ chèn file module được chỉ định.	dependencies → modprobe.
+LOS201-29	head.o chứa mã khởi động kiến trúc, thiết lập môi trường CPU trước khi vào phần C của kernel.	head.o → early CPU setup.
+LOS201-30	Macro đăng ký đặt handler vào section; linker gom thành bảng để kernel duyệt tự động.	Linker-generated tables → gom các handler đã đăng ký rồi duyệt tự động; loại phương án phải viết danh sách tay.
+LOS201-31	GDB trên host trao đổi với stub trên target để điều khiển chạy, breakpoint và đọc trạng thái.	remote debug → gdbserver / stub.
+LOS201-32	Profiling đo nơi tiêu tốn CPU thực sự, giúp tối ưu đúng bottleneck trước khi sửa mã.	performance issue → profile first.
+LOS201-33	RAM mất dữ liệu khi tắt nguồn; cấu hình cần tồn tại qua reboot phải lưu trên bộ nhớ bền.	persistent across power cycles → flash/nonvolatile.
+LOS201-34	Nén tiết kiệm flash nhưng cần CPU và thời gian để giải nén khi đọc hoặc khởi động.	compression → storage↓, decompression cost↑.
+LOS201-35	require nạp metadata bắt buộc từ recipe/file nền; lỗi nếu không tìm thấy.	BitBake require → chèn metadata bắt buộc từ file khác; thiếu file là lỗi, khác include tùy chọn.
+LOS201-36	bblayers.conf liệt kê các layer có metadata mà BitBake cần tìm.	list of layers → bblayers.conf.
+LOS201-37	IMAGE_INSTALL chỉ định các gói được đưa vào image rootfs.	add packages to image → IMAGE_INSTALL.
+LOS201-38	/dev/console là thiết bị console để init và tiến trình có đường nhập/xuất cơ bản.	/dev/console trong rootfs tối thiểu → đường nhập/xuất chuẩn cho tương tác, không phải mạng hay nạp thư viện.
+LOS201-39	BusyBox init chạy sysinit trước và chờ xong; askfirst chờ nhấn Enter rồi mở shell. Dấu - chạy shell theo kiểu login.	sysinit → rcS; askfirst → nhấn Enter rồi mở shell.
+LOS201-40	Init dựng môi trường user-space như mount filesystem, cấu hình thiết bị và chạy dịch vụ.	after kernel → prepare usable user space.
+LOS201-41	Các thread trong một process chia sẻ địa chỉ và tài nguyên, còn các process thường được cách ly không gian địa chỉ.	threads share; processes separate.
+LOS201-42	Mutex bảo vệ việc kiểm tra và cập nhật điều kiện dùng chung; phải kiểm tra lại điều kiện sau khi thức dậy.	Đề hỏi shared condition → mutex phải bảo vệ cả lúc kiểm tra và cập nhật điều kiện dùng chung.
+LOS201-43	Daemon là tiến trình dịch vụ nền, thường không phụ thuộc một phiên terminal tương tác.	daemon → background service.
+LOS201-44	Interrupt chỉ xử lý khi có sự kiện thay vì để CPU liên tục kiểm tra trạng thái thiết bị.	interrupt vs polling → less busy waiting.
+LOS201-45	Ánh xạ địa chỉ ảo phân tách không gian tiến trình và kiểm soát quyền truy cập bộ nhớ.	virtual memory → isolation + protection.
+LOS201-46	Falcon Mode cho SPL nạp Linux trực tiếp thay vì chạy đầy đủ U-Boot.	bypass full U-Boot → Falcon Mode.
+LOS201-47	U-Boot hỗ trợ nhiều kiến trúc và bo mạch nhúng, dùng để khởi tạo và nạp Linux.	embedded bootloader → U-Boot.
+LOS201-48	QEMU vexpress-a9 ánh xạ RAM từ 0x60000000; vùng địa chỉ 0 là alias flash. Image phải được nạp vào vùng RAM hợp lệ, không chồng nhau.	vexpress-a9 → RAM 0x60000000, không phải 0.
+LOS201-49	Lỗi kernel có thể làm hỏng toàn hệ thống; ở early boot nhiều công cụ và dịch vụ chưa sẵn sàng.	Kernel debugging → chọn tác động có thể lan toàn hệ thống + công cụ còn hạn chế lúc early boot.
+LOS201-50	KGDB cho phép dùng GDB từ máy khác để dừng và kiểm tra kernel Linux.	KGDB → remote kernel debugger.
+LOS201-51	dmesg đọc các thông báo mà kernel ghi trong ring buffer.	kernel logs → dmesg.
+LOS201-52	root=/dev/nfs yêu cầu mount rootfs từ máy chủ NFS, nên cần kiểm tra export và dịch vụ NFS.	NFS root failure → NFS server.
+LOS201-53	TFTP là giao thức truyền file đơn giản thường dùng bootloader tải kernel, DTB và boot image qua mạng.	boot image transfer → TFTP.
+LOS201-54	Console nối tiếp có thể hoạt động từ rất sớm trước khi network và user-space sẵn sàng.	early boot logs → serial console.
+LOS201-55	Flash thường phải erase cả block để trả bit về trạng thái xóa trước khi lập trình lại tùy ý.	flash rewrite → erase before write.
+LOS201-56	UBI quản lý khối flash, bad block và wear leveling; UBIFS xây filesystem trên các volume UBI.	UBIFS → UBI → MTD.
+LOS201-57	MTD cung cấp API chung cho flash và che khác biệt thao tác phần cứng khỏi lớp trên.	MTD → API chung cho bộ nhớ flash + che thao tác phần cứng riêng; không thay toàn bộ VFS.
+LOS201-58	User-space gọi system call để kernel quản lý phần cứng, bộ nhớ, file và tiến trình.	user → syscall → kernel services.
+LOS201-59	Thiết bị chưa có hỗ trợ cần driver mới hoặc chỉnh driver hiện có cùng mô tả phần cứng phù hợp.	unsupported peripheral → add/adapt driver support.
+LOS201-60	vmlinux là ELF kernel chưa nén, giữ thông tin cần để phân tích symbol và debug.	uncompressed ELF kernel → vmlinux.
+LOS201-61	Ở mô hình Kbuild cũ, object driver được gom vào drivers/built-in.o trước khi liên kết kernel. Kernel mới dùng built-in.a thay cho tên này.	Đề ghi legacy + driver dưới drivers/ → chọn drivers/built-in.o; đừng chọn object của usr/ hay arch/.
+LOS201-62	autoconf.h biến cấu hình Kconfig thành các macro CONFIG_* cho mã C.	autoconf.h → các macro CONFIG_* để mã C đọc cấu hình kernel, không phải vùng lưu tham số boot.
+LOS201-63	Page là đơn vị kích thước cố định mà hệ thống dùng cho ánh xạ và quản lý bộ nhớ ảo.	page → memory mapping unit.
+LOS201-64	mmap với vùng chia sẻ cho các process truy cập cùng trang nhớ, tránh sao chép dữ liệu nhiều lần.	low-overhead IPC → shared mmap.
+LOS201-65	/proc/PID/maps liệt kê các vùng địa chỉ ảo, quyền truy cập và file ánh xạ của tiến trình.	/proc/<pid>/maps → danh sách các vùng ánh xạ bộ nhớ của tiến trình; “maps” không phải thống kê CPU.
+LOS201-66	Layer tách metadata cho bo mạch, distro và ứng dụng để tái sử dụng và tùy biến độc lập.	Yocto layers → tách metadata bo mạch/BSP, distro và ứng dụng để tùy biến độc lập.
+LOS201-67	Chọn chính xác gói và tính năng cần thiết giúp bỏ phần thừa khỏi image.	image size↓ → fine-grained package selection.
+LOS201-68	Một stack chung có thể dùng lại recipe, chỉ đổi cấu hình/BSP theo từng nền tảng.	multiple boards → reuse + platform configuration.
+LOS201-69	Tăng khả năng preempt và dùng chính sách real-time giảm thời gian chờ của task quan trọng.	Cải thiện real-time → chọn giảm đoạn kernel không cho preempt và dùng chính sách lập lịch real-time.
+LOS201-70	Để giữ chu kỳ 5 ms, phải kiểm tra độ trễ scheduler và interrupt lớn nhất không làm lỡ hạn.	Chu kỳ 5 ms là deadline → kiểm tra độ trễ scheduler và interrupt xấu nhất, không lấy thời gian trung bình.
+LOS201-71	Giao diện rõ giữa các lớp cho phép thay đổi bootloader, kernel hoặc ứng dụng tương đối độc lập.	Đề chia bootloader–kernel–library–app → các lớp thay đổi độc lập nhờ giao diện được xác định rõ.
+LOS201-72	Bootloader chuẩn bị phần cứng tối thiểu rồi nạp và chuyển điều khiển sang kernel.	bootloader → init hardware + load kernel.
+LOS201-73	Linux cung cấp dịch vụ OS và cách ly tiến trình sẵn có, thay vì firmware tự quản mọi hoạt động.	Linux vs bare metal → OS services + isolation.
+LOS201-74	BusyBox gom nhiều tiện ích vào một binary và dùng chung mã, giảm dung lượng rootfs.	BusyBox giảm rootfs → nhiều tiện ích dùng chung một binary và mã dùng chung, không phải nén kernel.
+LOS201-75	BusyBox gom nhiều tiện ích vào một binary và dùng chung mã, giảm dung lượng rootfs.	BusyBox tiết kiệm lưu trữ → nhiều tiện ích chung một executable, loại phương án nén RAM hay bỏ driver.
+LOS201-76	Driver PL011 hỗ trợ UART của board; console=ttyAMA0,115200 chọn cổng và baud cho log nối tiếp.	UART PL011 của bài lab → bật hỗ trợ PL011 và chọn console=ttyAMA0,115200; cần đúng cả driver lẫn console.
+LOS201-77	Mã/dữ liệu chỉ dùng khi khởi tạo được giải phóng sau boot để trả RAM cho hệ thống.	Freeing init memory → reclaim one-time code.
+LOS201-78	Thời hạn hỗ trợ release ảnh hưởng thời gian nhận bản vá và công sức bảo trì sản phẩm.	Sản phẩm dùng nhiều năm → xem thời hạn nhận bản vá bảo trì/bảo mật của Yocto release.
+LOS201-79	Task populate_sdk tạo bộ công cụ phát triển và sysroot cho image.	Yocto SDK → bitbake -c populate_sdk <image>.
+LOS201-80	BSP layer đóng gói kernel, bootloader và cấu hình dành riêng cho bo mạch.	BSP layers → phần hỗ trợ và cấu hình riêng cho bo mạch; không thay kernel hay cross-compiler.
+LOS201-81	Linux no-MMU có hỗ trợ ánh xạ hạn chế và không có cơ chế cách ly bằng MMU như hệ MMU. Kernel biên dịch đòi MMU không tự chạy được trên CPU thiếu MMU.	no MMU → hạn chế VM và bảo vệ/cách ly bộ nhớ.
+LOS201-82	Interrupt báo sự kiện và tạm chuyển CPU sang handler trước khi tiếp tục luồng chạy.	Interrupt → sự kiện làm luồng chạy tạm chuyển sang xử lý ngắt rồi tiếp tục; không phải lệnh shell hay file.
+LOS201-83	Cần device node đúng major/minor và các callback đã đăng ký để VFS chuyển thao tác đến driver.	/dev access → node + file_operations.
+LOS201-84	Con trỏ callback không hợp lệ hoặc lỗi bên trong đường open có thể làm kernel crash. Callback .open bằng NULL theo API được kiểm tra, không mặc định gây crash.	Crash đúng lúc open thiết bị → kiểm tra con trỏ hàm không hợp lệ hoặc lỗi trong đường callback .open.
+LOS201-85	Major chọn driver, minor chọn thiết bị/instance do driver quản lý; tên file có thể thay đổi độc lập.	major → driver; minor → instance.
+LOS201-86	Compiler chạy trên x86 nhưng tạo mã ARM là cross-compiler/toolchain.	host x86, target ARM → cross-toolchain.
+LOS201-87	TFTP tải image và NFS chia sẻ rootfs giúp thử bản mới mà không flash lại, sửa file trực tiếp từ host.	TFTP kernel + NFS rootfs khi phát triển → thử nhanh không flash lại + sửa file target trực tiếp từ host.
+LOS201-88	Root NFS được đọc trực tiếp từ export trên host, nên thay file host sẽ xuất hiện trên target.	NFS root → shared host filesystem.
+LOS201-89	nm liệt kê tên và địa chỉ các symbol trong object hoặc executable.	object symbols → nm.
+LOS201-90	Không có debug info, GDB khó ánh xạ mã máy về dòng nguồn và biến; tối ưu hóa còn làm việc này khó hơn.	Đề ghi quên debug information → GDB khó thấy dòng nguồn và biến; chương trình vẫn có thể chạy.
+LOS201-91	SquashFS nén dữ liệu và chỉ đọc, hợp rootfs gọn trên thiết bị nhúng.	compressed read-only → SquashFS.
+LOS201-92	tmpfs lưu dữ liệu trong bộ nhớ tạm, mất khi reboot và có thể dùng swap nếu hệ thống cho phép.	tmpfs → volatile memory-backed filesystem.
+LOS201-93	arch/ chứa mã khởi động, khởi tạo và triển khai phụ thuộc CPU/kiến trúc.	arch/ → chọn mã startup/init riêng theo CPU và các triển khai phụ thuộc máy/kiến trúc.
+LOS201-94	Trong cây kernel kiểu được học, arch/arm/mach-* chứa hỗ trợ và khởi tạo máy/SoC ARM cụ thể.	ARM board-specific → arch/arm/mach-*.
+LOS201-95	built-in.o là bước gom object của mô hình Kbuild cũ; vmlinux là ELF cuối để kiểm tra mã đã liên kết. Kernel mới dùng archive built-in.a.	“final uncompressed ELF” → vmlinux; “legacy built-in aggregation” → built-in.o. Chọn hai tên đó.
+LOS201-96	Kernel và DTB không thay thế rootfs có init. Không có initramfs hay root device dùng được sẽ dẫn đến lỗi mount root; QEMU có thể nạp trực tiếp zImage.	VFS root mount panic → kiểm tra initramfs / root= / rootfs.
+LOS201-97	Buildroot và OpenEmbedded/BitBake tự dựng toolchain, gói phần mềm và rootfs từ cấu hình.	rootfs automation → Buildroot / OpenEmbedded.
+LOS201-98	Rootfs tối thiểu chỉ chứa các thành phần đủ cho kernel chuyển sang user-space và chạy chức năng cần thiết.	minimal rootfs → satisfy dependencies, omit extras.
+LOS201-99	fork tạo tiến trình con; exec thay ảnh chương trình đang chạy bằng chương trình khác.	duplicate → fork; replace → exec.
+LOS201-100	Chính sách real-time ưu tiên phản hồi task quan trọng thay vì chia CPU công bằng như scheduler thông thường.	“Deterministic response over fairness” → ưu tiên chính sách lập lịch real-time, không phải time-sharing/batch.
+LOS201-101	Mutex làm thao tác đọc–sửa–ghi thành vùng loại trừ lẫn nhau, ngăn hai thread ghi đè cập nhật.	shared counter → lock whole read-modify-write.
+LOS201-102	Phần chỉ định thiết bị và partition cho biết bootloader phải đọc image từ đâu.	diskboot dev:part → device + partition.
+LOS201-103	setenv đặt hoặc đổi biến môi trường U-Boot trong phiên; muốn lưu bền thường cần saveenv.	Chỉ đổi biến U-Boot → setenv; saveenv là lưu thay đổi bền qua lần khởi động sau.
+LOS201-104	Bootloader nhúng thường tùy biến sâu theo SoC, board và nguồn boot cụ thể.	embedded bootloader → board-specific configurable.
+LOS201-105	Oops thường kèm địa chỉ lỗi, thanh ghi và call trace để truy ra đường gọi gây sự cố.	kernel oops → call trace.
+LOS201-106	Instrumentation ghi dấu các sự kiện để thấy đường thực thi và tương tác giữa các subsystem.	Kernel instrumentation → quan sát đường thực thi + tương tác subsystem; không tự tối ưu mã hay thay profiler.
+LOS201-107	ftrace ghi dấu hàm/sự kiện trong kernel để phân tích hành vi và timing lúc chạy.	ftrace → function/runtime tracing.
+LOS201-108	NAND mật độ cao có xác suất lỗi bit đáng kể, nên ECC là thành phần quan trọng để giữ dữ liệu tin cậy.	NAND → higher bit-error susceptibility → ECC.
+LOS201-109	JFFS2 phải quét nhiều dữ liệu và giữ cấu trúc quản lý lớn, nên mount/RAM kém mở rộng với flash rất lớn.	large NAND + JFFS2 → slow mount / high RAM.
+LOS201-110	ECC dùng bit dư để phát hiện và sửa lỗi bit trong giới hạn thiết kế.	ECC: nhớ hai chữ chức năng “detect + correct” lỗi bit; không phải nén dữ liệu hay tăng CPU.
+LOS201-111	Hệ an toàn cần chứng minh đáp ứng tiêu chuẩn; quy mô và độ phức tạp Linux làm công sức xác minh tăng.	safety-critical → certification effort.
+LOS201-112	Linux có sẵn networking, driver và GUI phong phú, hợp thiết bị chức năng phức tạp.	complex network + UI → Linux.
+LOS201-114	LSB chuẩn hóa môi trường chạy để binary ứng dụng tương thích giữa các bản phân phối hỗ trợ.	LSB → tương thích binary giữa các distro phù hợp chuẩn; đừng lẫn với chỉ tương thích mã nguồn.
+LOS201-115	System call là cửa vào được kiểm soát để tiến trình yêu cầu dịch vụ kernel.	user requests kernel → system calls.
+LOS201-116	ANSI C89 được ISO thông qua năm 1990, chuẩn hóa cú pháp C và thư viện cơ bản.	1989/1990 C → C89 / C90.
+LOS201-117	POSIX.1c chuẩn hóa giao diện thread, thường gọi là pthreads.	threads → POSIX.1c.
+LOS201-118	Global/static khởi tạo khác 0 thường nằm ở .data; phần khởi tạo bằng 0 thường được đặt trong .bss.	nonzero initialized global → .data; zero → .bss.
+LOS201-119	SUSv3 bổ sung tập X/Open Curses vào các đặc tả cơ sở POSIX.1-2001. Hỏi chung về curses dễ lẫn với các đặc tả System V/SVID trước đó.	POSIX base + extra X/Open Curses volume (2001) → SUSv3.
+LOS201-120	munmap hủy ánh xạ một vùng địa chỉ ảo đã tạo.	un-map → munmap().
+LOS201-121	Thương hiệu chứng nhận UNIX 98 tương ứng với Single UNIX Specification Version 2.	SUSv2 → UNIX 98.
+LOS201-122	lseek đổi vị trí file offset để đọc/ghi ngẫu nhiên; tên hàm bắt đầu bằng chữ l thường.	file offset → lseek().
+LOS201-123	CPU/MMU chặn truy cập vùng đặc quyền, tạo exception khi user-space truy cập trái phép.	user touches kernel memory → protection exception.
+LOS201-124	Stack giữ frame lời gọi hàm và biến cục bộ; frame được thêm và bỏ khi gọi/trả hàm.	function calls/returns → stack.
+LOS201-125	C diễn đạt thao tác gần máy nhưng vẫn cho cấu trúc chương trình bậc cao và biên dịch hiệu quả, phù hợp viết OS. Việc tác giả viết cho nhu cầu riêng không tự chứng minh hiệu quả kỹ thuật.	systems C → low-level control + efficient compilation.
+LOS201-126	Theo mốc lịch sử của môn, 4.2BSD đưa socket API và TCP/IP vào bản phân phối BSD.	sockets + TCP/IP → 4.2BSD.
+LOS201-127	XBD là Base Definitions, chứa các đặc tả header. XCU là tên đúng của phần Shell and Utilities.	Header definitions → Base Definitions (XBD); XCU mới là shell/utilities, XSH là giao diện hệ thống.
+LOS201-128	read là giao diện system call đọc dữ liệu từ file descriptor; trong mã C thường gọi qua wrapper thư viện cùng tên.	Đề hỏi đọc qua file descriptor → read(); printf/scanf là stdio, malloc là cấp phát bộ nhớ.
+LOS201-129	Bill Joy là tác giả C shell và một trong các nhà đồng sáng lập Sun Microsystems.	C shell + Sun → Bill Joy.
+LOS201-130	SIGKILL buộc kết thúc tiến trình và không cho tiến trình cài handler hay bỏ qua.	cannot catch/ignore → SIGKILL.
+LOS201-131	Kernel networking xử lý giao thức và chuyển tiếp/định tuyến packet thay cho ứng dụng.	packet routing → networking.
+LOS201-132	kill gửi một signal đến process hoặc nhóm process, không chỉ dùng để giết.	Đề hỏi gửi signal tới process → kill(); tên kill không có nghĩa lúc nào cũng kết thúc tiến trình.
+LOS201-133	Giới hạn thông dụng của một thành phần tên file là 255 byte; không phải 255 ký tự Unicode hay giới hạn toàn pathname.	filename component → 255 bytes.
+LOS201-134	Chữ z phân biệt image kernel được nén với vmlinux ELF chưa nén.	vmlinuz → compressed kernel.
+LOS201-135	Dấu / là gốc của cây thư mục duy nhất trong UNIX/Linux.	root directory → /.
+LOS201-136	Trong terminal cấu hình thông thường, Ctrl-C gửi SIGINT đến nhóm tiến trình foreground.	Ctrl-C → SIGINT.
+LOS201-137	Korn shell do David Korn phát triển, mở rộng từ Bourne shell.	Korn → ksh.
+LOS201-138	POSIX.1b bổ sung các giao diện real-time như scheduling và I/O bất đồng bộ.	POSIX real-time/async I/O → 1003.1b; threads mới là 1003.1c.
+LOS201-139	Protocol stack là tập các lớp giao thức kernel dùng để xử lý truyền thông mạng.	kernel networking software → protocol stack.
+LOS201-140	bash viết tắt Bourne Again SHell, tương thích và mở rộng Bourne shell.	Bourne again → bash.
+LOS201-141	4.4BSD-Lite loại các phần mã bị ràng buộc AT&T theo kết quả giải quyết tranh chấp.	BSD-Lite → AT&T code removed.
+LOS201-142	Ken Thompson khởi đầu UNIX tại Bell Labs, với Dennis Ritchie đóng vai trò quan trọng về sau.	initial UNIX → Ken Thompson.
+LOS201-143	MINIX là hệ phục vụ giảng dạy mà Linus sử dụng và lấy cảm hứng khi bắt đầu Linux.	Linux inspiration → MINIX.
+LOS201-144	Symlink lưu một pathname đích, khác hard link cùng trỏ tới một inode.	stores another pathname → symbolic link.
+LOS201-145	execve thay ảnh chương trình, nên mã lệnh cũ trong text segment được thay bằng chương trình mới.	exec → replace program image.
+LOS201-146	/etc/group liệt kê tên nhóm, GID và các thông tin thành viên nhóm.	group names/GIDs → /etc/group.
+LOS201-147	_exit kết thúc tiến trình gọi mà không chạy atexit hoặc flush các stream stdio. kill gửi signal, không phải giao diện kết thúc trực tiếp như vậy.	terminate caller without atexit → _exit().
+LOS201-148	Ánh xạ anonymous không lấy nội dung từ file và các trang mới được cung cấp ở trạng thái zero.	anonymous mapping → zero-filled pages.
+LOS201-149	execve nạp chương trình mới vào process hiện tại, giữ PID thay vì tạo process mới.	replace, not duplicate → execve().
+LOS201-150	Quyền execute trên thư mục là quyền search/traverse để tra cứu tên bên trong; vẫn cần quyền phù hợp trên file.	Quyền x trên directory → tra cứu/traverse để truy cập theo tên; liệt kê tên là quyền r.
+LOS201-151	FIFO là pipe có tên trong filesystem, cho các process không cùng quan hệ cha–con mở cùng một kênh byte-stream.	named byte stream + unrelated processes → FIFO.
+LOS201-152	Nhiều loại file và thiết bị dùng giao diện descriptor chung như open/read/write/close; không có nghĩa mọi thao tác đều được hỗ trợ trên mọi loại file.	Universality of I/O → nhiều loại file dùng chung open/read/write/close qua descriptor; không phải mọi thao tác đều hợp lệ.
+LOS201-153	UID số 0 là định danh truyền thống của superuser/root.	root UID → 0.
+LOS201-154	Library gom các object/module để chương trình liên kết hoặc nạp dùng lại mã.	collection of object modules → library.
+LOS201-155	ipcs hiển thị các đối tượng IPC System V như shared memory, semaphore và message queue.	show SysV IPC → ipcs.
+LOS201-156	Linus Torvalds bắt đầu Linux khi học tại Đại học Helsinki.	Linus university → Helsinki.
+LOS201-157	GPL phiên bản đầu tiên được phát hành năm 1989 theo mốc lịch sử trong môn.	GPL v1 → 1989.
+LOS201-158	Dynamic linker nạp các shared library cần thiết và giải quyết liên kết khi chương trình chạy.	runtime shared libraries → dynamic linker.
+LOS201-159	Tên GNU/Linux nhấn mạnh hệ thống gồm kernel Linux cùng nhiều thành phần của dự án GNU.	Stallman naming → GNU/Linux.
+LOS201-160	Thay đổi trên shared mapping có thể nhìn thấy từ các process cùng ánh xạ vùng đó.	IPC qua mapping → chọn shared/MAP_SHARED; private tạo thay đổi riêng, không chia sẻ cập nhật theo cách đó.
+LOS201-161	Shared memory cho các process truy cập cùng vùng lưu trữ để trao đổi dữ liệu.	same memory region → shared memory.
+LOS201-162	Kernel điều phối quyền và thao tác truy cập các thiết bị phần cứng qua driver.	hardware arbitration → device access.
+LOS201-163	Seventh Edition UNIX dùng Bourne shell, thường gọi bằng tên sh.	UNIX V7 shell → sh.
+LOS201-164	FIFO là pipe có tên tồn tại trong filesystem, mở bằng pathname.	named pipe → FIFO.
+LOS201-165	XCU là phần Shell and Utilities trong SUS; chữ “XCIJ” ở lựa chọn nguồn là lỗi nhận dạng.	shell + commands → XCU.
+LOS201-166	Swap là vùng lưu trữ được dùng để đưa các trang bộ nhớ ra khỏi RAM khi cần.	disk supplements RAM → swap.
+LOS201-167	IP dùng đơn vị packet/datagram ở tầng network. Frame thuộc tầng liên kết; TCP segment thuộc tầng transport, nên phải chỉ rõ tầng đang hỏi.	network/IP → packet; link → frame; TCP → segment.
+LOS201-168	Quyền read cho phép đọc danh sách tên trong thư mục; execute mới cho tra cứu/truy cập qua tên.	directory r → list names; x → traverse.
+LOS201-169	Signal báo cho process một sự kiện xảy ra, với handler hoặc hành động mặc định.	event notification → signal.
+LOS201-170	Socket API có nguồn gốc BSD, khác nhóm IPC System V.	BSD IPC → sockets.
+LOS201-171	Kernel chia sẻ CPU, bộ nhớ và thiết bị thành các môi trường riêng cho ứng dụng/người dùng.	virtual private computer abstraction → kernel.
+LOS201-172	Bản cuối của CSRG là 4.4BSD-Lite Release 2 vào tháng 6/1995. 4.4BSD-Lite năm 1994 là bản trước đó.	final CSRG distribution → 4.4BSD-Lite Release 2 (1995).
+LOS201-173	Dennis Ritchie phát triển C; UNIX sau đó được viết lại phần lớn bằng ngôn ngữ này.	C designer → Dennis Ritchie.
+LOS201-174	ld.so là dynamic linker/loader tìm và nạp các thư viện chia sẻ lúc chạy.	“Shared libraries at run time” → ld.so; ld là linker lúc build, gcc là compiler.
+LOS201-175	Text chứa mã lệnh, thường chỉ đọc và có thể chia sẻ giữa các process chạy cùng binary.	read-only executable pages → Text.
+LOS201-176	mmap tạo ánh xạ file hoặc bộ nhớ vào không gian địa chỉ ảo của process.	map file → mmap().
+LOS201-177	Effective UID tham gia kiểm tra quyền System V IPC. Với file trên Linux, kernel dùng filesystem UID (FSUID), thường bằng EUID nhưng có thể khác.	Quyền System V IPC → effective UID; loại real UID, saved UID và login UID trong các lựa chọn.
+LOS201-178	UNIX/32V là bản port UNIX Version 7 cho kiến trúc VAX, với máy VAX-11/780.	32V → VAX-11/780.
+LOS201-179	Path bắt đầu từ / xác định vị trí từ gốc, không phụ thuộc thư mục hiện tại.	starts / → absolute pathname.
+LOS201-180	Free Software Foundation được Richard Stallman thành lập năm 1985.	FSF founding → 1985.
+LOS201-181	Text segment chứa mã máy có thể thực thi của chương trình.	machine instructions → Text.
+LOS201-182	Trong mô hình quyền truyền thống của môn, effective UID 0 có đặc quyền superuser.	euid=0 → privileged/root process.
+LOS201-183	Network socket hỗ trợ trao đổi giữa process trên các host khác nhau.	different hosts IPC → socket.
+LOS201-184	Lệnh syscall/trap chuyển vào entry point kernel do hệ thống thiết lập. Chương trình user không được tùy ý đổi CPU sang đặc quyền kernel.	user → kernel service entry → controlled syscall/trap.
+LOS201-185	Memory management phân phối và bảo vệ RAM cho các process và kernel.	share/manage RAM → memory management.
+LOS201-186	Program là mã thụ động; một lần thực thi của nó cùng trạng thái được gọi là process.	running program instance → process.
+LOS201-187	Semaphore là bộ đếm đồng bộ để điều phối quyền truy cập tài nguyên giữa các luồng/process.	IPC + đồng bộ quyền dùng tài nguyên/bộ đếm → semaphore; socket là kênh truyền, descriptor chỉ là số định danh.
+LOS201-188	POSIX được phát triển dưới hệ thống tiêu chuẩn IEEE, sau đó phối hợp với các tổ chức khác.	POSIX organization → IEEE.
+LOS201-189	Mốc ra đời UNIX đầu tiên tại Bell Labs trong nội dung lịch sử là năm 1969.	UNIX first implementation → 1969.
+LOS201-190	Sixth Edition là bản UNIX phổ biến rộng bên ngoài Bell Labs/AT&T trong lịch sử được học.	first widely external → Sixth Edition.
+LOS201-191	fork tạo không gian nhớ logic riêng cho con với cùng nội dung ban đầu; Linux thường dùng copy-on-write để tránh copy ngay.	fork → logical duplicate, COW in practice.
+LOS201-192	GNU Hurd xây các dịch vụ hệ điều hành trên microkernel Mach.	GNU + Mach → Hurd.
+LOS201-193	NetBSD nhấn mạnh khả năng chạy trên nhiều kiến trúc phần cứng.	BSD nhấn mạnh portability/nhiều phần cứng → NetBSD; security mới là OpenBSD.
+LOS201-194	GCC là GNU Compiler Collection, cung cấp compiler cho C và nhiều ngôn ngữ khác.	GNU compilers → GCC.
+LOS201-195	GNU Emacs là editor mở rộng mạnh bằng Lisp, gắn với Richard Stallman.	Stallman extensible editor → Emacs.
+LOS201-196	Dấu .. biểu thị thư mục cha của thư mục hiện tại trong pathname.	Thư mục cha → hai chấm “..”; một chấm “.” là chính thư mục đang xét.
+LOS201-197	Theo mốc phân phối trong giáo trình, Slackware là một trong những distro Linux lâu đời vẫn tồn tại.	old surviving distro → Slackware.
+LOS201-198	clone tạo task mới và cho chọn các tài nguyên chia sẻ, là cơ sở cho thread/process trên Linux.	Đề nhấn mạnh Linux-specific để tạo process/thread → clone(); execve thay chương trình, wait chờ tiến trình.
+LOS201-199	System V Release 4 năm 1989 hợp nhất nhiều đặc trưng từ các dòng UNIX lớn.	1989 System V → SVR4.
+LOS201-200	Các process đọc/ghi cùng trang nhớ nên tránh phải copy dữ liệu qua kernel cho mỗi lần trao đổi.	high-speed no-copy IPC → shared memory.
+LOS201-201	UNIX được chuyển sang máy PDP-11 năm 1970; “PDP-II” ở lựa chọn là cách chữ dễ nhầm với số 11.	1970 UNIX machine → PDP-11.
+LOS201-202	Pipe tạo luồng byte một chiều, thường dùng giữa các process có quan hệ sau fork.	related processes + unidirectional → pipe.
+LOS201-203	Một dấu chấm biểu thị chính thư mục đang xét.	Chính thư mục đang xét → một chấm “.”; “..” đi lên thư mục cha.
+LOS201-204	/etc/passwd lưu tên user, UID và thông tin tài khoản; mật khẩu băm thường ở /etc/shadow.	username↔UID → /etc/passwd.
+LOS201-205	Shell đọc và diễn giải lệnh, thực hiện builtin hoặc khởi chạy chương trình.	shell → command interpreter.
+LOS201-206	Theo lịch sử chuẩn hóa trong môn, /usr/group là đề xuất tiêu chuẩn không chính thức năm 1984.	1984 vendor standard → /usr/group.
+LOS201-207	Không gian địa chỉ tách biệt ngăn process tự ý đọc/ghi vùng nhớ process khác và kernel.	VM isolation → process/kernel protection.
+LOS201-208	GPL version 3 được phát hành năm 2007.	GPL 2007 → v3.
+LOS201-209	Austin Group là hợp tác giữa IEEE, The Open Group và ISO/IEC để thống nhất đặc tả POSIX/SUS.	third Austin partner → ISO/IEC.
+LOS201-210	OpenBSD nhấn mạnh bảo mật, kiểm tra mã và cấu hình mặc định an toàn.	BSD nhấn mạnh security → OpenBSD; portability trên nhiều kiến trúc mới là NetBSD.
+LOS201-211	Các bản mainline 2.6.x giai đoạn này cách nhau khoảng 2–3 tháng. Đây không phải chu kỳ bản vá stable 2.6.x.y, và không nên gọi 2.6 là kernel hiện đại ngày nay.	historical 2.6 mainline feature release → about 3 months.
+LOS201-212	Dòng 2.6 chuyển sang cách phát triển liên tục thay vì tách dòng số chẵn ổn định và số lẻ phát triển như trước.	Bỏ mô hình một nhánh số chẵn ổn định/một nhánh số lẻ phát triển → mốc dòng Linux 2.6.
+LOS201-213	FSF được lập để hỗ trợ mục tiêu phần mềm tự do và dự án GNU.	FSF purpose → GNU project.

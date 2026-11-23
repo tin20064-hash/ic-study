@@ -1,0 +1,52 @@
+html.admin-page[data-palette]{
+ color:var(--ink);
+ background:var(--bg);
+ --l:var(--line);
+ --m:var(--muted);
+ --a:color-mix(in srgb,var(--accent) 76%,var(--ink));
+ --admin-surface:var(--surface,color-mix(in srgb,var(--accent) 3%,#fff));
+ --admin-button:color-mix(in srgb,var(--accent) 77%,#151019);
+ --admin-button-text:var(--on-accent,#fff);
+ --admin-danger:#9b364c;
+ color-scheme:light;
+}
+html.admin-page:is([data-palette="crimson-ops"],[data-palette="neon-circuit"],[data-palette="ironworks"]){
+ color-scheme:dark;
+ --admin-button:var(--accent);
+ --admin-danger:#ff9fb2;
+}
+.admin-page body{
+ min-height:100vh;
+ background:radial-gradient(ellipse at 90% 3%,var(--accent-light),transparent 55%),var(--bg);
+ background-attachment:fixed;
+}
+.admin-page :is(.account-header,.admin-card,.admin-stat,dialog,input,button,.button){
+ background:var(--admin-surface);
+ border-color:var(--line);
+}
+.admin-page :is(.account-header,dialog,input){color:var(--ink)}
+.admin-page label{color:var(--m)}
+.admin-page :is(button,.button):hover{border-color:var(--a)}
+.admin-page :is(input,button,.button):focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.admin-page .primary{
+ background:var(--admin-button);
+ border-color:var(--admin-button);
+ color:var(--admin-button-text);
+}
+.admin-page :is(.badge,.bar,.credential-box){background:var(--soft)}
+.admin-page .bar i{background:var(--accent)}
+.admin-page .credential-box code{color:var(--ink)}
+.admin-page :is(.badge.disabled,.delete-warning,.user-actions .danger,.user-actions .danger:hover){
+ color:var(--admin-danger);
+ background:color-mix(in srgb,var(--admin-surface) 91%,var(--admin-danger));
+ border-color:color-mix(in srgb,var(--line) 66%,var(--admin-danger));
+}
+.admin-page .error{color:var(--admin-danger)}
+.admin-page .dialog-actions .danger{background:#9b364c;border-color:#9b364c;color:white}
+@supports (backdrop-filter:blur(1px)){
+ .admin-page[data-glass="on"] :is(.admin-stat,.admin-card){
+  background:color-mix(in srgb,var(--admin-surface) 66%,transparent);
+  box-shadow:inset 0 1px 0 #fff3,0 8px 24px #1f152420;
+  backdrop-filter:blur(9px) saturate(1.24);
+ }
+}

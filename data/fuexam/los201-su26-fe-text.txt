@@ -1,0 +1,199 @@
+01 An embedded target lacks Python support, but memory accounting data must be analyzed using smem. Which tool can capture the required information for later host-side analysis?
+A. smemcap | B. gdbserver | C. obJdump | D. cpio
+KEY [0] MATCH LOS201-13 0.9971 REUSE LOS201-13
+
+02 Which TWO conditions are commonly associated with an out-of-memory (00M) event?
+A. Allocated memory demand exceeds available resources | B. The 00M killer may terminate processes | C. All allocations are automatically compressed | D. The kernel disables virtual memory
+KEY [0, 1] MATCH LOS201-14 0.9673 REUSE LOS201-14
+
+03 Which benefit is most commonly achieved when a device driver maps hardware registers into user space using mmap()Q
+A. Reduced overhead by allowing direct access to device memory mappings | B. Automatic synchronization beWeen all processes accessing the device | C. Elimination of the need for device drivers in the kernel | D. Transparent network communication with remote devices
+KEY [0] MATCH LOS201-15 0.9911 REUSE LOS201-15
+
+04 Why are Open Source Build Systems considered essential for complex embedded Linux products containing hundreds of packages?
+A. They provide scalable automation for building, integrating, and maintaining complete software distributions | B. They replace the Linux kernel source tree | C. They remove the need for root filesystems | D. They eliminate softnare updates
+KEY [0] MATCH LOS201-16 0.9959 REUSE LOS201-16
+
+05 A development team manually builds the toolchain, kernel, bootloader, libraries, and root filesystem for each release. Which primary problem is an Open Source Build System intended to solve?
+A. Automating dependency tracking and reproducible system generation | B. Eliminating the need for a Linux kernel | C. Replacing all debugging tools | D. Avoiding cross-compilation
+KEY [0] MATCH LOS201-17 1.0 REUSE LOS201-17
+
+06 Which TWO challenges are reduced by adopting an integrated build system instead of manually assembling embedded Linux components?
+A. Dependency resolution | B. Software version management | C. Physical hardware failures | D. Neurork cable faults
+KEY [0, 1] MATCH LOS201-18 0.9961 REUSE LOS201-18
+
+07 Which statement best describes a real-time system?
+A. A system that always executes as fast as possible | B. A system that must respond within specified timing constraints | C. A system with the highest processor frequency | D. A system that never uses interrupts
+KEY [1] MATCH LOS201-19 0.9899 REUSE LOS201-19
+
+08 A developer is evaluating a Linux system for industrial control- Which metric is more important than average response time?
+A. Worst-case response latency | B. Kernel image size | C. Number of installed packages | D. Filesystem compression ratio
+KEY [0] MATCH LOS201-20 0.9959 REUSE LOS201-20
+
+09 Which flash type is commonly used for large-capacity storage?
+A. SRAM | B. Cache | C. NOR Flash | D. NAND Flash
+KEY [3] MATCH LOS201-21 1.0 REUSE LOS201-21
+
+10 What is the purpose of a cross-development environment?
+A. Manage flash memory | B. Replace debugging tools | C. Increase CPU speed | D. Develop softwrare on one platform for another target platform
+KEY [3] MATCH LOS201-22 0.9908 REUSE LOS201-22
+
+11 An engineering team successfully builds a Linux kernel but the target system still cannot boot into a usable environment. According to the embedded Linux architecture presented in the chapter, which TWO additional components are fundamentally required?
+A. A bootloader | B. A root file system | C. A desktop GUI environment | D. A Java Virtual Machine
+KEY [0, 1] MATCH LOS201-23 0.998 REUSE LOS201-23
+
+12 Which shell is commonly provided by BusyBox?
+A. fish | B. bash only | C. zsh | D. ash
+KEY [3] MATCH LOS201-24 0.9885 REUSE LOS201-24
+
+13 A developer creates symbolic links such as 'Is', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?
+A. By inspecting the name used to invoke the executable | B. By parsing kernel boot parameters | C. By reading the current process ID | D. By loading separate shared libraries for each command
+KEY [0] MATCH LOS201-25 0.9935 REUSE LOS201-25
+
+14 Which TWO statements best describe the purpose of the Virtual File System (VFS) layer in relation to device drivers?
+A. It provides a uniform interface to user-space system calls | B. It directly replaces all device-specific driver code | C. It dispatches operations through file_operations structures | D. It eliminates the need for major/minor device numbers
+KEY [0, 2] MATCH LOS201-26 1.0 REUSE LOS201-26
+
+15 A kernel module declares a parameter using module_param(debug_enable, int, 0). Which TWO statements are correct?
+A. The parameter value can be supplied when loading the module | B. The parameter automatically becomes a kernel command-line option | C. The parameter can influence driver behavior without recompilation | D. The parameter is accessible only from user-space applications
+KEY [0, 2] MATCH LOS201-27 0.9953 REUSE LOS201-27
+
+16 A developer loads a driver using modprobe instead of insmod. What is the primary advantage of modprobe?
+A. It automatically resolves and loads dependent modules | B. It bypasses module licensing checks | C. It compiles the driver before loading | D. It automatically creates device nodes
+KEY [0] MATCH LOS201-28 1.0 REUSE LOS201-28
+
+17 What is the primary responsibility of head.o?
+A. Setup CPU environment | B. Mount rootfs | C. Load modules | D. Create processes
+KEY [0] MATCH LOS201-29 0.9888 REUSE LOS201-29
+
+18 Why does the Linux kernel use linker-generated tables for processing command-line parameters and initialization routines?
+A. To eliminate the need for configuration files | B. To allow automatic discovery and invocation of registered handlers without hard-coded lists | C. To reduce the kernel image size by removing symbol tables | D. To support only loadable kernel modules
+KEY [1] MATCH LOS201-30 0.9959 REUSE LOS201-30
+
+19 A developer uses a remote debugging session and notices that breakpoints are working correctly even though execution occurs on the target board- What mechanism enables this capability?
+A. The debugger communicates with a remote debugging stub such as gdbserver | B. The compiler executes directly on the target kernel | C. The bootloader intercepts all function calls | D. The root filesystem mirrors source code automatically
+KEY [0] MATCH LOS201-31 0.9973 REUSE LOS201-31
+
+20 An embedded Linux application performs correctly but consumes excessive CPU time. Which development methodology is most appropriate before modifying the source code?
+A. Profile the application to identify performance bottlenecks | B. Rebuild the bootloader | C. Replace the root filesystem | D. Disable debugging symbols
+KEY [0] MATCH LOS201-32 1.0 REUSE LOS201-32
+
+21 An embedded developer must choose between a RAM-based filesystem and a flash-based filesystem for persistent configuration storage. Which factor is the most critical consideration?
+A. Whether data must survive power cycles | B. The CPU clock frequency | C. The kernel image compression format | D. The number of serial ports
+KEY [0] MATCH LOS201-33 0.9972 REUSE LOS201-33
+
+22 A root filesystem image is compressed before deployment to an embedded target with limited flash capacity. What is the primary trade-off introduced by this design?
+A. Reduced storage usage at the cost of decompression overhead | B. Higher RAM usage with no storage savings | C. Increased filesystem corruption risk by definition | D. Elimination of mount operations
+KEY [0] MATCH LOS201-34 1.0 REUSE LOS201-34
+
+23 In an image recipe, what is the purpose of the 'require' statement?
+A. Load a base recipe and extend it | B. Download packages from the internet | C. Compile the Linux kernel | D. Generate an SDK
+KEY [0] MATCH LOS201-35 0.9921 REUSE LOS201-35
+
+24 Which file stores the list of layers that BitBake searches for metadata?
+A. local-conf | B. machine-conf | C. bblayers.conf | D. sdk.conf
+KEY [2] MATCH LOS201-36 1.0 REUSE LOS201-36
+
+25 Which variable is commonly extended to install additional packages into an image during development?
+A. KERNEL FEATURES | B. IMAGE INSTALL | C. PACKAGE CLASSES | D. BBPATH
+KEY [1] MATCH LOS201-37 1.0 REUSE LOS201-37
+
+26 Why is the /dev/console device node considered critical in a minimal root filesystem?
+A. It provides network access during boot | B. It allows the kernel to load shared libraries | C. It enables standard input/output access for system interaction | D. It stores kernel boot parameters
+KEY [2] MATCH LOS201-38 0.994 REUSE LOS201-38
+
+27 A student creates `/etc/inittab` with `::sysinit:/etc/init.d/rcS` and `::askfirst:-/bin/sh`. What practical behavior should this produce after BusyBox init starts?
+A. It runs the system initialization script and then offers an interactive shell. | B. It rebuilds the kernel modules and recompiles the DTB. | C. It disables the PL011 serial console and redirects output to the host GUI. | D. It changes the U-Boot memory map to start at `0x00000000`.
+KEY [0] MATCH LOS201-39 0.8314 REUSE 
+
+28 What is the purpose of system initialization after kernel boot?
+A. Increase clock speed | B. Load BIOS | C. Prepare a usable user-space environment | D. Format storage
+KEY [2] MATCH LOS201-40 0.992 REUSE LOS201-40
+
+29 What is the primary difference beWeen processes and threads?
+A. Threads run only in kernel mode | B. There is no difference | C. Threads share process resources while processes have separate address spaces | D. Processes cannot execute code
+KEY [2] MATCH LOS201-41 0.9916 REUSE LOS201-41
+
+30 In the producer-consumer condition-variable example, why is the shared condition protected by a mutex?
+A. Because the condition is shared state and must be tested and updated safely. | B. Because pthread cond_wait() requires nebuork connectivity. | C. Because mutexes convert a process into a daemon. | D. Because condition variables cannot be used with pthreads
+KEY [0] MATCH LOS201-42 0.995 REUSE LOS201-42
+
+31 Which statement best describes a daemon in an embedded Linux system?
+A. A foreground process that must always read from the user's terminal. | B. A background service process that usually runs independently of an interactive login session. | C. A Linux kernel module loaded by insmod. | D. A thread synchronization object used by pthreads
+KEY [1] MATCH LOS201-43 0.9926 REUSE LOS201-43
+
+32 Why are interrupts preferred over polling?
+A. Replace DMA | B. Improve file compression | C. Reduce CPU overhead | D. Increase RAM usage
+KEY [2] MATCH LOS201-44 0.988 REUSE LOS201-44
+
+33 Why is virtual memory important in Linux systems?
+A. Increases flash capacity | B. Eliminates scheduling | C. Provides isolation and memory protection | D. Removes interrupts
+KEY [2] MATCH LOS201-45 0.9897 REUSE LOS201-45
+
+34 A developer wants to reduce boot time by bypassing the full U-Boot command interpreter and loading Linux directly from a known storage location. Which approach best matches this requirement?
+A. Booting through TFTP every time | B. Using Falcon Mode | C. Loading Linux through JTAG | D. Using an initramfs-only system
+KEY [1] MATCH LOS201-46 0.9973 REUSE LOS201-46
+
+35 Which bootloader is most commonly used in embedded Linux systems?
+A. GRUB | B. U Boot | C. LILO | D. BIOS
+KEY [1] MATCH LOS201-47 0.9922 REUSE LOS201-47
+
+36 Why does the lab emphasize that vexpress-a9 RAM starts at `0x60000000` rather than `0x00000000`?
+A. Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot. | B. Because all ARM systems reserve `0x00000000` exclusively for the Linux root filesystem. | C. Because QEMU requires the initramfs to be larger than 512 MB. | D. Because `bootm` only works when RAM begins at `0x00000000`.
+KEY [0] MATCH LOS201-48 0.8625 REUSE 
+
+37 Which TWO characteristics distinguish kernel debugging from user-space debugging?
+A. Errors can affect the entire system rather than a single process | B. Debugging tools may be limited during early boot stages | C. Kernel code executes with fewer privileges than applicationS | D. Kernel faults are automatically isolated from the operating system
+KEY [0, 1] MATCH LOS201-49 0.9938 REUSE LOS201-49
+
+38 What is KGDB?
+A. A kernel debugger that allows remote debugging of the Linux kernel | B. A tool for tracing user-space system calls | C. A performance profiling framework for Linux | D. A utility for analyzing ELF executables
+KEY [0] MATCH LOS201-50 0.96 REUSE LOS201-50
+
+39 What is the primary purpose of the dmesg command?
+A. Display messages stored in the kernel ring buffer | B. Trace system calls made by a process | C. Show shared library dependencies of an executable | D. Monitor process memory consumption
+KEY [0] MATCH LOS201-51 0.9897 REUSE LOS201-51
+
+40 A developer successfully loads the kernel over the network but receives an error when mounting the root filesystem. Which service should be investigated first if the kemel command line specifies root=/dev/nfs?
+A. NFS server | B. Syslog daemon | C. SSH server | D. DNS server
+KEY [0] MATCH LOS201-52 0.9903 REUSE LOS201-52
+
+41 What is TFTP commonly used for?
+A. Manage source code | B. Debug applications | C. Transfer boot images and kernels | D. Create filesystems
+KEY [2] MATCH LOS201-53 0.9836 REUSE LOS201-53
+
+42 An engineer wants to debug startup failures before network services become available on the target Which interface is generally the most reliable for capturing early boot messages?
+A. Serial console | B. Web browser | C. SSH session | D. NFS export log
+KEY [0] MATCH LOS201-54 0.9972 REUSE LOS201-54
+
+43 A developer attempts to overwrite data on a flash page without erasing the corresponding erase block first. What outcome should be expected on most flash technologies?
+A. The operation may fail or produce undefined results because erase-before-write rules are violated | B. The data will always be updated atomically | C. The filesystem automatically disables flash protection | D. The kernel transparently converts the device into RAM
+KEY [0] MATCH LOS201-55 1.0 REUSE LOS201-55
+
+44 What does UBIFS run on top of?
+A. ext4 | B. tmpfs | C. UBI | D. procfs
+KEY [2] MATCH LOS201-56 0.716 REUSE 
+
+45 Which TWO statements best describe the purpose of the M TD abstraction layer in Linux?
+A. It provides a uniform API for memory-based storage devices | B. It hides hardware-specific flash operations from higher software layers | C. It replaces the Virtual File System entirely | D. It manages user-space process creation
+KEY [0, 1] MATCH LOS201-57 0.9882 REUSE LOS201-57
+
+46 What is the relationship beWeen the kernel and user space?
+A. They are unrelated | B. The kernel provides services used by user-space applications | C. User space controls the kernel directly | D. The kernel runs inside applications
+KEY [1] MATCH LOS201-58 0.9828 REUSE LOS201-58
+
+47 A developer is integrating a custom peripheral not supported by mainline Linux. What is the most likely requirement?
+A. Create or adapt device support software | B. Replace the bootloader | C. Disable the MMU | D. Recompile GCC only
+KEY [0] MATCH LOS201-59 0.9956 REUSE LOS201-59
+
+48 Which kernel image is the uncompressed ELF binary used for debugging?
+A. initrd | B. zlmage | C. ulmage | D. vmlinux
+KEY [3] MATCH LOS201-60 0.9927 REUSE LOS201-60
+
+49 A board-specific driver has been configured as built-in rather than as a module. Into which component of the kernel image is it most likely linked?
+A. drivers/built-in.o | B. lib/lib.a | C. usr/built-in.o | D. arch/arm/kernel/head.o
+KEY [0] MATCH LOS201-61 0.7373 REUSE 
+
+50 What is the purpose of autoconf.h?
+A. Manage memory | B. Store boot parameters | C. Load modules | D. Expose configuration options to C source code
+KEY [3] MATCH LOS201-62 0.9851 REUSE LOS201-62

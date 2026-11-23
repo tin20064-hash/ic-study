@@ -1,0 +1,3441 @@
+[
+  {
+    "id": "COS201-800",
+    "question": "Why do modern codes outperform simple codes?",
+    "options": [
+      "Use more bandwidth",
+      "Use structured redundancy",
+      "Use less power",
+      "Use fewer bits"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Mã hiện đại tổ chức bit dư theo cấu trúc giúp bộ giải mã sửa lỗi hiệu quả hơn.",
+    "tip": "modern codes → structured redundancy.",
+    "active": true
+  },
+  {
+    "id": "COS201-801",
+    "question": "If a variable-length code is not prefix-free, which conclusion is always valid?",
+    "options": [
+      "Work normally",
+      "Become ambiguous",
+      "Increase speed",
+      "Reduce noise",
+      "Instantaneous decoding is not guaranteed; the code may still be uniquely decodable with lookahead."
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "Prefix-free bảo đảm giải mã tức thời. Chiều ngược lại không đúng: mã {0,01} không prefix-free nhưng vẫn giải mã duy nhất, vì nó là suffix-free.",
+    "tip": "Not prefix-free ≠ chắc chắn ambiguous; có thể cần nhìn trước.",
+    "active": true
+  },
+  {
+    "id": "COS201-802",
+    "question": "For coherent BPSK over AWGN, why does the BER decrease approximately exponentially at high Eb/N0?",
+    "options": [
+      "Linear relation",
+      "Q-function behavior",
+      "Noise decreases linearly",
+      "Signal increases linearly"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Với BPSK đồng bộ trong AWGN, Pb=Q(√(2Eb/N0)); phần đuôi Q giảm gần theo hàm mũ khi Eb/N0 lớn.",
+    "tip": "BPSK + AWGN + high SNR → Q-tail, không áp dụng cho mọi kênh.",
+    "active": true
+  },
+  {
+    "id": "COS201-803",
+    "question": "In angle-modulated signals, information is contained in:",
+    "options": [
+      "Amplitude variations",
+      "Frequency or phase variations",
+      "Power variations",
+      "DC components"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FM và PM mã hóa thông tin vào góc sóng mang thay vì biên độ.",
+    "tip": "angle modulation → frequency / phase.",
+    "active": true
+  },
+  {
+    "id": "COS201-804",
+    "question": "What is the main advantage of digital communication over analog?",
+    "options": [
+      "Higher bandwidth",
+      "Regenerative decisions limit accumulated analog noise, although decision errors remain possible",
+      "Lower cost always",
+      "Simpler circuits"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tái tạo các mức số hạn chế cộng dồn nhiễu tương tự; nhiễu đủ lớn vẫn gây quyết định sai.",
+    "tip": "digital regeneration → hạn chế noise accumulation, không miễn nhiễm mọi nhiễu.",
+    "active": true
+  },
+  {
+    "id": "COS201-805",
+    "question": "If a signal is sampled at exactly the Nyquist rate, what is the practical limitation?",
+    "options": [
+      "Perfect reconstruction is impossible",
+      "Spectral replicas overlap",
+      "No guard band for filter roll-off",
+      "Signal amplitude is reduced"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Lấy mẫu đúng 2W không chừa dải chuyển tiếp cho bộ lọc thực tế.",
+    "tip": "exact Nyquist → no guard band.",
+    "active": true
+  },
+  {
+    "id": "COS201-806",
+    "question": "A PLL is considered locked when:",
+    "options": [
+      "Frequency differs",
+      "Phase error grows continuously because the frequencies remain different",
+      "Phase error is zero or constant",
+      "Signal amplitude is zero"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "PLL khóa khi hai tần số bám nhau và sai lệch pha hằng; hằng đó có thể bằng zero.",
+    "tip": "locked → constant phase error, không bắt buộc zero.",
+    "active": true
+  },
+  {
+    "id": "COS201-807",
+    "question": "Why is matched filter equivalent to a correlator?",
+    "options": [
+      "It integrates noise",
+      "It compares signal with template",
+      "It amplifies signal",
+      "It removes ISI"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Matched filter lấy tích vô hướng với mẫu tín hiệu tại thời điểm quyết định, tương đương tương quan.",
+    "tip": "matched filter → template comparison.",
+    "active": true
+  },
+  {
+    "id": "COS201-808",
+    "question": "A mixer produces which frequency components?",
+    "options": [
+      "Only original frequency",
+      "Sum and difference frequencies",
+      "Only harmonic frequencies",
+      "DC component"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhân hai sóng cos tạo hai thành phần tại tổng và hiệu tần số.",
+    "tip": "mixer → f1+f2 và |f1−f2|.",
+    "active": true
+  },
+  {
+    "id": "COS201-809",
+    "question": "Why is the receiver generally more complex than the transmitter?",
+    "options": [
+      "It consumes more energy",
+      "It includes more hardware components",
+      "It must process weak signals and compensate for channel impairments",
+      "It operates at higher frequencies",
+      "It does not use modulation"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Máy thu phải đồng bộ, xử lý tín hiệu yếu và bù ảnh hưởng của kênh.",
+    "tip": "receiver → weak signal + synchronization + equalization.",
+    "active": true
+  },
+  {
+    "id": "COS201-810",
+    "question": "PCM bandwidth requirement increases with:",
+    "options": [
+      "Sampling rate",
+      "Bit depth",
+      "Number of channels",
+      "All of the above"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bit rate PCM tăng theo số mẫu mỗi giây và số bit mỗi mẫu, nên băng thông yêu cầu tăng theo.",
+    "tip": "PCM → Rb=fs·bits/sample.",
+    "active": true
+  },
+  {
+    "id": "COS201-811",
+    "question": "The Nyquist rate is defined as:",
+    "options": [
+      "fs = W",
+      "fs = 2W",
+      "fs = 4W",
+      "fs = W/2"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tín hiệu baseband băng W có tốc độ Nyquist bằng hai lần W.",
+    "tip": "Nyquist rate → 2W.",
+    "active": true
+  },
+  {
+    "id": "COS201-812",
+    "question": "Delta Modulation transmits:",
+    "options": [
+      "Full amplitude",
+      "One bit indicating the sign of the difference between the input sample and its predicted value",
+      "Frequency only",
+      "Phase only"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DM cơ bản gửi một bit chỉ chiều tăng/giảm so với mức dự đoán, không gửi toàn bộ hiệu số.",
+    "tip": "DM → 1-bit sign of prediction error.",
+    "active": true
+  },
+  {
+    "id": "COS201-813",
+    "question": "Which of the following is NOT a benefit of using a carrier?",
+    "options": [
+      "Efficient radiation",
+      "Frequency separation of signals",
+      "Reduced bandwidth",
+      "Long-distance transmission"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Sóng mang giúp truyền và ghép kênh thuận tiện nhưng không tự làm giảm băng thông.",
+    "tip": "carrier benefit? không mặc định reduced bandwidth.",
+    "active": true
+  },
+  {
+    "id": "COS201-814",
+    "question": "Why is FSK robust to nonlinear amplifiers?",
+    "options": [
+      "Uses phase",
+      "Uses frequency",
+      "Constant amplitude",
+      "Uses I/Q"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "FSK có đường bao không đổi nên chịu được khuếch đại phi tuyến mà ít méo thông tin tần số.",
+    "tip": "FSK → constant envelope.",
+    "active": false
+  },
+  {
+    "id": "COS201-815",
+    "question": "Which requirement of conventional static Huffman coding can be inconvenient when source statistics are unavailable or change rapidly?",
+    "options": [
+      "High noise",
+      "Requires full source statistics",
+      "Low efficiency",
+      "High bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Huffman tĩnh cần ước lượng xác suất ký hiệu để xây cây mã. Điều này không có nghĩa mọi hệ thống thời gian thực đều không dùng được Huffman; bảng mã có thể biết trước hoặc thích nghi.",
+    "tip": "Static Huffman → cần thống kê để xây codebook; không cấm dùng real-time.",
+    "active": true
+  },
+  {
+    "id": "COS201-816",
+    "question": "For an ideal FM discriminator operating above threshold with white input noise, the post-detection noise power integrated over a message bandwidth W grows proportional to:",
+    "options": [
+      "W",
+      "W²",
+      "W³",
+      "1/W"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "PSD nhiễu sau discriminator tỷ lệ f²; tích phân từ 0 đến W cho hệ số W³.",
+    "tip": "Above threshold: ∫₀ᵂ f²df → W³.",
+    "active": true
+  },
+  {
+    "id": "COS201-817",
+    "question": "Why is OFDM effective in multipath channels?",
+    "options": [
+      "Uses amplitude",
+      "Uses phase",
+      "Splits signal into narrow subcarriers",
+      "Uses noise"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Mỗi subcarrier hẹp có symbol dài nên kênh gần phẳng trên từng nhánh và dễ cân bằng.",
+    "tip": "OFDM multipath → narrow subcarriers.",
+    "active": true
+  },
+  {
+    "id": "COS201-818",
+    "question": "What is the primary effect of noise in a communication system?",
+    "options": [
+      "It increases transmission speed",
+      "It reduces power consumption",
+      "It limits system performance",
+      "It improves signal quality",
+      "It increases bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Nhiễu làm quyết định hoặc khôi phục tín hiệu kém chính xác, giới hạn hiệu năng.",
+    "tip": "noise → limits SNR / performance.",
+    "active": true
+  },
+  {
+    "id": "COS201-819",
+    "question": "White noise has which property?",
+    "options": [
+      "Limited bandwidth",
+      "Flat power spectral density",
+      "Zero power",
+      "Time-varying amplitude only"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhiễu trắng có mật độ công suất phổ bằng nhau theo tần số trong mô hình lý tưởng.",
+    "tip": "white → flat PSD.",
+    "active": true
+  },
+  {
+    "id": "COS201-820",
+    "question": "A filter is defined as:",
+    "options": [
+      "A noise generator",
+      "A frequency-selective system",
+      "A signal amplifier",
+      "A digital encoder",
+      "A storage device"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Bộ lọc cho các dải tần khác nhau đi qua với gain khác nhau.",
+    "tip": "filter → frequency-selective.",
+    "active": true
+  },
+  {
+    "id": "COS201-821",
+    "question": "In QAM, signals are separated using:",
+    "options": [
+      "High-pass filters",
+      "Low-pass filters after demodulation",
+      "Amplifiers",
+      "Noise filters"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Sau nhân với sóng mang I/Q, low-pass giữ tín hiệu baseband và bỏ thành phần 2fc.",
+    "tip": "QAM demod → multiply then LPF.",
+    "active": true
+  },
+  {
+    "id": "COS201-822",
+    "question": "Standard AM transmits:",
+    "options": [
+      "Only sidebands",
+      "Only carrier",
+      "Carrier and sidebands",
+      "Noise only"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "AM thông thường giữ nguyên sóng mang và cả hai dải biên.",
+    "tip": "standard AM → carrier + USB + LSB.",
+    "active": true
+  },
+  {
+    "id": "COS201-823",
+    "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+    "options": [
+      "It is random",
+      "It is deterministic",
+      "It is weaker",
+      "It is filtered",
+      "It is structured interference from neighboring symbols caused by channel memory."
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "ISI phụ thuộc các symbol lân cận và đáp ứng kênh có bộ nhớ. Equalizer xử lý phần trộn symbol này; chỉ gọi nó là “deterministic” không giải thích được độ khó.",
+    "tip": "ISI → channel memory + neighboring symbols → equalization.",
+    "active": true
+  },
+  {
+    "id": "COS201-824",
+    "question": "Multiplexing is defined as:",
+    "options": [
+      "Splitting signals",
+      "Amplifying signals",
+      "Combining multiple signals into one channel",
+      "Removing noise"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Multiplexing cho nhiều tín hiệu dùng chung một đường truyền bằng cách phân chia tài nguyên.",
+    "tip": "multiplexing → combine into one channel.",
+    "active": true
+  },
+  {
+    "id": "COS201-825",
+    "question": "The main advantage of SSB is:",
+    "options": [
+      "Simplicity",
+      "Power loss",
+      "Bandwidth efficiency",
+      "Noise increase"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "SSB chỉ giữ một dải biên nên cần băng thông W thay vì 2W.",
+    "tip": "SSB → one sideband → bandwidth efficiency.",
+    "active": true
+  },
+  {
+    "id": "COS201-826",
+    "question": "A Gaussian distribution is fully determined by:",
+    "options": [
+      "One parameter",
+      "Two parameters",
+      "Three parameters",
+      "Four parameters"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Phân bố Gaussian được xác định bởi trung bình μ và phương sai σ².",
+    "tip": "Gaussian → mean + variance.",
+    "active": true
+  },
+  {
+    "id": "COS201-827",
+    "question": "Compared with coherent antipodal BPSK at the same BER in AWGN, why does coherent orthogonal BFSK require about 3 dB more Eb/N0?",
+    "options": [
+      "Noise",
+      "Orthogonal signaling",
+      "Frequency shift",
+      "Bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Ở cùng Eb, d² của BFSK trực giao là 2Eb, còn BPSK đối cực là 4Eb; cần gấp đôi Eb ≈ 3 dB.",
+    "tip": "coherent orthogonal BFSK vs BPSK → 3 dB, cùng BER/AWGN.",
+    "active": true
+  },
+  {
+    "id": "COS201-828",
+    "question": "What is a key advantage of the layered approach in communication system design?",
+    "options": [
+      "It increases signal strength",
+      "It simplifies system design and allows independent development of system components",
+      "It eliminates the need for modulation",
+      "It reduces transmission delay",
+      "It increases bandwidth efficiency"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Chia lớp tách các nhiệm vụ và giao diện, giúp phát triển từng thành phần độc lập.",
+    "tip": "layering → modular design.",
+    "active": true
+  },
+  {
+    "id": "COS201-829",
+    "question": "When an LZ-type compressor is allowed a larger dictionary, which statement is generally valid?",
+    "options": [
+      "Decrease",
+      "Increase",
+      "Stay same",
+      "Become zero",
+      "Compression may improve through longer matches, but index/memory overhead also grows; the compression ratio is not guaranteed to increase."
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "Từ điển lớn có thể tìm được chuỗi khớp dài hơn nhưng cần chỉ mục dài hơn và thêm bộ nhớ. Tỷ lệ nén không tăng đơn điệu với mọi dữ liệu.",
+    "tip": "LZ dictionary lớn → tradeoff, không bảo đảm ratio tăng.",
+    "active": true
+  },
+  {
+    "id": "COS201-830",
+    "question": "An ideal low-pass filter has which characteristic?",
+    "options": [
+      "Smooth transition",
+      "Exponential response",
+      "Rectangular frequency response",
+      "Random response",
+      "Linear response"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Low-pass lý tưởng truyền phẳng trong dải và cắt ngay ngoài dải, tạo hình chữ nhật.",
+    "tip": "ideal LPF → brick-wall response.",
+    "active": true
+  },
+  {
+    "id": "COS201-831",
+    "question": "What does the cumulative distribution function (CDF) represent?",
+    "options": [
+      "Instantaneous value",
+      "Accumulated probability up to a value",
+      "Signal power",
+      "Frequency content"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "CDF tại x là xác suất biến ngẫu nhiên không vượt x: P(X≤x).",
+    "tip": "CDF → accumulated probability.",
+    "active": true
+  },
+  {
+    "id": "COS201-832",
+    "question": "For a known deterministic signal in white additive noise, why does a matched filter maximize the sampled output SNR?",
+    "options": [
+      "It removes noise",
+      "It matches signal spectrum",
+      "It increases bandwidth",
+      "It reduces energy"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Bất đẳng thức Cauchy–Schwarz đạt dấu bằng khi bộ lọc là phiên bản đảo thời gian/liên hợp của tín hiệu cần thu.",
+    "tip": "Matched filter tối ưu SNR trong white noise.",
+    "active": true
+  },
+  {
+    "id": "COS201-833",
+    "question": "If subcarriers in OFDM are not orthogonal, result is:",
+    "options": [
+      "Noise reduction",
+      "Interference",
+      "Bandwidth reduction",
+      "Perfect signal"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Mất trực giao làm năng lượng subcarrier này rò vào quyết định của subcarrier khác.",
+    "tip": "OFDM nonorthogonal → ICI.",
+    "active": true
+  },
+  {
+    "id": "COS201-834",
+    "question": "Why is information defined using a logarithmic function?",
+    "options": [
+      "To simplify equations",
+      "To satisfy additivity property",
+      "To reduce noise",
+      "To increase entropy"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Log biến phép nhân xác suất của các sự kiện độc lập thành phép cộng lượng tin.",
+    "tip": "information additivity → logarithm.",
+    "active": true
+  },
+  {
+    "id": "COS201-835",
+    "question": "A frequency discriminator is used for:",
+    "options": [
+      "Modulation",
+      "Amplification",
+      "Demodulation of FM signals",
+      "Filtering"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Frequency discriminator biến độ lệch tần số tức thời thành điện áp thông điệp.",
+    "tip": "discriminator → FM demodulation.",
+    "active": true
+  },
+  {
+    "id": "COS201-836",
+    "question": "FM threshold effect typically occurs around:",
+    "options": [
+      "0 dB",
+      "5 dB",
+      "10 dB",
+      "20 dB"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Dưới ngưỡng SNR khoảng 10 dB theo mô hình của đề, chất lượng FM giảm đột ngột.",
+    "tip": "FM threshold → khoảng 10 dB.",
+    "active": true
+  },
+  {
+    "id": "COS201-837",
+    "question": "In an uncompensated link without a zero-ISI pulse-shaping design, which channel property commonly causes symbol pulses to spread and overlap?",
+    "options": [
+      "Infinite bandwidth",
+      "Band-limited channels",
+      "Sampling",
+      "Encoding"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Giới hạn băng có thể làm xung trải dài; thiết kế Nyquist đúng vẫn có thể triệt ISI tại thời điểm lấy mẫu.",
+    "tip": "band limit + không bù/tạo xung đúng → có thể ISI, không phải luôn luôn.",
+    "active": true
+  },
+  {
+    "id": "COS201-838",
+    "question": "In frequency modulation (FM), which quantity varies with the message signal?",
+    "options": [
+      "Phase only",
+      "Frequency",
+      "Amplitude",
+      "Power"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FM thay đổi tần số tức thời theo thông điệp, giữ biên độ sóng mang không đổi.",
+    "tip": "FM → Frequency Modulation.",
+    "active": true
+  },
+  {
+    "id": "COS201-839",
+    "question": "The Fourier transform of a signal exists if the signal is:",
+    "options": [
+      "periodic",
+      "Absolutely integrable",
+      "Constant",
+      "Discrete",
+      "Linear"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tích phân tuyệt đối hữu hạn là điều kiện đủ để Fourier Transform tồn tại theo nghĩa thông thường.",
+    "tip": "∫|x(t)|dt < ∞ → sufficient condition.",
+    "active": false
+  },
+  {
+    "id": "COS201-840",
+    "question": "The condition for BIBO stability in an LTI system is:",
+    "options": [
+      "Finite frequency response",
+      "Finite impulse response energy",
+      "Absolutely integrable impulse response",
+      "Periodic impulse response",
+      "Linear phase response"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tổng ảnh hưởng của đáp ứng xung phải hữu hạn để mọi đầu vào bị chặn cho đầu ra bị chặn.",
+    "tip": "BIBO → ∫|h(t)|dt < ∞.",
+    "active": true
+  },
+  {
+    "id": "COS201-841",
+    "question": "Conditional probability is used to:",
+    "options": [
+      "Compute total probability",
+      "Evaluate probability given prior information",
+      "Eliminate noise",
+      "Increase bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Xác suất có điều kiện cập nhật khả năng sự kiện khi đã biết một sự kiện khác xảy ra.",
+    "tip": "P(A|B) → given B.",
+    "active": true
+  },
+  {
+    "id": "COS201-842",
+    "question": "The bandwidth of NBFM is approximately:",
+    "options": [
+      "W",
+      "2W",
+      "Infinite",
+      "W/2"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "NBFM với chỉ số nhỏ chủ yếu có sóng mang và cặp dải biên bậc nhất, cần khoảng 2W.",
+    "tip": "narrowband FM → BW≈2W.",
+    "active": true
+  },
+  {
+    "id": "COS201-843",
+    "question": "Which property is true for a valid CDF?",
+    "options": [
+      "It decreases",
+      "It is non-decreasing",
+      "It is negative",
+      "It is constant"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tăng x chỉ có thể thêm xác suất vào P(X≤x), nên CDF không giảm.",
+    "tip": "valid CDF → non-decreasing.",
+    "active": true
+  },
+  {
+    "id": "COS201-844",
+    "question": "What is the primary function of the transmitter?",
+    "options": [
+      "To generate the message signal",
+      "To store transmitted information",
+      "To convert the message into a signal suitable for transmission",
+      "To detect noise in the channel",
+      "To deliver the message to the destination"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Máy phát điều chế và xử lý thông điệp thành dạng phù hợp với môi trường truyền.",
+    "tip": "message → channel-ready signal: transmitter.",
+    "active": true
+  },
+  {
+    "id": "COS201-845",
+    "question": "For conventional AM with a single sinusoidal message, what is the maximum sideband-to-total power efficiency without overmodulation (0 ≤ μ ≤ 1)?",
+    "options": [
+      "1",
+      "1/2",
+      "1/3",
+      "2"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "AM một tone có η=μ²/(2+μ²); tại μ=1 đạt 1/3. Không suy rộng 1/3 cho mọi dạng thông điệp hay mọi định nghĩa FOM.",
+    "tip": "Single-tone AM, μ=1 → ηmax=1/3.",
+    "active": true
+  },
+  {
+    "id": "COS201-846",
+    "question": "Time shifting in the time domain corresponds to what in the frequency domain?",
+    "options": [
+      "Amplitude scaling",
+      "Phase shift",
+      "Frequency scaling",
+      "Convolution",
+      "Noise addition"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dịch thời gian t0 nhân phổ với e^(−j2πft0), chỉ đổi pha chứ không đổi độ lớn.",
+    "tip": "time shift → linear phase shift.",
+    "active": true
+  },
+  {
+    "id": "COS201-847",
+    "question": "If FFT is used at receiver, it performs:",
+    "options": [
+      "Modulation",
+      "Demultiplexing subcarriers",
+      "Noise removal",
+      "Amplification"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FFT chiếu tín hiệu OFDM lên các sóng mang trực giao để tách các nhánh dữ liệu.",
+    "tip": "OFDM receiver FFT → demultiplexing.",
+    "active": true
+  },
+  {
+    "id": "COS201-848",
+    "question": "Standard deviation is:",
+    "options": [
+      "Variance squared",
+      "Square root of variance",
+      "Sum of variance",
+      "Log of variance"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Độ lệch chuẩn đưa phương sai về cùng đơn vị với biến gốc bằng phép căn bậc hai.",
+    "tip": "standard deviation → √variance.",
+    "active": true
+  },
+  {
+    "id": "COS201-849",
+    "question": "Increasing sampling rate in DM helps to:",
+    "options": [
+      "Increase noise",
+      "Reduce slope overload",
+      "Increase distortion",
+      "Reduce bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tăng fs làm bước thời gian nhỏ hơn, nên độ dốc bám được Δ·fs lớn hơn.",
+    "tip": "DM slope overload → tăng sampling rate.",
+    "active": true
+  },
+  {
+    "id": "COS201-851",
+    "question": "In coherent DSB-SC product detection of a single message branch, a 90° carrier-reference phase error makes the recovered message component:",
+    "options": [
+      "Inverted",
+      "The same as input",
+      "Zero",
+      "Doubled"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Thành phần thông điệp ở đầu ra tỷ lệ cosφ; cos90°=0. Với thu I/Q tổng quát, lệch pha làm quay chòm sao.",
+    "tip": "DSB-SC single-branch: 90° → cos90°=0.",
+    "active": true
+  },
+  {
+    "id": "COS201-852",
+    "question": "Which set of topics provides the signal-level foundation for studying communication systems?",
+    "options": [
+      "History of the internet.",
+      "Hardware manufacturing only.",
+      "Signal representation, modulation, and noise.",
+      "Programming languages."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Biểu diễn tín hiệu, điều chế và nhiễu là các nội dung nền để phân tích đường truyền thông tin.",
+    "tip": "Communications foundation → signals, modulation, noise.",
+    "active": true
+  },
+  {
+    "id": "COS201-853",
+    "question": "The main drawback of an FIR filter is that it:",
+    "options": [
+      "Cannot have linear phase.",
+      "Is inherently unstable.",
+      "Requires a large number of coefficients for sharp transitions.",
+      "Is only used for analog signals."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "FIR cần nhiều tap để đạt dải chuyển tiếp rất hẹp, làm tăng tính toán và độ trễ.",
+    "tip": "sharp FIR → many coefficients.",
+    "active": true
+  },
+  {
+    "id": "COS201-854",
+    "question": "Which of the following is a \"Channel Impairment\" mentioned in the slides?",
+    "options": [
+      "Propagation loss",
+      "Up-conversion",
+      "Source coding",
+      "Demodulation"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Suy hao truyền dẫn làm công suất tín hiệu giảm khi đi qua môi trường.",
+    "tip": "channel impairment → propagation loss.",
+    "active": true
+  },
+  {
+    "id": "COS201-855",
+    "question": "A complex envelope g_tilde(t) is defined as:",
+    "options": [
+      "a(t) · cos(φ(t))",
+      "g_l(t) + j*g_Q(t).",
+      "The Fourier transform of g(t).",
+      "g_l(t) - j*g_Q(t)."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Biểu diễn đường bao phức gom hai thành phần trực giao thành I+jQ.",
+    "tip": "complex envelope → I + jQ.",
+    "active": true
+  },
+  {
+    "id": "COS201-856",
+    "question": "How many layers are in the well-known OSI model?",
+    "options": [
+      "7",
+      "3",
+      "9",
+      "4"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Mô hình OSI chia chức năng mạng thành bảy lớp.",
+    "tip": "OSI → 7 layers.",
+    "active": true
+  },
+  {
+    "id": "COS201-857",
+    "question": "VSB modulation is described as a compromise between:",
+    "options": [
+      "SSB and conventional AM",
+      "TDM and FDM",
+      "ASK and PSK",
+      "FM and AM"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "VSB giữ một dải biên đầy đủ và phần dư của dải kia, dễ lọc hơn SSB nhưng tiết kiệm hơn AM.",
+    "tip": "vestigial → compromise SSB / AM.",
+    "active": true
+  },
+  {
+    "id": "COS201-858",
+    "question": "In I—Q representation, the 'Q' stands for:",
+    "options": [
+      "Quenching.",
+      "Quantization.",
+      "Quadrature.",
+      "Quality."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Quadrature là thành phần dùng sóng mang lệch pha 90° so với nhánh I.",
+    "tip": "Q → Quadrature, 90°.",
+    "active": true
+  },
+  {
+    "id": "COS201-859",
+    "question": "The Fourier transform spectrum of cos(2πf_c t) consists of:",
+    "options": [
+      "A sinc function.",
+      "A single impulse at f_c.",
+      "A continuous spectrum from -f_c to f_c.",
+      "Two delta impulses at ± f_c."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Cosine thực là tổng hai mũ phức quay ngược chiều, tạo hai delta tại ±fc.",
+    "tip": "cos → pair of impulses ±fc.",
+    "active": true
+  },
+  {
+    "id": "COS201-860",
+    "question": "What is the required bandwidth for a conventional AM signal if the message bandwidth is W?",
+    "options": [
+      "4W",
+      "2W",
+      "W/2",
+      "W"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hai dải biên của AM mỗi dải rộng W nên tổng băng thông là 2W.",
+    "tip": "conventional AM → 2W.",
+    "active": true
+  },
+  {
+    "id": "COS201-861",
+    "question": "In DSB-SC modulation, the transmitted signal consists of:",
+    "options": [
+      "Carrier + Lower Sideband",
+      "Upper Sideband + Lower Sideband",
+      "Carrier + Upper Sideband",
+      "Carrier only"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "DSB-SC triệt sóng mang nhưng vẫn truyền cả dải biên trên và dưới.",
+    "tip": "DSB = two sidebands; SC = suppressed carrier.",
+    "active": true
+  },
+  {
+    "id": "COS201-862",
+    "question": "Periodic signals produce what type of spectrum?",
+    "options": [
+      "Continuous spectrum.",
+      "No spectrum.",
+      "Line spectrum (discrete impulses).",
+      "Random spectrum."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tín hiệu tuần hoàn chỉ có các hài tại bội của tần số cơ bản.",
+    "tip": "periodic → line spectrum.",
+    "active": true
+  },
+  {
+    "id": "COS201-863",
+    "question": "Which of the following is an example of a physical communication channel?",
+    "options": [
+      "Synchronization block",
+      "Protocol Stack",
+      "Optical fiber",
+      "Modulator"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Sợi quang là môi trường vật lý mang tín hiệu ánh sáng từ máy phát đến máy thu.",
+    "tip": "physical channel → optical fiber.",
+    "active": true
+  },
+  {
+    "id": "COS201-864",
+    "question": "Which functional component is typically found in a receiver but NOT in a transmitter?",
+    "options": [
+      "Modulator",
+      "Recovery of carrier phase and symbol timing from the received waveform",
+      "Protocol Stack",
+      "Antenna"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Khôi phục pha sóng mang và thời điểm symbol từ tín hiệu nhận là chức năng phía thu; đồng bộ nói chung cũng có thể tồn tại trong máy phát.",
+    "tip": "Receiver → carrier/timing recovery from received waveform.",
+    "active": true
+  },
+  {
+    "id": "COS201-865",
+    "question": "In Amplitude Modulation, which parameter of the carrier is varied in proportion to the message signal?",
+    "options": [
+      "Frequency",
+      "Phase",
+      "Amplitude",
+      "Bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "AM làm biên độ sóng mang biến thiên tỷ lệ thông điệp.",
+    "tip": "Amplitude Modulation → amplitude.",
+    "active": true
+  },
+  {
+    "id": "COS201-866",
+    "question": "For conventional AM with normalized message amplitude, what happens when the modulation index μ > 1?",
+    "options": [
+      "Noise is eliminated",
+      "Power efficiency increases",
+      "Bandwidth is reduced",
+      "Envelope distortion (Phase reversals)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Khi μ>1, đường bao đi qua zero và đảo pha, làm tách sóng đường bao bị méo.",
+    "tip": "overmodulation → μ>1.",
+    "active": true
+  },
+  {
+    "id": "COS201-867",
+    "question": "The amplitude response of a transfer function H(f) is also called:",
+    "options": [
+      "Gain response.",
+      "Group delay.",
+      "Phase response.",
+      "Bandwidth."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Độ lớn |H(f)| biểu thị hệ số khuếch đại theo từng tần số.",
+    "tip": "amplitude response → gain response.",
+    "active": true
+  },
+  {
+    "id": "COS201-868",
+    "question": "Which circuit is used to maintain phase synchronization in a DSB-SC receiver?",
+    "options": [
+      "Frequency Mixer",
+      "Costas Receiver",
+      "Envelope Detector",
+      "Switching Modulator"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Costas loop dùng hai nhánh trực giao để phục hồi pha sóng mang cho DSB-SC.",
+    "tip": "DSB-SC phase recovery → Costas.",
+    "active": true
+  },
+  {
+    "id": "COS201-869",
+    "question": "Which technology allows radio components to be implemented through software rather than fixed hardware?",
+    "options": [
+      "DSP",
+      "RF Stage",
+      "FPGA",
+      "Software-Defined Radio (SDR)"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "SDR chuyển nhiều chức năng xử lý vô tuyến từ mạch cố định sang thuật toán phần mềm.",
+    "tip": "radio in software → SDR.",
+    "active": true
+  },
+  {
+    "id": "COS201-870",
+    "question": "A band-pass signal with bandwidth W centered at f_c is considered 'narrowband' if:",
+    "options": [
+      "W ≪ f_c.",
+      "W ≫ f_c.",
+      "W = f_c.",
+      "f_c = 0."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tín hiệu hẹp băng có băng thông nhỏ hơn rất nhiều so với tần số trung tâm.",
+    "tip": "narrowband → W≪fc.",
+    "active": true
+  },
+  {
+    "id": "COS201-871",
+    "question": "Which filter is used in a switching modulator to select the desired frequency band?",
+    "options": [
+      "Notch filter",
+      "High-pass filter",
+      "Band-pass filter",
+      "Low-pass filter"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Bộ lọc thông dải chọn dải tần mong muốn trong các thành phần do chuyển mạch tạo ra.",
+    "tip": "switching modulator → band-pass filter.",
+    "active": true
+  },
+  {
+    "id": "COS201-872",
+    "question": "Which theorem relates the total energy of a signal in time to its energy in frequency?",
+    "options": [
+      "Sampling theorem.",
+      "Rayleigh's energy theorem (Parseval).",
+      "Convolution theorem.",
+      "Nyquist theorem."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Parseval, còn gọi định lý năng lượng Rayleigh, liên hệ năng lượng hai miền thời gian và tần số.",
+    "tip": "energy time ↔ frequency → Parseval.",
+    "active": true
+  },
+  {
+    "id": "COS201-873",
+    "question": "A linear time-invariant (LTI) system initially at rest is completely characterized by its:",
+    "options": [
+      "Bandwidth.",
+      "Input signal.",
+      "Impulse response.",
+      "Power supply."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với giả thiết LTI của bài học, mọi đầu ra được tính bằng chập đầu vào với đáp ứng xung.",
+    "tip": "LTI characterization → impulse response.",
+    "active": true
+  },
+  {
+    "id": "COS201-874",
+    "question": "For conventional AM with a single sinusoidal message at 100% modulation (μ = 1), what fraction of total average power is carrier power?",
+    "options": [
+      "66.7% (Note: Pc = (1/2)Ac², PSB = (1/4)Ac² → Pc = (2/3)·Ptotal)",
+      "100%",
+      "50%",
+      "33.3%"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Một tone tại μ=1: Ptotal=Pc(1+1/2)=1,5Pc nên Pc/Ptotal=2/3≈66,7%.",
+    "tip": "Single-tone 100% AM → carrier 2/3 of total.",
+    "active": true
+  },
+  {
+    "id": "COS201-875",
+    "question": "The Fourier transform of a Dirac comb (periodic impulses) in the time domain is:",
+    "options": [
+      "A sinc function.",
+      "A single impulse at f = 0.",
+      "A constant DC value.",
+      "Another Dirac comb in the frequency domain."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chuỗi delta tuần hoàn có các hài đều đặn, nên biến đổi Fourier cũng là một chuỗi delta.",
+    "tip": "Dirac comb ↔ Dirac comb.",
+    "active": true
+  },
+  {
+    "id": "COS201-876",
+    "question": "In a Frequency-Division Multiplexing (FDM) system, signals are separated in the:",
+    "options": [
+      "Code domain",
+      "Phase domain",
+      "Frequency domain",
+      "Time domain"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "FDM cấp một dải tần riêng cho mỗi tín hiệu trên cùng môi trường truyền.",
+    "tip": "FDM → separate in frequency.",
+    "active": true
+  },
+  {
+    "id": "COS201-877",
+    "question": "To recover the message signal using an envelope detector, what is the required relationship for the modulation factor μ?",
+    "options": [
+      "μ > 1",
+      "μ = 0",
+      "μ can be any value",
+      "0 < μ ≤ 1 for ideal AM with a normalized message and no overmodulation"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Với message chuẩn hóa và μ>0, μ≤1 giữ đường bao không đổi dấu. μ=1 là giới hạn lý tưởng hợp lệ; μ>1 gây overmodulation.",
+    "tip": "Envelope detection → không overmodulate → 0 < μ ≤ 1.",
+    "active": true
+  },
+  {
+    "id": "COS201-878",
+    "question": "Which property states that compression in time leads to expansion in frequency?",
+    "options": [
+      "Duality.",
+      "Time scaling.",
+      "Linearity.",
+      "Time shifting."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nén thời gian làm tín hiệu biến thiên nhanh hơn, nên phổ trải rộng hơn.",
+    "tip": "time compression → frequency expansion.",
+    "active": true
+  },
+  {
+    "id": "COS201-879",
+    "question": "Which standard integrability condition guarantees an ordinary Fourier transform for a signal?",
+    "options": [
+      "Periodically repeating.",
+      "Growing as exp(t²) over the whole real line",
+      "Absolutely integrable.",
+      "Infinite in energy."
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Khả tích tuyệt đối là điều kiện đủ cho FT thường. Tín hiệu zero trong lựa chọn cũ cũng có FT, nên cặp lựa chọn cũ không duy nhất.",
+    "tip": "Ordinary FT sufficient condition → ∫|x(t)|dt < ∞.",
+    "active": true
+  },
+  {
+    "id": "COS201-880",
+    "question": "For an initially-at-rest LTI system to be causal, its impulse response h(t) must be zero for:",
+    "options": [
+      "t > 0.",
+      "t = 0.",
+      "All t.",
+      "t < 0."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Hệ nhân quả không có đáp ứng trước khi xung tại t=0 được đưa vào.",
+    "tip": "causal → h(t)=0 khi t<0.",
+    "active": true
+  },
+  {
+    "id": "COS201-881",
+    "question": "Which criterion determines if a frequency response can be realized by a causal filter?",
+    "options": [
+      "Dirichlet criterion.",
+      "Paley—Wiener criterion.",
+      "Shannon criterion.",
+      "Rayleigh criterion."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tiêu chuẩn Paley–Wiener ràng buộc đáp ứng biên độ để một bộ lọc nhân quả có thể thực hiện được.",
+    "tip": "causal realizability → Paley–Wiener.",
+    "active": true
+  },
+  {
+    "id": "COS201-882",
+    "question": "Which block is responsible for converting a message into a signal suitable for the transmission medium?",
+    "options": [
+      "Transmitter",
+      "Information Source",
+      "Information Sink",
+      "Receiver"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Máy phát chuẩn bị và điều chế thông điệp cho kênh truyền.",
+    "tip": "message suitable for medium → transmitter.",
+    "active": false
+  },
+  {
+    "id": "COS201-883",
+    "question": "In WLAN frequency-domain zero-forcing equalization, when H_k ≠ 0, which operation compensates the multiplicative channel response?",
+    "options": [
+      "Using an ideal low-pass filter.",
+      "Increasing the transmitter power.",
+      "Reducing the signal bandwidth.",
+      "Multiplying the received signal's DFT by 1/H_k."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Với Yk=HkXk+Nk, zero forcing nhân Yk với 1/Hk. Gần điểm triệt kênh sẽ khuếch đại nhiễu; Hk=0 không nghịch đảo được.",
+    "tip": "Zero forcing → Yk/Hk, chỉ khi Hk≠0.",
+    "active": true
+  },
+  {
+    "id": "COS201-884",
+    "question": "Analog communication remains important because noise and distortion in digital systems are fundamentally:",
+    "options": [
+      "Analog in nature",
+      "Perfectly predictable",
+      "Non-existent",
+      "Digital in nature"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tín hiệu vật lý trong phần cứng và kênh vẫn liên tục nên nhiễu, méo có bản chất analog.",
+    "tip": "digital hardware channel → analog impairments.",
+    "active": true
+  },
+  {
+    "id": "COS201-885",
+    "question": "A 'Mixer' in communication systems is used for:",
+    "options": [
+      "Quantizing data",
+      "Amplifying the signal",
+      "Filtering noise",
+      "Frequency translation"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Mixer nhân với dao động nội để chuyển tín hiệu sang tần số tổng hoặc hiệu.",
+    "tip": "mixer → frequency translation.",
+    "active": true
+  },
+  {
+    "id": "COS201-886",
+    "question": "In the OSI model, modulation, waveform coding and transmitting signals through physical channels are primarily functions of which layer?",
+    "options": [
+      "Network Layer",
+      "Application Layer",
+      "Physical Layer (PHY)",
+      "Presentation Layer"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Lớp vật lý xử lý dạng sóng và việc truyền bit qua môi trường; các lớp trên xử lý khung, định tuyến hoặc dịch vụ ứng dụng.",
+    "tip": "Modulation / waveform / physical medium → Physical layer.",
+    "active": true
+  },
+  {
+    "id": "COS201-887",
+    "question": "Quadrature-Carrier Multiplexing (QAM) enables the transmission of two signals using:",
+    "options": [
+      "Two different frequencies",
+      "Two orthogonal carriers at the same frequency",
+      "One carrier and one sideband",
+      "Time slots"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hai sóng mang cos và sin cùng tần số trực giao, cho phép truyền hai nhánh I và Q.",
+    "tip": "QAM → same frequency, 90° apart.",
+    "active": true
+  },
+  {
+    "id": "COS201-888",
+    "question": "A deterministic signal is defined as a waveform that is:",
+    "options": [
+      "Constant at all times.",
+      "Fully defined as a function of time.",
+      "Only existing in the frequency domain.",
+      "Random and unpredictable."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tín hiệu xác định có giá trị tính được chính xác tại mọi thời điểm từ mô tả của nó.",
+    "tip": "deterministic → fully specified waveform.",
+    "active": true
+  },
+  {
+    "id": "COS201-889",
+    "question": "Which filter type provides a smooth, maximally flat response with no ripples?",
+    "options": [
+      "Elliptic.",
+      "FIR",
+      "Chebyshev.",
+      "Butterworth."
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Butterworth được thiết kế phẳng tối đa ở passband và không có ripple.",
+    "tip": "maximally flat → Butterworth.",
+    "active": true
+  },
+  {
+    "id": "COS201-890",
+    "question": "Which criterion determines if a frequency response can be realized by a causal filter?",
+    "options": [
+      "Dirichlet criterion.",
+      "Paley—Wiener criterion.",
+      "Rayleigh criterion.",
+      "Shannon criterion."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tiêu chuẩn Paley–Wiener ràng buộc đáp ứng biên độ để một bộ lọc nhân quả có thể thực hiện được.",
+    "tip": "causal realizability → Paley–Wiener.",
+    "active": false
+  },
+  {
+    "id": "COS201-891",
+    "question": "Which modulation scheme is the most bandwidth-efficient?",
+    "options": [
+      "DSB-SC",
+      "Conventional AM",
+      "VSB",
+      "SSB"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Trong các điều chế analog đang so sánh, SSB chỉ dùng băng W cho thông điệp băng W.",
+    "tip": "most bandwidth-efficient analog option → SSB.",
+    "active": false
+  },
+  {
+    "id": "COS201-892",
+    "question": "Which modulation is used by the legacy ATSC 1.0 terrestrial digital-TV physical layer?",
+    "options": [
+      "8-VSB",
+      "16-QAM",
+      "4 AM",
+      "2-PSK"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "ATSC 1.0 dùng 8-VSB; ATSC 3.0 dùng OFDM, nên không gọi chung mọi ATSC hiện đại là 8-VSB.",
+    "tip": "ATSC 1.0 → 8-VSB; ATSC 3.0 → OFDM.",
+    "active": true
+  },
+  {
+    "id": "COS201-893",
+    "question": "What does the Signum function sgn(t) represent?",
+    "options": [
+      "The absolute value of time.",
+      "A signal that is +1 fort > 0 and -1 fort < 0.",
+      "A unit impulse.",
+      "A periodic sine wave."
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Signum biểu diễn dấu: +1 khi t>0, −1 khi t<0 và thường quy ước 0 tại t=0.",
+    "tip": "sgn → sign of input.",
+    "active": true
+  },
+  {
+    "id": "COS201-894",
+    "question": "Angle modulation is defined as:",
+    "options": [
+      "Varying only the phase randomly",
+      "Varying amplitude of a carrier",
+      "Removing the carrier",
+      "Varying the angle of a carrier according to the message signal"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Góc của sóng mang gồm pha tức thời; thay đổi góc theo thông điệp tạo FM hoặc PM.",
+    "tip": "angle modulation → vary carrier angle.",
+    "active": false
+  },
+  {
+    "id": "COS201-895",
+    "question": "Narrowband FM (NBFM) is characterized by:",
+    "options": [
+      "Infinite bandwidth",
+      "Zero bandwidth",
+      "Large modulation index",
+      "Small modulation index"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Chỉ số điều chế nhỏ cho phép bỏ qua các dải biên bậc cao trong xấp xỉ NBFM.",
+    "tip": "NBFM → β≪1.",
+    "active": true
+  },
+  {
+    "id": "COS201-896",
+    "question": "For analog PAM transmitted without regenerative digital decisions, which property makes the message vulnerable to channel amplitude distortion?",
+    "options": [
+      "It requires high frequency",
+      "It is sensitive to amplitude distortion",
+      "It cannot be sampled",
+      "It has low power"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "PAM chứa thông tin ở biên độ xung nên nhiễu và méo biên độ tác động trực tiếp.",
+    "tip": "PAM → amplitude-sensitive.",
+    "active": true
+  },
+  {
+    "id": "COS201-897",
+    "question": "In the additive-noise channel model r(t) = s(t) + n(t), the received signal is:",
+    "options": [
+      "Sum of signal and noise",
+      "Only noise",
+      "Only the transmitted signal",
+      "Signal minus noise"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Trong mô hình kênh nhiễu cộng, tín hiệu thu là r(t)=s(t)+n(t).",
+    "tip": "additive noise → signal + noise.",
+    "active": true
+  },
+  {
+    "id": "COS201-898",
+    "question": "What is a characteristic advantage of an oversampled low-pass delta-sigma modulator followed by digital low-pass filtering and decimation?",
+    "options": [
+      "Increasing bandwidth",
+      "Increasing noise",
+      "Removing quantization",
+      "Reducing in-band quantization noise through oversampling and noise shaping"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Vòng delta-sigma đẩy phần lớn nhiễu lượng tử ra ngoài dải quan tâm; lọc số và giảm mẫu loại bớt nhiễu ngoài dải. Không loại bỏ lượng tử hóa hoặc mọi dạng overload.",
+    "tip": "delta-sigma → oversampling + noise shaping + low-pass/decimation.",
+    "active": true
+  },
+  {
+    "id": "COS201-899",
+    "question": "In angle modulation, the carrier amplitude is:",
+    "options": [
+      "Variable",
+      "Increasing",
+      "Zero",
+      "Constant"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "FM/PM đưa thông tin vào góc nên đường bao lý tưởng vẫn không đổi.",
+    "tip": "angle modulation → constant amplitude.",
+    "active": true
+  },
+  {
+    "id": "COS201-900",
+    "question": "Uniform quantization performs poorly for speech because:",
+    "options": [
+      "Speech is high frequency",
+      "Speech is periodic",
+      "Speech often has weak-amplitude segments with large relative error for a fixed uniform step",
+      "Speech is random"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Các đoạn tiếng nói yếu có sai số lượng tử lớn tương đối khi dùng bước đều; companding dành mức lượng tử dày hơn quanh zero.",
+    "tip": "Weak speech segments → companding / nonuniform quantization.",
+    "active": true
+  },
+  {
+    "id": "COS201-901",
+    "question": "Standard deviation is:",
+    "options": [
+      "Sum of variance",
+      "Square root of variance",
+      "Log of variance",
+      "Variance squared"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Độ lệch chuẩn đưa phương sai về cùng đơn vị với biến gốc bằng phép căn bậc hai.",
+    "tip": "standard deviation → √variance.",
+    "active": false
+  },
+  {
+    "id": "COS201-902",
+    "question": "For conventional AM with a single sinusoidal message, what is the maximum sideband-to-total power efficiency without overmodulation (0 ≤ μ ≤ 1)?",
+    "options": [
+      "2",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "AM một tone có η=μ²/(2+μ²); tại μ=1 đạt 1/3. Không suy rộng 1/3 cho mọi dạng thông điệp hay mọi định nghĩa FOM.",
+    "tip": "Single-tone AM, μ=1 → ηmax=1/3.",
+    "active": false
+  },
+  {
+    "id": "COS201-903",
+    "question": "For a real baseband signal occupying [−W, W], which inequality describes the full undersampling range that violates the Nyquist bound (rather than just one special sampling rate)?",
+    "options": [
+      "fs = W",
+      "fs < 2W",
+      "fs > 2W",
+      "fs = 2W"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dải vi phạm tổng quát là fs<2W. fs=W chỉ là một trường hợp nằm trong dải đó, nên đề cũ có hai lựa chọn đúng theo nghĩa “xảy ra khi”.",
+    "tip": "Full range → fs<2W; fs=W chỉ là trường hợp riêng.",
+    "active": true
+  },
+  {
+    "id": "COS201-904",
+    "question": "Marginal PDF is obtained by:",
+    "options": [
+      "Multiplication",
+      "Subtraction",
+      "Differentiation",
+      "Integration over other variables"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Lấy phân bố biên bằng cách tích phân mật độ chung theo các biến còn lại.",
+    "tip": "marginal PDF → integrate other variables.",
+    "active": true
+  },
+  {
+    "id": "COS201-905",
+    "question": "De-emphasis filter mainly:",
+    "options": [
+      "Removes signal",
+      "Increases bandwidth",
+      "Amplifies noise",
+      "Reduces high-frequency noise"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "De-emphasis giảm gain ở cao tần sau giải điều chế để giảm nhiễu cao tần.",
+    "tip": "de-emphasis → high-frequency noise reduction.",
+    "active": true
+  },
+  {
+    "id": "COS201-906",
+    "question": "In the I-Q representation of a modulated signal, what do I and Q stand for?",
+    "options": [
+      "In-phase and quadrature",
+      "DC and AC",
+      "Input and output",
+      "DC and AC"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "I và Q là hai thành phần theo sóng mang cùng pha và vuông pha.",
+    "tip": "I = In-phase; Q = Quadrature.",
+    "active": true
+  },
+  {
+    "id": "COS201-907",
+    "question": "What does the cumulative distribution function (CDF) represent?",
+    "options": [
+      "Frequency content",
+      "Accumulated probability up to a value",
+      "Signal power",
+      "Instantaneous value"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "CDF tại x là xác suất biến ngẫu nhiên không vượt x: P(X≤x).",
+    "tip": "CDF → accumulated probability.",
+    "active": false
+  },
+  {
+    "id": "COS201-908",
+    "question": "Why is a band-pass filter used at the receiver input?",
+    "options": [
+      "To increase frequency",
+      "To remove signal",
+      "To restrict noise bandwidth",
+      "To amplify noise"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "BPF đầu vào chỉ cho dải kênh cần thu đi qua, giảm công suất nhiễu ngoài dải.",
+    "tip": "receiver input BPF → restrict noise bandwidth.",
+    "active": true
+  },
+  {
+    "id": "COS201-909",
+    "question": "Autocorrelation measures:",
+    "options": [
+      "Similarity of a signal at different times",
+      "Amplitude",
+      "Power",
+      "Frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tự tương quan so sánh tín hiệu với chính nó sau một độ trễ.",
+    "tip": "autocorrelation → self-similarity versus lag.",
+    "active": true
+  },
+  {
+    "id": "COS201-910",
+    "question": "Aliasing results in:",
+    "options": [
+      "Perfect reconstruction",
+      "Signal amplification",
+      "Noise reduction",
+      "Frequency overlap"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Aliasing khiến các bản phổ lặp chồng lên nhau và không còn phân biệt được tần số gốc.",
+    "tip": "aliasing → frequency overlap.",
+    "active": true
+  },
+  {
+    "id": "COS201-911",
+    "question": "If autocorrelation decreases rapidly, the signal is:",
+    "options": [
+      "Noise-free",
+      "Rapidly changing",
+      "Slowly varying",
+      "Constant"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tương quan giảm nhanh theo độ trễ nghĩa là các mẫu mất giống nhau nhanh, tín hiệu biến đổi nhanh.",
+    "tip": "fast-decaying autocorrelation → rapidly changing.",
+    "active": true
+  },
+  {
+    "id": "COS201-912",
+    "question": "FM receivers include an amplitude limiter to:",
+    "options": [
+      "Increase bandwidth",
+      "Add noise",
+      "Increase signal",
+      "Remove amplitude variations"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Thông tin FM nằm ở tần số; limiter bỏ biến thiên biên độ chủ yếu do nhiễu.",
+    "tip": "FM limiter → remove amplitude fluctuations.",
+    "active": true
+  },
+  {
+    "id": "COS201-913",
+    "question": "PCM bandwidth requirement increases with:",
+    "options": [
+      "Sampling rate",
+      "Number of channels",
+      "Bit depth",
+      "All of the above"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Bit rate PCM tăng theo số mẫu mỗi giây và số bit mỗi mẫu, nên băng thông yêu cầu tăng theo.",
+    "tip": "PCM → Rb=fs·bits/sample.",
+    "active": false
+  },
+  {
+    "id": "COS201-914",
+    "question": "For an ideal uniform quantizer in the high-resolution regime, SNR ∝ 2^(2R) implies what type of growth with bits per sample R?",
+    "options": [
+      "No growth",
+      "Logarithmic growth",
+      "Linear growth",
+      "Exponential growth"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "2^(2R)=4^R là hàm mũ; thêm một bit làm SNR lý tưởng nhân 4, tương đương khoảng 6,02 dB.",
+    "tip": "+1 bit → ×4 linear SNR → +6,02 dB.",
+    "active": true
+  },
+  {
+    "id": "COS201-915",
+    "question": "Angle modulation is considered a:",
+    "options": [
+      "Static process",
+      "Linear process",
+      "Time-invariant process",
+      "Nonlinear process"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Thông điệp nằm trong đối số sin/cos nên phép biến đổi không thỏa nguyên lý chồng chất.",
+    "tip": "angle modulation → nonlinear.",
+    "active": true
+  },
+  {
+    "id": "COS201-916",
+    "question": "For two real scalar variables with finite, nonzero variances, Pearson correlation lies in:",
+    "options": [
+      "[0, 1]",
+      "[1, 2]",
+      "[-1, 1]",
+      "(-∞, ∞)"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Bất đẳng thức Cauchy–Schwarz chặn độ lớn hệ số tương quan chuẩn hóa không vượt 1.",
+    "tip": "correlation coefficient → −1…1.",
+    "active": true
+  },
+  {
+    "id": "COS201-917",
+    "question": "In DSB-SC, coherent detection removes:",
+    "options": [
+      "All noise",
+      "In-phase noise",
+      "Carrier",
+      "Quadrature noise"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Tách sóng đồng bộ lý tưởng chiếu lên nhánh cùng pha; thành phần vuông pha không đi vào đầu ra baseband.",
+    "tip": "coherent DSB-SC → rejects quadrature noise.",
+    "active": true
+  },
+  {
+    "id": "COS201-918",
+    "question": "PPM is analogous to which analog modulation scheme?",
+    "options": [
+      "DSB",
+      "AM",
+      "FM",
+      "PM"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "PPM dịch vị trí xung theo thông điệp, tương tự PM dịch pha sóng mang.",
+    "tip": "Pulse Position → Phase Modulation.",
+    "active": true
+  },
+  {
+    "id": "COS201-919",
+    "question": "The Phase-Locked Loop (PLL) is primarily used for:",
+    "options": [
+      "Signal amplification",
+      "Carrier synchronization and demodulation",
+      "Noise generation",
+      "Frequency translation"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "PLL bám pha và tần số sóng mang, hỗ trợ đồng bộ và giải điều chế.",
+    "tip": "PLL → phase/carrier tracking.",
+    "active": true
+  },
+  {
+    "id": "COS201-920",
+    "question": "In an FM signal whose instantaneous frequency varies with a nonconstant message, zero-crossing spacings are generally:",
+    "options": [
+      "Irregularly spaced",
+      "Equally spaced",
+      "Random",
+      "Constant"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tốc độ pha thay đổi làm khoảng cách giữa các lần qua zero biến thiên; tín hiệu có tần số tức thời hằng là ngoại lệ.",
+    "tip": "Varying instantaneous frequency → generally uneven zero crossings.",
+    "active": true
+  },
+  {
+    "id": "COS201-921",
+    "question": "For a continuous uniform distribution on a finite interval [a,b], which statement is correct?",
+    "options": [
+      "The probability density is constant on [a,b]; equal-length subintervals have equal probabilities",
+      "It has a peak",
+      "Values are concentrated",
+      "It is decreasing"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Uniform liên tục là mật độ hằng trên miền hỗ trợ. Xác suất của một điểm riêng lẻ vẫn bằng 0.",
+    "tip": "Uniform continuous → constant PDF on its support.",
+    "active": true
+  },
+  {
+    "id": "COS201-922",
+    "question": "In frequency modulation (FM), which quantity varies with the message signal?",
+    "options": [
+      "Frequency",
+      "Power",
+      "Amplitude",
+      "Phase only"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "FM thay đổi tần số tức thời theo thông điệp, giữ biên độ sóng mang không đổi.",
+    "tip": "FM → Frequency Modulation.",
+    "active": false
+  },
+  {
+    "id": "COS201-923",
+    "question": "Covariance measures:",
+    "options": [
+      "Power",
+      "Linear relationship between variables",
+      "Frequency",
+      "Noise level"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hiệp phương sai đo xu hướng hai biến lệch khỏi trung bình cùng hoặc ngược chiều.",
+    "tip": "covariance → linear co-variation.",
+    "active": true
+  },
+  {
+    "id": "COS201-924",
+    "question": "FM stereo broadcasting transmits:",
+    "options": [
+      "Only digital signals",
+      "Three channels",
+      "Two channels (left and right)",
+      "One channel"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "FM stereo mang thông tin âm thanh trái và phải, thường ghép qua tổng L+R và hiệu L−R.",
+    "tip": "stereo → two channels.",
+    "active": true
+  },
+  {
+    "id": "COS201-925",
+    "question": "The quadrature component is associated with:",
+    "options": [
+      "Cosine",
+      "Frequency",
+      "DC",
+      "Sine"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Theo quy ước I/Q của môn, nhánh Q dùng sóng sin vuông pha với cos của nhánh I.",
+    "tip": "I → cosine; Q → sine.",
+    "active": true
+  },
+  {
+    "id": "COS201-926",
+    "question": "For an absolutely continuous random variable, its PDF equals the following (where the derivative exists):",
+    "options": [
+      "The mean value",
+      "The derivative of CDF",
+      "The integral of CDF",
+      "The variance"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Với phân bố liên tục khả vi, mật độ f(x) là đạo hàm của xác suất tích lũy F(x).",
+    "tip": "PDF = d(CDF)/dx.",
+    "active": true
+  },
+  {
+    "id": "COS201-927",
+    "question": "Flat-top sampling uses:",
+    "options": [
+      "Rectangular pulses",
+      "Triangular waves",
+      "Impulse pulses",
+      "Sine waves"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Flat-top giữ mỗi giá trị mẫu trong một khoảng thời gian, tạo các xung chữ nhật.",
+    "tip": "flat-top → rectangular held pulses.",
+    "active": true
+  },
+  {
+    "id": "COS201-928",
+    "question": "White noise has which property?",
+    "options": [
+      "Flat power spectral density",
+      "Limited bandwidth",
+      "Zero power",
+      "Time-varying amplitude only"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhiễu trắng có mật độ công suất phổ bằng nhau theo tần số trong mô hình lý tưởng.",
+    "tip": "white → flat PSD.",
+    "active": false
+  },
+  {
+    "id": "COS201-929",
+    "question": "AWGN stands for:",
+    "options": [
+      "Analog White Gain Noise",
+      "Additive White Gaussian Noise",
+      "Automatic White Gaussian Network",
+      "Additive Wide Gaussian Noise"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "AWGN là nhiễu cộng, có PSD phẳng và biên độ tuân phân bố Gaussian.",
+    "tip": "A=Additive, W=White, G=Gaussian.",
+    "active": true
+  },
+  {
+    "id": "COS201-930",
+    "question": "If two variables are independent, their joint PDF equals:",
+    "options": [
+      "Sum",
+      "Square",
+      "Product",
+      "Difference"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Độc lập nghĩa là biết biến này không đổi phân bố biến kia, nên mật độ chung phân tích thành tích.",
+    "tip": "independent → fXY=fX·fY.",
+    "active": true
+  },
+  {
+    "id": "COS201-931",
+    "question": "Autocorrelation measures:",
+    "options": [
+      "Amplitude",
+      "Similarity of a signal at different times",
+      "Frequency",
+      "Power"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tự tương quan so sánh tín hiệu với chính nó sau một độ trễ.",
+    "tip": "autocorrelation → self-similarity versus lag.",
+    "active": false
+  },
+  {
+    "id": "COS201-932",
+    "question": "The Figure of Merit measures:",
+    "options": [
+      "The output SNR divided by the specified reference input/channel SNR",
+      "Frequency",
+      "Power loss only",
+      "Bandwidth"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Figure of merit so sánh SNR sau tách sóng với SNR chuẩn tham chiếu; phải biết quy ước chuẩn hóa của mô hình.",
+    "tip": "Noise figure of merit → SNRout / SNRreference.",
+    "active": true
+  },
+  {
+    "id": "COS201-933",
+    "question": "The quadrature component is associated with:",
+    "options": [
+      "Cosine",
+      "DC",
+      "Sine",
+      "Frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Theo quy ước I/Q của môn, nhánh Q dùng sóng sin vuông pha với cos của nhánh I.",
+    "tip": "I → cosine; Q → sine.",
+    "active": false
+  },
+  {
+    "id": "COS201-934",
+    "question": "Why is PPM more noise-resistant than PAM?",
+    "options": [
+      "Uses amplitude",
+      "Uses phase",
+      "Encodes information in timing",
+      "Uses frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "PPM chứa tin ở vị trí xung nên ít bị tác động trực tiếp bởi nhiễu biên độ hơn PAM.",
+    "tip": "timing information → PPM.",
+    "active": true
+  },
+  {
+    "id": "COS201-935",
+    "question": "Above threshold with white input noise, the FM discriminator baseband noise PSD grows as the audio frequency increases, so noise is strongest toward:",
+    "options": [
+      "High frequency",
+      "Carrier",
+      "Low frequency",
+      "DC component"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Sau bộ phân biệt FM, PSD nhiễu tăng theo bình phương tần số.",
+    "tip": "FM noise → high frequencies worse.",
+    "active": true
+  },
+  {
+    "id": "COS201-936",
+    "question": "Flat-top sampling uses:",
+    "options": [
+      "Rectangular pulses",
+      "Impulse pulses",
+      "Triangular waves",
+      "Sine waves"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Flat-top giữ mỗi giá trị mẫu trong một khoảng thời gian, tạo các xung chữ nhật.",
+    "tip": "flat-top → rectangular held pulses.",
+    "active": false
+  },
+  {
+    "id": "COS201-937",
+    "question": "Narrowband noise is obtained by:",
+    "options": [
+      "Sampling",
+      "Passing white noise through a narrow band-pass filter around a carrier frequency",
+      "Amplification",
+      "Modulation"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Lọc thông dải nhiễu trắng quanh một tần số trung tâm tạo nhiễu hẹp băng.",
+    "tip": "narrowband noise → filter white noise.",
+    "active": true
+  },
+  {
+    "id": "COS201-938",
+    "question": "Band-pass noise can be represented by:",
+    "options": [
+      "Three signals",
+      "Two orthogonal components",
+      "only DC",
+      "One component"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Nhiễu thông dải biểu diễn bằng hai nhánh I và Q trên cos/sin trực giao.",
+    "tip": "band-pass noise → in-phase + quadrature.",
+    "active": true
+  },
+  {
+    "id": "COS201-939",
+    "question": "For single-tone sinusoidal FM, which special-function family explicitly gives the carrier and sideband amplitude coefficients?",
+    "options": [
+      "Bessel functions",
+      "Exponential functions",
+      "Linear scaling",
+      "Carrier frequency alone"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "FM một tone có hệ số Jn(β), là hàm Bessel. Các hệ số đó cũng là hệ số Fourier, nên lựa chọn D cũ mô tả cùng đối tượng theo nghĩa rộng.",
+    "tip": "Sinusoidal single-tone FM → Jn(β).",
+    "active": true
+  },
+  {
+    "id": "COS201-940",
+    "question": "A key advantage of angle modulation over AM is:",
+    "options": [
+      "Lower frequency",
+      "Lower bandwidth",
+      "Better noise immunity",
+      "Simpler implementation"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Đường bao không đổi cho phép limiter loại nhiễu biên độ; FM trên ngưỡng thường chống nhiễu tốt hơn AM.",
+    "tip": "angle modulation → better noise immunity.",
+    "active": true
+  },
+  {
+    "id": "COS201-941",
+    "question": "Granular noise occurs when:",
+    "options": [
+      "Sampling is low",
+      "Step size too small",
+      "Signal is fast",
+      "Frequency is high",
+      "Step size is too large relative to a slowly varying input signal"
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "Khi tín hiệu đổi chậm mà bước Δ quá lớn, bậc thang dao động quanh tín hiệu và tạo granular noise. Δ quá nhỏ mới dễ gây slope overload khi tín hiệu đổi nhanh.",
+    "tip": "Δ lớn + tín hiệu chậm → granular; Δ/T thiếu → slope overload.",
+    "active": true
+  },
+  {
+    "id": "COS201-942",
+    "question": "In DSB-SC, coherent detection removes:",
+    "options": [
+      "All noise",
+      "In-phase noise",
+      "Quadrature noise",
+      "Carrier"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tách sóng đồng bộ lý tưởng chiếu lên nhánh cùng pha; thành phần vuông pha không đi vào đầu ra baseband.",
+    "tip": "coherent DSB-SC → rejects quadrature noise.",
+    "active": false
+  },
+  {
+    "id": "COS201-943",
+    "question": "A joint PDF describes:",
+    "options": [
+      "Time domain",
+      "Two variables together",
+      "Frequency only",
+      "One variable"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Mật độ chung mô tả đồng thời khả năng các giá trị của hai biến ngẫu nhiên.",
+    "tip": "joint PDF → two variables together.",
+    "active": true
+  },
+  {
+    "id": "COS201-944",
+    "question": "For a stationary random process with a time-independent mean, the mean corresponds to which signal component?",
+    "options": [
+      "Noise",
+      "DC component",
+      "Frequency",
+      "AC component"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Trung bình là thành phần không đổi theo thời gian, tương ứng DC trong mô tả tín hiệu.",
+    "tip": "mean → DC.",
+    "active": true
+  },
+  {
+    "id": "COS201-945",
+    "question": "Marginal PDF is obtained by:",
+    "options": [
+      "Differentiation",
+      "Subtraction",
+      "Multiplication",
+      "Integration over other variables"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Lấy phân bố biên bằng cách tích phân mật độ chung theo các biến còn lại.",
+    "tip": "marginal PDF → integrate other variables.",
+    "active": false
+  },
+  {
+    "id": "COS201-946",
+    "question": "Variance measures:",
+    "options": [
+      "Mean",
+      "Bandwidth",
+      "Frequency",
+      "Spread of values"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Phương sai là kỳ vọng bình phương khoảng cách đến trung bình, đo độ phân tán.",
+    "tip": "variance → spread around mean.",
+    "active": true
+  },
+  {
+    "id": "COS201-947",
+    "question": "For single-tone sinusoidal FM, the modulation index β is:",
+    "options": [
+      "Ratio of carrier to noise",
+      "Ratio of amplitude to frequency",
+      "Ratio of frequency deviation to modulating frequency",
+      "Ratio of power to bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Với FM một tone, β bằng độ lệch tần số cực đại Δf chia tần số điều chế fm.",
+    "tip": "FM index → β=Δf/fm.",
+    "active": true
+  },
+  {
+    "id": "COS201-948",
+    "question": "FM Figure of Merit depends on:",
+    "options": [
+      "Carrier amplitude only",
+      "Noise only",
+      "Frequency deviation",
+      "Time"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tăng độ lệch tần số làm hệ số cải thiện SNR của FM tăng khi hoạt động trên ngưỡng.",
+    "tip": "FM FoM → deviation / modulation index.",
+    "active": true
+  },
+  {
+    "id": "COS201-949",
+    "question": "For ideal angle modulation with fixed carrier amplitude and a fixed load, the transmitted average power is:",
+    "options": [
+      "Constant",
+      "Variable",
+      "Zero",
+      "Dependent on frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Biên độ sóng mang lý tưởng không đổi nên công suất trung bình không đổi theo thông điệp.",
+    "tip": "angle modulation → constant envelope → constant power.",
+    "active": true
+  },
+  {
+    "id": "COS201-950",
+    "question": "Angle modulation is defined as:",
+    "options": [
+      "Removing the carrier",
+      "Varying only the phase randomly",
+      "Varying the angle of a carrier according to the message signal",
+      "Varying amplitude of a carrier"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Góc của sóng mang gồm pha tức thời; thay đổi góc theo thông điệp tạo FM hoặc PM.",
+    "tip": "angle modulation → vary carrier angle.",
+    "active": false
+  },
+  {
+    "id": "COS201-951",
+    "question": "A random process is:",
+    "options": [
+      "A system",
+      "A function of time and randomness",
+      "A fixed signal",
+      "A constant value"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Quá trình ngẫu nhiên là một họ biến ngẫu nhiên được đánh chỉ số bởi thời gian.",
+    "tip": "random process → time + randomness.",
+    "active": true
+  },
+  {
+    "id": "COS201-952",
+    "question": "In angle-modulated signals, information is contained in:",
+    "options": [
+      "Frequency or phase variations",
+      "DC components",
+      "Amplitude variations",
+      "Power variations"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "FM và PM mã hóa thông tin vào góc sóng mang thay vì biên độ.",
+    "tip": "angle modulation → frequency / phase.",
+    "active": false
+  },
+  {
+    "id": "COS201-953",
+    "question": "The aperture effect is corrected using:",
+    "options": [
+      "Amplifier",
+      "Equalizer",
+      "Sampler",
+      "Modulator"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Equalizer bù suy hao sinc do thời gian giữ mẫu hữu hạn.",
+    "tip": "aperture correction → equalizer.",
+    "active": true
+  },
+  {
+    "id": "COS201-954",
+    "question": "Conditional probability is used to:",
+    "options": [
+      "Compute total probability",
+      "Increase bandwidth",
+      "Evaluate probability given prior information",
+      "Eliminate noise"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Xác suất có điều kiện cập nhật khả năng sự kiện khi đã biết một sự kiện khác xảy ra.",
+    "tip": "P(A|B) → given B.",
+    "active": false
+  },
+  {
+    "id": "COS201-955",
+    "question": "Which frequency-dependent magnitude distortion is caused by the aperture effect of a flat-top sample-and-hold?",
+    "options": [
+      "Aliasing",
+      "Noise amplification",
+      "Sinc-shaped amplitude attenuation (high-frequency droop)",
+      "Phase shift"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Xung giữ mẫu hữu hạn có biên độ sinc, làm cao tần suy giảm. Nó còn tạo trễ pha tuyến tính, nên đề cần chỉ rõ đang hỏi méo biên độ.",
+    "tip": "Sample-and-hold aperture → sinc magnitude droop.",
+    "active": true
+  },
+  {
+    "id": "COS201-956",
+    "question": "A major disadvantage of angle modulation is:",
+    "options": [
+      "Low power",
+      "Larger bandwidth requirement",
+      "Low efficiency",
+      "High noise sensitivity"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "FM/PM thường tạo nhiều dải biên nên cần băng thông lớn hơn AM cho cùng thông điệp.",
+    "tip": "angle modulation cost → larger bandwidth.",
+    "active": true
+  },
+  {
+    "id": "COS201-957",
+    "question": "For stationary noise voltage measured across a unit resistance, its variance equals the power of which component?",
+    "options": [
+      "DC power",
+      "AC noise power",
+      "Frequency",
+      "Phase"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Sau khi bỏ trung bình, công suất trung bình của nhiễu chính là phương sai.",
+    "tip": "variance → AC noise power.",
+    "active": true
+  },
+  {
+    "id": "COS201-958",
+    "question": "Why is a band-pass filter used at the receiver input?",
+    "options": [
+      "To increase frequency",
+      "To remove signal",
+      "To restrict noise bandwidth",
+      "To amplify noise"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "BPF đầu vào chỉ cho dải kênh cần thu đi qua, giảm công suất nhiễu ngoài dải.",
+    "tip": "receiver input BPF → restrict noise bandwidth.",
+    "active": false
+  },
+  {
+    "id": "COS201-959",
+    "question": "Manchester encoding provides:",
+    "options": [
+      "No synchronization",
+      "Lower bandwidth",
+      "No transitions",
+      "Built-in clock recovery"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Manchester luôn có chuyển mức giữa bit, cung cấp mốc đồng bộ clock.",
+    "tip": "mid-bit transition → clock recovery.",
+    "active": true
+  },
+  {
+    "id": "COS201-960",
+    "question": "At fixed quantizer settings, which condition directly makes quantization-noise power dominate over additive channel-noise power?",
+    "options": [
+      "Channel-noise power is much lower than the quantization-noise power",
+      "Frequency is high",
+      "Sampling rate is low",
+      "Bit error rate is low."
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Khi nhiễu kênh rất nhỏ, sai số lượng tử hóa còn lại trở thành nguồn nhiễu chính.",
+    "tip": "quiet channel PCM → quantization dominates.",
+    "active": true
+  },
+  {
+    "id": "COS201-961",
+    "question": "PCM bandwidth requirement increases with:",
+    "options": [
+      "Sampling rate",
+      "Bit depth",
+      "All of the above",
+      "Number of channels"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Bit rate PCM tăng theo số mẫu mỗi giây và số bit mỗi mẫu, nên băng thông yêu cầu tăng theo.",
+    "tip": "PCM → Rb=fs·bits/sample.",
+    "active": false
+  },
+  {
+    "id": "COS201-962",
+    "question": "For an ideal uniform ADC with fixed full scale and a full-scale sinusoidal input, raising resolution from 8 to 10 bits improves quantization SNR by approximately:",
+    "options": [
+      "10 dB",
+      "6 dB",
+      "3 dB",
+      "12 dB"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "SNR≈6,02n+1,76 dB cho sinus full-scale; tăng 2 bit cho 12,04 dB≈12 dB.",
+    "tip": "Ideal full-scale sine → 6,02 dB/bit.",
+    "active": true
+  },
+  {
+    "id": "COS201-963",
+    "question": "Which of these waveforms is naturally suitable for a saturated nonlinear power amplifier because its RF envelope remains constant?",
+    "options": [
+      "OFDM",
+      "QAM",
+      "Root-raised-cosine pulse-shaped BPSK with an envelope that varies",
+      "Continuous-phase FSK with a constant envelope"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "CPFSK có đường bao hằng. BPSK lý tưởng không tạo xung có thể cũng hằng biên độ, nên phải phân biệt với BPSK đã pulse-shape làm biến thiên đường bao.",
+    "tip": "Nonlinear saturated PA → constant-envelope CPFSK.",
+    "active": true
+  },
+  {
+    "id": "COS201-964",
+    "question": "For an alphabet of exactly 2^k equally likely symbols, what codeword-length pattern does optimal binary Huffman coding produce?",
+    "options": [
+      "Compression failure",
+      "No coding",
+      "Fixed-length codes",
+      "Variable-length codes"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Có 2^k ký hiệu đồng xác suất thì mọi từ mã dài k bit. Nếu có 3 ký hiệu đồng xác suất, độ dài 1,2,2 là phản ví dụ cho đề cũ.",
+    "tip": "Equal probabilities + 2^k symbols → fixed length k.",
+    "active": true
+  },
+  {
+    "id": "COS201-965",
+    "question": "Slope overload distortion occurs when:",
+    "options": [
+      "Delta too large",
+      "Signal slope exceeds tracking capability",
+      "Noise is high",
+      "Delta is small while the input remains constant"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Định nghĩa quá tải dốc là |dx/dt|>Δ/T. Bước nhỏ trên đoạn đầu vào hằng không tự gây quá tải dốc.",
+    "tip": "Slope overload → input slope > Δ/T.",
+    "active": true
+  },
+  {
+    "id": "COS201-966",
+    "question": "If syndrome = 0, it implies:",
+    "options": [
+      "Error detected",
+      "High noise",
+      "Code failure",
+      "No detectable error"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Syndrome zero nghĩa là từ nhận thỏa các kiểm tra parity; vẫn có thể còn lỗi không phát hiện được.",
+    "tip": "syndrome 0 → no detectable error, chưa chắc no error.",
+    "active": true
+  },
+  {
+    "id": "COS201-967",
+    "question": "With modulation pulse shape and roll-off held fixed, if the symbol rate decreases, the required occupied bandwidth generally will:",
+    "options": [
+      "Double",
+      "Increase",
+      "Stay same",
+      "Decrease"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Với cùng dạng xung và roll-off, tốc độ symbol thấp hơn cần ít băng thông hơn.",
+    "tip": "BW ∝ symbol rate.",
+    "active": true
+  },
+  {
+    "id": "COS201-968",
+    "question": "For coherent BPSK over AWGN, why does the BER decrease approximately exponentially at high Eb/N0?",
+    "options": [
+      "Linear relation",
+      "Q-function behavior",
+      "Noise decreases linearly",
+      "Signal increases linearly"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Với BPSK đồng bộ trong AWGN, Pb=Q(√(2Eb/N0)); phần đuôi Q giảm gần theo hàm mũ khi Eb/N0 lớn.",
+    "tip": "BPSK + AWGN + high SNR → Q-tail, không áp dụng cho mọi kênh.",
+    "active": false
+  },
+  {
+    "id": "COS201-969",
+    "question": "Uniform quantization performs poorly for speech because:",
+    "options": [
+      "Speech is periodic",
+      "Speech often has weak-amplitude segments with large relative error for a fixed uniform step",
+      "Speech is random",
+      "Speech is high frequency"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Các đoạn tiếng nói yếu có sai số lượng tử lớn tương đối khi dùng bước đều; companding dành mức lượng tử dày hơn quanh zero.",
+    "tip": "Weak speech segments → companding / nonuniform quantization.",
+    "active": false
+  },
+  {
+    "id": "COS201-970",
+    "question": "Without channel equalization or a zero-ISI pulse-shaping design, why can band limitation make symbol pulses spread and cause ISI?",
+    "options": [
+      "Reduce amplitude",
+      "Remove high-frequency components",
+      "Increase power",
+      "Increase noise"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Loại bớt thành phần phổ có thể kéo dài xung và gây chồng symbol. Bộ lọc Nyquist đúng vẫn có thể không ISI tại thời điểm quyết định.",
+    "tip": "Band limitation can cause pulse spreading; ISI is not inevitable.",
+    "active": true
+  },
+  {
+    "id": "COS201-971",
+    "question": "For a real baseband signal occupying [−W, W], which inequality describes the full undersampling range that violates the Nyquist bound (rather than just one special sampling rate)?",
+    "options": [
+      "fs < 2W",
+      "fs = W",
+      "fs > 2W",
+      "fs = 2W"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Dải vi phạm tổng quát là fs<2W. fs=W chỉ là một trường hợp nằm trong dải đó, nên đề cũ có hai lựa chọn đúng theo nghĩa “xảy ra khi”.",
+    "tip": "Full range → fs<2W; fs=W chỉ là trường hợp riêng.",
+    "active": false
+  },
+  {
+    "id": "COS201-972",
+    "question": "For a lossless uniquely-decodable binary source code under the standard symbol-coding model, what would an average code length below the source entropy imply?",
+    "options": [
+      "Impossible without loss",
+      "Higher efficiency",
+      "Reduced noise",
+      "Better compression"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Entropy là cận dưới độ dài trung bình cho mã nguồn không mất mát theo các giả thiết thông thường.",
+    "tip": "lossless → average length ≥ entropy.",
+    "active": true
+  },
+  {
+    "id": "COS201-973",
+    "question": "Why is Gray coding used in QPSK/QAM?",
+    "options": [
+      "Reduce bandwidth",
+      "Reduce bit errors",
+      "Increase frequency",
+      "Increase power"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Gray gán các điểm lân cận khác đúng một bit, giảm số bit sai khi quyết định nhầm sang điểm gần nhất.",
+    "tip": "adjacent points → one bit differs.",
+    "active": true
+  },
+  {
+    "id": "COS201-974",
+    "question": "Eye diagram is used to:",
+    "options": [
+      "Measure frequency",
+      "Encode data",
+      "Increase SNR",
+      "Analyze signal quality"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Eye diagram thể hiện độ mở quyết định, ISI và sai lệch timing qua các đoạn tín hiệu chồng nhau.",
+    "tip": "eye → signal quality / timing margin.",
+    "active": true
+  },
+  {
+    "id": "COS201-975",
+    "question": "For the same coherent BPSK system in AWGN with all other parameters fixed, increasing Eb/N0 by 3 dB makes its theoretical BER:",
+    "options": [
+      "Increase",
+      "Become zero",
+      "Decrease significantly",
+      "Stay same"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Tăng Eb/N0 làm khoảng cách tín hiệu so với nhiễu lớn hơn, nên xác suất lỗi giảm.",
+    "tip": "+3 dB Eb/N0 → better BER.",
+    "active": true
+  },
+  {
+    "id": "COS201-976",
+    "question": "Why can noncoherent differential DPSK detection avoid an absolute carrier-phase reference?",
+    "options": [
+      "Uses noise",
+      "Uses amplitude",
+      "Uses previous symbol as reference",
+      "Uses frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "So sánh pha với symbol trước thay vì một pha tuyệt đối; vẫn cần đồng bộ thời gian/tần số phù hợp.",
+    "tip": "DPSK differential detector → previous symbol as phase reference.",
+    "active": true
+  },
+  {
+    "id": "COS201-977",
+    "question": "If channel distortion increases, eye diagram will:",
+    "options": [
+      "Open wider",
+      "Increase amplitude",
+      "Stay same",
+      "Close"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Méo và ISI thu hẹp khoảng phân biệt các mức, làm mắt khép lại.",
+    "tip": "worse channel → closed eye.",
+    "active": true
+  },
+  {
+    "id": "COS201-978",
+    "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+    "options": [
+      "It is weaker",
+      "It is random",
+      "It is deterministic",
+      "It is filtered",
+      "It is structured interference from neighboring symbols caused by channel memory."
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "ISI phụ thuộc các symbol lân cận và đáp ứng kênh có bộ nhớ. Equalizer xử lý phần trộn symbol này; chỉ gọi nó là “deterministic” không giải thích được độ khó.",
+    "tip": "ISI → channel memory + neighboring symbols → equalization.",
+    "active": false
+  },
+  {
+    "id": "COS201-979",
+    "question": "If OFDM subcarrier spacing or useful symbol timing violates the orthogonality condition, the subcarriers will:",
+    "options": [
+      "Increase SNR",
+      "Reduce bandwidth",
+      "Lose orthogonality",
+      "Improve"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Trực giao phụ thuộc khoảng cách sóng mang và khoảng tích phân hữu ích. Vi phạm điều kiện đó sinh ICI; “roll-off sai” không phải mô tả tổng quát chính xác.",
+    "tip": "OFDM → Δf·Tu integer + timing phù hợp; mất trực giao → ICI.",
+    "active": true
+  },
+  {
+    "id": "COS201-980",
+    "question": "Aliasing results in:",
+    "options": [
+      "Frequency overlap",
+      "Signal amplification",
+      "Noise reduction",
+      "Perfect reconstruction"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Aliasing khiến các bản phổ lặp chồng lên nhau và không còn phân biệt được tần số gốc.",
+    "tip": "aliasing → frequency overlap.",
+    "active": false
+  },
+  {
+    "id": "COS201-981",
+    "question": "Sampling in time domain causes what in frequency domain?",
+    "options": [
+      "Replication",
+      "Noise",
+      "Filtering",
+      "Attenuation"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Nhân với chuỗi xung lấy mẫu tạo các bản sao phổ tại bội của fs.",
+    "tip": "time sampling → spectral replication.",
+    "active": true
+  },
+  {
+    "id": "COS201-982",
+    "question": "In coherent I/Q detection, a carrier-reference phase error that is not an integer multiple of 90° generally causes:",
+    "options": [
+      "Bandwidth reduces",
+      "Signal disappears",
+      "Noise is removed",
+      "IQ components interfere"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Lệch pha quay vector I+jQ, tạo các thành phần chéo I cosφ−Q sinφ và I sinφ+Q cosφ.",
+    "tip": "Carrier phase error → I/Q rotation and mixing.",
+    "active": true
+  },
+  {
+    "id": "COS201-983",
+    "question": "Flat-top sampling uses:",
+    "options": [
+      "Rectangular pulses",
+      "Sine waves",
+      "Triangular waves",
+      "Impulse pulses"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Flat-top giữ mỗi giá trị mẫu trong một khoảng thời gian, tạo các xung chữ nhật.",
+    "tip": "flat-top → rectangular held pulses.",
+    "active": false
+  },
+  {
+    "id": "COS201-984",
+    "question": "Why does channel noise reduce mutual information?",
+    "options": [
+      "Reduces power",
+      "Increases entropy",
+      "Reduces bandwidth",
+      "Increases uncertainty"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Nhiễu làm đầu ra ít xác định được đầu vào hơn, tăng H(X|Y) và giảm I(X;Y).",
+    "tip": "mutual information = H(X)−H(X|Y).",
+    "active": true
+  },
+  {
+    "id": "COS201-985",
+    "question": "If a variable-length code is not prefix-free, which conclusion is always valid?",
+    "options": [
+      "Become ambiguous",
+      "Reduce noise",
+      "Work normally",
+      "Increase speed",
+      "Instantaneous decoding is not guaranteed; the code may still be uniquely decodable with lookahead."
+    ],
+    "answer": [
+      4
+    ],
+    "reason": "Prefix-free bảo đảm giải mã tức thời. Chiều ngược lại không đúng: mã {0,01} không prefix-free nhưng vẫn giải mã duy nhất, vì nó là suffix-free.",
+    "tip": "Not prefix-free ≠ chắc chắn ambiguous; có thể cần nhìn trước.",
+    "active": false
+  },
+  {
+    "id": "COS201-986",
+    "question": "In coherent I/Q detection, a carrier-reference phase error that is not an integer multiple of 90° generally causes:",
+    "options": [
+      "Reduced bandwidth",
+      "IQ mixing error",
+      "Noise removal",
+      "Improved signal"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Lệch pha quay vector I+jQ, tạo các thành phần chéo I cosφ−Q sinφ và I sinφ+Q cosφ.",
+    "tip": "Carrier phase error → I/Q rotation and mixing.",
+    "active": false
+  },
+  {
+    "id": "COS201-987",
+    "question": "Why is capacity achieved with optimal input distribution?",
+    "options": [
+      "Increases power",
+      "Maximizes mutual information",
+      "Reduces noise",
+      "Reduces entropy"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Dung lượng kênh là giá trị lớn nhất của mutual information trên các phân bố đầu vào hợp lệ.",
+    "tip": "capacity → max I(X;Y).",
+    "active": true
+  },
+  {
+    "id": "COS201-988",
+    "question": "Manchester encoding provides:",
+    "options": [
+      "Built-in clock recovery",
+      "No transitions",
+      "No synchronization",
+      "Lower bandwidth"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Manchester luôn có chuyển mức giữa bit, cung cấp mốc đồng bộ clock.",
+    "tip": "mid-bit transition → clock recovery.",
+    "active": false
+  },
+  {
+    "id": "COS201-989",
+    "question": "In the additive white Gaussian noise model, what is directly added to the received waveform samples?",
+    "options": [
+      "A random Gaussian voltage/sample component",
+      "Pulse shape",
+      "Timing",
+      "Frequency only"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "AWGN cộng một giá trị ngẫu nhiên vào từng mẫu, làm điểm tín hiệu thu lệch ngẫu nhiên.",
+    "tip": "additive Gaussian → random sample displacement.",
+    "active": true
+  },
+  {
+    "id": "COS201-990",
+    "question": "If constellation points move closer together, BER will:",
+    "options": [
+      "Become zero",
+      "Decrease",
+      "Increase",
+      "Stay same"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Khoảng cách điểm nhỏ khiến nhiễu dễ đẩy tín hiệu qua biên quyết định hơn.",
+    "tip": "closer constellation → higher BER.",
+    "active": false
+  },
+  {
+    "id": "COS201-991",
+    "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+    "options": [
+      "Minimum",
+      "Zero",
+      "A/2",
+      "Maximum"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.",
+    "tip": "Equal-prior ±A + symmetric AWGN → threshold 0.",
+    "active": true
+  },
+  {
+    "id": "COS201-992",
+    "question": "In a coded OFDM system with sufficient interleaving and FEC redundancy, what may recover data affected by a lost subcarrier when the loss is within the code capability?",
+    "options": [
+      "Recover using FEC",
+      "Stop transmission",
+      "Fail completely",
+      "Lose all data"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "FEC có thể khôi phục khi có đủ dư thừa và lỗi/xóa nằm trong khả năng mã. OFDM tự nó không bảo đảm cứu dữ liệu khi mất subcarrier.",
+    "tip": "Lost subcarrier → FEC có thể phục hồi nếu còn đủ redundancy.",
+    "active": true
+  },
+  {
+    "id": "COS201-993",
+    "question": "Why is information defined using a logarithmic function?",
+    "options": [
+      "To reduce noise",
+      "To increase entropy",
+      "To simplify equations",
+      "To satisfy additivity property"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Log biến phép nhân xác suất của các sự kiện độc lập thành phép cộng lượng tin.",
+    "tip": "information additivity → logarithm.",
+    "active": false
+  },
+  {
+    "id": "COS201-994",
+    "question": "Entropy represents:",
+    "options": [
+      "Noise power",
+      "Average information per symbol",
+      "Maximum transmission rate",
+      "Channel capacity"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Entropy lấy trung bình lượng tin −log₂p của các ký hiệu theo xác suất của chúng.",
+    "tip": "entropy → average bits/symbol.",
+    "active": true
+  },
+  {
+    "id": "COS201-995",
+    "question": "With noise spectral density N0 held fixed, if bit energy Eb doubles, what happens to the linear ratio Eb/N0?",
+    "options": [
+      "Decreases",
+      "Doubles",
+      "Halves",
+      "No change"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "N0 không đổi thì Eb/N0 nhân 2, tương đương tăng 3,0103 dB.",
+    "tip": "Fixed N0: ×2 Eb → ×2 Eb/N0 → +3 dB.",
+    "active": true
+  },
+  {
+    "id": "COS201-996",
+    "question": "Delta Modulation transmits:",
+    "options": [
+      "Full amplitude",
+      "Phase only",
+      "One bit indicating the sign of the difference between the input sample and its predicted value",
+      "Frequency only"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "DM cơ bản gửi một bit chỉ chiều tăng/giảm so với mức dự đoán, không gửi toàn bộ hiệu số.",
+    "tip": "DM → 1-bit sign of prediction error.",
+    "active": false
+  },
+  {
+    "id": "COS201-997",
+    "question": "If sampling clock jitter increases, system performance will:",
+    "options": [
+      "Increase bandwidth",
+      "Degrade",
+      "Improve",
+      "Stay constant"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Jitter làm thời điểm lấy mẫu lệch, tạo sai số biên độ đặc biệt lớn với tín hiệu biến thiên nhanh.",
+    "tip": "clock jitter → timing error → worse performance.",
+    "active": true
+  },
+  {
+    "id": "COS201-998",
+    "question": "For known source-symbol probabilities, why is binary Huffman coding optimal among binary prefix codes that encode one symbol at a time?",
+    "options": [
+      "Minimizes average code length",
+      "Removes noise",
+      "Uses fixed-length codes",
+      "Increases entropy"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Huffman tối thiểu hóa độ dài mã kỳ vọng trong lớp mã prefix theo ký hiệu. Không khẳng định thắng mọi mã khối hoặc arithmetic coding.",
+    "tip": "Huffman optimal → symbol-by-symbol binary prefix code.",
+    "active": true
+  },
+  {
+    "id": "COS201-999",
+    "question": "If subcarriers in OFDM are not orthogonal, result is:",
+    "options": [
+      "Bandwidth reduction",
+      "Interference",
+      "Perfect signal",
+      "Noise reduction"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Mất trực giao làm năng lượng subcarrier này rò vào quyết định của subcarrier khác.",
+    "tip": "OFDM nonorthogonal → ICI.",
+    "active": false
+  },
+  {
+    "id": "COS201-1000",
+    "question": "If IFFT is used at transmitter, it performs:",
+    "options": [
+      "Filtering",
+      "Noise removal",
+      "Detection",
+      "Combining subcarriers"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "IFFT cộng các sóng mang trực giao được gán dữ liệu để tạo waveform OFDM.",
+    "tip": "OFDM transmitter IFFT → combine subcarriers.",
+    "active": true
+  },
+  {
+    "id": "COS201-1001",
+    "question": "If sampling is not at optimal instant, result is:",
+    "options": [
+      "Reduced noise",
+      "No change",
+      "Increased error",
+      "Higher SNR"
+    ],
+    "answer": [
+      2
+    ],
+    "reason": "Lấy mẫu lệch tâm mắt làm giảm biên độ phân biệt và tăng ảnh hưởng ISI.",
+    "tip": "wrong sampling instant → increased errors.",
+    "active": true
+  },
+  {
+    "id": "COS201-1002",
+    "question": "If FFT is used at receiver, it performs:",
+    "options": [
+      "Demultiplexing subcarriers",
+      "Modulation",
+      "Amplification",
+      "Noise removal"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "FFT chiếu tín hiệu OFDM lên các sóng mang trực giao để tách các nhánh dữ liệu.",
+    "tip": "OFDM receiver FFT → demultiplexing.",
+    "active": false
+  },
+  {
+    "id": "COS201-1003",
+    "question": "The Sinc envelope in PAM spectrum results in:",
+    "options": [
+      "Flat response",
+      "Noise removal",
+      "Constant gain",
+      "High-frequency attenuation"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Xung giữ mẫu chữ nhật có Fourier Transform dạng sinc, suy giảm dần ở cao tần.",
+    "tip": "PAM sinc envelope → high-frequency attenuation.",
+    "active": false
+  },
+  {
+    "id": "COS201-1004",
+    "question": "For a known deterministic signal in white additive noise, why does a matched filter maximize the sampled output SNR?",
+    "options": [
+      "It matches signal spectrum",
+      "It removes noise",
+      "It increases bandwidth",
+      "It reduces energy"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Bất đẳng thức Cauchy–Schwarz đạt dấu bằng khi bộ lọc là phiên bản đảo thời gian/liên hợp của tín hiệu cần thu.",
+    "tip": "Matched filter tối ưu SNR trong white noise.",
+    "active": false
+  },
+  {
+    "id": "COS201-1005",
+    "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+    "options": [
+      "Zero",
+      "Maximum value",
+      "Minimum value",
+      "A/2"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Hai mức đối xứng, xác suất bằng nhau và nhiễu đối xứng cho ngưỡng 0. “Average value” cũ có thể cũng chỉ trung điểm bằng 0.",
+    "tip": "Equal-prior ±A + symmetric AWGN → threshold 0.",
+    "active": false
+  },
+  {
+    "id": "COS201-1006",
+    "question": "At fixed average symbol energy and AWGN level, why does increasing square M-QAM order generally increase the error probability?",
+    "options": [
+      "Smaller distance between points",
+      "Larger bandwidth",
+      "Lower frequency",
+      "Higher power"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Giữ công suất trung bình mà tăng M làm các điểm QAM sít nhau, nhiễu dễ gây nhầm hơn.",
+    "tip": "more QAM points → smaller distance.",
+    "active": true
+  },
+  {
+    "id": "COS201-1007",
+    "question": "The Q-function is used to:",
+    "options": [
+      "Measure signal power",
+      "Filter noise",
+      "Compute bandwidth",
+      "Calculate error probability"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Q(x) là xác suất đuôi Gaussian chuẩn, dùng tính xác suất nhiễu vượt biên quyết định.",
+    "tip": "Gaussian error tail → Q-function.",
+    "active": true
+  },
+  {
+    "id": "COS201-1008",
+    "question": "Why is repetition coding inefficient?",
+    "options": [
+      "Very low rate",
+      "Low redundancy",
+      "High noise",
+      "High error"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Lặp cùng một bit nhiều lần tiêu tốn nhiều bit truyền cho mỗi bit thông tin.",
+    "tip": "repetition n lần → code rate 1/n.",
+    "active": true
+  },
+  {
+    "id": "COS201-1009",
+    "question": "For a block code, which general guarantee holds whenever its minimum Hamming distance increases?",
+    "options": [
+      "Stay same",
+      "Not decrease; guaranteed correction is t = floor((d_min − 1)/2), so some increases leave t unchanged",
+      "Become zero",
+      "Decrease"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Số lỗi bảo đảm sửa được t=⌊(dmin−1)/2⌋. Tăng dmin từ 3 lên 4 vẫn chỉ sửa được 1 lỗi, nên không luôn tăng nghiêm ngặt.",
+    "tip": "Correct t errors ↔ dmin≥2t+1; t tăng theo bậc thang.",
+    "active": true
+  },
+  {
+    "id": "COS201-1010",
+    "question": "Compared with coherent antipodal BPSK at the same BER in AWGN, why does coherent orthogonal BFSK require about 3 dB more Eb/N0?",
+    "options": [
+      "Frequency shift",
+      "Bandwidth",
+      "Noise",
+      "Orthogonal signaling"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Ở cùng Eb, d² của BFSK trực giao là 2Eb, còn BPSK đối cực là 4Eb; cần gấp đôi Eb ≈ 3 dB.",
+    "tip": "coherent orthogonal BFSK vs BPSK → 3 dB, cùng BER/AWGN.",
+    "active": false
+  },
+  {
+    "id": "COS201-1011",
+    "question": "At a fixed symbol rate Rs, what happens to the possibility of zero-ISI baseband transmission if available ideal bandwidth is below Rs/2?",
+    "options": [
+      "Zero-ISI pulse shaping is no longer possible at that symbol rate",
+      "BER decreases",
+      "Signal improves",
+      "Noise decreases"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Tiêu chuẩn Nyquist yêu cầu B≥Rs/2 để có truyền không ISI lý tưởng; băng thấp hơn không đáp ứng ở cùng tốc độ symbol.",
+    "tip": "Nyquist zero-ISI bound → B≥Rs/2.",
+    "active": true
+  },
+  {
+    "id": "COS201-1012",
+    "question": "Why is entropy maximum when symbols are equally likely?",
+    "options": [
+      "No noise",
+      "Equal power",
+      "Minimum uncertainty",
+      "Maximum uncertainty"
+    ],
+    "answer": [
+      3
+    ],
+    "reason": "Khi mọi ký hiệu đều dễ xảy ra như nhau, không có ký hiệu ưu thế để đoán trước nên bất định lớn nhất.",
+    "tip": "maximum entropy → equiprobable symbols.",
+    "active": true
+  },
+  {
+    "id": "COS201-1013",
+    "question": "In conventional passband radio communication, why are baseband messages translated onto an RF carrier?",
+    "options": [
+      "To support efficient practical antenna radiation and use an allocated RF band",
+      "To increase power",
+      "To reduce bandwidth",
+      "To reduce noise"
+    ],
+    "answer": [
+      0
+    ],
+    "reason": "Sóng mang đưa thông điệp vào dải RF phù hợp anten và phân kênh; không phải mọi đường truyền baseband đều bắt buộc điều chế lên RF.",
+    "tip": "Passband radio → practical antenna + allocated RF band.",
+    "active": true
+  },
+  {
+    "id": "COS201-1014",
+    "question": "What is the main advantage of digital communication over analog?",
+    "options": [
+      "Simpler circuits",
+      "Regenerative decisions limit accumulated analog noise, although decision errors remain possible",
+      "Higher bandwidth",
+      "Lower cost always"
+    ],
+    "answer": [
+      1
+    ],
+    "reason": "Tái tạo các mức số hạn chế cộng dồn nhiễu tương tự; nhiễu đủ lớn vẫn gây quyết định sai.",
+    "tip": "digital regeneration → hạn chế noise accumulation, không miễn nhiễm mọi nhiễu.",
+    "active": false
+  }
+]

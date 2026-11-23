@@ -1,0 +1,74 @@
+[
+  {
+    "id": "yocto",
+    "title": "Yocto và BitBake",
+    "formula": "BBLAYERS → layer tham gia build · IMAGE_INSTALL → gói có trong image · populate_sdk → SDK",
+    "note": "BSP chứa cấu hình bo mạch và phần hỗ trợ phần cứng. BitBake báo lỗi khi tệp khai báo bằng require bị thiếu. Với Yocto 3.4 trở lên, IMAGE_INSTALL:append = \" strace\" thêm gói strace vào image. Bản cũ dùng IMAGE_INSTALL_append.",
+    "tip": "Thấy «thêm layer» thì tìm conf/bblayers.conf. Thấy «gói có sẵn khi khởi động» thì tìm IMAGE_INSTALL. Thấy «toolchain và sysroot cho máy phát triển» thì chọn tác vụ populate_sdk.",
+    "example": "Chạy bitbake -c populate_sdk core-image-minimal để tạo bộ cài SDK cho image core-image-minimal.",
+    "ids": ["LOS201-35", "LOS201-36", "LOS201-37", "LOS201-66", "LOS201-79", "LOS201-80"]
+  },
+  {
+    "id": "boot-diagnosis",
+    "title": "Chẩn đoán lỗi khởi động",
+    "formula": "Đã in log kernel → kernel đang chạy · VFS unable to mount root fs → kiểm tra root filesystem",
+    "note": "Với QEMU vexpress-a9, RAM bắt đầu ở 0x60000000. Địa chỉ nạp kernel, DTB và initramfs phải nằm trong RAM của bo đang dùng và các vùng phải tránh chồng nhau. Falcon Mode cho phép SPL khởi động thẳng kernel trên hệ thống đã cấu hình hỗ trợ.",
+    "tip": "Thấy «VFS unable to mount root fs» thì kiểm tra root=, driver lưu trữ hoặc initramfs. Nếu đã tải kernel qua TFTP và dùng root=/dev/nfs, kiểm tra tham số NFS, mạng và thư mục export trên máy chủ.",
+    "example": "Với vexpress-a9, bật hỗ trợ PL011 và PL011 console trong kernel, thêm console=ttyAMA0,115200 và dùng -nographic để xem log ở terminal. Nếu khởi động bằng initramfs, kiểm tra ảnh có /init chạy được.",
+    "ids": ["LOS201-46", "LOS201-48", "LOS201-52", "LOS201-54", "LOS201-76", "LOS201-96"]
+  },
+  {
+    "id": "busybox-init",
+    "title": "BusyBox và tiến trình init",
+    "formula": "Một binary → nhiều applet · sysinit chạy trước · askfirst đợi Enter",
+    "note": "BusyBox thường cung cấp shell ash. Nó chọn applet dựa trên tên lệnh gọi qua symlink hoặc đối số đầu tiên, với điều kiện applet đã được bật khi build. BusyBox init đọc /etc/inittab. Trường đầu chỉ định thiết bị đầu cuối nếu có. Trường trống dùng console mặc định.",
+    "tip": "Thấy «nhiều lệnh Unix trong một tệp nhỏ» thì nghĩ đến multi-call binary. Thấy script khởi tạo bắt buộc chạy xong trước các tác vụ khác thì chọn sysinit. Thấy shell chờ người dùng nhấn Enter thì chọn askfirst.",
+    "example": "busybox ls /dev gọi applet ls. Dòng ::sysinit:/etc/init.d/rcS chạy rcS lúc khởi tạo. Dòng ::askfirst:-/bin/sh mở login shell sau khi nhấn Enter.",
+    "ids": ["LOS201-24", "LOS201-25", "LOS201-38", "LOS201-39", "LOS201-40", "LOS201-74"]
+  },
+  {
+    "id": "kbuild-artifacts",
+    "title": "Kbuild và tệp sinh ra khi build kernel",
+    "formula": "obj-y → built-in · obj-m → module .ko · vmlinux → ELF kernel chưa nén",
+    "note": "Kbuild sinh include/generated/autoconf.h để mã C dùng các macro CONFIG_. Kbuild cũ gom các đối tượng built-in bằng built-in.o. Kbuild hiện đại dùng built-in.a. Tên vmlinuz thường chỉ ảnh kernel nén dùng để khởi động.",
+    "tip": "Thấy «ELF», «symbol» hoặc gỡ lỗi GDB thì chọn vmlinux. Thấy «nạp riêng lúc chạy» thì tìm tệp .ko. Câu hỏi nhắc đích danh drivers/built-in.o đang dùng tên theo Kbuild cũ.",
+    "example": "Dùng file vmlinux để kiểm tra định dạng ELF. Dùng nm vmlinux để xem bảng symbol khi tệp còn giữ symbol.",
+    "ids": ["LOS201-60", "LOS201-61", "LOS201-62", "LOS201-89", "LOS201-95", "LOS201-134"]
+  },
+  {
+    "id": "module-diagnostics",
+    "title": "Module, tham số và luồng gọi driver",
+    "formula": "modprobe → nạp module cùng phụ thuộc · insmod → nạp tệp .ko chỉ định",
+    "note": "module_param(debug_enable, int, 0) vẫn cho phép truyền tham số khi nạp module. Quyền 0 khiến tham số đó không hiện trong sysfs. Khi mở character device, major/minor xác định thiết bị đã đăng ký. VFS dùng file_operations để gọi thao tác của driver.",
+    "tip": "Thấy «dependency» hoặc cần nạp bằng tên module thì chọn modprobe. Nếu open() gây kernel panic, xem stack trace và phần mã mà driver thực sự chạy. Callback .open để NULL thường được VFS bỏ qua.",
+    "example": "Nếu demo_driver đã được cài và chưa nạp, chạy modprobe demo_driver debug_enable=1 để nạp cùng các phụ thuộc và đặt giá trị tham số lúc nạp.",
+    "ids": ["LOS201-26", "LOS201-27", "LOS201-28", "LOS201-83", "LOS201-84", "LOS201-85"]
+  },
+  {
+    "id": "fd-mmap",
+    "title": "File descriptor và ánh xạ bộ nhớ",
+    "formula": "read(fd, …) → đọc dữ liệu · lseek(fd, …) → đổi offset · mmap/munmap → tạo/gỡ ánh xạ",
+    "note": "lseek chỉ dùng được với đối tượng hỗ trợ seek. MAP_ANONYMOUS tạo vùng nhớ ban đầu bằng 0. MAP_SHARED cho phép các tiến trình cùng ánh xạ thấy thay đổi. Cần cơ chế đồng bộ nếu có truy cập đồng thời.",
+    "tip": "Thấy «đọc từ vị trí khác trong tệp» thì nghĩ đến lseek rồi read. Thấy «truy cập bằng con trỏ» thì chọn mmap. Thấy «chia sẻ vùng nhớ vô danh giữa cha và con» thì dùng MAP_SHARED | MAP_ANONYMOUS trước fork().",
+    "example": "Trên Linux, mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0) tạo vùng dùng chung sau fork(). Kiểm tra MAP_FAILED và dùng munmap(p, 4096) khi xong.",
+    "ids": ["LOS201-120", "LOS201-122", "LOS201-128", "LOS201-148", "LOS201-160", "LOS201-176"]
+  },
+  {
+    "id": "realtime-locking",
+    "title": "Deadline thời gian thực và đồng bộ luồng",
+    "formula": "Worst-case latency ≤ deadline · mutex bao trọn thao tác đọc–sửa–ghi",
+    "note": "Hệ thời gian thực được đánh giá theo khả năng đáp ứng deadline. Giảm đoạn không thể ngắt và chọn chính sách lập lịch phù hợp có thể giảm độ trễ. Với condition variable, đợi trong vòng while kiểm tra điều kiện và giữ cùng mutex khi kiểm tra.",
+    "tip": "Thấy «worst case» hoặc «deadline» thì so độ trễ lớn nhất với mốc đề bài. Thấy hai luồng cùng cập nhật biến thì tìm critical section cần khóa. Thấy luồng đợi một trạng thái đổi thì tìm condition variable đi kèm mutex.",
+    "example": "Deadline 10 ms, trung bình 1 ms và lần chậm nhất đo được 14 ms. Hệ đã trễ ít nhất một lần. Với biến count dùng chung, đặt lock trước count++ và unlock sau thao tác.",
+    "ids": ["LOS201-19", "LOS201-20", "LOS201-42", "LOS201-69", "LOS201-100", "LOS201-101"]
+  },
+  {
+    "id": "posix-sus",
+    "title": "Nhận diện các chuẩn POSIX và SUS",
+    "formula": "POSIX.1b → real-time · POSIX.1c → threads · XBD → định nghĩa · XCU → shell và tiện ích · XSH → giao diện",
+    "note": "Theo cách đánh số lịch sử, POSIX.1b bao gồm mở rộng real-time như asynchronous I/O, còn POSIX.1c bổ sung threads. Single UNIX Specification Version 2 gắn với chứng nhận UNIX 98. SUSv3 kết hợp bộ POSIX.1-2001 với đặc tả X/Open Curses Issue 4 Version 2.",
+    "tip": "Thấy «async I/O» trong câu hỏi về phiên bản cũ thì chọn POSIX.1b. Thấy «pthread» thì chọn POSIX.1c. Trong cấu trúc SUS, tra header ở XBD, lệnh shell ở XCU, hàm ở XSH.",
+    "example": "Tra kiểu dữ liệu và macro của <unistd.h> trong XBD, cú pháp lệnh grep trong XCU và giao diện hàm read() trong XSH.",
+    "ids": ["LOS201-117", "LOS201-119", "LOS201-121", "LOS201-127", "LOS201-138", "LOS201-165"]
+  }
+]

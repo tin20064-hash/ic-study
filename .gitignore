@@ -1,0 +1,28 @@
+# Local credentials and runtime data
+.env*
+.dev.vars*
+*.sqlite*
+*.db
+*.db-*
+*.pem
+*.key
+*.pfx
+*.p12
+IC_Study_Admin_Access.txt
+IC_Study_Admin_*.jpg
+IC_Study_Admin_*.png
+# Dependencies, temporary builds and historical deployment archives
+node_modules/
+.venv/
+__pycache__/
+.checks/
+.sites-runtime/
+.wrangler/
+.wallpaper-preview-store/
+backups/
+ic-study-web-stage/
+.github-upload/
+.github-upload-tools/
+*.tar
+*.tar.gz
+*.tgz

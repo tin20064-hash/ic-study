@@ -1,0 +1,33 @@
+.past-exam-filters{display:flex;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px;padding:22px}
+.past-exam-notice{padding:16px 22px;margin:0 0 20px;font-size:14px;line-height:1.7;color:var(--muted)}
+.past-exam-filters .field{flex:1;min-width:200px;margin:0}
+.past-exam-filters .quiet{padding-bottom:12px}
+.past-exam-library{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.past-exam-card{padding:26px;display:flex;flex-direction:column;align-items:stretch}
+.past-exam-card h2{font-size:21px;line-height:1.4;margin:24px 0 6px}
+.past-exam-card>p{color:var(--muted);margin:0 0 26px}
+.past-exam-card .progress{margin-top:auto;margin-bottom:12px}
+.past-exam-card p.quiet{margin-bottom:20px}
+.past-exam-card .btnrow{gap:12px}
+.past-exam-card .textbtn{font-size:12px}
+.past-exam-heading{display:flex;align-items:start;justify-content:space-between;gap:20px}
+.past-exam-heading>.btn{margin-top:6px;flex-shrink:0}
+.past-exam-heading>.btnrow{margin:6px 0 24px;flex-shrink:0;gap:10px;flex-wrap:wrap}
+.past-exam-reader{overflow:hidden}
+.past-exam-photo{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.past-exam-photo img{display:block;max-width:100%;width:100%;height:auto;margin:auto;background:#fff}
+.past-exam-photo figcaption{font-size:13px;line-height:1.6;color:var(--muted);padding:13px 16px;border-top:1px solid var(--line)}
+.past-exam-text{white-space:pre-wrap;font-size:19px;line-height:1.7;font-weight:550;margin-bottom:24px;user-select:text}
+.past-exam-actions{margin:24px 0;gap:12px}
+.past-exam-source{display:block;margin-top:22px}
+.past-exam-original{margin:24px 0;color:var(--accent);font-size:14px}
+.past-exam-original summary{cursor:pointer;padding:8px 0;font-weight:600}
+.past-exam-original[open] .past-exam-photo{margin:12px 0}
+.past-exam-reader .option:disabled{opacity:1;cursor:default}
+.past-exam-reader .feedback{margin-top:22px}
+.past-exam-reader .past-exam-ungraded{background:rgba(225,167,40,.12);border-color:rgba(191,137,28,.5)}
+.past-exam-diagram{display:block;max-width:100%;height:auto;margin:18px 0;border-radius:10px}
+.past-exam-correction{font-size:13px;color:var(--muted);padding-top:8px;border-top:1px solid var(--line)}
+.past-exam-layout .qnumber{display:grid;place-items:center;text-decoration:none}
+@media(max-width:1100px){.past-exam-library{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.past-exam-library{grid-template-columns:1fr}.past-exam-filters{gap:14px}.past-exam-heading{display:block}.past-exam-heading>.btn{margin-bottom:24px}.past-exam-card{padding:22px}}

@@ -1,0 +1,199 @@
+01 For an LTI system to be Bounded-input Bounded-Output (BIBO) stable, what specific condition must its Region of Convergence (ROC) in the z-domain satisfy?
+A. The ROC must be strictly bounded inside the unit circle. | B. The ROC must not include the origin z = 0. | C. The ROC must include the Unit Circle Izl = 1 | D. The ROC must encompass the entire z-plane.
+KEY [2] MATCH DGT302-501 0.9898 REUSE DGT302-501
+
+02 Determine the exact z-transform of the finite-duration signal x(n) = {2, 4, 5, 7, 0, 1}, where the arrow indicates the origin n = 0 at the first sample value 2.
+A. X(z) = 2 + 4z⁻¹ + 5z⁻² + 7z⁻³ + z⁻⁵ | B. X(z) = 2z² + 4z + 5 + 7z⁻¹ + z⁻³ | C. X(z) = 2 + 4z + 5z² + 7z³ + z⁵ | D. X(z) = 2z⁻¹ + 4z⁻² + 5z⁻³ + 7z⁻⁴ + z⁻⁶
+KEY [0] MATCH DGT302-522 0.9645 REUSE DGT302-522
+
+03 In the context of the -transform, the complex variable can be represented in polar form as z = r.ew_ What happens to the z-transform when it is evaluated exactly on the unit circle r = 10
+A. It becomes the Continuous-Time Fourier Transform (CTFT) | B. It becomes the Discrete-Time Fourier Transform (DTFT) | C. It evaluates to identically zero- | D. It becomes the Laplace transform.
+KEY [1] MATCH DGT302-500 0.978 REUSE DGT302-500
+
+04 What is the mathematical definition of the direct (two-sided) z-transform for a discrete-time sequence x(n)?
+A. X(z) = Σ[n=0..∞] x(n)z⁻ⁿ | B. X(z) = Σ[n=-∞..∞] x(n)z⁻ⁿ | C. X(z) = Σ[n=-∞..∞] x(n)exp(-jωn) | D. X(z) = ∫[-∞..∞] x(t)z^(-t) dt
+KEY [1] MATCH DGT302-542 0.9615 REUSE 
+
+05 According to the Linearity propeny of the -transform, what is the new Region of Convergence (ROC) when Wo signals are linearly combined alk(n) +
+A. It is the union of the individual ROCs. | B. It is at least the intersection of the individual ROCs (ROC ROCI PIROC2) | C. It covers the entire z-plane regardless of the signals- | D. It is the mathematical difference beween the wo ROCs.
+KEY [1] MATCH DGT302-533 0.9375 REUSE DGT302-533
+
+06 In the Parallel-Form structure for IIR filters, what mathematical technique is used to decompose the overall system function H(z) into independent parallel branches?
+A. Partial Fraction Expansion | B. Polynomial Long Division | C. The Bilinear Transformation | D. Fast Fourier Transform (FFT)
+KEY [0] MATCH DGT302-531 1.0 REUSE DGT302-531
+
+07 When an FIR Lattice structure is inverted to create an IIR All-Pole Lattice filter, what is the strict mathematical condition to guarantee that the resulting IIR system is BIBO stable?
+A. The absolute magnitude of all reflection coefficients must be strictly less than 1 | B. The magnitude of all reflection coefficients must be exactly equal to 0. | C. The absolute magnitude of all reflection coefficients must be strictly greater than 1- | D. The sum of all reflection coefficients must equal exactly 1.
+KEY [0] MATCH DGT302-503 0.9973 REUSE DGT302-503
+
+08 Lattice structures for FIR filters characterize the system using a specific set of parameters that offer high robustness against quantization. These parameters are called:
+A. Reflection coefficients | B. Twiddle factors | C. Quality factors | D. Transition bandwidths
+KEY [0] MATCH DGT302-534 1.0 REUSE DGT302-534
+
+09 What is the primary hardware consequence of quantizing the ideal, infinite-precision coefficients ak, bk of an IIR filter to fit into a b-bit memory register?
+A. The roots of the polynomial (poles and zeros) migrate to new grid-snapped locations, which can potentially push poles outside the unit circle and cause instability | B. The poles are immediately forced to the origin z = 0 transforming the filter into an FIR type. | C. The filter's response becomes perfectly stable regardless of the original pole locations, which can potentially push poles outside the unit circle and cause instability | D. The poles remain entirely unaffected; only the zeros migrate.
+KEY [0] MATCH DGT302-502 1.0 REUSE DGT302-502
+
+10 What is the name given to the frequency limit that is exactly half of the sampling frequency Fs/2?
+A. Nyquist frequency (or Folding frequency) | B. Shannon frequency | C. Baseband frequency | D. Intermediate frequency
+KEY [0] MATCH DGT302-536 1.0 REUSE DGT302-536
+
+11 In Sigma-Delta Modulation (SDM), where is the Integrator E placed to achieve noise shaping compared to standard Delta ModulatiorP
+A. After the lowpass filter. | B. Before the Delta modulator (Quantizer). | C. In the feedback loop of the DAC. | D. It replaces the holding circuit.
+KEY [1] MATCH DGT302-541 0.9801 REUSE DGT302-541
+
+12 When an analog signal is sampled in the time domain, what happens to its spectrum X(F) in the frequency domain?
+A. The spectrum is compressed into a single point. | B. The spectrum becomes a periodic repetition of the analog spectrum )G(F) at integer multiples of Fs. | C. The spectrum is completely attenuated. | D. The spectrum shifts entirely to the negative frequency axis.
+KEY [1] MATCH DGT302-514 0.9954 REUSE DGT302-514
+
+13 An ADC that compares each bit, one at a time, with the input analog signal is known as a:
+A. Flash converter | B. Dual-slope ramp converter | C. Successive-approximation converter | D. Tracking converter
+KEY [2] MATCH DGT302-520 0.9882 REUSE DGT302-520
+
+14 Which term applies to maintaining a given analog signal voltage level perfectly steady until the next sampling clock edge, allowing the ADC time to process ito
+A. Aliasing | B. Holding | C. Multiplexing | D. Stair-stepping
+KEY [1] MATCH DGT302-509 0.9968 REUSE DGT302-509
+
+15 A Moving Average (MA) model estimates the current value x(n) as a linear combination of current and past white noise inputs w(n)- Structurally, this corresponds to:
+A. An All-Zero (FIR) filter | B. An All-Pole filter | C. An Infinite Impulse Response (IIR) filter | D. An All-Pass phase equalizer
+KEY [0] MATCH DGT302-532 1.0 REUSE DGT302-532
+
+16 What is the primary difference in operational objectives between Linear Prediction and Optimum Linear Filtering (Wiener Filtering)Q
+A. Prediction estimates the signal from its own past. | B. Prediction uses IIR filters, while Wiener filtering strictly uses continuous-time analog filters. | C. Prediction minimizes the Absolute Error, while Wiener filtering minimizes the Mean Square Error. | D. Prediction requires non-causal data, while Wiener filtering is purely causal.
+KEY [0] MATCH DGT302-506 0.9922 REUSE DGT302-506
+
+17 In the design of optimal linear predictors, what is the standard mathematical objective function that engineers seek to minimize?
+A. The Mean Square Error (MSE) | B. The Absolute Error | C. The Signal-to-Noise Ratio (SNR) | D. The Maximum Amplitude Error
+KEY [0] MATCH DGT302-530 0.9961 REUSE DGT302-530
+
+18 When choosing a smoother window function (like Hamming instead of Rectangular) to improve the stopband attenuation of an FIR filter, what unavoidable trade-off must the engineer accept for a fixed filter length MO
+A. A wider main-lobe, resulting in a wider transition band (lower frequency resolution). | B. A narrower transition band, causing steeper cutoffs. | C. The total loss of the linear phase characteristic. | D. The filter becoming inherently unstable.
+KEY [0] MATCH DGT302-511 0.9976 REUSE DGT302-511
+
+19 In the Window Method for FIR filter design, what is the correct mathematical relationship used to obtain the practical impulse response h(n) from the ideal infinite response hd(n) and the window w(n)?
+A. h(n) = hd(n)/w(n) | B. h(n) = hd(n)*w(n) | C. h(n) = hd(n)+w(n) | D. h(n) = hd(n)·w(n)
+KEY [3] MATCH DGT302-543 0.9923 REUSE DGT302-543
+
+20 When designing an FIR filter using a rectangular window, does increasing the filter length M to a very large number eliminate the ripple amplitude of the Gibbs phenomenon?
+A. No, increasing M only narrows the transition band, but the maximum overshoot amplitude remains fixed at approximately 9%. | B. Yes, the ripple amplitude decreases proportionally to 11M, eventually reaching zero. | C. No, increasing M completely widens the transition band, making the ripple worse- | D. Yes, it perfectly flattens both the passband and the stopband.
+KEY [0] MATCH DGT302-527 1.0 REUSE DGT302-527
+
+21 Among the standard window functions, which window provides the greatest stopband attenuation (lowest peak side-lobe at -57 dB) but suffers from the widest transition band?
+A. Blackman window | B. Rectangular window | C. Bartlett (Triangular) window | D. Hanning window
+KEY [0] MATCH DGT302-547 0.6154 REUSE 
+
+22 You want to convert the sampling rate of a signal by a fractional factor of 3/4 (Interpolate by 3, Decimate by 4). Using Python's scipy.signal.upfirdn, what is the appropriate normalized cutoff frequency (relative to Nyquist) and the ideal DC Gain for the combined anti-aliasing/anti-imaging FIR filter?
+A. Normalized Cutoff = 1/4, Gain = 3 | B. Normalized Cutoff = 1/3, Gain = 4 | C. Normalized Cutoff = 3/4, Gain = 3 | D. Normalized Cutoff = 1/4, Gain = 1
+KEY [0] MATCH DGT302-516 0.4435 REUSE 
+
+23 In Python's scipy-slgnal library, the function upfirdn is specifically designed to:
+A. Efficiently apply an FIR filter using a Polyphase architecture while simultaneously performing upsampling and downsampling. | B. Calculate the Fast Fourier Transform of a decimated signal. | C. Automatically design an IIR filter using the Bilinear Transform. 1.1, | D. Convert an FIR filter to an IIR Lattice-Ladder structure.
+KEY [0] MATCH DGT302-526 0.9877 REUSE DGT302-526
+
+24 In a two-channel QMF bank with H1(z)=H0(-z), which conventional synthesis pair cancels the alias component?
+A. G0(z) = -H0(z) and G1(z) = -H0(-z) | B. G0(z) = H1(z) and G1(z) = H0(z) | C. G0(z) = 1/H0(z) and G1(z) = 1/H1(z) | D. G0(z) = H0(z) and G1(z) = -H0(-z)
+KEY [3] MATCH DGT302-543 0.4084 REUSE 
+
+25 When changing the sampling rate by a rational fractional factor I/D, what is the strictly required operational order to prevent irreversible information loss?
+A. Always Interpolate | B. Always Decimate | C. The order does not matter because both are linear operations | D. Both must be performed simultaneously without any intermediate filtering.
+KEY [0] MATCH DGT302-553 0.4345 REUSE 
+
+26 If two finite-duration signals x(n) and h(n) have lengths Lx and Lh respectively, what is the exact number of samples in their linear convolution sequence?
+A. Lx + Lh | B. Max(Lx, Lh) | C. Lx × Lh | D. Lx + Lh - 1
+KEY [3] MATCH DGT302-549 0.9934 REUSE DGT302-549
+
+27 The Direct Form II (Canonic Form) implementation improves upon Direct Form I by merging the delay elements. What is the total number of memory delays required for this highly memory-efficient structure?
+A. M + N | B. M × N | C. max(M, N) | D. M/N
+KEY [2] MATCH DGT302-528 0.9451 REUSE DGT302-528
+
+28 If a system's characteristics do not change over time, meaning a delayed input x(n-k) produces an identically delayed output y(n-k), the system is classified as:
+A. Time-Variant | B. Linear | C. Time-Invariant | D. Dynamic
+KEY [2] MATCH DGT302-546 0.8643 REUSE 
+
+29 Two LTI systems connected in parallel can be mathematically replaced by a single equivalent system with the impulse response:
+A. h_eq(n) = h1(n)*h2(n) | B. h_eq(n) = h1(n)-h2(n) | C. h_eq(n) = h1(n)+h2(n) | D. h_eq(n) = h1(n)·h2(n)
+KEY [2] MATCH DGT302-529 1.0 REUSE DGT302-529
+
+30 Every linear time-invariant (LTI) discrete-time system can be implemented using just three basic building blocks. These are:
+A. Integrator, Differentiator, and Adder. | B. Sampler, Quantizer, and Unit Delay. | C. Adder, Multiplier, and Unit Delay. | D. Multiplier, Quantizer, and Encoder
+KEY [2] MATCH DGT302-524 0.6531 REUSE 
+
+31 To simplify the writing and calculation of the DFT, the "Twiddle Factor" W_N is introduced. How is it mathematically defined?
+A. W_N = exp(j2π/N) | B. W_N = exp(-j2π/N) | C. W_N = exp(-jπ/N) | D. W_N = exp(jπ/N)
+KEY [1] MATCH DGT302-508 0.8592 REUSE 
+
+32 According to Parseval's Theorem for the DFT, which equation correctly represents the conservation of energy between the time domain and frequency domain?
+A. Σ[n=0..N-1]|x(n)|² = Σ[k=0..N-1]|X(k)|² | B. Σ[n=0..N-1]|x(n)|² = (1/N)·Σ[k=0..N-1]|X(k)|² | C. Σ[n=0..N-1]|x(n)| = (1/N)·Σ[k=0..N-1]|X(k)| | D. Σ[n=0..N-1]|x(n)|² = N·Σ[k=0..N-1]|X(k)|²
+KEY [1] MATCH DGT302-521 0.8162 REUSE 
+
+33 Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = x(n)cos(2πk0n/N), its N-point DFT is:
+A. (1/2)·[X((k-k0) mod N)+X((k+k0) mod N)] | B. X(k)·exp(-j2πkk0/N) | C. (1/2)·X(k)cos(2πk0/N) | D. X((k-k0) mod N)
+KEY [0] MATCH DGT302-519 0.7661 REUSE 
+
+34 Assuming that the lengths of discrete-time signals x(n) and h(n) are L and M, respectively. When is the N-point circular convolution between these signals strictly equal to the linear convolution between them?
+A. N ≤ L + M - 1 | B. N ≥ L·M | C. N ≥ L + M - 1 | D. N = L = M
+KEY [2] MATCH DGT302-549 0.5426 REUSE 
+
+35 The fundamental limitation in STFT, akin to the Gabor Limit (Uncertainty Principle), states that:
+A. High frequency signals cannot be down sampled | B. You cannot have perfect time resolution and perfect frequency resolution simultaneously. | C. The rectangular window has the lowest sidelobes. | D. Zero-padding destroys spectral leakage
+KEY [1] MATCH DGT302-504 1.0 REUSE DGT302-504
+
+36 What is the prerequisite for the radix-4 approach to compute DFT applicable?
+A. The number N of data points is a prime number. | B. The number N of data points is a composite number. | C. The number N of data points is a Fibonacci number. | D. The number N of data points is a power of 4.
+KEY [3] MATCH DGT302-525 1.0 REUSE DGT302-525
+
+37 For the most efficient division in a standard Radix-2 FFT algorithm, the sequence length N must satisfy which specific condition?
+A. N = 2, wherev is an integer. | B. N must be any even number. | C. N must be a prime number. | D. N = 4, where k is an integer
+KEY [0] MATCH DGT302-544 1.0 REUSE DGT302-544
+
+38 See Figure ** Consider the 8-point DIT FFT of the step sequence x(n) = O. 5, O. 5, O. 5, O. S, O, O, O, O. At the final computational stage (Stage 3), the calculation for the frequency bin X(l) involves a butterfly with inputs from Stage 2 and the twiddle factor z O. 707 jO. 707. Given that the top input to this — specific butterfly is O. 5 and the bottom input (already multiplied by the twiddle) contributes to the phase, what is the exact complex value of X(I)?
+A. 0.5 + ji.207 | B. 0.5 ji.207 - | C. 2.0 + jo | D. O jO.707 -
+KEY [1] MATCH DGT302-515 0.9487 REUSE 
+
+39 For a standard Radix-2 DIF FFT algorithm, what are the ordering requirements for the arrays?
+A. Input is in Natural order, Output is in Bit-reversed order. | B. Input is in Bit-reversed order, Output is in Natural order | C. Both are in Natural order. | D. Both are in Bit-reversed order.
+KEY [0] MATCH DGT302-513 0.9945 REUSE DGT302-513
+
+40 Using the standard radix-2 butterfly count, including trivial twiddle multiplications, how many complex multiplication steps are counted for a 1024-point DFT?
+A. 1024 | B. 5120 | C. 10240 | D. 2048
+KEY [1] MATCH DGT302-599 0.8127 REUSE 
+
+41 In the fundamental frequency range [-n, n] of the DTFT, the frequencies near w = 0 represent:
+A. The highest rate of oscillation. | B. The DC component (slowest variations). | C. The Nyquist frequency. | D. The phase distortion.
+KEY [1] MATCH DGT302-548 0.9634 REUSE DGT302-548
+
+42 Consider the causal decaying exponential sequence x(n) = a^n·u(n) with |a| < 1. What is its exact Discrete-Time Fourier Transform X(ω)?
+A. 1/(1+a·exp(-jω)) | B. 1/(1-a·exp(-jω)) | C. a/(1-exp(-jω)) | D. 1/(1-a·exp(jω))
+KEY [1] MATCH DGT302-535 0.8864 REUSE 
+
+43 Using the frequency differentiation property n·x(n) ↔ j·dX(ω)/dω, evaluate the DTFT of x(n) = n·a^n·u(n), for |a| < 1.
+A. a·exp(-jω)/(1-a·exp(-jω))² | B. a·exp(-jω)/(1+a·exp(-jω))² | C. exp(-jω)/(1-a·exp(-jω))² | D. -a·exp(-jω)/(1-a·exp(-jω))²
+KEY [0] MATCH DGT302-510 0.6897 REUSE 
+
+44 The Multiplication Theorem states that multiplying two signals in the time domain (e.g., applying a window function) causes what in the frequency domain?
+A. Periodic convolution of their spectra. | B. Multiplication of their spectra. | C. Phase distortion only. | D. Amplitude attenuation only.
+KEY [0] MATCH DGT302-538 0.9673 REUSE DGT302-538
+
+45 The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform (DTFT) of a sequence x(n) is mathematically defined as:
+A. X(ω) = Σ[n=-∞..∞] x(n)exp(jωn) | B. X(ω) = Σ[n=-∞..∞] x(n)exp(-jωn) | C. X(ω) = ∫[-∞..∞] x(t)exp(-jωt) dt | D. X(ω) = Σ[n=0..N-1] x(n)exp(-j2πkn/N)
+KEY [1] MATCH DGT302-523 0.9655 REUSE 
+
+46 To prevent waveform distortion (where different frequencies are delayed by different amounts of time and the Signal gets scrambled), an ideal filter must have a:
+A. Linear phase response | B. Nonlinear phase response | C. Zero magnitude response | D. Maximum-phase response
+KEY [0] MATCH DGT302-539 0.5618 REUSE 
+
+47 When designing an inverse system Hi(z) = 1/H(z) for the purpose of deconvolution (e.g., channel equalization), what happens to the zeros of the original channel H(z)?
+A. They become the zeros of the inverse system. | B. They disappear completely. | C. They become the poles of the inverse system. | D. They are shifted to the origin.
+KEY [2] MATCH DGT302-540 1.0 REUSE DGT302-540
+
+48 When a complex exponential sequence x(n) = A-exp(jwn) passes through an LTI system, it emerges as y(n) = Because the signal's shape does not change, complex exponentials are considered:
+A. Aliased signals of the system | B. Eigenfunctions of LTI systems | C. Transient responses | D. Notch frequencies
+KEY [1] MATCH DGT302-517 0.9532 REUSE DGT302-517
+
+49 To design a simple Notch filter that completely rejects and zeroes out a specific interference frequency (e.g., 60 Hz hum), where MUST the zeros be placed on the z-plane?
+A. Exactly on the unit circle at angles ±ω0 | B. At the origin z = 0 | C. Outside the unit circle at z = 2 | D. Exactly at z = -1 only
+KEY [0] MATCH DGT302-537 1.0 REUSE DGT302-537
+
+50 Why is a Minimum-Phase system highly desirable in telecommunications and data storage?
+A. It delays the signal by the maximum possible amount | B. It perfectly rejects all ambient noise. | C. It can be completely and perfectly equalized by a stable, causal IIR inverse filter. | D. It requires absolutely no multipliers to implement
+KEY [2] MATCH DGT302-507 0.9942 REUSE 

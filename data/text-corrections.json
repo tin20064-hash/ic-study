@@ -1,0 +1,3502 @@
+{
+  "DGT302-510": {
+    "question": "Using the frequency differentiation property n·x(n) ↔ j·dX(ω)/dω, evaluate the DTFT of the sequence x(n) = n·a^n·u(n) for |a| < 1",
+    "options": [
+      "a·e^(-jω) / (1 - a·e^(-jω))²",
+      "a·e^(-jω) / (1 + a·e^(-jω))²",
+      "e^(-jω) / (1 - a·e^(-jω))²",
+      "-a·e^(-jω) / (1 - a·e^(-jω))²"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-512": {
+    "options": [
+      "N ≤ L + M - 1",
+      "N ≥ L·M",
+      "N ≥ L + M - 1",
+      "N = L = M"
+    ],
+    "question": "For finite sequences of lengths L and M, what is the minimum general requirement on N that guarantees their N-point circular convolution equals their zero-padded linear convolution?",
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-519": {
+    "question": "Let X(k) be the N-point DFT of the sequence x(n). According to the Circular Frequency Shift (Modulation) property, if a new sequence is created by xs(n) = x(n)·cos(2πk0n/N), its N-point DFT is:",
+    "options": [
+      "(1/2)·[X((k - k0))N + X((k + k0))N]",
+      "X(k)·e^(-j2πkk0/N)",
+      "(1/2)·X(k)·cos(2πk0/N)",
+      "X((k - k0))N"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-523": {
+    "question": "The Analysis Equation (Forward Transform) for the Discrete-Time Fourier Transform (DTFT) of a sequence x(n) is mathematically defined as:",
+    "options": [
+      "X(ω) = Sum from n = -∞ to ∞ of x(n)·e^(jωn)",
+      "X(ω) = Sum from n = -∞ to ∞ of x(n)·e^(-jωn)",
+      "X(ω) = Integral from -∞ to ∞ of x(t)·e^(-jωt) dt",
+      "X(ω) = Sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)"
+    ]
+  },
+  "DGT302-528": {
+    "question": "The Direct Form II (Canonic Form) implementation improves upon Direct Form I by merging the delay elements. What is the total number of memory delays required for this highly memory-efficient structure?",
+    "options": [
+      "M + N",
+      "M×N",
+      "max(M,N)",
+      "M/N"
+    ]
+  },
+  "DGT302-535": {
+    "question": "Consider the causal decaying exponential sequence x(n) = a^n·u(n) with |a| < 1. What is its exact Discrete-Time Fourier Transform X(ω)?",
+    "options": [
+      "1 / (1 + a·e^(-jω))",
+      "1 / (1 - a·e^(-jω))",
+      "a / (1 - e^(-jω))",
+      "1 / (1 - a·e^(jω))"
+    ]
+  },
+  "DGT302-551": {
+    "question": "According to the Time Delay property of the One-Sided z-transform, what is the correct algebraic expression for a delay by 1 sample, Z+{y(n - 1)}?",
+    "options": [
+      "z^-1 Y+(z)",
+      "z^-1 Y+(z) + y(-1)",
+      "z·Y+(z) - z·y(0)",
+      "Y+(z) - Y(-1)"
+    ]
+  },
+  "DGT302-561": {
+    "question": "Given a 3rd-order FIR filter with the system function H(z) = 1 + (13/24)z^-1 + (5/8)z^-2 + (1/3)z^-3. What is the exact value of the reflection coefficient K3 for its equivalent Lattice structure?",
+    "options": [
+      "1/3",
+      "13/24",
+      "5/8",
+      "1"
+    ]
+  },
+  "DGT302-565": {
+    "question": "The Levinson-Durbin algorithm is revolutionary for solving the Yule-Walker equations because it exploits the Toeplitz structure to reduce computational complexity from O(p³) down to:",
+    "options": [
+      "O(p²)",
+      "O(p⁴)",
+      "O(N²)",
+      "O(p)"
+    ]
+  },
+  "DGT302-568": {
+    "options": [
+      "O(N log₂ N)",
+      "O(N²)",
+      "O(N)",
+      "O(2^N)"
+    ]
+  },
+  "DGT302-570": {
+    "question": "The Analysis Equation (Forward DFT) that transforms an N-point time-domain sequence x(n) into an N-point frequency sequence X(k) is mathematically defined as:",
+    "options": [
+      "X(k) = sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)",
+      "X(k) = sum from n = 0 to N-1 of x(n)·e^(j2πkn/N)",
+      "X(k) = (1/N) · sum from n = 0 to N-1 of x(n)·e^(-j2πkn/N)",
+      "X(k) = sum from n = -∞ to ∞ of x(n)·e^(-j2πkn/N)"
+    ]
+  },
+  "DGT302-573": {
+    "question": "According to the Linearity property of the DTFT, the transform of a1·x1(n) + a2·x2(n) is:",
+    "options": [
+      "a1·X1(ω) · a2·X2(ω)",
+      "a1·X1(ω) + a2·X2(ω)",
+      "X1(a1·ω) + X2(a2·ω)",
+      "(a1 + a2)·X1(ω)·X2(ω)"
+    ]
+  },
+  "DGT302-578": {
+    "question": "In Multirate Digital Signal Processing, the mathematical operation of Decimation (Downsampling) by an integer factor D is defined as generating a new sequence y(m) such that:",
+    "options": [
+      "y(m) = x(m)·D",
+      "y(m) = x(m/D)",
+      "y(m) = x(mD)",
+      "y(m) = x(m - D)"
+    ]
+  },
+  "DGT302-579": {
+    "question": "For a fractional sample rate converter by factor I/D, the cascaded anti-imaging and anti-aliasing filters can be combined into a single lowpass filter. What is the required cutoff frequency ω_c of this combined filter?",
+    "options": [
+      "min(π/I, π/D)",
+      "max(π/I, π/D)",
+      "π/(I·D)",
+      "π·(I/D)"
+    ]
+  },
+  "DGT302-583": {
+    "question": "In the frequency domain, the output spectrum Y(ω) of an LTI system is related to the input spectrum X(ω) and the frequency response H(ω) by which fundamental equation?",
+    "options": [
+      "Y(ω) = X(ω) * H(ω)",
+      "Y(ω) = X(ω) · H(ω)",
+      "Y(ω) = X(ω) + H(ω)",
+      "Y(ω) = X(ω) / H(ω)"
+    ]
+  },
+  "DGT302-591": {
+    "question": "Compute the convolution y(n) of the signals x(n) = {1, 3, 1} and h(n) = {1, 2, 2}. What is the total length (number of non-zero samples) of the resulting sequence y(n)?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  "DGT302-597": {
+    "question": "Let X(k) be the N-point DFT of the sequence x(n), where 0 ≤ n ≤ N-1. Based on the Duality property of the DFT, what is the exact N-point DFT of the sequence s(n) = X(n)?",
+    "options": [
+      "N·x((-k))N or N·x(N - k)",
+      "(1/N)·x(k)",
+      "x(-k)",
+      "N·X(k)"
+    ]
+  },
+  "DGT302-598": {
+    "question": "For an 8-point FFT (N = 8, requiring 3 bits), what is the correctly calculated Bit-Reversed index corresponding to the natural decimal index 3?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  "DGT302-599": {
+    "question": "What is the total number of complex additions required to compute an N-point DFT using the Radix-2 FFT algorithm?",
+    "options": [
+      "N²",
+      "N·log₂(N)",
+      "(N/2)·log₂(N)",
+      "2N·log₂(N)"
+    ]
+  },
+  "DGT302-600": {
+    "question": "Evaluate the exact complex value of the twiddle factor W8^2",
+    "options": [
+      "1",
+      "-1",
+      "-j",
+      "j"
+    ]
+  },
+  "DGT302-741": {
+    "options": [
+      "max(L,M)",
+      "L+M-1",
+      "2L",
+      "L+M"
+    ],
+    "question": "For sequences of lengths L and M, what is the minimum common FFT length N after zero-padding so FFT multiplication yields their exact linear convolution?",
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-748": {
+    "question": "What is the smallest positive period guaranteed for the DTFT of every discrete-time sequence?",
+    "options": [
+      "2π",
+      "π",
+      "∞",
+      "4π"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-811": {
+    "question": "The Nyquist rate is defined as:",
+    "options": [
+      "fs = W",
+      "fs = 2W",
+      "fs = 4W",
+      "fs = W/2"
+    ]
+  },
+  "COS201-816": {
+    "question": "For an ideal FM discriminator operating above threshold with white input noise, the post-detection noise power integrated over a message bandwidth W grows proportional to:",
+    "options": [
+      "W",
+      "W²",
+      "W³",
+      "1/W"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-836": {
+    "question": "FM threshold effect typically occurs around:",
+    "options": [
+      "0 dB",
+      "5 dB",
+      "10 dB",
+      "20 dB"
+    ]
+  },
+  "COS201-842": {
+    "question": "The bandwidth of NBFM is approximately:",
+    "options": [
+      "W",
+      "2W",
+      "Infinite",
+      "W/2"
+    ]
+  },
+  "COS201-845": {
+    "question": "For conventional AM with a single sinusoidal message, what is the maximum sideband-to-total power efficiency without overmodulation (0 ≤ μ ≤ 1)?",
+    "options": [
+      "1",
+      "1/2",
+      "1/3",
+      "2"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-856": {
+    "question": "How many layers are in the well-known OSI model?",
+    "options": [
+      "7",
+      "3",
+      "9",
+      "4"
+    ]
+  },
+  "COS201-860": {
+    "question": "What is the required bandwidth for a conventional AM signal if the message bandwidth is W?",
+    "options": [
+      "4W",
+      "2W",
+      "W/2",
+      "W"
+    ]
+  },
+  "COS201-870": {
+    "question": "A band-pass signal with bandwidth W centered at f_c is considered 'narrowband' if:",
+    "options": [
+      "W ≪ f_c.",
+      "W ≫ f_c.",
+      "W = f_c.",
+      "f_c = 0."
+    ]
+  },
+  "COS201-874": {
+    "question": "For conventional AM with a single sinusoidal message at 100% modulation (μ = 1), what fraction of total average power is carrier power?",
+    "options": [
+      "66.7% (Note: Pc = (1/2)Ac², PSB = (1/4)Ac² → Pc = (2/3)·Ptotal)",
+      "100%",
+      "50%",
+      "33.3%"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-877": {
+    "question": "To recover the message signal using an envelope detector, what is the required relationship for the modulation factor μ?",
+    "options": [
+      "μ > 1",
+      "μ = 0",
+      "μ can be any value",
+      "0 < μ ≤ 1 for ideal AM with a normalized message and no overmodulation"
+    ],
+    "review": false
+  },
+  "COS201-880": {
+    "question": "For an initially-at-rest LTI system to be causal, its impulse response h(t) must be zero for:",
+    "options": [
+      "t > 0.",
+      "t = 0.",
+      "All t.",
+      "t < 0."
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-902": {
+    "question": "For conventional AM with a single sinusoidal message, what is the maximum sideband-to-total power efficiency without overmodulation (0 ≤ μ ≤ 1)?",
+    "options": [
+      "2",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-916": {
+    "question": "For two real scalar variables with finite, nonzero variances, Pearson correlation lies in:",
+    "options": [
+      "[0, 1]",
+      "[1, 2]",
+      "[-1, 1]",
+      "(-∞, ∞)"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-918": {
+    "question": "PPM is analogous to which analog modulation scheme?",
+    "options": [
+      "DSB",
+      "AM",
+      "FM",
+      "PM"
+    ]
+  },
+  "COS201-962": {
+    "question": "For an ideal uniform ADC with fixed full scale and a full-scale sinusoidal input, raising resolution from 8 to 10 bits improves quantization SNR by approximately:",
+    "options": [
+      "10 dB",
+      "6 dB",
+      "3 dB",
+      "12 dB"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-308": {
+    "question": "Two long-channel nMOS devices have equal process parameters and overdrive voltage. Device A has W/L = 8 and device B has W/L = 2. What is the ideal saturation-current ratio IA/IB?",
+    "options": [
+      "8",
+      "4",
+      "2",
+      "64"
+    ]
+  },
+  "ICI211-309": {
+    "question": "A circuit consumes 4 mW dynamic power at 200 MHz. If only frequency doubles and all other factors remain constant, what is the new dynamic power?",
+    "options": [
+      "2 mW",
+      "4 mW",
+      "16 mW",
+      "8 mW"
+    ]
+  },
+  "ICI211-329": {
+    "question": "A memory contains 1024 words of 8 bits each. How many address bits are required to select one word?",
+    "options": [
+      "16",
+      "10",
+      "13",
+      "8"
+    ]
+  },
+  "ICI211-333": {
+    "question": "A positive-edge-triggered D flip-flop samples D = 1 immediately before the active edge. Ignoring setup/hold violations, what value appears at Q after the clock-to-Q delay?",
+    "options": [
+      "0",
+      "High impedance",
+      "1",
+      "An oscillating value"
+    ]
+  },
+  "ICI211-342": {
+    "question": "Two saturated MOSFETs have the same L and overdrive voltage, but transistor A has twice the width of transistor B. Ignoring short-channel effects, what is I_D,A / I_D,B?",
+    "options": [
+      "2",
+      "1",
+      "0.5",
+      "4"
+    ]
+  },
+  "ICI211-350": {
+    "question": "A dynamic node with capacitance 20 fF loses 2 fC of charge during evaluation. What voltage droop results from ΔV = ΔQ/C?",
+    "options": [
+      "1.0 V",
+      "0.10 V",
+      "0.01 V",
+      "10 V"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-358": {
+    "question": "During evaluation of an n-type dynamic gate, which input transition is generally unsafe?",
+    "options": [
+      "No transition at all",
+      "1 → 0",
+      "A monotonic 0 → 1 transition",
+      "0 → 1"
+    ]
+  },
+  "ICI211-393": {
+    "question": "For α = 0.2, CL = 20 fF, VDD = 1 V, and f = 500 MHz, what is the switching power α·CL·VDD²·f?",
+    "options": [
+      "0.2 μW",
+      "20 μW",
+      "200 μW",
+      "2 μW"
+    ]
+  },
+  "ICI211-405": {
+    "question": "A fabrication run costs $600,000 and produces 10,000 functional dies. Ignoring packaging cost, what is the manufacturing cost per functional die?",
+    "options": [
+      "$6",
+      "$600",
+      "$6,000",
+      "$60"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-406": {
+    "question": "How many transistors are required by a conventional complementary static CMOS three-input NAND gate?",
+    "options": [
+      "4",
+      "12",
+      "6",
+      "8"
+    ]
+  },
+  "ICI211-431": {
+    "question": "A manufacturing batch contains 2.0 million fabricated dies, of which 1.5 million pass all tests. What is the manufacturing yield?",
+    "options": [
+      "80%",
+      "75%",
+      "50%",
+      "25%"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-455": {
+    "question": "Which Boolean function is implemented by a static CMOS gate whose pull-down network has A and B in parallel and that combination in series with C?",
+    "options": [
+      "Y = A + B + C",
+      "Y = (A + B)C",
+      "Y = NOT[(A + B)C]",
+      "Y = NOT(AB + C)"
+    ]
+  },
+  "ICI211-465": {
+    "question": "A node with capacitance 40 fF is charged from 0 to 1 V. Using E = CL·VDD², how much energy is drawn from the supply for one charging event?",
+    "options": [
+      "40 fJ",
+      "20 fJ",
+      "4 fJ",
+      "80 fJ"
+    ]
+  },
+  "ICI211-469": {
+    "question": "A transmission-gate 2:1 multiplexer selects D0 when S = 0 and D1 when S = 1. Which Boolean expression describes its output?",
+    "options": [
+      "Y = NOT(S)·D0 + S·D1",
+      "Y = S(D0 + D1)",
+      "Y = S·D0 + NOT(S)·D1",
+      "Y = D0D1"
+    ]
+  },
+  "ICI211-484": {
+    "question": "For a long-channel nMOS in saturation, ID = 0.5β(VGS - VT)². If the overdrive voltage doubles while β is unchanged, by what factor does ID increase?",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "64"
+    ]
+  },
+  "LOS201-135": {
+    "question": "What character represents the root of the single directory hierarchy?",
+    "options": [
+      ".",
+      "..",
+      "/",
+      "~"
+    ]
+  },
+  "LOS201-151": {
+    "question": "Which IPC mechanism provides a byte-stream channel addressed by a filesystem pathname, allowing unrelated local processes to open it?",
+    "options": [
+      "Pipe",
+      "FIFO",
+      "Signal",
+      "Stack"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-153": {
+    "question": "Which numeric user ID (UID) is always assigned to the superuser?",
+    "options": [
+      "1",
+      "1000",
+      "0",
+      "-1"
+    ]
+  },
+  "LOS201-164": {
+    "question": "What is the name for a named pipe that exists in the file system?",
+    "options": [
+      "Socket",
+      "FIFO",
+      "Signal",
+      "Message"
+    ]
+  },
+  "LOS201-169": {
+    "question": "Which IPC mechanism is used to notify a process that an event occurred?",
+    "options": [
+      "Pipe",
+      "FIFO",
+      "Signal",
+      "Socket"
+    ]
+  },
+  "LOS201-183": {
+    "question": "Which IPC mechanism allows communication between processes on different hosts?",
+    "options": [
+      "FIFO",
+      "Message Queue",
+      "Socket",
+      "Signal"
+    ]
+  },
+  "LOS201-188": {
+    "question": "Under which organization's auspices were the POSIX standards developed?",
+    "options": [
+      "The Open Group",
+      "FSF",
+      "IEEE",
+      "ISO"
+    ]
+  },
+  "LOS201-195": {
+    "question": "Which GNU program is a highly extensible text editor created by Stallman?",
+    "options": [
+      "vi",
+      "nano",
+      "Emacs",
+      "ed"
+    ]
+  },
+  "LOS201-196": {
+    "question": "Which directory entry refers to the parent directory?",
+    "options": [
+      ".",
+      "..",
+      "/",
+      "root"
+    ]
+  },
+  "LOS201-200": {
+    "question": "Which mechanism is used for high-speed IPC by avoiding data copying?",
+    "options": [
+      "Pipe",
+      "FIFO",
+      "Shared Memory",
+      "Socket"
+    ]
+  },
+  "LOS201-203": {
+    "question": "Which directory entry refers to the directory itself?",
+    "options": [
+      "..",
+      ".",
+      "/",
+      "~"
+    ]
+  },
+  "LOS201-206": {
+    "question": "What was the name of the unofficial 1984 standard produced by UNIX vendors?",
+    "options": [
+      "/usr/group",
+      "FSF",
+      "BSD",
+      "SVR4"
+    ]
+  },
+  "LOS201-209": {
+    "question": "Which standard body collaborated with IEEE and The Open Group to form the Austin Group?",
+    "options": [
+      "ISO/IEC",
+      "FSF",
+      "GNU",
+      "Linux Foundation"
+    ]
+  },
+  "LOS201-212": {
+    "question": "Which version of the Linux kernel brought an end to separate stable/development branches?",
+    "options": [
+      "1",
+      "2",
+      "2.4",
+      "2.6"
+    ]
+  },
+  "DGT302-500": {
+    "question": "In the context of the z-transform, the complex variable z can be represented in polar form as z = r·e^(jω). What happens to the z-transform when it is evaluated exactly on the unit circle r = 1?"
+  },
+  "DGT302-505": {
+    "options": [
+      "G0(z) = -H0(z) and G1(z) = -H0(-z)",
+      "G0(z) = H1(z) and G1(z) = H0(z)",
+      "G0(z) = 1/H0(z) and G1(z) = 1/H1(z)",
+      "G0(z) = H0(z) and G1(z) = -H0(-z)"
+    ],
+    "question": "In a two-channel QMF bank with H1(z)=H0(-z), which conventional synthesis pair cancels the alias component?",
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-508": {
+    "options": [
+      "WN = exp(j2π/N)",
+      "WN = exp(-j2π/N)",
+      "WN = exp(-jπ/N)",
+      "WN = exp(jπ/N)"
+    ]
+  },
+  "DGT302-515": {
+    "question": "Consider the 8-point DIT FFT of the step sequence x(n) = {0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0}. At the final computational stage (Stage 3), the calculation for the frequency bin X(1) involves a butterfly with inputs from Stage 2 and the twiddle factor W8^1 ≈ 0.707 - j0.707. Given that the top input to this specific butterfly is 0.5 and the bottom input (already multiplied by the twiddle) contributes to the phase, what is the exact complex value of X(1)?",
+    "options": [
+      "0.5 + j1.207",
+      "0.5 - j1.207",
+      "2.0 + j0",
+      "0 - j0.707"
+    ]
+  },
+  "DGT302-517": {
+    "question": "When a complex exponential sequence x(n) = A·exp(jωn) passes through an LTI system, it emerges as y(n) = A·H(ω)·exp(jωn). Because the signal's shape does not change, complex exponentials are considered:"
+  },
+  "DGT302-521": {
+    "options": [
+      "Sum from n = 0 to N-1 of |x(n)|² = Sum from k = 0 to N-1 of |X(k)|²",
+      "Sum from n = 0 to N-1 of |x(n)|² = (1/N) · Sum from k = 0 to N-1 of |X(k)|²",
+      "Sum from n = 0 to N-1 of |x(n)| = (1/N) · Sum from k = 0 to N-1 of |X(k)|",
+      "Sum from n = 0 to N-1 of |x(n)|² = N · Sum from k = 0 to N-1 of |X(k)|²"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-522": {
+    "question": "Determine the exact z-transform of the finite-duration signal x(n) = {2, 4, 5, 7, 0, 1} (where the arrow indicates the origin n = 0 at the first sample value 2).",
+    "options": [
+      "X(z) = 2 + 4z^-1 + 5z^-2 + 7z^-3 + z^-5",
+      "X(z) = 2z² + 4z + 5 + 7z^-1 + z^-3",
+      "X(z) = 2 + 4z + 5z² + 7z³ + z^5",
+      "X(z) = 2z^-1 + 4z^-2 + 5z^-3 + 7z^-4 + z^-6"
+    ]
+  },
+  "DGT302-529": {
+    "options": [
+      "heq(n) = h1(n) * h2(n)",
+      "heq(n) = h1(n) - h2(n)",
+      "heq(n) = h1(n) + h2(n)",
+      "heq(n) = h1(n) · h2(n)"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-537": {
+    "options": [
+      "Exactly on the unit circle at angles ±ω0",
+      "At the origin z = 0",
+      "Outside the unit circle at z = 2",
+      "Exactly at z = -1 only"
+    ]
+  },
+  "DGT302-542": {
+    "question": "What is the mathematical definition of the direct (two-sided) z-transform for a discrete-time sequence x(n)?",
+    "options": [
+      "X(z) = Sum from n = 0 to ∞ of x(n)·z^(-n)",
+      "X(z) = Sum from n = -∞ to ∞ of x(n)·z^(-n)",
+      "X(z) = Sum from n = -∞ to ∞ of x(n)·e^(-jωn)",
+      "X(z) = Integral from -∞ to ∞ of x(t)·z^(-t) dt"
+    ]
+  },
+  "DGT302-543": {
+    "options": [
+      "h(n) = h_d(n) / w(n)",
+      "h(n) = h_d(n) * w(n)",
+      "h(n) = h_d(n) + w(n)",
+      "h(n) = h_d(n) · w(n)"
+    ]
+  },
+  "DGT302-544": {
+    "options": [
+      "N = 2^v, where v is an integer.",
+      "N must be any even number.",
+      "N must be a prime number.",
+      "N = 4^k, where k is an integer."
+    ]
+  },
+  "DGT302-548": {
+    "question": "In the fundamental frequency range [-π, π] of the DTFT, the frequencies near ω = 0 represent:"
+  },
+  "DGT302-552": {
+    "question": "What is the mathematically derived Z-transform of the delayed sequence x(n) = 10^n·u(n - 2)?",
+    "options": [
+      "10z^(-1)/(1−10z^(-2)), ROC: |z| > √10",
+      "100z^(-1)/(1−10z^(-1)), ROC: |z| > 10",
+      "100z^(-2)/(1−10z^(-1)), ROC: |z| > 10",
+      "10z^(-2)/(1−10z^(-2)), ROC: |z| > √10"
+    ],
+    "review": false
+  },
+  "DGT302-555": {
+    "question": "A linear time-invariant system is characterized by the system function H(z) = (3 - 4z^-1) / [(1 - 0.5z^-1)(1 - 2z^-1)]. What is the required Region of Convergence (ROC) of H(z) such that this system guarantees BIBO stability?",
+    "options": [
+      "|z| < 0.5",
+      "0.5 < |z| < 2",
+      "|z| > 0.5",
+      "|z| > 2"
+    ]
+  },
+  "DGT302-558": {
+    "options": [
+      "A single impulse function δ(t)",
+      "A rectangular window w(n)",
+      "A periodic impulse train Σδ(t - nT)",
+      "A continuous sine wave"
+    ]
+  },
+  "DGT302-575": {
+    "question": "For a real sequence, wherever X(ω)≠0 and phase is interpreted modulo 2π, conjugate symmetry implies that the phase spectrum is:",
+    "options": [
+      "Even function ∠X(-ω) = ∠X(ω)",
+      "Odd function ∠X(-ω) = -∠X(ω)",
+      "Periodic function with period π",
+      "Purely positive function"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-577": {
+    "question": "Consider a discrete-time signal that is entirely real-valued and possesses perfect even symmetry in the time domain x(n) = x(-n). By applying the DTFT symmetry properties, what strict conclusion can be drawn about its frequency spectrum X(ω)?",
+    "options": [
+      "X(ω) is purely imaginary and odd.",
+      "X(ω) is real and even; wherever X(ω) is nonzero, its phase is 0 or π modulo 2π.",
+      "X(ω) has a linear phase shift proportional to n.",
+      "X(ω) is zero at the Nyquist frequency ω = π."
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-580": {
+    "question": "Based on Proakis 11.2, downsampling a discrete sequence x(n) by a factor of D = 2 produces the signal xd(n) = x(2n). In the frequency domain, what is the exact mathematical relationship between the new spectrum Xd(ω) and the original spectrum X(ω)?",
+    "options": [
+      "Xd(ω) = X(ω/2)",
+      "Xd(ω) = X(2ω)",
+      "Xd(ω) = (1/2)·[X(2ω) + X(2ω - 2π)]",
+      "Xd(ω) = (1/2)·[X(ω/2) + X((ω - 2π)/2)]"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-584": {
+    "question": "For H(z)=(1−a)/(1−az^(-1)), 0<a<1, suppose a −3 dB cutoff ωc∈[0,π] exists. Which equation must ωc satisfy?",
+    "options": [
+      "cos(ωc) = (4a - 1 - a²) / (2a)",
+      "cos(ωc) = (1 + a²) / (2a)",
+      "cos(ωc) = (1 - a) / (1 + a)",
+      "cos(ωc) = a"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-587": {
+    "options": [
+      "Sum of h(k) from k = -∞ to ∞ equals 0",
+      "h(n) = 0 for n < 0",
+      "h(n) = 0 for n > 0",
+      "Sum of h(k) from k = -∞ to ∞ is finite (< ∞)"
+    ]
+  },
+  "DGT302-589": {
+    "options": [
+      "[x(n) * h1(n)] * h2(n) = x(n) * [h1(n) * h2(n)]",
+      "x(n) * [h1(n) + h2(n)] = x(n) * h1(n) + x(n) * h2(n)",
+      "x(n) * δ(n) = 1",
+      "x(n) * h(n) = h(n) * x(n)"
+    ]
+  },
+  "DGT302-604": {
+    "options": [
+      "f(ax1+bx2) = af(x1)+bf(x2)",
+      "f(x²) = (f(x))²",
+      "f(x+c) = f(x)+c",
+      "f(x) = mx+c"
+    ]
+  },
+  "DGT302-655": {
+    "options": [
+      "f(ax1+bx2) = af(x1)+bf(x2)",
+      "f(x²) = (f(x))²",
+      "f(x+c) = f(x)+c",
+      "f(x) = mx+c"
+    ]
+  },
+  "DGT302-633": {
+    "options": [
+      "Fs < 2Fmax",
+      "Fs > 2Fmax",
+      "Fs = Fmax",
+      "Fs = 0"
+    ]
+  },
+  "DGT302-686": {
+    "options": [
+      "Fs < 2Fmax",
+      "Fs > 2Fmax",
+      "Fs = Fmax",
+      "Fs = 0"
+    ]
+  },
+  "DGT302-740": {
+    "options": [
+      "Y(e^jω) = X(e^jω) - H(e^jω)",
+      "Y(e^jω) = X(e^jω) + H(e^jω)",
+      "Y(e^jω) = X(e^jω) / H(e^jω)",
+      "Y(e^jω) = X(e^jω)·H(e^jω)"
+    ]
+  },
+  "DGT302-743": {
+    "question": "For H(z) = 1 - z^(-M), at which frequencies do magnitude zeros occur?",
+    "options": [
+      "ω = π(2k + 1)/M for integer k",
+      "ω = πkM for integer k",
+      "ω = 2πk/M for integer k",
+      "ω = 2πM/k for integer k"
+    ]
+  },
+  "DGT302-773": {
+    "options": [
+      "Replace every pole of H(z) by a zero",
+      "Evaluate H(z) only at the origin z = 0",
+      "Differentiate H(z) with respect to z",
+      "Evaluate H(z) on the unit circle z = e^(jω)"
+    ]
+  },
+  "COS201-903": {
+    "options": [
+      "fs = W",
+      "fs < 2W",
+      "fs > 2W",
+      "fs = 2W"
+    ],
+    "question": "For a real baseband signal occupying [−W, W], which inequality describes the full undersampling range that violates the Nyquist bound (rather than just one special sampling rate)?",
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-971": {
+    "options": [
+      "fs < 2W",
+      "fs = W",
+      "fs > 2W",
+      "fs = 2W"
+    ],
+    "question": "For a real baseband signal occupying [−W, W], which inequality describes the full undersampling range that violates the Nyquist bound (rather than just one special sampling rate)?",
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-440": {
+    "options": [
+      "NMH = 1.8 V and NML = 0 V",
+      "NMH = 0.7 V and NML = 1.1 V",
+      "NMH = 1.1 V and NML = 0.7 V",
+      "NMH = 0.7 V and NML = 0.7 V"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "LOS201-76": {
+    "question": "A student wants serial output from the ARMv7 guest to appear in the terminal. Which pair of settings is most consistent with the lab?",
+    "options": [
+      "Enable ARM AMBA PL011 support and use `console=ttyAMA0,115200`.",
+      "Disable all serial drivers and use `console=ttyS0,9600`.",
+      "Enable USB mass storage and use `console=/dev/sda1`.",
+      "Use `console=tty0` only because QEMU `-nographic` does not support UART output."
+    ]
+  },
+  "COS201-809": {
+    "options": [
+      "It consumes more energy",
+      "It includes more hardware components",
+      "It must process weak signals and compensate for channel impairments",
+      "It operates at higher frequencies",
+      "It does not use modulation"
+    ]
+  },
+  "COS201-818": {
+    "options": [
+      "It increases transmission speed",
+      "It reduces power consumption",
+      "It limits system performance",
+      "It improves signal quality",
+      "It increases bandwidth"
+    ]
+  },
+  "COS201-820": {
+    "options": [
+      "A noise generator",
+      "A frequency-selective system",
+      "A signal amplifier",
+      "A digital encoder",
+      "A storage device"
+    ]
+  },
+  "COS201-828": {
+    "options": [
+      "It increases signal strength",
+      "It simplifies system design and allows independent development of system components",
+      "It eliminates the need for modulation",
+      "It reduces transmission delay",
+      "It increases bandwidth efficiency"
+    ]
+  },
+  "COS201-830": {
+    "options": [
+      "Smooth transition",
+      "Exponential response",
+      "Rectangular frequency response",
+      "Random response",
+      "Linear response"
+    ]
+  },
+  "COS201-839": {
+    "options": [
+      "periodic",
+      "Absolutely integrable",
+      "Constant",
+      "Discrete",
+      "Linear"
+    ]
+  },
+  "COS201-840": {
+    "options": [
+      "Finite frequency response",
+      "Finite impulse response energy",
+      "Absolutely integrable impulse response",
+      "Periodic impulse response",
+      "Linear phase response"
+    ]
+  },
+  "COS201-844": {
+    "options": [
+      "To generate the message signal",
+      "To store transmitted information",
+      "To convert the message into a signal suitable for transmission",
+      "To detect noise in the channel",
+      "To deliver the message to the destination"
+    ]
+  },
+  "COS201-846": {
+    "options": [
+      "Amplitude scaling",
+      "Phase shift",
+      "Frequency scaling",
+      "Convolution",
+      "Noise addition"
+    ]
+  },
+  "DGT302-518": {
+    "question": "Using the standard radix-2 butterfly count (N/2)·log₂N, including trivial twiddle-factor multiplications, how many complex multiplications are counted for N = 1024?",
+    "review": false
+  },
+  "DGT302-559": {
+    "question": "For delta modulation with step size Δ and sampling period T, which condition avoids slope-overload distortion?",
+    "options": [
+      "max_t |dx(t)/dt| ≤ Δ/T",
+      "max_t |dx(t)/dt| ≤ 2Δ/T",
+      "max_t |x(t)| ≤ Δ",
+      "max_t |d²x(t)/dt²| ≤ Δ/T"
+    ],
+    "review": false
+  },
+  "DGT302-576": {
+    "options": [
+      "A shift of the spectrum to X(ω−ω₀)",
+      "A shift of the spectrum to X(ω+ω₀)",
+      "A phase rotation exp(jw0n)X(w)",
+      "No change in the magnitude spectrum"
+    ],
+    "review": false
+  },
+  "DGT302-626": {
+    "options": [
+      "O(1)",
+      "O(N²)",
+      "O(log₂N)",
+      "O(N·log₂N)"
+    ],
+    "review": false
+  },
+  "DGT302-679": {
+    "options": [
+      "O(1)",
+      "O(N²)",
+      "O(log₂N)",
+      "O(N·log₂N)"
+    ],
+    "review": false
+  },
+  "DGT302-754": {
+    "question": "For a causal rational LTI system, poles strictly inside the unit circle imply:",
+    "review": false
+  },
+  "DGT302-777": {
+    "question": "Two distinct analog signals produce exactly the same samples at a given sampling rate. Which explanation is most accurate?",
+    "options": [
+      "Both passed through a DAC",
+      "Both used the same ADC resolution",
+      "Both were oversampled",
+      "Both experienced aliasing",
+      "The samples cannot distinguish the signals: this is an aliasing ambiguity, without requiring both signals to exceed Nyquist."
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "DGT302-782": {
+    "question": "What does |H(e^(jω))| indicate for a sinusoidal input at frequency ω?",
+    "review": false
+  },
+  "DGT302-790": {
+    "question": "For a wide-sense stationary input with PSD Sxx(e^(jω)), which expression gives the output PSD of a stable LTI system?",
+    "options": [
+      "Syy(e^(jω)) = |H(e^(jω))|²·Sxx(e^(jω))",
+      "Syy(e^(jω)) = H(e^(jω)) + Sxx(e^(jω))",
+      "Syy(e^(jω)) = Sxx(e^(jω)) / |H(e^(jω))|",
+      "Syy(e^(jω)) = H(e^(jω))·Sxx(e^(jω))"
+    ],
+    "review": false
+  },
+  "COS201-801": {
+    "question": "If a variable-length code is not prefix-free, which conclusion is always valid?",
+    "options": [
+      "Work normally",
+      "Become ambiguous",
+      "Increase speed",
+      "Reduce noise",
+      "Instantaneous decoding is not guaranteed; the code may still be uniquely decodable with lookahead."
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "COS201-815": {
+    "question": "Which requirement of conventional static Huffman coding can be inconvenient when source statistics are unavailable or change rapidly?",
+    "review": false
+  },
+  "COS201-823": {
+    "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+    "options": [
+      "It is random",
+      "It is deterministic",
+      "It is weaker",
+      "It is filtered",
+      "It is structured interference from neighboring symbols caused by channel memory."
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "COS201-873": {
+    "question": "A linear time-invariant (LTI) system initially at rest is completely characterized by its:",
+    "review": false
+  },
+  "COS201-906": {
+    "question": "In the I-Q representation of a modulated signal, what do I and Q stand for?",
+    "review": false
+  },
+  "COS201-941": {
+    "options": [
+      "Sampling is low",
+      "Step size too small",
+      "Signal is fast",
+      "Frequency is high",
+      "Step size is too large relative to a slowly varying input signal"
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "COS201-978": {
+    "question": "Why does intersymbol interference (ISI) typically require channel equalization rather than just treating it as independent random noise?",
+    "options": [
+      "It is weaker",
+      "It is random",
+      "It is deterministic",
+      "It is filtered",
+      "It is structured interference from neighboring symbols caused by channel memory."
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "COS201-985": {
+    "question": "If a variable-length code is not prefix-free, which conclusion is always valid?",
+    "options": [
+      "Become ambiguous",
+      "Reduce noise",
+      "Work normally",
+      "Increase speed",
+      "Instantaneous decoding is not guaranteed; the code may still be uniquely decodable with lookahead."
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "COS201-992": {
+    "question": "In a coded OFDM system with sufficient interleaving and FEC redundancy, what may recover data affected by a lost subcarrier when the loss is within the code capability?",
+    "review": false
+  },
+  "ICI211-255": {
+    "question": "What is a characteristic performance advantage of a semi-dynamic flip-flop (SDFF)?",
+    "options": [
+      "Fast clock-to-Q operation using a dynamic front end and a static latch",
+      "Reduced setup margins",
+      "Dynamic threshold instability",
+      "Oscillating latch behavior"
+    ],
+    "review": false
+  },
+  "ICI211-268": {
+    "answer": [
+      3
+    ],
+    "review": false,
+    "question": "What does dynamic logic require to maintain correct operation in digital CMOS circuits?",
+    "options": [
+      "Constant threshold scaling",
+      "Continuous conduction paths",
+      "Infinite voltage supply",
+      "Periodic precharge/evaluate cycles that restore dynamic-node charge"
+    ]
+  },
+  "ICI211-286": {
+    "question": "In a symmetric CMOS inverter under a slow input sweep, where is the direct-path short-circuit current approximately greatest?",
+    "options": [
+      "Vin near the inverter switching point VM ≈ VDD/2",
+      "Vin equals ground",
+      "Vout equals VDD",
+      "Current becomes zero"
+    ],
+    "review": false
+  },
+  "ICI211-334": {
+    "answer": [
+      2
+    ],
+    "review": false,
+    "question": "A wire has R = 2 kΩ and total C = 100 fF. Using the first-order estimate 0.69RC, what delay is expected?",
+    "options": [
+      "13.8 ps",
+      "1.38 ns",
+      "138 ps",
+      "69 ps"
+    ]
+  },
+  "ICI211-340": {
+    "options": [
+      "Increased threshold voltage levels",
+      "Reducing coupling area or increasing dielectric separation, with other factors fixed",
+      "Reduced wire spacing conditions",
+      "Saturated carrier velocity effects"
+    ],
+    "review": false
+  },
+  "ICI211-351": {
+    "question": "In a symmetric CMOS inverter under a slow input sweep, where is the direct-path short-circuit current approximately greatest?",
+    "options": [
+      "Vin near VTN, well below VDD/2",
+      "Vin equals 0 V",
+      "Vin equals VDD",
+      "Vin near the inverter switching point VM ≈ VDD/2"
+    ],
+    "review": false,
+    "answer": [
+      3
+    ]
+  },
+  "ICI211-352": {
+    "options": [
+      "Dynamic oscillating current",
+      "Subthreshold leakage and reverse-biased junction leakage",
+      "Capacitive inductive current",
+      "Regenerative clock current"
+    ],
+    "review": false
+  },
+  "ICI211-363": {
+    "question": "Compared with a saturated enhancement-load inverter, what advantage does a properly biased linear enhancement-load inverter provide?",
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-407": {
+    "answer": [
+      3
+    ],
+    "review": false,
+    "question": "A block leaks 2 mA at VDD = 0.8 V. What is its static power consumption?",
+    "options": [
+      "0.16 mW",
+      "2.5 mW",
+      "16 mW",
+      "1.6 mW"
+    ]
+  },
+  "ICI211-411": {
+    "options": [
+      "0.5 V",
+      "1.3 V",
+      "1.8 V",
+      "1.0 V"
+    ],
+    "review": false
+  },
+  "ICI211-424": {
+    "question": "Which performance advantage is characteristic of a semi-dynamic flip-flop (SDFF)?",
+    "options": [
+      "Signal drive strength",
+      "Capacitor leakage current",
+      "Threshold voltage mismatch",
+      "Oxide breakdown voltage",
+      "Fast clock-to-Q operation using a dynamic front end and a static latch"
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "ICI211-433": {
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-450": {
+    "answer": [
+      3
+    ],
+    "review": false,
+    "question": "A first-order RC node has R = 4 kΩ and C = 50 fF. Using t ≈ 0.69RC, what is the estimated propagation delay?",
+    "options": [
+      "69 ps",
+      "13.8 ps",
+      "345 ps",
+      "138 ps"
+    ]
+  },
+  "LOS201-37": {
+    "options": [
+      "KERNEL_FEATURES",
+      "IMAGE_INSTALL",
+      "PACKAGE_CLASSES",
+      "BBPATH"
+    ],
+    "review": false
+  },
+  "LOS201-84": {
+    "options": [
+      "An invalid function pointer or a bug inside the driver open callback",
+      "A missing DHCP server",
+      "A corrupted initramfs image",
+      "An incorrect kernel command line"
+    ],
+    "review": false
+  },
+  "LOS201-122": {
+    "options": [
+      "read()",
+      "write()",
+      "lseek()",
+      "open()"
+    ],
+    "review": false
+  },
+  "LOS201-128": {
+    "question": "Which function directly exposes the kernel file-descriptor read system-call interface, unlike formatted stdio or a memory allocator?",
+    "review": false
+  },
+  "LOS201-165": {
+    "options": [
+      "XBD",
+      "XSH",
+      "XCU (Shell and Utilities)",
+      "XRAT"
+    ],
+    "review": false
+  },
+  "LOS201-201": {
+    "options": [
+      "PDP-7",
+      "PDP-11",
+      "Interdata 7/32",
+      "IBM zSeries"
+    ],
+    "review": false
+  },
+  "DGT302-507": {
+    "question": "Why is a Minimum-Phase system highly desirable in telecommunications and data storage?",
+    "options": [
+      "It delays the signal by the maximum possible amount.",
+      "It perfectly rejects all ambient noise.",
+      "It has a stable, causal inverse filter (which may be FIR or IIR).",
+      "It requires absolutely no multipliers to implement."
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-516": {
+    "question": "To convert sample rate by 3/4 using upsample-by-3, FIR filtering and downsample-by-4, what ideal low-pass cutoff (normalized to the Nyquist frequency of the upsampled grid) and DC gain should the FIR have?",
+    "options": [
+      "Normalized Cutoff = 1/4, Gain = 3",
+      "Normalized Cutoff = 1/3, Gain = 4",
+      "Normalized Cutoff = 3/4, Gain = 3",
+      "Normalized Cutoff = 1/4, Gain = 1"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-520": {
+    "question": "An ADC that compares each bit, one at a time, with the input analog signal is known as",
+    "options": [
+      "Flash converter",
+      "Dual-slope ramp converter",
+      "Successive-approximation converter",
+      "Tracking converter"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-524": {
+    "question": "A finite-order linear constant-coefficient difference equation can be implemented using which three basic DSP building blocks?",
+    "options": [
+      "Integrator, Differentiator, and Adder.",
+      "Sampler, Quantizer, and Unit Delay.",
+      "Adder, Multiplier, and Unit Delay.",
+      "Multiplier, Quantizer, and Encoder."
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-539": {
+    "question": "To avoid phase distortion caused by different frequencies having different group delays, a filter should have a:",
+    "options": [
+      "Linear phase response",
+      "Nonlinear phase response",
+      "Zero magnitude response",
+      "Maximum-phase response"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-545": {
+    "question": "What is the conventional general-purpose processing order for rational sample-rate conversion by I/D?",
+    "options": [
+      "Upsample by I, apply an anti-imaging/anti-aliasing low-pass filter, then downsample by D.",
+      "Downsample by D before any needed anti-aliasing filtering, then upsample by I.",
+      "The order does not matter because both are linear operations.",
+      "Both must be performed simultaneously without any intermediate filtering."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-547": {
+    "question": "Among the listed equal-length window functions, which has the lowest peak sidelobe (about −58 dB) and the broadest main lobe?",
+    "options": [
+      "Blackman window",
+      "Rectangular window",
+      "Bartlett (Triangular) window",
+      "Hanning window"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-557": {
+    "question": "A bandpass signal occupies Fl=10,677.5 kHz to Fh=10,702.5 kHz. Let B=Fh−Fl and k=floor(Fh/B). Using the valid bandpass-sampling interval 2Fh/k ≤ Fs ≤ 2Fl/(k−1), what is the minimum Fs?",
+    "options": [
+      "10,702.5 kHz",
+      "21,405 kHz",
+      "25 kHz",
+      "50.0117 kHz"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-562": {
+    "question": "Which statement correctly distinguishes IIR and FIR responses and their usual realizations?",
+    "options": [
+      "IIR responses require effective recursion; FIR responses have finite duration and can be realized using feed-forward paths.",
+      "IIR systems process continuous-time signals, while FIR systems process discrete-time signals.",
+      "IIR systems can exclusively achieve exact linear phase, while FIR systems cannot.",
+      "IIR systems are unconditionally stable, while FIR systems are prone to instability."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-563": {
+    "question": "Which realization usually improves numerical robustness for a high-order IIR filter by splitting it into lower-order sections?",
+    "options": [
+      "Cascade Form",
+      "Direct Form I as a single massive 8th-order block.",
+      "Tapped-Delay-Line Form.",
+      "Non-causal Time-Reversal Form."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-564": {
+    "question": "In two’s-complement fixed-point arithmetic, assume truncation drops low-order bits (rounds toward −∞), with no overflow. For error e=quantized value−exact value, what is its sign/bias?",
+    "options": [
+      "The error is nonpositive; for values spread within quantization cells it generally has a negative mean (DC bias).",
+      "The error has a perfectly zero mean and a uniform distribution.",
+      "The error is completely eliminated for all even numbers.",
+      "The error is symmetrically bounded between -b and b, creating a negative DC bias in the system."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-566": {
+    "question": "In the innovations representation of a purely nondeterministic WSS process with an admissible stable spectral factor, the process is modeled by an LTI filter driven by which input?",
+    "options": [
+      "White noise",
+      "A single unit impulse",
+      "A deterministic sine wave",
+      "A constant DC signal"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-569": {
+    "question": "For an N-sample record extended by zero outside 0≤n<N, its N-point DFT can be viewed as:",
+    "options": [
+      "the sampling of the Fourier transform of a periodic discrete-time sequence.",
+      "the sampling of the Fourier transform of an aperiodic discrete-time sequence.",
+      "the Fourier transform in a continuous frequency domain.",
+      "a transform for determining the frequency content of continuous-time aperiodic signals."
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-585": {
+    "question": "Provided the ROC contains the unit circle, the frequency response H(e^(jω)) is obtained from H(z) by evaluating it on the:",
+    "options": [
+      "Imaginary axis of the s-plane",
+      "Real axis, where z = w",
+      "Unit circle, where z = exp(jw)",
+      "Origin, where z = 0"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-586": {
+    "question": "For a causal first-order filter H(z)=b0/(1−az^(-1)), with nonzero b0 and real 0<a<1, the magnitude response is fundamentally:",
+    "options": [
+      "Lowpass filter",
+      "Highpass filter",
+      "Bandpass filter",
+      "All-pass filter"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-588": {
+    "question": "The fundamental mathematical difference between Cross-Correlation and Convolution is that in Correlation:",
+    "options": [
+      "The output is always a continuous-time signal.",
+      "The shifted second sequence is not time-reversed as in convolution; complex correlation also uses conjugation.",
+      "The multiplication operation is replaced by division.",
+      "The shifting operation over time is completely omitted."
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-594": {
+    "question": "For a real-coefficient FIR filter to have generalized linear phase, what condition must its impulse response h[n] satisfy?",
+    "options": [
+      "h(n) must be exactly symmetric or antisymmetric around its center point.",
+      "h(n) must be completely zero for all even time indices.",
+      "h(n) must have all its poles located strictly outside the unit circle.",
+      "h(n) must exponentially decay to zero as n 00"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-603": {
+    "question": "Why do the Yule-Walker equations use only autocorrelation values?",
+    "options": [
+      "FFT is applied",
+      "PSD is constant",
+      "Prediction uses samples of the same WSS process, so the required second-order moments are shifted autocorrelation values.",
+      "Noise is removed"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-613": {
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Differentiating z",
+      "Setting z = 0",
+      "Evaluating z-transform on the unit circle",
+      "Using convolution"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-615": {
+    "question": "Increasing the predictor order p generally",
+    "options": [
+      "Makes the signal deterministic",
+      "Removes white noise",
+      "Increases prediction error",
+      "Cannot increase theoretical MMSE; it may decrease when the added past samples provide useful correlation."
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-625": {
+    "question": "Which difference-equation realization is used internally by scipy.signal.lfilter?",
+    "options": [
+      "Parallel Form",
+      "Lattice-Ladder",
+      "Transposed Direct Form II",
+      "Direct Form I"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-629": {
+    "question": "Levinson-Durbin is preferred over direct inversion because",
+    "options": [
+      "It reduces the standard dense solve cost from O(p³) to O(p²) by exploiting Toeplitz structure.",
+      "It guarantees MMSE = 0",
+      "It computes FFTs",
+      "It removes quantization"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-631": {
+    "question": "When using an FFT implementation restricted to radix 2, and zero extension is acceptable, how can a record whose length is not a power of two be prepared?",
+    "options": [
+      "Discard samples",
+      "Use IDFT",
+      "Zero-padding to the next power of two",
+      "Reduce sampling rate"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-666": {
+    "question": "The relationship between z-transform and DTFT is obtained by:",
+    "options": [
+      "Differentiating z",
+      "Setting z = 0",
+      "Evaluating z-transform on the unit circle",
+      "Using convolution"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-668": {
+    "question": "Increasing the predictor order p generally",
+    "options": [
+      "Makes the signal deterministic",
+      "Removes white noise",
+      "Increases prediction error",
+      "Cannot increase theoretical MMSE; it may decrease when the added past samples provide useful correlation."
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-678": {
+    "question": "Which difference-equation realization is used internally by scipy.signal.lfilter?",
+    "options": [
+      "Parallel Form",
+      "Lattice-Ladder",
+      "Transposed Direct Form II",
+      "Direct Form I"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-682": {
+    "question": "Levinson-Durbin is preferred over direct inversion because",
+    "options": [
+      "It reduces the standard dense solve cost from O(p³) to O(p²) by exploiting Toeplitz structure.",
+      "It guarantees MMSE = 0",
+      "It computes FFTs",
+      "It removes quantization"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-684": {
+    "question": "When using an FFT implementation restricted to radix 2, and zero extension is acceptable, how can a record whose length is not a power of two be prepared?",
+    "options": [
+      "Discard samples",
+      "Use IDFT",
+      "Zero-padding to the next power of two",
+      "Reduce sampling rate"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-713": {
+    "question": "Which condition is necessary for perfect frequency-domain inversion over a desired band?",
+    "options": [
+      "H(e^(jω)) must have unit magnitude over all frequencies",
+      "H(e^(jω)) must contain at least one zero on the unit circle",
+      "H(e^(jω)) must be nonzero throughout the desired band",
+      "H(e^(jω)) must have constant phase over all frequencies"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-718": {
+    "question": "A complex exponential e^(jω0n) is applied to a relaxed LTI system whose frequency response exists at ω0. Which statement describes its steady-state output?",
+    "options": [
+      "Its phase remains unchanged while frequency and amplitude change",
+      "Its frequency remains unchanged while amplitude and phase change",
+      "Its amplitude becomes zero for every stable LTI system",
+      "Its frequency changes while amplitude remains fixed"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-736": {
+    "question": "A noncausal Wiener filter can achieve MMSE no larger than a comparable causal filter because:",
+    "options": [
+      "It has infinite order",
+      "It removes aliasing",
+      "It can use future observations",
+      "It ignores noise"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-779": {
+    "question": "Why is direct inverse filtering unreliable at frequencies where |H(e^(jω))| is very small but nonzero?",
+    "options": [
+      "It can strongly amplify noise at those frequencies",
+      "It converts a periodic input into an aperiodic output",
+      "It forces every system pole onto the unit circle",
+      "It removes all phase information from the recovered signal"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "DGT302-783": {
+    "question": "Why must fixed-point FFT implementations carefully manage rounding, truncation and scaling?",
+    "options": [
+      "The DFT matrix is singular.",
+      "The exact FFT changes signal energy.",
+      "Butterfly equations are inherently nonlinear.",
+      "Limited fractional precision and fixed scaling can accumulate rounding/truncation errors."
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-784": {
+    "question": "Which realization is widely recommended to reduce numerical problems when implementing a high-order IIR filter?",
+    "options": [
+      "Direct Form I",
+      "Cascade Second-Order Sections",
+      "Parallel FIR",
+      "Single polynomial"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-787": {
+    "question": "If the 1/N factor is omitted from the inverse of an unnormalized forward DFT, what happens to the reconstructed amplitudes?",
+    "options": [
+      "Phase reversal",
+      "Output amplitude is multiplied by N",
+      "Frequency resolution improves",
+      "Time shift"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-795": {
+    "question": "Which SciPy function to design FIR?",
+    "options": [
+      "lfilter",
+      "butter",
+      "freqz",
+      "firwin"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-796": {
+    "question": "Which SciPy function is most appropriate for applying an FIR or IIR filter to a signal?",
+    "options": [
+      "firwin",
+      "lfilter",
+      "freqz",
+      "butter"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "DGT302-797": {
+    "question": "Which SciPy function is used to inspect the frequency response of a digital filter?",
+    "options": [
+      "lfilter",
+      "firwin",
+      "freqz",
+      "upfirdn"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "DGT302-798": {
+    "question": "Which SciPy function efficiently performs upsample-filter-downsample operations?",
+    "options": [
+      "freqz",
+      "butter",
+      "lfilter",
+      "upfirdn"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "DGT302-799": {
+    "question": "Which SciPy function is mainly used to design an IIR Butterworth filter?",
+    "options": [
+      "firwin",
+      "freqz",
+      "butter",
+      "lfilter"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-802": {
+    "question": "For coherent BPSK over AWGN, why does the BER decrease approximately exponentially at high Eb/N0?",
+    "options": [
+      "Linear relation",
+      "Q-function behavior",
+      "Noise decreases linearly",
+      "Signal increases linearly"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-968": {
+    "question": "For coherent BPSK over AWGN, why does the BER decrease approximately exponentially at high Eb/N0?",
+    "options": [
+      "Linear relation",
+      "Q-function behavior",
+      "Noise decreases linearly",
+      "Signal increases linearly"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-804": {
+    "question": "What is the main advantage of digital communication over analog?",
+    "options": [
+      "Higher bandwidth",
+      "Regenerative decisions limit accumulated analog noise, although decision errors remain possible",
+      "Lower cost always",
+      "Simpler circuits"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-1014": {
+    "question": "What is the main advantage of digital communication over analog?",
+    "options": [
+      "Simpler circuits",
+      "Regenerative decisions limit accumulated analog noise, although decision errors remain possible",
+      "Higher bandwidth",
+      "Lower cost always"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-806": {
+    "question": "A PLL is considered locked when:",
+    "options": [
+      "Frequency differs",
+      "Phase error grows continuously because the frequencies remain different",
+      "Phase error is zero or constant",
+      "Signal amplitude is zero"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-812": {
+    "question": "Delta Modulation transmits:",
+    "options": [
+      "Full amplitude",
+      "One bit indicating the sign of the difference between the input sample and its predicted value",
+      "Frequency only",
+      "Phase only"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-996": {
+    "question": "Delta Modulation transmits:",
+    "options": [
+      "Full amplitude",
+      "Phase only",
+      "One bit indicating the sign of the difference between the input sample and its predicted value",
+      "Frequency only"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-827": {
+    "question": "Compared with coherent antipodal BPSK at the same BER in AWGN, why does coherent orthogonal BFSK require about 3 dB more Eb/N0?",
+    "options": [
+      "Noise",
+      "Orthogonal signaling",
+      "Frequency shift",
+      "Bandwidth"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-1010": {
+    "question": "Compared with coherent antipodal BPSK at the same BER in AWGN, why does coherent orthogonal BFSK require about 3 dB more Eb/N0?",
+    "options": [
+      "Frequency shift",
+      "Bandwidth",
+      "Noise",
+      "Orthogonal signaling"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-829": {
+    "question": "When an LZ-type compressor is allowed a larger dictionary, which statement is generally valid?",
+    "options": [
+      "Decrease",
+      "Increase",
+      "Stay same",
+      "Become zero",
+      "Compression may improve through longer matches, but index/memory overhead also grows; the compression ratio is not guaranteed to increase."
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "COS201-832": {
+    "question": "For a known deterministic signal in white additive noise, why does a matched filter maximize the sampled output SNR?",
+    "options": [
+      "It removes noise",
+      "It matches signal spectrum",
+      "It increases bandwidth",
+      "It reduces energy"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-1004": {
+    "question": "For a known deterministic signal in white additive noise, why does a matched filter maximize the sampled output SNR?",
+    "options": [
+      "It matches signal spectrum",
+      "It removes noise",
+      "It increases bandwidth",
+      "It reduces energy"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-837": {
+    "question": "In an uncompensated link without a zero-ISI pulse-shaping design, which channel property commonly causes symbol pulses to spread and overlap?",
+    "options": [
+      "Infinite bandwidth",
+      "Band-limited channels",
+      "Sampling",
+      "Encoding"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-851": {
+    "question": "In coherent DSB-SC product detection of a single message branch, a 90° carrier-reference phase error makes the recovered message component:",
+    "options": [
+      "Inverted",
+      "The same as input",
+      "Zero",
+      "Doubled"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-855": {
+    "question": "A complex envelope g_tilde(t) is defined as:",
+    "options": [
+      "a(t) · cos(φ(t))",
+      "g_l(t) + j*g_Q(t).",
+      "The Fourier transform of g(t).",
+      "g_l(t) - j*g_Q(t)."
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-859": {
+    "question": "The Fourier transform spectrum of cos(2πf_c t) consists of:",
+    "options": [
+      "A sinc function.",
+      "A single impulse at f_c.",
+      "A continuous spectrum from -f_c to f_c.",
+      "Two delta impulses at ± f_c."
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-864": {
+    "question": "Which functional component is typically found in a receiver but NOT in a transmitter?",
+    "options": [
+      "Modulator",
+      "Recovery of carrier phase and symbol timing from the received waveform",
+      "Protocol Stack",
+      "Antenna"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-866": {
+    "question": "For conventional AM with normalized message amplitude, what happens when the modulation index μ > 1?",
+    "options": [
+      "Noise is eliminated",
+      "Power efficiency increases",
+      "Bandwidth is reduced",
+      "Envelope distortion (Phase reversals)"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-879": {
+    "question": "Which standard integrability condition guarantees an ordinary Fourier transform for a signal?",
+    "options": [
+      "Periodically repeating.",
+      "Growing as exp(t²) over the whole real line",
+      "Absolutely integrable.",
+      "Infinite in energy."
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-883": {
+    "question": "In WLAN frequency-domain zero-forcing equalization, when H_k ≠ 0, which operation compensates the multiplicative channel response?",
+    "options": [
+      "Using an ideal low-pass filter.",
+      "Increasing the transmitter power.",
+      "Reducing the signal bandwidth.",
+      "Multiplying the received signal's DFT by 1/H_k."
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-892": {
+    "question": "Which modulation is used by the legacy ATSC 1.0 terrestrial digital-TV physical layer?",
+    "options": [
+      "8-VSB",
+      "16-QAM",
+      "4 AM",
+      "2-PSK"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-896": {
+    "question": "For analog PAM transmitted without regenerative digital decisions, which property makes the message vulnerable to channel amplitude distortion?",
+    "options": [
+      "It requires high frequency",
+      "It is sensitive to amplitude distortion",
+      "It cannot be sampled",
+      "It has low power"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-897": {
+    "question": "In the additive-noise channel model r(t) = s(t) + n(t), the received signal is:",
+    "options": [
+      "Sum of signal and noise",
+      "Only noise",
+      "Only the transmitted signal",
+      "Signal minus noise"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-900": {
+    "question": "Uniform quantization performs poorly for speech because:",
+    "options": [
+      "Speech is high frequency",
+      "Speech is periodic",
+      "Speech often has weak-amplitude segments with large relative error for a fixed uniform step",
+      "Speech is random"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-969": {
+    "question": "Uniform quantization performs poorly for speech because:",
+    "options": [
+      "Speech is periodic",
+      "Speech often has weak-amplitude segments with large relative error for a fixed uniform step",
+      "Speech is random",
+      "Speech is high frequency"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-914": {
+    "question": "For an ideal uniform quantizer in the high-resolution regime, SNR ∝ 2^(2R) implies what type of growth with bits per sample R?",
+    "options": [
+      "No growth",
+      "Logarithmic growth",
+      "Linear growth",
+      "Exponential growth"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-920": {
+    "question": "In an FM signal whose instantaneous frequency varies with a nonconstant message, zero-crossing spacings are generally:",
+    "options": [
+      "Irregularly spaced",
+      "Equally spaced",
+      "Random",
+      "Constant"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-921": {
+    "question": "For a continuous uniform distribution on a finite interval [a,b], which statement is correct?",
+    "options": [
+      "The probability density is constant on [a,b]; equal-length subintervals have equal probabilities",
+      "It has a peak",
+      "Values are concentrated",
+      "It is decreasing"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-926": {
+    "question": "For an absolutely continuous random variable, its PDF equals the following (where the derivative exists):",
+    "options": [
+      "The mean value",
+      "The derivative of CDF",
+      "The integral of CDF",
+      "The variance"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-932": {
+    "question": "The Figure of Merit measures:",
+    "options": [
+      "The output SNR divided by the specified reference input/channel SNR",
+      "Frequency",
+      "Power loss only",
+      "Bandwidth"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-935": {
+    "question": "Above threshold with white input noise, the FM discriminator baseband noise PSD grows as the audio frequency increases, so noise is strongest toward:",
+    "options": [
+      "High frequency",
+      "Carrier",
+      "Low frequency",
+      "DC component"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-937": {
+    "question": "Narrowband noise is obtained by:",
+    "options": [
+      "Sampling",
+      "Passing white noise through a narrow band-pass filter around a carrier frequency",
+      "Amplification",
+      "Modulation"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-939": {
+    "question": "For single-tone sinusoidal FM, which special-function family explicitly gives the carrier and sideband amplitude coefficients?",
+    "options": [
+      "Bessel functions",
+      "Exponential functions",
+      "Linear scaling",
+      "Carrier frequency alone"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-944": {
+    "question": "For a stationary random process with a time-independent mean, the mean corresponds to which signal component?",
+    "options": [
+      "Noise",
+      "DC component",
+      "Frequency",
+      "AC component"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-947": {
+    "question": "For single-tone sinusoidal FM, the modulation index β is:",
+    "options": [
+      "Ratio of carrier to noise",
+      "Ratio of amplitude to frequency",
+      "Ratio of frequency deviation to modulating frequency",
+      "Ratio of power to bandwidth"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-949": {
+    "question": "For ideal angle modulation with fixed carrier amplitude and a fixed load, the transmitted average power is:",
+    "options": [
+      "Constant",
+      "Variable",
+      "Zero",
+      "Dependent on frequency"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-955": {
+    "question": "Which frequency-dependent magnitude distortion is caused by the aperture effect of a flat-top sample-and-hold?",
+    "options": [
+      "Aliasing",
+      "Noise amplification",
+      "Sinc-shaped amplitude attenuation (high-frequency droop)",
+      "Phase shift"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-957": {
+    "question": "For stationary noise voltage measured across a unit resistance, its variance equals the power of which component?",
+    "options": [
+      "DC power",
+      "AC noise power",
+      "Frequency",
+      "Phase"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-960": {
+    "question": "At fixed quantizer settings, which condition directly makes quantization-noise power dominate over additive channel-noise power?",
+    "options": [
+      "Channel-noise power is much lower than the quantization-noise power",
+      "Frequency is high",
+      "Sampling rate is low",
+      "Bit error rate is low."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-963": {
+    "question": "Which of these waveforms is naturally suitable for a saturated nonlinear power amplifier because its RF envelope remains constant?",
+    "options": [
+      "OFDM",
+      "QAM",
+      "Root-raised-cosine pulse-shaped BPSK with an envelope that varies",
+      "Continuous-phase FSK with a constant envelope"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-964": {
+    "question": "For an alphabet of exactly 2^k equally likely symbols, what codeword-length pattern does optimal binary Huffman coding produce?",
+    "options": [
+      "Compression failure",
+      "No coding",
+      "Fixed-length codes",
+      "Variable-length codes"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-965": {
+    "question": "Slope overload distortion occurs when:",
+    "options": [
+      "Delta too large",
+      "Signal slope exceeds tracking capability",
+      "Noise is high",
+      "Delta is small while the input remains constant"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-967": {
+    "question": "With modulation pulse shape and roll-off held fixed, if the symbol rate decreases, the required occupied bandwidth generally will:",
+    "options": [
+      "Double",
+      "Increase",
+      "Stay same",
+      "Decrease"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-970": {
+    "question": "Without channel equalization or a zero-ISI pulse-shaping design, why can band limitation make symbol pulses spread and cause ISI?",
+    "options": [
+      "Reduce amplitude",
+      "Remove high-frequency components",
+      "Increase power",
+      "Increase noise"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-972": {
+    "question": "For a lossless uniquely-decodable binary source code under the standard symbol-coding model, what would an average code length below the source entropy imply?",
+    "options": [
+      "Impossible without loss",
+      "Higher efficiency",
+      "Reduced noise",
+      "Better compression"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-975": {
+    "question": "For the same coherent BPSK system in AWGN with all other parameters fixed, increasing Eb/N0 by 3 dB makes its theoretical BER:",
+    "options": [
+      "Increase",
+      "Become zero",
+      "Decrease significantly",
+      "Stay same"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-976": {
+    "question": "Why can noncoherent differential DPSK detection avoid an absolute carrier-phase reference?",
+    "options": [
+      "Uses noise",
+      "Uses amplitude",
+      "Uses previous symbol as reference",
+      "Uses frequency"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-979": {
+    "question": "If OFDM subcarrier spacing or useful symbol timing violates the orthogonality condition, the subcarriers will:",
+    "options": [
+      "Increase SNR",
+      "Reduce bandwidth",
+      "Lose orthogonality",
+      "Improve"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-982": {
+    "question": "In coherent I/Q detection, a carrier-reference phase error that is not an integer multiple of 90° generally causes:",
+    "options": [
+      "Bandwidth reduces",
+      "Signal disappears",
+      "Noise is removed",
+      "IQ components interfere"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "COS201-986": {
+    "question": "In coherent I/Q detection, a carrier-reference phase error that is not an integer multiple of 90° generally causes:",
+    "options": [
+      "Reduced bandwidth",
+      "IQ mixing error",
+      "Noise removal",
+      "Improved signal"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-989": {
+    "question": "In the additive white Gaussian noise model, what is directly added to the received waveform samples?",
+    "options": [
+      "A random Gaussian voltage/sample component",
+      "Pulse shape",
+      "Timing",
+      "Frequency only"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-991": {
+    "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+    "options": [
+      "Minimum",
+      "Zero",
+      "A/2",
+      "Maximum"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-1005": {
+    "question": "For equally likely antipodal binary levels −A and +A in zero-mean AWGN of equal variance, what is the numerical optimal decision threshold?",
+    "options": [
+      "Zero",
+      "Maximum value",
+      "Minimum value",
+      "A/2"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-995": {
+    "question": "With noise spectral density N0 held fixed, if bit energy Eb doubles, what happens to the linear ratio Eb/N0?",
+    "options": [
+      "Decreases",
+      "Doubles",
+      "Halves",
+      "No change"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-998": {
+    "question": "For known source-symbol probabilities, why is binary Huffman coding optimal among binary prefix codes that encode one symbol at a time?",
+    "options": [
+      "Minimizes average code length",
+      "Removes noise",
+      "Uses fixed-length codes",
+      "Increases entropy"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-1006": {
+    "question": "At fixed average symbol energy and AWGN level, why does increasing square M-QAM order generally increase the error probability?",
+    "options": [
+      "Smaller distance between points",
+      "Larger bandwidth",
+      "Lower frequency",
+      "Higher power"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-1009": {
+    "question": "For a block code, which general guarantee holds whenever its minimum Hamming distance increases?",
+    "options": [
+      "Stay same",
+      "Not decrease; guaranteed correction is t = floor((d_min − 1)/2), so some increases leave t unchanged",
+      "Become zero",
+      "Decrease"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-1011": {
+    "question": "At a fixed symbol rate Rs, what happens to the possibility of zero-ISI baseband transmission if available ideal bandwidth is below Rs/2?",
+    "options": [
+      "Zero-ISI pulse shaping is no longer possible at that symbol rate",
+      "BER decreases",
+      "Signal improves",
+      "Noise decreases"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "COS201-1013": {
+    "question": "In conventional passband radio communication, why are baseband messages translated onto an RF carrier?",
+    "options": [
+      "To support efficient practical antenna radiation and use an allocated RF band",
+      "To increase power",
+      "To reduce bandwidth",
+      "To reduce noise"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-259": {
+    "question": "Compared with a single nMOS pass transistor, what signal-transfer benefit does a CMOS transmission gate provide?",
+    "options": [
+      "Capacitor leakage current",
+      "Passing both strong logic 0 and strong logic 1",
+      "Oxide breakdown voltage",
+      "Threshold voltage mismatch"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-261": {
+    "question": "What happens to sufficiently small disturbances around an asymptotically stable circuit operating point?",
+    "options": [
+      "Grow exponentially larger",
+      "Decay gradually away",
+      "Cause continuous oscillation",
+      "Eliminate feedback action"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-331": {
+    "question": "What happens to sufficiently small disturbances around an asymptotically stable circuit operating point?",
+    "options": [
+      "Grow exponentially larger",
+      "Cause continuous oscillation",
+      "Decay gradually away",
+      "Eliminate feedback action"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "ICI211-264": {
+    "question": "In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion?",
+    "options": [
+      "Holes accumulate surface",
+      "Majority holes are repelled from the surface, leaving ionized acceptors",
+      "Electrons form channel",
+      "Oxide breaks down"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-402": {
+    "question": "In a MOS capacitor with a p-type body, what happens at the semiconductor surface during depletion under a positive gate bias below inversion?",
+    "options": [
+      "Electrons form channel",
+      "Majority holes are repelled from the surface, leaving ionized acceptors",
+      "Holes accumulate surface",
+      "Oxide breaks down"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-490": {
+    "question": "Which requirement allows dynamic logic to maintain correct operation?",
+    "options": [
+      "Continuous conduction paths",
+      "Periodic precharge/evaluate cycles that restore dynamic-node charge",
+      "Infinite voltage supply",
+      "Constant threshold scaling"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-273": {
+    "question": "While enabled over the signal range, how does the ON resistance of a suitably sized CMOS transmission gate approximately vary?",
+    "options": [
+      "Roughly constant value",
+      "Infinite during switching",
+      "Strongly nonlinear always",
+      "Equal threshold voltage"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-293": {
+    "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?",
+    "options": [
+      "Channel pinch-off formation",
+      "Oxide capacitance reduction",
+      "Body bias elimination",
+      "Reverse gate conduction"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-400": {
+    "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?",
+    "options": [
+      "Body bias elimination",
+      "Reverse gate conduction",
+      "Oxide capacitance reduction",
+      "Channel pinch-off formation"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-479": {
+    "question": "For a long-channel nMOS in strong inversion, which physical condition marks entry into saturation in the ideal channel model?",
+    "options": [
+      "Reverse gate conduction",
+      "Oxide capacitance reduction",
+      "Channel pinch-off formation",
+      "Body bias elimination"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "ICI211-295": {
+    "question": "Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2?",
+    "options": [
+      "Equal switching margins",
+      "Zero leakage current",
+      "Infinite transconductance ratio",
+      "Minimum output voltage"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-478": {
+    "question": "Which DC noise-margin property characterizes an ideal CMOS inverter with a VTC symmetric about Vin = Vout = VDD/2?",
+    "options": [
+      "Equal switching margins",
+      "Equal output voltages",
+      "Equal transistor sizes",
+      "Equal propagation delays"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-306": {
+    "question": "For equal-valued capacitors and a fixed observed output in an RC tree, which capacitor contributes most to the Elmore delay?",
+    "options": [
+      "A capacitor reached through the largest shared upstream resistance",
+      "A capacitor with zero path resistance",
+      "Every capacitor contributes identically regardless of location",
+      "A capacitor connected directly to an ideal voltage source"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-322": {
+    "question": "A flip-flop has setup time 80 ps, clock-to-Q delay 120 ps, and combinational path delay 600 ps. Ignoring clock skew, what is the minimum clock period?",
+    "options": [
+      "600 ps",
+      "680 ps",
+      "720 ps",
+      "800 ps"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-324": {
+    "question": "In conventional domino logic, which element is placed between successive n-type dynamic logic stages to enforce a rising-only evaluation interface?",
+    "options": [
+      "Bipolar feedback loops",
+      "Continuous resistor loads",
+      "A static inverting CMOS gate, commonly a static inverter",
+      "Dynamic stages buffers"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "ICI211-361": {
+    "question": "For an nMOS whose source-body junction becomes more reverse biased (VSB increases), which device parameter increases?",
+    "options": [
+      "Oxide thickness reduction",
+      "Threshold voltage increase",
+      "Channel length increase",
+      "Mobility enhancement effect"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-364": {
+    "question": "In an ideal resistive-load nMOS inverter with its pull-down transistor in cutoff, what is the steady-state DC conduction current, neglecting leakage?",
+    "options": [
+      "Current becomes zero",
+      "Voltage becomes negative",
+      "Output equals ground",
+      "Driver enters linear"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-368": {
+    "question": "Under constant-field scaling by a factor S > 1, how should device dimensions and supply voltage change?",
+    "options": [
+      "Dimensions remain constant while voltage scales by 1/S",
+      "Dimensions scale by 1/S while voltage remains constant",
+      "Dimensions and voltage both scale by S",
+      "Dimensions and voltage both scale by 1/S"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-370": {
+    "question": "In a master-slave transmission-gate flip-flop, which clock-phase arrangement alternately enables the two level-sensitive latches?",
+    "options": [
+      "Continuous asynchronous control",
+      "Single clock signal",
+      "Complementary, non-overlapping clock phases",
+      "Dynamic bootstrap voltage"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "ICI211-372": {
+    "question": "Which inverter-stage arrangement is required for a ring oscillator to operate correctly?",
+    "options": [
+      "An odd number of at least three inverting stages in a conventional inverter ring",
+      "Even inverter stages",
+      "Single inverter stage",
+      "Transmission line stages"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-374": {
+    "question": "Under ideal constant-field scaling by S > 1, device dimensions and voltages scale by 1/S. What happens to dynamic power density if clock frequency scales by S?",
+    "options": [
+      "It increases by S³",
+      "It ideally remains approximately constant",
+      "It increases by S",
+      "It decreases by S²"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-378": {
+    "question": "A 30 fF dynamic node initially at 1.2 V shares charge with an initially discharged 10 fF internal node. Ignoring other effects, what is the final voltage?",
+    "options": [
+      "0.3 V",
+      "0.6 V",
+      "1.2 v",
+      "0.9 V"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-384": {
+    "question": "For a symmetric long-channel CMOS inverter with VDD = 1.8 V, VTN = 0.4 V, |VTP| = 0.4 V, and βn = βp, what is the approximate switching threshold VM?",
+    "options": [
+      "0.7 v",
+      "0.4 V",
+      "1.4 v",
+      "0.9 V"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-398": {
+    "question": "Which phrase does SRAM stand for in semiconductor memory?",
+    "options": [
+      "Signal retention array",
+      "Sequential register access",
+      "Static Random-Access Memory",
+      "Synchronous random architecture"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "ICI211-414": {
+    "question": "In a conventional n-type dynamic gate with an nMOS evaluation transistor driven by CLK, which clock level enables evaluation?",
+    "options": [
+      "Clock signal inactive",
+      "Threshold voltage removed",
+      "Dynamic node isolated",
+      "CLK = HIGH (active evaluation phase)"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "ICI211-423": {
+    "question": "If VDD is reduced from 1.2 V to 0.9 V while α, CL, and f remain unchanged, what fraction of the original dynamic power remains?",
+    "options": [
+      "1.78",
+      "0.5625",
+      "1.33",
+      "0.75"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-451": {
+    "question": "A 64 K × 8 memory, with K = 1024 words, stores how many bits in total?",
+    "options": [
+      "262,144 bits",
+      "1,048,576 bits",
+      "524,288 bits",
+      "65,536 bits"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "ICI211-462": {
+    "question": "Compared with complementary static CMOS implementing the same logic function, what advantage can pseudo-nMOS provide?",
+    "options": [
+      "Smaller silicon area",
+      "Larger noise margins",
+      "Infinite switching speed",
+      "Zero static current"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-463": {
+    "question": "At a fixed required throughput, how can pipelining potentially reduce dynamic power?",
+    "options": [
+      "Increasing threshold voltage",
+      "Allowing a lower supply voltage by reducing combinational delay per stage",
+      "Eliminating dynamic switching",
+      "Removing register overhead"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-474": {
+    "question": "An inverter drives CL = 20 fF through an effective pull-down resistance of 5 kΩ. Using tPHL ≈ 0.69RCL, what is the estimated delay?",
+    "options": [
+      "6.9 ps",
+      "69 ps",
+      "690 ps",
+      "1.45 ns"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "ICI211-482": {
+    "question": "A two-latch pipeline uses non-overlapping clock phases φ1 and φ2. Why must the phases not overlap?",
+    "options": [
+      "To prevent both latches from being transparent simultaneously",
+      "To double the static noise margin automatically",
+      "To force both outputs LOW",
+      "To remove every clock transistor"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "ICI211-486": {
+    "question": "For a CMOS inverter at a valid steady-state logic level, what is the ideal DC supply current, apart from real-device leakage?",
+    "options": [
+      "Extremely large during operation",
+      "Ideally zero except leakage current",
+      "Independent of leakage effects",
+      "Equal to threshold current"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-39": {
+    "question": "A student creates /etc/inittab with '::sysinit:/etc/init.d/rcS' and '::askfirst:-/bin/sh'. What practical behavior should this produce after BusyBox init starts?",
+    "options": [
+      "It runs the system initialization script and then offers an interactive shell.",
+      "It rebuilds the kernel modules and recompiles the DTB.",
+      "It disables the PL011 serial console and redirects output to the host GUI.",
+      "It changes the U-Boot memory map to start at 0x00000000."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "LOS201-48": {
+    "question": "Why does the lab emphasize that vexpress-a9 RAM starts at 0x60000000 rather than 0x00000000?",
+    "options": [
+      "Because wrong load addresses in U-Boot may place the kernel, DTB, or initramfs outside the expected RAM map and prevent a successful boot.",
+      "Because all ARM systems reserve 0x00000000 exclusively for the Linux root filesystem.",
+      "Because QEMU requires the initramfs to be larger than 512 MB.",
+      "Because bootm only works when RAM begins at 0x00000000."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "LOS201-96": {
+    "question": "A student boots QEMU with -kernel zImage and -dtb vexpress-v2p-ca9.dtb, but supplies neither an initramfs nor a usable root device/root= setting. The kernel stops with a VFS root mount panic. What is the most likely reason?",
+    "options": [
+      "The kernel cannot find a root filesystem because no initramfs image or root device was provided.",
+      "The CPU is not Cortex-A9 because -cpu cortex-a9 is ignored by QEMU.",
+      "The PL011 driver is always disabled in vexpress_defconfig.",
+      "The zImage file must always be replaced by uImage for ARMv7."
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "LOS201-61": {
+    "question": "In a legacy Linux kernel build that aggregates built-in objects using relocatable built-in.o files, a driver under drivers/ is configured built-in rather than as a module. Which listed aggregation artifact contains that driver code?",
+    "options": [
+      "drivers/built-in.o",
+      "lib/lib.a",
+      "usr/built-in.o",
+      "arch/arm/kernel/head.o"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "LOS201-95": {
+    "question": "In the legacy Linux Kbuild model, which TWO listed artifacts are respectively the final uncompressed ELF kernel and an intermediate aggregation of built-in objects?",
+    "options": [
+      "vmlinux",
+      "System.map",
+      "built-in.o files",
+      "modules.dep"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "review": false
+  },
+  "LOS201-81": {
+    "question": "Which TWO limitations are expected when Linux is appropriately configured to run on an embedded processor without an MMU?",
+    "options": [
+      "Virtual memory features may be unavailable",
+      "Memory isolation between processes may be limited",
+      "The processor automatically becomes multicore",
+      "Interrupt handling is disabled"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "review": false
+  },
+  "LOS201-118": {
+    "question": "In a conventional executable memory layout, which writable segment normally stores global variables explicitly initialized to a nonzero value?",
+    "options": [
+      "Text",
+      "Data",
+      "Heap",
+      "Stack"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-119": {
+    "question": "Which 2001 UNIX specification collection includes the POSIX base specifications plus X/Open Curses Issue 4 Version 2 as an additional volume?",
+    "options": [
+      "C89",
+      "POSIX.1",
+      "SUSv3",
+      "SVID"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "LOS201-125": {
+    "question": "Why is C considered a highly effective \"system programming language\"?",
+    "options": [
+      "It was designed by a large committee",
+      "It combines efficient compiled code with low-level memory and data operations.",
+      "It is a complex, high-level language",
+      "It was designed for mathematical logic"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-127": {
+    "question": "In SUSv3, which part contains the specifications for header files?",
+    "options": [
+      "XBD",
+      "XSH",
+      "XCU",
+      "XRAT"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "LOS201-133": {
+    "question": "What is the common maximum length, in bytes, of one filename component on Linux filesystems such as ext4?",
+    "options": [
+      "64",
+      "128",
+      "255",
+      "1024"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "LOS201-147": {
+    "question": "Which listed interface terminates the calling process without invoking functions registered with atexit()?",
+    "options": [
+      "kill()",
+      "wait()",
+      "_exit()",
+      "stop()"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "LOS201-152": {
+    "question": "What is the Unix universality of I/O concept?",
+    "options": [
+      "All I/O uses networking",
+      "Same system calls work on all file types",
+      "No system calls are required",
+      "Files are read-only by default"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-167": {
+    "question": "At the network layer (for example, IP), what is the usual name of the protocol data unit?",
+    "options": [
+      "Frame",
+      "Segment",
+      "Packet",
+      "Block"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "LOS201-172": {
+    "question": "What is the exact name, including the final revision number, of the last BSD distribution released by Berkeley CSRG?",
+    "options": [
+      "Net/ 2",
+      "3BSD",
+      "4.4BSD-Lite",
+      "2BSD",
+      "4.4BSD-Lite Release 2 (1995)"
+    ],
+    "answer": [
+      4
+    ],
+    "review": false
+  },
+  "LOS201-177": {
+    "question": "Which UID is used by Unix permission checks for access to System V IPC resources such as message queues, shared memory, and semaphores?",
+    "options": [
+      "Real UID",
+      "Effective UID",
+      "Saved UID",
+      "Login UID"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-184": {
+    "question": "Which hardware feature allows switching from user mode to kernel mode?",
+    "options": [
+      "RAM bus",
+      "A controlled system-call or trap instruction that enters the kernel",
+      "Disk controller",
+      "Network card"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-211": {
+    "question": "During the later Linux 2.6.x mainline development era (for example, 2.6.33–2.6.38), approximately how long was a new feature-release cycle?",
+    "options": [
+      "1 month",
+      "3 months",
+      "6 months",
+      "1 year"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-14": {
+    "question": "Which TWO conditions are commonly associated with an out-of-memory (OOM) event?",
+    "options": [
+      "Allocated memory demand exceeds available resources",
+      "The OOM killer may terminate processes",
+      "All allocations are automatically compressed",
+      "The kernel disables virtual memory"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "review": false
+  },
+  "LOS201-25": {
+    "question": "A developer creates symbolic links such as 'ls', 'cp', and 'mount' pointing to the BusyBox executable. How does BusyBox determine which utility behavior to execute?",
+    "options": [
+      "By inspecting the name used to invoke the executable",
+      "By parsing kernel boot parameters",
+      "By reading the current process ID",
+      "By loading separate shared libraries for each command"
+    ],
+    "answer": [
+      0
+    ],
+    "review": false
+  },
+  "LOS201-60": {
+    "question": "Which kernel image is the uncompressed ELF binary used for debugging?",
+    "options": [
+      "initrd",
+      "zImage",
+      "uImage",
+      "vmlinux"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  },
+  "LOS201-102": {
+    "question": "A U-Boot command loads a kernel image using 'diskboot 0x400000 0:0'. What does '0:0' represent?",
+    "options": [
+      "Kernel load address and DTB address",
+      "Device number and partition number",
+      "CPU number and core number",
+      "Flash bank and erase block"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-114": {
+    "question": "What is the primary goal of the Linux Standard Base (LSB)?",
+    "options": [
+      "Source code portability",
+      "Binary application compatibility",
+      "Kernel debugging",
+      "UI standardization"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-116": {
+    "question": "Which 1989/1990 standard defined the syntax of C and its standard library?",
+    "options": [
+      "C99",
+      "POSIX.1",
+      "C89 (ISO C90)",
+      "SVID"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "LOS201-130": {
+    "question": "Which signal cannot be caught or ignored by a process?",
+    "options": [
+      "SIGINT",
+      "SIGTERM",
+      "SIGKILL",
+      "SIGUSR1"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "LOS201-138": {
+    "question": "Which POSIX sub-standard (1003.1b) defined realtime extensions like async I/O?",
+    "options": [
+      "POSIX.1a",
+      "POSIX.1b",
+      "POSIX.1c",
+      "POSIX.1g"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-155": {
+    "question": "Which command-line tool is used to display System V IPC objects?",
+    "options": [
+      "ls",
+      "ipcs",
+      "ps",
+      "netstat"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "LOS201-178": {
+    "question": "On which hardware was the port known as \"32V\" (Seventh Edition) based?",
+    "options": [
+      "PDP-11",
+      "VAX-11/780",
+      "Intel 80386",
+      "Motorola 68000"
+    ],
+    "answer": [
+      1
+    ],
+    "review": false
+  },
+  "COS201-852": {
+    "question": "Which set of topics provides the signal-level foundation for studying communication systems?",
+    "options": [
+      "History of the internet.",
+      "Hardware manufacturing only.",
+      "Signal representation, modulation, and noise.",
+      "Programming languages."
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-886": {
+    "question": "In the OSI model, modulation, waveform coding and transmitting signals through physical channels are primarily functions of which layer?",
+    "options": [
+      "Network Layer",
+      "Application Layer",
+      "Physical Layer (PHY)",
+      "Presentation Layer"
+    ],
+    "answer": [
+      2
+    ],
+    "review": false
+  },
+  "COS201-898": {
+    "question": "What is a characteristic advantage of an oversampled low-pass delta-sigma modulator followed by digital low-pass filtering and decimation?",
+    "options": [
+      "Increasing bandwidth",
+      "Increasing noise",
+      "Removing quantization",
+      "Reducing in-band quantization noise through oversampling and noise shaping"
+    ],
+    "answer": [
+      3
+    ],
+    "review": false
+  }
+}

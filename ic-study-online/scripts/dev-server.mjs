@@ -1,0 +1,7 @@
+import http from 'node:http';import {database,assets} from '../tests/d1-adapter.mjs';import {bucket} from '../tests/r2-adapter.mjs';import worker from '../dist/server/index.js';
+if(process.stdin.isTTY)process.stdin.setRawMode(true);console.log('Ready for local configuration on stdin (hidden).');
+let input='';for await(const chunk of process.stdin){input+=chunk;if(/[\r\n]/.test(input))break}
+const config=JSON.parse(input),env={...config,DB:database(config.IC_PREVIEW_DB||'.local-preview.sqlite'),BUCKET:bucket('.wallpaper-preview-store'),ASSETS:assets()};
+const handle=async(req,res)=>{try{const chunks=[];for await(const c of req)chunks.push(c);const headers=new Headers();for(const [k,v]of Object.entries(req.headers))if(v)headers.set(k,Array.isArray(v)?v.join(','):v);const request=new Request('http://'+req.headers.host+req.url,{method:req.method,headers,...(!['GET','HEAD'].includes(req.method)?{body:Buffer.concat(chunks)}:{})});const response=await worker.fetch(request,env);res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()))}catch(e){console.error(e.message);res.writeHead(500);res.end('Preview error')}};
+http.createServer(handle).listen(8784,'127.0.0.1',()=>console.log('IC Study preview http://localhost:8784'));
+if(config.IC_PREVIEW_ALT_PORT)http.createServer(handle).listen(config.IC_PREVIEW_ALT_PORT,'127.0.0.1',()=>console.log('Fresh-browser preview http://localhost:'+config.IC_PREVIEW_ALT_PORT));

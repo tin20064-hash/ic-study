@@ -1,0 +1,798 @@
+{
+  "subject": "COS201",
+  "reviewedQuestions": 214,
+  "groups": [
+    {
+      "ids": [
+        "COS201-801",
+        "COS201-985"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-985": [
+          1,
+          3,
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-802",
+        "COS201-968"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-968": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-803",
+        "COS201-894",
+        "COS201-950",
+        "COS201-952"
+      ],
+      "reasonVi": "Cùng kiểm tra định nghĩa/liên hệ: điều chế góc mang thông tin bằng biến thiên góc pha hoặc tần số của sóng mang. Hai cặp chỉ diễn đạt “định nghĩa” và “thông tin nằm ở đâu” của cùng một liên hệ.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-894": [
+          null,
+          null,
+          null,
+          1
+        ],
+        "COS201-950": [
+          null,
+          null,
+          1,
+          null
+        ],
+        "COS201-952": [
+          1,
+          3,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-804",
+        "COS201-1014"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-1014": [
+          3,
+          1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-810",
+        "COS201-913",
+        "COS201-961"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-913": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "COS201-961": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-812",
+        "COS201-996"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-996": [
+          0,
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-819",
+        "COS201-928"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-928": [
+          1,
+          0,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-823",
+        "COS201-978"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-978": [
+          2,
+          0,
+          1,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-825",
+        "COS201-891"
+      ],
+      "reasonVi": "Cùng kiểm tra lợi thế băng thông của SSB so với các điều chế AM hai dải biên/VSB; câu kia chỉ đảo cách hỏi từ ưu điểm sang chọn kỹ thuật.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-891": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-827",
+        "COS201-1010"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-1010": [
+          2,
+          3,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-831",
+        "COS201-907"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-907": [
+          3,
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-832",
+        "COS201-1004"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-1004": [
+          1,
+          0,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-833",
+        "COS201-999"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-999": [
+          2,
+          1,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-834",
+        "COS201-993"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-993": [
+          2,
+          3,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-838",
+        "COS201-922"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-922": [
+          1,
+          3,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-841",
+        "COS201-954"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-954": [
+          0,
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-844",
+        "COS201-882"
+      ],
+      "reasonVi": "Cùng định nghĩa chức năng bộ phát: biến thông điệp thành dạng tín hiệu phù hợp môi trường truyền. Một câu hỏi chức năng, câu kia hỏi tên khối thực hiện đúng chức năng đó.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-882": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-845",
+        "COS201-902"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-902": [
+          3,
+          2,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-847",
+        "COS201-1002"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-1002": [
+          1,
+          0,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-848",
+        "COS201-901"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-901": [
+          2,
+          1,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-879",
+        "COS201-839"
+      ],
+      "reasonVi": "Cùng kiểm tra điều kiện khả tích tuyệt đối đủ cho biến đổi Fourier thường. Giữ 879 vì đã sửa rõ ordinary transform và điều kiện đủ, tránh các phương án Fourier suy rộng/zero gây mơ hồ.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-839": [
+          0,
+          2,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-881",
+        "COS201-890"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-890": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-900",
+        "COS201-969"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-969": [
+          1,
+          2,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-903",
+        "COS201-971"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-971": [
+          1,
+          0,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-904",
+        "COS201-945"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-945": [
+          2,
+          1,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-908",
+        "COS201-958"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-958": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-909",
+        "COS201-931"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-931": [
+          1,
+          0,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-910",
+        "COS201-980"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-980": [
+          3,
+          1,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-917",
+        "COS201-942"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-942": [
+          0,
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-925",
+        "COS201-933"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-933": [
+          0,
+          2,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-927",
+        "COS201-936",
+        "COS201-983"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-936": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "COS201-983": [
+          0,
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-955",
+        "COS201-1003"
+      ],
+      "reasonVi": "Cùng kiểm tra hiệu ứng biên độ sinc của PAM flat-top/sample-and-hold gây suy giảm cao tần. Giữ 955 vì đã chỉ rõ méo biên độ, tránh nhầm với trễ pha đi kèm.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-1003": [
+          null,
+          null,
+          null,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-959",
+        "COS201-988"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "exact",
+      "optionMaps": {
+        "COS201-988": [
+          3,
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-963",
+        "COS201-814"
+      ],
+      "reasonVi": "Cùng liên hệ đường bao hằng của FSK/CPFSK với khả năng dùng bộ khuếch đại phi tuyến. Giữ 963 vì đã nêu rõ CPFSK và phân biệt với BPSK được tạo xung làm biến thiên đường bao.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-814": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-982",
+        "COS201-986"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-986": [
+          0,
+          3,
+          2,
+          null
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-991",
+        "COS201-1005"
+      ],
+      "reasonVi": "Cùng nội dung câu hỏi và cùng kiến thức cần trả lời; khác thứ tự lựa chọn hoặc chỉ khác cách ghi các phương án.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-1005": [
+          1,
+          null,
+          null,
+          2
+        ]
+      }
+    },
+    {
+      "ids": [
+        "COS201-1006",
+        "COS201-990"
+      ],
+      "reasonVi": "Cùng kiểm tra liên hệ khoảng cách điểm chòm sao nhỏ hơn làm lỗi dễ xảy ra. Giữ 1006 vì nêu rõ cùng năng lượng symbol và mức AWGN, và cụ thể hóa bằng M-QAM; không có phép tính hay mục tiêu kiến thức mới trong 990.",
+      "kind": "reworded",
+      "optionMaps": {
+        "COS201-990": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "keptDistinct": [
+    {
+      "ids": [
+        "COS201-808",
+        "COS201-885"
+      ],
+      "reasonVi": "Giữ riêng: 808 yêu cầu biết thành phần tần số tổng/hiệu sinh ra bởi phép nhân; 885 hỏi vai trò chuyển tần của mixer."
+    },
+    {
+      "ids": [
+        "COS201-858",
+        "COS201-906"
+      ],
+      "reasonVi": "Giữ riêng theo tiêu chí bảo toàn mục tiêu: 858 chỉ kiểm tra Q=Quadrature; 906 kiểm tra đủ cả I=In-phase và Q=Quadrature. Cùng chủ đề nhưng 906 có thông tin bổ sung."
+    },
+    {
+      "ids": [
+        "COS201-837",
+        "COS201-970"
+      ],
+      "reasonVi": "Giữ riêng: 837 nhận diện tính giới hạn băng của kênh gây chồng xung khi không bù; 970 hỏi cơ chế loại thành phần cao tần làm xung trải rộng."
+    },
+    {
+      "ids": [
+        "COS201-899",
+        "COS201-949"
+      ],
+      "reasonVi": "Giữ riêng: biên độ sóng mang hằng và công suất trung bình hằng là hai đại lượng khác nhau; 949 còn nêu điều kiện tải cố định và trung bình thay vì công suất tức thời."
+    },
+    {
+      "ids": [
+        "COS201-811",
+        "COS201-805",
+        "COS201-903",
+        "COS201-910",
+        "COS201-981"
+      ],
+      "reasonVi": "Giữ riêng: tốc độ Nyquist, khoảng chuyển tiếp bộ lọc khi lấy đúng biên, bất đẳng thức dưới Nyquist, hậu quả aliasing và cơ chế lặp phổ là các mục tiêu khác nhau."
+    },
+    {
+      "ids": [
+        "COS201-816",
+        "COS201-935"
+      ],
+      "reasonVi": "Giữ riêng: 935 hỏi hình dạng PSD nhiễu FM tăng với tần số; 816 hỏi công suất nhiễu tích phân tăng theo W³, cần thêm bước tích phân."
+    },
+    {
+      "ids": [
+        "COS201-914",
+        "COS201-962"
+      ],
+      "reasonVi": "Giữ riêng: 914 nhận diện tăng trưởng hàm mũ theo số bit; 962 áp dụng công thức để tính cụ thể mức cải thiện 8→10 bit là khoảng 12 dB."
+    },
+    {
+      "ids": [
+        "COS201-851",
+        "COS201-982"
+      ],
+      "reasonVi": "Giữ riêng: 851 là thu DSB-SC một nhánh tại lỗi pha đúng 90° làm thành phần thông điệp bằng zero; 982 là thu I/Q đầy đủ với lỗi pha tổng quát gây trộn/quay hai nhánh."
+    },
+    {
+      "ids": [
+        "COS201-807",
+        "COS201-832"
+      ],
+      "reasonVi": "Giữ riêng: tương đương correlator ở mẫu quyết định và tối ưu SNR trong nhiễu trắng là hai tính chất khác nhau của matched filter."
+    },
+    {
+      "ids": [
+        "COS201-845",
+        "COS201-874",
+        "COS201-877",
+        "COS201-866"
+      ],
+      "reasonVi": "Giữ riêng: hiệu suất dải biên tối đa, phần công suất sóng mang, điều kiện tách đường bao và hậu quả overmodulation là các câu khác điều kiện/đại lượng."
+    },
+    {
+      "ids": [
+        "COS201-822",
+        "COS201-861"
+      ],
+      "reasonVi": "Giữ riêng: conventional AM có sóng mang; DSB-SC triệt sóng mang. Đây là phân biệt cần học, không phải câu trùng."
+    },
+    {
+      "ids": [
+        "COS201-832",
+        "COS201-1007",
+        "COS201-802",
+        "COS201-975"
+      ],
+      "reasonVi": "Giữ riêng: tối ưu bộ lọc SNR, ý nghĩa hàm Q, cơ chế BER suy giảm và tác động tăng Eb/N0 cụ thể là các nhiệm vụ khác nhau."
+    },
+    {
+      "ids": [
+        "COS201-839",
+        "COS201-840",
+        "COS201-880",
+        "COS201-881"
+      ],
+      "reasonVi": "Giữ riêng giữa nhóm FT và các điều kiện LTI: khả tích tuyệt đối tín hiệu cho tồn tại Fourier, khả tích tuyệt đối đáp ứng xung cho BIBO, h(t<0)=0 cho nhân quả và Paley-Wiener là các mệnh đề khác nhau."
+    },
+    {
+      "ids": [
+        "COS201-831",
+        "COS201-843",
+        "COS201-926",
+        "COS201-921"
+      ],
+      "reasonVi": "Giữ riêng: định nghĩa CDF, tính đơn điệu CDF, PDF=dCDF/dx và mật độ phân bố đều không cùng một yêu cầu."
+    },
+    {
+      "ids": [
+        "COS201-934",
+        "COS201-918"
+      ],
+      "reasonVi": "Giữ riêng: PPM dùng thời điểm nên ít nhạy nhiễu biên độ; sự tương tự PPM với PM kiểm tra liên hệ điều chế khác."
+    },
+    {
+      "ids": [
+        "COS201-965",
+        "COS201-941",
+        "COS201-849",
+        "COS201-898"
+      ],
+      "reasonVi": "Giữ riêng: quá tải dốc, granular noise, tăng fs giúp theo dốc và noise-shaping delta-sigma có cơ chế/điều kiện khác nhau."
+    },
+    {
+      "ids": [
+        "COS201-815",
+        "COS201-964",
+        "COS201-998",
+        "COS201-972"
+      ],
+      "reasonVi": "Giữ riêng: nhược điểm cần xác suất, trường hợp đồng xác suất 2^k, tối ưu trong lớp mã prefix theo ký hiệu và cận entropy là các kiến thức khác nhau."
+    },
+    {
+      "ids": [
+        "COS201-817",
+        "COS201-833",
+        "COS201-979",
+        "COS201-847",
+        "COS201-1000",
+        "COS201-992"
+      ],
+      "reasonVi": "Giữ riêng ngoài nhóm 833/999: chống multipath, hậu quả mất trực giao, điều kiện khoảng cách/timing gây mất trực giao, FFT/IFFT và khôi phục FEC là những mục tiêu riêng."
+    },
+    {
+      "ids": [
+        "COS201-973",
+        "COS201-990",
+        "COS201-991"
+      ],
+      "reasonVi": "Giữ riêng ngoài nhóm 990/1006: Gray coding giảm số bit sai, khoảng cách Euclid ảnh hưởng lỗi và ngưỡng tối ưu antipodal khác nhau."
+    },
+    {
+      "ids": [
+        "COS201-959",
+        "COS201-856",
+        "COS201-886"
+      ],
+      "reasonVi": "Giữ riêng: đồng bộ Manchester, số lớp OSI và chức năng PHY không trùng nội dung dù cùng hệ thống truyền thông."
+    }
+  ],
+  "summary": {
+    "groups": 37,
+    "hiddenAliases": 41,
+    "remaining": 173
+  },
+  "mappingNoteVi": "Chỉ ánh xạ lựa chọn có nội dung tương đương chắc chắn; câu đảo chiều câu hỏi/đáp án hoặc distractor khác giữ null. Alias vẫn cần giữ dữ liệu gốc để đọc tiến độ cũ."
+}
