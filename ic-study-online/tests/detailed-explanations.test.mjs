@@ -32,7 +32,7 @@ test('Every question has an explicit fingerprinted explanation binding, with no 
 
 test('Shared comparison content embeds once in each Anime edition, and copying includes all rendered distinctions',()=>{
  for(const doc of [html,offline])assert.deepEqual(JSON.parse(doc.match(/<script id="explanation-lessons"[^>]*>([\s\S]*?)<\/script>/)[1]),lessons);
- for(const id of ['ICI211-250','ICI211-251','dgt302-su26-fe-re-009','DGT302-584','COS201-806','LOS201-119']){
+ for(const id of ['ICI211-250','ICI211-251','COS201-806','LOS201-119']){
   const lesson=lessons[data[id].detailLesson],rendered=context.renderTeachingExplanation(id),copied=context.teachingExplanationText(id);
   assert.match(rendered,/Phân biệt các lựa chọn và trường hợp áp dụng/);
   for(const item of lesson.comparisons){

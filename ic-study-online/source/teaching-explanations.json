@@ -8,17 +8,19 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-501": {
     "paragraphs": [
-      "Hệ LTI rời rạc ổn định BIBO khi tổng |h[n]| hữu hạn. Trên vòng đơn vị, |z⁻ⁿ| = 1, nên điều kiện hội tụ tuyệt đối của biến đổi z trở thành chính tổng |h[n]|. Vì vậy ROC của hệ ổn định phải chứa toàn bộ vòng |z| = 1."
+      "Muốn ổn định BIBO, ROC phải chứa toàn bộ vòng tròn đơn vị |z| = 1. Đáp án nói ROC nằm bên trong vòng tròn không có nghĩa là ROC chứa vòng tròn đó."
     ],
     "understand": "Đề hỏi ổn định BIBO theo ROC → tìm miền chứa vòng đơn vị |z| = 1.",
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-502": {
@@ -30,6 +32,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-503": {
@@ -41,6 +44,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-504": {
@@ -52,6 +56,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-505": {
@@ -63,6 +68,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-qmf"
   },
   "DGT302-506": {
@@ -74,6 +80,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-507": {
@@ -85,6 +92,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-508": {
@@ -96,6 +104,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-509": {
@@ -107,6 +116,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-510": {
@@ -118,6 +128,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-geometric-dtft"
   },
   "DGT302-511": {
@@ -129,6 +140,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-512": {
@@ -140,6 +152,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-513": {
@@ -151,6 +164,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-514": {
@@ -162,6 +176,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-515": {
@@ -173,6 +188,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-516": {
@@ -184,6 +200,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-517": {
@@ -195,6 +212,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-eigenfunction"
   },
   "DGT302-518": {
@@ -206,6 +224,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-519": {
@@ -217,6 +236,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-520": {
@@ -228,6 +248,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-521": {
@@ -239,6 +260,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-parseval"
   },
   "DGT302-522": {
@@ -250,6 +272,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "DGT302-523": {
@@ -261,6 +284,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-524": {
@@ -272,6 +296,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-525": {
@@ -283,6 +308,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-526": {
@@ -294,6 +320,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-527": {
@@ -305,6 +332,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-528": {
@@ -316,6 +344,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-529": {
@@ -327,6 +356,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-530": {
@@ -338,6 +368,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-531": {
@@ -349,6 +380,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-532": {
@@ -360,18 +392,24 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-533": {
     "paragraphs": [
-      "Ở phần giao của hai ROC, cả hai tổng biến đổi z đều hội tụ, nên tổ hợp tuyến tính của chúng cũng hội tụ. Nếu các hạng làm triệt tiêu một cực khi cộng, miền hội tụ có thể mở rộng thêm. Vì vậy đáp án phải là ít nhất phần giao, không phải luôn đúng bằng phần giao."
+      "Trong phần chung của hai ROC, cả hai tín hiệu đều hội tụ nên tổng của chúng cũng hội tụ. Vì vậy ROC mới ít nhất chứa phần giao; đôi khi có thể rộng hơn."
     ],
-    "understand": "Cộng hai dãy → ROC ít nhất chứa giao của hai ROC; triệt cực có thể làm miền rộng hơn.",
+    "understand": "Cộng hai dãy → chọn “at least the intersection” (ít nhất phần giao), không chọn “union” (hợp).",
+    "choiceNotes": [
+      "Phần hợp có thể chứa vùng mà chỉ một tín hiệu hội tụ, nên không bảo đảm tổng hội tụ. “Hiệu hai ROC” và “toàn mặt phẳng z” cũng không phải quy tắc của phép cộng.",
+      "ROC có thể rộng hơn phần giao khi phép cộng làm triệt tiêu một cực. Vì thế đề dùng “ít nhất”, không khẳng định “luôn bằng”."
+    ],
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
-    "detailLesson": "dgt-shift-differentiate"
+    "presentation": "concise",
+    "detailLesson": "dgt-z-roc"
   },
   "DGT302-534": {
     "paragraphs": [
@@ -382,6 +420,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "DGT302-535": {
@@ -393,6 +432,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-geometric-dtft"
   },
   "DGT302-536": {
@@ -404,6 +444,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-537": {
@@ -415,6 +456,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-538": {
@@ -426,6 +468,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-539": {
@@ -437,6 +480,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "DGT302-540": {
@@ -448,6 +492,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-541": {
@@ -459,6 +504,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-delta-modulation"
   },
   "DGT302-542": {
@@ -470,6 +516,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "DGT302-543": {
@@ -481,6 +528,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-544": {
@@ -492,6 +540,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-545": {
@@ -503,6 +552,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-546": {
@@ -514,6 +564,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-547": {
@@ -525,6 +576,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-548": {
@@ -536,6 +588,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-frequency-axis"
   },
   "DGT302-549": {
@@ -547,6 +600,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "DGT302-551": {
@@ -558,6 +612,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-one-sided"
   },
   "DGT302-552": {
@@ -569,6 +624,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "DGT302-553": {
@@ -580,6 +636,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-554": {
@@ -591,17 +648,19 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-555": {
     "paragraphs": [
-      "Hai cực của H(z) là 0,5 và 2. Muốn ổn định BIBO, ROC phải chứa vòng |z| = 1 nhưng không chứa hai cực. Trong các miền được cho, chỉ vành 0,5 < |z| < 2 thỏa điều kiện này."
+      "Hai cực ở 0,5 và 2. Để ổn định, chọn miền chứa vòng |z| = 1 và không chứa các cực: 0,5 < |z| < 2."
     ],
     "understand": "Đánh dấu hai cực 0,5 và 2 trên trục bán kính; chọn khoảng chứa 1 và bỏ hai đầu mút.",
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-556": {
@@ -613,6 +672,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "DGT302-557": {
@@ -624,6 +684,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-558": {
@@ -635,6 +696,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-559": {
@@ -646,6 +708,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-delta-modulation"
   },
   "DGT302-560": {
@@ -657,6 +720,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-561": {
@@ -668,6 +732,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "DGT302-562": {
@@ -679,6 +744,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-563": {
@@ -690,6 +756,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-564": {
@@ -701,6 +768,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-565": {
@@ -712,6 +780,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-566": {
@@ -723,6 +792,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-567": {
@@ -734,6 +804,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-568": {
@@ -745,6 +816,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-569": {
@@ -756,6 +828,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-570": {
@@ -767,6 +840,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-571": {
@@ -778,6 +852,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dct"
   },
   "DGT302-572": {
@@ -789,6 +864,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-573": {
@@ -800,6 +876,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-shift-differentiate"
   },
   "DGT302-574": {
@@ -811,6 +888,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-shift-differentiate"
   },
   "DGT302-575": {
@@ -822,6 +900,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "DGT302-576": {
@@ -833,6 +912,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-eigenfunction"
   },
   "DGT302-577": {
@@ -844,6 +924,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "DGT302-578": {
@@ -855,6 +936,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-579": {
@@ -866,6 +948,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-580": {
@@ -877,6 +960,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-581": {
@@ -888,6 +972,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-582": {
@@ -899,6 +984,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-583": {
@@ -910,6 +996,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-584": {
@@ -921,17 +1008,19 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-cutoff-derivation"
   },
   "DGT302-585": {
     "paragraphs": [
-      "Thay z = e^(jω) vào định nghĩa biến đổi z sẽ được tổng DTFT của đáp ứng xung. Các điểm e^(jω) có độ lớn bằng 1 nên nằm trên vòng đơn vị. Phép thay này cho đáp ứng tần số khi vòng đơn vị nằm trong ROC, đúng như điều kiện đề đã nêu."
+      "Thay z = e^(jω) vào H(z). Vì |e^(jω)| = 1 nên các điểm này nằm trên vòng tròn đơn vị; đề đã cho ROC chứa vòng đó nên phép thay hợp lệ."
     ],
     "understand": "H(e^(jω)) → thay z bằng e^(jω), tức xét H(z) trên vòng |z| = 1.",
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-586": {
@@ -943,6 +1032,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-587": {
@@ -954,6 +1044,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-588": {
@@ -965,6 +1056,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-correlation"
   },
   "DGT302-589": {
@@ -976,6 +1068,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-590": {
@@ -987,6 +1080,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-591": {
@@ -998,6 +1092,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-592": {
@@ -1009,6 +1104,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "DGT302-593": {
@@ -1020,6 +1116,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-594": {
@@ -1031,6 +1128,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "DGT302-595": {
@@ -1042,6 +1140,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-bilinear"
   },
   "DGT302-596": {
@@ -1053,6 +1152,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-597": {
@@ -1064,6 +1164,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-shift-differentiate"
   },
   "DGT302-598": {
@@ -1075,6 +1176,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-599": {
@@ -1086,6 +1188,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-600": {
@@ -1097,6 +1200,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-602": {
@@ -1108,6 +1212,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-603": {
@@ -1119,6 +1224,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-correlation"
   },
   "DGT302-604": {
@@ -1130,6 +1236,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-605": {
@@ -1141,6 +1248,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-606": {
@@ -1152,6 +1260,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-607": {
@@ -1163,6 +1272,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-608": {
@@ -1174,6 +1284,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-609": {
@@ -1185,6 +1296,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-610": {
@@ -1196,6 +1308,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-611": {
@@ -1207,6 +1320,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-612": {
@@ -1218,6 +1332,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-613": {
@@ -1229,6 +1344,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-614": {
@@ -1240,6 +1356,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-615": {
@@ -1251,6 +1368,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-616": {
@@ -1262,6 +1380,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "DGT302-617": {
@@ -1273,6 +1392,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-618": {
@@ -1284,6 +1404,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-619": {
@@ -1295,6 +1416,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-620": {
@@ -1306,6 +1428,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-621": {
@@ -1317,6 +1440,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-bilinear"
   },
   "DGT302-622": {
@@ -1328,6 +1452,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-623": {
@@ -1339,6 +1464,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-624": {
@@ -1350,6 +1476,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-625": {
@@ -1361,6 +1488,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-626": {
@@ -1372,6 +1500,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-627": {
@@ -1383,6 +1512,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-628": {
@@ -1394,6 +1524,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-629": {
@@ -1405,6 +1536,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-630": {
@@ -1416,6 +1548,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-631": {
@@ -1427,6 +1560,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-632": {
@@ -1438,6 +1572,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-633": {
@@ -1449,6 +1584,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-634": {
@@ -1460,6 +1596,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-635": {
@@ -1471,6 +1608,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dct"
   },
   "DGT302-636": {
@@ -1482,6 +1620,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-637": {
@@ -1493,6 +1632,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-638": {
@@ -1504,6 +1644,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-639": {
@@ -1515,6 +1656,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-640": {
@@ -1526,6 +1668,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-correlation"
   },
   "DGT302-641": {
@@ -1537,6 +1680,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "DGT302-642": {
@@ -1548,6 +1692,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dct"
   },
   "DGT302-643": {
@@ -1559,6 +1704,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-digital-advantages"
   },
   "DGT302-644": {
@@ -1570,6 +1716,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-645": {
@@ -1581,6 +1728,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-646": {
@@ -1592,6 +1740,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-647": {
@@ -1603,6 +1752,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-hardware-mac"
   },
   "DGT302-648": {
@@ -1614,6 +1764,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-649": {
@@ -1625,6 +1776,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-650": {
@@ -1636,6 +1788,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-651": {
@@ -1647,6 +1800,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-652": {
@@ -1658,6 +1812,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-653": {
@@ -1669,6 +1824,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-654": {
@@ -1680,6 +1836,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-655": {
@@ -1691,6 +1848,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-656": {
@@ -1702,6 +1860,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-657": {
@@ -1713,6 +1872,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-658": {
@@ -1724,6 +1884,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-659": {
@@ -1735,6 +1896,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-660": {
@@ -1746,6 +1908,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-661": {
@@ -1757,6 +1920,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-662": {
@@ -1768,6 +1932,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-663": {
@@ -1779,6 +1944,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-664": {
@@ -1790,6 +1956,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-665": {
@@ -1801,6 +1968,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-666": {
@@ -1812,6 +1980,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-667": {
@@ -1823,6 +1992,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-668": {
@@ -1834,6 +2004,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-669": {
@@ -1845,6 +2016,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "DGT302-670": {
@@ -1856,6 +2028,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-671": {
@@ -1867,6 +2040,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-672": {
@@ -1878,6 +2052,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-673": {
@@ -1889,6 +2064,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-674": {
@@ -1900,6 +2076,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-bilinear"
   },
   "DGT302-675": {
@@ -1911,6 +2088,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-676": {
@@ -1922,6 +2100,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-677": {
@@ -1933,6 +2112,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-678": {
@@ -1944,6 +2124,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-679": {
@@ -1955,6 +2136,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-680": {
@@ -1966,6 +2148,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-681": {
@@ -1977,6 +2160,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-682": {
@@ -1988,6 +2172,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-683": {
@@ -1999,6 +2184,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-684": {
@@ -2010,6 +2196,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-685": {
@@ -2021,6 +2208,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-686": {
@@ -2032,6 +2220,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-687": {
@@ -2043,6 +2232,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-688": {
@@ -2054,6 +2244,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dct"
   },
   "DGT302-689": {
@@ -2065,6 +2256,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-690": {
@@ -2076,6 +2268,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-691": {
@@ -2087,6 +2280,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-692": {
@@ -2098,6 +2292,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-693": {
@@ -2109,6 +2304,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-correlation"
   },
   "DGT302-694": {
@@ -2120,6 +2316,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "DGT302-695": {
@@ -2131,6 +2328,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dct"
   },
   "DGT302-696": {
@@ -2142,6 +2340,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-digital-advantages"
   },
   "DGT302-697": {
@@ -2153,6 +2352,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-698": {
@@ -2164,6 +2364,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-699": {
@@ -2175,6 +2376,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "DGT302-700": {
@@ -2186,6 +2388,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-hardware-mac"
   },
   "DGT302-701": {
@@ -2197,6 +2400,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-702": {
@@ -2208,6 +2412,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-703": {
@@ -2219,6 +2424,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-704": {
@@ -2230,6 +2436,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-705": {
@@ -2241,6 +2448,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-706": {
@@ -2252,6 +2460,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-707": {
@@ -2263,6 +2472,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-708": {
@@ -2274,6 +2484,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-709": {
@@ -2285,6 +2496,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-710": {
@@ -2296,6 +2508,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-711": {
@@ -2307,6 +2520,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-712": {
@@ -2318,6 +2532,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "DGT302-713": {
@@ -2329,6 +2544,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-714": {
@@ -2340,6 +2556,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-715": {
@@ -2351,6 +2568,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-716": {
@@ -2362,6 +2580,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-717": {
@@ -2373,6 +2592,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-one-sided"
   },
   "DGT302-718": {
@@ -2384,6 +2604,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-eigenfunction"
   },
   "DGT302-719": {
@@ -2395,6 +2616,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-720": {
@@ -2406,6 +2628,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-721": {
@@ -2417,6 +2640,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-722": {
@@ -2428,6 +2652,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "DGT302-723": {
@@ -2439,6 +2664,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-724": {
@@ -2450,6 +2676,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-725": {
@@ -2461,6 +2688,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-726": {
@@ -2472,6 +2700,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "DGT302-727": {
@@ -2483,6 +2712,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "DGT302-728": {
@@ -2494,6 +2724,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "DGT302-729": {
@@ -2505,6 +2736,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-730": {
@@ -2516,6 +2748,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-ofdm"
   },
   "DGT302-731": {
@@ -2527,6 +2760,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-732": {
@@ -2538,6 +2772,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "DGT302-733": {
@@ -2549,6 +2784,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-qmf"
   },
   "DGT302-734": {
@@ -2560,6 +2796,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-735": {
@@ -2571,6 +2808,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-736": {
@@ -2582,6 +2820,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-737": {
@@ -2593,6 +2832,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-738": {
@@ -2604,6 +2844,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-739": {
@@ -2615,6 +2856,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-parseval"
   },
   "DGT302-740": {
@@ -2626,6 +2868,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-741": {
@@ -2637,6 +2880,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "DGT302-742": {
@@ -2648,6 +2892,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-one-sided"
   },
   "DGT302-743": {
@@ -2659,6 +2904,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-744": {
@@ -2670,6 +2916,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-745": {
@@ -2681,6 +2928,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-746": {
@@ -2692,6 +2940,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-747": {
@@ -2703,6 +2952,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-748": {
@@ -2714,6 +2964,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "DGT302-749": {
@@ -2725,6 +2976,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-750": {
@@ -2736,6 +2988,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-bilinear"
   },
   "DGT302-751": {
@@ -2747,6 +3000,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-752": {
@@ -2758,6 +3012,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-753": {
@@ -2769,6 +3024,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-754": {
@@ -2780,6 +3036,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-755": {
@@ -2791,6 +3048,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "DGT302-756": {
@@ -2802,6 +3060,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-757": {
@@ -2813,6 +3072,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-digital-advantages"
   },
   "DGT302-758": {
@@ -2824,6 +3084,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-759": {
@@ -2835,6 +3096,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-760": {
@@ -2846,6 +3108,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-761": {
@@ -2857,6 +3120,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-762": {
@@ -2868,6 +3132,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-763": {
@@ -2879,6 +3144,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-764": {
@@ -2890,6 +3156,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "DGT302-765": {
@@ -2901,6 +3168,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "DGT302-766": {
@@ -2912,6 +3180,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-767": {
@@ -2923,6 +3192,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-768": {
@@ -2934,6 +3204,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-769": {
@@ -2945,6 +3216,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "DGT302-770": {
@@ -2956,6 +3228,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-771": {
@@ -2967,6 +3240,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-772": {
@@ -2978,6 +3252,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-773": {
@@ -2989,6 +3264,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "DGT302-774": {
@@ -3000,6 +3276,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-775": {
@@ -3011,6 +3288,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "DGT302-776": {
@@ -3022,6 +3300,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "DGT302-777": {
@@ -3033,6 +3312,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "DGT302-778": {
@@ -3044,6 +3324,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-779": {
@@ -3055,6 +3336,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "DGT302-780": {
@@ -3066,6 +3348,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-781": {
@@ -3077,6 +3360,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "DGT302-782": {
@@ -3088,6 +3372,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "DGT302-783": {
@@ -3099,6 +3384,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "DGT302-784": {
@@ -3110,6 +3396,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "DGT302-785": {
@@ -3121,6 +3408,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "DGT302-786": {
@@ -3132,6 +3420,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-787": {
@@ -3143,6 +3432,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-inverse-scale"
   },
   "DGT302-788": {
@@ -3154,6 +3444,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "DGT302-789": {
@@ -3165,6 +3456,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "DGT302-790": {
@@ -3176,6 +3468,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-output-psd"
   },
   "DGT302-791": {
@@ -3187,6 +3480,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-792": {
@@ -3198,6 +3492,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "DGT302-793": {
@@ -3209,6 +3504,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-parseval"
   },
   "DGT302-794": {
@@ -3220,6 +3516,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "DGT302-795": {
@@ -3231,6 +3528,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-796": {
@@ -3242,6 +3540,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-797": {
@@ -3253,6 +3552,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-798": {
@@ -3264,6 +3564,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "DGT302-799": {
@@ -3275,6 +3576,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "COS201-800": {
@@ -15504,13 +15806,14 @@
   },
   "dgt302-fa26-fe-001": {
     "paragraphs": [
-      "u(n) bằng 1 từ n = 0 trở đi, nên biến đổi z là tổng hình học 1 + z⁻¹ + z⁻² + … Tổng bằng 1/(1 − z⁻¹) khi |z⁻¹| < 1, tương đương |z| > 1. Đáp án cần đúng cả công thức lẫn ROC."
+      "u(n) bằng 1 với n ≥ 0 nên X(z) = 1 + z⁻¹ + z⁻² + … = 1/(1 − z⁻¹). Tổng này hội tụ khi |z| > 1."
     ],
     "understand": "u(n) → tổng bắt đầu ở n = 0, công bội z⁻¹; điều kiện |z⁻¹| < 1 đổi thành |z| > 1.",
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-fa26-fe-002": {
@@ -15522,6 +15825,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "dgt302-fa26-fe-003": {
@@ -15533,6 +15837,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-fa26-fe-004": {
@@ -15544,6 +15849,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-time-reversal"
   },
   "dgt302-fa26-fe-005": {
@@ -15555,6 +15861,7 @@
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "dgt302-fa26-fe-006": {
@@ -15566,6 +15873,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sigma-delta"
   },
   "dgt302-fa26-fe-007": {
@@ -15577,6 +15885,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sigma-delta"
   },
   "dgt302-fa26-fe-008": {
@@ -15588,6 +15897,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "dgt302-fa26-fe-009": {
@@ -15599,6 +15909,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "dgt302-fa26-fe-010": {
@@ -15610,6 +15921,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "dgt302-fa26-fe-011": {
@@ -15621,6 +15933,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "dgt302-fa26-fe-012": {
@@ -15632,6 +15945,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "dgt302-fa26-fe-013": {
@@ -15643,6 +15957,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "dgt302-fa26-fe-014": {
@@ -15654,6 +15969,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "dgt302-fa26-fe-015": {
@@ -15665,6 +15981,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-fa26-fe-016": {
@@ -15676,6 +15993,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-fa26-fe-017": {
@@ -15687,6 +16005,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-fa26-fe-018": {
@@ -15698,6 +16017,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-fa26-fe-019": {
@@ -15709,6 +16029,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "dgt302-fa26-fe-020": {
@@ -15720,6 +16041,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-fa26-fe-021": {
@@ -15731,6 +16053,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "dgt302-fa26-fe-022": {
@@ -15742,6 +16065,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "dgt302-fa26-fe-023": {
@@ -15753,6 +16077,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "dgt302-fa26-fe-024": {
@@ -15764,6 +16089,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-fa26-fe-025": {
@@ -15775,6 +16101,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "dgt302-fa26-fe-026": {
@@ -15786,6 +16113,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-bilinear"
   },
   "dgt302-fa26-fe-027": {
@@ -15797,6 +16125,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-geometric-dtft"
   },
   "dgt302-fa26-fe-028": {
@@ -15808,6 +16137,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "dgt302-fa26-fe-029": {
@@ -15819,6 +16149,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-frequency-axis"
   },
   "dgt302-fa26-fe-030": {
@@ -15830,6 +16161,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "dgt302-fa26-fe-031": {
@@ -15841,6 +16173,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-output-psd"
   },
   "dgt302-fa26-fe-032": {
@@ -15852,6 +16185,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "dgt302-fa26-fe-033": {
@@ -15863,6 +16197,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "dgt302-fa26-fe-034": {
@@ -15874,6 +16209,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "dgt302-fa26-fe-035": {
@@ -15885,6 +16221,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "dgt302-fa26-fe-036": {
@@ -15896,6 +16233,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "dgt302-fa26-fe-037": {
@@ -15907,6 +16245,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-fa26-fe-038": {
@@ -15918,6 +16257,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "dgt302-fa26-fe-039": {
@@ -15929,6 +16269,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-fa26-fe-040": {
@@ -15940,6 +16281,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-fa26-fe-041": {
@@ -15951,6 +16293,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-fa26-fe-042": {
@@ -15962,6 +16305,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "dgt302-fa26-fe-043": {
@@ -15973,6 +16317,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-qmf"
   },
   "dgt302-fa26-fe-044": {
@@ -15984,6 +16329,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "dgt302-fa26-fe-045": {
@@ -15995,6 +16341,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "dgt302-fa26-fe-046": {
@@ -16006,6 +16353,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-fa26-fe-047": {
@@ -16017,6 +16365,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-fa26-fe-048": {
@@ -16028,6 +16377,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "dgt302-fa26-fe-049": {
@@ -16039,6 +16389,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-fa26-fe-050": {
@@ -16050,6 +16401,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "dgt302-su26-fe-re-001": {
@@ -16061,6 +16413,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-one-sided"
   },
   "dgt302-su26-fe-re-002": {
@@ -16072,6 +16425,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-su26-fe-re-003": {
@@ -16083,6 +16437,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "dgt302-su26-fe-re-004": {
@@ -16094,17 +16449,19 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "dgt302-su26-fe-re-005": {
     "paragraphs": [
-      "Hai cực của H(z) là 0,5 và 2. Muốn ổn định BIBO, ROC phải chứa vòng |z| = 1 nhưng không chứa hai cực. Trong các miền được cho, chỉ vành 0,5 < |z| < 2 thỏa điều kiện này."
+      "Hai cực ở 0,5 và 2. Để ổn định, chọn miền chứa vòng |z| = 1 và không chứa các cực: 0,5 < |z| < 2."
     ],
     "understand": "Đánh dấu hai cực 0,5 và 2 trên trục bán kính; chọn khoảng chứa 1 và bỏ hai đầu mút.",
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "dgt302-su26-fe-re-006": {
@@ -16116,6 +16473,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "dgt302-su26-fe-re-007": {
@@ -16127,6 +16485,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-parseval"
   },
   "dgt302-su26-fe-re-008": {
@@ -16138,6 +16497,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "dgt302-su26-fe-re-009": {
@@ -16149,6 +16509,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-delta-modulation"
   },
   "dgt302-su26-fe-re-010": {
@@ -16160,6 +16521,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "dgt302-su26-fe-re-011": {
@@ -16171,6 +16533,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "dgt302-su26-fe-re-012": {
@@ -16182,6 +16545,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "dgt302-su26-fe-re-013": {
@@ -16193,6 +16557,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "dgt302-su26-fe-re-014": {
@@ -16204,6 +16569,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "dgt302-su26-fe-re-015": {
@@ -16215,6 +16581,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "dgt302-su26-fe-re-016": {
@@ -16226,6 +16593,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-su26-fe-re-017": {
@@ -16237,6 +16605,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-su26-fe-re-018": {
@@ -16248,6 +16617,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "dgt302-su26-fe-re-019": {
@@ -16259,6 +16629,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "dgt302-su26-fe-re-020": {
@@ -16270,6 +16641,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "dgt302-su26-fe-re-021": {
@@ -16281,6 +16653,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dct"
   },
   "dgt302-su26-fe-re-022": {
@@ -16292,6 +16665,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-re-023": {
@@ -16303,6 +16677,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-shift-differentiate"
   },
   "dgt302-su26-fe-re-024": {
@@ -16314,6 +16689,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-shift-differentiate"
   },
   "dgt302-su26-fe-re-025": {
@@ -16325,6 +16701,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "dgt302-su26-fe-re-026": {
@@ -16336,6 +16713,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-eigenfunction"
   },
   "dgt302-su26-fe-re-027": {
@@ -16347,6 +16725,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-symmetry"
   },
   "dgt302-su26-fe-re-028": {
@@ -16358,6 +16737,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "dgt302-su26-fe-re-029": {
@@ -16369,6 +16749,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "dgt302-su26-fe-re-030": {
@@ -16380,6 +16761,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "dgt302-su26-fe-re-031": {
@@ -16391,6 +16773,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "dgt302-su26-fe-re-032": {
@@ -16402,6 +16785,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "dgt302-su26-fe-re-033": {
@@ -16413,6 +16797,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-re-034": {
@@ -16424,6 +16809,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-cutoff-derivation"
   },
   "dgt302-su26-fe-re-035": {
@@ -16435,6 +16821,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "dgt302-su26-fe-re-036": {
@@ -16446,6 +16833,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "dgt302-su26-fe-re-037": {
@@ -16457,6 +16845,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "dgt302-su26-fe-re-038": {
@@ -16468,6 +16857,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-correlation"
   },
   "dgt302-su26-fe-re-039": {
@@ -16479,6 +16869,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-re-040": {
@@ -16490,6 +16881,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-re-041": {
@@ -16501,6 +16893,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-re-042": {
@@ -16512,6 +16905,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "dgt302-su26-fe-re-043": {
@@ -16523,6 +16917,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   },
   "dgt302-su26-fe-re-044": {
@@ -16534,6 +16929,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "dgt302-su26-fe-re-045": {
@@ -16545,6 +16941,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-bilinear"
   },
   "dgt302-su26-fe-re-046": {
@@ -16556,6 +16953,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-su26-fe-re-047": {
@@ -16567,6 +16965,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-shift-differentiate"
   },
   "dgt302-su26-fe-re-048": {
@@ -16578,6 +16977,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-su26-fe-re-049": {
@@ -16589,6 +16989,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "dgt302-su26-fe-re-050": {
@@ -16600,17 +17001,19 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-su26-fe-001": {
     "paragraphs": [
-      "Hệ LTI rời rạc ổn định BIBO khi tổng |h[n]| hữu hạn. Trên vòng đơn vị, |z⁻ⁿ| = 1, nên điều kiện hội tụ tuyệt đối của biến đổi z trở thành chính tổng |h[n]|. Vì vậy ROC của hệ ổn định phải chứa toàn bộ vòng |z| = 1."
+      "Muốn ổn định BIBO, ROC phải chứa toàn bộ vòng tròn đơn vị |z| = 1. Đáp án nói ROC nằm bên trong vòng tròn không có nghĩa là ROC chứa vòng tròn đó."
     ],
     "understand": "Đề hỏi ổn định BIBO theo ROC → tìm miền chứa vòng đơn vị |z| = 1.",
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "dgt302-su26-fe-002": {
@@ -16622,6 +17025,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-su26-fe-003": {
@@ -16633,6 +17037,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-roc"
   },
   "dgt302-su26-fe-004": {
@@ -16644,18 +17049,24 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-su26-fe-005": {
     "paragraphs": [
-      "Ở phần giao của hai ROC, cả hai tổng biến đổi z đều hội tụ, nên tổ hợp tuyến tính của chúng cũng hội tụ. Nếu các hạng làm triệt tiêu một cực khi cộng, miền hội tụ có thể mở rộng thêm. Vì vậy đáp án phải là ít nhất phần giao, không phải luôn đúng bằng phần giao."
+      "Trong phần chung của hai ROC, cả hai tín hiệu đều hội tụ nên tổng của chúng cũng hội tụ. Vì vậy ROC mới ít nhất chứa phần giao; đôi khi có thể rộng hơn."
     ],
-    "understand": "Cộng hai dãy → ROC ít nhất chứa giao của hai ROC; triệt cực có thể làm miền rộng hơn.",
+    "understand": "Cộng hai dãy → chọn “at least the intersection” (ít nhất phần giao), không chọn “union” (hợp).",
+    "choiceNotes": [
+      "Phần hợp có thể chứa vùng mà chỉ một tín hiệu hội tụ, nên không bảo đảm tổng hội tụ. “Hiệu hai ROC” và “toàn mặt phẳng z” cũng không phải quy tắc của phép cộng.",
+      "ROC có thể rộng hơn phần giao khi phép cộng làm triệt tiêu một cực. Vì thế đề dùng “ít nhất”, không khẳng định “luôn bằng”."
+    ],
     "source": {
       "kind": "question-explanation",
       "basis": "exact-question"
     },
-    "detailLesson": "dgt-shift-differentiate"
+    "presentation": "concise",
+    "detailLesson": "dgt-z-roc"
   },
   "dgt302-su26-fe-006": {
     "paragraphs": [
@@ -16666,6 +17077,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-007": {
@@ -16677,6 +17089,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lti-stability"
   },
   "dgt302-su26-fe-008": {
@@ -16688,6 +17101,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-lattice"
   },
   "dgt302-su26-fe-009": {
@@ -16699,6 +17113,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fixedpoint"
   },
   "dgt302-su26-fe-010": {
@@ -16710,6 +17125,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "dgt302-su26-fe-011": {
@@ -16721,6 +17137,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-delta-modulation"
   },
   "dgt302-su26-fe-012": {
@@ -16732,6 +17149,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-sampling"
   },
   "dgt302-su26-fe-013": {
@@ -16743,6 +17161,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "dgt302-su26-fe-014": {
@@ -16754,6 +17173,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-adc-hold"
   },
   "dgt302-su26-fe-015": {
@@ -16765,6 +17185,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-su26-fe-016": {
@@ -16776,6 +17197,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-su26-fe-017": {
@@ -16787,6 +17209,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-wiener-prediction"
   },
   "dgt302-su26-fe-018": {
@@ -16798,6 +17221,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-019": {
@@ -16809,6 +17233,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-020": {
@@ -16820,6 +17245,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-021": {
@@ -16831,6 +17257,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-022": {
@@ -16842,6 +17269,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "dgt302-su26-fe-023": {
@@ -16853,6 +17281,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-scipy"
   },
   "dgt302-su26-fe-024": {
@@ -16864,6 +17293,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-qmf"
   },
   "dgt302-su26-fe-025": {
@@ -16875,6 +17305,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-multirate"
   },
   "dgt302-su26-fe-026": {
@@ -16886,6 +17317,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-z-sequence"
   },
   "dgt302-su26-fe-027": {
@@ -16897,6 +17329,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "dgt302-su26-fe-028": {
@@ -16908,6 +17341,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-system-properties"
   },
   "dgt302-su26-fe-029": {
@@ -16919,6 +17353,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-030": {
@@ -16930,6 +17365,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-iir"
   },
   "dgt302-su26-fe-031": {
@@ -16941,6 +17377,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-su26-fe-032": {
@@ -16952,6 +17389,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-parseval"
   },
   "dgt302-su26-fe-033": {
@@ -16963,6 +17401,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-circular"
   },
   "dgt302-su26-fe-034": {
@@ -16974,6 +17413,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-signal-types"
   },
   "dgt302-su26-fe-035": {
@@ -16985,6 +17425,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-036": {
@@ -16996,6 +17437,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-radix"
   },
   "dgt302-su26-fe-037": {
@@ -17007,6 +17449,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "dgt302-su26-fe-038": {
@@ -17018,6 +17461,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-su26-fe-039": {
@@ -17029,6 +17473,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-twiddle"
   },
   "dgt302-su26-fe-040": {
@@ -17040,6 +17485,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fft-count"
   },
   "dgt302-su26-fe-041": {
@@ -17051,6 +17497,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-frequency-axis"
   },
   "dgt302-su26-fe-042": {
@@ -17062,6 +17509,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-geometric-dtft"
   },
   "dgt302-su26-fe-043": {
@@ -17073,6 +17521,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-geometric-dtft"
   },
   "dgt302-su26-fe-044": {
@@ -17084,6 +17533,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-window"
   },
   "dgt302-su26-fe-045": {
@@ -17095,6 +17545,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-dft-definitions"
   },
   "dgt302-su26-fe-046": {
@@ -17106,6 +17557,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-fir-linear"
   },
   "dgt302-su26-fe-047": {
@@ -17117,6 +17569,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-convolution"
   },
   "dgt302-su26-fe-048": {
@@ -17128,6 +17581,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-eigenfunction"
   },
   "dgt302-su26-fe-049": {
@@ -17139,6 +17593,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-filter-response"
   },
   "dgt302-su26-fe-050": {
@@ -17150,6 +17605,7 @@
       "kind": "reviewed-explanation",
       "basis": "exact-question"
     },
+    "presentation": "concise",
     "detailLesson": "dgt-minphase"
   }
 }

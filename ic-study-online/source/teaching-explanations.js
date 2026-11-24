@@ -5,9 +5,17 @@ function teachingDetail(id) {
  const explanation = TEACHING_EXPLANATIONS[id];
  return explanation?.detailLesson ? TEACHING_LESSONS[explanation.detailLesson] : undefined;
 }
+function renderConciseExplanation(explanation) {
+ const notes=explanation.choiceNotes||[];
+ return `<div class="teaching-explanation teaching-concise" lang="vi"><div class="teaching-reason"><h4>Giải thích ngắn</h4>${explanation.paragraphs.map(paragraph=>`<p>${esc(paragraph)}</p>`).join('')}</div>${explanation.understand?`<div class="teaching-memory"><h4>Mẹo nhớ</h4><p>${esc(explanation.understand)}</p></div>`:''}${notes.length?`<details class="teaching-choice-notes"><summary>Vì sao không chọn các đáp án còn lại?</summary>${notes.map(note=>`<p>${esc(note)}</p>`).join('')}</details>`:''}</div>`;
+}
+function conciseExplanationText(explanation) {
+ return 'Giải thích ngắn:\n'+explanation.paragraphs.join('\n\n')+(explanation.understand?'\n\nMẹo nhớ:\n'+explanation.understand:'')+(explanation.choiceNotes?.length?'\n\nVì sao không chọn các đáp án còn lại?\n'+explanation.choiceNotes.join('\n\n'):'');
+}
 function renderTeachingExplanation(id) {
  const explanation = TEACHING_EXPLANATIONS[id];
  if (!explanation) return '';
+ if(explanation.presentation==='concise')return renderConciseExplanation(explanation);
  const detail=teachingDetail(id);
  // A rich existing mechanism is kept once, rather than repeating the same
  // explanation before the comparison. Short reasons receive the extra steps.
@@ -17,6 +25,7 @@ function renderTeachingExplanation(id) {
 function teachingExplanationText(id) {
  const explanation = TEACHING_EXPLANATIONS[id];
  if(!explanation)return '';
+ if(explanation.presentation==='concise')return conciseExplanationText(explanation);
  const detail=teachingDetail(id),mechanism=detail&&explanation.source?.kind!=='word-reference'&&explanation.paragraphs.join(' ').length<200?detail.mechanism:'';
  return 'Giải thích:\n'+explanation.paragraphs.join('\n\n')+(mechanism?'\n\n'+mechanism:'')+(detail?.comparisons?.length?'\n\nPhân biệt các lựa chọn và trường hợp áp dụng:\n'+detail.comparisons.map(item=>item.concept+': '+item.explanation).join('\n\n'):'')+(explanation.understand?'\n\nHiểu nhanh / mẹo nhớ:\n'+explanation.understand:'');
 }

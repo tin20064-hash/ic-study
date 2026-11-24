@@ -77,3 +77,6 @@ body[data-palette] .feedback :is(.teaching-memory h4,.explain-label,.textbtn,.ex
  color:var(--feedback-status);
  font-weight:750;
 }
+.teaching-choice-notes { margin-top:1rem; border-top:1px solid var(--feedback-card-line,var(--line)); padding-top:.8rem; }
+.teaching-choice-notes summary { cursor:pointer; font-weight:700; }
+.teaching-choice-notes[open] summary { margin-bottom:.65rem; }

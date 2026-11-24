@@ -8,6 +8,7 @@ const html=fs.readFileSync('source/study.html','utf8');
 const bank=JSON.parse(html.match(/<script id="question-bank"[^>]*>([\s\S]*?)<\/script>/)[1]);
 const short=read('source/short-explanations.json');
 const papers=read('source/past-exams.json');
+const conciseIds=new Set([...bank.filter(q=>q.subject==='DGT302').map(q=>q.id),...papers.filter(p=>p.subject==='DGT302').flatMap(p=>p.pages.map(q=>q.id))]);
 const existing=read('source/teaching-explanations.json');
 const overrides=read('source/teaching-explanation-overrides.json');
 const output={};
@@ -23,6 +24,7 @@ for(const question of [...bank,...papers.flatMap(paper=>paper.pages)]){
  if(overrides[id]){
   output[id]={...overrides[id],source:{kind:'question-explanation',basis:'exact-question'}};
  }
+ if(conciseIds.has(id))output[id].presentation='concise';
 }
 for(const id of Object.keys(overrides))if(!output[id])throw Error('Unknown question '+id);
 fs.writeFileSync('source/teaching-explanations.json',JSON.stringify(output,null,2)+'\n');
